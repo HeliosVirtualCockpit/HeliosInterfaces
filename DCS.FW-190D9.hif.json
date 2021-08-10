@@ -2549,15 +2549,15 @@
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Indicator",
       "name": "IAS",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Indicated Airspeed",
       "exports": [
         {
           "format": "%.5f",
           "id": "36"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
-      "unit": "Numeric",
+      "valueDescription": "Km/h",
+      "unit": "KilometersPerHour",
       "calibration": {
         "points": [
           {
@@ -2565,11 +2565,27 @@
             "mappedValue": 0
           },
           {
+            "value": 0.038,
+            "mappedValue": 100
+          },
+          {
+            "value": 0.2237,
+            "mappedValue": 250
+          },
+          {
+            "value": 0.4,
+            "mappedValue": 400
+          },
+          {
+            "value": 0.655,
+            "mappedValue": 600
+          },
+          {
             "value": 0.988,
-            "mappedValue": 0.988
+            "mappedValue": 900
           }
         ],
-        "precision": 5
+        "precision": 1
       }
     },
     {
