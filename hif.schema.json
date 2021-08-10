@@ -1,0 +1,3363 @@
+{
+  "definitions": {
+    "NetworkFunction": {
+      "definitions": {
+        "ExportDataElement": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id"
+          ]
+        }
+      },
+      "type": "object",
+      "properties": {
+        "heliosType": {
+          "enum": [
+            "GadrocsWorkshop.Helios.UDPInterface.NetworkFunction"
+          ]
+        },
+        "DataElements": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/NetworkFunction/definitions/ExportDataElement"
+          }
+        },
+        "unimplemented": {
+          "type": "boolean",
+          "default": false
+        }
+      },
+      "required": [
+        "heliosType"
+      ]
+    }
+  },
+  "type": "object",
+  "properties": {
+    "source": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "commit": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "Existing",
+        "DCS"
+      ]
+    },
+    "name": {
+      "type": "string"
+    },
+    "module": {
+      "type": "string"
+    },
+    "vehicles": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "functions": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          {
+            "type": "object",
+            "additionalProperties": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "object"
+                },
+                {
+                  "type": "array"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "properties": {
+              "heliosType": {
+                "enum": [
+                  "Ignored"
+                ]
+              },
+              "unimplemented": {
+                "type": "boolean",
+                "default": false
+              }
+            },
+            "required": [
+              "heliosType"
+            ]
+          },
+          {
+            "definitions": {
+              "DCSDataElement": {
+                "type": "object",
+                "properties": {
+                  "format": {
+                    "type": "string"
+                  },
+                  "isExportedEveryFrame": {
+                    "type": "boolean"
+                  },
+                  "id": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id"
+                ]
+              }
+            },
+            "type": "object",
+            "properties": {
+              "heliosType": {
+                "enum": [
+                  "DCS.BlackShark.Functions.HSIRange"
+                ]
+              },
+              "device": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "exports": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/properties/functions/items/oneOf/1/definitions/DCSDataElement"
+                }
+              },
+              "unimplemented": {
+                "type": "boolean",
+                "default": false
+              }
+            },
+            "required": [
+              "heliosType",
+              "device",
+              "name",
+              "exports"
+            ]
+          },
+          {
+            "definitions": {
+              "DCSDataElement": {
+                "type": "object",
+                "properties": {
+                  "format": {
+                    "type": "string"
+                  },
+                  "isExportedEveryFrame": {
+                    "type": "boolean"
+                  },
+                  "id": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id"
+                ]
+              }
+            },
+            "type": "object",
+            "properties": {
+              "heliosType": {
+                "enum": [
+                  "DCS.BlackShark.Functions.LatitudeEntry"
+                ]
+              },
+              "device": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "exports": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/properties/functions/items/oneOf/2/definitions/DCSDataElement"
+                }
+              },
+              "unimplemented": {
+                "type": "boolean",
+                "default": false
+              }
+            },
+            "required": [
+              "heliosType",
+              "device",
+              "name",
+              "exports"
+            ]
+          },
+          {
+            "definitions": {
+              "DCSDataElement": {
+                "type": "object",
+                "properties": {
+                  "format": {
+                    "type": "string"
+                  },
+                  "isExportedEveryFrame": {
+                    "type": "boolean"
+                  },
+                  "id": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id"
+                ]
+              }
+            },
+            "type": "object",
+            "properties": {
+              "heliosType": {
+                "enum": [
+                  "DCS.BlackShark.Functions.MagVariation"
+                ]
+              },
+              "device": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "exports": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/properties/functions/items/oneOf/3/definitions/DCSDataElement"
+                }
+              },
+              "unimplemented": {
+                "type": "boolean",
+                "default": false
+              }
+            },
+            "required": [
+              "heliosType",
+              "device",
+              "name",
+              "exports"
+            ]
+          },
+          {
+            "definitions": {
+              "DCSDataElement": {
+                "type": "object",
+                "properties": {
+                  "format": {
+                    "type": "string"
+                  },
+                  "isExportedEveryFrame": {
+                    "type": "boolean"
+                  },
+                  "id": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id"
+                ]
+              }
+            },
+            "type": "object",
+            "properties": {
+              "heliosType": {
+                "enum": [
+                  "DCS.BlackShark.Functions.VHF2Rotary1"
+                ]
+              },
+              "device": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "exports": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/properties/functions/items/oneOf/4/definitions/DCSDataElement"
+                }
+              },
+              "unimplemented": {
+                "type": "boolean",
+                "default": false
+              }
+            },
+            "required": [
+              "heliosType",
+              "device",
+              "name",
+              "exports"
+            ]
+          },
+          {
+            "definitions": {
+              "DCSDataElement": {
+                "type": "object",
+                "properties": {
+                  "format": {
+                    "type": "string"
+                  },
+                  "isExportedEveryFrame": {
+                    "type": "boolean"
+                  },
+                  "id": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id"
+                ]
+              }
+            },
+            "type": "object",
+            "properties": {
+              "heliosType": {
+                "enum": [
+                  "DCS.BlackShark.Functions.VHF2Rotary23"
+                ]
+              },
+              "device": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "exports": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/properties/functions/items/oneOf/5/definitions/DCSDataElement"
+                }
+              },
+              "unimplemented": {
+                "type": "boolean",
+                "default": false
+              }
+            },
+            "required": [
+              "heliosType",
+              "device",
+              "name",
+              "exports"
+            ]
+          },
+          {
+            "definitions": {
+              "DCSDataElement": {
+                "type": "object",
+                "properties": {
+                  "format": {
+                    "type": "string"
+                  },
+                  "isExportedEveryFrame": {
+                    "type": "boolean"
+                  },
+                  "id": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id"
+                ]
+              }
+            },
+            "type": "object",
+            "properties": {
+              "heliosType": {
+                "enum": [
+                  "DCS.BlackShark.Functions.VHF2Rotary4"
+                ]
+              },
+              "device": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "exports": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/properties/functions/items/oneOf/6/definitions/DCSDataElement"
+                }
+              },
+              "unimplemented": {
+                "type": "boolean",
+                "default": false
+              }
+            },
+            "required": [
+              "heliosType",
+              "device",
+              "name",
+              "exports"
+            ]
+          },
+          {
+            "definitions": {
+              "DCSDataElement": {
+                "type": "object",
+                "properties": {
+                  "format": {
+                    "type": "string"
+                  },
+                  "isExportedEveryFrame": {
+                    "type": "boolean"
+                  },
+                  "id": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id"
+                ]
+              }
+            },
+            "type": "object",
+            "properties": {
+              "heliosType": {
+                "enum": [
+                  "DCS.FA18C.Functions.Altimeter"
+                ]
+              },
+              "device": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "exports": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/properties/functions/items/oneOf/7/definitions/DCSDataElement"
+                }
+              },
+              "altitudeComments": {
+                "type": "string"
+              },
+              "pressureComments": {
+                "type": "string"
+              },
+              "device2": {
+                "type": "string"
+              },
+              "name2": {
+                "type": "string"
+              },
+              "description2": {
+                "type": "string"
+              },
+              "unimplemented": {
+                "type": "boolean",
+                "default": false
+              }
+            },
+            "required": [
+              "heliosType",
+              "device",
+              "name",
+              "exports"
+            ]
+          },
+          {
+            "definitions": {
+              "DCSDataElement": {
+                "type": "object",
+                "properties": {
+                  "format": {
+                    "type": "string"
+                  },
+                  "isExportedEveryFrame": {
+                    "type": "boolean"
+                  },
+                  "id": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id"
+                ]
+              }
+            },
+            "type": "object",
+            "properties": {
+              "heliosType": {
+                "enum": [
+                  "DCS.AV8B.Functions.SMCFuzeDisplay"
+                ]
+              },
+              "device": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "exports": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/properties/functions/items/oneOf/8/definitions/DCSDataElement"
+                }
+              },
+              "unimplemented": {
+                "type": "boolean",
+                "default": false
+              }
+            },
+            "required": [
+              "heliosType",
+              "device",
+              "name",
+              "exports"
+            ]
+          },
+          {
+            "definitions": {
+              "DCSDataElement": {
+                "type": "object",
+                "properties": {
+                  "format": {
+                    "type": "string"
+                  },
+                  "isExportedEveryFrame": {
+                    "type": "boolean"
+                  },
+                  "id": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id"
+                ]
+              }
+            },
+            "type": "object",
+            "properties": {
+              "heliosType": {
+                "enum": [
+                  "DCS.AV8B.Functions.Altimeter"
+                ]
+              },
+              "device": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "exports": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/properties/functions/items/oneOf/9/definitions/DCSDataElement"
+                }
+              },
+              "altitudeComments": {
+                "type": "string"
+              },
+              "pressureComments": {
+                "type": "string"
+              },
+              "device2": {
+                "type": "string"
+              },
+              "name2": {
+                "type": "string"
+              },
+              "description2": {
+                "type": "string"
+              },
+              "unimplemented": {
+                "type": "boolean",
+                "default": false
+              }
+            },
+            "required": [
+              "heliosType",
+              "device",
+              "name",
+              "exports"
+            ]
+          },
+          {
+            "definitions": {
+              "DCSDataElement": {
+                "type": "object",
+                "properties": {
+                  "format": {
+                    "type": "string"
+                  },
+                  "isExportedEveryFrame": {
+                    "type": "boolean"
+                  },
+                  "id": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id"
+                ]
+              }
+            },
+            "type": "object",
+            "properties": {
+              "heliosType": {
+                "enum": [
+                  "DCS.AV8B.Functions.Digits3Display"
+                ]
+              },
+              "device": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "exports": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/properties/functions/items/oneOf/10/definitions/DCSDataElement"
+                }
+              },
+              "unimplemented": {
+                "type": "boolean",
+                "default": false
+              }
+            },
+            "required": [
+              "heliosType",
+              "device",
+              "name",
+              "exports"
+            ]
+          },
+          {
+            "definitions": {
+              "DCSDataElement": {
+                "type": "object",
+                "properties": {
+                  "format": {
+                    "type": "string"
+                  },
+                  "isExportedEveryFrame": {
+                    "type": "boolean"
+                  },
+                  "id": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id"
+                ]
+              }
+            },
+            "type": "object",
+            "properties": {
+              "heliosType": {
+                "enum": [
+                  "DCS.AV8B.Functions.Digits4Display"
+                ]
+              },
+              "device": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "exports": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/properties/functions/items/oneOf/11/definitions/DCSDataElement"
+                }
+              },
+              "unimplemented": {
+                "type": "boolean",
+                "default": false
+              }
+            },
+            "required": [
+              "heliosType",
+              "device",
+              "name",
+              "exports"
+            ]
+          },
+          {
+            "definitions": {
+              "DCSDataElement": {
+                "type": "object",
+                "properties": {
+                  "format": {
+                    "type": "string"
+                  },
+                  "isExportedEveryFrame": {
+                    "type": "boolean"
+                  },
+                  "id": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id"
+                ]
+              }
+            },
+            "type": "object",
+            "properties": {
+              "heliosType": {
+                "enum": [
+                  "DCS.AV8B.Functions.SMCMultipleDisplay"
+                ]
+              },
+              "device": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "exports": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/properties/functions/items/oneOf/12/definitions/DCSDataElement"
+                }
+              },
+              "unimplemented": {
+                "type": "boolean",
+                "default": false
+              }
+            },
+            "required": [
+              "heliosType",
+              "device",
+              "name",
+              "exports"
+            ]
+          },
+          {
+            "definitions": {
+              "DCSDataElement": {
+                "type": "object",
+                "properties": {
+                  "format": {
+                    "type": "string"
+                  },
+                  "isExportedEveryFrame": {
+                    "type": "boolean"
+                  },
+                  "id": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id"
+                ]
+              }
+            },
+            "type": "object",
+            "properties": {
+              "heliosType": {
+                "enum": [
+                  "DCS.AV8B.Functions.Digits2Display"
+                ]
+              },
+              "device": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "exports": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/properties/functions/items/oneOf/13/definitions/DCSDataElement"
+                }
+              },
+              "unimplemented": {
+                "type": "boolean",
+                "default": false
+              }
+            },
+            "required": [
+              "heliosType",
+              "device",
+              "name",
+              "exports"
+            ]
+          },
+          {
+            "definitions": {
+              "DCSDataElement": {
+                "type": "object",
+                "properties": {
+                  "format": {
+                    "type": "string"
+                  },
+                  "isExportedEveryFrame": {
+                    "type": "boolean"
+                  },
+                  "id": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id"
+                ]
+              }
+            },
+            "type": "object",
+            "properties": {
+              "heliosType": {
+                "enum": [
+                  "DCS.AV8B.Functions.FuelTotalDisplay"
+                ]
+              },
+              "device": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "exports": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/properties/functions/items/oneOf/14/definitions/DCSDataElement"
+                }
+              },
+              "unimplemented": {
+                "type": "boolean",
+                "default": false
+              }
+            },
+            "required": [
+              "heliosType",
+              "device",
+              "name",
+              "exports"
+            ]
+          },
+          {
+            "definitions": {
+              "DCSDataElement": {
+                "type": "object",
+                "properties": {
+                  "format": {
+                    "type": "string"
+                  },
+                  "isExportedEveryFrame": {
+                    "type": "boolean"
+                  },
+                  "id": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id"
+                ]
+              }
+            },
+            "type": "object",
+            "properties": {
+              "heliosType": {
+                "enum": [
+                  "DCS.Common.IndicatorDimmable"
+                ]
+              },
+              "device": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "exports": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/properties/functions/items/oneOf/15/definitions/DCSDataElement"
+                }
+              },
+              "unimplemented": {
+                "type": "boolean",
+                "default": false
+              }
+            },
+            "required": [
+              "heliosType",
+              "device",
+              "name",
+              "exports"
+            ]
+          },
+          {
+            "definitions": {
+              "DCSDataElement": {
+                "type": "object",
+                "properties": {
+                  "format": {
+                    "type": "string"
+                  },
+                  "isExportedEveryFrame": {
+                    "type": "boolean"
+                  },
+                  "id": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id"
+                ]
+              }
+            },
+            "type": "object",
+            "properties": {
+              "heliosType": {
+                "enum": [
+                  "DCS.Common.NetworkTrigger"
+                ]
+              },
+              "device": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "exports": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/properties/functions/items/oneOf/16/definitions/DCSDataElement"
+                }
+              },
+              "unimplemented": {
+                "type": "boolean",
+                "default": false
+              }
+            },
+            "required": [
+              "heliosType",
+              "device",
+              "name",
+              "exports"
+            ]
+          },
+          {
+            "definitions": {
+              "DCSDataElement": {
+                "type": "object",
+                "properties": {
+                  "format": {
+                    "type": "string"
+                  },
+                  "isExportedEveryFrame": {
+                    "type": "boolean"
+                  },
+                  "id": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id"
+                ]
+              }
+            },
+            "type": "object",
+            "properties": {
+              "heliosType": {
+                "enum": [
+                  "DCS.Common.NetworkTriggerValue"
+                ]
+              },
+              "device": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "exports": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/properties/functions/items/oneOf/17/definitions/DCSDataElement"
+                }
+              },
+              "valueDescription": {
+                "type": "string"
+              },
+              "unimplemented": {
+                "type": "boolean",
+                "default": false
+              }
+            },
+            "required": [
+              "heliosType",
+              "device",
+              "name",
+              "exports"
+            ]
+          },
+          {
+            "definitions": {
+              "ExportDataElement": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id"
+                ]
+              }
+            },
+            "type": "object",
+            "properties": {
+              "heliosType": {
+                "enum": [
+                  "DCS.Common.SilentValueConsumer"
+                ]
+              },
+              "exports": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/properties/functions/items/oneOf/18/definitions/ExportDataElement"
+                }
+              },
+              "id": {
+                "type": "string"
+              },
+              "unimplemented": {
+                "type": "boolean",
+                "default": false
+              }
+            },
+            "required": [
+              "heliosType",
+              "exports"
+            ]
+          },
+          {
+            "definitions": {
+              "BindingValueUnit": {
+                "enum": [
+                  "NoValue",
+                  "Numeric",
+                  "Text",
+                  "Boolean",
+                  "Radians",
+                  "Degrees",
+                  "Celsius",
+                  "Meters",
+                  "Kilometers",
+                  "Feet",
+                  "Miles",
+                  "NauticalMiles",
+                  "RPMPercent",
+                  "Seconds",
+                  "Minutes",
+                  "Hours",
+                  "Pounds",
+                  "Kilograms",
+                  "SquareInch",
+                  "SquareFoot",
+                  "SquareCentimeter",
+                  "MetersPerSecond",
+                  "FeetPerSecond",
+                  "FeetPerMinute",
+                  "MilesPerHour",
+                  "Knots",
+                  "KilometersPerHour",
+                  "PoundsPerHour",
+                  "PoundsPerSquareInch",
+                  "PoundsPerSquareFoot",
+                  "InchesOfMercury",
+                  "MilimetersOfMercury",
+                  "KilgramsForcePerSquareCentimenter",
+                  "Liters"
+                ]
+              },
+              "CalibrationPointCollectionDouble": {
+                "type": "object",
+                "properties": {
+                  "points": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "value": {
+                          "type": "number"
+                        },
+                        "mappedValue": {
+                          "type": "number"
+                        }
+                      }
+                    }
+                  },
+                  "OutputLimitMin": {
+                    "type": "number"
+                  },
+                  "OutputLimitMax": {
+                    "type": "number"
+                  },
+                  "precision": {
+                    "type": "integer"
+                  }
+                }
+              },
+              "CalibrationPointDouble": {
+                "$ref": "#/properties/functions/items/oneOf/19/definitions/CalibrationPointCollectionDouble/properties/points/items"
+              },
+              "DCSDataElement": {
+                "type": "object",
+                "properties": {
+                  "format": {
+                    "type": "string"
+                  },
+                  "isExportedEveryFrame": {
+                    "type": "boolean"
+                  },
+                  "id": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id"
+                ]
+              }
+            },
+            "type": "object",
+            "properties": {
+              "heliosType": {
+                "enum": [
+                  "DCS.Common.DualNetworkValue"
+                ]
+              },
+              "device": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "exports": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/properties/functions/items/oneOf/19/definitions/DCSDataElement"
+                }
+              },
+              "calibration": {
+                "$ref": "#/properties/functions/items/oneOf/19/definitions/CalibrationPointCollectionDouble"
+              },
+              "baseValue": {
+                "type": "number"
+              },
+              "scale": {
+                "type": "number"
+              },
+              "unit": {
+                "$ref": "#/properties/functions/items/oneOf/19/definitions/BindingValueUnit"
+              },
+              "unimplemented": {
+                "type": "boolean",
+                "default": false
+              },
+              "valueDescription": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "heliosType",
+              "device",
+              "name",
+              "exports"
+            ]
+          },
+          {
+            "definitions": {
+              "DCSDataElement": {
+                "type": "object",
+                "properties": {
+                  "format": {
+                    "type": "string"
+                  },
+                  "isExportedEveryFrame": {
+                    "type": "boolean"
+                  },
+                  "id": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id"
+                ]
+              },
+              "SerializedButton": {
+                "type": "object",
+                "properties": {
+                  "deviceId": {
+                    "type": "string"
+                  },
+                  "pushId": {
+                    "type": "string"
+                  },
+                  "pushValue": {
+                    "type": "string"
+                  },
+                  "releaseId": {
+                    "type": "string"
+                  },
+                  "releaseValue": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "deviceId",
+                  "pushId"
+                ]
+              }
+            },
+            "type": "object",
+            "properties": {
+              "heliosType": {
+                "enum": [
+                  "DCS.Common.DualRocker"
+                ]
+              },
+              "device": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "exports": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/properties/functions/items/oneOf/20/definitions/DCSDataElement"
+                }
+              },
+              "vertical": {
+                "type": "boolean"
+              },
+              "buttons": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/properties/functions/items/oneOf/20/definitions/SerializedButton"
+                }
+              },
+              "unimplemented": {
+                "type": "boolean",
+                "default": false
+              }
+            },
+            "required": [
+              "heliosType",
+              "device",
+              "name",
+              "exports"
+            ]
+          },
+          {
+            "definitions": {
+              "DCSDataElement": {
+                "type": "object",
+                "properties": {
+                  "format": {
+                    "type": "string"
+                  },
+                  "isExportedEveryFrame": {
+                    "type": "boolean"
+                  },
+                  "id": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id"
+                ]
+              },
+              "SerializedAction": {
+                "type": "object",
+                "properties": {
+                  "deviceId": {
+                    "type": "string"
+                  },
+                  "actionId": {
+                    "type": "string"
+                  },
+                  "actionValue": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "deviceId",
+                  "actionId"
+                ]
+              }
+            },
+            "type": "object",
+            "properties": {
+              "heliosType": {
+                "enum": [
+                  "DCS.Common.AbsoluteEncoder"
+                ]
+              },
+              "device": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "exports": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/properties/functions/items/oneOf/21/definitions/DCSDataElement"
+                }
+              },
+              "argumentValue": {
+                "type": "number"
+              },
+              "argumentMin": {
+                "type": "number"
+              },
+              "argumentMax": {
+                "type": "number"
+              },
+              "loop": {
+                "type": "boolean"
+              },
+              "actions": {
+                "type": "object",
+                "additionalProperties": {
+                  "$ref": "#/properties/functions/items/oneOf/21/definitions/SerializedAction"
+                }
+              },
+              "unimplemented": {
+                "type": "boolean",
+                "default": false
+              }
+            },
+            "required": [
+              "heliosType",
+              "device",
+              "name",
+              "exports",
+              "actions"
+            ]
+          },
+          {
+            "definitions": {
+              "DCSDataElement": {
+                "type": "object",
+                "properties": {
+                  "format": {
+                    "type": "string"
+                  },
+                  "isExportedEveryFrame": {
+                    "type": "boolean"
+                  },
+                  "id": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id"
+                ]
+              },
+              "SerializedAction": {
+                "type": "object",
+                "properties": {
+                  "deviceId": {
+                    "type": "string"
+                  },
+                  "actionId": {
+                    "type": "string"
+                  },
+                  "actionValue": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "deviceId",
+                  "actionId"
+                ]
+              }
+            },
+            "type": "object",
+            "properties": {
+              "heliosType": {
+                "enum": [
+                  "DCS.Common.Axis"
+                ]
+              },
+              "device": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "exports": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/properties/functions/items/oneOf/22/definitions/DCSDataElement"
+                }
+              },
+              "loop": {
+                "type": "boolean"
+              },
+              "argumentValue": {
+                "type": "number"
+              },
+              "argumentMin": {
+                "type": "number"
+              },
+              "argumentMax": {
+                "type": "number"
+              },
+              "actions": {
+                "type": "object",
+                "additionalProperties": {
+                  "$ref": "#/properties/functions/items/oneOf/22/definitions/SerializedAction"
+                }
+              },
+              "unimplemented": {
+                "type": "boolean",
+                "default": false
+              }
+            },
+            "required": [
+              "heliosType",
+              "device",
+              "name",
+              "exports",
+              "actions"
+            ]
+          },
+          {
+            "definitions": {
+              "DCSDataElement": {
+                "type": "object",
+                "properties": {
+                  "format": {
+                    "type": "string"
+                  },
+                  "isExportedEveryFrame": {
+                    "type": "boolean"
+                  },
+                  "id": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id"
+                ]
+              }
+            },
+            "type": "object",
+            "properties": {
+              "heliosType": {
+                "enum": [
+                  "DCS.Common.FlagValue"
+                ]
+              },
+              "device": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "exports": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/properties/functions/items/oneOf/23/definitions/DCSDataElement"
+                }
+              },
+              "unimplemented": {
+                "type": "boolean",
+                "default": false
+              }
+            },
+            "required": [
+              "heliosType",
+              "device",
+              "name",
+              "exports"
+            ]
+          },
+          {
+            "definitions": {
+              "DCSDataElement": {
+                "type": "object",
+                "properties": {
+                  "format": {
+                    "type": "string"
+                  },
+                  "isExportedEveryFrame": {
+                    "type": "boolean"
+                  },
+                  "id": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id"
+                ]
+              },
+              "SerializedAction": {
+                "type": "object",
+                "properties": {
+                  "deviceId": {
+                    "type": "string"
+                  },
+                  "actionId": {
+                    "type": "string"
+                  },
+                  "actionValue": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "deviceId",
+                  "actionId"
+                ]
+              },
+              "SwitchPosition": {
+                "type": "object",
+                "properties": {
+                  "exitValue": {
+                    "type": "string"
+                  },
+                  "argumentValue": {
+                    "type": "string"
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "actionID": {
+                    "type": "string"
+                  },
+                  "stopActionID": {
+                    "type": "string"
+                  },
+                  "stopActionValue": {
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            "type": "object",
+            "properties": {
+              "heliosType": {
+                "enum": [
+                  "DCS.Common.GuardedSwitch"
+                ]
+              },
+              "device": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "exports": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/properties/functions/items/oneOf/24/definitions/DCSDataElement"
+                }
+              },
+              "deviceId": {
+                "type": "string"
+              },
+              "positions": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/properties/functions/items/oneOf/24/definitions/SwitchPosition"
+                }
+              },
+              "actions": {
+                "type": "object",
+                "additionalProperties": {
+                  "$ref": "#/properties/functions/items/oneOf/24/definitions/SerializedAction"
+                }
+              },
+              "guardPosition": {
+                "type": "integer"
+              },
+              "unimplemented": {
+                "type": "boolean",
+                "default": false
+              }
+            },
+            "required": [
+              "heliosType",
+              "device",
+              "name",
+              "exports"
+            ]
+          },
+          {
+            "definitions": {
+              "DCSDataElement": {
+                "type": "object",
+                "properties": {
+                  "format": {
+                    "type": "string"
+                  },
+                  "isExportedEveryFrame": {
+                    "type": "boolean"
+                  },
+                  "id": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id"
+                ]
+              },
+              "SerializedAction": {
+                "type": "object",
+                "properties": {
+                  "deviceId": {
+                    "type": "string"
+                  },
+                  "actionId": {
+                    "type": "string"
+                  },
+                  "actionValue": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "deviceId",
+                  "actionId"
+                ]
+              }
+            },
+            "type": "object",
+            "properties": {
+              "heliosType": {
+                "enum": [
+                  "DCS.Common.HatSwitch"
+                ]
+              },
+              "device": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "exports": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/properties/functions/items/oneOf/25/definitions/DCSDataElement"
+                }
+              },
+              "switchPosition": {
+                "type": "string",
+                "enum": [
+                  "Center",
+                  "Up",
+                  "Down",
+                  "Left",
+                  "Right"
+                ]
+              },
+              "actions": {
+                "type": "object",
+                "additionalProperties": {
+                  "$ref": "#/properties/functions/items/oneOf/25/definitions/SerializedAction"
+                }
+              },
+              "unimplemented": {
+                "type": "boolean",
+                "default": false
+              }
+            },
+            "required": [
+              "heliosType",
+              "device",
+              "name",
+              "exports",
+              "actions"
+            ]
+          },
+          {
+            "definitions": {
+              "DCSDataElement": {
+                "type": "object",
+                "properties": {
+                  "format": {
+                    "type": "string"
+                  },
+                  "isExportedEveryFrame": {
+                    "type": "boolean"
+                  },
+                  "id": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id"
+                ]
+              },
+              "SerializedButton": {
+                "type": "object",
+                "properties": {
+                  "deviceId": {
+                    "type": "string"
+                  },
+                  "pushId": {
+                    "type": "string"
+                  },
+                  "pushValue": {
+                    "type": "string"
+                  },
+                  "releaseId": {
+                    "type": "string"
+                  },
+                  "releaseValue": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "deviceId",
+                  "pushId"
+                ]
+              }
+            },
+            "type": "object",
+            "properties": {
+              "heliosType": {
+                "enum": [
+                  "DCS.Common.IndicatorPushButton"
+                ]
+              },
+              "device": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "exports": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/properties/functions/items/oneOf/26/definitions/DCSDataElement"
+                }
+              },
+              "buttons": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/properties/functions/items/oneOf/26/definitions/SerializedButton"
+                }
+              },
+              "unimplemented": {
+                "type": "boolean",
+                "default": false
+              }
+            },
+            "required": [
+              "heliosType",
+              "device",
+              "name",
+              "exports"
+            ]
+          },
+          {
+            "definitions": {
+              "DCSDataElement": {
+                "type": "object",
+                "properties": {
+                  "format": {
+                    "type": "string"
+                  },
+                  "isExportedEveryFrame": {
+                    "type": "boolean"
+                  },
+                  "id": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id"
+                ]
+              },
+              "SerializedAction": {
+                "type": "object",
+                "properties": {
+                  "deviceId": {
+                    "type": "string"
+                  },
+                  "actionId": {
+                    "type": "string"
+                  },
+                  "actionValue": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "deviceId",
+                  "actionId"
+                ]
+              }
+            },
+            "type": "object",
+            "properties": {
+              "heliosType": {
+                "enum": [
+                  "DCS.Common.LockedEncoder"
+                ]
+              },
+              "device": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "exports": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/properties/functions/items/oneOf/27/definitions/DCSDataElement"
+                }
+              },
+              "actions": {
+                "type": "object",
+                "additionalProperties": {
+                  "$ref": "#/properties/functions/items/oneOf/27/definitions/SerializedAction"
+                }
+              },
+              "unimplemented": {
+                "type": "boolean",
+                "default": false
+              }
+            },
+            "required": [
+              "heliosType",
+              "device",
+              "name",
+              "exports",
+              "actions"
+            ]
+          },
+          {
+            "definitions": {
+              "BindingValueUnit": {
+                "enum": [
+                  "NoValue",
+                  "Numeric",
+                  "Text",
+                  "Boolean",
+                  "Radians",
+                  "Degrees",
+                  "Celsius",
+                  "Meters",
+                  "Kilometers",
+                  "Feet",
+                  "Miles",
+                  "NauticalMiles",
+                  "RPMPercent",
+                  "Seconds",
+                  "Minutes",
+                  "Hours",
+                  "Pounds",
+                  "Kilograms",
+                  "SquareInch",
+                  "SquareFoot",
+                  "SquareCentimeter",
+                  "MetersPerSecond",
+                  "FeetPerSecond",
+                  "FeetPerMinute",
+                  "MilesPerHour",
+                  "Knots",
+                  "KilometersPerHour",
+                  "PoundsPerHour",
+                  "PoundsPerSquareInch",
+                  "PoundsPerSquareFoot",
+                  "InchesOfMercury",
+                  "MilimetersOfMercury",
+                  "KilgramsForcePerSquareCentimenter",
+                  "Liters"
+                ]
+              },
+              "DCSDataElement": {
+                "type": "object",
+                "properties": {
+                  "format": {
+                    "type": "string"
+                  },
+                  "isExportedEveryFrame": {
+                    "type": "boolean"
+                  },
+                  "id": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id"
+                ]
+              }
+            },
+            "type": "object",
+            "properties": {
+              "heliosType": {
+                "enum": [
+                  "DCS.Common.NetworkValue"
+                ]
+              },
+              "device": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "exports": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/properties/functions/items/oneOf/28/definitions/DCSDataElement"
+                }
+              },
+              "valueDescription": {
+                "type": "string"
+              },
+              "unit": {
+                "$ref": "#/properties/functions/items/oneOf/28/definitions/BindingValueUnit"
+              },
+              "unimplemented": {
+                "type": "boolean",
+                "default": false
+              }
+            },
+            "required": [
+              "heliosType",
+              "device",
+              "name",
+              "exports"
+            ]
+          },
+          {
+            "definitions": {
+              "DCSDataElement": {
+                "type": "object",
+                "properties": {
+                  "format": {
+                    "type": "string"
+                  },
+                  "isExportedEveryFrame": {
+                    "type": "boolean"
+                  },
+                  "id": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id"
+                ]
+              },
+              "SerializedButton": {
+                "type": "object",
+                "properties": {
+                  "deviceId": {
+                    "type": "string"
+                  },
+                  "pushId": {
+                    "type": "string"
+                  },
+                  "pushValue": {
+                    "type": "string"
+                  },
+                  "releaseId": {
+                    "type": "string"
+                  },
+                  "releaseValue": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "deviceId",
+                  "pushId"
+                ]
+              }
+            },
+            "type": "object",
+            "properties": {
+              "heliosType": {
+                "enum": [
+                  "DCS.Common.PushButton"
+                ]
+              },
+              "device": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "exports": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/properties/functions/items/oneOf/29/definitions/DCSDataElement"
+                }
+              },
+              "buttons": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/properties/functions/items/oneOf/29/definitions/SerializedButton"
+                }
+              },
+              "unimplemented": {
+                "type": "boolean",
+                "default": false
+              }
+            },
+            "required": [
+              "heliosType",
+              "device",
+              "name",
+              "exports"
+            ]
+          },
+          {
+            "definitions": {
+              "DCSDataElement": {
+                "type": "object",
+                "properties": {
+                  "format": {
+                    "type": "string"
+                  },
+                  "isExportedEveryFrame": {
+                    "type": "boolean"
+                  },
+                  "id": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id"
+                ]
+              },
+              "SerializedButton": {
+                "type": "object",
+                "properties": {
+                  "deviceId": {
+                    "type": "string"
+                  },
+                  "pushId": {
+                    "type": "string"
+                  },
+                  "pushValue": {
+                    "type": "string"
+                  },
+                  "releaseId": {
+                    "type": "string"
+                  },
+                  "releaseValue": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "deviceId",
+                  "pushId"
+                ]
+              }
+            },
+            "type": "object",
+            "properties": {
+              "heliosType": {
+                "enum": [
+                  "DCS.Common.Rocker"
+                ]
+              },
+              "device": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "exports": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/properties/functions/items/oneOf/30/definitions/DCSDataElement"
+                }
+              },
+              "vertical": {
+                "type": "boolean"
+              },
+              "buttons": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/properties/functions/items/oneOf/30/definitions/SerializedButton"
+                }
+              },
+              "unimplemented": {
+                "type": "boolean",
+                "default": false
+              }
+            },
+            "required": [
+              "heliosType",
+              "device",
+              "name",
+              "exports"
+            ]
+          },
+          {
+            "definitions": {
+              "DCSDataElement": {
+                "type": "object",
+                "properties": {
+                  "format": {
+                    "type": "string"
+                  },
+                  "isExportedEveryFrame": {
+                    "type": "boolean"
+                  },
+                  "id": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id"
+                ]
+              },
+              "SerializedAction": {
+                "type": "object",
+                "properties": {
+                  "deviceId": {
+                    "type": "string"
+                  },
+                  "actionId": {
+                    "type": "string"
+                  },
+                  "actionValue": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "deviceId",
+                  "actionId"
+                ]
+              }
+            },
+            "type": "object",
+            "properties": {
+              "heliosType": {
+                "enum": [
+                  "DCS.Common.RotaryEncoder"
+                ]
+              },
+              "device": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "exports": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/properties/functions/items/oneOf/31/definitions/DCSDataElement"
+                }
+              },
+              "argumentValue": {
+                "type": "number"
+              },
+              "actions": {
+                "type": "object",
+                "additionalProperties": {
+                  "$ref": "#/properties/functions/items/oneOf/31/definitions/SerializedAction"
+                }
+              },
+              "unimplemented": {
+                "type": "boolean",
+                "default": false
+              }
+            },
+            "required": [
+              "heliosType",
+              "device",
+              "name",
+              "exports",
+              "actions"
+            ]
+          },
+          {
+            "definitions": {
+              "BindingValueUnit": {
+                "enum": [
+                  "NoValue",
+                  "Numeric",
+                  "Text",
+                  "Boolean",
+                  "Radians",
+                  "Degrees",
+                  "Celsius",
+                  "Meters",
+                  "Kilometers",
+                  "Feet",
+                  "Miles",
+                  "NauticalMiles",
+                  "RPMPercent",
+                  "Seconds",
+                  "Minutes",
+                  "Hours",
+                  "Pounds",
+                  "Kilograms",
+                  "SquareInch",
+                  "SquareFoot",
+                  "SquareCentimeter",
+                  "MetersPerSecond",
+                  "FeetPerSecond",
+                  "FeetPerMinute",
+                  "MilesPerHour",
+                  "Knots",
+                  "KilometersPerHour",
+                  "PoundsPerHour",
+                  "PoundsPerSquareInch",
+                  "PoundsPerSquareFoot",
+                  "InchesOfMercury",
+                  "MilimetersOfMercury",
+                  "KilgramsForcePerSquareCentimenter",
+                  "Liters"
+                ]
+              },
+              "CalibrationPointCollectionDouble": {
+                "type": "object",
+                "properties": {
+                  "points": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "value": {
+                          "type": "number"
+                        },
+                        "mappedValue": {
+                          "type": "number"
+                        }
+                      }
+                    }
+                  },
+                  "OutputLimitMin": {
+                    "type": "number"
+                  },
+                  "OutputLimitMax": {
+                    "type": "number"
+                  },
+                  "precision": {
+                    "type": "integer"
+                  }
+                }
+              },
+              "CalibrationPointDouble": {
+                "$ref": "#/properties/functions/items/oneOf/32/definitions/CalibrationPointCollectionDouble/properties/points/items"
+              },
+              "DCSDataElement": {
+                "type": "object",
+                "properties": {
+                  "format": {
+                    "type": "string"
+                  },
+                  "isExportedEveryFrame": {
+                    "type": "boolean"
+                  },
+                  "id": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id"
+                ]
+              }
+            },
+            "type": "object",
+            "properties": {
+              "heliosType": {
+                "enum": [
+                  "DCS.Common.ScaledNetworkValue"
+                ]
+              },
+              "device": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "exports": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/properties/functions/items/oneOf/32/definitions/DCSDataElement"
+                }
+              },
+              "calibration": {
+                "$ref": "#/properties/functions/items/oneOf/32/definitions/CalibrationPointCollectionDouble"
+              },
+              "baseValue": {
+                "type": "number"
+              },
+              "scale": {
+                "type": "number"
+              },
+              "valueDescription": {
+                "type": "string"
+              },
+              "unit": {
+                "$ref": "#/properties/functions/items/oneOf/32/definitions/BindingValueUnit"
+              },
+              "unimplemented": {
+                "type": "boolean",
+                "default": false
+              }
+            },
+            "required": [
+              "heliosType",
+              "device",
+              "name",
+              "exports"
+            ]
+          },
+          {
+            "definitions": {
+              "DCSDataElement": {
+                "type": "object",
+                "properties": {
+                  "format": {
+                    "type": "string"
+                  },
+                  "isExportedEveryFrame": {
+                    "type": "boolean"
+                  },
+                  "id": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id"
+                ]
+              },
+              "SwitchPosition": {
+                "type": "object",
+                "properties": {
+                  "exitValue": {
+                    "type": "string"
+                  },
+                  "argumentValue": {
+                    "type": "string"
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "actionID": {
+                    "type": "string"
+                  },
+                  "stopActionID": {
+                    "type": "string"
+                  },
+                  "stopActionValue": {
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            "type": "object",
+            "properties": {
+              "heliosType": {
+                "enum": [
+                  "DCS.Common.Switch"
+                ]
+              },
+              "device": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "exports": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/properties/functions/items/oneOf/33/definitions/DCSDataElement"
+                }
+              },
+              "deviceId": {
+                "type": "string"
+              },
+              "positions": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/properties/functions/items/oneOf/33/definitions/SwitchPosition"
+                }
+              },
+              "unimplemented": {
+                "type": "boolean",
+                "default": false
+              }
+            },
+            "required": [
+              "heliosType",
+              "device",
+              "name",
+              "exports"
+            ]
+          },
+          {
+            "definitions": {
+              "DCSDataElement": {
+                "type": "object",
+                "properties": {
+                  "format": {
+                    "type": "string"
+                  },
+                  "isExportedEveryFrame": {
+                    "type": "boolean"
+                  },
+                  "id": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id"
+                ]
+              }
+            },
+            "type": "object",
+            "properties": {
+              "heliosType": {
+                "enum": [
+                  "DCS.Common.Text"
+                ]
+              },
+              "device": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "exports": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/properties/functions/items/oneOf/34/definitions/DCSDataElement"
+                }
+              },
+              "unimplemented": {
+                "type": "boolean",
+                "default": false
+              }
+            },
+            "required": [
+              "heliosType",
+              "device",
+              "name",
+              "exports"
+            ]
+          },
+          {
+            "definitions": {
+              "DCSDataElement": {
+                "type": "object",
+                "properties": {
+                  "format": {
+                    "type": "string"
+                  },
+                  "isExportedEveryFrame": {
+                    "type": "boolean"
+                  },
+                  "id": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id"
+                ]
+              }
+            },
+            "type": "object",
+            "properties": {
+              "heliosType": {
+                "enum": [
+                  "DCS.Template.Functions.ExampleFunction"
+                ]
+              },
+              "device": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "exports": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/properties/functions/items/oneOf/35/definitions/DCSDataElement"
+                }
+              },
+              "unimplemented": {
+                "type": "boolean",
+                "default": false
+              }
+            },
+            "required": [
+              "heliosType",
+              "device",
+              "name",
+              "exports"
+            ]
+          },
+          {
+            "definitions": {
+              "DCSDataElement": {
+                "type": "object",
+                "properties": {
+                  "format": {
+                    "type": "string"
+                  },
+                  "isExportedEveryFrame": {
+                    "type": "boolean"
+                  },
+                  "id": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id"
+                ]
+              }
+            },
+            "type": "object",
+            "properties": {
+              "heliosType": {
+                "enum": [
+                  "DCS.A10C.Functions.Altimeter"
+                ]
+              },
+              "device": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "exports": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/properties/functions/items/oneOf/36/definitions/DCSDataElement"
+                }
+              },
+              "device2": {
+                "type": "string"
+              },
+              "name2": {
+                "type": "string"
+              },
+              "description2": {
+                "type": "string"
+              },
+              "unimplemented": {
+                "type": "boolean",
+                "default": false
+              }
+            },
+            "required": [
+              "heliosType",
+              "device",
+              "name",
+              "exports"
+            ]
+          },
+          {
+            "definitions": {
+              "DCSDataElement": {
+                "type": "object",
+                "properties": {
+                  "format": {
+                    "type": "string"
+                  },
+                  "isExportedEveryFrame": {
+                    "type": "boolean"
+                  },
+                  "id": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id"
+                ]
+              }
+            },
+            "type": "object",
+            "properties": {
+              "heliosType": {
+                "enum": [
+                  "DCS.A10C.Functions.HSIMiles"
+                ]
+              },
+              "device": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "exports": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/properties/functions/items/oneOf/37/definitions/DCSDataElement"
+                }
+              },
+              "unimplemented": {
+                "type": "boolean",
+                "default": false
+              }
+            },
+            "required": [
+              "heliosType",
+              "device",
+              "name",
+              "exports"
+            ]
+          },
+          {
+            "definitions": {
+              "DCSDataElement": {
+                "type": "object",
+                "properties": {
+                  "format": {
+                    "type": "string"
+                  },
+                  "isExportedEveryFrame": {
+                    "type": "boolean"
+                  },
+                  "id": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id"
+                ]
+              }
+            },
+            "type": "object",
+            "properties": {
+              "heliosType": {
+                "enum": [
+                  "DCS.A10C.Functions.ILSFrequency"
+                ]
+              },
+              "device": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "exports": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/properties/functions/items/oneOf/38/definitions/DCSDataElement"
+                }
+              },
+              "unimplemented": {
+                "type": "boolean",
+                "default": false
+              }
+            },
+            "required": [
+              "heliosType",
+              "device",
+              "name",
+              "exports"
+            ]
+          },
+          {
+            "definitions": {
+              "DCSDataElement": {
+                "type": "object",
+                "properties": {
+                  "format": {
+                    "type": "string"
+                  },
+                  "isExportedEveryFrame": {
+                    "type": "boolean"
+                  },
+                  "id": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id"
+                ]
+              }
+            },
+            "type": "object",
+            "properties": {
+              "heliosType": {
+                "enum": [
+                  "DCS.A10C.Functions.TACANChannel"
+                ]
+              },
+              "device": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "exports": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/properties/functions/items/oneOf/39/definitions/DCSDataElement"
+                }
+              },
+              "device2": {
+                "type": "string"
+              },
+              "name2": {
+                "type": "string"
+              },
+              "description2": {
+                "type": "string"
+              },
+              "unimplemented": {
+                "type": "boolean",
+                "default": false
+              }
+            },
+            "required": [
+              "heliosType",
+              "device",
+              "name",
+              "exports"
+            ]
+          },
+          {
+            "definitions": {
+              "DCSDataElement": {
+                "type": "object",
+                "properties": {
+                  "format": {
+                    "type": "string"
+                  },
+                  "isExportedEveryFrame": {
+                    "type": "boolean"
+                  },
+                  "id": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id"
+                ]
+              }
+            },
+            "type": "object",
+            "properties": {
+              "heliosType": {
+                "enum": [
+                  "DCS.A10C.Functions.TotalFuel"
+                ]
+              },
+              "device": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "exports": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/properties/functions/items/oneOf/40/definitions/DCSDataElement"
+                }
+              },
+              "unimplemented": {
+                "type": "boolean",
+                "default": false
+              }
+            },
+            "required": [
+              "heliosType",
+              "device",
+              "name",
+              "exports"
+            ]
+          },
+          {
+            "definitions": {
+              "DCSDataElement": {
+                "type": "object",
+                "properties": {
+                  "format": {
+                    "type": "string"
+                  },
+                  "isExportedEveryFrame": {
+                    "type": "boolean"
+                  },
+                  "id": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id"
+                ]
+              },
+              "SerializedAction": {
+                "type": "object",
+                "properties": {
+                  "deviceId": {
+                    "type": "string"
+                  },
+                  "actionId": {
+                    "type": "string"
+                  },
+                  "actionValue": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "deviceId",
+                  "actionId"
+                ]
+              }
+            },
+            "type": "object",
+            "properties": {
+              "heliosType": {
+                "enum": [
+                  "DCS.A10C.Functions.VHFPresetSelector"
+                ]
+              },
+              "device": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "exports": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/properties/functions/items/oneOf/41/definitions/DCSDataElement"
+                }
+              },
+              "loop": {
+                "type": "boolean"
+              },
+              "argumentValue": {
+                "type": "number"
+              },
+              "argumentMin": {
+                "type": "number"
+              },
+              "argumentMax": {
+                "type": "number"
+              },
+              "actions": {
+                "type": "object",
+                "additionalProperties": {
+                  "$ref": "#/properties/functions/items/oneOf/41/definitions/SerializedAction"
+                }
+              },
+              "unimplemented": {
+                "type": "boolean",
+                "default": false
+              }
+            },
+            "required": [
+              "heliosType",
+              "device",
+              "name",
+              "exports",
+              "actions"
+            ]
+          },
+          {
+            "definitions": {
+              "DCSDataElement": {
+                "type": "object",
+                "properties": {
+                  "format": {
+                    "type": "string"
+                  },
+                  "isExportedEveryFrame": {
+                    "type": "boolean"
+                  },
+                  "id": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id"
+                ]
+              },
+              "SerializedAction": {
+                "type": "object",
+                "properties": {
+                  "deviceId": {
+                    "type": "string"
+                  },
+                  "actionId": {
+                    "type": "string"
+                  },
+                  "actionValue": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "deviceId",
+                  "actionId"
+                ]
+              }
+            },
+            "type": "object",
+            "properties": {
+              "heliosType": {
+                "enum": [
+                  "DCS.A10C.Functions.VHFRadioEncoder"
+                ]
+              },
+              "device": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "exports": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/properties/functions/items/oneOf/42/definitions/DCSDataElement"
+                }
+              },
+              "loop": {
+                "type": "boolean"
+              },
+              "argumentValue": {
+                "type": "number"
+              },
+              "argumentMin": {
+                "type": "number"
+              },
+              "argumentMax": {
+                "type": "number"
+              },
+              "actions": {
+                "type": "object",
+                "additionalProperties": {
+                  "$ref": "#/properties/functions/items/oneOf/42/definitions/SerializedAction"
+                }
+              },
+              "unimplemented": {
+                "type": "boolean",
+                "default": false
+              }
+            },
+            "required": [
+              "heliosType",
+              "device",
+              "name",
+              "exports",
+              "actions"
+            ]
+          },
+          {
+            "definitions": {
+              "DCSDataElement": {
+                "type": "object",
+                "properties": {
+                  "format": {
+                    "type": "string"
+                  },
+                  "isExportedEveryFrame": {
+                    "type": "boolean"
+                  },
+                  "id": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id"
+                ]
+              },
+              "SerializedAction": {
+                "type": "object",
+                "properties": {
+                  "deviceId": {
+                    "type": "string"
+                  },
+                  "actionId": {
+                    "type": "string"
+                  },
+                  "actionValue": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "deviceId",
+                  "actionId"
+                ]
+              }
+            },
+            "type": "object",
+            "properties": {
+              "heliosType": {
+                "enum": [
+                  "DCS.A10C.Functions.VHFRadioEncoder1"
+                ]
+              },
+              "device": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "exports": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/properties/functions/items/oneOf/43/definitions/DCSDataElement"
+                }
+              },
+              "loop": {
+                "type": "boolean"
+              },
+              "argumentValue": {
+                "type": "number"
+              },
+              "argumentMin": {
+                "type": "number"
+              },
+              "argumentMax": {
+                "type": "number"
+              },
+              "actions": {
+                "type": "object",
+                "additionalProperties": {
+                  "$ref": "#/properties/functions/items/oneOf/43/definitions/SerializedAction"
+                }
+              },
+              "unimplemented": {
+                "type": "boolean",
+                "default": false
+              }
+            },
+            "required": [
+              "heliosType",
+              "device",
+              "name",
+              "exports",
+              "actions"
+            ]
+          },
+          {
+            "definitions": {
+              "DCSDataElement": {
+                "type": "object",
+                "properties": {
+                  "format": {
+                    "type": "string"
+                  },
+                  "isExportedEveryFrame": {
+                    "type": "boolean"
+                  },
+                  "id": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id"
+                ]
+              },
+              "SerializedAction": {
+                "type": "object",
+                "properties": {
+                  "deviceId": {
+                    "type": "string"
+                  },
+                  "actionId": {
+                    "type": "string"
+                  },
+                  "actionValue": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "deviceId",
+                  "actionId"
+                ]
+              }
+            },
+            "type": "object",
+            "properties": {
+              "heliosType": {
+                "enum": [
+                  "DCS.A10C.Functions.VHFRadioEncoder3"
+                ]
+              },
+              "device": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "exports": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/properties/functions/items/oneOf/44/definitions/DCSDataElement"
+                }
+              },
+              "loop": {
+                "type": "boolean"
+              },
+              "argumentValue": {
+                "type": "number"
+              },
+              "argumentMin": {
+                "type": "number"
+              },
+              "argumentMax": {
+                "type": "number"
+              },
+              "actions": {
+                "type": "object",
+                "additionalProperties": {
+                  "$ref": "#/properties/functions/items/oneOf/44/definitions/SerializedAction"
+                }
+              },
+              "unimplemented": {
+                "type": "boolean",
+                "default": false
+              }
+            },
+            "required": [
+              "heliosType",
+              "device",
+              "name",
+              "exports",
+              "actions"
+            ]
+          },
+          {
+            "definitions": {
+              "DCSDataElement": {
+                "type": "object",
+                "properties": {
+                  "format": {
+                    "type": "string"
+                  },
+                  "isExportedEveryFrame": {
+                    "type": "boolean"
+                  },
+                  "id": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id"
+                ]
+              },
+              "SerializedAction": {
+                "type": "object",
+                "properties": {
+                  "deviceId": {
+                    "type": "string"
+                  },
+                  "actionId": {
+                    "type": "string"
+                  },
+                  "actionValue": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "deviceId",
+                  "actionId"
+                ]
+              }
+            },
+            "type": "object",
+            "properties": {
+              "heliosType": {
+                "enum": [
+                  "DCS.A10C.Functions.VHFRadioEncoder4"
+                ]
+              },
+              "device": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "exports": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/properties/functions/items/oneOf/45/definitions/DCSDataElement"
+                }
+              },
+              "loop": {
+                "type": "boolean"
+              },
+              "argumentValue": {
+                "type": "number"
+              },
+              "argumentMin": {
+                "type": "number"
+              },
+              "argumentMax": {
+                "type": "number"
+              },
+              "actions": {
+                "type": "object",
+                "additionalProperties": {
+                  "$ref": "#/properties/functions/items/oneOf/45/definitions/SerializedAction"
+                }
+              },
+              "unimplemented": {
+                "type": "boolean",
+                "default": false
+              }
+            },
+            "required": [
+              "heliosType",
+              "device",
+              "name",
+              "exports",
+              "actions"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
