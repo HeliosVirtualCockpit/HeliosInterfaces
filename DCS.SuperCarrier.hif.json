@@ -1,0 +1,128 @@
+{
+  "source": "DCSFlightPanels",
+  "version": "0x700",
+  "commit": "e4a855f81754fb11d7e074ba6a836837c0f6823c",
+  "type": "DCS",
+  "name": "DCS SuperCarrier",
+  "module": "SuperCarrier",
+  "vehicles": [
+    "F-14B",
+    "F-14A-135-GR"
+  ],
+  "functions": [
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Lights",
+      "name": "Master Caution Light (yellow)",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "10"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Lights",
+      "name": "CUT Light (green)",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "11"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Lights",
+      "name": "CUT Light (red)",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "12"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Lights",
+      "name": "ACLS WaveOff Light (blue)",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "17"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Panel",
+      "name": "Cut Lights",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "27"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "0",
+          "pushId": "3002",
+          "pushValue": "1",
+          "releaseId": "3002",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Panel",
+      "name": "WaveOff Lights",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "28"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "0",
+          "pushId": "3003",
+          "pushValue": "1",
+          "releaseId": "3003",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Panel",
+      "name": "DECK Lights On",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "34"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "0",
+          "pushId": "3004",
+          "pushValue": "1",
+          "releaseId": "3004",
+          "releaseValue": "0"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,5180 @@
+{
+  "source": "DCSFlightPanels",
+  "version": "0x8800",
+  "commit": "42ce6d9d05321c973efee68acad67003b92ffe62",
+  "type": "DCS",
+  "name": "DCS A-29B",
+  "module": "A-29B",
+  "vehicles": [
+    "A-29B"
+  ],
+  "functions": [
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Audio",
+      "name": "Audio Selector (Normal/Backup)",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "761"
+        }
+      ],
+      "deviceId": "18",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Normal",
+          "actionId": "3227"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Backup",
+          "actionId": "3227"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Audio",
+      "name": "COM 1 Audio Volume",
+      "description": "Current value of this potentiometer.",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "762"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.025,
+      "argumentMin": 0,
+      "argumentMax": 1,
+      "actions": {
+        "set": {
+          "deviceId": "18",
+          "actionId": "3363"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Audio",
+      "name": "COM 2 Audio Volume",
+      "description": "Current value of this potentiometer.",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "763"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.025,
+      "argumentMin": 0,
+      "argumentMax": 1,
+      "actions": {
+        "set": {
+          "deviceId": "18",
+          "actionId": "3364"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Audio",
+      "name": "COM 3 Audio Volume",
+      "description": "Current value of this potentiometer.",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "764"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.025,
+      "argumentMin": 0,
+      "argumentMax": 1,
+      "actions": {
+        "set": {
+          "deviceId": "18",
+          "actionId": "3365"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Audio",
+      "name": "COM 4 Audio Volume",
+      "description": "Current value of this potentiometer.",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "765"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.025,
+      "argumentMin": 0,
+      "argumentMax": 1,
+      "actions": {
+        "set": {
+          "deviceId": "18",
+          "actionId": "3366"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Audio",
+      "name": "ADF Audio Volume",
+      "description": "Current value of this potentiometer.",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "766"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.025,
+      "argumentMin": 0,
+      "argumentMax": 1,
+      "actions": {
+        "set": {
+          "deviceId": "18",
+          "actionId": "3367"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Audio",
+      "name": "NAV Audio Volume",
+      "description": "Current value of this potentiometer.",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "767"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.025,
+      "argumentMin": 0,
+      "argumentMax": 1,
+      "actions": {
+        "set": {
+          "deviceId": "18",
+          "actionId": "3368"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Audio",
+      "name": "MSL Audio Volume",
+      "description": "Current value of this potentiometer.",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "768"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.025,
+      "argumentMin": 0,
+      "argumentMax": 1,
+      "actions": {
+        "set": {
+          "deviceId": "18",
+          "actionId": "3369"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Audio",
+      "name": "MKR Audio Volume",
+      "description": "Current value of this potentiometer.",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "769"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.025,
+      "argumentMin": 0,
+      "argumentMax": 1,
+      "actions": {
+        "set": {
+          "deviceId": "18",
+          "actionId": "3370"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Audio",
+      "name": "Audio Volume",
+      "description": "Current value of this potentiometer.",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "770"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.025,
+      "argumentMin": 0,
+      "argumentMax": 1,
+      "actions": {
+        "set": {
+          "deviceId": "18",
+          "actionId": "3371"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Audio",
+      "name": "VOX Audio Volume",
+      "description": "Current value of this potentiometer.",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "771"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.025,
+      "argumentMin": 0,
+      "argumentMax": 1,
+      "actions": {
+        "set": {
+          "deviceId": "18",
+          "actionId": "3372"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Autopilot",
+      "name": "AP Roll/Pitch",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "431"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "25",
+          "pushId": "3374",
+          "pushValue": "1",
+          "releaseId": "3374",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Autopilot",
+      "name": "AP Heading",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "432"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "25",
+          "pushId": "3375",
+          "pushValue": "1",
+          "releaseId": "3375",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Autopilot",
+      "name": "AP Altitude",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "433"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "25",
+          "pushId": "3376",
+          "pushValue": "1",
+          "releaseId": "3376",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Autopilot",
+      "name": "AP Test",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "434"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "25",
+          "pushId": "3377",
+          "pushValue": "1",
+          "releaseId": "3377",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Autopilot",
+      "name": "AP NAV",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "435"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "25",
+          "pushId": "3378",
+          "pushValue": "1",
+          "releaseId": "3378",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Autopilot",
+      "name": "AP Approach",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "436"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "25",
+          "pushId": "3379",
+          "pushValue": "1",
+          "releaseId": "3379",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Autopilot",
+      "name": "AP GS",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "437"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "25",
+          "pushId": "3380",
+          "pushValue": "1",
+          "releaseId": "3380",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Autopilot",
+      "name": "AP ON",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "438"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "25",
+          "pushId": "3381",
+          "pushValue": "1",
+          "releaseId": "3381",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Avionics",
+      "name": "Warning Button",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "441"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "22",
+          "pushId": "3346",
+          "pushValue": "1",
+          "releaseId": "3346",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Avionics",
+      "name": "Caution Button",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "442"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "22",
+          "pushId": "3347",
+          "pushValue": "1",
+          "releaseId": "3347",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Avionics",
+      "name": "ELT (On/Arm-Reset)",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "771"
+        }
+      ],
+      "deviceId": "17",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Position1",
+          "actionId": "3222"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Position2",
+          "actionId": "3222"
+        },
+        {
+          "argumentValue": "-1.0",
+          "name": "Position3",
+          "actionId": "3222"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Avionics",
+      "name": "PIC NAV Manual Sync (CW/CCW)",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "772"
+        }
+      ],
+      "deviceId": "17",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Position1",
+          "actionId": "3223"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Position2",
+          "actionId": "3223"
+        },
+        {
+          "argumentValue": "-1.0",
+          "name": "Position3",
+          "actionId": "3223"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Avionics",
+      "name": "PIC NAV Slave (Free/Slave/Fast Slave)",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "773"
+        }
+      ],
+      "deviceId": "17",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Free",
+          "actionId": "3224"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Slave",
+          "actionId": "3224"
+        },
+        {
+          "argumentValue": "-1.0",
+          "name": "Fast Slave",
+          "actionId": "3224"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Avionics",
+      "name": "MDP 1 (On/Off)",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "841"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "On",
+          "actionId": "3195"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Off",
+          "actionId": "3195"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Avionics",
+      "name": "MDP 2 (On/Off)",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "842"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "On",
+          "actionId": "3196"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Off",
+          "actionId": "3196"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Avionics",
+      "name": "Avionics Master (On/Off)",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "843"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "On",
+          "actionId": "3197"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Off",
+          "actionId": "3197"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Avionics",
+      "name": "SMS (On/Off)",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "844"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "On",
+          "actionId": "3198"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Off",
+          "actionId": "3198"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Avionics",
+      "name": "V/UHF (Guard/Normal)",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "845"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Guard",
+          "actionId": "3199"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Normal",
+          "actionId": "3199"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Avionics",
+      "name": "Aileron Emergency (Left/Stop/Right)",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "901"
+        }
+      ],
+      "deviceId": "12",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Left",
+          "actionId": "3216"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Stop",
+          "actionId": "3216"
+        },
+        {
+          "argumentValue": "-1.0",
+          "name": "Right",
+          "actionId": "3216"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Avionics",
+      "name": "Elevator Emergency (Down/Stop/Up)",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "902"
+        }
+      ],
+      "deviceId": "12",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Down",
+          "actionId": "3217"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Stop",
+          "actionId": "3217"
+        },
+        {
+          "argumentValue": "-1.0",
+          "name": "Up",
+          "actionId": "3217"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Avionics",
+      "name": "Auto Rudder (Engage/Power/Off)",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "903"
+        }
+      ],
+      "deviceId": "12",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Engage",
+          "actionId": "3218"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Power",
+          "actionId": "3218"
+        },
+        {
+          "argumentValue": "-1.0",
+          "name": "Off",
+          "actionId": "3218"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "CMFD1",
+      "name": "CMFD #1 OSS 1",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "501"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "10",
+          "pushId": "3231",
+          "pushValue": "1",
+          "releaseId": "3231",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "CMFD1",
+      "name": "CMFD #1 OSS 2",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "502"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "10",
+          "pushId": "3232",
+          "pushValue": "1",
+          "releaseId": "3232",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "CMFD1",
+      "name": "CMFD #1 OSS 3",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "503"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "10",
+          "pushId": "3233",
+          "pushValue": "1",
+          "releaseId": "3233",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "CMFD1",
+      "name": "CMFD #1 OSS 4",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "504"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "10",
+          "pushId": "3234",
+          "pushValue": "1",
+          "releaseId": "3234",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "CMFD1",
+      "name": "CMFD #1 OSS 5",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "505"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "10",
+          "pushId": "3235",
+          "pushValue": "1",
+          "releaseId": "3235",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "CMFD1",
+      "name": "CMFD #1 OSS 6",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "506"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "10",
+          "pushId": "3236",
+          "pushValue": "1",
+          "releaseId": "3236",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "CMFD1",
+      "name": "CMFD #1 OSS 7",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "507"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "10",
+          "pushId": "3237",
+          "pushValue": "1",
+          "releaseId": "3237",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "CMFD1",
+      "name": "CMFD #1 OSS 8",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "508"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "10",
+          "pushId": "3238",
+          "pushValue": "1",
+          "releaseId": "3238",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "CMFD1",
+      "name": "CMFD #1 OSS 9",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "509"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "10",
+          "pushId": "3239",
+          "pushValue": "1",
+          "releaseId": "3239",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "CMFD1",
+      "name": "CMFD #1 OSS 10",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "510"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "10",
+          "pushId": "3240",
+          "pushValue": "1",
+          "releaseId": "3240",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "CMFD1",
+      "name": "CMFD #1 OSS 11",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "511"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "10",
+          "pushId": "3241",
+          "pushValue": "1",
+          "releaseId": "3241",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "CMFD1",
+      "name": "CMFD #1 OSS 12",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "512"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "10",
+          "pushId": "3242",
+          "pushValue": "1",
+          "releaseId": "3242",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "CMFD1",
+      "name": "CMFD #1 OSS 13",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "513"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "10",
+          "pushId": "3243",
+          "pushValue": "1",
+          "releaseId": "3243",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "CMFD1",
+      "name": "CMFD #1 OSS 14",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "514"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "10",
+          "pushId": "3244",
+          "pushValue": "1",
+          "releaseId": "3244",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "CMFD1",
+      "name": "CMFD #1 OSS 15",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "515"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "10",
+          "pushId": "3245",
+          "pushValue": "1",
+          "releaseId": "3245",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "CMFD1",
+      "name": "CMFD #1 OSS 16",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "516"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "10",
+          "pushId": "3246",
+          "pushValue": "1",
+          "releaseId": "3246",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "CMFD1",
+      "name": "CMFD #1 OSS 17",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "517"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "10",
+          "pushId": "3247",
+          "pushValue": "1",
+          "releaseId": "3247",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "CMFD1",
+      "name": "CMFD #1 OSS 18",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "518"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "10",
+          "pushId": "3248",
+          "pushValue": "1",
+          "releaseId": "3248",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "CMFD1",
+      "name": "CMFD #1 OSS 19",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "519"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "10",
+          "pushId": "3249",
+          "pushValue": "1",
+          "releaseId": "3249",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "CMFD1",
+      "name": "CMFD #1 OSS 20",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "520"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "10",
+          "pushId": "3250",
+          "pushValue": "1",
+          "releaseId": "3250",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "CMFD1",
+      "name": "CMFD #1 OSS 21",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "521"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "10",
+          "pushId": "3251",
+          "pushValue": "1",
+          "releaseId": "3251",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "CMFD1",
+      "name": "CMFD #1 OSS 22",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "522"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "10",
+          "pushId": "3252",
+          "pushValue": "1",
+          "releaseId": "3252",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "CMFD1",
+      "name": "CMFD #1 OSS 23",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "523"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "10",
+          "pushId": "3253",
+          "pushValue": "1",
+          "releaseId": "3253",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "CMFD1",
+      "name": "CMFD #1 OSS 24",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "524"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "10",
+          "pushId": "3254",
+          "pushValue": "1",
+          "releaseId": "3254",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "CMFD1",
+      "name": "CMFD #1 OSS 25",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "525"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "10",
+          "pushId": "3255",
+          "pushValue": "1",
+          "releaseId": "3255",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "CMFD1",
+      "name": "CMFD #1 OSS 26",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "526"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "10",
+          "pushId": "3256",
+          "pushValue": "1",
+          "releaseId": "3256",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "CMFD1",
+      "name": "CMFD #1 OSS 27",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "527"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "10",
+          "pushId": "3257",
+          "pushValue": "1",
+          "releaseId": "3257",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "CMFD1",
+      "name": "CMFD #1 OSS 28",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "528"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "10",
+          "pushId": "3258",
+          "pushValue": "1",
+          "releaseId": "3258",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "CMFD1",
+      "name": "CMFD #1 Power (On/Off)",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "529"
+        }
+      ],
+      "deviceId": "10",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "On",
+          "actionId": "3259"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Off",
+          "actionId": "3259"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "CMFD1",
+      "name": "CMFD #1 Gain",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "530"
+        }
+      ],
+      "deviceId": "10",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Position1",
+          "actionId": "3260"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Position2",
+          "actionId": "3260"
+        },
+        {
+          "argumentValue": "-1.0",
+          "name": "Position3",
+          "actionId": "3260"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "CMFD1",
+      "name": "CMFD #1 Symbology",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "531"
+        }
+      ],
+      "deviceId": "10",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Position1",
+          "actionId": "3261"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Position2",
+          "actionId": "3261"
+        },
+        {
+          "argumentValue": "-1.0",
+          "name": "Position3",
+          "actionId": "3261"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "CMFD1",
+      "name": "CMFD #1 Bright",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "532"
+        }
+      ],
+      "deviceId": "10",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Position1",
+          "actionId": "3262"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Position2",
+          "actionId": "3262"
+        },
+        {
+          "argumentValue": "-1.0",
+          "name": "Position3",
+          "actionId": "3262"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "CMFD2",
+      "name": "CMFD #2 OSS 1",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "551"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "10",
+          "pushId": "3263",
+          "pushValue": "1",
+          "releaseId": "3263",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "CMFD2",
+      "name": "CMFD #2 OSS 2",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "552"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "10",
+          "pushId": "3264",
+          "pushValue": "1",
+          "releaseId": "3264",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "CMFD2",
+      "name": "CMFD #2 OSS 3",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "553"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "10",
+          "pushId": "3265",
+          "pushValue": "1",
+          "releaseId": "3265",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "CMFD2",
+      "name": "CMFD #2 OSS 4",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "554"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "10",
+          "pushId": "3266",
+          "pushValue": "1",
+          "releaseId": "3266",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "CMFD2",
+      "name": "CMFD #2 OSS 5",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "555"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "10",
+          "pushId": "3267",
+          "pushValue": "1",
+          "releaseId": "3267",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "CMFD2",
+      "name": "CMFD #2 OSS 6",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "556"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "10",
+          "pushId": "3268",
+          "pushValue": "1",
+          "releaseId": "3268",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "CMFD2",
+      "name": "CMFD #2 OSS 7",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "557"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "10",
+          "pushId": "3269",
+          "pushValue": "1",
+          "releaseId": "3269",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "CMFD2",
+      "name": "CMFD #2 OSS 8",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "558"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "10",
+          "pushId": "3270",
+          "pushValue": "1",
+          "releaseId": "3270",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "CMFD2",
+      "name": "CMFD #2 OSS 9",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "559"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "10",
+          "pushId": "3271",
+          "pushValue": "1",
+          "releaseId": "3271",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "CMFD2",
+      "name": "CMFD #2 OSS 10",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "560"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "10",
+          "pushId": "3272",
+          "pushValue": "1",
+          "releaseId": "3272",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "CMFD2",
+      "name": "CMFD #2 OSS 11",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "561"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "10",
+          "pushId": "3273",
+          "pushValue": "1",
+          "releaseId": "3273",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "CMFD2",
+      "name": "CMFD #2 OSS 12",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "562"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "10",
+          "pushId": "3274",
+          "pushValue": "1",
+          "releaseId": "3274",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "CMFD2",
+      "name": "CMFD #2 OSS 13",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "563"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "10",
+          "pushId": "3275",
+          "pushValue": "1",
+          "releaseId": "3275",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "CMFD2",
+      "name": "CMFD #2 OSS 14",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "564"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "10",
+          "pushId": "3276",
+          "pushValue": "1",
+          "releaseId": "3276",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "CMFD2",
+      "name": "CMFD #2 OSS 15",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "565"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "10",
+          "pushId": "3277",
+          "pushValue": "1",
+          "releaseId": "3277",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "CMFD2",
+      "name": "CMFD #2 OSS 16",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "566"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "10",
+          "pushId": "3278",
+          "pushValue": "1",
+          "releaseId": "3278",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "CMFD2",
+      "name": "CMFD #2 OSS 17",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "567"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "10",
+          "pushId": "3279",
+          "pushValue": "1",
+          "releaseId": "3279",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "CMFD2",
+      "name": "CMFD #2 OSS 18",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "568"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "10",
+          "pushId": "3280",
+          "pushValue": "1",
+          "releaseId": "3280",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "CMFD2",
+      "name": "CMFD #2 OSS 19",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "569"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "10",
+          "pushId": "3281",
+          "pushValue": "1",
+          "releaseId": "3281",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "CMFD2",
+      "name": "CMFD #2 OSS 20",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "570"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "10",
+          "pushId": "3282",
+          "pushValue": "1",
+          "releaseId": "3282",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "CMFD2",
+      "name": "CMFD #2 OSS 21",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "571"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "10",
+          "pushId": "3283",
+          "pushValue": "1",
+          "releaseId": "3283",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "CMFD2",
+      "name": "CMFD #2 OSS 22",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "572"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "10",
+          "pushId": "3284",
+          "pushValue": "1",
+          "releaseId": "3284",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "CMFD2",
+      "name": "CMFD #2 OSS 23",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "573"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "10",
+          "pushId": "3285",
+          "pushValue": "1",
+          "releaseId": "3285",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "CMFD2",
+      "name": "CMFD #2 OSS 24",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "574"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "10",
+          "pushId": "3286",
+          "pushValue": "1",
+          "releaseId": "3286",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "CMFD2",
+      "name": "CMFD #2 OSS 25",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "575"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "10",
+          "pushId": "3287",
+          "pushValue": "1",
+          "releaseId": "3287",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "CMFD2",
+      "name": "CMFD #2 OSS 26",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "576"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "10",
+          "pushId": "3288",
+          "pushValue": "1",
+          "releaseId": "3288",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "CMFD2",
+      "name": "CMFD #2 OSS 27",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "577"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "10",
+          "pushId": "3289",
+          "pushValue": "1",
+          "releaseId": "3289",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "CMFD2",
+      "name": "CMFD #2 OSS 28",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "578"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "10",
+          "pushId": "3290",
+          "pushValue": "1",
+          "releaseId": "3290",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "CMFD2",
+      "name": "CMFD #2 Power (On/Off)",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "579"
+        }
+      ],
+      "deviceId": "10",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "On",
+          "actionId": "3291"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Off",
+          "actionId": "3291"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "CMFD2",
+      "name": "CMFD #2 Gain",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "580"
+        }
+      ],
+      "deviceId": "10",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Position1",
+          "actionId": "3292"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Position2",
+          "actionId": "3292"
+        },
+        {
+          "argumentValue": "-1.0",
+          "name": "Position3",
+          "actionId": "3292"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "CMFD2",
+      "name": "CMFD #2 Symbology",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "581"
+        }
+      ],
+      "deviceId": "10",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Position1",
+          "actionId": "3293"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Position2",
+          "actionId": "3293"
+        },
+        {
+          "argumentValue": "-1.0",
+          "name": "Position3",
+          "actionId": "3293"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "CMFD2",
+      "name": "CMFD #2 Bright",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "582"
+        }
+      ],
+      "deviceId": "10",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Position1",
+          "actionId": "3294"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Position2",
+          "actionId": "3294"
+        },
+        {
+          "argumentValue": "-1.0",
+          "name": "Position3",
+          "actionId": "3294"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Clock",
+      "name": "Clock Selection",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "491"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "17",
+          "pushId": "3295",
+          "pushValue": "1",
+          "releaseId": "3295",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Clock",
+      "name": "Clock Control",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "492"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "17",
+          "pushId": "3296",
+          "pushValue": "1",
+          "releaseId": "3296",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Cockpit Mechanics",
+      "name": "Canopy Lever",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "129"
+        }
+      ],
+      "deviceId": "15",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Position1",
+          "actionId": "71"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Position2",
+          "actionId": "71"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Cockpit Mechanics",
+      "name": "Toggle Mirrors",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "1625"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Position1",
+          "actionId": "0"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Position2",
+          "actionId": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Cockpit Mechanics",
+      "name": "Emergency Parking Brakes",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "791"
+        }
+      ],
+      "deviceId": "9",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Position1",
+          "actionId": "3221"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Position2",
+          "actionId": "3221"
+        },
+        {
+          "argumentValue": "-1.0",
+          "name": "Position3",
+          "actionId": "3221"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Cockpit Mechanics",
+      "name": "Anti-G Suit Test",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "861"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "17",
+          "pushId": "3215",
+          "pushValue": "1",
+          "releaseId": "3215",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Cockpit Mechanics",
+      "name": "Emergency Speed Break (Close/Off/Normal)",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "881"
+        }
+      ],
+      "deviceId": "17",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Close",
+          "actionId": "3213"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Off",
+          "actionId": "3213"
+        },
+        {
+          "argumentValue": "-1.0",
+          "name": "Normal",
+          "actionId": "3213"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Cockpit Mechanics",
+      "name": "Seat (Up/Stop/Down)",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "891"
+        }
+      ],
+      "deviceId": "17",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Up",
+          "actionId": "3212"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Stop",
+          "actionId": "3212"
+        },
+        {
+          "argumentValue": "-1.0",
+          "name": "Down",
+          "actionId": "3212"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Cockpit Mechanics",
+      "name": "Throttle",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "911"
+        }
+      ],
+      "deviceId": "2",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Position1",
+          "actionId": "3386"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Position2",
+          "actionId": "3386"
+        },
+        {
+          "argumentValue": "-1.0",
+          "name": "Position3",
+          "actionId": "3386"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Cockpit Mechanics",
+      "name": "Flaps (Up/Down)",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "912"
+        }
+      ],
+      "deviceId": "16",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Up",
+          "actionId": "3015"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Down",
+          "actionId": "3015"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Cockpit Mechanics",
+      "name": "Throttle Friction",
+      "description": "Current value of this potentiometer.",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "913"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.025,
+      "argumentMin": 0,
+      "argumentMax": 1,
+      "actions": {
+        "set": {
+          "deviceId": "17",
+          "actionId": "3220"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Electric System",
+      "name": "Battery (Reset/On/Off)",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "961"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Reset",
+          "actionId": "3178"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "On",
+          "actionId": "3178"
+        },
+        {
+          "argumentValue": "-1.0",
+          "name": "Off",
+          "actionId": "3178"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Electric System",
+      "name": "Generator (On/Off-Reset)",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "962"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "On",
+          "actionId": "3179"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Off-Reset",
+          "actionId": "3179"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Electric System",
+      "name": "External Power (ON/Off)",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "963"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "ON",
+          "actionId": "3181"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Off",
+          "actionId": "3181"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Electric System",
+      "name": "Backup (Auto/Off)",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "964"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Auto",
+          "actionId": "3182"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Off",
+          "actionId": "3182"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Electric System",
+      "name": "Emergency Override (Emergency/Auto/Auto)",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "965"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Emergency",
+          "actionId": "3183"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Auto",
+          "actionId": "3183"
+        },
+        {
+          "argumentValue": "-1.0",
+          "name": "Auto",
+          "actionId": "3183"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Electric System",
+      "name": "Aircraft Interconnect (On/Off/Off)",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "966"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "On",
+          "actionId": "3184"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Off",
+          "actionId": "3184"
+        },
+        {
+          "argumentValue": "-1.0",
+          "name": "Off",
+          "actionId": "3184"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Engine",
+      "name": "Fuel/Hydraulic/Bleed Shutoff (Open/Close/Close)",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "871"
+        }
+      ],
+      "deviceId": "2",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Open",
+          "actionId": "3214"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Close",
+          "actionId": "3214"
+        },
+        {
+          "argumentValue": "-1.0",
+          "name": "Close",
+          "actionId": "3214"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Engine",
+      "name": "PMU (Auto/Manual)",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "921"
+        }
+      ],
+      "deviceId": "2",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Auto",
+          "actionId": "3167"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Manual",
+          "actionId": "3167"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Engine",
+      "name": "Ignition (On/Auto/Off)",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "922"
+        }
+      ],
+      "deviceId": "2",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "On",
+          "actionId": "3168"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Auto",
+          "actionId": "3168"
+        },
+        {
+          "argumentValue": "-1.0",
+          "name": "Off",
+          "actionId": "3168"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Engine",
+      "name": "Start (Start/No Function/Interrupt)",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "923"
+        }
+      ],
+      "deviceId": "2",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Start",
+          "actionId": "3166"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "No Function",
+          "actionId": "3166"
+        },
+        {
+          "argumentValue": "-1.0",
+          "name": "Interrupt",
+          "actionId": "3166"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Engine",
+      "name": "Innertial Separation (Open/Close)",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "924"
+        }
+      ],
+      "deviceId": "2",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Open",
+          "actionId": "3169"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Close",
+          "actionId": "3169"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Environmental Control System",
+      "name": "Temperature (Cold/Hot)",
+      "description": "Current value of this potentiometer.",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "831"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.025,
+      "argumentMin": 0,
+      "argumentMax": 1,
+      "actions": {
+        "set": {
+          "deviceId": "7",
+          "actionId": "3200"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Environmental Control System",
+      "name": "Air Conditioner (On/Off)",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "832"
+        }
+      ],
+      "deviceId": "7",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "On",
+          "actionId": "3201"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Off",
+          "actionId": "3201"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Environmental Control System",
+      "name": "ECS (Auto/Manual)",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "833"
+        }
+      ],
+      "deviceId": "7",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Auto",
+          "actionId": "3202"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Manual",
+          "actionId": "3202"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Environmental Control System",
+      "name": "Recirculating Fan (On/Off)",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "834"
+        }
+      ],
+      "deviceId": "7",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "On",
+          "actionId": "3203"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Off",
+          "actionId": "3203"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "External Aircraft Model",
+      "name": "EXT_POSITION_LIGHTS",
+      "description": "Unimplemented Callback [[anonymous callback 1]] EXT_POSITION_LIGHTS",
+      "exports": [
+        {
+          "id": "[anonymous callback 1]"
+        }
+      ],
+      "callback": true,
+      "unimplemented": true
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "External Aircraft Model",
+      "name": "EXT_LANDING_LIGHTS",
+      "description": "Unimplemented Callback [[anonymous callback 2]] EXT_LANDING_LIGHTS",
+      "exports": [
+        {
+          "id": "[anonymous callback 2]"
+        }
+      ],
+      "callback": true,
+      "unimplemented": true
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "External Aircraft Model",
+      "name": "EXT_STROBE_TOP",
+      "description": "Unimplemented Callback [[anonymous callback 3]] EXT_STROBE_TOP",
+      "exports": [
+        {
+          "id": "[anonymous callback 3]"
+        }
+      ],
+      "callback": true,
+      "unimplemented": true
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "External Aircraft Model",
+      "name": "EXT_TOP_LIGHT",
+      "description": "Unimplemented Callback [[anonymous callback 4]] EXT_TOP_LIGHT",
+      "exports": [
+        {
+          "id": "[anonymous callback 4]"
+        }
+      ],
+      "callback": true,
+      "unimplemented": true
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "External Aircraft Model",
+      "name": "EXT_WOW_NOSE",
+      "description": "Unimplemented Callback [[anonymous callback 5]] EXT_WOW_NOSE",
+      "exports": [
+        {
+          "id": "[anonymous callback 5]"
+        }
+      ],
+      "callback": true,
+      "unimplemented": true
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "External Aircraft Model",
+      "name": "EXT_WOW_REAR",
+      "description": "Unimplemented Callback [[anonymous callback 6]] EXT_WOW_REAR",
+      "exports": [
+        {
+          "id": "[anonymous callback 6]"
+        }
+      ],
+      "callback": true,
+      "unimplemented": true
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "External Lights",
+      "name": "Search Lights (On/Off)",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "931"
+        }
+      ],
+      "deviceId": "4",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "On",
+          "actionId": "3170"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Off",
+          "actionId": "3170"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "External Lights",
+      "name": "Beacon Lights (On/Off)",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "932"
+        }
+      ],
+      "deviceId": "4",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "On",
+          "actionId": "3171"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Off",
+          "actionId": "3171"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "External Lights",
+      "name": "Strobe Lights (On/Off)",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "933"
+        }
+      ],
+      "deviceId": "4",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "On",
+          "actionId": "3172"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Off",
+          "actionId": "3172"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "External Lights",
+      "name": "Formation Infrared Lights (On/Off)",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "934"
+        }
+      ],
+      "deviceId": "4",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "On",
+          "actionId": "3173"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Off",
+          "actionId": "3173"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "External Lights",
+      "name": "Formation Normal Lights (Brt/Dim/Off)",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "935"
+        }
+      ],
+      "deviceId": "4",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Brt",
+          "actionId": "3174"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Dim",
+          "actionId": "3174"
+        },
+        {
+          "argumentValue": "-1.0",
+          "name": "Off",
+          "actionId": "3174"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "External Lights",
+      "name": "Navigation Lights (On/Off)",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "936"
+        }
+      ],
+      "deviceId": "4",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "On",
+          "actionId": "3175"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Off",
+          "actionId": "3175"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "External Lights",
+      "name": "Taxi Lights (On/Auto/Off)",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "937"
+        }
+      ],
+      "deviceId": "4",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "On",
+          "actionId": "3176"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Auto",
+          "actionId": "3176"
+        },
+        {
+          "argumentValue": "-1.0",
+          "name": "Off",
+          "actionId": "3176"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "External Lights",
+      "name": "Landing Lights (On/Off)",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "938"
+        }
+      ],
+      "deviceId": "4",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "On",
+          "actionId": "3177"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Off",
+          "actionId": "3177"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.RotaryEncoder",
+      "device": "Flight Instruments",
+      "name": "ASI Adjust (Up/Down)",
+      "description": "Current position of this rotary encoder knob.",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "755"
+        }
+      ],
+      "unit": "Numeric",
+      "argumentValue": 0.025,
+      "actions": {
+        "increment": {
+          "deviceId": "17",
+          "actionId": "3230"
+        },
+        "decrement": {
+          "deviceId": "17",
+          "actionId": "3230"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Flight Instruments",
+      "name": "ASI Cage",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "756"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "17",
+          "pushId": "3229",
+          "pushValue": "1",
+          "releaseId": "3229",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Flight Instruments",
+      "name": "Altimeter BRIGHT Button",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "951"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "17",
+          "pushId": "3228",
+          "pushValue": "1",
+          "releaseId": "3228",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Flight Instruments",
+      "name": "Altimeter STD Button",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "952"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "17",
+          "pushId": "3020",
+          "pushValue": "1",
+          "releaseId": "3020",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.RotaryEncoder",
+      "device": "Flight Instruments",
+      "name": "Altimeter Pressure Knob",
+      "description": "Current position of this rotary encoder knob.",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "953"
+        }
+      ],
+      "unit": "Numeric",
+      "argumentValue": 0.025,
+      "actions": {
+        "increment": {
+          "deviceId": "17",
+          "actionId": "3019"
+        },
+        "decrement": {
+          "deviceId": "17",
+          "actionId": "3019"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Fuel",
+      "name": "Fuel Main Pump (Auto/Off)",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "801"
+        }
+      ],
+      "deviceId": "3",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Auto",
+          "actionId": "3209"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Off",
+          "actionId": "3209"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Fuel",
+      "name": "Fuel Aux Pump (LH/Auto/RH/Both)",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "802"
+        }
+      ],
+      "deviceId": "3",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3210"
+        },
+        {
+          "argumentValue": "0.3",
+          "name": "Position2",
+          "actionId": "3210"
+        },
+        {
+          "argumentValue": "0.5",
+          "name": "Position3",
+          "actionId": "3210"
+        },
+        {
+          "argumentValue": "0.8",
+          "name": "Position4",
+          "actionId": "3210"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position5",
+          "actionId": "3210"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Fuel",
+      "name": "Fuel Transfer (U-Wing/Ventral-Auto/Off)",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "803"
+        }
+      ],
+      "deviceId": "20",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "U-Wing",
+          "actionId": "3211"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Ventral-Auto",
+          "actionId": "3211"
+        },
+        {
+          "argumentValue": "-1.0",
+          "name": "Off",
+          "actionId": "3211"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Gauges",
+      "name": "Canopy Position",
+      "description": "TODO: assign units, set calibration points, and write description",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "26"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 5
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Gauges",
+      "name": "Vertical Velocity",
+      "description": "TODO: assign units, set calibration points, and write description",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "662"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": -1,
+            "mappedValue": -1
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 4
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Gauges",
+      "name": "ASI Roll",
+      "description": "TODO: assign units, set calibration points, and write description",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "752"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": -1,
+            "mappedValue": -1
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 4
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Gauges",
+      "name": "ASI Pitch",
+      "description": "TODO: assign units, set calibration points, and write description",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "753"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": -1,
+            "mappedValue": -1
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 4
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Gauges",
+      "name": "ASI OFF Flag",
+      "description": "TODO: assign units, set calibration points, and write description",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "754"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 5
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Gear",
+      "name": "Landing Gear (Up/Down)",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "821"
+        }
+      ],
+      "deviceId": "8",
+      "positions": [
+        {
+          "argumentValue": "-1.0",
+          "name": "Up",
+          "actionId": "3205"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Down",
+          "actionId": "3205"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Gear",
+      "name": "Gear Beep Supress",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "822"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "8",
+          "pushId": "3206",
+          "pushValue": "1",
+          "releaseId": "3206",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Gear",
+      "name": "Gear Down Lock Override",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "823"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "8",
+          "pushId": "3207",
+          "pushValue": "1",
+          "releaseId": "3207",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Gear",
+      "name": "Gear Emergency Down (Emergency Down/Normal)",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "851"
+        }
+      ],
+      "deviceId": "8",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Down",
+          "actionId": "3208"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Normal",
+          "actionId": "3208"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Ice Protection",
+      "name": "Anti Ice Propeller (On/Off)",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "991"
+        }
+      ],
+      "deviceId": "6",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "On",
+          "actionId": "3185"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Off",
+          "actionId": "3185"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Ice Protection",
+      "name": "Anti Ice Windshield (Start/Set/Off",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "992"
+        }
+      ],
+      "deviceId": "6",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Start",
+          "actionId": "3186"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Set",
+          "actionId": "3186"
+        },
+        {
+          "argumentValue": "-1.0",
+          "name": "Off",
+          "actionId": "3186"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Ice Protection",
+      "name": "Pitot / Stat - Pri/Tat (On/Off)",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "993"
+        }
+      ],
+      "deviceId": "6",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "On",
+          "actionId": "3187"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Off",
+          "actionId": "3187"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Ice Protection",
+      "name": "Pitot / Stat - Sec (On/Off)",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "994"
+        }
+      ],
+      "deviceId": "6",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "On",
+          "actionId": "3188"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Off",
+          "actionId": "3188"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Internal Lights",
+      "name": "Panel Lights (Off/Brightness)",
+      "description": "Current value of this potentiometer.",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "941"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.025,
+      "argumentMin": 0,
+      "argumentMax": 1,
+      "actions": {
+        "set": {
+          "deviceId": "5",
+          "actionId": "3189"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Internal Lights",
+      "name": "Storm Lights (On/Off)",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "942"
+        }
+      ],
+      "deviceId": "5",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "On",
+          "actionId": "3190"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Off",
+          "actionId": "3190"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Internal Lights",
+      "name": "Console Lights (Off/Brightness)",
+      "description": "Current value of this potentiometer.",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "943"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.025,
+      "argumentMin": 0,
+      "argumentMax": 1,
+      "actions": {
+        "set": {
+          "deviceId": "5",
+          "actionId": "3191"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Internal Lights",
+      "name": "Alarm Test (Panel/Fire)",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "944"
+        }
+      ],
+      "deviceId": "5",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Position1",
+          "actionId": "3192"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Position2",
+          "actionId": "3192"
+        },
+        {
+          "argumentValue": "-1.0",
+          "name": "Position3",
+          "actionId": "3192"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Internal Lights",
+      "name": "Chart Lights (Off/Brightness)",
+      "description": "Current value of this potentiometer.",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "945"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.025,
+      "argumentMin": 0,
+      "argumentMax": 1,
+      "actions": {
+        "set": {
+          "deviceId": "5",
+          "actionId": "3193"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Internal Lights",
+      "name": "Nightvision (NVG/Norm)",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "946"
+        }
+      ],
+      "deviceId": "5",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "NVG",
+          "actionId": "3194"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Norm",
+          "actionId": "3194"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "UFCP",
+      "name": "UFCP COM 1",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "451"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "20",
+          "pushId": "3297",
+          "pushValue": "1",
+          "releaseId": "3297",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "UFCP",
+      "name": "UFCP COM 2",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "452"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "20",
+          "pushId": "3298",
+          "pushValue": "1",
+          "releaseId": "3298",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "UFCP",
+      "name": "UFCP NAV AIDS",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "453"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "20",
+          "pushId": "3300",
+          "pushValue": "1",
+          "releaseId": "3300",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "UFCP",
+      "name": "UFCP A/G",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "454"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "20",
+          "pushId": "3301",
+          "pushValue": "1",
+          "releaseId": "3301",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "UFCP",
+      "name": "UFCP NAV",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "455"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "20",
+          "pushId": "3302",
+          "pushValue": "1",
+          "releaseId": "3302",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "UFCP",
+      "name": "UFCP A/A",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "456"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "20",
+          "pushId": "3303",
+          "pushValue": "1",
+          "releaseId": "3303",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "UFCP",
+      "name": "UFCP BARO/RALT",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "457"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "20",
+          "pushId": "3304",
+          "pushValue": "1",
+          "releaseId": "3304",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "UFCP",
+      "name": "UFCP IDNT",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "458"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "20",
+          "pushId": "3305",
+          "pushValue": "1",
+          "releaseId": "3305",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "UFCP",
+      "name": "UFCP 1",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "459"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "20",
+          "pushId": "3306",
+          "pushValue": "1",
+          "releaseId": "3306",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "UFCP",
+      "name": "UFCP 2",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "460"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "20",
+          "pushId": "3307",
+          "pushValue": "1",
+          "releaseId": "3307",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "UFCP",
+      "name": "UFCP 3",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "461"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "20",
+          "pushId": "3308",
+          "pushValue": "1",
+          "releaseId": "3308",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "UFCP",
+      "name": "UFCP 4",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "462"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "20",
+          "pushId": "3309",
+          "pushValue": "1",
+          "releaseId": "3309",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "UFCP",
+      "name": "UFCP 5",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "463"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "20",
+          "pushId": "3310",
+          "pushValue": "1",
+          "releaseId": "3310",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "UFCP",
+      "name": "UFCP 6",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "464"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "20",
+          "pushId": "3311",
+          "pushValue": "1",
+          "releaseId": "3311",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "UFCP",
+      "name": "UFCP 7",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "465"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "20",
+          "pushId": "3312",
+          "pushValue": "1",
+          "releaseId": "3312",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "UFCP",
+      "name": "UFCP 8",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "466"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "20",
+          "pushId": "3313",
+          "pushValue": "1",
+          "releaseId": "3313",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "UFCP",
+      "name": "UFCP 9",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "467"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "20",
+          "pushId": "3314",
+          "pushValue": "1",
+          "releaseId": "3314",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "UFCP",
+      "name": "UFCP 0",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "468"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "20",
+          "pushId": "3315",
+          "pushValue": "1",
+          "releaseId": "3315",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "UFCP",
+      "name": "UFCP Clear",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "469"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "20",
+          "pushId": "3318",
+          "pushValue": "1",
+          "releaseId": "3318",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "UFCP",
+      "name": "UFCP Enter",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "470"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "20",
+          "pushId": "3319",
+          "pushValue": "1",
+          "releaseId": "3319",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "UFCP",
+      "name": "UFCP CZ",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "471"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "20",
+          "pushId": "3320",
+          "pushValue": "1",
+          "releaseId": "3320",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "UFCP",
+      "name": "UFCP Airspeed",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "472"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "20",
+          "pushId": "3321",
+          "pushValue": "1",
+          "releaseId": "3321",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "UFCP",
+      "name": "UFCP Warning Reset",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "473"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "20",
+          "pushId": "3322",
+          "pushValue": "1",
+          "releaseId": "3322",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "UFCP",
+      "name": "UFCP Up",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "474"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "20",
+          "pushId": "3316",
+          "pushValue": "1",
+          "releaseId": "3316",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "UFCP",
+      "name": "UFCP Down",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "475"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "20",
+          "pushId": "3317",
+          "pushValue": "1",
+          "releaseId": "3317",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "UFCP",
+      "name": "UFCP Day/Night/Auto",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "476"
+        }
+      ],
+      "deviceId": "20",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Day",
+          "actionId": "3323"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Night",
+          "actionId": "3323"
+        },
+        {
+          "argumentValue": "-1.0",
+          "name": "Auto",
+          "actionId": "3323"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "UFCP",
+      "name": "UFCP DVR Rec/Standby/Off",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "478"
+        }
+      ],
+      "deviceId": "20",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Rec",
+          "actionId": "3325"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Standby",
+          "actionId": "3325"
+        },
+        {
+          "argumentValue": "-1.0",
+          "name": "Off",
+          "actionId": "3325"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "UFCP",
+      "name": "UFCP Radar Altimeter Transmit/Off",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "478"
+        }
+      ],
+      "deviceId": "20",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Transmit",
+          "actionId": "3324"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Off",
+          "actionId": "3324"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "UFCP",
+      "name": "UFCP EGI Nav/Align/Storage Heading/Off/Test",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "479"
+        }
+      ],
+      "deviceId": "20",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Nav",
+          "actionId": "3326"
+        },
+        {
+          "argumentValue": "0.3",
+          "name": "Align",
+          "actionId": "3326"
+        },
+        {
+          "argumentValue": "0.5",
+          "name": "Storage Heading",
+          "actionId": "3326"
+        },
+        {
+          "argumentValue": "0.8",
+          "name": "Off",
+          "actionId": "3326"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Test",
+          "actionId": "3326"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "UFCP",
+      "name": "UFCP UFC BRT/OFF",
+      "description": "Current value of this potentiometer.",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "480"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.025,
+      "argumentMin": 0,
+      "argumentMax": 1,
+      "actions": {
+        "set": {
+          "deviceId": "20",
+          "actionId": "3327"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "UFCP",
+      "name": "UFCP HUD Test",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "481"
+        }
+      ],
+      "deviceId": "20",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Position1",
+          "actionId": "3328"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Position2",
+          "actionId": "3328"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "UFCP",
+      "name": "UFCP SBS On",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "482"
+        }
+      ],
+      "deviceId": "20",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Position1",
+          "actionId": "3329"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Position2",
+          "actionId": "3329"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "UFCP",
+      "name": "UFCP HUD Britghness",
+      "description": "Current value of this potentiometer.",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "483"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.025,
+      "argumentMin": 0,
+      "argumentMax": 1,
+      "actions": {
+        "set": {
+          "deviceId": "11",
+          "actionId": "3330"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "UFCP",
+      "name": "UFCP UFC BRT/OFF [2]",
+      "description": "Current value of this potentiometer.",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "484"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.025,
+      "argumentMin": 0,
+      "argumentMax": 1,
+      "actions": {
+        "set": {
+          "deviceId": "20",
+          "actionId": "3331"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "UFCP",
+      "name": "UFCP Joystick Right",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "485"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "20",
+          "pushId": "3332",
+          "pushValue": "1",
+          "releaseId": "3332",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "UFCP",
+      "name": "UFCP Joystick Left",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "486"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "20",
+          "pushId": "3333",
+          "pushValue": "1",
+          "releaseId": "3333",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "UFCP",
+      "name": "UFCP Joystick Up",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "487"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "20",
+          "pushId": "3334",
+          "pushValue": "1",
+          "releaseId": "3334",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "UFCP",
+      "name": "UFCP Joystick Down",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "488"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "20",
+          "pushId": "3335",
+          "pushValue": "1",
+          "releaseId": "3335",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning, Caution and IndicatorLights",
+      "name": "Panel Backlighting (green)",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "201"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning, Caution and IndicatorLights",
+      "name": "Console Backlighting (green)",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "202"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning, Caution and IndicatorLights",
+      "name": "Chart Light (green)",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "203"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning, Caution and IndicatorLights",
+      "name": "Storm Light (white)",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "204"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning, Caution and IndicatorLights",
+      "name": "Warning Light (red)",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "205"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning, Caution and IndicatorLights",
+      "name": "Caution Light (yellow)",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "206"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning, Caution and IndicatorLights",
+      "name": "Fire Light (red)",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "207"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning, Caution and IndicatorLights",
+      "name": "Gear Handle Light (red)",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "207"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning, Caution and IndicatorLights",
+      "name": "Park Brake Light (green)",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "208"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning, Caution and IndicatorLights",
+      "name": "Nose Gear Light (green)",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "209"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning, Caution and IndicatorLights",
+      "name": "Left Gear Light (green)",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "210"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning, Caution and IndicatorLights",
+      "name": "Right Gear Light (green)",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "211"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning, Caution and IndicatorLights",
+      "name": "AP Roll/Pitch Light (green)",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "213"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning, Caution and IndicatorLights",
+      "name": "AP Heading Light (green)",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "214"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning, Caution and IndicatorLights",
+      "name": "AP Altitude Light (green)",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "215"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning, Caution and IndicatorLights",
+      "name": "AP Test Light (green)",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "216"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning, Caution and IndicatorLights",
+      "name": "AP Test Fail Light (red)",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "217"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning, Caution and IndicatorLights",
+      "name": "AP NAV Light (green)",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "218"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning, Caution and IndicatorLights",
+      "name": "AP NAV Fail Light (red)",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "219"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning, Caution and IndicatorLights",
+      "name": "AP Approach Light (green)",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "220"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning, Caution and IndicatorLights",
+      "name": "AP Approach Fail Light (red)",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "221"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning, Caution and IndicatorLights",
+      "name": "AP GS Light (green)",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "222"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning, Caution and IndicatorLights",
+      "name": "AP GS Fail Light (red)",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "223"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning, Caution and IndicatorLights",
+      "name": "AP ON Light (green)",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "224"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning, Caution and IndicatorLights",
+      "name": "AP ON Fail Light (red)",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "225"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning, Caution and IndicatorLights",
+      "name": "UFCP Backlighting (green)",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "489"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Weapon System",
+      "name": "Mass (Sim/Save/Live)",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "781"
+        }
+      ],
+      "deviceId": "18",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Sim",
+          "actionId": "3225"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Save",
+          "actionId": "3225"
+        },
+        {
+          "argumentValue": "-1.0",
+          "name": "Live",
+          "actionId": "3225"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Weapon System",
+      "name": "Late Arm (On/Safe)",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "782"
+        }
+      ],
+      "deviceId": "18",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Position1",
+          "actionId": "3226"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Position2",
+          "actionId": "3226"
+        },
+        {
+          "argumentValue": "-1.0",
+          "name": "Position3",
+          "actionId": "3226"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Weapon System",
+      "name": "Salvo Mode",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "811"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "18",
+          "pushId": "3204",
+          "pushValue": "1",
+          "releaseId": "3204",
+          "releaseValue": "0"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,866 @@
+{
+  "source": "DCSFlightPanels",
+  "version": "0x6600",
+  "commit": "0f7b9925eb450ab79ff2fb15c846759face88646",
+  "type": "DCS",
+  "name": "DCS Hercules",
+  "module": "Hercules",
+  "vehicles": [
+    "Hercules"
+  ],
+  "functions": [
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "APU Panel",
+      "name": "APU Stop/Run/Start Selector",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "1050"
+        }
+      ],
+      "deviceId": "13",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Stop",
+          "actionId": "13056"
+        },
+        {
+          "argumentValue": "0.5",
+          "name": "Run",
+          "actionId": "13056"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Start Selector",
+          "actionId": "13056"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "APU Panel",
+      "name": "APU Fire Handle",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "1388"
+        }
+      ],
+      "deviceId": "13",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Position1",
+          "actionId": "13010"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Position2",
+          "actionId": "13010"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "APU Panel Lights",
+      "name": "APU Selector Light (green)",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "1051"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "APU Panel Lights",
+      "name": "APU Bleed Air Light (yellow)",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "1377"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "APU Panel Lights",
+      "name": "APU Fire Handle Light (red)",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "1389"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Electric Panel",
+      "name": "Battery Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "1000"
+        }
+      ],
+      "deviceId": "13",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Position1",
+          "actionId": "13048"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Position2",
+          "actionId": "13048"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Electric Panel",
+      "name": "External Power/OFF/APU Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "1001"
+        }
+      ],
+      "deviceId": "13",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Power",
+          "actionId": "13011"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "OFF",
+          "actionId": "13011"
+        },
+        {
+          "argumentValue": "-1.0",
+          "name": "APU Switch",
+          "actionId": "13011"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Electric Panel",
+      "name": "Generator 1 Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "1003"
+        }
+      ],
+      "deviceId": "13",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Position1",
+          "actionId": "13012"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Position2",
+          "actionId": "13012"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Electric Panel",
+      "name": "Generator 2 Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "1004"
+        }
+      ],
+      "deviceId": "13",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Position1",
+          "actionId": "13013"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Position2",
+          "actionId": "13013"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Electric Panel",
+      "name": "Generator 3 Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "1005"
+        }
+      ],
+      "deviceId": "13",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Position1",
+          "actionId": "13014"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Position2",
+          "actionId": "13014"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Electric Panel",
+      "name": "Generator 4 Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "1006"
+        }
+      ],
+      "deviceId": "13",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Position1",
+          "actionId": "13015"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Position2",
+          "actionId": "13015"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Electric Panel",
+      "name": "Battery Test Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "1007"
+        }
+      ],
+      "deviceId": "13",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Position1",
+          "actionId": "13016"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Position2",
+          "actionId": "13016"
+        },
+        {
+          "argumentValue": "-1.0",
+          "name": "Position3",
+          "actionId": "13016"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Electric Panel Lights",
+      "name": "External Power Indicator Light (green)",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "1002"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Engine Start Panel",
+      "name": "Engine 1 Stop/Run/Start Selector",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "1009"
+        }
+      ],
+      "deviceId": "13",
+      "positions": [
+        {
+          "argumentValue": "-0.5",
+          "name": "Position1",
+          "actionId": "13010"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Position2",
+          "actionId": "13010"
+        },
+        {
+          "argumentValue": "0.5",
+          "name": "Position3",
+          "actionId": "13010"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position4",
+          "actionId": "13010"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Engine Start Panel",
+      "name": "Engine 2 Stop/Run/Start Selector",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "1012"
+        }
+      ],
+      "deviceId": "13",
+      "positions": [
+        {
+          "argumentValue": "-0.5",
+          "name": "Position1",
+          "actionId": "13011"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Position2",
+          "actionId": "13011"
+        },
+        {
+          "argumentValue": "0.5",
+          "name": "Position3",
+          "actionId": "13011"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position4",
+          "actionId": "13011"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Engine Start Panel",
+      "name": "Engine 3 Stop/Run/Start Selector",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "1015"
+        }
+      ],
+      "deviceId": "13",
+      "positions": [
+        {
+          "argumentValue": "-0.5",
+          "name": "Position1",
+          "actionId": "13012"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Position2",
+          "actionId": "13012"
+        },
+        {
+          "argumentValue": "0.5",
+          "name": "Position3",
+          "actionId": "13012"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position4",
+          "actionId": "13012"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Engine Start Panel",
+      "name": "Engine 4 Stop/Run/Start Selector",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "1018"
+        }
+      ],
+      "deviceId": "13",
+      "positions": [
+        {
+          "argumentValue": "-0.5",
+          "name": "Position1",
+          "actionId": "13013"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Position2",
+          "actionId": "13013"
+        },
+        {
+          "argumentValue": "0.5",
+          "name": "Position3",
+          "actionId": "13013"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position4",
+          "actionId": "13013"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Engine Start Panel Lights",
+      "name": "Engine 1 Start Light (green)",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "1010"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Engine Start Panel Lights",
+      "name": "Engine 2 Start Light (green)",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "1013"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Engine Start Panel Lights",
+      "name": "Engine 3 Start Light (green)",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "1016"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Engine Start Panel Lights",
+      "name": "Engine 4 Start Light (green)",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "1019"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "External Aircraft Model",
+      "name": "EXT_SPEED_BRAKEs",
+      "description": "Unimplemented Callback [[anonymous callback 1]] EXT_SPEED_BRAKEs",
+      "exports": [
+        {
+          "id": "[anonymous callback 1]"
+        }
+      ],
+      "callback": true,
+      "unimplemented": true
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "External Aircraft Model",
+      "name": "EXT_LANDING_LIGHT_LEFT",
+      "description": "Unimplemented Callback [[anonymous callback 2]] EXT_LANDING_LIGHT_LEFT",
+      "exports": [
+        {
+          "id": "[anonymous callback 2]"
+        }
+      ],
+      "callback": true,
+      "unimplemented": true
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "External Aircraft Model",
+      "name": "EXT_LANDING_LIGHT_RIGHT",
+      "description": "Unimplemented Callback [[anonymous callback 3]] EXT_LANDING_LIGHT_RIGHT",
+      "exports": [
+        {
+          "id": "[anonymous callback 3]"
+        }
+      ],
+      "callback": true,
+      "unimplemented": true
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "External Aircraft Model",
+      "name": "EXT_LANDING_LIGHT_GEAR",
+      "description": "Unimplemented Callback [[anonymous callback 4]] EXT_LANDING_LIGHT_GEAR",
+      "exports": [
+        {
+          "id": "[anonymous callback 4]"
+        }
+      ],
+      "callback": true,
+      "unimplemented": true
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "External Aircraft Model",
+      "name": "EXT_WOW_NOSE",
+      "description": "Unimplemented Callback [[anonymous callback 5]] EXT_WOW_NOSE",
+      "exports": [
+        {
+          "id": "[anonymous callback 5]"
+        }
+      ],
+      "callback": true,
+      "unimplemented": true
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "External Aircraft Model",
+      "name": "EXT_WOW_RIGHT",
+      "description": "Unimplemented Callback [[anonymous callback 6]] EXT_WOW_RIGHT",
+      "exports": [
+        {
+          "id": "[anonymous callback 6]"
+        }
+      ],
+      "callback": true,
+      "unimplemented": true
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "External Aircraft Model",
+      "name": "EXT_WOW_LEFT",
+      "description": "Unimplemented Callback [[anonymous callback 7]] EXT_WOW_LEFT",
+      "exports": [
+        {
+          "id": "[anonymous callback 7]"
+        }
+      ],
+      "callback": true,
+      "unimplemented": true
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Fire Handle",
+      "name": "Engine 1 Fire Handle",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "1380"
+        }
+      ],
+      "deviceId": "13",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Position1",
+          "actionId": "13010"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Position2",
+          "actionId": "13010"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Fire Handle",
+      "name": "Engine 2 Fire Handle",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "1382"
+        }
+      ],
+      "deviceId": "13",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Position1",
+          "actionId": "13010"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Position2",
+          "actionId": "13010"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Fire Handle",
+      "name": "Engine 3 Fire Handle",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "1384"
+        }
+      ],
+      "deviceId": "13",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Position1",
+          "actionId": "13010"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Position2",
+          "actionId": "13010"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Fire Handle",
+      "name": "Engine 4 Fire Handle",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "1386"
+        }
+      ],
+      "deviceId": "13",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Position1",
+          "actionId": "13010"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Position2",
+          "actionId": "13010"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Fire Handle Lights",
+      "name": "Fire Handle Engine 1 Light (red)",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "1381"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Fire Handle Lights",
+      "name": "Fire Handle Engine 2 Light (red)",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "1383"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Fire Handle Lights",
+      "name": "Fire Handle Engine 3 Light (red)",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "1385"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Fire Handle Lights",
+      "name": "Fire Handle Engine 4 Light (red)",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "1387"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "ICS Panel",
+      "name": "PILOT ICS Volume (Rotate)",
+      "description": "Current value of this potentiometer.",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "1430"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.025,
+      "argumentMin": -0.5,
+      "argumentMax": 0.5,
+      "actions": {
+        "set": {
+          "deviceId": "13",
+          "actionId": "13012"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "ICS Panel",
+      "name": "PILOT ICS Volume (Pull)",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "1431"
+        }
+      ],
+      "deviceId": "13",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Position1",
+          "actionId": "13013"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Position2",
+          "actionId": "13013"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "ICS Panel",
+      "name": "COPILOT ICS Volume (Rotate)",
+      "description": "Current value of this potentiometer.",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "1432"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.025,
+      "argumentMin": -0.5,
+      "argumentMax": 0.5,
+      "actions": {
+        "set": {
+          "deviceId": "13",
+          "actionId": "13014"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "ICS Panel",
+      "name": "COPILOT ICS Volume (Pull)",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "1433"
+        }
+      ],
+      "deviceId": "13",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Position1",
+          "actionId": "13015"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Position2",
+          "actionId": "13015"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "ICS Panel",
+      "name": "PILOT ICS Undefined Knob",
+      "description": "Current value of this potentiometer.",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "1434"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.025,
+      "argumentMin": -0.5,
+      "argumentMax": 0.5,
+      "actions": {
+        "set": {
+          "deviceId": "13",
+          "actionId": "13016"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "ICS Panel",
+      "name": "COPILOT ICS Undefined Knob",
+      "description": "Current value of this potentiometer.",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "1435"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.025,
+      "argumentMin": -0.5,
+      "argumentMax": 0.5,
+      "actions": {
+        "set": {
+          "deviceId": "13",
+          "actionId": "13017"
+        }
+      }
+    }
+  ]
+}

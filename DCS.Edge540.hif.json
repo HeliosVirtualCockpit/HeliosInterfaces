@@ -1,0 +1,925 @@
+{
+  "source": "DCSFlightPanels",
+  "version": "0x5600",
+  "commit": "950ad1fb3cf7cfea8b0a512fcc018da0ab3b90be",
+  "type": "DCS",
+  "name": "DCS Edge540",
+  "module": "Edge540",
+  "vehicles": [
+    "Edge540",
+    "Extra330SR"
+  ],
+  "functions": [
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Config Page",
+      "name": "Config Page - Select Pilot",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "6"
+        }
+      ],
+      "deviceId": "8",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3013"
+        },
+        {
+          "argumentValue": "0.1",
+          "name": "Position2",
+          "actionId": "3013"
+        },
+        {
+          "argumentValue": "0.2",
+          "name": "Position3",
+          "actionId": "3013"
+        },
+        {
+          "argumentValue": "0.3",
+          "name": "Position4",
+          "actionId": "3013"
+        },
+        {
+          "argumentValue": "0.4",
+          "name": "Position5",
+          "actionId": "3013"
+        },
+        {
+          "argumentValue": "0.5",
+          "name": "Position6",
+          "actionId": "3013"
+        },
+        {
+          "argumentValue": "0.6",
+          "name": "Position7",
+          "actionId": "3013"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Config Page",
+      "name": "Config Page - Attach/Remove Winglets",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "70"
+        }
+      ],
+      "deviceId": "8",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Attach",
+          "actionId": "3010"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Remove Winglets",
+          "actionId": "3010"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Config Page",
+      "name": "Config Page - Attach/Remove Spades",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "71"
+        }
+      ],
+      "deviceId": "8",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Attach",
+          "actionId": "3011"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Remove Spades",
+          "actionId": "3011"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Config Page",
+      "name": "Config Page - Attach/Remove Lights",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "720"
+        }
+      ],
+      "deviceId": "8",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Attach",
+          "actionId": "3012"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Remove Lights",
+          "actionId": "3012"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Config Page",
+      "name": "Config Page - Attach/Remove Spades Extra330SR",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "73"
+        }
+      ],
+      "deviceId": "8",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Attach",
+          "actionId": "3011"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Remove Spades Extra330SR",
+          "actionId": "3011"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Config Page",
+      "name": "Config Page - Hide Aersti Chart",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "Config Page - Hide Aersti Chart"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "2",
+          "pushId": "3006",
+          "pushValue": "1",
+          "releaseId": "3006",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "External Aircraft Model",
+      "name": "EXT_LIGHTS",
+      "description": "Unimplemented Callback [[anonymous callback 1]] EXT_LIGHTS",
+      "exports": [
+        {
+          "id": "[anonymous callback 1]"
+        }
+      ],
+      "callback": true,
+      "unimplemented": true
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "External Aircraft Model",
+      "name": "EXT_PAINTGLOW",
+      "description": "Unimplemented Callback [[anonymous callback 2]] EXT_PAINTGLOW",
+      "exports": [
+        {
+          "id": "[anonymous callback 2]"
+        }
+      ],
+      "callback": true,
+      "unimplemented": true
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Gauges",
+      "name": "Canopy Position",
+      "description": "TODO: assign units, set calibration points, and write description",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "181"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 5
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Gauges",
+      "name": "Internal Tanks Fuel Gauge",
+      "description": "TODO: assign units, set calibration points, and write description",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "22"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 5
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Gauges",
+      "name": "Wing Tanks Fuel Gauge",
+      "description": "TODO: assign units, set calibration points, and write description",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "23"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 5
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Gauges",
+      "name": "Airspeed in Knots Gauge",
+      "description": "TODO: assign units, set calibration points, and write description",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "5"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 5
+      }
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Main Display",
+      "name": "Display Button 4 Configuration Page",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "30"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "8",
+          "pushId": "3001",
+          "pushValue": "1",
+          "releaseId": "3001",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Main Display",
+      "name": "Display Button 3 Mp3 Page",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "31"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "8",
+          "pushId": "3018",
+          "pushValue": "1",
+          "releaseId": "3018",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Main Display",
+      "name": "Display Button 2 System Page",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "32"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "8",
+          "pushId": "3017",
+          "pushValue": "1",
+          "releaseId": "3017",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Main Display",
+      "name": "Display Button 1 NAV Page",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "34"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "8",
+          "pushId": "3015",
+          "pushValue": "1",
+          "releaseId": "3015",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Main Panel",
+      "name": "Magnetos",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "14"
+        }
+      ],
+      "deviceId": "3",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3050"
+        },
+        {
+          "argumentValue": "0.3",
+          "name": "Position2",
+          "actionId": "3050"
+        },
+        {
+          "argumentValue": "0.5",
+          "name": "Position3",
+          "actionId": "3050"
+        },
+        {
+          "argumentValue": "0.8",
+          "name": "Position4",
+          "actionId": "3050"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position5",
+          "actionId": "3050"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Main Panel",
+      "name": "Mixture Lever",
+      "description": "Current value of this potentiometer.",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "17"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.025,
+      "argumentMin": 0,
+      "argumentMax": 1,
+      "actions": {
+        "set": {
+          "deviceId": "3",
+          "actionId": "3003"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Main Panel",
+      "name": "Master Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "18"
+        }
+      ],
+      "deviceId": "4",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Position1",
+          "actionId": "3051"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Position2",
+          "actionId": "3051"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Main Panel",
+      "name": "Electric Fuel Pump",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "19"
+        }
+      ],
+      "deviceId": "4",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Position1",
+          "actionId": "3052"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Position2",
+          "actionId": "3052"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Main Panel",
+      "name": "Fuel Selector",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "21"
+        }
+      ],
+      "deviceId": "3",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3053"
+        },
+        {
+          "argumentValue": "0.5",
+          "name": "Position2",
+          "actionId": "3053"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position3",
+          "actionId": "3053"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.RotaryEncoder",
+      "device": "Main Panel",
+      "name": "Altimeter Setting",
+      "description": "Current position of this rotary encoder knob.",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "6"
+        }
+      ],
+      "unit": "Numeric",
+      "argumentValue": 0.025,
+      "actions": {
+        "increment": {
+          "deviceId": "2",
+          "actionId": "3001"
+        },
+        "decrement": {
+          "deviceId": "2",
+          "actionId": "3001"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Main Panel",
+      "name": "Canopy Open/Close",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "Canopy Open/Close"
+        }
+      ],
+      "deviceId": "6",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Open",
+          "actionId": "71"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Close",
+          "actionId": "71"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Main Panel",
+      "name": "Racing LED Indicator Speed/G Toggle",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "Racing LED Indicator Speed/G Toggle"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "2",
+          "pushId": "3008",
+          "pushValue": "1",
+          "releaseId": "3008",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Main Panel",
+      "name": "Stopwatch Start/Stop/Reset",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "Stopwatch Start/Stop/Reset"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "7",
+          "pushId": "3005",
+          "pushValue": "1",
+          "releaseId": "3005",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Main Panel",
+      "name": "UAV Mode",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "UAV Mode"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "2",
+          "pushId": "3007",
+          "pushValue": "1",
+          "releaseId": "3007",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Mp3 Page",
+      "name": "Mp3 Next Track",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "Mp3 Next Track"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "9",
+          "pushId": "3031",
+          "pushValue": "1",
+          "releaseId": "3031",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Mp3 Page",
+      "name": "Mp3 Play",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "Mp3 Play"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "9",
+          "pushId": "3030",
+          "pushValue": "1",
+          "releaseId": "3030",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Mp3 Page",
+      "name": "Mp3 Previous Track",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "Mp3 Previous Track"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "9",
+          "pushId": "3032",
+          "pushValue": "1",
+          "releaseId": "3032",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Smoke",
+      "name": "Smoke Arm",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "27"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Position1",
+          "actionId": "3025"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Position2",
+          "actionId": "3025"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "System Page",
+      "name": "System Page - Gauge Lights",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "42"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "4",
+          "pushId": "3013",
+          "pushValue": "1",
+          "releaseId": "3013",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "System Page",
+      "name": "System Page - Navigation Lights",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "61"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "4",
+          "pushId": "3001",
+          "pushValue": "1",
+          "releaseId": "3001",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "System Page",
+      "name": "System Page - Flood Lights",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "63"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "4",
+          "pushId": "3012",
+          "pushValue": "1",
+          "releaseId": "3012",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "System Page",
+      "name": "System Page - Flood Light Color",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "System Page - Flood Light Color"
+        }
+      ],
+      "deviceId": "8",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3023"
+        },
+        {
+          "argumentValue": "0.1",
+          "name": "Position2",
+          "actionId": "3023"
+        },
+        {
+          "argumentValue": "0.2",
+          "name": "Position3",
+          "actionId": "3023"
+        },
+        {
+          "argumentValue": "0.3",
+          "name": "Position4",
+          "actionId": "3023"
+        },
+        {
+          "argumentValue": "0.4",
+          "name": "Position5",
+          "actionId": "3023"
+        },
+        {
+          "argumentValue": "0.5",
+          "name": "Position6",
+          "actionId": "3023"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "System Page",
+      "name": "System Page - Wallpaper",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "System Page - Wallpaper"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "8",
+          "pushId": "3019",
+          "pushValue": "1",
+          "releaseId": "3019",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning, Caution and IndicatorLights",
+      "name": "Display Background Light (white)",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "20"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning, Caution and IndicatorLights",
+      "name": "Cockpit Light (white)",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "41"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning, Caution and IndicatorLights",
+      "name": "Instrument Lights (white)",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "42"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1276 @@
+{
+  "source": "DCSFlightPanels",
+  "version": "0x600",
+  "commit": "326d2f224522d798f6dae690b0eac96fa7828250",
+  "type": "DCS",
+  "name": "DCS NS430",
+  "module": "NS430",
+  "vehicles": [
+    "A-10C",
+    "A-10C_2",
+    "AJS37",
+    "AV8BNA",
+    "Bf-109K-4",
+    "C-101CC",
+    "C-101EB",
+    "Christen Eagle II",
+    "F-14A-135-GR",
+    "F-14B",
+    "F-16C_50",
+    "F-5E-3",
+    "F-86F Sabre",
+    "FA-18C_hornet",
+    "FW-190A8",
+    "FW-190D9",
+    "I-16",
+    "JF-17",
+    "Ka-50",
+    "L-39C",
+    "L-39ZA",
+    "M-2000C",
+    "Mi-8MT",
+    "MiG-15bis",
+    "MiG-19P",
+    "MiG-21Bis",
+    "P-47D-30",
+    "P-47D-30bl1",
+    "P-47D-40",
+    "P-51D",
+    "P-51D-30-NA",
+    "SA342L",
+    "SA342M",
+    "SA342Minigun",
+    "SA342Mistral",
+    "SpitfireLFMkIX",
+    "SpitfireLFMkIXCW",
+    "TF-51D",
+    "UH-1H",
+    "Yak-52"
+  ],
+  "functions": [
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "NS430",
+      "name": "PWR-VOL PUSH-SQ COM Power",
+      "description": "Unimplemented [1] NS430_PWR_VOL_PUSH_SQ_POW",
+      "exports": [
+        {
+          "id": "1"
+        }
+      ],
+      "actions": [
+        {
+          "actionArg": "1",
+          "actionId": 3001,
+          "name": "start"
+        },
+        {
+          "actionArg": "1",
+          "actionId": 3030,
+          "name": "stop1"
+        },
+        {
+          "actionArg": "0",
+          "actionId": 3030,
+          "name": "stop2"
+        }
+      ],
+      "unimplemented": true,
+      "dcsbios": {
+        "id": 1,
+        "key": "NS430_PWR_VOL_PUSH_SQ_POW",
+        "reference": {
+          "info": {
+            "actiondId": 3001,
+            "doc": {
+              "control_type": "selector",
+              "description": "PWR-VOL PUSH-SQ COM Power",
+              "inputs": [
+                {
+                  "description": "switch to previous or next state",
+                  "interface": "fixed_step"
+                },
+                {
+                  "description": "set position",
+                  "interface": "set_state",
+                  "max_value": 1
+                }
+              ],
+              "momentary_positions": "first_and_last",
+              "outputs": [
+                {
+                  "address": 1536,
+                  "description": "selector position",
+                  "mask": 1,
+                  "max_value": 1,
+                  "shift_by": 0,
+                  "suffix": "",
+                  "type": "integer"
+                }
+              ],
+              "physical_variant": "push_button"
+            },
+            "type": "doubleCommandButton"
+          }
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "NS430",
+      "name": "OBS",
+      "description": "Unimplemented [10] NS430_OBS",
+      "exports": [
+        {
+          "id": "10"
+        }
+      ],
+      "actions": [
+        {
+          "actionArg": "1",
+          "actionId": 3015,
+          "name": "start"
+        },
+        {
+          "actionArg": "1",
+          "actionId": 3036,
+          "name": "stop1"
+        },
+        {
+          "actionArg": "0",
+          "actionId": 3036,
+          "name": "stop2"
+        }
+      ],
+      "unimplemented": true,
+      "dcsbios": {
+        "id": 10,
+        "key": "NS430_OBS",
+        "reference": {
+          "info": {
+            "actiondId": 3015,
+            "doc": {
+              "control_type": "selector",
+              "description": "OBS",
+              "inputs": [
+                {
+                  "description": "switch to previous or next state",
+                  "interface": "fixed_step"
+                },
+                {
+                  "description": "set position",
+                  "interface": "set_state",
+                  "max_value": 1
+                }
+              ],
+              "momentary_positions": "first_and_last",
+              "outputs": [
+                {
+                  "address": 1536,
+                  "description": "selector position",
+                  "mask": 64,
+                  "max_value": 1,
+                  "shift_by": 6,
+                  "suffix": "",
+                  "type": "integer"
+                }
+              ],
+              "physical_variant": "push_button"
+            },
+            "type": "doubleCommandButton"
+          }
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "NS430",
+      "name": "OBS1",
+      "description": "Unimplemented [10] NS430_OBS1",
+      "exports": [
+        {
+          "id": "10"
+        }
+      ],
+      "actions": [
+        {
+          "actionArg": "1",
+          "actionId": 3015,
+          "name": "start"
+        },
+        {
+          "actionArg": "1",
+          "actionId": 3036,
+          "name": "stop1"
+        },
+        {
+          "actionArg": "0",
+          "actionId": 3036,
+          "name": "stop2"
+        }
+      ],
+      "unimplemented": true,
+      "dcsbios": {
+        "id": 10,
+        "key": "NS430_OBS1",
+        "reference": {
+          "info": {
+            "actiondId": 3015,
+            "doc": {
+              "control_type": "selector",
+              "description": "OBS1",
+              "inputs": [
+                {
+                  "description": "switch to previous or next state",
+                  "interface": "fixed_step"
+                },
+                {
+                  "description": "set position",
+                  "interface": "set_state",
+                  "max_value": 1
+                }
+              ],
+              "momentary_positions": "first_and_last",
+              "outputs": [
+                {
+                  "address": 1536,
+                  "description": "selector position",
+                  "mask": 128,
+                  "max_value": 1,
+                  "shift_by": 7,
+                  "suffix": "",
+                  "type": "integer"
+                }
+              ],
+              "physical_variant": "push_button"
+            },
+            "type": "doubleCommandButton"
+          }
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "NS430",
+      "name": "MSG",
+      "description": "Unimplemented [11] NS430_MSG",
+      "exports": [
+        {
+          "id": "11"
+        }
+      ],
+      "actions": [
+        {
+          "actionArg": "1",
+          "actionId": 3016,
+          "name": "start"
+        },
+        {
+          "actionArg": "1",
+          "actionId": 3037,
+          "name": "stop1"
+        },
+        {
+          "actionArg": "0",
+          "actionId": 3037,
+          "name": "stop2"
+        }
+      ],
+      "unimplemented": true,
+      "dcsbios": {
+        "id": 11,
+        "key": "NS430_MSG",
+        "reference": {
+          "info": {
+            "actiondId": 3016,
+            "doc": {
+              "control_type": "selector",
+              "description": "MSG",
+              "inputs": [
+                {
+                  "description": "switch to previous or next state",
+                  "interface": "fixed_step"
+                },
+                {
+                  "description": "set position",
+                  "interface": "set_state",
+                  "max_value": 1
+                }
+              ],
+              "momentary_positions": "first_and_last",
+              "outputs": [
+                {
+                  "address": 1536,
+                  "description": "selector position",
+                  "mask": 256,
+                  "max_value": 1,
+                  "shift_by": 8,
+                  "suffix": "",
+                  "type": "integer"
+                }
+              ],
+              "physical_variant": "push_button"
+            },
+            "type": "doubleCommandButton"
+          }
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "NS430",
+      "name": "FPL",
+      "description": "Unimplemented [12] NS430_FPL",
+      "exports": [
+        {
+          "id": "12"
+        }
+      ],
+      "actions": [
+        {
+          "actionArg": "1",
+          "actionId": 3017,
+          "name": "start"
+        },
+        {
+          "actionArg": "1",
+          "actionId": 3038,
+          "name": "stop1"
+        },
+        {
+          "actionArg": "0",
+          "actionId": 3038,
+          "name": "stop2"
+        }
+      ],
+      "unimplemented": true,
+      "dcsbios": {
+        "id": 12,
+        "key": "NS430_FPL",
+        "reference": {
+          "info": {
+            "actiondId": 3017,
+            "doc": {
+              "control_type": "selector",
+              "description": "FPL",
+              "inputs": [
+                {
+                  "description": "switch to previous or next state",
+                  "interface": "fixed_step"
+                },
+                {
+                  "description": "set position",
+                  "interface": "set_state",
+                  "max_value": 1
+                }
+              ],
+              "momentary_positions": "first_and_last",
+              "outputs": [
+                {
+                  "address": 1536,
+                  "description": "selector position",
+                  "mask": 512,
+                  "max_value": 1,
+                  "shift_by": 9,
+                  "suffix": "",
+                  "type": "integer"
+                }
+              ],
+              "physical_variant": "push_button"
+            },
+            "type": "doubleCommandButton"
+          }
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "NS430",
+      "name": "PROC",
+      "description": "Unimplemented [13] NS430_PROC",
+      "exports": [
+        {
+          "id": "13"
+        }
+      ],
+      "actions": [
+        {
+          "actionArg": "1",
+          "actionId": 3018,
+          "name": "start"
+        },
+        {
+          "actionArg": "1",
+          "actionId": 3039,
+          "name": "stop1"
+        },
+        {
+          "actionArg": "0",
+          "actionId": 3039,
+          "name": "stop2"
+        }
+      ],
+      "unimplemented": true,
+      "dcsbios": {
+        "id": 13,
+        "key": "NS430_PROC",
+        "reference": {
+          "info": {
+            "actiondId": 3018,
+            "doc": {
+              "control_type": "selector",
+              "description": "PROC",
+              "inputs": [
+                {
+                  "description": "switch to previous or next state",
+                  "interface": "fixed_step"
+                },
+                {
+                  "description": "set position",
+                  "interface": "set_state",
+                  "max_value": 1
+                }
+              ],
+              "momentary_positions": "first_and_last",
+              "outputs": [
+                {
+                  "address": 1536,
+                  "description": "selector position",
+                  "mask": 1024,
+                  "max_value": 1,
+                  "shift_by": 10,
+                  "suffix": "",
+                  "type": "integer"
+                }
+              ],
+              "physical_variant": "push_button"
+            },
+            "type": "doubleCommandButton"
+          }
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "NS430",
+      "name": "DIRECT-TO",
+      "description": "Unimplemented [15] NS430_DIRECT_TO",
+      "exports": [
+        {
+          "id": "15"
+        }
+      ],
+      "actions": [
+        {
+          "actionArg": "1",
+          "actionId": 3021,
+          "name": "start"
+        },
+        {
+          "actionArg": "1",
+          "actionId": 3042,
+          "name": "stop1"
+        },
+        {
+          "actionArg": "0",
+          "actionId": 3042,
+          "name": "stop2"
+        }
+      ],
+      "unimplemented": true,
+      "dcsbios": {
+        "id": 15,
+        "key": "NS430_DIRECT_TO",
+        "reference": {
+          "info": {
+            "actiondId": 3021,
+            "doc": {
+              "control_type": "selector",
+              "description": "DIRECT-TO",
+              "inputs": [
+                {
+                  "description": "switch to previous or next state",
+                  "interface": "fixed_step"
+                },
+                {
+                  "description": "set position",
+                  "interface": "set_state",
+                  "max_value": 1
+                }
+              ],
+              "momentary_positions": "first_and_last",
+              "outputs": [
+                {
+                  "address": 1536,
+                  "description": "selector position",
+                  "mask": 2048,
+                  "max_value": 1,
+                  "shift_by": 11,
+                  "suffix": "",
+                  "type": "integer"
+                }
+              ],
+              "physical_variant": "push_button"
+            },
+            "type": "doubleCommandButton"
+          }
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "NS430",
+      "name": "MENU",
+      "description": "Unimplemented [16] NS430_MENU",
+      "exports": [
+        {
+          "id": "16"
+        }
+      ],
+      "actions": [
+        {
+          "actionArg": "1",
+          "actionId": 3022,
+          "name": "start"
+        },
+        {
+          "actionArg": "1",
+          "actionId": 3043,
+          "name": "stop1"
+        },
+        {
+          "actionArg": "0",
+          "actionId": 3043,
+          "name": "stop2"
+        }
+      ],
+      "unimplemented": true,
+      "dcsbios": {
+        "id": 16,
+        "key": "NS430_MENU",
+        "reference": {
+          "info": {
+            "actiondId": 3022,
+            "doc": {
+              "control_type": "selector",
+              "description": "MENU",
+              "inputs": [
+                {
+                  "description": "switch to previous or next state",
+                  "interface": "fixed_step"
+                },
+                {
+                  "description": "set position",
+                  "interface": "set_state",
+                  "max_value": 1
+                }
+              ],
+              "momentary_positions": "first_and_last",
+              "outputs": [
+                {
+                  "address": 1536,
+                  "description": "selector position",
+                  "mask": 4096,
+                  "max_value": 1,
+                  "shift_by": 12,
+                  "suffix": "",
+                  "type": "integer"
+                }
+              ],
+              "physical_variant": "push_button"
+            },
+            "type": "doubleCommandButton"
+          }
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "NS430",
+      "name": "CLR",
+      "description": "Unimplemented [17] NS430_CLR",
+      "exports": [
+        {
+          "id": "17"
+        }
+      ],
+      "actions": [
+        {
+          "actionArg": "1",
+          "actionId": 3023,
+          "name": "start"
+        },
+        {
+          "actionArg": "1",
+          "actionId": 3044,
+          "name": "stop1"
+        },
+        {
+          "actionArg": "0",
+          "actionId": 3044,
+          "name": "stop2"
+        }
+      ],
+      "unimplemented": true,
+      "dcsbios": {
+        "id": 17,
+        "key": "NS430_CLR",
+        "reference": {
+          "info": {
+            "actiondId": 3023,
+            "doc": {
+              "control_type": "selector",
+              "description": "CLR",
+              "inputs": [
+                {
+                  "description": "switch to previous or next state",
+                  "interface": "fixed_step"
+                },
+                {
+                  "description": "set position",
+                  "interface": "set_state",
+                  "max_value": 1
+                }
+              ],
+              "momentary_positions": "first_and_last",
+              "outputs": [
+                {
+                  "address": 1536,
+                  "description": "selector position",
+                  "mask": 8192,
+                  "max_value": 1,
+                  "shift_by": 13,
+                  "suffix": "",
+                  "type": "integer"
+                }
+              ],
+              "physical_variant": "push_button"
+            },
+            "type": "doubleCommandButton"
+          }
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "NS430",
+      "name": "ENT",
+      "description": "Unimplemented [18] NS430_ENT",
+      "exports": [
+        {
+          "id": "18"
+        }
+      ],
+      "actions": [
+        {
+          "actionArg": "1",
+          "actionId": 3024,
+          "name": "start"
+        },
+        {
+          "actionArg": "1",
+          "actionId": 3045,
+          "name": "stop1"
+        },
+        {
+          "actionArg": "0",
+          "actionId": 3045,
+          "name": "stop2"
+        }
+      ],
+      "unimplemented": true,
+      "dcsbios": {
+        "id": 18,
+        "key": "NS430_ENT",
+        "reference": {
+          "info": {
+            "actiondId": 3024,
+            "doc": {
+              "control_type": "selector",
+              "description": "ENT",
+              "inputs": [
+                {
+                  "description": "switch to previous or next state",
+                  "interface": "fixed_step"
+                },
+                {
+                  "description": "set position",
+                  "interface": "set_state",
+                  "max_value": 1
+                }
+              ],
+              "momentary_positions": "first_and_last",
+              "outputs": [
+                {
+                  "address": 1536,
+                  "description": "selector position",
+                  "mask": 16384,
+                  "max_value": 1,
+                  "shift_by": 14,
+                  "suffix": "",
+                  "type": "integer"
+                }
+              ],
+              "physical_variant": "push_button"
+            },
+            "type": "doubleCommandButton"
+          }
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.RotaryEncoder",
+      "device": "NS430",
+      "name": "BIG_RIGHT_BTN",
+      "description": "Current position of this rotary encoder knob.",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "19"
+        }
+      ],
+      "unit": "Numeric",
+      "argumentValue": 0.025,
+      "actions": {
+        "increment": {
+          "deviceId": "257",
+          "actionId": "3025"
+        },
+        "decrement": {
+          "deviceId": "257",
+          "actionId": "3025"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "NS430",
+      "name": "VOL_PUSH-ID VLOC Volume",
+      "description": "Current value of this potentiometer.",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "2"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.025,
+      "argumentMin": 0,
+      "argumentMax": 1,
+      "actions": {
+        "set": {
+          "deviceId": "257",
+          "actionId": "3005"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "NS430",
+      "name": "SMALL_RIGHT_BTN Push",
+      "description": "Unimplemented [20] NS430_SMALL_RIGHT_BTN_PUSH",
+      "exports": [
+        {
+          "id": "20"
+        }
+      ],
+      "actions": [
+        {
+          "actionArg": "1",
+          "actionId": 3027,
+          "name": "start"
+        },
+        {
+          "actionArg": "1",
+          "actionId": 3046,
+          "name": "stop1"
+        },
+        {
+          "actionArg": "0",
+          "actionId": 3046,
+          "name": "stop2"
+        }
+      ],
+      "unimplemented": true,
+      "dcsbios": {
+        "id": 20,
+        "key": "NS430_SMALL_RIGHT_BTN_PUSH",
+        "reference": {
+          "info": {
+            "actiondId": 3027,
+            "doc": {
+              "control_type": "selector",
+              "description": "SMALL_RIGHT_BTN Push",
+              "inputs": [
+                {
+                  "description": "switch to previous or next state",
+                  "interface": "fixed_step"
+                },
+                {
+                  "description": "set position",
+                  "interface": "set_state",
+                  "max_value": 1
+                }
+              ],
+              "momentary_positions": "first_and_last",
+              "outputs": [
+                {
+                  "address": 1536,
+                  "description": "selector position",
+                  "mask": 32768,
+                  "max_value": 1,
+                  "shift_by": 15,
+                  "suffix": "",
+                  "type": "integer"
+                }
+              ],
+              "physical_variant": "push_button"
+            },
+            "type": "doubleCommandButton"
+          }
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.RotaryEncoder",
+      "device": "NS430",
+      "name": "SMALL_RIGHT_BTN rotate",
+      "description": "Current position of this rotary encoder knob.",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "21"
+        }
+      ],
+      "unit": "Numeric",
+      "argumentValue": 0.025,
+      "actions": {
+        "increment": {
+          "deviceId": "257",
+          "actionId": "3028"
+        },
+        "decrement": {
+          "deviceId": "257",
+          "actionId": "3028"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "NS430",
+      "name": "VOL_PUSH-ID VLOC Push",
+      "description": "Unimplemented [3] NS430_VOL_PUSH_ID_PUSH",
+      "exports": [
+        {
+          "id": "3"
+        }
+      ],
+      "actions": [
+        {
+          "actionArg": "1",
+          "actionId": 3004,
+          "name": "start"
+        },
+        {
+          "actionArg": "1",
+          "actionId": 3031,
+          "name": "stop1"
+        },
+        {
+          "actionArg": "0",
+          "actionId": 3031,
+          "name": "stop2"
+        }
+      ],
+      "unimplemented": true,
+      "dcsbios": {
+        "id": 3,
+        "key": "NS430_VOL_PUSH_ID_PUSH",
+        "reference": {
+          "info": {
+            "actiondId": 3004,
+            "doc": {
+              "control_type": "selector",
+              "description": "VOL_PUSH-ID VLOC Push",
+              "inputs": [
+                {
+                  "description": "switch to previous or next state",
+                  "interface": "fixed_step"
+                },
+                {
+                  "description": "set position",
+                  "interface": "set_state",
+                  "max_value": 1
+                }
+              ],
+              "momentary_positions": "first_and_last",
+              "outputs": [
+                {
+                  "address": 1536,
+                  "description": "selector position",
+                  "mask": 2,
+                  "max_value": 1,
+                  "shift_by": 1,
+                  "suffix": "",
+                  "type": "integer"
+                }
+              ],
+              "physical_variant": "push_button"
+            },
+            "type": "doubleCommandButton"
+          }
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.RotaryEncoder",
+      "device": "NS430",
+      "name": "BIG_LEFT_BTN",
+      "description": "Current position of this rotary encoder knob.",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "4"
+        }
+      ],
+      "unit": "Numeric",
+      "argumentValue": 0.025,
+      "actions": {
+        "increment": {
+          "deviceId": "257",
+          "actionId": "3007"
+        },
+        "decrement": {
+          "deviceId": "257",
+          "actionId": "3007"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "NS430",
+      "name": "SMALL_LEFT_BTN Push",
+      "description": "Unimplemented [5] NS430_SMALL_LEFT_BTN_PUSH",
+      "exports": [
+        {
+          "id": "5"
+        }
+      ],
+      "actions": [
+        {
+          "actionArg": "1",
+          "actionId": 3009,
+          "name": "start"
+        },
+        {
+          "actionArg": "1",
+          "actionId": 3032,
+          "name": "stop1"
+        },
+        {
+          "actionArg": "0",
+          "actionId": 3032,
+          "name": "stop2"
+        }
+      ],
+      "unimplemented": true,
+      "dcsbios": {
+        "id": 5,
+        "key": "NS430_SMALL_LEFT_BTN_PUSH",
+        "reference": {
+          "info": {
+            "actiondId": 3009,
+            "doc": {
+              "control_type": "selector",
+              "description": "SMALL_LEFT_BTN Push",
+              "inputs": [
+                {
+                  "description": "switch to previous or next state",
+                  "interface": "fixed_step"
+                },
+                {
+                  "description": "set position",
+                  "interface": "set_state",
+                  "max_value": 1
+                }
+              ],
+              "momentary_positions": "first_and_last",
+              "outputs": [
+                {
+                  "address": 1536,
+                  "description": "selector position",
+                  "mask": 4,
+                  "max_value": 1,
+                  "shift_by": 2,
+                  "suffix": "",
+                  "type": "integer"
+                }
+              ],
+              "physical_variant": "push_button"
+            },
+            "type": "doubleCommandButton"
+          }
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.RotaryEncoder",
+      "device": "NS430",
+      "name": "SMALL_LEFT_BTN rotate",
+      "description": "Current position of this rotary encoder knob.",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "6"
+        }
+      ],
+      "unit": "Numeric",
+      "argumentValue": 0.025,
+      "actions": {
+        "increment": {
+          "deviceId": "257",
+          "actionId": "3010"
+        },
+        "decrement": {
+          "deviceId": "257",
+          "actionId": "3010"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "NS430",
+      "name": "COM flip-flop",
+      "description": "Unimplemented [7] NS430_COM_FLIP_FLOP",
+      "exports": [
+        {
+          "id": "7"
+        }
+      ],
+      "actions": [
+        {
+          "actionArg": "1",
+          "actionId": 3012,
+          "name": "start"
+        },
+        {
+          "actionArg": "1",
+          "actionId": 3033,
+          "name": "stop1"
+        },
+        {
+          "actionArg": "0",
+          "actionId": 3033,
+          "name": "stop2"
+        }
+      ],
+      "unimplemented": true,
+      "dcsbios": {
+        "id": 7,
+        "key": "NS430_COM_FLIP_FLOP",
+        "reference": {
+          "info": {
+            "actiondId": 3012,
+            "doc": {
+              "control_type": "selector",
+              "description": "COM flip-flop",
+              "inputs": [
+                {
+                  "description": "switch to previous or next state",
+                  "interface": "fixed_step"
+                },
+                {
+                  "description": "set position",
+                  "interface": "set_state",
+                  "max_value": 1
+                }
+              ],
+              "momentary_positions": "first_and_last",
+              "outputs": [
+                {
+                  "address": 1536,
+                  "description": "selector position",
+                  "mask": 8,
+                  "max_value": 1,
+                  "shift_by": 3,
+                  "suffix": "",
+                  "type": "integer"
+                }
+              ],
+              "physical_variant": "push_button"
+            },
+            "type": "doubleCommandButton"
+          }
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "NS430",
+      "name": "Glow",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "70"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "NS430",
+      "name": "VLOC flip-flop",
+      "description": "Unimplemented [8] NS430_VLOC_FLIP_FLOP",
+      "exports": [
+        {
+          "id": "8"
+        }
+      ],
+      "actions": [
+        {
+          "actionArg": "1",
+          "actionId": 3013,
+          "name": "start"
+        },
+        {
+          "actionArg": "1",
+          "actionId": 3034,
+          "name": "stop1"
+        },
+        {
+          "actionArg": "0",
+          "actionId": 3034,
+          "name": "stop2"
+        }
+      ],
+      "unimplemented": true,
+      "dcsbios": {
+        "id": 8,
+        "key": "NS430_VLOC_FLIP_FLOP",
+        "reference": {
+          "info": {
+            "actiondId": 3013,
+            "doc": {
+              "control_type": "selector",
+              "description": "VLOC flip-flop",
+              "inputs": [
+                {
+                  "description": "switch to previous or next state",
+                  "interface": "fixed_step"
+                },
+                {
+                  "description": "set position",
+                  "interface": "set_state",
+                  "max_value": 1
+                }
+              ],
+              "momentary_positions": "first_and_last",
+              "outputs": [
+                {
+                  "address": 1536,
+                  "description": "selector position",
+                  "mask": 16,
+                  "max_value": 1,
+                  "shift_by": 4,
+                  "suffix": "",
+                  "type": "integer"
+                }
+              ],
+              "physical_variant": "push_button"
+            },
+            "type": "doubleCommandButton"
+          }
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "NS430",
+      "name": "CDI",
+      "description": "Unimplemented [9] NS430_CDI",
+      "exports": [
+        {
+          "id": "9"
+        }
+      ],
+      "actions": [
+        {
+          "actionArg": "1",
+          "actionId": 3014,
+          "name": "start"
+        },
+        {
+          "actionArg": "1",
+          "actionId": 3035,
+          "name": "stop1"
+        },
+        {
+          "actionArg": "0",
+          "actionId": 3035,
+          "name": "stop2"
+        }
+      ],
+      "unimplemented": true,
+      "dcsbios": {
+        "id": 9,
+        "key": "NS430_CDI",
+        "reference": {
+          "info": {
+            "actiondId": 3014,
+            "doc": {
+              "control_type": "selector",
+              "description": "CDI",
+              "inputs": [
+                {
+                  "description": "switch to previous or next state",
+                  "interface": "fixed_step"
+                },
+                {
+                  "description": "set position",
+                  "interface": "set_state",
+                  "max_value": 1
+                }
+              ],
+              "momentary_positions": "first_and_last",
+              "outputs": [
+                {
+                  "address": 1536,
+                  "description": "selector position",
+                  "mask": 32,
+                  "max_value": 1,
+                  "shift_by": 5,
+                  "suffix": "",
+                  "type": "integer"
+                }
+              ],
+              "physical_variant": "push_button"
+            },
+            "type": "doubleCommandButton"
+          }
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "NS430",
+      "name": "PWR-VOL_PUSH-SQ COM Volume",
+      "description": "Current value of this potentiometer.",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "PWR-VOL_PUSH-SQ COM Volume"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.025,
+      "argumentMin": 0,
+      "argumentMax": 1,
+      "actions": {
+        "set": {
+          "deviceId": "257",
+          "actionId": "3002"
+        }
+      }
+    }
+  ]
+}
