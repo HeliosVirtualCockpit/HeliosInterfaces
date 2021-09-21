@@ -1,0 +1,7881 @@
+{
+  "source": "DCSFlightPanels",
+  "version": "0x3000",
+  "commit": "",
+  "type": "DCS",
+  "name": "DCS F-86F Sabre",
+  "module": "F-86F Sabre",
+  "vehicles": [
+    "F-86F Sabre"
+  ],
+  "functions": [
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Attitude Indicator",
+      "name": "J-8 Attitude Indicator Pitch Trim Knob",
+      "description": "Current value of this potentiometer.",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "200"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.025,
+      "argumentMin": 0,
+      "argumentMax": 1,
+      "actions": {
+        "set": {
+          "deviceId": "24",
+          "actionId": "3002"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Attitude Indicator",
+      "name": "J-8 Attitude Indicator Cage Knob - Pull to cage",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "714"
+        }
+      ],
+      "deviceId": "24",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position2",
+          "actionId": "3001"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Cockpit",
+      "name": "Accelerometer Reset Button - Push to reset",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "1004"
+        }
+      ],
+      "deviceId": "12",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position2",
+          "actionId": "3001"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Cockpit",
+      "name": "Windshield Anti-Icing Lever",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "202"
+        }
+      ],
+      "deviceId": "16",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "ON",
+          "actionId": "3019"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "OFF",
+          "actionId": "3019"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Cockpit",
+      "name": "Down Trim Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "204"
+        }
+      ],
+      "deviceId": "13",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "LEFT",
+          "actionId": "3006"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "OFF",
+          "actionId": "3006"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Cockpit",
+      "name": "Up Trim Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "204"
+        }
+      ],
+      "deviceId": "13",
+      "positions": [
+        {
+          "argumentValue": "-1.0",
+          "name": "LEFT",
+          "actionId": "3007"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "OFF",
+          "actionId": "3007"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Cockpit",
+      "name": "Left Trim Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "205"
+        }
+      ],
+      "deviceId": "13",
+      "positions": [
+        {
+          "argumentValue": "-1.0",
+          "name": "LEFT",
+          "actionId": "3004"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "OFF",
+          "actionId": "3004"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Cockpit",
+      "name": "Right Trim Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "205"
+        }
+      ],
+      "deviceId": "13",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "LEFT",
+          "actionId": "3005"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "OFF",
+          "actionId": "3005"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Cockpit",
+      "name": "Bomb-Rocket Release Button - Push to release",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "207"
+        }
+      ],
+      "deviceId": "5",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3047"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position2",
+          "actionId": "3047"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Cockpit",
+      "name": "A-4 Sight Radar Target Selector Button",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "208"
+        }
+      ],
+      "deviceId": "22",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3027"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position2",
+          "actionId": "3027"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Cockpit",
+      "name": "A-4 Sight Electrical Caging Button",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "212"
+        }
+      ],
+      "deviceId": "22",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3025"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position2",
+          "actionId": "3025"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.RotaryEncoder",
+      "device": "Cockpit",
+      "name": "Altimeter reference pressure adjusting knob",
+      "description": "Current position of this rotary encoder knob.",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "218"
+        }
+      ],
+      "unit": "Numeric",
+      "argumentValue": 0.025,
+      "actions": {
+        "increment": {
+          "deviceId": "7",
+          "actionId": "3001"
+        },
+        "decrement": {
+          "deviceId": "7",
+          "actionId": "3001"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Cockpit",
+      "name": "Emergency Jettison Handle Cover",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "220"
+        }
+      ],
+      "deviceId": "25",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "OPEN",
+          "actionId": "3016"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "CLOSE",
+          "actionId": "3016"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Cockpit",
+      "name": "Press to set clock",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "227"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "10",
+          "pushId": "3002",
+          "pushValue": "1",
+          "releaseId": "3002",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.RotaryEncoder",
+      "device": "Cockpit",
+      "name": "Set Clock Knob",
+      "description": "Current position of this rotary encoder knob.",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "228"
+        }
+      ],
+      "unit": "Numeric",
+      "argumentValue": 0.025,
+      "actions": {
+        "increment": {
+          "deviceId": "10",
+          "actionId": "3003"
+        },
+        "decrement": {
+          "deviceId": "10",
+          "actionId": "3003"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Cockpit",
+      "name": "Oxygen Regulator Emergency Lever",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "229"
+        }
+      ],
+      "deviceId": "14",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3010"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position2",
+          "actionId": "3010"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Cockpit",
+      "name": "Toggle Mirror",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "3"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "0",
+          "pushId": "3001",
+          "pushValue": "1",
+          "releaseId": "3001",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Cockpit",
+      "name": "Landing Gear Up/Down",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "599"
+        }
+      ],
+      "deviceId": "2",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Up",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Down",
+          "actionId": "3001"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Cockpit",
+      "name": "Rocket Jettison Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "637"
+        }
+      ],
+      "deviceId": "5",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "READY",
+          "actionId": "3012"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "OFF",
+          "actionId": "3012"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Cockpit",
+      "name": "Demolition Bomb Release Selector Switch, AUTO RELEASE/MANUAL RELEASE",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "639"
+        }
+      ],
+      "deviceId": "5",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "RELEASE",
+          "actionId": "3006"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "MANUAL RELEASE",
+          "actionId": "3006"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Cockpit",
+      "name": "A-4 Sight Filament Selector Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "642"
+        }
+      ],
+      "deviceId": "22",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "SECONDARY",
+          "actionId": "3015"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "PRIMARY",
+          "actionId": "3015"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Cockpit",
+      "name": "Pitot Heater Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "646"
+        }
+      ],
+      "deviceId": "16",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "ON",
+          "actionId": "3003"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "OFF",
+          "actionId": "3003"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Cockpit",
+      "name": "Rudder Trim Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "648"
+        }
+      ],
+      "deviceId": "13",
+      "positions": [
+        {
+          "argumentValue": "-1.0",
+          "name": "LEFT",
+          "actionId": "3010"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "OFF",
+          "actionId": "3010"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "RIGHT",
+          "actionId": "3010"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Cockpit",
+      "name": "Drop Tank Selector Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "662"
+        }
+      ],
+      "deviceId": "3",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3003"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position2",
+          "actionId": "3003"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Cockpit",
+      "name": "Manual Pip Control Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "663"
+        }
+      ],
+      "deviceId": "5",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "BOMB",
+          "actionId": "3004"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "NORMAL",
+          "actionId": "3004"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Cockpit",
+      "name": "Bomb-Rocket-Tank Jettison Button",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "702"
+        }
+      ],
+      "deviceId": "5",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3017"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position2",
+          "actionId": "3017"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Cockpit",
+      "name": "Canopy Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "718"
+        }
+      ],
+      "deviceId": "25",
+      "positions": [
+        {
+          "argumentValue": "-1.0",
+          "name": "OPEN",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "OFF",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "CLOSE",
+          "actionId": "3001"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Cockpit",
+      "name": "Emergency (In-air) Ignition Switch, ON/OFF",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "733"
+        }
+      ],
+      "deviceId": "4",
+      "positions": [
+        {
+          "argumentValue": "-1.0",
+          "name": "Position1",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Position2",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position3",
+          "actionId": "3001"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Cockpit",
+      "name": "Wing Flaps Handle",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "735"
+        }
+      ],
+      "deviceId": "13",
+      "positions": [
+        {
+          "argumentValue": "-1.0",
+          "name": "Position1",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Position2",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position3",
+          "actionId": "3001"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Cockpit",
+      "name": "Cockpit Air Temperature Control Switch, AUTO/OFF/HOT/COLD",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "737"
+        }
+      ],
+      "deviceId": "16",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3005"
+        },
+        {
+          "argumentValue": "0.1",
+          "name": "Position2",
+          "actionId": "3005"
+        },
+        {
+          "argumentValue": "0.2",
+          "name": "Position3",
+          "actionId": "3005"
+        },
+        {
+          "argumentValue": "0.3",
+          "name": "Position4",
+          "actionId": "3005"
+        },
+        {
+          "argumentValue": "0.4",
+          "name": "Position5",
+          "actionId": "3005"
+        },
+        {
+          "argumentValue": "0.5",
+          "name": "Position6",
+          "actionId": "3005"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Cockpit",
+      "name": "Longitudinal Alternate Trim Switch - NORMAL GRIP CONT/OFF, NOSE UP/OFF, NOSE DOWN/OFF",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "739"
+        }
+      ],
+      "deviceId": "13",
+      "positions": [
+        {
+          "argumentValue": "0.1",
+          "name": "UP",
+          "actionId": "3009"
+        },
+        {
+          "argumentValue": "0.3",
+          "name": "OFF, NOSE DOWN",
+          "actionId": "3009"
+        },
+        {
+          "argumentValue": "0.5",
+          "name": "OFF",
+          "actionId": "3009"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Cockpit",
+      "name": "Air Outlet Selector Lever",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "741"
+        }
+      ],
+      "deviceId": "16",
+      "positions": [
+        {
+          "argumentValue": "-1.0",
+          "name": "FLOOR",
+          "actionId": "3008"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "BOTH",
+          "actionId": "3008"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "DEFROST",
+          "actionId": "3008"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Cockpit",
+      "name": "Rocket Release Selector Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "751"
+        }
+      ],
+      "deviceId": "5",
+      "positions": [
+        {
+          "argumentValue": "-1.0",
+          "name": "SINGLE",
+          "actionId": "3009"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "OFF",
+          "actionId": "3009"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "AUTO",
+          "actionId": "3009"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Cockpit",
+      "name": "Demolition Bomb Sequence Selector Switch, ALL/OFF/LEFT/RIGHT",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "752"
+        }
+      ],
+      "deviceId": "5",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3008"
+        },
+        {
+          "argumentValue": "0.1",
+          "name": "Position2",
+          "actionId": "3008"
+        },
+        {
+          "argumentValue": "0.2",
+          "name": "Position3",
+          "actionId": "3008"
+        },
+        {
+          "argumentValue": "0.3",
+          "name": "Position4",
+          "actionId": "3008"
+        },
+        {
+          "argumentValue": "0.4",
+          "name": "Position5",
+          "actionId": "3008"
+        },
+        {
+          "argumentValue": "0.5",
+          "name": "Position6",
+          "actionId": "3008"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Cockpit",
+      "name": "Canopy Declutch Handle",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "816"
+        }
+      ],
+      "deviceId": "25",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "IN",
+          "actionId": "3010"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "OUT",
+          "actionId": "3010"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Cockpit",
+      "name": "Canopy Alternate Emergency Jettison Handle",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "817"
+        }
+      ],
+      "deviceId": "25",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "IN",
+          "actionId": "3009"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "OUT",
+          "actionId": "3009"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Cockpit",
+      "name": "Emergency Jettison Handle, RELEASE ALL/RELEASE OUTBD ONLY",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "818"
+        }
+      ],
+      "deviceId": "25",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "ALL",
+          "actionId": "3008"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "RELEASE OUTBD ONLY",
+          "actionId": "3008"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Cockpit",
+      "name": "Landing Gear Emergency Release Handle",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "819"
+        }
+      ],
+      "deviceId": "2",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3010"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position2",
+          "actionId": "3010"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Cockpit",
+      "name": "Missile Control Switch, LH & RH/RH/SALVO",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "820"
+        }
+      ],
+      "deviceId": "5",
+      "positions": [
+        {
+          "argumentValue": "-1.0",
+          "name": "RH",
+          "actionId": "3018"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "RH",
+          "actionId": "3018"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "SALVO",
+          "actionId": "3018"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Cockpit",
+      "name": "Elapsed Time Mechanism Button",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "831"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "10",
+          "pushId": "3004",
+          "pushValue": "1",
+          "releaseId": "3004",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Cockpit Air",
+      "name": "Engine Anti-Ice & Screen Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "645"
+        }
+      ],
+      "deviceId": "16",
+      "positions": [
+        {
+          "argumentValue": "-1.0",
+          "name": "EXTEND",
+          "actionId": "3007"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "RET.",
+          "actionId": "3007"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "ANTI-ICE",
+          "actionId": "3007"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Cockpit Air",
+      "name": "Cockpit Pressure Control Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "650"
+        }
+      ],
+      "deviceId": "16",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "PRESS",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "RAM",
+          "actionId": "3001"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Cockpit Air",
+      "name": "Cockpit Pressure Schedule Selector Switch, 5 PSI/2_75 PSI",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "651"
+        }
+      ],
+      "deviceId": "16",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "PSI",
+          "actionId": "3002"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "2.75 PSI",
+          "actionId": "3002"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Cockpit Air",
+      "name": "Windshield Anti-Ice Overheat Warning Light (Push to test)",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "691"
+        }
+      ],
+      "deviceId": "16",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3009"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position2",
+          "actionId": "3009"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Cockpit Air",
+      "name": "Cockpit Air Temperature Control Switch Cover",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "736"
+        }
+      ],
+      "deviceId": "16",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3006"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position2",
+          "actionId": "3006"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Cockpit Air",
+      "name": "Cockpit Air Temperature Control Rheostat",
+      "description": "Current value of this potentiometer.",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "740"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.025,
+      "argumentMin": 0,
+      "argumentMax": 1,
+      "actions": {
+        "set": {
+          "deviceId": "16",
+          "actionId": "3004"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Electrics",
+      "name": "Instrument Power Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "643"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "ALTERNATE",
+          "actionId": "3002"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "NORMAL",
+          "actionId": "3002"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Electrics",
+      "name": "Engine Master Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "652"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "ON",
+          "actionId": "3004"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "OFF",
+          "actionId": "3004"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Electrics",
+      "name": "Battery-Starter Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "653"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "-1.0",
+          "name": "BATTERY",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "OFF",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "STARTER",
+          "actionId": "3001"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Electrics",
+      "name": "Stop-Starter Button (Push to de-energize starter in case of malfunction)",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "664"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3003"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position2",
+          "actionId": "3003"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Electrics",
+      "name": "Generator Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "670"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "-1.0",
+          "name": "ON",
+          "actionId": "3005"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "OFF",
+          "actionId": "3005"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "RESET",
+          "actionId": "3005"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Electrics",
+      "name": "Generator Switch Cover",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "671"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3006"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position2",
+          "actionId": "3006"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Electrics",
+      "name": "Main Instrument (Three-phase) Inverter Failure Warning Light (Push to test)",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "680"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3008"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position2",
+          "actionId": "3008"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Electrics",
+      "name": "Both Instrument (Main and alternate three-phase) Inverter Failure Warning Light (Push to test)",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "681"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3009"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position2",
+          "actionId": "3009"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Electrics",
+      "name": "Main Radar (Single-phase) Inverter Failure Warning Light (Push to test)",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "682"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3010"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position2",
+          "actionId": "3010"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Electrics",
+      "name": "Generator Warning Light (Push To Test)",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "687"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3007"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position2",
+          "actionId": "3007"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Electrics",
+      "name": "Bomb Rocket Tank Salvo",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "760"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3011"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position2",
+          "actionId": "3011"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Electrics",
+      "name": "Bomb Sel_",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "761"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3012"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position2",
+          "actionId": "3012"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Electrics",
+      "name": "Gyr'Syn Compass",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "762"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3013"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position2",
+          "actionId": "3013"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Electrics",
+      "name": "3f Inverter",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "763"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3015"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position2",
+          "actionId": "3015"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Electrics",
+      "name": "Turn Bank Ind_",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "764"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3016"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position2",
+          "actionId": "3016"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Electrics",
+      "name": "Rudder Trim & Take-Off Ind_",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "765"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3017"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position2",
+          "actionId": "3017"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Electrics",
+      "name": "Alt Ail Trim",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "766"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3018"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position2",
+          "actionId": "3018"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Electrics",
+      "name": "Ail & Horiz Trim & Alt Horiz Trim",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "767"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3019"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position2",
+          "actionId": "3019"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Electrics",
+      "name": "LDG Light Control",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "768"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3020"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position2",
+          "actionId": "3020"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Electrics",
+      "name": "LDG Lights",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "769"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3021"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position2",
+          "actionId": "3021"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Electrics",
+      "name": "Fire Warn_",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "770"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3023"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position2",
+          "actionId": "3023"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Electrics",
+      "name": "Bus Tie-In Control",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "771"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3024"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position2",
+          "actionId": "3024"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Electrics",
+      "name": "Speed Brake Circuit Breaker",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "772"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3025"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position2",
+          "actionId": "3025"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Electrics",
+      "name": "Free Air & Oil Temp & Air Sel_",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "773"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3026"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position2",
+          "actionId": "3026"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Electrics",
+      "name": "LDG Gear Warn_",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "774"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3027"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position2",
+          "actionId": "3027"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Electrics",
+      "name": "LDG Gear Control",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "775"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3028"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position2",
+          "actionId": "3028"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Electrics",
+      "name": "LDG Gear Pos Ind_",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "776"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3029"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position2",
+          "actionId": "3029"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Electrics",
+      "name": "Fuel Booster AFT",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "777"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3030"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position2",
+          "actionId": "3030"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Electrics",
+      "name": "Alt Emerg Hyd Cont & Hyd Press Ind_",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "778"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3031"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position2",
+          "actionId": "3031"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Electrics",
+      "name": "Sight Power",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "779"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3032"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position2",
+          "actionId": "3032"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Electrics",
+      "name": "Sight Heater",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "780"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3033"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position2",
+          "actionId": "3033"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Electrics",
+      "name": "Sight A_C Power Unit",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "781"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3034"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position2",
+          "actionId": "3034"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Electrics",
+      "name": "AN/ARN-6 Radio Compass",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "782"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3035"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position2",
+          "actionId": "3035"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Electrics",
+      "name": "Eng Master Fuel Shut-Off",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "783"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3036"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position2",
+          "actionId": "3036"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Electrics",
+      "name": "Eng Ign_",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "784"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3037"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position2",
+          "actionId": "3037"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Electrics",
+      "name": "Fuel Level",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "785"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3038"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position2",
+          "actionId": "3038"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Electrics",
+      "name": "Inv Gen Failure Overvolt LTS Test",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "786"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3039"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position2",
+          "actionId": "3039"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Electrics",
+      "name": "Light Post IndCode",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "787"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3040"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position2",
+          "actionId": "3040"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Electrics",
+      "name": "Console & Ped LTS",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "788"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3041"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position2",
+          "actionId": "3041"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Electrics",
+      "name": "Fuel Boost FWD",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "789"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3042"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position2",
+          "actionId": "3042"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Electrics",
+      "name": "Wing Flap LH_",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "790"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3043"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position2",
+          "actionId": "3043"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Electrics",
+      "name": "Wing Flap RH_",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "791"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3044"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position2",
+          "actionId": "3044"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Electrics",
+      "name": "Light Fluor",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "792"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3045"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position2",
+          "actionId": "3045"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Electrics",
+      "name": "Sight Control",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "793"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3046"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position2",
+          "actionId": "3046"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Electrics",
+      "name": "AN/APC 3 Radio",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "794"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3047"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position2",
+          "actionId": "3047"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Electrics",
+      "name": "AN/APX-6 Radio IFF",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "795"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3048"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position2",
+          "actionId": "3048"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Engines",
+      "name": "Emergency Fuel Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "630"
+        }
+      ],
+      "deviceId": "4",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "ON",
+          "actionId": "3003"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "OFF",
+          "actionId": "3003"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Engines",
+      "name": "Emergency (In-air) Ignition Switch Cover",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "732"
+        }
+      ],
+      "deviceId": "4",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3002"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position2",
+          "actionId": "3002"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "External Aircraft Model",
+      "name": "EXT_WOW_RIGHT",
+      "description": "Unimplemented Callback [[anonymous callback 10]] EXT_WOW_RIGHT",
+      "exports": [
+        {
+          "id": "[anonymous callback 10]"
+        }
+      ],
+      "callback": true,
+      "unimplemented": true
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "External Aircraft Model",
+      "name": "EXT_WOW_LEFT",
+      "description": "Unimplemented Callback [[anonymous callback 11]] EXT_WOW_LEFT",
+      "exports": [
+        {
+          "id": "[anonymous callback 11]"
+        }
+      ],
+      "callback": true,
+      "unimplemented": true
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "External Aircraft Model",
+      "name": "EXT_SPEED_BRAKE_RIGHT",
+      "description": "Unimplemented Callback [[anonymous callback 1]] EXT_SPEED_BRAKE_RIGHT",
+      "exports": [
+        {
+          "id": "[anonymous callback 1]"
+        }
+      ],
+      "callback": true,
+      "unimplemented": true
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "External Aircraft Model",
+      "name": "EXT_SPEED_BRAKE_LEFT",
+      "description": "Unimplemented Callback [[anonymous callback 2]] EXT_SPEED_BRAKE_LEFT",
+      "exports": [
+        {
+          "id": "[anonymous callback 2]"
+        }
+      ],
+      "callback": true,
+      "unimplemented": true
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "External Aircraft Model",
+      "name": "EXT_POSITION_LIGHT_LEFT",
+      "description": "Unimplemented Callback [[anonymous callback 3]] EXT_POSITION_LIGHT_LEFT",
+      "exports": [
+        {
+          "id": "[anonymous callback 3]"
+        }
+      ],
+      "callback": true,
+      "unimplemented": true
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "External Aircraft Model",
+      "name": "EXT_POSITION_LIGHT_RIGHT",
+      "description": "Unimplemented Callback [[anonymous callback 4]] EXT_POSITION_LIGHT_RIGHT",
+      "exports": [
+        {
+          "id": "[anonymous callback 4]"
+        }
+      ],
+      "callback": true,
+      "unimplemented": true
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "External Aircraft Model",
+      "name": "EXT_POSITION_LIGHT_TAIL",
+      "description": "Unimplemented Callback [[anonymous callback 5]] EXT_POSITION_LIGHT_TAIL",
+      "exports": [
+        {
+          "id": "[anonymous callback 5]"
+        }
+      ],
+      "callback": true,
+      "unimplemented": true
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "External Aircraft Model",
+      "name": "EXT_STROBE_TAIL",
+      "description": "Unimplemented Callback [[anonymous callback 6]] EXT_STROBE_TAIL",
+      "exports": [
+        {
+          "id": "[anonymous callback 6]"
+        }
+      ],
+      "callback": true,
+      "unimplemented": true
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "External Aircraft Model",
+      "name": "EXT_STROBE_TOP",
+      "description": "Unimplemented Callback [[anonymous callback 7]] EXT_STROBE_TOP",
+      "exports": [
+        {
+          "id": "[anonymous callback 7]"
+        }
+      ],
+      "callback": true,
+      "unimplemented": true
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "External Aircraft Model",
+      "name": "EXT_STROBE_BOTTOM",
+      "description": "Unimplemented Callback [[anonymous callback 8]] EXT_STROBE_BOTTOM",
+      "exports": [
+        {
+          "id": "[anonymous callback 8]"
+        }
+      ],
+      "callback": true,
+      "unimplemented": true
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "External Aircraft Model",
+      "name": "EXT_WOW_NOSE",
+      "description": "Unimplemented Callback [[anonymous callback 9]] EXT_WOW_NOSE",
+      "exports": [
+        {
+          "id": "[anonymous callback 9]"
+        }
+      ],
+      "callback": true,
+      "unimplemented": true
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Fire Alarms",
+      "name": "Engine Fire Warning Light Test Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "635"
+        }
+      ],
+      "deviceId": "15",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position2",
+          "actionId": "3001"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Fire Alarms",
+      "name": "Forward Engine Compartment Fire-warning Light (Push to test)",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "685"
+        }
+      ],
+      "deviceId": "15",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3002"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position2",
+          "actionId": "3002"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Fire Alarms",
+      "name": "Aft Engine Compartment Fire-warning Light (Push to test)",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "686"
+        }
+      ],
+      "deviceId": "15",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3003"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position2",
+          "actionId": "3003"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Fuel",
+      "name": "Fuel Densitometer Selection Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "672"
+        }
+      ],
+      "deviceId": "3",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "IN",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "OUT",
+          "actionId": "3001"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Fuel",
+      "name": "Fuel Densitometer Selection Switch Cover",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "673"
+        }
+      ],
+      "deviceId": "3",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3002"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position2",
+          "actionId": "3002"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Fuel",
+      "name": "Outboard Drop Tank Empty Indicator Light (Push to test)",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "695"
+        }
+      ],
+      "deviceId": "3",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3005"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position2",
+          "actionId": "3005"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Fuel",
+      "name": "Drop Tank Jettison Button - Push to release drop tank(s)",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "701"
+        }
+      ],
+      "deviceId": "3",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3004"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position2",
+          "actionId": "3004"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Gauge Values",
+      "name": "Hydraulic Pressure Value",
+      "description": "Unimplemented Callback [109] HYDRAULIC_PRES_VALUE",
+      "exports": [
+        {
+          "id": "109"
+        }
+      ],
+      "callback": true,
+      "indicationDeviceId": "0",
+      "maxValue": 65000,
+      "unimplemented": true
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Gauge Values",
+      "name": "Oil Pressure Value",
+      "description": "Unimplemented Callback [112] OIL_PRESSURE_VALUE",
+      "exports": [
+        {
+          "id": "112"
+        }
+      ],
+      "callback": true,
+      "indicationDeviceId": "0",
+      "maxValue": 65000,
+      "unimplemented": true
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Gauge Values",
+      "name": "Cockpit Altitude Value",
+      "description": "Unimplemented Callback [114] COCKPIT_ALT_VALUE",
+      "exports": [
+        {
+          "id": "114"
+        }
+      ],
+      "callback": true,
+      "indicationDeviceId": "0",
+      "maxValue": 65000,
+      "unimplemented": true
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Gauge Values",
+      "name": "Exhaust Temperature Value",
+      "description": "Unimplemented Callback [12] EXHAUST_TEMP_VALUE",
+      "exports": [
+        {
+          "id": "12"
+        }
+      ],
+      "callback": true,
+      "indicationDeviceId": "0",
+      "maxValue": 65000,
+      "unimplemented": true
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Gauge Values",
+      "name": "Tachometer Value",
+      "description": "Unimplemented Callback [16] TACHOMETER_VALUE",
+      "exports": [
+        {
+          "id": "16"
+        }
+      ],
+      "callback": true,
+      "indicationDeviceId": "0",
+      "maxValue": 65000,
+      "unimplemented": true
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Gauge Values",
+      "name": "Airspeed Value",
+      "description": "Unimplemented Callback [178] AIRSPEED_VALUE",
+      "exports": [
+        {
+          "id": "178"
+        }
+      ],
+      "callback": true,
+      "indicationDeviceId": "0",
+      "maxValue": 65000,
+      "unimplemented": true
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Gauge Values",
+      "name": "Mach Number Value Read As X_XX",
+      "description": "Unimplemented Callback [179] MACH_NUMBER_VALUE_X.XX",
+      "exports": [
+        {
+          "id": "179"
+        }
+      ],
+      "callback": true,
+      "indicationDeviceId": "0",
+      "maxValue": 65000,
+      "unimplemented": true
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Gauge Values",
+      "name": "Fuel Quantity Value",
+      "description": "Unimplemented Callback [22] FUEL_QUANTITY_VALUE",
+      "exports": [
+        {
+          "id": "22"
+        }
+      ],
+      "callback": true,
+      "indicationDeviceId": "0",
+      "maxValue": 65000,
+      "unimplemented": true
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Gauge Values",
+      "name": "Verticl Velocity VVI",
+      "description": "Unimplemented Callback [24] VVI_VALUE",
+      "exports": [
+        {
+          "id": "24"
+        }
+      ],
+      "callback": true,
+      "indicationDeviceId": "0",
+      "maxValue": 65000,
+      "unimplemented": true
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Gauge Values",
+      "name": "Oxygen Pressure Value",
+      "description": "Unimplemented Callback [353] OXYGEN_PRESSURE_VALUE",
+      "exports": [
+        {
+          "id": "353"
+        }
+      ],
+      "callback": true,
+      "indicationDeviceId": "0",
+      "maxValue": 65000,
+      "unimplemented": true
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Gauge Values",
+      "name": "Fuel Flow Value",
+      "description": "Unimplemented Callback [531] FUEL_FLOW_VALUE",
+      "exports": [
+        {
+          "id": "531"
+        }
+      ],
+      "callback": true,
+      "indicationDeviceId": "0",
+      "maxValue": 65000,
+      "unimplemented": true
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Gauge Values",
+      "name": "ARN-6 Bearing Value",
+      "description": "Unimplemented Callback [600] ARN6_BEARING_VALUE",
+      "exports": [
+        {
+          "id": "600"
+        }
+      ],
+      "callback": true,
+      "indicationDeviceId": "0",
+      "maxValue": 65000,
+      "unimplemented": true
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Gauge Values",
+      "name": "DC Voltage Value",
+      "description": "Unimplemented Callback [601] DC_VOLTAGE_VALUE",
+      "exports": [
+        {
+          "id": "601"
+        }
+      ],
+      "callback": true,
+      "indicationDeviceId": "0",
+      "maxValue": 65000,
+      "unimplemented": true
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Gauge Values",
+      "name": "Loadmeter Value",
+      "description": "Unimplemented Callback [602] LOADMETER_VALUE",
+      "exports": [
+        {
+          "id": "602"
+        }
+      ],
+      "callback": true,
+      "indicationDeviceId": "0",
+      "maxValue": 65000,
+      "unimplemented": true
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Gauge Values",
+      "name": "Altitude Value",
+      "description": "Unimplemented Callback [707] ALTITUDE_VALUE",
+      "exports": [
+        {
+          "id": "707"
+        }
+      ],
+      "callback": true,
+      "indicationDeviceId": "0",
+      "maxValue": 65000,
+      "unimplemented": true
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Gauge Values",
+      "name": "Heading Value",
+      "description": "Unimplemented Callback [711] HEADING_VALUE",
+      "exports": [
+        {
+          "id": "711"
+        }
+      ],
+      "callback": true,
+      "indicationDeviceId": "0",
+      "maxValue": 65000,
+      "unimplemented": true
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Gauge Values",
+      "name": "Heading Value [2]",
+      "description": "Unimplemented Callback [712] HEADING_VALUE",
+      "exports": [
+        {
+          "id": "712"
+        }
+      ],
+      "callback": true,
+      "indicationDeviceId": "0",
+      "maxValue": 65000,
+      "unimplemented": true
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Gauge Values",
+      "name": "ARN-6 Band",
+      "description": "Unimplemented Callback [804] ARN6_BAND_DISP",
+      "exports": [
+        {
+          "id": "804"
+        }
+      ],
+      "callback": true,
+      "indicationDeviceId": "0",
+      "maxValue": 65000,
+      "unimplemented": true
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Gauge Values",
+      "name": "ARN-6 Scale Value",
+      "description": "Unimplemented Callback [814] ARN6_SCALE_VALUE",
+      "exports": [
+        {
+          "id": "814"
+        }
+      ],
+      "callback": true,
+      "indicationDeviceId": "0",
+      "maxValue": 65000,
+      "unimplemented": true
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Gauge Values",
+      "name": "ARN-6 Frequency",
+      "description": "Unimplemented Callback [830] ARN6_FREQUENCY",
+      "exports": [
+        {
+          "id": "830"
+        }
+      ],
+      "callback": true,
+      "indicationDeviceId": "0",
+      "maxValue": 65000,
+      "unimplemented": true
+    },
+    {
+      "heliosType": "DCS.Common.RotaryEncoder",
+      "device": "Gyro Compass",
+      "name": "Compass Correction",
+      "description": "Current position of this rotary encoder knob.",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "199"
+        }
+      ],
+      "unit": "Numeric",
+      "argumentValue": 0.025,
+      "actions": {
+        "increment": {
+          "deviceId": "20",
+          "actionId": "3001"
+        },
+        "decrement": {
+          "deviceId": "20",
+          "actionId": "3001"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Gyro Compass",
+      "name": "Directional Indicator Fast Slaving Button - Push for fast slaving",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "598"
+        }
+      ],
+      "deviceId": "20",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3003"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position2",
+          "actionId": "3003"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Hydraulics",
+      "name": "Nose Wheel Steering Button",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "209"
+        }
+      ],
+      "deviceId": "2",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3016"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position2",
+          "actionId": "3016"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Hydraulics",
+      "name": "Speed Brake Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "211"
+        }
+      ],
+      "deviceId": "2",
+      "positions": [
+        {
+          "argumentValue": "-1.0",
+          "name": "OUT",
+          "actionId": "3005"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "HOLD",
+          "actionId": "3005"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "IN",
+          "actionId": "3005"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Hydraulics",
+      "name": "Parking Brake Handle",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "217"
+        }
+      ],
+      "deviceId": "2",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "ON",
+          "actionId": "3014"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "OFF",
+          "actionId": "3014"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Hydraulics",
+      "name": "Hydraulic Pressure Gage and Selector Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "631"
+        }
+      ],
+      "deviceId": "2",
+      "positions": [
+        {
+          "argumentValue": "-1.0",
+          "name": "UTILITY",
+          "actionId": "3004"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "NORMAL",
+          "actionId": "3004"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "ALTERNATE",
+          "actionId": "3004"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Hydraulics",
+      "name": "Flight Control Switch, ALTERNATE ON/NORMAL/RESET",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "647"
+        }
+      ],
+      "deviceId": "2",
+      "positions": [
+        {
+          "argumentValue": "-1.0",
+          "name": "ON",
+          "actionId": "3003"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "NORMAL",
+          "actionId": "3003"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "RESET",
+          "actionId": "3003"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Hydraulics",
+      "name": "Alternate-on Warning Light (Push to test)",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "684"
+        }
+      ],
+      "deviceId": "2",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3007"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position2",
+          "actionId": "3007"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Hydraulics",
+      "name": "Alternate Hydraulic Emergency Override Handle",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "706"
+        }
+      ],
+      "deviceId": "2",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "IN",
+          "actionId": "3008"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "OUT",
+          "actionId": "3008"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Hydraulics",
+      "name": "Landing Gear Emergency-up Button (Ground-use only! Hold in until gear retracts completely)",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "710"
+        }
+      ],
+      "deviceId": "2",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3002"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position2",
+          "actionId": "3002"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Hydraulics",
+      "name": "Landing Gear Warning Horn Cutout Button (Push to silence horn)",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "815"
+        }
+      ],
+      "deviceId": "2",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3009"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position2",
+          "actionId": "3009"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Indicator",
+      "name": "AccelerometerMax",
+      "description": "TODO: assign units, set calibration points, and write description",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "1002"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 5
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Indicator",
+      "name": "AccelerometerMin",
+      "description": "TODO: assign units, set calibration points, and write description",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "1003"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 5
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Indicator",
+      "name": "AttitudeIndicatorBankNeedle",
+      "description": "TODO: assign units, set calibration points, and write description",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "1005"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 1,
+            "mappedValue": 1
+          },
+          {
+            "value": -1,
+            "mappedValue": -1
+          }
+        ],
+        "precision": 5
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Indicator",
+      "name": "CLOCK_seconds_meter_time_seconds",
+      "description": "TODO: assign units, set calibration points, and write description",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "1006"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 5
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Indicator",
+      "name": "Throttle",
+      "description": "TODO: assign units, set calibration points, and write description",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "104"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": -1,
+            "mappedValue": -1
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 4
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Indicator",
+      "name": "Hydraulic_Pressure",
+      "description": "TODO: assign units, set calibration points, and write description",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "109"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 5
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Indicator",
+      "name": "EngineOilPressure",
+      "description": "TODO: assign units, set calibration points, and write description",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "112"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0.023,
+            "mappedValue": 0.023
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 5
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Indicator",
+      "name": "CockpitAltimeter",
+      "description": "TODO: assign units, set calibration points, and write description",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "114"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 5
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Indicator",
+      "name": "EngineExhaustTemperature",
+      "description": "TODO: assign units, set calibration points, and write description",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "12"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 5
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Indicator",
+      "name": "Engine Tachometer",
+      "description": "TODO: assign units, set calibration points, and write description",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "16"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 5
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Indicator",
+      "name": "AirSpeedIndicator",
+      "description": "TODO: assign units, set calibration points, and write description",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "178"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 0.965,
+            "mappedValue": 0.965
+          }
+        ],
+        "precision": 5
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Indicator",
+      "name": "AirSpeedIndicatorDrum",
+      "description": "TODO: assign units, set calibration points, and write description",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "178"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 0.965,
+            "mappedValue": 0.965
+          }
+        ],
+        "precision": 5
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Indicator",
+      "name": "MachNumber",
+      "description": "TODO: assign units, set calibration points, and write description",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "179"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0.0515,
+            "mappedValue": 0.0515
+          },
+          {
+            "value": 0.965,
+            "mappedValue": 0.965
+          }
+        ],
+        "precision": 5
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Indicator",
+      "name": "CLOCK_currtime_minutes",
+      "description": "TODO: assign units, set calibration points, and write description",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "18"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 5
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Indicator",
+      "name": "Primary Instrument Lights",
+      "description": "TODO: assign units, set calibration points, and write description",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "180"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 5
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Indicator",
+      "name": "CockpitCanopy",
+      "description": "TODO: assign units, set calibration points, and write description",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "181"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 5
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Indicator",
+      "name": "Illumination Lights",
+      "description": "TODO: assign units, set calibration points, and write description",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "182"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 5
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Indicator",
+      "name": "AuxiliaryInstrumentLights",
+      "description": "TODO: assign units, set calibration points, and write description",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "185"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 5
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Indicator",
+      "name": "CLOCK_currtime_hours",
+      "description": "TODO: assign units, set calibration points, and write description",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "19"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 5
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Indicator",
+      "name": "NormalTrimSwitch_pitch",
+      "description": "TODO: assign units, set calibration points, and write description",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "204"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": -1,
+            "mappedValue": -1
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 4
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Indicator",
+      "name": "AttitudeIndicatorPitchShift",
+      "description": "TODO: assign units, set calibration points, and write description",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "214"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": -1,
+            "mappedValue": -1
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 4
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Indicator",
+      "name": "Left_Wheel_Brake",
+      "description": "TODO: assign units, set calibration points, and write description",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "215"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 5
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Indicator",
+      "name": "Right_Wheel_Brake",
+      "description": "TODO: assign units, set calibration points, and write description",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "216"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 5
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Indicator",
+      "name": "ARN6_ScaleLight",
+      "description": "TODO: assign units, set calibration points, and write description",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "219"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 5
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Indicator",
+      "name": "Fuel_Quantity",
+      "description": "TODO: assign units, set calibration points, and write description",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "22"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": -1,
+            "mappedValue": -1
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 4
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Indicator",
+      "name": "EmergencyJettisonHandleRot",
+      "description": "TODO: assign units, set calibration points, and write description",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "221"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 5
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Indicator",
+      "name": "Landing Gear Unsafe",
+      "description": "TODO: assign units, set calibration points, and write description",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "222"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 5
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Indicator",
+      "name": "Variometer",
+      "description": "TODO: assign units, set calibration points, and write description",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "24"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": -1,
+            "mappedValue": -1
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 4
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Indicator",
+      "name": "TurnIndicator",
+      "description": "TODO: assign units, set calibration points, and write description",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "25"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": -1,
+            "mappedValue": -1
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 4
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Indicator",
+      "name": "mirrors_draw",
+      "description": "TODO: assign units, set calibration points, and write description",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "3"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 5
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Indicator",
+      "name": "SlipIndicator",
+      "description": "TODO: assign units, set calibration points, and write description",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "31"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": -1,
+            "mappedValue": -1
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 4
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Indicator",
+      "name": "Oxygen_Pressure",
+      "description": "TODO: assign units, set calibration points, and write description",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "353"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 5
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Indicator",
+      "name": "CLOCK_seconds_meter_time_minutes",
+      "description": "TODO: assign units, set calibration points, and write description",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "37"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 5
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Indicator",
+      "name": "Rudder",
+      "description": "TODO: assign units, set calibration points, and write description",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "500"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": -1,
+            "mappedValue": -1
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 4
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Indicator",
+      "name": "EngineFuelFlow",
+      "description": "TODO: assign units, set calibration points, and write description",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "531"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 5
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Indicator",
+      "name": "pilot_draw",
+      "description": "TODO: assign units, set calibration points, and write description",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "540"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 5
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Indicator",
+      "name": "Accelerometer",
+      "description": "TODO: assign units, set calibration points, and write description",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "6"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 5
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Indicator",
+      "name": "DC_voltage",
+      "description": "TODO: assign units, set calibration points, and write description",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "601"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 0.3,
+            "mappedValue": 0.3
+          }
+        ],
+        "precision": 5
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Indicator",
+      "name": "DC_current",
+      "description": "TODO: assign units, set calibration points, and write description",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "602"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 5
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Indicator",
+      "name": "LABS_roll_needle",
+      "description": "TODO: assign units, set calibration points, and write description",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "603"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": -1,
+            "mappedValue": -1
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 4
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Indicator",
+      "name": "LABS_pitch_needle",
+      "description": "TODO: assign units, set calibration points, and write description",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "604"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": -1,
+            "mappedValue": -1
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 4
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Indicator",
+      "name": "AttitudeIndicatorPitch",
+      "description": "TODO: assign units, set calibration points, and write description",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "605"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": -0.27,
+            "mappedValue": -0.27
+          },
+          {
+            "value": 0.27,
+            "mappedValue": 0.27
+          }
+        ],
+        "precision": 5
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Indicator",
+      "name": "AttitudeIndicatorBank",
+      "description": "TODO: assign units, set calibration points, and write description",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "606"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 1,
+            "mappedValue": 1
+          },
+          {
+            "value": -1,
+            "mappedValue": -1
+          }
+        ],
+        "precision": 5
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Indicator",
+      "name": "OxygenFlowBlinker",
+      "description": "TODO: assign units, set calibration points, and write description",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "705"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 5
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Indicator",
+      "name": "StickRoll",
+      "description": "TODO: assign units, set calibration points, and write description",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "71"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": -1,
+            "mappedValue": -1
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 4
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Indicator",
+      "name": "GyroCompassNeedle",
+      "description": "TODO: assign units, set calibration points, and write description",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "711"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 1,
+            "mappedValue": 1
+          },
+          {
+            "value": 0,
+            "mappedValue": 0
+          }
+        ],
+        "precision": 5
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Indicator",
+      "name": "GyroCompassScale",
+      "description": "TODO: assign units, set calibration points, and write description",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "712"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 5
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Indicator",
+      "name": "AttitudeIndicatorOffFlag",
+      "description": "TODO: assign units, set calibration points, and write description",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "713"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 1,
+            "mappedValue": 1
+          },
+          {
+            "value": 0,
+            "mappedValue": 0
+          }
+        ],
+        "precision": 5
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Indicator",
+      "name": "StickPitch",
+      "description": "TODO: assign units, set calibration points, and write description",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "74"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 1,
+            "mappedValue": 1
+          },
+          {
+            "value": -1,
+            "mappedValue": -1
+          }
+        ],
+        "precision": 5
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Indicator",
+      "name": "AirSpeedM1Indicator",
+      "description": "TODO: assign units, set calibration points, and write description",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "8"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 0.697,
+            "mappedValue": 0.697
+          }
+        ],
+        "precision": 5
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Indicator",
+      "name": "BaroAltimeter100",
+      "description": "TODO: assign units, set calibration points, and write description",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "8"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 0.697,
+            "mappedValue": 0.697
+          }
+        ],
+        "precision": 5
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Indicator",
+      "name": "BaroAltimeter1000",
+      "description": "TODO: assign units, set calibration points, and write description",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "8"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 0.697,
+            "mappedValue": 0.697
+          }
+        ],
+        "precision": 5
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Indicator",
+      "name": "BaroAltimeter10000",
+      "description": "TODO: assign units, set calibration points, and write description",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "8"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 0.697,
+            "mappedValue": 0.697
+          }
+        ],
+        "precision": 5
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Indicator",
+      "name": "BaroAltimeterHG",
+      "description": "TODO: assign units, set calibration points, and write description",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "8"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 0.697,
+            "mappedValue": 0.697
+          }
+        ],
+        "precision": 5
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Indicator",
+      "name": "ARN6_Bearing",
+      "description": "TODO: assign units, set calibration points, and write description",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "800"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 5
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Indicator",
+      "name": "ARN6_Tuning",
+      "description": "TODO: assign units, set calibration points, and write description",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "800"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 5
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Indicator",
+      "name": "ARN6_TuningMeter",
+      "description": "TODO: assign units, set calibration points, and write description",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "800"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 5
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Indicator",
+      "name": "ARN6 Band",
+      "description": "TODO: assign units, set calibration points, and write description",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "804"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 5
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Indicator",
+      "name": "AttitudeIndicatorPitchSphere",
+      "description": "TODO: assign units, set calibration points, and write description",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "81"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": -1,
+            "mappedValue": -1
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 4
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Indicator",
+      "name": "ARN6_Scale",
+      "description": "TODO: assign units, set calibration points, and write description",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "814"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 1,
+            "mappedValue": 1
+          },
+          {
+            "value": 0,
+            "mappedValue": 0
+          }
+        ],
+        "precision": 5
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Indicator",
+      "name": "EmergencyJettisonHandlePos",
+      "description": "TODO: assign units, set calibration points, and write description",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "818"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 5
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Indicator",
+      "name": "Standby Compass Light",
+      "description": "TODO: assign units, set calibration points, and write description",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "825"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 5
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Indicator",
+      "name": "ARN6_FreqScale",
+      "description": "TODO: assign units, set calibration points, and write description",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "830"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 5
+      }
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Lamps",
+      "name": "HYDRO_LeftGear",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "39"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Lamps",
+      "name": "HYDRO_NoseGear",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "40"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Lamps",
+      "name": "HYDRO_RightGear",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "41"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Lamps",
+      "name": "ELEC_MainInstInverterOffSelectAlt",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "610"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Lamps",
+      "name": "ELEC_BothInstInvertersOff",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "611"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Lamps",
+      "name": "ELEC_MainRadarInverterOff",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "612"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Lamps",
+      "name": "CONTROL_TakeOffPosInd",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "613"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Lamps",
+      "name": "HYDRO_AltFltContSysOper",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "614"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Lamps",
+      "name": "FIRE_DETECTION_FwdFireWarning",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "615"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Lamps",
+      "name": "FIRE_DETECTION_AftFireWarning",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "616"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Lamps",
+      "name": "ELEC_GenOff",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "617"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Lamps",
+      "name": "WindshieldAntiIceOverheatWarning",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "621"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Lamps",
+      "name": "FUEL_OutbdTanksEmpty",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "625"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Lights",
+      "name": "Compass Light Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "654"
+        }
+      ],
+      "deviceId": "17",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "ON",
+          "actionId": "3004"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "OFF",
+          "actionId": "3004"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Lights",
+      "name": "Instrument Panel Auxiliary Light Rheostat",
+      "description": "Current value of this potentiometer.",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "811"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.025,
+      "argumentMin": 0,
+      "argumentMax": 1,
+      "actions": {
+        "set": {
+          "deviceId": "17",
+          "actionId": "3003"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Lights",
+      "name": "Console and Panel Light Rheostat",
+      "description": "Current value of this potentiometer.",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "812"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.025,
+      "argumentMin": 0,
+      "argumentMax": 1,
+      "actions": {
+        "set": {
+          "deviceId": "17",
+          "actionId": "3001"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Lights",
+      "name": "Instrument Panel Primary Light Rheostat",
+      "description": "Current value of this potentiometer.",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "813"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.025,
+      "argumentMin": 0,
+      "argumentMax": 1,
+      "actions": {
+        "set": {
+          "deviceId": "17",
+          "actionId": "3002"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Navigation Lights",
+      "name": "Exterior Lighting Dimmer Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "655"
+        }
+      ],
+      "deviceId": "18",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "BRIGHT",
+          "actionId": "3003"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "DIM",
+          "actionId": "3003"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Navigation Lights",
+      "name": "Position and Fuselage Light Selector Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "656"
+        }
+      ],
+      "deviceId": "18",
+      "positions": [
+        {
+          "argumentValue": "-1.0",
+          "name": "STEADY",
+          "actionId": "3002"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "OFF",
+          "actionId": "3002"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "FLASH",
+          "actionId": "3002"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Navigation Lights",
+      "name": "Landing & Taxi Lights Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "661"
+        }
+      ],
+      "deviceId": "18",
+      "positions": [
+        {
+          "argumentValue": "-1.0",
+          "name": "EXTEND&ON",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "OFF",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "RETRACT",
+          "actionId": "3001"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Oxygen",
+      "name": "Oxygen Regulator Warning Light Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "230"
+        }
+      ],
+      "deviceId": "14",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "ON",
+          "actionId": "3006"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "OFF",
+          "actionId": "3006"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Oxygen",
+      "name": "Oxygen Regulator Diluter Lever, NORMAL OXYGEN/100% OXYGEN",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "703"
+        }
+      ],
+      "deviceId": "14",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "OXYGEN",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "100% OXYGEN",
+          "actionId": "3001"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Oxygen",
+      "name": "Oxygen Regulator Supply Lever",
+      "description": "Current value of this potentiometer.",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "704"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.025,
+      "argumentMin": 0,
+      "argumentMax": 1,
+      "actions": {
+        "set": {
+          "deviceId": "14",
+          "actionId": "3002"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Radio",
+      "name": "AN/APX-6 IFF Dial Stop Button",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "203"
+        }
+      ],
+      "deviceId": "29",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3010"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position2",
+          "actionId": "3010"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Radio",
+      "name": "Microphone Button",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "213"
+        }
+      ],
+      "deviceId": "26",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3004"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position2",
+          "actionId": "3004"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Radio",
+      "name": "AN/ARN-6 Scale Light Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "657"
+        }
+      ],
+      "deviceId": "27",
+      "positions": [
+        {
+          "argumentValue": "-1.0",
+          "name": "HI",
+          "actionId": "3007"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "OFF",
+          "actionId": "3007"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "LO",
+          "actionId": "3007"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Radio",
+      "name": "AN/ARN-6 CW-VOICE Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "658"
+        }
+      ],
+      "deviceId": "27",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "CW",
+          "actionId": "3006"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "VOICE",
+          "actionId": "3006"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Radio",
+      "name": "AN/APX-6 IFF Mode 2 Switch, MODE 2/OUT/I/P",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "659"
+        }
+      ],
+      "deviceId": "29",
+      "positions": [
+        {
+          "argumentValue": "-1.0",
+          "name": "Position1",
+          "actionId": "3002"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Position2",
+          "actionId": "3002"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position3",
+          "actionId": "3002"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Radio",
+      "name": "AN/APX-6 IFF Mode 3 Switch, MODE 3/OUT",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "660"
+        }
+      ],
+      "deviceId": "29",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "3",
+          "actionId": "3003"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "OUT",
+          "actionId": "3003"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Radio",
+      "name": "AN/ARN-6 LOOP L-R Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "666"
+        }
+      ],
+      "deviceId": "27",
+      "positions": [
+        {
+          "argumentValue": "-1.0",
+          "name": "Position1",
+          "actionId": "3005"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Position2",
+          "actionId": "3005"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position3",
+          "actionId": "3005"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Radio",
+      "name": "AN/ARN-6 Function Selector Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "667"
+        }
+      ],
+      "deviceId": "27",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "OFF",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.1",
+          "name": "COMP",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.2",
+          "name": "ANT.",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.3",
+          "name": "LOOP",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.4",
+          "name": "CONT.",
+          "actionId": "3001"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.RotaryEncoder",
+      "device": "Radio",
+      "name": "AN/ARN-6 Tuning Crank",
+      "description": "Current position of this rotary encoder knob.",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "801"
+        }
+      ],
+      "unit": "Numeric",
+      "argumentValue": 0.025,
+      "actions": {
+        "increment": {
+          "deviceId": "27",
+          "actionId": "3003"
+        },
+        "decrement": {
+          "deviceId": "27",
+          "actionId": "3003"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Radio",
+      "name": "AN/ARN-6 Audio Volume Control",
+      "description": "Current value of this potentiometer.",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "802"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.02,
+      "argumentMin": 0.1,
+      "argumentMax": 0.9,
+      "actions": {
+        "set": {
+          "deviceId": "27",
+          "actionId": "3004"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Radio",
+      "name": "AN/ARN-6 Frequency Band Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "803"
+        }
+      ],
+      "deviceId": "27",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3002"
+        },
+        {
+          "argumentValue": "0.1",
+          "name": "Position2",
+          "actionId": "3002"
+        },
+        {
+          "argumentValue": "0.2",
+          "name": "Position3",
+          "actionId": "3002"
+        },
+        {
+          "argumentValue": "0.3",
+          "name": "Position4",
+          "actionId": "3002"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Radio",
+      "name": "AN/ARC-27 UHF Power Switch, OFF/T/R/T/R + G REC/ADF",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "805"
+        }
+      ],
+      "deviceId": "26",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3003"
+        },
+        {
+          "argumentValue": "0.1",
+          "name": "Position2",
+          "actionId": "3003"
+        },
+        {
+          "argumentValue": "0.2",
+          "name": "Position3",
+          "actionId": "3003"
+        },
+        {
+          "argumentValue": "0.3",
+          "name": "Position4",
+          "actionId": "3003"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Radio",
+      "name": "AN/ARC-27 UHF Audio Volume Knob",
+      "description": "Current value of this potentiometer.",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "806"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.02,
+      "argumentMin": 0.1,
+      "argumentMax": 0.9,
+      "actions": {
+        "set": {
+          "deviceId": "26",
+          "actionId": "3002"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Radio",
+      "name": "AN/ARC-27 UHF Preset Channel Selector",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.2f",
+          "id": "807"
+        }
+      ],
+      "deviceId": "26",
+      "positions": [
+        {
+          "argumentValue": "0.00",
+          "name": "Position1",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.01",
+          "name": "Position2",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.02",
+          "name": "Position3",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.03",
+          "name": "Position4",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.04",
+          "name": "Position5",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.05",
+          "name": "Position6",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.06",
+          "name": "Position7",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.07",
+          "name": "Position8",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.08",
+          "name": "Position9",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.09",
+          "name": "Position10",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.10",
+          "name": "Position11",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.11",
+          "name": "Position12",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.12",
+          "name": "Position13",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.13",
+          "name": "Position14",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.14",
+          "name": "Position15",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.15",
+          "name": "Position16",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.16",
+          "name": "Position17",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.17",
+          "name": "Position18",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.18",
+          "name": "Position19",
+          "actionId": "3001"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Radio",
+      "name": "AN/APX-6 IFF Destruct Switch Cover",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "808"
+        }
+      ],
+      "deviceId": "29",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3005"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position2",
+          "actionId": "3005"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Radio",
+      "name": "AN/APX-6 IFF Destruct Switch, OFF/ON",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "809"
+        }
+      ],
+      "deviceId": "29",
+      "positions": [
+        {
+          "argumentValue": "-1.0",
+          "name": "Position1",
+          "actionId": "3004"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Position2",
+          "actionId": "3004"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position3",
+          "actionId": "3004"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Radio",
+      "name": "AN/APX-6 IFF Master Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "810"
+        }
+      ],
+      "deviceId": "29",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "EMERGENCY",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.1",
+          "name": "NORM",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.2",
+          "name": "LOW",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.3",
+          "name": "STDBY",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.4",
+          "name": "OFF",
+          "actionId": "3001"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.RotaryEncoder",
+      "device": "Radio",
+      "name": "AN/ARN-6 East/West Variation Knob",
+      "description": "Current position of this rotary encoder knob.",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "826"
+        }
+      ],
+      "unit": "Numeric",
+      "argumentValue": 0.025,
+      "actions": {
+        "increment": {
+          "deviceId": "27",
+          "actionId": "3008"
+        },
+        "decrement": {
+          "deviceId": "27",
+          "actionId": "3008"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Sight",
+      "name": "A-4 Sight Rotating Grip manual ranging, CCW spring-loaded position",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.2f",
+          "id": "210"
+        }
+      ],
+      "deviceId": "22",
+      "positions": [
+        {
+          "argumentValue": "-1.00",
+          "name": "Position1",
+          "actionId": "3026"
+        },
+        {
+          "argumentValue": "-0.95",
+          "name": "Position2",
+          "actionId": "3026"
+        },
+        {
+          "argumentValue": "-0.90",
+          "name": "Position3",
+          "actionId": "3026"
+        },
+        {
+          "argumentValue": "-0.85",
+          "name": "Position4",
+          "actionId": "3026"
+        },
+        {
+          "argumentValue": "-0.80",
+          "name": "Position5",
+          "actionId": "3026"
+        },
+        {
+          "argumentValue": "-0.75",
+          "name": "Position6",
+          "actionId": "3026"
+        },
+        {
+          "argumentValue": "-0.70",
+          "name": "Position7",
+          "actionId": "3026"
+        },
+        {
+          "argumentValue": "-0.65",
+          "name": "Position8",
+          "actionId": "3026"
+        },
+        {
+          "argumentValue": "-0.60",
+          "name": "Position9",
+          "actionId": "3026"
+        },
+        {
+          "argumentValue": "-0.55",
+          "name": "Position10",
+          "actionId": "3026"
+        },
+        {
+          "argumentValue": "-0.50",
+          "name": "Position11",
+          "actionId": "3026"
+        },
+        {
+          "argumentValue": "-0.45",
+          "name": "Position12",
+          "actionId": "3026"
+        },
+        {
+          "argumentValue": "-0.40",
+          "name": "Position13",
+          "actionId": "3026"
+        },
+        {
+          "argumentValue": "-0.35",
+          "name": "Position14",
+          "actionId": "3026"
+        },
+        {
+          "argumentValue": "-0.30",
+          "name": "Position15",
+          "actionId": "3026"
+        },
+        {
+          "argumentValue": "-0.25",
+          "name": "Position16",
+          "actionId": "3026"
+        },
+        {
+          "argumentValue": "-0.20",
+          "name": "Position17",
+          "actionId": "3026"
+        },
+        {
+          "argumentValue": "-0.15",
+          "name": "Position18",
+          "actionId": "3026"
+        },
+        {
+          "argumentValue": "-0.10",
+          "name": "Position19",
+          "actionId": "3026"
+        },
+        {
+          "argumentValue": "-0.05",
+          "name": "Position20",
+          "actionId": "3026"
+        },
+        {
+          "argumentValue": "0.00",
+          "name": "Position21",
+          "actionId": "3026"
+        },
+        {
+          "argumentValue": "0.05",
+          "name": "Position22",
+          "actionId": "3026"
+        },
+        {
+          "argumentValue": "0.10",
+          "name": "Position23",
+          "actionId": "3026"
+        },
+        {
+          "argumentValue": "0.15",
+          "name": "Position24",
+          "actionId": "3026"
+        },
+        {
+          "argumentValue": "0.20",
+          "name": "Position25",
+          "actionId": "3026"
+        },
+        {
+          "argumentValue": "0.25",
+          "name": "Position26",
+          "actionId": "3026"
+        },
+        {
+          "argumentValue": "0.30",
+          "name": "Position27",
+          "actionId": "3026"
+        },
+        {
+          "argumentValue": "0.35",
+          "name": "Position28",
+          "actionId": "3026"
+        },
+        {
+          "argumentValue": "0.40",
+          "name": "Position29",
+          "actionId": "3026"
+        },
+        {
+          "argumentValue": "0.45",
+          "name": "Position30",
+          "actionId": "3026"
+        },
+        {
+          "argumentValue": "0.50",
+          "name": "Position31",
+          "actionId": "3026"
+        },
+        {
+          "argumentValue": "0.55",
+          "name": "Position32",
+          "actionId": "3026"
+        },
+        {
+          "argumentValue": "0.60",
+          "name": "Position33",
+          "actionId": "3026"
+        },
+        {
+          "argumentValue": "0.65",
+          "name": "Position34",
+          "actionId": "3026"
+        },
+        {
+          "argumentValue": "0.70",
+          "name": "Position35",
+          "actionId": "3026"
+        },
+        {
+          "argumentValue": "0.75",
+          "name": "Position36",
+          "actionId": "3026"
+        },
+        {
+          "argumentValue": "0.80",
+          "name": "Position37",
+          "actionId": "3026"
+        },
+        {
+          "argumentValue": "0.85",
+          "name": "Position38",
+          "actionId": "3026"
+        },
+        {
+          "argumentValue": "0.90",
+          "name": "Position39",
+          "actionId": "3026"
+        },
+        {
+          "argumentValue": "0.95",
+          "name": "Position40",
+          "actionId": "3026"
+        },
+        {
+          "argumentValue": "1.00",
+          "name": "Position41",
+          "actionId": "3026"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Sight",
+      "name": "A-4 Sight Radar Range Sweep Rheostat",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.2f",
+          "id": "715"
+        }
+      ],
+      "deviceId": "21",
+      "positions": [
+        {
+          "argumentValue": "0.00",
+          "name": "Position1",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.02",
+          "name": "Position2",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.04",
+          "name": "Position3",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.06",
+          "name": "Position4",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.09",
+          "name": "Position5",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.11",
+          "name": "Position6",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.13",
+          "name": "Position7",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.15",
+          "name": "Position8",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.17",
+          "name": "Position9",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.19",
+          "name": "Position10",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.21",
+          "name": "Position11",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.24",
+          "name": "Position12",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.26",
+          "name": "Position13",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.28",
+          "name": "Position14",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.30",
+          "name": "Position15",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.32",
+          "name": "Position16",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.34",
+          "name": "Position17",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.37",
+          "name": "Position18",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.39",
+          "name": "Position19",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.41",
+          "name": "Position20",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.43",
+          "name": "Position21",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.45",
+          "name": "Position22",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.47",
+          "name": "Position23",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.49",
+          "name": "Position24",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.52",
+          "name": "Position25",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.54",
+          "name": "Position26",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.56",
+          "name": "Position27",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.58",
+          "name": "Position28",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.60",
+          "name": "Position29",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.62",
+          "name": "Position30",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.64",
+          "name": "Position31",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.67",
+          "name": "Position32",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.69",
+          "name": "Position33",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.71",
+          "name": "Position34",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.73",
+          "name": "Position35",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.75",
+          "name": "Position36",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.77",
+          "name": "Position37",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.80",
+          "name": "Position38",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.82",
+          "name": "Position39",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.84",
+          "name": "Position40",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.86",
+          "name": "Position41",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.88",
+          "name": "Position42",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.90",
+          "name": "Position43",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.92",
+          "name": "Position44",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.95",
+          "name": "Position45",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.97",
+          "name": "Position46",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.99",
+          "name": "Position47",
+          "actionId": "3001"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Sight",
+      "name": "A-4 Sight Wing Span Adjustment Knob",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.2f",
+          "id": "716"
+        }
+      ],
+      "deviceId": "22",
+      "positions": [
+        {
+          "argumentValue": "0.00",
+          "name": "Position1",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.02",
+          "name": "Position2",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.04",
+          "name": "Position3",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.06",
+          "name": "Position4",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.09",
+          "name": "Position5",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.11",
+          "name": "Position6",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.13",
+          "name": "Position7",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.15",
+          "name": "Position8",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.17",
+          "name": "Position9",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.19",
+          "name": "Position10",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.21",
+          "name": "Position11",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.24",
+          "name": "Position12",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.26",
+          "name": "Position13",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.28",
+          "name": "Position14",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.30",
+          "name": "Position15",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.32",
+          "name": "Position16",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.34",
+          "name": "Position17",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.37",
+          "name": "Position18",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.39",
+          "name": "Position19",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.41",
+          "name": "Position20",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.43",
+          "name": "Position21",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.45",
+          "name": "Position22",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.47",
+          "name": "Position23",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.49",
+          "name": "Position24",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.52",
+          "name": "Position25",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.54",
+          "name": "Position26",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.56",
+          "name": "Position27",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.58",
+          "name": "Position28",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.60",
+          "name": "Position29",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.62",
+          "name": "Position30",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.64",
+          "name": "Position31",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.67",
+          "name": "Position32",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.69",
+          "name": "Position33",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.71",
+          "name": "Position34",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.73",
+          "name": "Position35",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.75",
+          "name": "Position36",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.77",
+          "name": "Position37",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.80",
+          "name": "Position38",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.82",
+          "name": "Position39",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.84",
+          "name": "Position40",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.86",
+          "name": "Position41",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.88",
+          "name": "Position42",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.90",
+          "name": "Position43",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.92",
+          "name": "Position44",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.95",
+          "name": "Position45",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.97",
+          "name": "Position46",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.99",
+          "name": "Position47",
+          "actionId": "3001"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Sight",
+      "name": "Variable Sight Selector Unit - Target Speed Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "720"
+        }
+      ],
+      "deviceId": "22",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "TR",
+          "actionId": "3012"
+        },
+        {
+          "argumentValue": "0.5",
+          "name": "HI",
+          "actionId": "3012"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "LO",
+          "actionId": "3012"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Sight",
+      "name": "Variable Sight Selector Unit - Sight Function Selector Lever",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "721"
+        }
+      ],
+      "deviceId": "22",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "ROCKET",
+          "actionId": "3011"
+        },
+        {
+          "argumentValue": "0.1",
+          "name": "GUN",
+          "actionId": "3011"
+        },
+        {
+          "argumentValue": "0.2",
+          "name": "BOMB",
+          "actionId": "3011"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Sight",
+      "name": "Variable Sight Selector Unit - Rocket Depression Angle Selector",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.2f",
+          "id": "722"
+        }
+      ],
+      "deviceId": "22",
+      "positions": [
+        {
+          "argumentValue": "0.00",
+          "name": "Position1",
+          "actionId": "3013"
+        },
+        {
+          "argumentValue": "0.02",
+          "name": "Position2",
+          "actionId": "3013"
+        },
+        {
+          "argumentValue": "0.04",
+          "name": "Position3",
+          "actionId": "3013"
+        },
+        {
+          "argumentValue": "0.06",
+          "name": "Position4",
+          "actionId": "3013"
+        },
+        {
+          "argumentValue": "0.09",
+          "name": "Position5",
+          "actionId": "3013"
+        },
+        {
+          "argumentValue": "0.11",
+          "name": "Position6",
+          "actionId": "3013"
+        },
+        {
+          "argumentValue": "0.13",
+          "name": "Position7",
+          "actionId": "3013"
+        },
+        {
+          "argumentValue": "0.15",
+          "name": "Position8",
+          "actionId": "3013"
+        },
+        {
+          "argumentValue": "0.17",
+          "name": "Position9",
+          "actionId": "3013"
+        },
+        {
+          "argumentValue": "0.19",
+          "name": "Position10",
+          "actionId": "3013"
+        },
+        {
+          "argumentValue": "0.21",
+          "name": "Position11",
+          "actionId": "3013"
+        },
+        {
+          "argumentValue": "0.24",
+          "name": "Position12",
+          "actionId": "3013"
+        },
+        {
+          "argumentValue": "0.26",
+          "name": "Position13",
+          "actionId": "3013"
+        },
+        {
+          "argumentValue": "0.28",
+          "name": "Position14",
+          "actionId": "3013"
+        },
+        {
+          "argumentValue": "0.30",
+          "name": "Position15",
+          "actionId": "3013"
+        },
+        {
+          "argumentValue": "0.32",
+          "name": "Position16",
+          "actionId": "3013"
+        },
+        {
+          "argumentValue": "0.34",
+          "name": "Position17",
+          "actionId": "3013"
+        },
+        {
+          "argumentValue": "0.37",
+          "name": "Position18",
+          "actionId": "3013"
+        },
+        {
+          "argumentValue": "0.39",
+          "name": "Position19",
+          "actionId": "3013"
+        },
+        {
+          "argumentValue": "0.41",
+          "name": "Position20",
+          "actionId": "3013"
+        },
+        {
+          "argumentValue": "0.43",
+          "name": "Position21",
+          "actionId": "3013"
+        },
+        {
+          "argumentValue": "0.45",
+          "name": "Position22",
+          "actionId": "3013"
+        },
+        {
+          "argumentValue": "0.47",
+          "name": "Position23",
+          "actionId": "3013"
+        },
+        {
+          "argumentValue": "0.49",
+          "name": "Position24",
+          "actionId": "3013"
+        },
+        {
+          "argumentValue": "0.52",
+          "name": "Position25",
+          "actionId": "3013"
+        },
+        {
+          "argumentValue": "0.54",
+          "name": "Position26",
+          "actionId": "3013"
+        },
+        {
+          "argumentValue": "0.56",
+          "name": "Position27",
+          "actionId": "3013"
+        },
+        {
+          "argumentValue": "0.58",
+          "name": "Position28",
+          "actionId": "3013"
+        },
+        {
+          "argumentValue": "0.60",
+          "name": "Position29",
+          "actionId": "3013"
+        },
+        {
+          "argumentValue": "0.62",
+          "name": "Position30",
+          "actionId": "3013"
+        },
+        {
+          "argumentValue": "0.64",
+          "name": "Position31",
+          "actionId": "3013"
+        },
+        {
+          "argumentValue": "0.67",
+          "name": "Position32",
+          "actionId": "3013"
+        },
+        {
+          "argumentValue": "0.69",
+          "name": "Position33",
+          "actionId": "3013"
+        },
+        {
+          "argumentValue": "0.71",
+          "name": "Position34",
+          "actionId": "3013"
+        },
+        {
+          "argumentValue": "0.73",
+          "name": "Position35",
+          "actionId": "3013"
+        },
+        {
+          "argumentValue": "0.75",
+          "name": "Position36",
+          "actionId": "3013"
+        },
+        {
+          "argumentValue": "0.77",
+          "name": "Position37",
+          "actionId": "3013"
+        },
+        {
+          "argumentValue": "0.80",
+          "name": "Position38",
+          "actionId": "3013"
+        },
+        {
+          "argumentValue": "0.82",
+          "name": "Position39",
+          "actionId": "3013"
+        },
+        {
+          "argumentValue": "0.84",
+          "name": "Position40",
+          "actionId": "3013"
+        },
+        {
+          "argumentValue": "0.86",
+          "name": "Position41",
+          "actionId": "3013"
+        },
+        {
+          "argumentValue": "0.88",
+          "name": "Position42",
+          "actionId": "3013"
+        },
+        {
+          "argumentValue": "0.90",
+          "name": "Position43",
+          "actionId": "3013"
+        },
+        {
+          "argumentValue": "0.92",
+          "name": "Position44",
+          "actionId": "3013"
+        },
+        {
+          "argumentValue": "0.95",
+          "name": "Position45",
+          "actionId": "3013"
+        },
+        {
+          "argumentValue": "0.97",
+          "name": "Position46",
+          "actionId": "3013"
+        },
+        {
+          "argumentValue": "0.99",
+          "name": "Position47",
+          "actionId": "3013"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Sight",
+      "name": "Bomb-Target Wind Control Knob",
+      "description": "Current value of this potentiometer.",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "727"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.05,
+      "argumentMin": -1,
+      "argumentMax": 1,
+      "actions": {
+        "set": {
+          "deviceId": "22",
+          "actionId": "3014"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Sight",
+      "name": "A-4 Sight Reticle Dimmer Control",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.2f",
+          "id": "734"
+        }
+      ],
+      "deviceId": "22",
+      "positions": [
+        {
+          "argumentValue": "0.00",
+          "name": "Position1",
+          "actionId": "3003"
+        },
+        {
+          "argumentValue": "0.02",
+          "name": "Position2",
+          "actionId": "3003"
+        },
+        {
+          "argumentValue": "0.04",
+          "name": "Position3",
+          "actionId": "3003"
+        },
+        {
+          "argumentValue": "0.06",
+          "name": "Position4",
+          "actionId": "3003"
+        },
+        {
+          "argumentValue": "0.09",
+          "name": "Position5",
+          "actionId": "3003"
+        },
+        {
+          "argumentValue": "0.11",
+          "name": "Position6",
+          "actionId": "3003"
+        },
+        {
+          "argumentValue": "0.13",
+          "name": "Position7",
+          "actionId": "3003"
+        },
+        {
+          "argumentValue": "0.15",
+          "name": "Position8",
+          "actionId": "3003"
+        },
+        {
+          "argumentValue": "0.17",
+          "name": "Position9",
+          "actionId": "3003"
+        },
+        {
+          "argumentValue": "0.19",
+          "name": "Position10",
+          "actionId": "3003"
+        },
+        {
+          "argumentValue": "0.21",
+          "name": "Position11",
+          "actionId": "3003"
+        },
+        {
+          "argumentValue": "0.24",
+          "name": "Position12",
+          "actionId": "3003"
+        },
+        {
+          "argumentValue": "0.26",
+          "name": "Position13",
+          "actionId": "3003"
+        },
+        {
+          "argumentValue": "0.28",
+          "name": "Position14",
+          "actionId": "3003"
+        },
+        {
+          "argumentValue": "0.30",
+          "name": "Position15",
+          "actionId": "3003"
+        },
+        {
+          "argumentValue": "0.32",
+          "name": "Position16",
+          "actionId": "3003"
+        },
+        {
+          "argumentValue": "0.34",
+          "name": "Position17",
+          "actionId": "3003"
+        },
+        {
+          "argumentValue": "0.37",
+          "name": "Position18",
+          "actionId": "3003"
+        },
+        {
+          "argumentValue": "0.39",
+          "name": "Position19",
+          "actionId": "3003"
+        },
+        {
+          "argumentValue": "0.41",
+          "name": "Position20",
+          "actionId": "3003"
+        },
+        {
+          "argumentValue": "0.43",
+          "name": "Position21",
+          "actionId": "3003"
+        },
+        {
+          "argumentValue": "0.45",
+          "name": "Position22",
+          "actionId": "3003"
+        },
+        {
+          "argumentValue": "0.47",
+          "name": "Position23",
+          "actionId": "3003"
+        },
+        {
+          "argumentValue": "0.49",
+          "name": "Position24",
+          "actionId": "3003"
+        },
+        {
+          "argumentValue": "0.52",
+          "name": "Position25",
+          "actionId": "3003"
+        },
+        {
+          "argumentValue": "0.54",
+          "name": "Position26",
+          "actionId": "3003"
+        },
+        {
+          "argumentValue": "0.56",
+          "name": "Position27",
+          "actionId": "3003"
+        },
+        {
+          "argumentValue": "0.58",
+          "name": "Position28",
+          "actionId": "3003"
+        },
+        {
+          "argumentValue": "0.60",
+          "name": "Position29",
+          "actionId": "3003"
+        },
+        {
+          "argumentValue": "0.62",
+          "name": "Position30",
+          "actionId": "3003"
+        },
+        {
+          "argumentValue": "0.64",
+          "name": "Position31",
+          "actionId": "3003"
+        },
+        {
+          "argumentValue": "0.67",
+          "name": "Position32",
+          "actionId": "3003"
+        },
+        {
+          "argumentValue": "0.69",
+          "name": "Position33",
+          "actionId": "3003"
+        },
+        {
+          "argumentValue": "0.71",
+          "name": "Position34",
+          "actionId": "3003"
+        },
+        {
+          "argumentValue": "0.73",
+          "name": "Position35",
+          "actionId": "3003"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Sight",
+      "name": "Sight_mechanical_caging_lever",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "755"
+        }
+      ],
+      "deviceId": "22",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3017"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position2",
+          "actionId": "3017"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Steering",
+      "name": "Take-off (Trim) Position Indicator Light (Push to test)",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "683"
+        }
+      ],
+      "deviceId": "13",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3012"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position2",
+          "actionId": "3012"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Steering",
+      "name": "Longitudinal Alternate Trim Switch Cover",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "738"
+        }
+      ],
+      "deviceId": "13",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3011"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position2",
+          "actionId": "3011"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.RotaryEncoder",
+      "device": "Weapon System",
+      "name": "Rocket Intervalometer",
+      "description": "Current position of this rotary encoder knob.",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "1001"
+        }
+      ],
+      "unit": "Numeric",
+      "argumentValue": 0.025,
+      "actions": {
+        "increment": {
+          "deviceId": "5",
+          "actionId": "3023"
+        },
+        "decrement": {
+          "deviceId": "5",
+          "actionId": "3023"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Weapon System",
+      "name": "Gun Trigger, SECOND DETENT/FIRST DETENT",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "206"
+        }
+      ],
+      "deviceId": "5",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3048"
+        },
+        {
+          "argumentValue": "0.5",
+          "name": "Position2",
+          "actionId": "3048"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position3",
+          "actionId": "3048"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Weapon System",
+      "name": "G-Limit Light - Push to test",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "225"
+        }
+      ],
+      "deviceId": "5",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3053"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position2",
+          "actionId": "3053"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Weapon System",
+      "name": "Rotate to adjust brightness(MW)",
+      "description": "Current value of this potentiometer.",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "226"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.025,
+      "argumentMin": 0,
+      "argumentMax": 1,
+      "actions": {
+        "set": {
+          "deviceId": "5",
+          "actionId": "3054"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Weapon System",
+      "name": "LABS Gyro Caging Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "632"
+        }
+      ],
+      "deviceId": "5",
+      "positions": [
+        {
+          "argumentValue": "-1.0",
+          "name": "UNCAGE",
+          "actionId": "3013"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "CAGE",
+          "actionId": "3013"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Weapon System",
+      "name": "LABS Start Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "633"
+        }
+      ],
+      "deviceId": "5",
+      "positions": [
+        {
+          "argumentValue": "-1.0",
+          "name": "ON",
+          "actionId": "3014"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "OFF",
+          "actionId": "3014"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Weapon System",
+      "name": "LABS Change-over Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "634"
+        }
+      ],
+      "deviceId": "5",
+      "positions": [
+        {
+          "argumentValue": "-1.0",
+          "name": "LABS",
+          "actionId": "3015"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "A-4",
+          "actionId": "3015"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Weapon System",
+      "name": "Gun Heater Switch, HEATER/OFF/(N/F)",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "636"
+        }
+      ],
+      "deviceId": "5",
+      "positions": [
+        {
+          "argumentValue": "-1.0",
+          "name": "Position1",
+          "actionId": "3003"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Position2",
+          "actionId": "3003"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position3",
+          "actionId": "3003"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Weapon System",
+      "name": "Rocket Fuze (Arming) Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "638"
+        }
+      ],
+      "deviceId": "5",
+      "positions": [
+        {
+          "argumentValue": "-1.0",
+          "name": "DELAY",
+          "actionId": "3011"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "OFF",
+          "actionId": "3011"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "INSTANT",
+          "actionId": "3011"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Weapon System",
+      "name": "Demolition Bomb Arming Switch (Fuze Selection), ARM NOSE&TAIL/OFF/TAIL ONLY",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "641"
+        }
+      ],
+      "deviceId": "5",
+      "positions": [
+        {
+          "argumentValue": "-1.0",
+          "name": "NOSE&TAIL",
+          "actionId": "3007"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "OFF",
+          "actionId": "3007"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "TAIL ONLY",
+          "actionId": "3007"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Weapon System",
+      "name": "Gun-Missile Selector Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "665"
+        }
+      ],
+      "deviceId": "5",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "OFF",
+          "actionId": "3002"
+        },
+        {
+          "argumentValue": "0.1",
+          "name": "SIGHT CAMERA & RADAR",
+          "actionId": "3002"
+        },
+        {
+          "argumentValue": "0.2",
+          "name": "GUNS",
+          "actionId": "3002"
+        },
+        {
+          "argumentValue": "0.3",
+          "name": "MISSILE",
+          "actionId": "3002"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Weapon System",
+      "name": "Gun Selector Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "668"
+        }
+      ],
+      "deviceId": "5",
+      "positions": [
+        {
+          "argumentValue": "-0.2",
+          "name": "Position1",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "-0.1",
+          "name": "Position2",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Position3",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.1",
+          "name": "Position4",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.2",
+          "name": "Position5",
+          "actionId": "3001"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Weapon System",
+      "name": "A-4 Sight Bombing Altimeter Target Altitude Knob",
+      "description": "Current value of this potentiometer.",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "729"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.025,
+      "argumentMin": 0,
+      "argumentMax": 1,
+      "actions": {
+        "set": {
+          "deviceId": "5",
+          "actionId": "3021"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Weapon System",
+      "name": "A-4 Sight Bombing Altimeter Index Altitude Handle",
+      "description": "Current value of this potentiometer.",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "731"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.025,
+      "argumentMin": 0,
+      "argumentMax": 1,
+      "actions": {
+        "set": {
+          "deviceId": "5",
+          "actionId": "3022"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Weapon System",
+      "name": "Rocket Release Selector Switch Cover",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "750"
+        }
+      ],
+      "deviceId": "5",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3010"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position2",
+          "actionId": "3010"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Weapon System",
+      "name": "Manual Pip Control Change Calibrated Dials (Presets)",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "796"
+        }
+      ],
+      "deviceId": "5",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3016"
+        },
+        {
+          "argumentValue": "0.3",
+          "name": "Position2",
+          "actionId": "3016"
+        },
+        {
+          "argumentValue": "0.6",
+          "name": "Position3",
+          "actionId": "3016"
+        },
+        {
+          "argumentValue": "0.9",
+          "name": "Position4",
+          "actionId": "3016"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Weapon System",
+      "name": "Manual Pip Control Knob",
+      "description": "Current value of this potentiometer.",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "797"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.05,
+      "argumentMin": -1,
+      "argumentMax": 1,
+      "actions": {
+        "set": {
+          "deviceId": "5",
+          "actionId": "3005"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Weapon System",
+      "name": "Tone Volume",
+      "description": "Current value of this potentiometer.",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "821"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.025,
+      "argumentMin": 0,
+      "argumentMax": 1,
+      "actions": {
+        "set": {
+          "deviceId": "5",
+          "actionId": "3019"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Weapon System",
+      "name": "Safe Launch Button",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "822"
+        }
+      ],
+      "deviceId": "5",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3020"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position2",
+          "actionId": "3020"
+        }
+      ]
+    }
+  ]
+}
