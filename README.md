@@ -5,8 +5,6 @@ This repo contains interface definition files in JSON format.
 These files can be loaded by Helios to define the exact functions of
 a particular interface, or to define entirely new interfaces.
 
-NOTE: this repo will be public when it is up and running and there is a Helios build that supports it.
-
 ## Installation
 Clone this repo to your "My Documents"\Helios\Interfaces folder, so that
 the definitions will be found by Helios.
