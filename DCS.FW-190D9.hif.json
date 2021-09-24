@@ -1487,17 +1487,16 @@
       ]
     },
     {
-      "heliosType": "DCS.Common.NetworkValue",
+      "heliosType": "DCS.Common.FlagValue",
       "device": "External Aircraft Model",
-      "name": "EXT_POSITION_LIGHT_LEFT",
-      "description": "Unimplemented Callback [[anonymous callback 1]] EXT_POSITION_LIGHT_LEFT",
+      "name": "Left Position Light",
+      "description": "Left Position Light (red)",
       "exports": [
         {
-          "id": "[anonymous callback 1]"
+          "id": "2001"
         }
       ],
-      "callback": true,
-      "unimplemented": true
+      "callback": true
     },
     {
       "heliosType": "DCS.Common.NetworkValue",
