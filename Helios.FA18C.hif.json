@@ -3498,12 +3498,12 @@
           "actionID": "3002"
         },
         {
-          "argumentValue": "0.5",
+          "argumentValue": "0.0",
           "name": "RETRACT",
           "actionID": "3002"
         },
         {
-          "argumentValue": "0.0",
+          "argumentValue": "-1.0",
           "name": "EMERG EXTD",
           "actionID": "3002"
         }
