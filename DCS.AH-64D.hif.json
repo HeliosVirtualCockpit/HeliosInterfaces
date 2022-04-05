@@ -6839,5 +6839,1051 @@
         }
       ]
     },
+	{
+      "heliosType": "DCS.Common.Axis",
+      "device": "Pilot COMM Panel",
+      "name": "VHF Volume Control Knob",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.3f",
+          "isExportedEveryFrame": false,
+          "id": "334"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.1,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "63",
+          "actionId": "3001"
+        }
+      }
+    },
+	{
+      "heliosType": "DCS.Common.Axis",
+      "device": "Pilot COMM Panel",
+      "name": "UHF Volume Control Knob",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.3f",
+          "isExportedEveryFrame": false,
+          "id": "335"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.1,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "63",
+          "actionId": "3002"
+        }
+      }
+    },
+	{
+      "heliosType": "DCS.Common.Axis",
+      "device": "Pilot COMM Panel",
+      "name": "FM1 Volume Control Knob",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.3f",
+          "isExportedEveryFrame": false,
+          "id": "336"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.1,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "63",
+          "actionId": "3003"
+        }
+      }
+    },
+	{
+      "heliosType": "DCS.Common.Axis",
+      "device": "Pilot COMM Panel",
+      "name": "FM2 Volume Control Knob",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.3f",
+          "isExportedEveryFrame": false,
+          "id": "337"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.1,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "63",
+          "actionId": "3004"
+        }
+      }
+    },
+	{
+      "heliosType": "DCS.Common.Axis",
+      "device": "Pilot COMM Panel",
+      "name": "HF Volume Control Knob",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.3f",
+          "isExportedEveryFrame": false,
+          "id": "338"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.1,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "63",
+          "actionId": "3005"
+        }
+      }
+    },
+	{
+      "heliosType": "DCS.Common.Axis",
+      "device": "Pilot COMM Panel",
+      "name": "IFF Volume Control Knob",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.3f",
+          "isExportedEveryFrame": false,
+          "id": "348"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.1,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "63",
+          "actionId": "3006"
+        }
+      }
+    },
+	{
+      "heliosType": "DCS.Common.Axis",
+      "device": "Pilot COMM Panel",
+      "name": "RLWR Volume Control Knob",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.3f",
+          "isExportedEveryFrame": false,
+          "id": "349"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.1,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "63",
+          "actionId": "3007"
+        }
+      }
+    },
+	{
+      "heliosType": "DCS.Common.Axis",
+      "device": "Pilot COMM Panel",
+      "name": "ATA Volume Control Knob",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.3f",
+          "isExportedEveryFrame": false,
+          "id": "350"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.1,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "63",
+          "actionId": "3008"
+        }
+      }
+    },
+	{
+      "heliosType": "DCS.Common.Axis",
+      "device": "Pilot COMM Panel",
+      "name": "VCR Volume Control Knob",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.3f",
+          "isExportedEveryFrame": false,
+          "id": "351"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.1,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "63",
+          "actionId": "3009"
+        }
+      }
+    },
+	{
+      "heliosType": "DCS.Common.Axis",
+      "device": "Pilot COMM Panel",
+      "name": "ADF Volume Control Knob",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.3f",
+          "isExportedEveryFrame": false,
+          "id": "352"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.1,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "63",
+          "actionId": "3010"
+        }
+      }
+    },
+	{
+      "heliosType": "DCS.Common.Axis",
+      "device": "Pilot COMM Panel",
+      "name": "Master Volume Control Knob",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.3f",
+          "isExportedEveryFrame": false,
+          "id": "344"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.1,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "63",
+          "actionId": "3011"
+        }
+      }
+    },
+	{
+      "heliosType": "DCS.Common.Axis",
+      "device": "Pilot COMM Panel",
+      "name": "SENS Control Knob",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.3f",
+          "isExportedEveryFrame": false,
+          "id": "345"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.1,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "63",
+          "actionId": "3012"
+        }
+      }
+    },
+	{
+      "heliosType": "DCS.Common.Switch",
+      "device": "Pilot COMM Panel",
+      "name": "VHF Squelch Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "339"
+        }
+      ],
+      "deviceId": "63",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "ON",
+          "actionID": "3013"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "OFF",
+          "actionID": "3013"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.Switch",
+      "device": "Pilot COMM Panel",
+      "name": "UHF Squelch Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "340"
+        }
+      ],
+      "deviceId": "63",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "ON",
+          "actionID": "3014"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "OFF",
+          "actionID": "3014"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.Switch",
+      "device": "Pilot COMM Panel",
+      "name": "FM1 Squelch Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "341"
+        }
+      ],
+      "deviceId": "63",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "ON",
+          "actionID": "3015"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "OFF",
+          "actionID": "3015"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.Switch",
+      "device": "Pilot COMM Panel",
+      "name": "FM2 Squelch Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "342"
+        }
+      ],
+      "deviceId": "63",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "ON",
+          "actionID": "3016"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "OFF",
+          "actionID": "3016"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.Switch",
+      "device": "Pilot COMM Panel",
+      "name": "HF Squelch Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "343"
+        }
+      ],
+      "deviceId": "63",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "ON",
+          "actionID": "3017"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "OFF",
+          "actionID": "3017"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.Switch",
+      "device": "Pilot COMM Panel",
+      "name": "ICS Mode Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "346"
+        }
+      ],
+      "deviceId": "63",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "PTT",
+          "actionID": "3018"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "VOX",
+          "actionID": "3018"
+        },
+		{
+          "argumentValue": "-1.0",
+          "name": "HOT MIC",
+          "actionID": "3018"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Pilot COMM Panel",
+      "name": "IDENT Button",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "347"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "63",
+          "pushId": "3019",
+          "pushValue": "1",
+          "releaseId": "3019",
+          "releaseValue": "0"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.Axis",
+      "device": "CPG COMM Panel",
+      "name": "VHF Volume Control Knob",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.3f",
+          "isExportedEveryFrame": false,
+          "id": "375"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.1,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "62",
+          "actionId": "3001"
+        }
+      }
+    },
+	{
+      "heliosType": "DCS.Common.Axis",
+      "device": "CPG COMM Panel",
+      "name": "UHF Volume Control Knob",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.3f",
+          "isExportedEveryFrame": false,
+          "id": "376"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.1,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "62",
+          "actionId": "3002"
+        }
+      }
+    },
+	{
+      "heliosType": "DCS.Common.Axis",
+      "device": "CPG COMM Panel",
+      "name": "FM1 Volume Control Knob",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.3f",
+          "isExportedEveryFrame": false,
+          "id": "377"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.1,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "62",
+          "actionId": "3003"
+        }
+      }
+    },
+	{
+      "heliosType": "DCS.Common.Axis",
+      "device": "CPG COMM Panel",
+      "name": "FM2 Volume Control Knob",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.3f",
+          "isExportedEveryFrame": false,
+          "id": "378"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.1,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "62",
+          "actionId": "3004"
+        }
+      }
+    },
+	{
+      "heliosType": "DCS.Common.Axis",
+      "device": "CPG COMM Panel",
+      "name": "HF Volume Control Knob",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.3f",
+          "isExportedEveryFrame": false,
+          "id": "379"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.1,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "62",
+          "actionId": "3005"
+        }
+      }
+    },
+	{
+      "heliosType": "DCS.Common.Axis",
+      "device": "CPG COMM Panel",
+      "name": "IFF Volume Control Knob",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.3f",
+          "isExportedEveryFrame": false,
+          "id": "389"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.1,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "62",
+          "actionId": "3006"
+        }
+      }
+    },
+	{
+      "heliosType": "DCS.Common.Axis",
+      "device": "CPG COMM Panel",
+      "name": "RLWR Volume Control Knob",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.3f",
+          "isExportedEveryFrame": false,
+          "id": "390"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.1,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "62",
+          "actionId": "3007"
+        }
+      }
+    },
+	{
+      "heliosType": "DCS.Common.Axis",
+      "device": "CPG COMM Panel",
+      "name": "ATA Volume Control Knob",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.3f",
+          "isExportedEveryFrame": false,
+          "id": "391"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.1,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "62",
+          "actionId": "3008"
+        }
+      }
+    },
+	{
+      "heliosType": "DCS.Common.Axis",
+      "device": "CPG COMM Panel",
+      "name": "VCR Volume Control Knob",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.3f",
+          "isExportedEveryFrame": false,
+          "id": "392"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.1,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "62",
+          "actionId": "3009"
+        }
+      }
+    },
+	{
+      "heliosType": "DCS.Common.Axis",
+      "device": "CPG COMM Panel",
+      "name": "ADF Volume Control Knob",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.3f",
+          "isExportedEveryFrame": false,
+          "id": "393"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.1,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "62",
+          "actionId": "3010"
+        }
+      }
+    },
+	{
+      "heliosType": "DCS.Common.Axis",
+      "device": "CPG COMM Panel",
+      "name": "Master Volume Control Knob",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.3f",
+          "isExportedEveryFrame": false,
+          "id": "385"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.1,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "62",
+          "actionId": "3011"
+        }
+      }
+    },
+	{
+      "heliosType": "DCS.Common.Axis",
+      "device": "CPG COMM Panel",
+      "name": "SENS Control Knob",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.3f",
+          "isExportedEveryFrame": false,
+          "id": "386"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.1,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "62",
+          "actionId": "3012"
+        }
+      }
+    },
+	{
+      "heliosType": "DCS.Common.Switch",
+      "device": "CPG COMM Panel",
+      "name": "VHF Squelch Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "380"
+        }
+      ],
+      "deviceId": "62",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "ON",
+          "actionID": "3013"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "OFF",
+          "actionID": "3013"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.Switch",
+      "device": "CPG COMM Panel",
+      "name": "UHF Squelch Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "381"
+        }
+      ],
+      "deviceId": "62",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "ON",
+          "actionID": "3014"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "OFF",
+          "actionID": "3014"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.Switch",
+      "device": "CPG COMM Panel",
+      "name": "FM1 Squelch Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "382"
+        }
+      ],
+      "deviceId": "62",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "ON",
+          "actionID": "3015"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "OFF",
+          "actionID": "3015"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.Switch",
+      "device": "CPG COMM Panel",
+      "name": "FM2 Squelch Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "383"
+        }
+      ],
+      "deviceId": "62",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "ON",
+          "actionID": "3016"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "OFF",
+          "actionID": "3016"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.Switch",
+      "device": "CPG COMM Panel",
+      "name": "HF Squelch Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "384"
+        }
+      ],
+      "deviceId": "62",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "ON",
+          "actionID": "3017"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "OFF",
+          "actionID": "3017"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.Switch",
+      "device": "CPG COMM Panel",
+      "name": "ICS Mode Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "387"
+        }
+      ],
+      "deviceId": "62",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "PTT",
+          "actionID": "3018"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "VOX",
+          "actionID": "3018"
+        },
+		{
+          "argumentValue": "-1.0",
+          "name": "HOT MIC",
+          "actionID": "3018"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.PushButton",
+      "device": "CPG COMM Panel",
+      "name": "IDENT Button",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "388"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "62",
+          "pushId": "3019",
+          "pushValue": "1",
+          "releaseId": "3019",
+          "releaseValue": "0"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.Switch",
+      "device": "NVS Mode Panel",
+      "name": "Pilot NVS MODE Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "309"
+        }
+      ],
+      "deviceId": "3",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "FIXED",
+          "actionID": "3005"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "NORM",
+          "actionID": "3005"
+        },
+		{
+          "argumentValue": "-1.0",
+          "name": "OFF",
+          "actionID": "3005"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.Switch",
+      "device": "NVS Mode Panel",
+      "name": "CPG NVS MODE Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "363"
+        }
+      ],
+      "deviceId": "3",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "FIXED",
+          "actionID": "3006"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "NORM",
+          "actionID": "3006"
+        },
+		{
+          "argumentValue": "-1.0",
+          "name": "OFF",
+          "actionID": "3006"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.PushButton",
+      "device": "NVS Mode Panel",
+      "name": "Pilot TAIL WHEEL Pushbutton",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "308"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "5",
+          "pushId": "3003",
+          "pushValue": "1",
+          "releaseId": "3003",
+          "releaseValue": "0"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.PushButton",
+      "device": "NVS Mode Panel",
+      "name": "CPG TAIL WHEEL Pushbutton",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "362"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "5",
+          "pushId": "3005",
+          "pushValue": "1",
+          "releaseId": "3005",
+          "releaseValue": "0"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "NVS Mode Panel",
+      "name": "Pilot Wheel Unlock Light",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "402"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "NVS Mode Panel",
+      "name": "CPG Wheel Unlock Light",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "426"
+        }
+      ]
+    },
   ]
 }
