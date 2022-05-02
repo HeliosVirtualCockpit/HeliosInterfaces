@@ -1,6 +1,6 @@
 {
   "source": "Helios",
-  "version": "1.6.1000.0000",
+  "version": "1.6.5200.0003",
   "commit": "",
   "type": "Existing",
   "name": "DCS F/A-18C",
@@ -802,6 +802,47 @@
       ]
     },
     {
+      "heliosType": "DCS.Common.Switch",
+      "device": "ASPJ",
+      "name": "ECM Mode Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "248"
+        }
+      ],
+      "deviceId": "66",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "OFF",
+          "actionID": "3001"
+        },
+        {
+          "argumentValue": "0.1",
+          "name": "STBY",
+          "actionID": "3001"
+        },
+        {
+          "argumentValue": "0.2",
+          "name": "BIT",
+          "actionID": "3001"
+        },
+        {
+          "argumentValue": "0.3",
+          "name": "REC",
+          "actionID": "3001"
+        },
+        {
+          "argumentValue": "0.4",
+          "name": "XMIT",
+          "actionID": "3001"
+        }
+      ]
+    },
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Caution Indicators",
       "name": "LOCK",
@@ -1067,6 +1108,17 @@
         {
           "format": "%0.1f",
           "id": "22"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Caution Indicators",
+      "name": "Landing Gear Handle",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "227"
         }
       ]
     },
@@ -1806,7 +1858,7 @@
       "deviceId": "54",
       "positions": [
         {
-          "argumentValue": "0.0",
+          "argumentValue": "0.2",
           "name": "BYPASS",
           "actionID": "3001"
         },
@@ -1816,7 +1868,7 @@
           "actionID": "3001"
         },
         {
-          "argumentValue": "0.2",
+          "argumentValue": "0.0",
           "name": "OFF",
           "actionID": "3001"
         }
@@ -2005,12 +2057,12 @@
           "actionID": "3004"
         },
         {
-          "argumentValue": "0.5",
+          "argumentValue": "0.0",
           "name": "NITE",
           "actionID": "3004"
         },
         {
-          "argumentValue": "0.0",
+          "argumentValue": "-1.0",
           "name": "DAY",
           "actionID": "3004"
         }
@@ -3256,12 +3308,12 @@
           "actionID": "3003"
         },
         {
-          "argumentValue": "0.5",
+          "argumentValue": "0.0",
           "name": "OFF",
           "actionID": "3003"
         },
         {
-          "argumentValue": "0.0",
+          "argumentValue": "-1.0",
           "name": "DIM",
           "actionID": "3003"
         }
@@ -3457,12 +3509,12 @@
           "actionID": "3002"
         },
         {
-          "argumentValue": "0.5",
+          "argumentValue": "0.0",
           "name": "RETRACT",
           "actionID": "3002"
         },
         {
-          "argumentValue": "0.0",
+          "argumentValue": "-1.0",
           "name": "EMERG EXTD",
           "actionID": "3002"
         }
@@ -3641,7 +3693,7 @@
       "deviceId": "5",
       "positions": [
         {
-          "argumentValue": "0.0",
+          "argumentValue": "-1.0",
           "name": "Retract",
           "actionID": "3008",
           "stopActionID": "3008",
@@ -5627,12 +5679,12 @@
           "actionID": "3001"
         },
         {
-          "argumentValue": "0.5",
+          "argumentValue": "0.1",
           "name": "NIGHT",
           "actionID": "3001"
         },
         {
-          "argumentValue": "1.0",
+          "argumentValue": "0.2",
           "name": "DAY",
           "actionID": "3001"
         }
@@ -6717,12 +6769,12 @@
           "actionID": "3001"
         },
         {
-          "argumentValue": "0.5",
+          "argumentValue": "0.1",
           "name": "NIGHT",
           "actionID": "3001"
         },
         {
-          "argumentValue": "1.0",
+          "argumentValue": "0.2",
           "name": "DAY",
           "actionID": "3001"
         }
