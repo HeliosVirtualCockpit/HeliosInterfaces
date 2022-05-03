@@ -2615,6 +2615,242 @@
         }
       ]
     },
+	{
+      "heliosType": "DCS.Common.Switch",
+      "device": "ECM",
+      "name": "ECM Power Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "455"
+        }
+      ],
+      "deviceId": "66",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "OPR",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "STBY",
+          "actionId": "3001"
+        },
+		{
+          "argumentValue": "-1.0",
+          "name": "OFF",
+          "actionId": "3001"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.Switch",
+      "device": "ECM",
+      "name": "ECM XMIT Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "457"
+        }
+      ],
+      "deviceId": "66",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "XMIT 1",
+          "actionId": "3002"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "XMIT 2",
+          "actionId": "3002"
+        },
+		{
+          "argumentValue": "-1.0",
+          "name": "XMIT 3",
+          "actionId": "3002"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.PushButton",
+      "device": "ECM",
+      "name": "ECM Button 1",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "460"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "66",
+          "pushId": "3006",
+          "pushValue": "1",
+          "releaseId": "3006",
+          "releaseValue": "0"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.PushButton",
+      "device": "ECM",
+      "name": "ECM Button 2",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "465"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "66",
+          "pushId": "3007",
+          "pushValue": "1",
+          "releaseId": "3007",
+          "releaseValue": "0"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.PushButton",
+      "device": "ECM",
+      "name": "ECM Button 3",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "470"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "66",
+          "pushId": "3008",
+          "pushValue": "1",
+          "releaseId": "3008",
+          "releaseValue": "0"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.PushButton",
+      "device": "ECM",
+      "name": "ECM Button 4",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "475"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "66",
+          "pushId": "3009",
+          "pushValue": "1",
+          "releaseId": "3009",
+          "releaseValue": "0"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.PushButton",
+      "device": "ECM",
+      "name": "ECM Button 5",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "480"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "66",
+          "pushId": "3010",
+          "pushValue": "1",
+          "releaseId": "3010",
+          "releaseValue": "0"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.PushButton",
+      "device": "ECM",
+      "name": "ECM Button 6",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "485"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "66",
+          "pushId": "3011",
+          "pushValue": "1",
+          "releaseId": "3011",
+          "releaseValue": "0"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.PushButton",
+      "device": "ECM",
+      "name": "ECM FRM Button",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "490"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "66",
+          "pushId": "3012",
+          "pushValue": "1",
+          "releaseId": "3012",
+          "releaseValue": "0"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.PushButton",
+      "device": "ECM",
+      "name": "ECM SPL Button",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "495"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "66",
+          "pushId": "3013",
+          "pushValue": "1",
+          "releaseId": "3013",
+          "releaseValue": "0"
+        }
+      ]
+    },
     {
       "heliosType": "DCS.Common.Switch",
       "device": "ECS",
@@ -6044,277 +6280,145 @@
         }
       ]
     },
-    {
-      "heliosType": "DCS.Common.NetworkValue",
+	{
+      "heliosType": "DCS.Common.Switch",
       "device": "MFD Left",
       "name": "MFD Left GAIN Rocker Switch",
-      "description": "Unimplemented [320] MFD_L_GAIN_SW",
+      "description": "Current position of this switch.",
       "exports": [
         {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
           "id": "320"
         }
       ],
-      "actions": [
+      "deviceId": "24",
+      "positions": [
         {
-          "actionArg": 1,
-          "actionId": 3021,
-          "name": "pushUp"
+          "argumentValue": "1",
+          "name": "Up",
+          "actionID": "3021",
+          "stopActionID": "3021",
+          "stopActionValue": "0"
         },
         {
-          "actionArg": 0,
-          "actionId": 3021,
-          "name": "releaseUp"
+          "argumentValue": "0",
+          "name": "Off",
+          "actionID": "3021"
         },
         {
-          "actionArg": -1,
-          "actionId": 3022,
-          "name": "pushDown"
-        },
-        {
-          "actionArg": 0,
-          "actionId": 3022,
-          "name": "releaseDown"
+          "argumentValue": "-1",
+          "name": "Down",
+          "actionID": "3022",
+          "stopActionID": "3022",
+          "stopActionValue": "0"
         }
-      ],
-      "unimplemented": true,
-      "dcsbios": {
-        "id": 320,
-        "key": "MFD_L_GAIN_SW",
-        "reference": {
-          "info": {
-            "actiondId": 3021,
-            "doc": {
-              "control_type": "selector",
-              "description": "MFD Left GAIN Rocker Switch",
-              "inputs": [
-                {
-                  "description": "set the switch position -- 0 = held left/down, 1 = centered, 2 = held right/up",
-                  "interface": "set_state",
-                  "max_value": 2
-                }
-              ],
-              "momentary_positions": "first_and_last",
-              "outputs": [
-                {
-                  "address": 17502,
-                  "description": "selector position",
-                  "mask": 12,
-                  "max_value": 2,
-                  "shift_by": 2,
-                  "suffix": "",
-                  "type": "integer"
-                }
-              ],
-              "physical_variant": "rocker_switch"
-            },
-            "type": "rockerSwitch"
-          }
-        }
-      }
+      ]
     },
-    {
-      "heliosType": "DCS.Common.NetworkValue",
+	{
+      "heliosType": "DCS.Common.Switch",
       "device": "MFD Left",
       "name": "MFD Left SYM Rocker Switch",
-      "description": "Unimplemented [321] MFD_L_SYM_SW",
+      "description": "Current position of this switch.",
       "exports": [
         {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
           "id": "321"
         }
       ],
-      "actions": [
+      "deviceId": "24",
+      "positions": [
         {
-          "actionArg": 1,
-          "actionId": 3023,
-          "name": "pushUp"
+          "argumentValue": "1",
+          "name": "Up",
+          "actionID": "3023",
+          "stopActionID": "3023",
+          "stopActionValue": "0"
         },
         {
-          "actionArg": 0,
-          "actionId": 3023,
-          "name": "releaseUp"
+          "argumentValue": "0",
+          "name": "Off",
+          "actionID": "3023"
         },
         {
-          "actionArg": -1,
-          "actionId": 3024,
-          "name": "pushDown"
-        },
-        {
-          "actionArg": 0,
-          "actionId": 3024,
-          "name": "releaseDown"
+          "argumentValue": "-1",
+          "name": "Down",
+          "actionID": "3024",
+          "stopActionID": "3024",
+          "stopActionValue": "0"
         }
-      ],
-      "unimplemented": true,
-      "dcsbios": {
-        "id": 321,
-        "key": "MFD_L_SYM_SW",
-        "reference": {
-          "info": {
-            "actiondId": 3023,
-            "doc": {
-              "control_type": "selector",
-              "description": "MFD Left SYM Rocker Switch",
-              "inputs": [
-                {
-                  "description": "set the switch position -- 0 = held left/down, 1 = centered, 2 = held right/up",
-                  "interface": "set_state",
-                  "max_value": 2
-                }
-              ],
-              "momentary_positions": "first_and_last",
-              "outputs": [
-                {
-                  "address": 17502,
-                  "description": "selector position",
-                  "mask": 48,
-                  "max_value": 2,
-                  "shift_by": 4,
-                  "suffix": "",
-                  "type": "integer"
-                }
-              ],
-              "physical_variant": "rocker_switch"
-            },
-            "type": "rockerSwitch"
-          }
-        }
-      }
+      ]
     },
     {
-      "heliosType": "DCS.Common.NetworkValue",
+      "heliosType": "DCS.Common.Switch",
       "device": "MFD Left",
       "name": "MFD Left CON Rocker Switch",
-      "description": "Unimplemented [322] MFD_L_CON_SW",
+      "description": "Current position of this switch.",
       "exports": [
         {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
           "id": "322"
         }
       ],
-      "actions": [
+      "deviceId": "24",
+      "positions": [
         {
-          "actionArg": 1,
-          "actionId": 3025,
-          "name": "pushUp"
+          "argumentValue": "1",
+          "name": "Up",
+          "actionID": "3025",
+          "stopActionID": "3025",
+          "stopActionValue": "0"
         },
         {
-          "actionArg": 0,
-          "actionId": 3025,
-          "name": "releaseUp"
+          "argumentValue": "0",
+          "name": "Off",
+          "actionID": "3025"
         },
         {
-          "actionArg": -1,
-          "actionId": 3026,
-          "name": "pushDown"
-        },
-        {
-          "actionArg": 0,
-          "actionId": 3026,
-          "name": "releaseDown"
+          "argumentValue": "-1",
+          "name": "Down",
+          "actionID": "3026",
+          "stopActionID": "3026",
+          "stopActionValue": "0"
         }
-      ],
-      "unimplemented": true,
-      "dcsbios": {
-        "id": 322,
-        "key": "MFD_L_CON_SW",
-        "reference": {
-          "info": {
-            "actiondId": 3025,
-            "doc": {
-              "control_type": "selector",
-              "description": "MFD Left CON Rocker Switch",
-              "inputs": [
-                {
-                  "description": "set the switch position -- 0 = held left/down, 1 = centered, 2 = held right/up",
-                  "interface": "set_state",
-                  "max_value": 2
-                }
-              ],
-              "momentary_positions": "first_and_last",
-              "outputs": [
-                {
-                  "address": 17502,
-                  "description": "selector position",
-                  "mask": 192,
-                  "max_value": 2,
-                  "shift_by": 6,
-                  "suffix": "",
-                  "type": "integer"
-                }
-              ],
-              "physical_variant": "rocker_switch"
-            },
-            "type": "rockerSwitch"
-          }
-        }
-      }
+      ]
     },
-    {
-      "heliosType": "DCS.Common.NetworkValue",
+   {
+      "heliosType": "DCS.Common.Switch",
       "device": "MFD Left",
       "name": "MFD Left BRT Rocker Switch",
-      "description": "Unimplemented [323] MFD_L_BRT_SW",
+      "description": "Current position of this switch.",
       "exports": [
         {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
           "id": "323"
         }
       ],
-      "actions": [
+      "deviceId": "24",
+      "positions": [
         {
-          "actionArg": 1,
-          "actionId": 3027,
-          "name": "pushUp"
+          "argumentValue": "1",
+          "name": "Up",
+          "actionID": "3027",
+          "stopActionID": "3027",
+          "stopActionValue": "0"
         },
         {
-          "actionArg": 0,
-          "actionId": 3027,
-          "name": "releaseUp"
+          "argumentValue": "0",
+          "name": "Off",
+          "actionID": "3027"
         },
         {
-          "actionArg": -1,
-          "actionId": 3028,
-          "name": "pushDown"
-        },
-        {
-          "actionArg": 0,
-          "actionId": 3028,
-          "name": "releaseDown"
+          "argumentValue": "-1",
+          "name": "Down",
+          "actionID": "3028",
+          "stopActionID": "3028",
+          "stopActionValue": "0"
         }
-      ],
-      "unimplemented": true,
-      "dcsbios": {
-        "id": 323,
-        "key": "MFD_L_BRT_SW",
-        "reference": {
-          "info": {
-            "actiondId": 3027,
-            "doc": {
-              "control_type": "selector",
-              "description": "MFD Left BRT Rocker Switch",
-              "inputs": [
-                {
-                  "description": "set the switch position -- 0 = held left/down, 1 = centered, 2 = held right/up",
-                  "interface": "set_state",
-                  "max_value": 2
-                }
-              ],
-              "momentary_positions": "first_and_last",
-              "outputs": [
-                {
-                  "address": 17502,
-                  "description": "selector position",
-                  "mask": 768,
-                  "max_value": 2,
-                  "shift_by": 8,
-                  "suffix": "",
-                  "type": "integer"
-                }
-              ],
-              "physical_variant": "rocker_switch"
-            },
-            "type": "rockerSwitch"
-          }
-        }
-      }
+      ]
     },
     {
       "heliosType": "DCS.Common.PushButton",
@@ -6756,277 +6860,145 @@
         }
       ]
     },
-    {
-      "heliosType": "DCS.Common.NetworkValue",
+	{
+      "heliosType": "DCS.Common.Switch",
       "device": "MFD Right",
       "name": "MFD Right GAIN Rocker Switch",
-      "description": "Unimplemented [346] MFD_R_GAIN_SW",
+      "description": "Current position of this switch.",
       "exports": [
         {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
           "id": "346"
         }
       ],
-      "actions": [
+      "deviceId": "25",
+      "positions": [
         {
-          "actionArg": 1,
-          "actionId": 3021,
-          "name": "pushUp"
+          "argumentValue": "1",
+          "name": "Up",
+          "actionID": "3021",
+          "stopActionID": "3021",
+          "stopActionValue": "0"
         },
         {
-          "actionArg": 0,
-          "actionId": 3021,
-          "name": "releaseUp"
+          "argumentValue": "0",
+          "name": "Off",
+          "actionID": "3021"
         },
         {
-          "actionArg": -1,
-          "actionId": 3022,
-          "name": "pushDown"
-        },
-        {
-          "actionArg": 0,
-          "actionId": 3022,
-          "name": "releaseDown"
+          "argumentValue": "-1",
+          "name": "Down",
+          "actionID": "3022",
+          "stopActionID": "3022",
+          "stopActionValue": "0"
         }
-      ],
-      "unimplemented": true,
-      "dcsbios": {
-        "id": 346,
-        "key": "MFD_R_GAIN_SW",
-        "reference": {
-          "info": {
-            "actiondId": 3021,
-            "doc": {
-              "control_type": "selector",
-              "description": "MFD Right GAIN Rocker Switch",
-              "inputs": [
-                {
-                  "description": "set the switch position -- 0 = held left/down, 1 = centered, 2 = held right/up",
-                  "interface": "set_state",
-                  "max_value": 2
-                }
-              ],
-              "momentary_positions": "first_and_last",
-              "outputs": [
-                {
-                  "address": 17504,
-                  "description": "selector position",
-                  "mask": 49152,
-                  "max_value": 2,
-                  "shift_by": 14,
-                  "suffix": "",
-                  "type": "integer"
-                }
-              ],
-              "physical_variant": "rocker_switch"
-            },
-            "type": "rockerSwitch"
-          }
-        }
-      }
+      ]
     },
-    {
-      "heliosType": "DCS.Common.NetworkValue",
+   {
+      "heliosType": "DCS.Common.Switch",
       "device": "MFD Right",
       "name": "MFD Right SYM Rocker Switch",
-      "description": "Unimplemented [347] MFD_R_SYM_SW",
+      "description": "Current position of this switch.",
       "exports": [
         {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
           "id": "347"
         }
       ],
-      "actions": [
+      "deviceId": "25",
+      "positions": [
         {
-          "actionArg": 1,
-          "actionId": 3023,
-          "name": "pushUp"
+          "argumentValue": "1",
+          "name": "Up",
+          "actionID": "3023",
+          "stopActionID": "3023",
+          "stopActionValue": "0"
         },
         {
-          "actionArg": 0,
-          "actionId": 3023,
-          "name": "releaseUp"
+          "argumentValue": "0",
+          "name": "Off",
+          "actionID": "3023"
         },
         {
-          "actionArg": -1,
-          "actionId": 3024,
-          "name": "pushDown"
-        },
-        {
-          "actionArg": 0,
-          "actionId": 3024,
-          "name": "releaseDown"
+          "argumentValue": "-1",
+          "name": "Down",
+          "actionID": "3024",
+          "stopActionID": "3024",
+          "stopActionValue": "0"
         }
-      ],
-      "unimplemented": true,
-      "dcsbios": {
-        "id": 347,
-        "key": "MFD_R_SYM_SW",
-        "reference": {
-          "info": {
-            "actiondId": 3023,
-            "doc": {
-              "control_type": "selector",
-              "description": "MFD Right SYM Rocker Switch",
-              "inputs": [
-                {
-                  "description": "set the switch position -- 0 = held left/down, 1 = centered, 2 = held right/up",
-                  "interface": "set_state",
-                  "max_value": 2
-                }
-              ],
-              "momentary_positions": "first_and_last",
-              "outputs": [
-                {
-                  "address": 17506,
-                  "description": "selector position",
-                  "mask": 3,
-                  "max_value": 2,
-                  "shift_by": 0,
-                  "suffix": "",
-                  "type": "integer"
-                }
-              ],
-              "physical_variant": "rocker_switch"
-            },
-            "type": "rockerSwitch"
-          }
-        }
-      }
+      ]
     },
-    {
-      "heliosType": "DCS.Common.NetworkValue",
+   {
+      "heliosType": "DCS.Common.Switch",
       "device": "MFD Right",
       "name": "MFD Right CON Rocker Switch",
-      "description": "Unimplemented [348] MFD_R_CON_SW",
+      "description": "Current position of this switch.",
       "exports": [
         {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
           "id": "348"
         }
       ],
-      "actions": [
+      "deviceId": "25",
+      "positions": [
         {
-          "actionArg": 1,
-          "actionId": 3025,
-          "name": "pushUp"
+          "argumentValue": "1",
+          "name": "Up",
+          "actionID": "3025",
+          "stopActionID": "3025",
+          "stopActionValue": "0"
         },
         {
-          "actionArg": 0,
-          "actionId": 3025,
-          "name": "releaseUp"
+          "argumentValue": "0",
+          "name": "Off",
+          "actionID": "3025"
         },
         {
-          "actionArg": -1,
-          "actionId": 3026,
-          "name": "pushDown"
-        },
-        {
-          "actionArg": 0,
-          "actionId": 3026,
-          "name": "releaseDown"
+          "argumentValue": "-1",
+          "name": "Down",
+          "actionID": "3026",
+          "stopActionID": "3026",
+          "stopActionValue": "0"
         }
-      ],
-      "unimplemented": true,
-      "dcsbios": {
-        "id": 348,
-        "key": "MFD_R_CON_SW",
-        "reference": {
-          "info": {
-            "actiondId": 3025,
-            "doc": {
-              "control_type": "selector",
-              "description": "MFD Right CON Rocker Switch",
-              "inputs": [
-                {
-                  "description": "set the switch position -- 0 = held left/down, 1 = centered, 2 = held right/up",
-                  "interface": "set_state",
-                  "max_value": 2
-                }
-              ],
-              "momentary_positions": "first_and_last",
-              "outputs": [
-                {
-                  "address": 17506,
-                  "description": "selector position",
-                  "mask": 12,
-                  "max_value": 2,
-                  "shift_by": 2,
-                  "suffix": "",
-                  "type": "integer"
-                }
-              ],
-              "physical_variant": "rocker_switch"
-            },
-            "type": "rockerSwitch"
-          }
-        }
-      }
+      ]
     },
     {
-      "heliosType": "DCS.Common.NetworkValue",
+      "heliosType": "DCS.Common.Switch",
       "device": "MFD Right",
       "name": "MFD Right BRT Rocker Switch",
-      "description": "Unimplemented [349] MFD_R_BRT_SW",
+      "description": "Current position of this switch.",
       "exports": [
         {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
           "id": "349"
         }
       ],
-      "actions": [
+      "deviceId": "25",
+      "positions": [
         {
-          "actionArg": 1,
-          "actionId": 3027,
-          "name": "pushUp"
+          "argumentValue": "1",
+          "name": "Up",
+          "actionID": "3027",
+          "stopActionID": "3027",
+          "stopActionValue": "0"
         },
         {
-          "actionArg": 0,
-          "actionId": 3027,
-          "name": "releaseUp"
+          "argumentValue": "0",
+          "name": "Off",
+          "actionID": "3027"
         },
         {
-          "actionArg": -1,
-          "actionId": 3028,
-          "name": "pushDown"
-        },
-        {
-          "actionArg": 0,
-          "actionId": 3028,
-          "name": "releaseDown"
+          "argumentValue": "-1",
+          "name": "Down",
+          "actionID": "3028",
+          "stopActionID": "3028",
+          "stopActionValue": "0"
         }
-      ],
-      "unimplemented": true,
-      "dcsbios": {
-        "id": 349,
-        "key": "MFD_R_BRT_SW",
-        "reference": {
-          "info": {
-            "actiondId": 3027,
-            "doc": {
-              "control_type": "selector",
-              "description": "MFD Right BRT Rocker Switch",
-              "inputs": [
-                {
-                  "description": "set the switch position -- 0 = held left/down, 1 = centered, 2 = held right/up",
-                  "interface": "set_state",
-                  "max_value": 2
-                }
-              ],
-              "momentary_positions": "first_and_last",
-              "outputs": [
-                {
-                  "address": 17506,
-                  "description": "selector position",
-                  "mask": 48,
-                  "max_value": 2,
-                  "shift_by": 4,
-                  "suffix": "",
-                  "type": "integer"
-                }
-              ],
-              "physical_variant": "rocker_switch"
-            },
-            "type": "rockerSwitch"
-          }
-        }
-      }
+      ]
     },
     {
       "heliosType": "DCS.Common.Switch",
@@ -8470,61 +8442,229 @@
         }
       ]
     },
-    {
-      "heliosType": "DCS.Common.NetworkValue",
+	{
+      "heliosType": "DCS.Common.Switch",
       "device": "UFC",
-      "name": "ICP_DED_SW",
-      "description": "Unimplemented Callback [183] ICP_DED_SW",
+      "name": "ICP DED Increment/Decrement Switch",
+      "description": "Current position of this switch.",
       "exports": [
         {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
           "id": "183"
         }
       ],
-      "callback": true,
-      "indicationDeviceId": "0",
-      "unimplemented": true
-    },
-    {
-      "heliosType": "DCS.Common.NetworkValue",
-      "device": "UFC",
-      "name": "ICP_DATA_RTN_SEQ_SW",
-      "description": "Unimplemented Callback [184] ICP_DATA_RTN_SEQ_SW",
-      "exports": [
+      "deviceId": "17",
+      "positions": [
         {
-          "id": "184"
+          "argumentValue": "1",
+          "name": "Up",
+          "actionID": "3030",
+          "stopActionID": "3030",
+          "stopActionValue": "0"
+        },
+        {
+          "argumentValue": "0",
+          "name": "Off",
+          "actionID": "3030"
+        },
+        {
+          "argumentValue": "-1",
+          "name": "Down",
+          "actionID": "3031",
+          "stopActionID": "3031",
+          "stopActionValue": "0"
         }
-      ],
-      "callback": true,
-      "indicationDeviceId": "0",
-      "unimplemented": true
+      ]
     },
-    {
-      "heliosType": "DCS.Common.NetworkValue",
+  {
+      "heliosType": "DCS.Common.Switch",
       "device": "UFC",
-      "name": "ICP_DATA_UP_DN_SW",
-      "description": "Unimplemented Callback [185] ICP_DATA_UP_DN_SW",
+      "name": "ICP Data Control Switch - UP / DOWN [2-Way Switch]",
+      "description": "Current position of this switch.",
       "exports": [
         {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
           "id": "185"
         }
       ],
-      "callback": true,
-      "indicationDeviceId": "0",
-      "unimplemented": true
+      "deviceId": "17",
+      "positions": [
+        {
+          "argumentValue": "1",
+          "name": "Up",
+          "actionID": "3034",
+          "stopActionID": "3034",
+          "stopActionValue": "0"
+        },
+        {
+          "argumentValue": "0",
+          "name": "Off",
+          "actionID": "3034"
+        },
+        {
+          "argumentValue": "-1",
+          "name": "Down",
+          "actionID": "3035",
+          "stopActionID": "3035",
+          "stopActionValue": "0"
+        }
+      ]
     },
-    {
-      "heliosType": "DCS.Common.NetworkValue",
+	{
+      "heliosType": "DCS.Common.Switch",
       "device": "UFC",
-      "name": "ICP_DRIFT_SW",
-      "description": "Unimplemented Callback [186] ICP_DRIFT_SW",
+      "name": "ICP Data Control Switch - RET / SEQ [2-Way Switch]",
+      "description": "Current position of this switch.",
       "exports": [
         {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "184"
+        }
+      ],
+      "deviceId": "17",
+      "positions": [
+        {
+          "argumentValue": "1",
+          "name": "SEQ",
+          "actionID": "3033",
+          "stopActionID": "3033",
+          "stopActionValue": "0"
+        },
+        {
+          "argumentValue": "0",
+          "name": "Off",
+          "actionID": "3033"
+        },
+        {
+          "argumentValue": "-1",
+          "name": "RET",
+          "actionID": "3032",
+          "stopActionID": "3032",
+          "stopActionValue": "0"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.PushButton",
+      "device": "UFC",
+      "name": "ICP Data Control Switch - RET [Button]",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "184"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "17",
+          "pushId": "3032",
+          "pushValue": "-1",
+          "releaseId": "3032",
+          "releaseValue": "0"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.PushButton",
+      "device": "UFC",
+      "name": "ICP Data Control Switch - SEQ [Button]",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "184"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "17",
+          "pushId": "3033",
+          "pushValue": "1",
+          "releaseId": "3033",
+          "releaseValue": "0"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.PushButton",
+      "device": "UFC",
+      "name": "ICP Data Control Switch - UP [Button]",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "185"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "17",
+          "pushId": "3034",
+          "pushValue": "1",
+          "releaseId": "3034",
+          "releaseValue": "0"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.PushButton",
+      "device": "UFC",
+      "name": "ICP Data Control Switch - DOWN [Button]",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "185"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "17",
+          "pushId": "3035",
+          "pushValue": "-1",
+          "releaseId": "3035",
+          "releaseValue": "0"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.Switch",
+      "device": "UFC",
+      "name": "ICP_DRIFT_SW",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
           "id": "186"
         }
       ],
-      "callback": true,
-      "indicationDeviceId": "0",
-      "unimplemented": true
+      "deviceId": "17",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "DRIFT C/O",
+          "actionID": "3028"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "NORM",
+          "actionID": "3028"
+        },
+		{
+          "argumentValue": "-1.0",
+          "name": "WARN RESET",
+          "actionID": "3029"
+        }
+      ]
     },
     {
       "heliosType": "DCS.Common.PushButton",
