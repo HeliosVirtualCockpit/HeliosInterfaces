@@ -10624,7 +10624,7 @@
       "description": "Current state of this button.",
       "exports": [
         {
-          "format": "Press to toggle preset window",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "266"
         }
@@ -10668,7 +10668,7 @@
       "description": "Current state of this button.",
       "exports": [
         {
-          "format": "Press to start/stop, Hold to reset",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "268"
         }
@@ -10843,7 +10843,7 @@
       "description": "Current state of this button.",
       "exports": [
         {
-          "format": "Press to toggle preset window",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "274"
         }
@@ -10887,7 +10887,7 @@
       "description": "Current state of this button.",
       "exports": [
         {
-          "format": "Press to start/stop, Hold to reset",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "276"
         }
