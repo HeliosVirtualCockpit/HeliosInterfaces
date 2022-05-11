@@ -170,7 +170,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%1d",
+          "format": "%0.1f",
           "isExportedEveryFrame": false,
           "id": "796"
         }
@@ -178,12 +178,12 @@
       "deviceId": "9",
       "positions": [
         {
-          "argumentValue": "1",
+          "argumentValue": "1.0",
           "name": "Open",
           "actionID": "3005"
         },
         {
-          "argumentValue": "0",
+          "argumentValue": "0.0",
           "name": "Closed",
           "actionID": "3005"
         }
@@ -196,7 +196,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%1d",
+          "format": "%0.1f",
           "isExportedEveryFrame": false,
           "id": "799"
         }
@@ -453,7 +453,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%1d",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "614"
         }
@@ -479,7 +479,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%1d",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "615"
         }
@@ -505,7 +505,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%1d",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "616"
         }
@@ -531,7 +531,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%1d",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "617"
         }
@@ -557,7 +557,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%1d",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "618"
         }
@@ -1035,7 +1035,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%1d",
+          "format": "%0.1f",
           "isExportedEveryFrame": false,
           "id": "380"
         }
@@ -1061,7 +1061,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%1d",
+          "format": "%0.1f",
           "isExportedEveryFrame": false,
           "id": "381"
         }
@@ -1087,7 +1087,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%1d",
+          "format": "%0.1f",
           "isExportedEveryFrame": false,
           "id": "382"
         }
@@ -1113,7 +1113,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%1d",
+          "format": "%0.1f",
           "isExportedEveryFrame": false,
           "id": "383"
         }
@@ -1139,7 +1139,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%1d",
+          "format": "%0.1f",
           "isExportedEveryFrame": false,
           "id": "384"
         }
@@ -1714,7 +1714,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%1d",
+          "format": "%0.1f",
           "isExportedEveryFrame": false,
           "id": "339"
         }
@@ -1740,7 +1740,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%1d",
+          "format": "%0.1f",
           "isExportedEveryFrame": false,
           "id": "340"
         }
@@ -1766,7 +1766,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%1d",
+          "format": "%0.1f",
           "isExportedEveryFrame": false,
           "id": "341"
         }
@@ -1792,7 +1792,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%1d",
+          "format": "%0.1f",
           "isExportedEveryFrame": false,
           "id": "342"
         }
@@ -1818,7 +1818,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%1d",
+          "format": "%0.1f",
           "isExportedEveryFrame": false,
           "id": "343"
         }
@@ -2353,7 +2353,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%1d",
+          "format": "%0.1f",
           "isExportedEveryFrame": false,
           "id": "360"
         }
@@ -2401,7 +2401,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%1d",
+          "format": "%0.1f",
           "isExportedEveryFrame": false,
           "id": "801"
         }
@@ -2427,7 +2427,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%1d",
+          "format": "%0.1f",
           "isExportedEveryFrame": false,
           "id": "802"
         }
@@ -2497,7 +2497,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%1d",
+          "format": "%0.1f",
           "isExportedEveryFrame": false,
           "id": "312"
         }
@@ -2545,7 +2545,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%1d",
+          "format": "%0.1f",
           "isExportedEveryFrame": false,
           "id": "803"
         }
@@ -2571,7 +2571,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%1d",
+          "format": "%0.1f",
           "isExportedEveryFrame": false,
           "id": "804"
         }
@@ -2700,11 +2700,11 @@
     {
       "heliosType": "DCS.Common.Switch",
       "device": "Fire Panel (CP/G)",
-      "name": "ENG 1 Fire Pushbutton Cover",
+      "name": "ENG 1 Button Cover",
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%1d",
+          "format": "%0.1f",
           "isExportedEveryFrame": false,
           "id": "285"
         }
@@ -2748,11 +2748,11 @@
     {
       "heliosType": "DCS.Common.Switch",
       "device": "Fire Panel (CP/G)",
-      "name": "APU Fire Cover",
+      "name": "APU Button Cover",
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%1d",
+          "format": "%0.1f",
           "isExportedEveryFrame": false,
           "id": "287"
         }
@@ -2796,11 +2796,11 @@
     {
       "heliosType": "DCS.Common.Switch",
       "device": "Fire Panel (CP/G)",
-      "name": "ENG 2 Fire Pushbutton Cover",
+      "name": "ENG 2 Button Cover",
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%1d",
+          "format": "%0.1f",
           "isExportedEveryFrame": false,
           "id": "289"
         }
@@ -2822,7 +2822,7 @@
     {
       "heliosType": "DCS.Common.PushButton",
       "device": "Fire Panel (CP/G)",
-      "name": "Primary Fire Extinguisher Discharge Pushbutton",
+      "name": "Primary Extinguisher button",
       "description": "Current state of this button.",
       "exports": [
         {
@@ -2844,7 +2844,7 @@
     {
       "heliosType": "DCS.Common.Switch",
       "device": "Fire Panel (CP/G)",
-      "name": "Fire Detection Circuit Test Switch",
+      "name": "Fire Test Switch",
       "description": "Current position of this switch.",
       "exports": [
         {
@@ -2856,7 +2856,7 @@
       "deviceId": "6",
       "positions": [
         {
-          "argumentValue": "1.0",
+          "argumentValue": "-1.0",
           "name": "1",
           "actionID": "3029"
         },
@@ -2866,7 +2866,7 @@
           "actionID": "3029"
         },
         {
-          "argumentValue": "-1.0",
+          "argumentValue": "1.0",
           "name": "2",
           "actionID": "3030"
         }
@@ -2875,7 +2875,7 @@
     {
       "heliosType": "DCS.Common.PushButton",
       "device": "Fire Panel (CP/G)",
-      "name": "Reserve Fire Extinguisher Discharge Pushbutton",
+      "name": "Reserve Extinguisher button",
       "description": "Current state of this button.",
       "exports": [
         {
@@ -2897,7 +2897,7 @@
     {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Fire Panel (CP/G)",
-      "name": "Fire Eng1 Indicator",
+      "name": "Eng1 Fire Indicator",
       "exports": [
         {
           "format": "%0.1f",
@@ -2908,7 +2908,7 @@
     {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Fire Panel (CP/G)",
-      "name": "Extinguisher Ready Eng1 Indicator",
+      "name": "Eng1 Ready Indicator",
       "exports": [
         {
           "format": "%0.1f",
@@ -2919,7 +2919,7 @@
     {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Fire Panel (CP/G)",
-      "name": "Fire APU Indicator",
+      "name": "APU Fire Indicator",
       "exports": [
         {
           "format": "%0.1f",
@@ -2930,7 +2930,7 @@
     {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Fire Panel (CP/G)",
-      "name": "Extinguisher Ready APU Indicator",
+      "name": "APU Ready Indicator",
       "exports": [
         {
           "format": "%0.1f",
@@ -2941,7 +2941,7 @@
     {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Fire Panel (CP/G)",
-      "name": "Fire Eng2 Indicator",
+      "name": "Eng2 Fire Indicator",
       "exports": [
         {
           "format": "%0.1f",
@@ -2952,7 +2952,7 @@
     {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Fire Panel (CP/G)",
-      "name": "Extinguisher Ready Eng2 Indicator",
+      "name": "Eng2 Ready Indicator",
       "exports": [
         {
           "format": "%0.1f",
@@ -2963,7 +2963,7 @@
     {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Fire Panel (CP/G)",
-      "name": "Discharge Pri Indicator",
+      "name": "Primary Discharge Indicator",
       "exports": [
         {
           "format": "%0.1f",
@@ -2974,7 +2974,7 @@
     {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Fire Panel (CP/G)",
-      "name": "Discharge Res Indicator",
+      "name": "Reserve Discharge Indicator",
       "exports": [
         {
           "format": "%0.1f",
@@ -3007,11 +3007,11 @@
     {
       "heliosType": "DCS.Common.Switch",
       "device": "Fire Panel (Pilot)",
-      "name": "ENG 1 Fire Pushbutton Cover",
+      "name": "ENG 1 Button Cover",
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%1d",
+          "format": "%0.1f",
           "isExportedEveryFrame": false,
           "id": "296"
         }
@@ -3055,11 +3055,11 @@
     {
       "heliosType": "DCS.Common.Switch",
       "device": "Fire Panel (Pilot)",
-      "name": "APU Fire Cover",
+      "name": "APU Button Cover",
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%1d",
+          "format": "%0.1f",
           "isExportedEveryFrame": false,
           "id": "298"
         }
@@ -3103,11 +3103,11 @@
     {
       "heliosType": "DCS.Common.Switch",
       "device": "Fire Panel (Pilot)",
-      "name": "ENG 2 Fire Pushbutton Cover",
+      "name": "ENG 2 Button Cover",
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%1d",
+          "format": "%0.1f",
           "isExportedEveryFrame": false,
           "id": "300"
         }
@@ -3129,7 +3129,7 @@
     {
       "heliosType": "DCS.Common.PushButton",
       "device": "Fire Panel (Pilot)",
-      "name": "Primary Fire Extinguisher Discharge Pushbutton",
+      "name": "Primary Extinguisher button",
       "description": "Current state of this button.",
       "exports": [
         {
@@ -3151,7 +3151,7 @@
     {
       "heliosType": "DCS.Common.Switch",
       "device": "Fire Panel (Pilot)",
-      "name": "Fire Detection Circuit Test Switch",
+      "name": "Fire Test Switch",
       "description": "Current position of this switch.",
       "exports": [
         {
@@ -3163,7 +3163,7 @@
       "deviceId": "6",
       "positions": [
         {
-          "argumentValue": "1.0",
+          "argumentValue": "-1.0",
           "name": "1",
           "actionID": "3019"
         },
@@ -3173,7 +3173,7 @@
           "actionID": "3019"
         },
         {
-          "argumentValue": "-1.0",
+          "argumentValue": "1.0",
           "name": "2",
           "actionID": "3020"
         }
@@ -3182,7 +3182,7 @@
     {
       "heliosType": "DCS.Common.PushButton",
       "device": "Fire Panel (Pilot)",
-      "name": "Reserve Fire Extinguisher Discharge Pushbutton",
+      "name": "Reserve Extinguisher button",
       "description": "Current state of this button.",
       "exports": [
         {
@@ -3204,7 +3204,7 @@
     {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Fire Panel (Pilot)",
-      "name": "Fire Eng1 Indicator",
+      "name": "Eng1 Fire Indicator",
       "exports": [
         {
           "format": "%0.1f",
@@ -3215,7 +3215,7 @@
     {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Fire Panel (Pilot)",
-      "name": "Extinguisher Ready Eng1 Indicator",
+      "name": "Eng1 Ready Indicator",
       "exports": [
         {
           "format": "%0.1f",
@@ -3226,7 +3226,7 @@
     {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Fire Panel (Pilot)",
-      "name": "Fire APU Indicator",
+      "name": "APU Fire Indicator",
       "exports": [
         {
           "format": "%0.1f",
@@ -3237,7 +3237,7 @@
     {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Fire Panel (Pilot)",
-      "name": "Extinguisher Ready APU Indicator",
+      "name": "APU Ready Indicator",
       "exports": [
         {
           "format": "%0.1f",
@@ -3248,7 +3248,7 @@
     {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Fire Panel (Pilot)",
-      "name": "Fire Eng2 Indicator",
+      "name": "Eng2 Fire Indicator",
       "exports": [
         {
           "format": "%0.1f",
@@ -3259,7 +3259,7 @@
     {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Fire Panel (Pilot)",
-      "name": "Extinguisher Ready Eng2 Indicator",
+      "name": "Eng2 Ready Indicator",
       "exports": [
         {
           "format": "%0.1f",
@@ -3270,7 +3270,7 @@
     {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Fire Panel (Pilot)",
-      "name": "Discharge Pri Indicator",
+      "name": "Primary Discharge Indicator",
       "exports": [
         {
           "format": "%0.1f",
@@ -3281,7 +3281,7 @@
     {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Fire Panel (Pilot)",
-      "name": "Discharge Res Indicator",
+      "name": "Reserve Discharge Indicator",
       "exports": [
         {
           "format": "%0.1f",
@@ -3296,7 +3296,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%1d",
+          "format": "%0.1f",
           "isExportedEveryFrame": false,
           "id": "634"
         }
@@ -6265,7 +6265,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%1d",
+          "format": "%0.1f",
           "isExportedEveryFrame": false,
           "id": "401"
         }
@@ -10624,7 +10624,7 @@
       "description": "Current state of this button.",
       "exports": [
         {
-          "format": "Press to toggle preset window",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "266"
         }
@@ -10668,7 +10668,7 @@
       "description": "Current state of this button.",
       "exports": [
         {
-          "format": "Press to start/stop, Hold to reset",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "268"
         }
@@ -10843,7 +10843,7 @@
       "description": "Current state of this button.",
       "exports": [
         {
-          "format": "Press to toggle preset window",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "274"
         }
@@ -10887,7 +10887,7 @@
       "description": "Current state of this button.",
       "exports": [
         {
-          "format": "Press to start/stop, Hold to reset",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "276"
         }
@@ -11000,7 +11000,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%1d",
+          "format": "%0.1f",
           "isExportedEveryFrame": false,
           "id": "281"
         }
