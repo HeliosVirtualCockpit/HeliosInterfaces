@@ -1,6 +1,6 @@
 {
   "source": "Helios",
-  "version": "1.6.5200.0003",
+  "version": "1.6.5300.0000",
   "commit": "",
   "type": "Existing",
   "name": "DCS AH-64D Apache",
@@ -9480,6 +9480,121 @@
           "actionID": "3005"
         }
       ]
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Power (CP/G)",
+      "name": "Left Power Lever",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.3f",
+          "isExportedEveryFrame": false,
+          "id": "628"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.05,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "6",
+          "actionId": "3033"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Power (CP/G)",
+      "name": "Right Power Lever",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.3f",
+          "isExportedEveryFrame": false,
+          "id": "629"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.05,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "6",
+          "actionId": "3034"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Power (Pilot)",
+      "name": "Left Power Lever",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.3f",
+          "isExportedEveryFrame": false,
+          "id": "398"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.05,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "6",
+          "actionId": "3031"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Power (Pilot)",
+      "name": "Right Power Lever",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.3f",
+          "isExportedEveryFrame": false,
+          "id": "399"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.05,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "6",
+          "actionId": "3032"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Power (Pilot)",
+      "name": "Lever Friction Adjustment",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.3f",
+          "isExportedEveryFrame": false,
+          "id": "633"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.1,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "2",
+          "actionId": "3001"
+        }
+      }
     },
     {
       "heliosType": "DCS.Common.Switch",
