@@ -1,6 +1,6 @@
 {
   "source": "Helios",
-  "version": "1.6.1000.0000",
+  "version": "1.6.5300.0000",
   "commit": "",
   "type": "Existing",
   "name": "DCS AH-64D Apache",
@@ -1224,12 +1224,12 @@
           "actionID": "3018"
         },
         {
-          "argumentValue": "0.5",
+          "argumentValue": "0.0",
           "name": "Vox",
           "actionID": "3018"
         },
         {
-          "argumentValue": "0.0",
+          "argumentValue": "-1.0",
           "name": "PTT",
           "actionID": "3018"
         }
@@ -1903,12 +1903,12 @@
           "actionID": "3018"
         },
         {
-          "argumentValue": "0.5",
+          "argumentValue": "0.0",
           "name": "Vox",
           "actionID": "3018"
         },
         {
-          "argumentValue": "0.0",
+          "argumentValue": "-1.0",
           "name": "PTT",
           "actionID": "3018"
         }
@@ -5911,7 +5911,7 @@
       "description": "Current value of this axis.",
       "exports": [
         {
-          "format": "%.3f",
+          "format": "%0.3f",
           "isExportedEveryFrame": false,
           "id": "628"
         }
@@ -5934,7 +5934,7 @@
       "description": "Current value of this axis.",
       "exports": [
         {
-          "format": "%.3f",
+          "format": "%0.3f",
           "isExportedEveryFrame": false,
           "id": "629"
         }
@@ -6009,18 +6009,18 @@
       "deviceId": "75",
       "positions": [
         {
-          "argumentValue": "1.0",
-          "name": "BRK",
+          "argumentValue": "0.0",
+          "name": "Off",
           "actionID": "3001"
         },
         {
           "argumentValue": "0.5",
-          "name": "Lock",
+          "name": "Brake",
           "actionID": "3001"
         },
         {
-          "argumentValue": "0.0",
-          "name": "Off",
+          "argumentValue": "1.0",
+          "name": "Lock",
           "actionID": "3001"
         }
       ]
@@ -6289,7 +6289,7 @@
       "description": "Current value of this axis.",
       "exports": [
         {
-          "format": "%.3f",
+          "format": "%0.3f",
           "isExportedEveryFrame": false,
           "id": "398"
         }
@@ -6312,7 +6312,7 @@
       "description": "Current value of this axis.",
       "exports": [
         {
-          "format": "%.3f",
+          "format": "%0.3f",
           "isExportedEveryFrame": false,
           "id": "399"
         }
@@ -6482,7 +6482,7 @@
       "description": "Current value of this axis.",
       "exports": [
         {
-          "format": "%.3f",
+          "format": "%0.3f",
           "isExportedEveryFrame": false,
           "id": "633"
         }
