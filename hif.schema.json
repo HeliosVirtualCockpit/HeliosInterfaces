@@ -2486,6 +2486,9 @@
               },
               "deviceId": {
                 "type": "string"
+              },              
+			  "incrementalPulseValue": {
+                "type": "string"
               },
               "positions": {
                 "type": "array",
