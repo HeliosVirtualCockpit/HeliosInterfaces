@@ -1,6 +1,6 @@
 {
   "source": "Helios",
-  "version": "1.6.5300.0000",
+  "version": "1.6.5306.0000",
   "commit": "",
   "type": "Existing",
   "name": "DCS AH-64D Apache",
@@ -10325,7 +10325,7 @@
       "deviceId": "51",
       "positions": [
         {
-          "argumentValue": "1.0",
+          "argumentValue": "0.0",
           "name": "Day",
           "actionID": "3001"
         },
@@ -10335,7 +10335,7 @@
           "actionID": "3001"
         },
         {
-          "argumentValue": "0.0",
+          "argumentValue": "1.0",
           "name": "Off",
           "actionID": "3001"
         }
