@@ -1,6 +1,6 @@
 {
   "source": "Helios",
-  "version": "1.6.5307.0007",
+  "version": "1.6.5307.0008",
   "commit": "",
   "type": "Existing",
   "name": "DCS AV-8B",
@@ -2786,17 +2786,17 @@
       "positions": [
         {
           "argumentValue": "-0.99",
-          "name": "BIT",
+          "name": "OUTBD",
           "actionID": "3379"
         },
         {
           "argumentValue": "-0.66",
-          "name": "FEED",
+          "name": "INBD",
           "actionID": "3379"
         },
         {
           "argumentValue": "-0.33",
-          "name": "TOTAL",
+          "name": "WING",
           "actionID": "3379"
         },
         {
@@ -2806,17 +2806,17 @@
         },
         {
           "argumentValue": "0.33",
-          "name": "WING",
+          "name": "TOTAL",
           "actionID": "3379"
         },
         {
           "argumentValue": "0.66",
-          "name": "INBD",
+          "name": "FEED",
           "actionID": "3379"
         },
         {
           "argumentValue": "0.99",
-          "name": "OUTBD",
+          "name": "BIT",
           "actionID": "3379"
         }
       ]
@@ -3458,7 +3458,7 @@
       "deviceId": "28",
       "positions": [
         {
-          "argumentValue": "5.0",
+          "argumentValue": "1.0",
           "name": "Gear up",
           "actionID": "3447"
         },
@@ -3650,7 +3650,7 @@
       "deviceId": "28",
       "positions": [
         {
-          "argumentValue": "5.0",
+          "argumentValue": "1.0",
           "name": "Up",
           "actionID": "3470"
         },
@@ -8157,7 +8157,7 @@
       "deviceId": "7",
       "positions": [
         {
-          "argumentValue": "-0.20",
+          "argumentValue": "-0.2",
           "name": "Zero",
           "actionID": "3616"
         },
@@ -8167,27 +8167,27 @@
           "actionID": "3616"
         },
         {
-          "argumentValue": "0.20",
+          "argumentValue": "0.2",
           "name": "Test",
           "actionID": "3616"
         },
         {
-          "argumentValue": "0.40",
+          "argumentValue": "0.4",
           "name": "TR+G",
           "actionID": "3616"
         },
         {
-          "argumentValue": "0.60",
+          "argumentValue": "0.6",
           "name": "TR",
           "actionID": "3616"
         },
         {
-          "argumentValue": "0.80",
+          "argumentValue": "0.8",
           "name": "ADF",
           "actionID": "3616"
         },
         {
-          "argumentValue": "1.00",
+          "argumentValue": "1.0",
           "name": "Chng PRST",
           "actionID": "3616"
         }
