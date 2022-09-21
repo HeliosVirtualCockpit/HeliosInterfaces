@@ -1,7 +1,7 @@
 {
   "source": "Helios",
-  "version": "1.6.5308.0001",
-  "commit": "a5322c31",
+  "version": "1.6.5400.0000",
+  "commit": "0a199c5d",
   "type": "Existing",
   "name": "DCS M2000C",
   "module": "M-2000C",
@@ -2167,7 +2167,28 @@
         }
       ],
       "deviceId": "4",
-      "positions": []
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "0.0",
+          "actionID": "3360"
+        },
+        {
+          "argumentValue": "0.1",
+          "name": "0.1",
+          "actionID": "3360"
+        },
+        {
+          "argumentValue": "0.2",
+          "name": "0.2",
+          "actionID": "3360"
+        },
+        {
+          "argumentValue": "0.3",
+          "name": "0.3",
+          "actionID": "3360"
+        }
+      ]
     },
     {
       "heliosType": "DCS.Common.Switch",
@@ -2182,7 +2203,58 @@
         }
       ],
       "deviceId": "4",
-      "positions": []
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "0.0",
+          "actionID": "3361"
+        },
+        {
+          "argumentValue": "0.1",
+          "name": "0.1",
+          "actionID": "3361"
+        },
+        {
+          "argumentValue": "0.2",
+          "name": "0.2",
+          "actionID": "3361"
+        },
+        {
+          "argumentValue": "0.3",
+          "name": "0.3",
+          "actionID": "3361"
+        },
+        {
+          "argumentValue": "0.4",
+          "name": "0.4",
+          "actionID": "3361"
+        },
+        {
+          "argumentValue": "0.5",
+          "name": "0.5",
+          "actionID": "3361"
+        },
+        {
+          "argumentValue": "0.6",
+          "name": "0.6",
+          "actionID": "3361"
+        },
+        {
+          "argumentValue": "0.7",
+          "name": "0.7",
+          "actionID": "3361"
+        },
+        {
+          "argumentValue": "0.8",
+          "name": "0.8",
+          "actionID": "3361"
+        },
+        {
+          "argumentValue": "0.9",
+          "name": "0.9",
+          "actionID": "3361"
+        }
+      ]
     },
     {
       "heliosType": "DCS.Common.FlagValue",
@@ -7799,8 +7871,8 @@
     {
       "heliosType": "DCS.Common.Text",
       "device": "U/VHF",
-      "name": "UHF Upper Comm Information",
-      "description": "Upper Display Line for the UHF Radio",
+      "name": "UHF Lower Comm Information",
+      "description": "Lower Display Line for the UHF Radio",
       "exports": [
         {
           "isExportedEveryFrame": false,
@@ -7811,8 +7883,8 @@
     {
       "heliosType": "DCS.Common.Text",
       "device": "U/VHF",
-      "name": "UHF Lower Comm Information",
-      "description": "Lower Display Line for the UHF Radio",
+      "name": "UHF Upper Comm Information",
+      "description": "Upper Display Line for the UHF Radio",
       "exports": [
         {
           "isExportedEveryFrame": false,
