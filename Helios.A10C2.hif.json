@@ -1,7 +1,7 @@
 {
   "source": "Helios",
-  "version": "1.6.5306.0004",
-  "commit": "",
+  "version": "1.6.5400.0000",
+  "commit": "0c79936",
   "type": "Existing",
   "name": "DCS A-10C II",
   "module": "A-10C_2",
@@ -11943,7 +11943,7 @@
       "deviceId": "74",
       "positions": [
         {
-          "argumentValue": "0",
+          "argumentValue": "-1",
           "name": "X",
           "actionID": "3003"
         },
