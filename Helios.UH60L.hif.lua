@@ -18,6 +18,7 @@ function driver.processHighImportance(mainPanelDevice)
             mainPanelDevice:get_argument_value(66),
             mainPanelDevice:get_argument_value(67)
         )
+	)
     -- Copilot Barometric Altimeter
     helios.send(
         2053,
@@ -37,7 +38,7 @@ function driver.processHighImportance(mainPanelDevice)
             mainPanelDevice:get_argument_value(76),
             mainPanelDevice:get_argument_value(77)
         )
-
+	)
 end
 
 
