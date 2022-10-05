@@ -56,6 +56,19 @@
       }
     },
     {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "AHRU",
+      "name": "Display Text",
+      "description": "Text line displayed in  AHRU",
+      "exports": [
+        {
+          "id": "2106"
+        }
+      ],
+      "valueDescription": "Text",
+      "unit": "Text"
+    },
+    {
       "heliosType": "DCS.Common.PushButton",
       "device": "AHRU",
       "name": "Mode Selector",
@@ -1268,6 +1281,19 @@
       ]
     },
     {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "AN/ARC-201 FM1",
+      "name": "Display Text",
+      "description": "Flight Management text",
+      "exports": [
+        {
+          "id": "2104"
+        }
+      ],
+      "valueDescription": "Text",
+      "unit": "Text"
+    },
+    {
       "heliosType": "DCS.Common.Switch",
       "device": "AN/ARC-201 FM1",
       "name": "Preset Selector",
@@ -1768,7 +1794,7 @@
     {
       "heliosType": "DCS.Common.PushButton",
       "device": "AN/ARC-201 FM1",
-      "name": "Button ERF/OFST",
+      "name": "Button EFF/OFST",
       "description": "Current state of this button.",
       "exports": [
         {
@@ -1808,6 +1834,19 @@
           "releaseValue": "0.0"
         }
       ]
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "AN/ARC-201 FM2",
+      "name": "Display Text",
+      "description": "Flight Management text",
+      "exports": [
+        {
+          "id": "2105"
+        }
+      ],
+      "valueDescription": "Text",
+      "unit": "Text"
     },
     {
       "heliosType": "DCS.Common.Switch",
@@ -2979,6 +3018,58 @@
       ]
     },
     {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "AN/ASN-128B",
+      "name": "Display Line 1",
+      "description": "Nav Computer first display line",
+      "exports": [
+        {
+          "id": "2091"
+        }
+      ],
+      "valueDescription": "Text",
+      "unit": "Text"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "AN/ASN-128B",
+      "name": "Display Line 2",
+      "description": "Nav Computer second display line",
+      "exports": [
+        {
+          "id": "2092"
+        }
+      ],
+      "valueDescription": "Text",
+      "unit": "Text"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "AN/ASN-128B",
+      "name": "Display Line 3",
+      "description": "Nav Computer third display line",
+      "exports": [
+        {
+          "id": "2093"
+        }
+      ],
+      "valueDescription": "Text",
+      "unit": "Text"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "AN/ASN-128B",
+      "name": "Display Line 4",
+      "description": "Nav Computer fourth display line",
+      "exports": [
+        {
+          "id": "2094"
+        }
+      ],
+      "valueDescription": "Text",
+      "unit": "Text"
+    },
+    {
       "heliosType": "DCS.Common.Switch",
       "device": "AN/ASN-128B",
       "name": "Display Selector",
@@ -3739,7 +3830,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": " %0.1f",
+          "format": "%0.1f",
           "isExportedEveryFrame": false,
           "id": "1107"
         }
@@ -3770,7 +3861,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": " %0.1f",
+          "format": "%0.1f",
           "isExportedEveryFrame": false,
           "id": "1108"
         }
@@ -3832,7 +3923,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": " %0.1f",
+          "format": "%0.1f",
           "isExportedEveryFrame": false,
           "id": "1110"
         }
@@ -3863,7 +3954,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": " %0.1f",
+          "format": "%0.1f",
           "isExportedEveryFrame": false,
           "id": "1111"
         }
@@ -3886,6 +3977,58 @@
           "actionID": "3260"
         }
       ]
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Aux Fuel",
+      "name": "Left Outboard Fuel Quantity",
+      "description": "Display of the fuel quantity",
+      "exports": [
+        {
+          "id": "2107"
+        }
+      ],
+      "valueDescription": "Text",
+      "unit": "Text"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Aux Fuel",
+      "name": "Left Inboard Fuel Quantity",
+      "description": "Display of the fuel quantity",
+      "exports": [
+        {
+          "id": "2108"
+        }
+      ],
+      "valueDescription": "Text",
+      "unit": "Text"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Aux Fuel",
+      "name": "Right Outboard Fuel Quantity",
+      "description": "Display of the fuel quantity",
+      "exports": [
+        {
+          "id": "2109"
+        }
+      ],
+      "valueDescription": "Text",
+      "unit": "Text"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Aux Fuel",
+      "name": "Right Inboard Fuel Quantity",
+      "description": "Display of the fuel quantity",
+      "exports": [
+        {
+          "id": "2110"
+        }
+      ],
+      "valueDescription": "Text",
+      "unit": "Text"
     },
     {
       "heliosType": "DCS.Common.Switch",
@@ -3952,6 +4095,32 @@
     {
       "heliosType": "DCS.Common.Switch",
       "device": "Aux Fuel",
+      "name": "Transfer From OUTBD/INBD",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "462"
+        }
+      ],
+      "deviceId": "47",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "OUTBD",
+          "actionID": "3420"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "INBD",
+          "actionID": "3420"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Aux Fuel",
       "name": "Pressurization Selector",
       "description": "Current position of this switch.",
       "exports": [
@@ -3982,32 +4151,6 @@
           "argumentValue": "1.0",
           "name": "4",
           "actionID": "3421"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.Switch",
-      "device": "Aux Fuel",
-      "name": "Transfer From OUTBD/INBD",
-      "description": "Current position of this switch.",
-      "exports": [
-        {
-          "format": "%.1f",
-          "isExportedEveryFrame": false,
-          "id": "470"
-        }
-      ],
-      "deviceId": "47",
-      "positions": [
-        {
-          "argumentValue": "1.0",
-          "name": "OUTBD",
-          "actionID": "3420"
-        },
-        {
-          "argumentValue": "0.0",
-          "name": "INBD",
-          "actionID": "3420"
         }
       ]
     },
@@ -4314,6 +4457,205 @@
     {
       "heliosType": "DCS.Common.Switch",
       "device": "Counter Measures",
+      "name": "Flare Counter Encoder",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.2f",
+          "isExportedEveryFrame": false,
+          "id": "552"
+        }
+      ],
+      "deviceId": "32",
+      "positions": [
+        {
+          "argumentValue": "0",
+          "name": "1",
+          "actionID": "3309"
+        },
+        {
+          "argumentValue": "0",
+          "name": "2",
+          "actionID": "3309"
+        },
+        {
+          "argumentValue": "0",
+          "name": "3",
+          "actionID": "3309"
+        },
+        {
+          "argumentValue": "0",
+          "name": "4",
+          "actionID": "3309"
+        },
+        {
+          "argumentValue": "0",
+          "name": "5",
+          "actionID": "3309"
+        },
+        {
+          "argumentValue": "0",
+          "name": "6",
+          "actionID": "3309"
+        },
+        {
+          "argumentValue": "0",
+          "name": "7",
+          "actionID": "3309"
+        },
+        {
+          "argumentValue": "0",
+          "name": "8",
+          "actionID": "3309"
+        },
+        {
+          "argumentValue": "0",
+          "name": "9",
+          "actionID": "3309"
+        },
+        {
+          "argumentValue": "0",
+          "name": "10",
+          "actionID": "3309"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Counter Measures",
+      "name": "Chaff Counter Encoder",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.2f",
+          "isExportedEveryFrame": false,
+          "id": "553"
+        }
+      ],
+      "deviceId": "32",
+      "positions": [
+        {
+          "argumentValue": "0",
+          "name": "1",
+          "actionID": "3310"
+        },
+        {
+          "argumentValue": "0",
+          "name": "2",
+          "actionID": "3310"
+        },
+        {
+          "argumentValue": "0",
+          "name": "3",
+          "actionID": "3310"
+        },
+        {
+          "argumentValue": "0",
+          "name": "4",
+          "actionID": "3310"
+        },
+        {
+          "argumentValue": "0",
+          "name": "5",
+          "actionID": "3310"
+        },
+        {
+          "argumentValue": "0",
+          "name": "6",
+          "actionID": "3310"
+        },
+        {
+          "argumentValue": "0",
+          "name": "7",
+          "actionID": "3310"
+        },
+        {
+          "argumentValue": "0",
+          "name": "8",
+          "actionID": "3310"
+        },
+        {
+          "argumentValue": "0",
+          "name": "9",
+          "actionID": "3310"
+        },
+        {
+          "argumentValue": "0",
+          "name": "10",
+          "actionID": "3310"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Counter Measures",
+      "name": "M130 Flare Counter Tens Digit",
+      "description": "Number",
+      "exports": [
+        {
+          "format": "%0.2f",
+          "id": "554"
+        }
+      ],
+      "valueDescription": "",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Counter Measures",
+      "name": "M130 Flare Counter Ones Digit",
+      "description": "Number",
+      "exports": [
+        {
+          "format": "%0.2f",
+          "id": "555"
+        }
+      ],
+      "valueDescription": "",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Counter Measures",
+      "name": "M130 Chaff Counter Tens Digit",
+      "description": "Number",
+      "exports": [
+        {
+          "format": "%0.2f",
+          "id": "556"
+        }
+      ],
+      "valueDescription": "",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Counter Measures",
+      "name": "M130 Chaff Counter Ones Digit",
+      "description": "Number",
+      "exports": [
+        {
+          "format": "%0.2f",
+          "id": "557"
+        }
+      ],
+      "valueDescription": "",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Counter Measures",
+      "name": "M130 Armed Indicator",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "558"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Counter Measures",
       "name": "Arming Switch",
       "description": "Current position of this switch.",
       "exports": [
@@ -4579,7 +4921,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.1f",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "18"
         }
@@ -4611,7 +4953,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.1f",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "19"
         }
@@ -4643,7 +4985,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.1f",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "20"
         }
@@ -4675,7 +5017,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.1f",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "21"
         }
@@ -5071,6 +5413,365 @@
           "argumentValue": "0.0",
           "name": "Idle",
           "actionID": "3205"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Engine Management",
+      "name": "Total Fuel Quantity",
+      "description": "Display of the total fuel amount.",
+      "exports": [
+        {
+          "id": "2060"
+        }
+      ],
+      "valueDescription": "Text",
+      "unit": "Text"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Engine Management",
+      "name": "Engine 1 TGT Text",
+      "description": "Display of the Turbine Gas Temperature",
+      "exports": [
+        {
+          "id": "2061"
+        }
+      ],
+      "valueDescription": "Text",
+      "unit": "Text"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Engine Management",
+      "name": "Engine 2 TGT Text",
+      "description": "Display of the Turbine Gas Temperature",
+      "exports": [
+        {
+          "id": "2062"
+        }
+      ],
+      "valueDescription": "Text",
+      "unit": "Text"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Engine Management",
+      "name": "Engine 1 Ng Text",
+      "description": "Display of the Gas Generator Speed",
+      "exports": [
+        {
+          "id": "2063"
+        }
+      ],
+      "valueDescription": "Text",
+      "unit": "Text"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Engine Management",
+      "name": "Engine 2 Ng Text",
+      "description": "Display of the Gas Generator Speed",
+      "exports": [
+        {
+          "id": "2064"
+        }
+      ],
+      "valueDescription": "Text",
+      "unit": "Text"
+    },
+    {
+      "heliosType": "DCS.UH60L.Functions.SegmentedMeter",
+      "device": "Engine Management",
+      "name": "Fuel Quantity Left",
+      "description": "Bar display of the left fuel quantity",
+      "exports": [
+        {
+          "id": "2065"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.UH60L.Functions.SegmentedMeter",
+      "device": "Engine Management",
+      "name": "Fuel Quantity Right",
+      "description": "Bar display of the right fuel quantity",
+      "exports": [
+        {
+          "id": "2066"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.UH60L.Functions.SegmentedMeter",
+      "device": "Engine Management",
+      "name": "Transmission Temperature",
+      "description": "Bar display of the transmission temp in celsius",
+      "exports": [
+        {
+          "id": "2067"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.UH60L.Functions.SegmentedMeter",
+      "device": "Engine Management",
+      "name": "Transmission pressure",
+      "description": "Pressure in transmission in PSI",
+      "exports": [
+        {
+          "id": "2068"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.UH60L.Functions.SegmentedMeter",
+      "device": "Engine Management",
+      "name": "Engine 1 Oil Temperature",
+      "description": "Bar display of the oil temperature in celsius",
+      "exports": [
+        {
+          "id": "2069"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.UH60L.Functions.SegmentedMeter",
+      "device": "Engine Management",
+      "name": "Engine 2 Oil Temperature",
+      "description": "Bar display of the oil temperature in celsius",
+      "exports": [
+        {
+          "id": "2070"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.UH60L.Functions.SegmentedMeter",
+      "device": "Engine Management",
+      "name": "Engine 1 Oil Pressure",
+      "description": "Bar display of the oil pressure in PSI",
+      "exports": [
+        {
+          "id": "2071"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.UH60L.Functions.SegmentedMeter",
+      "device": "Engine Management",
+      "name": "Engine 2 Oil Pressure",
+      "description": "Bar display of the oil pressure in PSI",
+      "exports": [
+        {
+          "id": "2072"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.UH60L.Functions.SegmentedMeter",
+      "device": "Engine Management",
+      "name": "Engine 1 TGT",
+      "description": "Bar display of the Turbine Gas Temperature in celsius",
+      "exports": [
+        {
+          "id": "2073"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.UH60L.Functions.SegmentedMeter",
+      "device": "Engine Management",
+      "name": "Engine 2 TGT",
+      "description": "Bar display of the Turbine Gas Temperature in celsius",
+      "exports": [
+        {
+          "id": "2074"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.UH60L.Functions.SegmentedMeter",
+      "device": "Engine Management",
+      "name": "Engine 1 Ng",
+      "description": "Bar display of the Gas Generator Speed in RPM",
+      "exports": [
+        {
+          "id": "2075"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.UH60L.Functions.SegmentedMeter",
+      "device": "Engine Management",
+      "name": "Engine 2 Ng",
+      "description": "Bar display of the Gas Generator Speed in RPM",
+      "exports": [
+        {
+          "id": "2076"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Engine Management (Copilot)",
+      "name": "Engine 1 Torque Text",
+      "description": "Display of the engine torque percentage",
+      "exports": [
+        {
+          "id": "2084"
+        }
+      ],
+      "valueDescription": "Text",
+      "unit": "Text"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Engine Management (Copilot)",
+      "name": "Engine 2 Torque Text",
+      "description": "Display of the engine torque percentage",
+      "exports": [
+        {
+          "id": "2085"
+        }
+      ],
+      "valueDescription": "Text",
+      "unit": "Text"
+    },
+    {
+      "heliosType": "DCS.UH60L.Functions.SegmentedMeter",
+      "device": "Engine Management (Copilot)",
+      "name": "Engine 1 RPM",
+      "description": "Bar display of Engine 1 RPM (percentage)",
+      "exports": [
+        {
+          "id": "2086"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.UH60L.Functions.SegmentedMeter",
+      "device": "Engine Management (Copilot)",
+      "name": "Rotor RPM",
+      "description": "Bar display of Rotor RPM (percentage)",
+      "exports": [
+        {
+          "id": "2087"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.UH60L.Functions.SegmentedMeter",
+      "device": "Engine Management (Copilot)",
+      "name": "Engine 2 RPM",
+      "description": "Bar display of Engine 2 RPM (percentage)",
+      "exports": [
+        {
+          "id": "2088"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.UH60L.Functions.SegmentedMeter",
+      "device": "Engine Management (Copilot)",
+      "name": "Engine 1 Torque",
+      "description": "Bar display of Engine 1 Torque (percentage)",
+      "exports": [
+        {
+          "id": "2089"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.UH60L.Functions.SegmentedMeter",
+      "device": "Engine Management (Copilot)",
+      "name": "Engine 2 Torque",
+      "description": "Bar display of Engine 2 Torque (percentage)",
+      "exports": [
+        {
+          "id": "2090"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Engine Management (Pilot)",
+      "name": "Engine 1 Torque Text",
+      "description": "Display of the engine torque percentage",
+      "exports": [
+        {
+          "id": "2077"
+        }
+      ],
+      "valueDescription": "Text",
+      "unit": "Text"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Engine Management (Pilot)",
+      "name": "Engine 2 Torque Text",
+      "description": "Display of the engine torque percentage",
+      "exports": [
+        {
+          "id": "2078"
+        }
+      ],
+      "valueDescription": "Text",
+      "unit": "Text"
+    },
+    {
+      "heliosType": "DCS.UH60L.Functions.SegmentedMeter",
+      "device": "Engine Management (Pilot)",
+      "name": "Engine 1 RPM",
+      "description": "Bar display of Engine 1 RPM (percentage)",
+      "exports": [
+        {
+          "id": "2079"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.UH60L.Functions.SegmentedMeter",
+      "device": "Engine Management (Pilot)",
+      "name": "Rotor RPM",
+      "description": "Bar display of Rotor RPM (percentage)",
+      "exports": [
+        {
+          "id": "2080"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.UH60L.Functions.SegmentedMeter",
+      "device": "Engine Management (Pilot)",
+      "name": "Engine 2 RPM",
+      "description": "Bar display of Engine 2 RPM (percentage)",
+      "exports": [
+        {
+          "id": "2081"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.UH60L.Functions.SegmentedMeter",
+      "device": "Engine Management (Pilot)",
+      "name": "Engine 1 Torque",
+      "description": "Bar display of Engine 1 Torque (percentage)",
+      "exports": [
+        {
+          "id": "2082"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.UH60L.Functions.SegmentedMeter",
+      "device": "Engine Management (Pilot)",
+      "name": "Engine 2 Torque",
+      "description": "Bar display of Engine 2 Torque (percentage)",
+      "exports": [
+        {
+          "id": "2083"
         }
       ]
     },
@@ -6898,11 +7599,66 @@
     {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Indicators/Lamps/Flags",
-      "name": "M130 ARMED LIGHT",
+      "name": "PDU PLT OVERSPEED1",
       "exports": [
         {
           "format": "%0.1f",
-          "id": "558"
+          "id": "450"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Indicators/Lamps/Flags",
+      "name": "PDU PLT OVERSPEED2",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "451"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Indicators/Lamps/Flags",
+      "name": "PDU PLT OVERSPEED3",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "452"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Indicators/Lamps/Flags",
+      "name": "PDU CPLT OVERSPEED1",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "454"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Indicators/Lamps/Flags",
+      "name": "PDU CPLT OVERSPEED2",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "455"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Indicators/Lamps/Flags",
+      "name": "PDU CPLT OVERSPEED3",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "455"
         }
       ]
     },
@@ -7571,7 +8327,29 @@
     },
     {
       "heliosType": "DCS.Common.PushButton",
-      "device": "Misc",
+      "device": "Misc Panel",
+      "name": "Fuel Indicator Test",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "290"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "46",
+          "pushId": "3410",
+          "pushValue": "1.0",
+          "releaseId": "3410",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Misc Panel",
       "name": "Wheel Lock",
       "description": "Current state of this button.",
       "exports": [
@@ -7593,7 +8371,7 @@
     },
     {
       "heliosType": "DCS.Common.PushButton",
-      "device": "Misc",
+      "device": "Misc Panel",
       "name": "Gyro Select",
       "description": "Current state of this button.",
       "exports": [
@@ -7615,7 +8393,7 @@
     },
     {
       "heliosType": "DCS.Common.Switch",
-      "device": "Misc",
+      "device": "Misc Panel",
       "name": "Servo Select NORMAL/BACKUP",
       "description": "Current position of this switch.",
       "exports": [
@@ -7636,28 +8414,6 @@
           "argumentValue": "0.0",
           "name": "Backup",
           "actionID": "3413"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.PushButton",
-      "device": "Misc",
-      "name": "Fuel Indicator Test",
-      "description": "Current state of this button.",
-      "exports": [
-        {
-          "format": "%.1f",
-          "isExportedEveryFrame": false,
-          "id": "305"
-        }
-      ],
-      "buttons": [
-        {
-          "deviceId": "46",
-          "pushId": "3410",
-          "pushValue": "1.0",
-          "releaseId": "3410",
-          "releaseValue": "0.0"
         }
       ]
     },
@@ -8263,7 +9019,7 @@
     },
     {
       "heliosType": "DCS.Common.Switch",
-      "device": "Stability Control",
+      "device": "Stabilator Control",
       "name": "Stabilator Manual Slew UP/DOWN",
       "description": "Current position of this switch.",
       "exports": [
@@ -8295,7 +9051,7 @@
     },
     {
       "heliosType": "DCS.Common.PushButton",
-      "device": "Stability Control",
+      "device": "Stabilator Control",
       "name": "Stabilator Auto ON/OFF",
       "description": "Current state of this button.",
       "exports": [
@@ -8317,7 +9073,7 @@
     },
     {
       "heliosType": "DCS.Common.PushButton",
-      "device": "Stability Control",
+      "device": "Stabilator Control",
       "name": "SAS 1 ON/OFF",
       "description": "Current state of this button.",
       "exports": [
@@ -8339,7 +9095,7 @@
     },
     {
       "heliosType": "DCS.Common.PushButton",
-      "device": "Stability Control",
+      "device": "Stabilator Control",
       "name": "SAS 2 ON/OFF",
       "description": "Current state of this button.",
       "exports": [
@@ -8361,7 +9117,7 @@
     },
     {
       "heliosType": "DCS.Common.PushButton",
-      "device": "Stability Control",
+      "device": "Stabilator Control",
       "name": "Trim ON/OFF",
       "description": "Current state of this button.",
       "exports": [
@@ -8383,7 +9139,7 @@
     },
     {
       "heliosType": "DCS.Common.PushButton",
-      "device": "Stability Control",
+      "device": "Stabilator Control",
       "name": "FPS ON/OFF",
       "description": "Current state of this button.",
       "exports": [
@@ -8405,7 +9161,7 @@
     },
     {
       "heliosType": "DCS.Common.PushButton",
-      "device": "Stability Control",
+      "device": "Stabilator Control",
       "name": "SAS Boost ON/OFF",
       "description": "Current state of this button.",
       "exports": [
@@ -8427,7 +9183,7 @@
     },
     {
       "heliosType": "DCS.Common.PushButton",
-      "device": "Stability Control",
+      "device": "Stabilator Control",
       "name": "SAS Power On Reset",
       "description": "Current state of this button.",
       "exports": [
