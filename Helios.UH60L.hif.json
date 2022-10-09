@@ -1,7 +1,7 @@
 {
   "source": "Helios",
   "version": "1.6.1000.0000",
-  "commit": "e0472af08cc10f1d544a97c841dcb48563c89d5f",
+  "commit": "cea407555e764a1b49ebc05bfab9c1ba33228f93",
   "type": "Existing",
   "name": "DCS UH-60L Blackhawk",
   "module": "UH-60L",
@@ -10,2578 +10,8 @@
   ],
   "functions": [
     {
-      "heliosType": "DCS.Common.Axis",
-      "device": "AAU32A (Copilot)",
-      "name": "Barometric Scale Set",
-      "description": "Current value of this axis.",
-      "exports": [
-        {
-          "format": "%.3f",
-          "isExportedEveryFrame": false,
-          "id": "73"
-        }
-      ],
-      "loop": false,
-      "argumentValue": 0.1,
-      "argumentMin": 0.0,
-      "argumentMax": 1.0,
-      "actions": {
-        "set": {
-          "deviceId": "43",
-          "actionId": "3234"
-        }
-      }
-    },
-    {
-      "heliosType": "DCS.Common.Axis",
-      "device": "AAU32A (Pilot)",
-      "name": "Barometric Scale Set",
-      "description": "Current value of this axis.",
-      "exports": [
-        {
-          "format": "%.3f",
-          "isExportedEveryFrame": false,
-          "id": "63"
-        }
-      ],
-      "loop": false,
-      "argumentValue": 0.1,
-      "argumentMin": 0.0,
-      "argumentMax": 1.0,
-      "actions": {
-        "set": {
-          "deviceId": "42",
-          "actionId": "3233"
-        }
-      }
-    },
-    {
-      "heliosType": "DCS.Common.NetworkValue",
-      "device": "AHRU",
-      "name": "Display Text",
-      "description": "Text line displayed in  AHRU",
-      "exports": [
-        {
-          "id": "2106"
-        }
-      ],
-      "valueDescription": "Text",
-      "unit": "Text"
-    },
-    {
-      "heliosType": "DCS.Common.PushButton",
-      "device": "AHRU",
-      "name": "Mode Selector",
-      "description": "Current state of this button.",
-      "exports": [
-        {
-          "format": "%.1f",
-          "isExportedEveryFrame": false,
-          "id": "90"
-        }
-      ],
-      "buttons": [
-        {
-          "deviceId": "18",
-          "pushId": "3212",
-          "pushValue": "1.0",
-          "releaseId": "3212",
-          "releaseValue": "0.0"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.PushButton",
-      "device": "AHRU",
-      "name": "AHRU Display Cursor Movement UP",
-      "description": "Current state of this button.",
-      "exports": [
-        {
-          "format": "%.1f",
-          "isExportedEveryFrame": false,
-          "id": "91"
-        }
-      ],
-      "buttons": [
-        {
-          "deviceId": "18",
-          "pushId": "3214",
-          "pushValue": "1.0",
-          "releaseId": "3214",
-          "releaseValue": "0.0"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.PushButton",
-      "device": "AHRU",
-      "name": "Display Cursor Movement RIGHT",
-      "description": "Current state of this button.",
-      "exports": [
-        {
-          "format": "%.1f",
-          "isExportedEveryFrame": false,
-          "id": "92"
-        }
-      ],
-      "buttons": [
-        {
-          "deviceId": "18",
-          "pushId": "3215",
-          "pushValue": "1.0",
-          "releaseId": "3215",
-          "releaseValue": "0.0"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.PushButton",
-      "device": "AHRU",
-      "name": "Enter Selection",
-      "description": "Current state of this button.",
-      "exports": [
-        {
-          "format": "%.1f",
-          "isExportedEveryFrame": false,
-          "id": "93"
-        }
-      ],
-      "buttons": [
-        {
-          "deviceId": "18",
-          "pushId": "3216",
-          "pushValue": "1.0",
-          "releaseId": "3216",
-          "releaseValue": "0.0"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.UH60L.Functions.Altimeter",
-      "device": "Altimeter (Copilot)",
-      "name": "Altitude",
-      "description": "Barometric altitude above sea level of the aircraft.",
-      "exports": [
-        {
-          "id": "2053"
-        },
-        {
-          "id": "2054"
-        }
-      ],
-      "device2": "Altimeter (Copilot)",
-      "name2": "Pressure",
-      "description2": "Manually set barometric altitude."
-    },
-    {
-      "heliosType": "DCS.UH60L.Functions.Altimeter",
-      "device": "Altimeter (Pilot)",
-      "name": "Altitude",
-      "description": "Barometric altitude above sea level of the aircraft.",
-      "exports": [
-        {
-          "id": "2051"
-        },
-        {
-          "id": "2052"
-        }
-      ],
-      "device2": "Altimeter (Pilot)",
-      "name2": "Pressure",
-      "description2": "Manually set barometric altitude."
-    },
-    {
       "heliosType": "DCS.Common.Switch",
-      "device": "AN/APR-39",
-      "name": "Power ON/OFF",
-      "description": "Current position of this switch.",
-      "exports": [
-        {
-          "format": "%.1f",
-          "isExportedEveryFrame": false,
-          "id": "270"
-        }
-      ],
-      "deviceId": "19",
-      "positions": [
-        {
-          "argumentValue": "1.0",
-          "name": "On",
-          "actionID": "3291"
-        },
-        {
-          "argumentValue": "0.0",
-          "name": "Off",
-          "actionID": "3291"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.PushButton",
-      "device": "AN/APR-39",
-      "name": "Self Test",
-      "description": "Current state of this button.",
-      "exports": [
-        {
-          "format": "%.1f",
-          "isExportedEveryFrame": false,
-          "id": "271"
-        }
-      ],
-      "buttons": [
-        {
-          "deviceId": "19",
-          "pushId": "3292",
-          "pushValue": "1.0",
-          "releaseId": "3292",
-          "releaseValue": "0.0"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.Switch",
-      "device": "AN/APR-39",
-      "name": "Altitude HIGH/LOW",
-      "description": "Current position of this switch.",
-      "exports": [
-        {
-          "format": "%.1f",
-          "isExportedEveryFrame": false,
-          "id": "272"
-        }
-      ],
-      "deviceId": "19",
-      "positions": [
-        {
-          "argumentValue": "1.0",
-          "name": "High",
-          "actionID": "3291"
-        },
-        {
-          "argumentValue": "0.0",
-          "name": "Low",
-          "actionID": "3291"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.Axis",
-      "device": "AN/APR-39",
-      "name": "Volume",
-      "description": "Current value of this axis.",
-      "exports": [
-        {
-          "format": "%.3f",
-          "isExportedEveryFrame": false,
-          "id": "273"
-        }
-      ],
-      "loop": false,
-      "argumentValue": 0.1,
-      "argumentMin": 0.0,
-      "argumentMax": 1.0,
-      "actions": {
-        "set": {
-          "deviceId": "19",
-          "actionId": "3294"
-        }
-      }
-    },
-    {
-      "heliosType": "DCS.Common.Axis",
-      "device": "AN/APR-39",
-      "name": "Brightness",
-      "description": "Current value of this axis.",
-      "exports": [
-        {
-          "format": "%.3f",
-          "isExportedEveryFrame": false,
-          "id": "274"
-        }
-      ],
-      "loop": false,
-      "argumentValue": 0.1,
-      "argumentMin": 0.0,
-      "argumentMax": 1.0,
-      "actions": {
-        "set": {
-          "deviceId": "19",
-          "actionId": "3295"
-        }
-      }
-    },
-    {
-      "heliosType": "DCS.Common.Switch",
-      "device": "AN/ARC-164",
-      "name": "Mode",
-      "description": "Current position of this switch.",
-      "exports": [
-        {
-          "format": "%0.2f",
-          "isExportedEveryFrame": false,
-          "id": "50"
-        }
-      ],
-      "deviceId": "3",
-      "positions": [
-        {
-          "argumentValue": "0",
-          "name": "1",
-          "actionID": "3261"
-        },
-        {
-          "argumentValue": "0.01",
-          "name": "2",
-          "actionID": "3261"
-        },
-        {
-          "argumentValue": "0.02",
-          "name": "3",
-          "actionID": "3261"
-        },
-        {
-          "argumentValue": "0.03",
-          "name": "4",
-          "actionID": "3261"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.Axis",
-      "device": "AN/ARC-164",
-      "name": "Volume",
-      "description": "Current value of this axis.",
-      "exports": [
-        {
-          "format": "%.3f",
-          "isExportedEveryFrame": false,
-          "id": "51"
-        }
-      ],
-      "loop": false,
-      "argumentValue": 0.1,
-      "argumentMin": 0.0,
-      "argumentMax": 1.0,
-      "actions": {
-        "set": {
-          "deviceId": "3",
-          "actionId": "3263"
-        }
-      }
-    },
-    {
-      "heliosType": "DCS.Common.Switch",
-      "device": "AN/ARC-164",
-      "name": "Manual/Preset/Guard",
-      "description": "Current position of this switch.",
-      "exports": [
-        {
-          "format": "%0.2f",
-          "isExportedEveryFrame": false,
-          "id": "52"
-        }
-      ],
-      "deviceId": "3",
-      "positions": [
-        {
-          "argumentValue": "0",
-          "name": "1",
-          "actionID": "3266"
-        },
-        {
-          "argumentValue": "0.01",
-          "name": "2",
-          "actionID": "3266"
-        },
-        {
-          "argumentValue": "0.02",
-          "name": "3",
-          "actionID": "3266"
-        },
-        {
-          "argumentValue": "0.03",
-          "name": "4",
-          "actionID": "3266"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.Switch",
-      "device": "AN/ARC-164",
-      "name": "Digit 100",
-      "description": "Current position of this switch.",
-      "exports": [
-        {
-          "format": "%0.2f",
-          "isExportedEveryFrame": false,
-          "id": "53"
-        }
-      ],
-      "deviceId": "3",
-      "positions": [
-        {
-          "argumentValue": "0",
-          "name": "1",
-          "actionID": "3266"
-        },
-        {
-          "argumentValue": "0.1",
-          "name": "2",
-          "actionID": "3266"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.Switch",
-      "device": "AN/ARC-164",
-      "name": "Digit 10",
-      "description": "Current position of this switch.",
-      "exports": [
-        {
-          "format": "%0.2f",
-          "isExportedEveryFrame": false,
-          "id": "54"
-        }
-      ],
-      "deviceId": "3",
-      "positions": [
-        {
-          "argumentValue": "0",
-          "name": "1",
-          "actionID": "3267"
-        },
-        {
-          "argumentValue": "0.1",
-          "name": "2",
-          "actionID": "3267"
-        },
-        {
-          "argumentValue": "0.2",
-          "name": "3",
-          "actionID": "3267"
-        },
-        {
-          "argumentValue": "0.3",
-          "name": "4",
-          "actionID": "3267"
-        },
-        {
-          "argumentValue": "0.4",
-          "name": "5",
-          "actionID": "3267"
-        },
-        {
-          "argumentValue": "0.5",
-          "name": "6",
-          "actionID": "3267"
-        },
-        {
-          "argumentValue": "0.6",
-          "name": "7",
-          "actionID": "3267"
-        },
-        {
-          "argumentValue": "0.7",
-          "name": "8",
-          "actionID": "3267"
-        },
-        {
-          "argumentValue": "0.8",
-          "name": "9",
-          "actionID": "3267"
-        },
-        {
-          "argumentValue": "0.9",
-          "name": "10",
-          "actionID": "3267"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.Switch",
-      "device": "AN/ARC-164",
-      "name": "Digit 1",
-      "description": "Current position of this switch.",
-      "exports": [
-        {
-          "format": "%0.2f",
-          "isExportedEveryFrame": false,
-          "id": "55"
-        }
-      ],
-      "deviceId": "3",
-      "positions": [
-        {
-          "argumentValue": "0",
-          "name": "1",
-          "actionID": "3268"
-        },
-        {
-          "argumentValue": "0.1",
-          "name": "2",
-          "actionID": "3268"
-        },
-        {
-          "argumentValue": "0.2",
-          "name": "3",
-          "actionID": "3268"
-        },
-        {
-          "argumentValue": "0.3",
-          "name": "4",
-          "actionID": "3268"
-        },
-        {
-          "argumentValue": "0.4",
-          "name": "5",
-          "actionID": "3268"
-        },
-        {
-          "argumentValue": "0.5",
-          "name": "6",
-          "actionID": "3268"
-        },
-        {
-          "argumentValue": "0.6",
-          "name": "7",
-          "actionID": "3268"
-        },
-        {
-          "argumentValue": "0.7",
-          "name": "8",
-          "actionID": "3268"
-        },
-        {
-          "argumentValue": "0.8",
-          "name": "9",
-          "actionID": "3268"
-        },
-        {
-          "argumentValue": "0.9",
-          "name": "10",
-          "actionID": "3268"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.Switch",
-      "device": "AN/ARC-164",
-      "name": "Digit 0.1",
-      "description": "Current position of this switch.",
-      "exports": [
-        {
-          "format": "%0.2f",
-          "isExportedEveryFrame": false,
-          "id": "56"
-        }
-      ],
-      "deviceId": "3",
-      "positions": [
-        {
-          "argumentValue": "0",
-          "name": "1",
-          "actionID": "3269"
-        },
-        {
-          "argumentValue": "0.1",
-          "name": "2",
-          "actionID": "3269"
-        },
-        {
-          "argumentValue": "0.2",
-          "name": "3",
-          "actionID": "3269"
-        },
-        {
-          "argumentValue": "0.3",
-          "name": "4",
-          "actionID": "3269"
-        },
-        {
-          "argumentValue": "0.4",
-          "name": "5",
-          "actionID": "3269"
-        },
-        {
-          "argumentValue": "0.5",
-          "name": "6",
-          "actionID": "3269"
-        },
-        {
-          "argumentValue": "0.6",
-          "name": "7",
-          "actionID": "3269"
-        },
-        {
-          "argumentValue": "0.7",
-          "name": "8",
-          "actionID": "3269"
-        },
-        {
-          "argumentValue": "0.8",
-          "name": "9",
-          "actionID": "3269"
-        },
-        {
-          "argumentValue": "0.9",
-          "name": "10",
-          "actionID": "3269"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.Switch",
-      "device": "AN/ARC-164",
-      "name": "Digit 0.010",
-      "description": "Current position of this switch.",
-      "exports": [
-        {
-          "format": "%0.2f",
-          "isExportedEveryFrame": false,
-          "id": "57"
-        }
-      ],
-      "deviceId": "3",
-      "positions": [
-        {
-          "argumentValue": "0",
-          "name": "1",
-          "actionID": "3270"
-        },
-        {
-          "argumentValue": "0.1",
-          "name": "2",
-          "actionID": "3270"
-        },
-        {
-          "argumentValue": "0.2",
-          "name": "3",
-          "actionID": "3270"
-        },
-        {
-          "argumentValue": "0.3",
-          "name": "4",
-          "actionID": "3270"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.Switch",
-      "device": "AN/ARC-164",
-      "name": "Preset",
-      "description": "Current position of this switch.",
-      "exports": [
-        {
-          "format": "%0.2f",
-          "isExportedEveryFrame": false,
-          "id": "58"
-        }
-      ],
-      "deviceId": "3",
-      "positions": [
-        {
-          "argumentValue": "0",
-          "name": "1",
-          "actionID": "3271"
-        },
-        {
-          "argumentValue": "0.05",
-          "name": "2",
-          "actionID": "3271"
-        },
-        {
-          "argumentValue": "0.1",
-          "name": "3",
-          "actionID": "3271"
-        },
-        {
-          "argumentValue": "0.15",
-          "name": "4",
-          "actionID": "3271"
-        },
-        {
-          "argumentValue": "0.2",
-          "name": "5",
-          "actionID": "3271"
-        },
-        {
-          "argumentValue": "0.25",
-          "name": "6",
-          "actionID": "3271"
-        },
-        {
-          "argumentValue": "0.3",
-          "name": "7",
-          "actionID": "3271"
-        },
-        {
-          "argumentValue": "0.35",
-          "name": "8",
-          "actionID": "3271"
-        },
-        {
-          "argumentValue": "0.4",
-          "name": "9",
-          "actionID": "3271"
-        },
-        {
-          "argumentValue": "0.45",
-          "name": "10",
-          "actionID": "3271"
-        },
-        {
-          "argumentValue": "0.5",
-          "name": "11",
-          "actionID": "3271"
-        },
-        {
-          "argumentValue": "0.55",
-          "name": "12",
-          "actionID": "3271"
-        },
-        {
-          "argumentValue": "0.6",
-          "name": "13",
-          "actionID": "3271"
-        },
-        {
-          "argumentValue": "0.65",
-          "name": "14",
-          "actionID": "3271"
-        },
-        {
-          "argumentValue": "0.7",
-          "name": "15",
-          "actionID": "3271"
-        },
-        {
-          "argumentValue": "0.75",
-          "name": "16",
-          "actionID": "3271"
-        },
-        {
-          "argumentValue": "0.8",
-          "name": "17",
-          "actionID": "3271"
-        },
-        {
-          "argumentValue": "0.85",
-          "name": "18",
-          "actionID": "3271"
-        },
-        {
-          "argumentValue": "0.9",
-          "name": "19",
-          "actionID": "3271"
-        },
-        {
-          "argumentValue": "0.95",
-          "name": "20",
-          "actionID": "3271"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.Axis",
-      "device": "AN/ARC-186",
-      "name": "Volume",
-      "description": "Current value of this axis.",
-      "exports": [
-        {
-          "format": "%.3f",
-          "isExportedEveryFrame": false,
-          "id": "410"
-        }
-      ],
-      "loop": false,
-      "argumentValue": 0.1,
-      "argumentMin": 0.0,
-      "argumentMax": 1.0,
-      "actions": {
-        "set": {
-          "deviceId": "7",
-          "actionId": "3355"
-        }
-      }
-    },
-    {
-      "heliosType": "DCS.Common.PushButton",
-      "device": "AN/ARC-186",
-      "name": "Tone",
-      "description": "Current state of this button.",
-      "exports": [
-        {
-          "format": "%.1f",
-          "isExportedEveryFrame": false,
-          "id": "411"
-        }
-      ],
-      "buttons": [
-        {
-          "deviceId": "7",
-          "pushId": "3356",
-          "pushValue": "1.0",
-          "releaseId": "3356",
-          "releaseValue": "0.0"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.Switch",
-      "device": "AN/ARC-186",
-      "name": "10MHz Selector",
-      "description": "Current position of this switch.",
-      "exports": [
-        {
-          "format": "%0.3f",
-          "isExportedEveryFrame": false,
-          "id": "412"
-        }
-      ],
-      "deviceId": "7",
-      "positions": [
-        {
-          "argumentValue": "0.000",
-          "name": "0",
-          "actionID": "3357"
-        },
-        {
-          "argumentValue": "0.083",
-          "name": "1",
-          "actionID": "3357"
-        },
-        {
-          "argumentValue": "0.167",
-          "name": "2",
-          "actionID": "3357"
-        },
-        {
-          "argumentValue": "0.250",
-          "name": "3",
-          "actionID": "3357"
-        },
-        {
-          "argumentValue": "0.333",
-          "name": "4",
-          "actionID": "3357"
-        },
-        {
-          "argumentValue": "0.416",
-          "name": "5",
-          "actionID": "3357"
-        },
-        {
-          "argumentValue": "0.500",
-          "name": "6",
-          "actionID": "3357"
-        },
-        {
-          "argumentValue": "0.583",
-          "name": "7",
-          "actionID": "3357"
-        },
-        {
-          "argumentValue": "0.667",
-          "name": "8",
-          "actionID": "3357"
-        },
-        {
-          "argumentValue": "0.750",
-          "name": "9",
-          "actionID": "3357"
-        },
-        {
-          "argumentValue": "0.833",
-          "name": "10",
-          "actionID": "3357"
-        },
-        {
-          "argumentValue": "0.916",
-          "name": "11",
-          "actionID": "3357"
-        },
-        {
-          "argumentValue": "1.000",
-          "name": "12",
-          "actionID": "3357"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.Switch",
-      "device": "AN/ARC-186",
-      "name": "1MHz Selector",
-      "description": "Current position of this switch.",
-      "exports": [
-        {
-          "format": "%0.1f",
-          "isExportedEveryFrame": false,
-          "id": "413"
-        }
-      ],
-      "deviceId": "7",
-      "positions": [
-        {
-          "argumentValue": "0.0",
-          "name": "0",
-          "actionID": "3358"
-        },
-        {
-          "argumentValue": "0.1",
-          "name": "1",
-          "actionID": "3358"
-        },
-        {
-          "argumentValue": "0.2",
-          "name": "2",
-          "actionID": "3358"
-        },
-        {
-          "argumentValue": "0.3",
-          "name": "3",
-          "actionID": "3358"
-        },
-        {
-          "argumentValue": "0.4",
-          "name": "4",
-          "actionID": "3358"
-        },
-        {
-          "argumentValue": "0.5",
-          "name": "5",
-          "actionID": "3358"
-        },
-        {
-          "argumentValue": "0.6",
-          "name": "6",
-          "actionID": "3358"
-        },
-        {
-          "argumentValue": "0.7",
-          "name": "7",
-          "actionID": "3358"
-        },
-        {
-          "argumentValue": "0.8",
-          "name": "8",
-          "actionID": "3358"
-        },
-        {
-          "argumentValue": "0.9",
-          "name": "9",
-          "actionID": "3358"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.Switch",
-      "device": "AN/ARC-186",
-      "name": "100KHz Selector",
-      "description": "Current position of this switch.",
-      "exports": [
-        {
-          "format": "%0.1f",
-          "isExportedEveryFrame": false,
-          "id": "414"
-        }
-      ],
-      "deviceId": "7",
-      "positions": [
-        {
-          "argumentValue": "0.0",
-          "name": "0",
-          "actionID": "3359"
-        },
-        {
-          "argumentValue": "0.1",
-          "name": "1",
-          "actionID": "3359"
-        },
-        {
-          "argumentValue": "0.2",
-          "name": "2",
-          "actionID": "3359"
-        },
-        {
-          "argumentValue": "0.3",
-          "name": "3",
-          "actionID": "3359"
-        },
-        {
-          "argumentValue": "0.4",
-          "name": "4",
-          "actionID": "3359"
-        },
-        {
-          "argumentValue": "0.5",
-          "name": "5",
-          "actionID": "3359"
-        },
-        {
-          "argumentValue": "0.6",
-          "name": "6",
-          "actionID": "3359"
-        },
-        {
-          "argumentValue": "0.7",
-          "name": "7",
-          "actionID": "3359"
-        },
-        {
-          "argumentValue": "0.8",
-          "name": "8",
-          "actionID": "3359"
-        },
-        {
-          "argumentValue": "0.9",
-          "name": "9",
-          "actionID": "3359"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.Switch",
-      "device": "AN/ARC-186",
-      "name": "25KHz Selector",
-      "description": "Current position of this switch.",
-      "exports": [
-        {
-          "format": "%0.2f",
-          "isExportedEveryFrame": false,
-          "id": "415"
-        }
-      ],
-      "deviceId": "7",
-      "positions": [
-        {
-          "argumentValue": "0.00",
-          "name": "0",
-          "actionID": "3360"
-        },
-        {
-          "argumentValue": "0.25",
-          "name": "1",
-          "actionID": "3360"
-        },
-        {
-          "argumentValue": "0.50",
-          "name": "2",
-          "actionID": "3360"
-        },
-        {
-          "argumentValue": "0.75",
-          "name": "3",
-          "actionID": "3360"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.Switch",
-      "device": "AN/ARC-186",
-      "name": "Frequency Control Selector",
-      "description": "Current position of this switch.",
-      "exports": [
-        {
-          "format": "%0.2f",
-          "isExportedEveryFrame": false,
-          "id": "416"
-        }
-      ],
-      "deviceId": "7",
-      "positions": [
-        {
-          "argumentValue": "0.00",
-          "name": "0",
-          "actionID": "3361"
-        },
-        {
-          "argumentValue": "0.33",
-          "name": "1",
-          "actionID": "3361"
-        },
-        {
-          "argumentValue": "0.67",
-          "name": "2",
-          "actionID": "3361"
-        },
-        {
-          "argumentValue": "1.00",
-          "name": "3",
-          "actionID": "3361"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.PushButton",
-      "device": "AN/ARC-186",
-      "name": "Load Pushbutton",
-      "description": "Current state of this button.",
-      "exports": [
-        {
-          "format": "%.1f",
-          "isExportedEveryFrame": false,
-          "id": "417"
-        }
-      ],
-      "buttons": [
-        {
-          "deviceId": "7",
-          "pushId": "3362",
-          "pushValue": "1.0",
-          "releaseId": "3362",
-          "releaseValue": "0.0"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.Switch",
-      "device": "AN/ARC-186",
-      "name": "Preset Channel Selector",
-      "description": "Current position of this switch.",
-      "exports": [
-        {
-          "format": "%0.2f",
-          "isExportedEveryFrame": false,
-          "id": "418"
-        }
-      ],
-      "deviceId": "7",
-      "positions": [
-        {
-          "argumentValue": "0",
-          "name": "1",
-          "actionID": "3363"
-        },
-        {
-          "argumentValue": "0.05",
-          "name": "2",
-          "actionID": "3363"
-        },
-        {
-          "argumentValue": "0.1",
-          "name": "3",
-          "actionID": "3363"
-        },
-        {
-          "argumentValue": "0.15",
-          "name": "4",
-          "actionID": "3363"
-        },
-        {
-          "argumentValue": "0.2",
-          "name": "5",
-          "actionID": "3363"
-        },
-        {
-          "argumentValue": "0.25",
-          "name": "6",
-          "actionID": "3363"
-        },
-        {
-          "argumentValue": "0.3",
-          "name": "7",
-          "actionID": "3363"
-        },
-        {
-          "argumentValue": "0.35",
-          "name": "8",
-          "actionID": "3363"
-        },
-        {
-          "argumentValue": "0.4",
-          "name": "9",
-          "actionID": "3363"
-        },
-        {
-          "argumentValue": "0.45",
-          "name": "10",
-          "actionID": "3363"
-        },
-        {
-          "argumentValue": "0.5",
-          "name": "11",
-          "actionID": "3363"
-        },
-        {
-          "argumentValue": "0.55",
-          "name": "12",
-          "actionID": "3363"
-        },
-        {
-          "argumentValue": "0.6",
-          "name": "13",
-          "actionID": "3363"
-        },
-        {
-          "argumentValue": "0.65",
-          "name": "14",
-          "actionID": "3363"
-        },
-        {
-          "argumentValue": "0.7",
-          "name": "15",
-          "actionID": "3363"
-        },
-        {
-          "argumentValue": "0.75",
-          "name": "16",
-          "actionID": "3363"
-        },
-        {
-          "argumentValue": "0.8",
-          "name": "17",
-          "actionID": "3363"
-        },
-        {
-          "argumentValue": "0.85",
-          "name": "18",
-          "actionID": "3363"
-        },
-        {
-          "argumentValue": "0.9",
-          "name": "19",
-          "actionID": "3363"
-        },
-        {
-          "argumentValue": "0.95",
-          "name": "20",
-          "actionID": "3363"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.Switch",
-      "device": "AN/ARC-186",
-      "name": "Mode Selector",
-      "description": "Current position of this switch.",
-      "exports": [
-        {
-          "format": "%0.1f",
-          "isExportedEveryFrame": false,
-          "id": "419"
-        }
-      ],
-      "deviceId": "7",
-      "positions": [
-        {
-          "argumentValue": "0.0",
-          "name": "0",
-          "actionID": "3364"
-        },
-        {
-          "argumentValue": "0.5",
-          "name": "1",
-          "actionID": "3364"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "2",
-          "actionID": "3364"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.NetworkValue",
-      "device": "AN/ARC-201 FM1",
-      "name": "Display Text",
-      "description": "Flight Management text",
-      "exports": [
-        {
-          "id": "2104"
-        }
-      ],
-      "valueDescription": "Text",
-      "unit": "Text"
-    },
-    {
-      "heliosType": "DCS.Common.Switch",
-      "device": "AN/ARC-201 FM1",
-      "name": "Preset Selector",
-      "description": "Current position of this switch.",
-      "exports": [
-        {
-          "format": "%0.2f",
-          "isExportedEveryFrame": false,
-          "id": "600"
-        }
-      ],
-      "deviceId": "2",
-      "positions": [
-        {
-          "argumentValue": "0",
-          "name": "1",
-          "actionID": "3315"
-        },
-        {
-          "argumentValue": "0.01",
-          "name": "2",
-          "actionID": "3315"
-        },
-        {
-          "argumentValue": "0.02",
-          "name": "3",
-          "actionID": "3315"
-        },
-        {
-          "argumentValue": "0.03",
-          "name": "4",
-          "actionID": "3315"
-        },
-        {
-          "argumentValue": "0.04",
-          "name": "5",
-          "actionID": "3315"
-        },
-        {
-          "argumentValue": "0.05",
-          "name": "6",
-          "actionID": "3315"
-        },
-        {
-          "argumentValue": "0.06",
-          "name": "7",
-          "actionID": "3315"
-        },
-        {
-          "argumentValue": "0.07",
-          "name": "8",
-          "actionID": "3315"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.Switch",
-      "device": "AN/ARC-201 FM1",
-      "name": "Function Selector",
-      "description": "Current position of this switch.",
-      "exports": [
-        {
-          "format": "%0.2f",
-          "isExportedEveryFrame": false,
-          "id": "601"
-        }
-      ],
-      "deviceId": "2",
-      "positions": [
-        {
-          "argumentValue": "0",
-          "name": "1",
-          "actionID": "3316"
-        },
-        {
-          "argumentValue": "0.01",
-          "name": "2",
-          "actionID": "3316"
-        },
-        {
-          "argumentValue": "0.02",
-          "name": "3",
-          "actionID": "3316"
-        },
-        {
-          "argumentValue": "0.03",
-          "name": "4",
-          "actionID": "3316"
-        },
-        {
-          "argumentValue": "0.04",
-          "name": "5",
-          "actionID": "3316"
-        },
-        {
-          "argumentValue": "0.05",
-          "name": "6",
-          "actionID": "3316"
-        },
-        {
-          "argumentValue": "0.06",
-          "name": "7",
-          "actionID": "3316"
-        },
-        {
-          "argumentValue": "0.07",
-          "name": "8",
-          "actionID": "3316"
-        },
-        {
-          "argumentValue": "0.08",
-          "name": "9",
-          "actionID": "3316"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.Switch",
-      "device": "AN/ARC-201 FM1",
-      "name": "PWR Selector",
-      "description": "Current position of this switch.",
-      "exports": [
-        {
-          "format": "%0.2f",
-          "isExportedEveryFrame": false,
-          "id": "602"
-        }
-      ],
-      "deviceId": "2",
-      "positions": [
-        {
-          "argumentValue": "0",
-          "name": "1",
-          "actionID": "3317"
-        },
-        {
-          "argumentValue": "0.01",
-          "name": "2",
-          "actionID": "3317"
-        },
-        {
-          "argumentValue": "0.02",
-          "name": "3",
-          "actionID": "3317"
-        },
-        {
-          "argumentValue": "0.03",
-          "name": "4",
-          "actionID": "3317"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.Switch",
-      "device": "AN/ARC-201 FM1",
-      "name": "Mode Selector",
-      "description": "Current position of this switch.",
-      "exports": [
-        {
-          "format": "%0.2f",
-          "isExportedEveryFrame": false,
-          "id": "603"
-        }
-      ],
-      "deviceId": "2",
-      "positions": [
-        {
-          "argumentValue": "0",
-          "name": "1",
-          "actionID": "3318"
-        },
-        {
-          "argumentValue": "0.01",
-          "name": "2",
-          "actionID": "3318"
-        },
-        {
-          "argumentValue": "0.02",
-          "name": "3",
-          "actionID": "3318"
-        },
-        {
-          "argumentValue": "0.03",
-          "name": "4",
-          "actionID": "3318"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.Axis",
-      "device": "AN/ARC-201 FM1",
-      "name": "Volume",
-      "description": "Current value of this axis.",
-      "exports": [
-        {
-          "format": "%.3f",
-          "isExportedEveryFrame": false,
-          "id": "604"
-        }
-      ],
-      "loop": false,
-      "argumentValue": 0.1,
-      "argumentMin": 0.0,
-      "argumentMax": 1.0,
-      "actions": {
-        "set": {
-          "deviceId": "2",
-          "actionId": "3319"
-        }
-      }
-    },
-    {
-      "heliosType": "DCS.Common.PushButton",
-      "device": "AN/ARC-201 FM1",
-      "name": "Button 1",
-      "description": "Current state of this button.",
-      "exports": [
-        {
-          "format": "%.1f",
-          "isExportedEveryFrame": false,
-          "id": "605"
-        }
-      ],
-      "buttons": [
-        {
-          "deviceId": "2",
-          "pushId": "3320",
-          "pushValue": "1.0",
-          "releaseId": "3320",
-          "releaseValue": "0.0"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.PushButton",
-      "device": "AN/ARC-201 FM1",
-      "name": "Button 2",
-      "description": "Current state of this button.",
-      "exports": [
-        {
-          "format": "%.1f",
-          "isExportedEveryFrame": false,
-          "id": "606"
-        }
-      ],
-      "buttons": [
-        {
-          "deviceId": "2",
-          "pushId": "3321",
-          "pushValue": "1.0",
-          "releaseId": "3321",
-          "releaseValue": "0.0"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.PushButton",
-      "device": "AN/ARC-201 FM1",
-      "name": "Button 3",
-      "description": "Current state of this button.",
-      "exports": [
-        {
-          "format": "%.1f",
-          "isExportedEveryFrame": false,
-          "id": "607"
-        }
-      ],
-      "buttons": [
-        {
-          "deviceId": "2",
-          "pushId": "3322",
-          "pushValue": "1.0",
-          "releaseId": "3322",
-          "releaseValue": "0.0"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.PushButton",
-      "device": "AN/ARC-201 FM1",
-      "name": "Button 4",
-      "description": "Current state of this button.",
-      "exports": [
-        {
-          "format": "%.1f",
-          "isExportedEveryFrame": false,
-          "id": "608"
-        }
-      ],
-      "buttons": [
-        {
-          "deviceId": "2",
-          "pushId": "3323",
-          "pushValue": "1.0",
-          "releaseId": "3323",
-          "releaseValue": "0.0"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.PushButton",
-      "device": "AN/ARC-201 FM1",
-      "name": "Button 5",
-      "description": "Current state of this button.",
-      "exports": [
-        {
-          "format": "%.1f",
-          "isExportedEveryFrame": false,
-          "id": "609"
-        }
-      ],
-      "buttons": [
-        {
-          "deviceId": "2",
-          "pushId": "3324",
-          "pushValue": "1.0",
-          "releaseId": "3324",
-          "releaseValue": "0.0"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.PushButton",
-      "device": "AN/ARC-201 FM1",
-      "name": "Button 6",
-      "description": "Current state of this button.",
-      "exports": [
-        {
-          "format": "%.1f",
-          "isExportedEveryFrame": false,
-          "id": "610"
-        }
-      ],
-      "buttons": [
-        {
-          "deviceId": "2",
-          "pushId": "3325",
-          "pushValue": "1.0",
-          "releaseId": "3325",
-          "releaseValue": "0.0"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.PushButton",
-      "device": "AN/ARC-201 FM1",
-      "name": "Button 7",
-      "description": "Current state of this button.",
-      "exports": [
-        {
-          "format": "%.1f",
-          "isExportedEveryFrame": false,
-          "id": "611"
-        }
-      ],
-      "buttons": [
-        {
-          "deviceId": "2",
-          "pushId": "3326",
-          "pushValue": "1.0",
-          "releaseId": "3326",
-          "releaseValue": "0.0"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.PushButton",
-      "device": "AN/ARC-201 FM1",
-      "name": "Button 8",
-      "description": "Current state of this button.",
-      "exports": [
-        {
-          "format": "%.1f",
-          "isExportedEveryFrame": false,
-          "id": "612"
-        }
-      ],
-      "buttons": [
-        {
-          "deviceId": "2",
-          "pushId": "3327",
-          "pushValue": "1.0",
-          "releaseId": "3327",
-          "releaseValue": "0.0"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.PushButton",
-      "device": "AN/ARC-201 FM1",
-      "name": "Button 9",
-      "description": "Current state of this button.",
-      "exports": [
-        {
-          "format": "%.1f",
-          "isExportedEveryFrame": false,
-          "id": "613"
-        }
-      ],
-      "buttons": [
-        {
-          "deviceId": "2",
-          "pushId": "3328",
-          "pushValue": "1.0",
-          "releaseId": "3328",
-          "releaseValue": "0.0"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.PushButton",
-      "device": "AN/ARC-201 FM1",
-      "name": "Button 0",
-      "description": "Current state of this button.",
-      "exports": [
-        {
-          "format": "%.1f",
-          "isExportedEveryFrame": false,
-          "id": "614"
-        }
-      ],
-      "buttons": [
-        {
-          "deviceId": "2",
-          "pushId": "3329",
-          "pushValue": "1.0",
-          "releaseId": "3329",
-          "releaseValue": "0.0"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.PushButton",
-      "device": "AN/ARC-201 FM1",
-      "name": "Button Clear",
-      "description": "Current state of this button.",
-      "exports": [
-        {
-          "format": "%.1f",
-          "isExportedEveryFrame": false,
-          "id": "615"
-        }
-      ],
-      "buttons": [
-        {
-          "deviceId": "2",
-          "pushId": "3330",
-          "pushValue": "1.0",
-          "releaseId": "3330",
-          "releaseValue": "0.0"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.PushButton",
-      "device": "AN/ARC-201 FM1",
-      "name": "Button Enter",
-      "description": "Current state of this button.",
-      "exports": [
-        {
-          "format": "%.1f",
-          "isExportedEveryFrame": false,
-          "id": "616"
-        }
-      ],
-      "buttons": [
-        {
-          "deviceId": "2",
-          "pushId": "3331",
-          "pushValue": "1.0",
-          "releaseId": "3331",
-          "releaseValue": "0.0"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.PushButton",
-      "device": "AN/ARC-201 FM1",
-      "name": "Button Frequency",
-      "description": "Current state of this button.",
-      "exports": [
-        {
-          "format": "%.1f",
-          "isExportedEveryFrame": false,
-          "id": "617"
-        }
-      ],
-      "buttons": [
-        {
-          "deviceId": "2",
-          "pushId": "3332",
-          "pushValue": "1.0",
-          "releaseId": "3332",
-          "releaseValue": "0.0"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.PushButton",
-      "device": "AN/ARC-201 FM1",
-      "name": "Button EFF/OFST",
-      "description": "Current state of this button.",
-      "exports": [
-        {
-          "format": "%.1f",
-          "isExportedEveryFrame": false,
-          "id": "618"
-        }
-      ],
-      "buttons": [
-        {
-          "deviceId": "2",
-          "pushId": "3333",
-          "pushValue": "1.0",
-          "releaseId": "3333",
-          "releaseValue": "0.0"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.PushButton",
-      "device": "AN/ARC-201 FM1",
-      "name": "Button Time",
-      "description": "Current state of this button.",
-      "exports": [
-        {
-          "format": "%.1f",
-          "isExportedEveryFrame": false,
-          "id": "619"
-        }
-      ],
-      "buttons": [
-        {
-          "deviceId": "2",
-          "pushId": "3334",
-          "pushValue": "1.0",
-          "releaseId": "3334",
-          "releaseValue": "0.0"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.NetworkValue",
-      "device": "AN/ARC-201 FM2",
-      "name": "Display Text",
-      "description": "Flight Management text",
-      "exports": [
-        {
-          "id": "2105"
-        }
-      ],
-      "valueDescription": "Text",
-      "unit": "Text"
-    },
-    {
-      "heliosType": "DCS.Common.Switch",
-      "device": "AN/ARC-201 FM2",
-      "name": "Preset Selector",
-      "description": "Current position of this switch.",
-      "exports": [
-        {
-          "format": "%0.2f",
-          "isExportedEveryFrame": false,
-          "id": "700"
-        }
-      ],
-      "deviceId": "9",
-      "positions": [
-        {
-          "argumentValue": "0",
-          "name": "1",
-          "actionID": "3335"
-        },
-        {
-          "argumentValue": "0.01",
-          "name": "2",
-          "actionID": "3335"
-        },
-        {
-          "argumentValue": "0.02",
-          "name": "3",
-          "actionID": "3335"
-        },
-        {
-          "argumentValue": "0.03",
-          "name": "4",
-          "actionID": "3335"
-        },
-        {
-          "argumentValue": "0.04",
-          "name": "5",
-          "actionID": "3335"
-        },
-        {
-          "argumentValue": "0.05",
-          "name": "6",
-          "actionID": "3335"
-        },
-        {
-          "argumentValue": "0.06",
-          "name": "7",
-          "actionID": "3335"
-        },
-        {
-          "argumentValue": "0.07",
-          "name": "8",
-          "actionID": "3335"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.Switch",
-      "device": "AN/ARC-201 FM2",
-      "name": "Function Selector",
-      "description": "Current position of this switch.",
-      "exports": [
-        {
-          "format": "%0.2f",
-          "isExportedEveryFrame": false,
-          "id": "701"
-        }
-      ],
-      "deviceId": "9",
-      "positions": [
-        {
-          "argumentValue": "0",
-          "name": "1",
-          "actionID": "3336"
-        },
-        {
-          "argumentValue": "0.01",
-          "name": "2",
-          "actionID": "3336"
-        },
-        {
-          "argumentValue": "0.02",
-          "name": "3",
-          "actionID": "3336"
-        },
-        {
-          "argumentValue": "0.03",
-          "name": "4",
-          "actionID": "3336"
-        },
-        {
-          "argumentValue": "0.04",
-          "name": "5",
-          "actionID": "3336"
-        },
-        {
-          "argumentValue": "0.05",
-          "name": "6",
-          "actionID": "3336"
-        },
-        {
-          "argumentValue": "0.06",
-          "name": "7",
-          "actionID": "3336"
-        },
-        {
-          "argumentValue": "0.07",
-          "name": "8",
-          "actionID": "3336"
-        },
-        {
-          "argumentValue": "0.08",
-          "name": "9",
-          "actionID": "3336"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.Switch",
-      "device": "AN/ARC-201 FM2",
-      "name": "PWR Selector",
-      "description": "Current position of this switch.",
-      "exports": [
-        {
-          "format": "%0.2f",
-          "isExportedEveryFrame": false,
-          "id": "702"
-        }
-      ],
-      "deviceId": "9",
-      "positions": [
-        {
-          "argumentValue": "0",
-          "name": "1",
-          "actionID": "3337"
-        },
-        {
-          "argumentValue": "0.01",
-          "name": "2",
-          "actionID": "3337"
-        },
-        {
-          "argumentValue": "0.02",
-          "name": "3",
-          "actionID": "3337"
-        },
-        {
-          "argumentValue": "0.03",
-          "name": "4",
-          "actionID": "3337"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.Switch",
-      "device": "AN/ARC-201 FM2",
-      "name": "Mode Selector",
-      "description": "Current position of this switch.",
-      "exports": [
-        {
-          "format": "%0.2f",
-          "isExportedEveryFrame": false,
-          "id": "703"
-        }
-      ],
-      "deviceId": "9",
-      "positions": [
-        {
-          "argumentValue": "0",
-          "name": "1",
-          "actionID": "3338"
-        },
-        {
-          "argumentValue": "0.01",
-          "name": "2",
-          "actionID": "3338"
-        },
-        {
-          "argumentValue": "0.02",
-          "name": "3",
-          "actionID": "3338"
-        },
-        {
-          "argumentValue": "0.03",
-          "name": "4",
-          "actionID": "3338"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.Axis",
-      "device": "AN/ARC-201 FM2",
-      "name": "Volume",
-      "description": "Current value of this axis.",
-      "exports": [
-        {
-          "format": "%.3f",
-          "isExportedEveryFrame": false,
-          "id": "704"
-        }
-      ],
-      "loop": false,
-      "argumentValue": 0.1,
-      "argumentMin": 0.0,
-      "argumentMax": 1.0,
-      "actions": {
-        "set": {
-          "deviceId": "9",
-          "actionId": "3339"
-        }
-      }
-    },
-    {
-      "heliosType": "DCS.Common.PushButton",
-      "device": "AN/ARC-201 FM2",
-      "name": "Button 1",
-      "description": "Current state of this button.",
-      "exports": [
-        {
-          "format": "%.1f",
-          "isExportedEveryFrame": false,
-          "id": "705"
-        }
-      ],
-      "buttons": [
-        {
-          "deviceId": "9",
-          "pushId": "3340",
-          "pushValue": "1.0",
-          "releaseId": "3340",
-          "releaseValue": "0.0"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.PushButton",
-      "device": "AN/ARC-201 FM2",
-      "name": "Button 2",
-      "description": "Current state of this button.",
-      "exports": [
-        {
-          "format": "%.1f",
-          "isExportedEveryFrame": false,
-          "id": "706"
-        }
-      ],
-      "buttons": [
-        {
-          "deviceId": "9",
-          "pushId": "3341",
-          "pushValue": "1.0",
-          "releaseId": "3341",
-          "releaseValue": "0.0"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.PushButton",
-      "device": "AN/ARC-201 FM2",
-      "name": "Button 3",
-      "description": "Current state of this button.",
-      "exports": [
-        {
-          "format": "%.1f",
-          "isExportedEveryFrame": false,
-          "id": "707"
-        }
-      ],
-      "buttons": [
-        {
-          "deviceId": "9",
-          "pushId": "3342",
-          "pushValue": "1.0",
-          "releaseId": "3342",
-          "releaseValue": "0.0"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.PushButton",
-      "device": "AN/ARC-201 FM2",
-      "name": "Button 4",
-      "description": "Current state of this button.",
-      "exports": [
-        {
-          "format": "%.1f",
-          "isExportedEveryFrame": false,
-          "id": "708"
-        }
-      ],
-      "buttons": [
-        {
-          "deviceId": "9",
-          "pushId": "3343",
-          "pushValue": "1.0",
-          "releaseId": "3343",
-          "releaseValue": "0.0"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.PushButton",
-      "device": "AN/ARC-201 FM2",
-      "name": "Button 5",
-      "description": "Current state of this button.",
-      "exports": [
-        {
-          "format": "%.1f",
-          "isExportedEveryFrame": false,
-          "id": "709"
-        }
-      ],
-      "buttons": [
-        {
-          "deviceId": "9",
-          "pushId": "3344",
-          "pushValue": "1.0",
-          "releaseId": "3344",
-          "releaseValue": "0.0"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.PushButton",
-      "device": "AN/ARC-201 FM2",
-      "name": "Button 6",
-      "description": "Current state of this button.",
-      "exports": [
-        {
-          "format": "%.1f",
-          "isExportedEveryFrame": false,
-          "id": "710"
-        }
-      ],
-      "buttons": [
-        {
-          "deviceId": "9",
-          "pushId": "3345",
-          "pushValue": "1.0",
-          "releaseId": "3345",
-          "releaseValue": "0.0"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.PushButton",
-      "device": "AN/ARC-201 FM2",
-      "name": "Button 7",
-      "description": "Current state of this button.",
-      "exports": [
-        {
-          "format": "%.1f",
-          "isExportedEveryFrame": false,
-          "id": "711"
-        }
-      ],
-      "buttons": [
-        {
-          "deviceId": "9",
-          "pushId": "3346",
-          "pushValue": "1.0",
-          "releaseId": "3346",
-          "releaseValue": "0.0"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.PushButton",
-      "device": "AN/ARC-201 FM2",
-      "name": "Button 8",
-      "description": "Current state of this button.",
-      "exports": [
-        {
-          "format": "%.1f",
-          "isExportedEveryFrame": false,
-          "id": "712"
-        }
-      ],
-      "buttons": [
-        {
-          "deviceId": "9",
-          "pushId": "3347",
-          "pushValue": "1.0",
-          "releaseId": "3347",
-          "releaseValue": "0.0"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.PushButton",
-      "device": "AN/ARC-201 FM2",
-      "name": "Button 9",
-      "description": "Current state of this button.",
-      "exports": [
-        {
-          "format": "%.1f",
-          "isExportedEveryFrame": false,
-          "id": "713"
-        }
-      ],
-      "buttons": [
-        {
-          "deviceId": "9",
-          "pushId": "3348",
-          "pushValue": "1.0",
-          "releaseId": "3348",
-          "releaseValue": "0.0"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.PushButton",
-      "device": "AN/ARC-201 FM2",
-      "name": "Button 0",
-      "description": "Current state of this button.",
-      "exports": [
-        {
-          "format": "%.1f",
-          "isExportedEveryFrame": false,
-          "id": "714"
-        }
-      ],
-      "buttons": [
-        {
-          "deviceId": "9",
-          "pushId": "3349",
-          "pushValue": "1.0",
-          "releaseId": "3349",
-          "releaseValue": "0.0"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.PushButton",
-      "device": "AN/ARC-201 FM2",
-      "name": "Button Clear",
-      "description": "Current state of this button.",
-      "exports": [
-        {
-          "format": "%.1f",
-          "isExportedEveryFrame": false,
-          "id": "715"
-        }
-      ],
-      "buttons": [
-        {
-          "deviceId": "9",
-          "pushId": "3350",
-          "pushValue": "1.0",
-          "releaseId": "3350",
-          "releaseValue": "0.0"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.PushButton",
-      "device": "AN/ARC-201 FM2",
-      "name": "Button Enter",
-      "description": "Current state of this button.",
-      "exports": [
-        {
-          "format": "%.1f",
-          "isExportedEveryFrame": false,
-          "id": "716"
-        }
-      ],
-      "buttons": [
-        {
-          "deviceId": "9",
-          "pushId": "3351",
-          "pushValue": "1.0",
-          "releaseId": "3351",
-          "releaseValue": "0.0"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.PushButton",
-      "device": "AN/ARC-201 FM2",
-      "name": "Button Frequency",
-      "description": "Current state of this button.",
-      "exports": [
-        {
-          "format": "%.1f",
-          "isExportedEveryFrame": false,
-          "id": "717"
-        }
-      ],
-      "buttons": [
-        {
-          "deviceId": "9",
-          "pushId": "3352",
-          "pushValue": "1.0",
-          "releaseId": "3352",
-          "releaseValue": "0.0"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.PushButton",
-      "device": "AN/ARC-201 FM2",
-      "name": "Button ERF/OFST",
-      "description": "Current state of this button.",
-      "exports": [
-        {
-          "format": "%.1f",
-          "isExportedEveryFrame": false,
-          "id": "718"
-        }
-      ],
-      "buttons": [
-        {
-          "deviceId": "9",
-          "pushId": "3353",
-          "pushValue": "1.0",
-          "releaseId": "3353",
-          "releaseValue": "0.0"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.PushButton",
-      "device": "AN/ARC-201 FM2",
-      "name": "Button Time",
-      "description": "Current state of this button.",
-      "exports": [
-        {
-          "format": "%.1f",
-          "isExportedEveryFrame": false,
-          "id": "719"
-        }
-      ],
-      "buttons": [
-        {
-          "deviceId": "9",
-          "pushId": "3354",
-          "pushValue": "1.0",
-          "releaseId": "3354",
-          "releaseValue": "0.0"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.Switch",
-      "device": "AN/ARN-147",
-      "name": "MHz Selector",
-      "description": "Current position of this switch.",
-      "exports": [
-        {
-          "format": "%0.2f",
-          "isExportedEveryFrame": false,
-          "id": "650"
-        }
-      ],
-      "deviceId": "41",
-      "positions": [
-        {
-          "argumentValue": "0",
-          "name": "1",
-          "actionID": "3398"
-        },
-        {
-          "argumentValue": "0.1",
-          "name": "2",
-          "actionID": "3398"
-        },
-        {
-          "argumentValue": "0.2",
-          "name": "3",
-          "actionID": "3398"
-        },
-        {
-          "argumentValue": "0.3",
-          "name": "4",
-          "actionID": "3398"
-        },
-        {
-          "argumentValue": "0.4",
-          "name": "5",
-          "actionID": "3398"
-        },
-        {
-          "argumentValue": "0.5",
-          "name": "6",
-          "actionID": "3398"
-        },
-        {
-          "argumentValue": "0.6",
-          "name": "7",
-          "actionID": "3398"
-        },
-        {
-          "argumentValue": "0.7",
-          "name": "8",
-          "actionID": "3398"
-        },
-        {
-          "argumentValue": "0.8",
-          "name": "9",
-          "actionID": "3398"
-        },
-        {
-          "argumentValue": "0.9",
-          "name": "10",
-          "actionID": "3398"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.Switch",
-      "device": "AN/ARN-147",
-      "name": "KHz Selector",
-      "description": "Current position of this switch.",
-      "exports": [
-        {
-          "format": "%0.2f",
-          "isExportedEveryFrame": false,
-          "id": "651"
-        }
-      ],
-      "deviceId": "41",
-      "positions": [
-        {
-          "argumentValue": "0",
-          "name": "1",
-          "actionID": "3399"
-        },
-        {
-          "argumentValue": "0.1",
-          "name": "2",
-          "actionID": "3399"
-        },
-        {
-          "argumentValue": "0.2",
-          "name": "3",
-          "actionID": "3399"
-        },
-        {
-          "argumentValue": "0.3",
-          "name": "4",
-          "actionID": "3399"
-        },
-        {
-          "argumentValue": "0.4",
-          "name": "5",
-          "actionID": "3399"
-        },
-        {
-          "argumentValue": "0.5",
-          "name": "6",
-          "actionID": "3399"
-        },
-        {
-          "argumentValue": "0.6",
-          "name": "7",
-          "actionID": "3399"
-        },
-        {
-          "argumentValue": "0.7",
-          "name": "8",
-          "actionID": "3399"
-        },
-        {
-          "argumentValue": "0.8",
-          "name": "9",
-          "actionID": "3399"
-        },
-        {
-          "argumentValue": "0.9",
-          "name": "10",
-          "actionID": "3399"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.Switch",
-      "device": "AN/ARN-147",
-      "name": "Marker Beacon HI/LO",
-      "description": "Current position of this switch.",
-      "exports": [
-        {
-          "format": "%.1f",
-          "isExportedEveryFrame": false,
-          "id": "652"
-        }
-      ],
-      "deviceId": "41",
-      "positions": [
-        {
-          "argumentValue": "1.0",
-          "name": "High",
-          "actionID": "3260"
-        },
-        {
-          "argumentValue": "0.0",
-          "name": "Low",
-          "actionID": "3260"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.Switch",
-      "device": "AN/ARN-147",
-      "name": "Power Selector OFF/ON/TEST",
-      "description": "Current position of this switch.",
-      "exports": [
-        {
-          "format": "%0.1f",
-          "isExportedEveryFrame": false,
-          "id": "653"
-        }
-      ],
-      "deviceId": "41",
-      "positions": [
-        {
-          "argumentValue": "-1.0",
-          "name": "Off",
-          "actionID": "3400"
-        },
-        {
-          "argumentValue": "0.0",
-          "name": "On",
-          "actionID": "3400"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Test",
-          "actionID": "3400"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.Switch",
-      "device": "AN/ARN-149",
+      "device": "ADF",
       "name": "Preset Selector",
       "description": "Current position of this switch.",
       "exports": [
@@ -2612,7 +42,7 @@
     },
     {
       "heliosType": "DCS.Common.Switch",
-      "device": "AN/ARN-149",
+      "device": "ADF",
       "name": "TONE/OFF/TEST",
       "description": "Current position of this switch.",
       "exports": [
@@ -2644,7 +74,7 @@
     },
     {
       "heliosType": "DCS.Common.Axis",
-      "device": "AN/ARN-149",
+      "device": "ADF",
       "name": "Volume",
       "description": "Current value of this axis.",
       "exports": [
@@ -2667,7 +97,7 @@
     },
     {
       "heliosType": "DCS.Common.Switch",
-      "device": "AN/ARN-149",
+      "device": "ADF",
       "name": "Take CMD",
       "description": "Current position of this switch.",
       "exports": [
@@ -2693,7 +123,7 @@
     },
     {
       "heliosType": "DCS.Common.Switch",
-      "device": "AN/ARN-149",
+      "device": "ADF",
       "name": "Power Selector",
       "description": "Current position of this switch.",
       "exports": [
@@ -2724,7 +154,7 @@
     },
     {
       "heliosType": "DCS.Common.Switch",
-      "device": "AN/ARN-149",
+      "device": "ADF",
       "name": "1000s Khz Selector",
       "description": "Current position of this switch.",
       "exports": [
@@ -2755,7 +185,7 @@
     },
     {
       "heliosType": "DCS.Common.Switch",
-      "device": "AN/ARN-149",
+      "device": "ADF",
       "name": "100s Khz Selector",
       "description": "Current position of this switch.",
       "exports": [
@@ -2821,7 +251,7 @@
     },
     {
       "heliosType": "DCS.Common.Switch",
-      "device": "AN/ARN-149",
+      "device": "ADF",
       "name": "10s Khz Selector",
       "description": "Current position of this switch.",
       "exports": [
@@ -2887,7 +317,7 @@
     },
     {
       "heliosType": "DCS.Common.Switch",
-      "device": "AN/ARN-149",
+      "device": "ADF",
       "name": "1s Khz Selector",
       "description": "Current position of this switch.",
       "exports": [
@@ -2953,7 +383,7 @@
     },
     {
       "heliosType": "DCS.Common.Switch",
-      "device": "AN/ARN-149",
+      "device": "ADF",
       "name": ".1s Khz Selector",
       "description": "Current position of this switch.",
       "exports": [
@@ -3018,963 +448,183 @@
       ]
     },
     {
-      "heliosType": "DCS.Common.NetworkValue",
-      "device": "AN/ASN-128B",
-      "name": "Display Line 1",
-      "description": "Nav Computer first display line",
+      "heliosType": "DCS.UH60L.Functions.Altimeter",
+      "device": "Altimeter (Copilot)",
+      "name": "Altitude",
+      "description": "Barometric altitude above sea level of the aircraft.",
       "exports": [
         {
-          "id": "2091"
+          "id": "2053"
+        },
+        {
+          "id": "2054"
         }
       ],
-      "valueDescription": "Text",
-      "unit": "Text"
+      "device2": "Altimeter (Copilot)",
+      "name2": "Pressure",
+      "description2": "Manually set barometric altitude."
     },
     {
-      "heliosType": "DCS.Common.NetworkValue",
-      "device": "AN/ASN-128B",
-      "name": "Display Line 2",
-      "description": "Nav Computer second display line",
+      "heliosType": "DCS.UH60L.Functions.Altimeter",
+      "device": "Altimeter (Pilot)",
+      "name": "Altitude",
+      "description": "Barometric altitude above sea level of the aircraft.",
       "exports": [
         {
-          "id": "2092"
+          "id": "2051"
+        },
+        {
+          "id": "2052"
         }
       ],
-      "valueDescription": "Text",
-      "unit": "Text"
+      "device2": "Altimeter (Pilot)",
+      "name2": "Pressure",
+      "description2": "Manually set barometric altitude."
     },
     {
-      "heliosType": "DCS.Common.NetworkValue",
-      "device": "AN/ASN-128B",
-      "name": "Display Line 3",
-      "description": "Nav Computer third display line",
+      "heliosType": "DCS.Common.Axis",
+      "device": "Altimeter Encoder (Copilot)",
+      "name": "Barometric Scale Set",
+      "description": "Current value of this axis.",
       "exports": [
         {
-          "id": "2093"
-        }
-      ],
-      "valueDescription": "Text",
-      "unit": "Text"
-    },
-    {
-      "heliosType": "DCS.Common.NetworkValue",
-      "device": "AN/ASN-128B",
-      "name": "Display Line 4",
-      "description": "Nav Computer fourth display line",
-      "exports": [
-        {
-          "id": "2094"
-        }
-      ],
-      "valueDescription": "Text",
-      "unit": "Text"
-    },
-    {
-      "heliosType": "DCS.Common.Switch",
-      "device": "AN/ASN-128B",
-      "name": "Display Selector",
-      "description": "Current position of this switch.",
-      "exports": [
-        {
-          "format": "%0.2f",
+          "format": "%.3f",
           "isExportedEveryFrame": false,
-          "id": "500"
+          "id": "73"
         }
       ],
-      "deviceId": "23",
-      "positions": [
-        {
-          "argumentValue": "0",
-          "name": "1",
-          "actionID": "3236"
-        },
-        {
-          "argumentValue": "0.01",
-          "name": "2",
-          "actionID": "3236"
-        },
-        {
-          "argumentValue": "0.02",
-          "name": "3",
-          "actionID": "3236"
-        },
-        {
-          "argumentValue": "0.03",
-          "name": "4",
-          "actionID": "3236"
-        },
-        {
-          "argumentValue": "0.04",
-          "name": "5",
-          "actionID": "3236"
-        },
-        {
-          "argumentValue": "0.05",
-          "name": "6",
-          "actionID": "3236"
-        },
-        {
-          "argumentValue": "0.06",
-          "name": "7",
-          "actionID": "3236"
+      "loop": false,
+      "argumentValue": 0.1,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "43",
+          "actionId": "3234"
         }
-      ]
+      }
     },
     {
-      "heliosType": "DCS.Common.Switch",
-      "device": "AN/ASN-128B",
+      "heliosType": "DCS.Common.Axis",
+      "device": "Altimeter Encoder (Pilot)",
+      "name": "Barometric Scale Set",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.3f",
+          "isExportedEveryFrame": false,
+          "id": "63"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.1,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "42",
+          "actionId": "3233"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Attitude and Heading Ref Unit",
+      "name": "Display Text",
+      "description": "Text line displayed in  AHRU",
+      "exports": [
+        {
+          "id": "2106"
+        }
+      ],
+      "valueDescription": "Text",
+      "unit": "Text"
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Attitude and Heading Ref Unit",
       "name": "Mode Selector",
-      "description": "Current position of this switch.",
-      "exports": [
-        {
-          "format": "%0.2f",
-          "isExportedEveryFrame": false,
-          "id": "501"
-        }
-      ],
-      "deviceId": "23",
-      "positions": [
-        {
-          "argumentValue": "0",
-          "name": "1",
-          "actionID": "3235"
-        },
-        {
-          "argumentValue": "0.01",
-          "name": "2",
-          "actionID": "3235"
-        },
-        {
-          "argumentValue": "0.02",
-          "name": "3",
-          "actionID": "3235"
-        },
-        {
-          "argumentValue": "0.03",
-          "name": "4",
-          "actionID": "3235"
-        },
-        {
-          "argumentValue": "0.04",
-          "name": "5",
-          "actionID": "3235"
-        },
-        {
-          "argumentValue": "0.05",
-          "name": "6",
-          "actionID": "3235"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.PushButton",
-      "device": "AN/ASN-128B",
-      "name": "Button Keyboard",
       "description": "Current state of this button.",
       "exports": [
         {
           "format": "%.1f",
           "isExportedEveryFrame": false,
-          "id": "502"
+          "id": "90"
         }
       ],
       "buttons": [
         {
-          "deviceId": "23",
-          "pushId": "3237",
+          "deviceId": "18",
+          "pushId": "3212",
           "pushValue": "1.0",
-          "releaseId": "3237",
+          "releaseId": "3212",
           "releaseValue": "0.0"
         }
       ]
     },
     {
       "heliosType": "DCS.Common.PushButton",
-      "device": "AN/ASN-128B",
-      "name": "Button Letter Left",
+      "device": "Attitude and Heading Ref Unit",
+      "name": "AHRU Display Cursor Movement UP",
       "description": "Current state of this button.",
       "exports": [
         {
           "format": "%.1f",
           "isExportedEveryFrame": false,
-          "id": "503"
+          "id": "91"
         }
       ],
       "buttons": [
         {
-          "deviceId": "23",
-          "pushId": "3238",
+          "deviceId": "18",
+          "pushId": "3214",
           "pushValue": "1.0",
-          "releaseId": "3238",
+          "releaseId": "3214",
           "releaseValue": "0.0"
         }
       ]
     },
     {
       "heliosType": "DCS.Common.PushButton",
-      "device": "AN/ASN-128B",
-      "name": "Button Letter Middle",
+      "device": "Attitude and Heading Ref Unit",
+      "name": "Display Cursor Movement RIGHT",
       "description": "Current state of this button.",
       "exports": [
         {
           "format": "%.1f",
           "isExportedEveryFrame": false,
-          "id": "504"
+          "id": "92"
         }
       ],
       "buttons": [
         {
-          "deviceId": "23",
-          "pushId": "3239",
+          "deviceId": "18",
+          "pushId": "3215",
           "pushValue": "1.0",
-          "releaseId": "3239",
+          "releaseId": "3215",
           "releaseValue": "0.0"
         }
       ]
     },
     {
       "heliosType": "DCS.Common.PushButton",
-      "device": "AN/ASN-128B",
-      "name": "Button Letter Right",
+      "device": "Attitude and Heading Ref Unit",
+      "name": "Enter Selection",
       "description": "Current state of this button.",
       "exports": [
         {
           "format": "%.1f",
           "isExportedEveryFrame": false,
-          "id": "505"
+          "id": "93"
         }
       ],
       "buttons": [
         {
-          "deviceId": "23",
-          "pushId": "3240",
+          "deviceId": "18",
+          "pushId": "3216",
           "pushValue": "1.0",
-          "releaseId": "3240",
+          "releaseId": "3216",
           "releaseValue": "0.0"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.PushButton",
-      "device": "AN/ASN-128B",
-      "name": "Button F1",
-      "description": "Current state of this button.",
-      "exports": [
-        {
-          "format": "%.1f",
-          "isExportedEveryFrame": false,
-          "id": "506"
-        }
-      ],
-      "buttons": [
-        {
-          "deviceId": "23",
-          "pushId": "3241",
-          "pushValue": "1.0",
-          "releaseId": "3241",
-          "releaseValue": "0.0"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.PushButton",
-      "device": "AN/ASN-128B",
-      "name": "Button 1",
-      "description": "Current state of this button.",
-      "exports": [
-        {
-          "format": "%.1f",
-          "isExportedEveryFrame": false,
-          "id": "507"
-        }
-      ],
-      "buttons": [
-        {
-          "deviceId": "23",
-          "pushId": "3242",
-          "pushValue": "1.0",
-          "releaseId": "3242",
-          "releaseValue": "0.0"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.PushButton",
-      "device": "AN/ASN-128B",
-      "name": "Button 2",
-      "description": "Current state of this button.",
-      "exports": [
-        {
-          "format": "%.1f",
-          "isExportedEveryFrame": false,
-          "id": "508"
-        }
-      ],
-      "buttons": [
-        {
-          "deviceId": "23",
-          "pushId": "3243",
-          "pushValue": "1.0",
-          "releaseId": "3243",
-          "releaseValue": "0.0"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.PushButton",
-      "device": "AN/ASN-128B",
-      "name": "Button 3",
-      "description": "Current state of this button.",
-      "exports": [
-        {
-          "format": "%.1f",
-          "isExportedEveryFrame": false,
-          "id": "509"
-        }
-      ],
-      "buttons": [
-        {
-          "deviceId": "23",
-          "pushId": "3244",
-          "pushValue": "1.0",
-          "releaseId": "3244",
-          "releaseValue": "0.0"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.PushButton",
-      "device": "AN/ASN-128B",
-      "name": "Button TGT STR",
-      "description": "Current state of this button.",
-      "exports": [
-        {
-          "format": "%.1f",
-          "isExportedEveryFrame": false,
-          "id": "510"
-        }
-      ],
-      "buttons": [
-        {
-          "deviceId": "23",
-          "pushId": "3245",
-          "pushValue": "1.0",
-          "releaseId": "3245",
-          "releaseValue": "0.0"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.PushButton",
-      "device": "AN/ASN-128B",
-      "name": "Button 4",
-      "description": "Current state of this button.",
-      "exports": [
-        {
-          "format": "%.1f",
-          "isExportedEveryFrame": false,
-          "id": "511"
-        }
-      ],
-      "buttons": [
-        {
-          "deviceId": "23",
-          "pushId": "3246",
-          "pushValue": "1.0",
-          "releaseId": "3246",
-          "releaseValue": "0.0"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.PushButton",
-      "device": "AN/ASN-128B",
-      "name": "Button 5",
-      "description": "Current state of this button.",
-      "exports": [
-        {
-          "format": "%.1f",
-          "isExportedEveryFrame": false,
-          "id": "512"
-        }
-      ],
-      "buttons": [
-        {
-          "deviceId": "23",
-          "pushId": "3247",
-          "pushValue": "1.0",
-          "releaseId": "3247",
-          "releaseValue": "0.0"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.PushButton",
-      "device": "AN/ASN-128B",
-      "name": "Button 6",
-      "description": "Current state of this button.",
-      "exports": [
-        {
-          "format": "%.1f",
-          "isExportedEveryFrame": false,
-          "id": "513"
-        }
-      ],
-      "buttons": [
-        {
-          "deviceId": "23",
-          "pushId": "3248",
-          "pushValue": "1.0",
-          "releaseId": "3248",
-          "releaseValue": "0.0"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.PushButton",
-      "device": "AN/ASN-128B",
-      "name": "Button Increment",
-      "description": "Current state of this button.",
-      "exports": [
-        {
-          "format": "%.1f",
-          "isExportedEveryFrame": false,
-          "id": "514"
-        }
-      ],
-      "buttons": [
-        {
-          "deviceId": "23",
-          "pushId": "3249",
-          "pushValue": "1.0",
-          "releaseId": "3249",
-          "releaseValue": "0.0"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.PushButton",
-      "device": "AN/ASN-128B",
-      "name": "Button 7",
-      "description": "Current state of this button.",
-      "exports": [
-        {
-          "format": "%.1f",
-          "isExportedEveryFrame": false,
-          "id": "515"
-        }
-      ],
-      "buttons": [
-        {
-          "deviceId": "23",
-          "pushId": "3250",
-          "pushValue": "1.0",
-          "releaseId": "3250",
-          "releaseValue": "0.0"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.PushButton",
-      "device": "AN/ASN-128B",
-      "name": "Button 8",
-      "description": "Current state of this button.",
-      "exports": [
-        {
-          "format": "%.1f",
-          "isExportedEveryFrame": false,
-          "id": "516"
-        }
-      ],
-      "buttons": [
-        {
-          "deviceId": "23",
-          "pushId": "3251",
-          "pushValue": "1.0",
-          "releaseId": "3251",
-          "releaseValue": "0.0"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.PushButton",
-      "device": "AN/ASN-128B",
-      "name": "Button 9",
-      "description": "Current state of this button.",
-      "exports": [
-        {
-          "format": "%.1f",
-          "isExportedEveryFrame": false,
-          "id": "517"
-        }
-      ],
-      "buttons": [
-        {
-          "deviceId": "23",
-          "pushId": "3252",
-          "pushValue": "1.0",
-          "releaseId": "3252",
-          "releaseValue": "0.0"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.PushButton",
-      "device": "AN/ASN-128B",
-      "name": "Button Decrement",
-      "description": "Current state of this button.",
-      "exports": [
-        {
-          "format": "%.1f",
-          "isExportedEveryFrame": false,
-          "id": "518"
-        }
-      ],
-      "buttons": [
-        {
-          "deviceId": "23",
-          "pushId": "3253",
-          "pushValue": "1.0",
-          "releaseId": "3253",
-          "releaseValue": "0.0"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.PushButton",
-      "device": "AN/ASN-128B",
-      "name": "Button Clear",
-      "description": "Current state of this button.",
-      "exports": [
-        {
-          "format": "%.1f",
-          "isExportedEveryFrame": false,
-          "id": "519"
-        }
-      ],
-      "buttons": [
-        {
-          "deviceId": "23",
-          "pushId": "3254",
-          "pushValue": "1.0",
-          "releaseId": "3254",
-          "releaseValue": "0.0"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.PushButton",
-      "device": "AN/ASN-128B",
-      "name": "Button 0",
-      "description": "Current state of this button.",
-      "exports": [
-        {
-          "format": "%.1f",
-          "isExportedEveryFrame": false,
-          "id": "520"
-        }
-      ],
-      "buttons": [
-        {
-          "deviceId": "23",
-          "pushId": "3255",
-          "pushValue": "1.0",
-          "releaseId": "3255",
-          "releaseValue": "0.0"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.PushButton",
-      "device": "AN/ASN-128B",
-      "name": "Button Enter",
-      "description": "Current state of this button.",
-      "exports": [
-        {
-          "format": "%.1f",
-          "isExportedEveryFrame": false,
-          "id": "521"
-        }
-      ],
-      "buttons": [
-        {
-          "deviceId": "23",
-          "pushId": "3256",
-          "pushValue": "1.0",
-          "releaseId": "3256",
-          "releaseValue": "0.0"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.Switch",
-      "device": "AN/AVS-7",
-      "name": "Power OFF/ON/ADJUST",
-      "description": "Current position of this switch.",
-      "exports": [
-        {
-          "format": "%0.1f",
-          "isExportedEveryFrame": false,
-          "id": "1100"
-        }
-      ],
-      "deviceId": "30",
-      "positions": [
-        {
-          "argumentValue": "-1.0",
-          "name": "Off",
-          "actionID": "3257"
-        },
-        {
-          "argumentValue": "0.0",
-          "name": "On",
-          "actionID": "3257"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Adjust",
-          "actionID": "3257"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.Switch",
-      "device": "AN/AVS-7",
-      "name": "Program Pilot/Copilot",
-      "description": "Current position of this switch.",
-      "exports": [
-        {
-          "format": "%0.1f",
-          "isExportedEveryFrame": false,
-          "id": "1101"
-        }
-      ],
-      "deviceId": "30",
-      "positions": [
-        {
-          "argumentValue": "-1.0",
-          "name": "Pilot",
-          "actionID": "3260"
-        },
-        {
-          "argumentValue": "0.0",
-          "name": "Off",
-          "actionID": "3260"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Copilot",
-          "actionID": "3260"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.Switch",
-      "device": "AN/AVS-7",
-      "name": "Pilot MODE 1-4/DCLT",
-      "description": "Current position of this switch.",
-      "exports": [
-        {
-          "format": "%0.1f",
-          "isExportedEveryFrame": false,
-          "id": "1102"
-        }
-      ],
-      "deviceId": "30",
-      "positions": [
-        {
-          "argumentValue": "-1.0",
-          "name": "Mode 1-4",
-          "actionID": "3260"
-        },
-        {
-          "argumentValue": "0.0",
-          "name": "Off",
-          "actionID": "3260"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Declutter",
-          "actionID": "3260"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.Switch",
-      "device": "AN/AVS-7",
-      "name": "Copilot MODE 1-4/DCLT",
-      "description": "Current position of this switch.",
-      "exports": [
-        {
-          "format": "%0.1f",
-          "isExportedEveryFrame": false,
-          "id": "1103"
-        }
-      ],
-      "deviceId": "30",
-      "positions": [
-        {
-          "argumentValue": "-1.0",
-          "name": "Mode 1-4",
-          "actionID": "3260"
-        },
-        {
-          "argumentValue": "0.0",
-          "name": "Off",
-          "actionID": "3260"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Declutter",
-          "actionID": "3260"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.Switch",
-      "device": "AN/AVS-7",
-      "name": "BIT/ACK",
-      "description": "Current position of this switch.",
-      "exports": [
-        {
-          "format": "%0.1f",
-          "isExportedEveryFrame": false,
-          "id": "1104"
-        }
-      ],
-      "deviceId": "30",
-      "positions": [
-        {
-          "argumentValue": "-1.0",
-          "name": "BIT",
-          "actionID": "3260"
-        },
-        {
-          "argumentValue": "0.0",
-          "name": "Off",
-          "actionID": "3260"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Ack",
-          "actionID": "3260"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.Switch",
-      "device": "AN/AVS-7",
-      "name": "ALT/P/R DEC/INC PGM NXT/SEL",
-      "description": "Current position of this switch.",
-      "exports": [
-        {
-          "format": "%0.1f",
-          "isExportedEveryFrame": false,
-          "id": "1105"
-        }
-      ],
-      "deviceId": "30",
-      "positions": [
-        {
-          "argumentValue": "-1.0",
-          "name": "Decrement",
-          "actionID": "3260"
-        },
-        {
-          "argumentValue": "0.0",
-          "name": "Off",
-          "actionID": "3260"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Increment",
-          "actionID": "3260"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.Switch",
-      "device": "AN/AVS-7",
-      "name": "Pilot BRT/DIM",
-      "description": "Current position of this switch.",
-      "exports": [
-        {
-          "format": "%0.1f",
-          "isExportedEveryFrame": false,
-          "id": "1106"
-        }
-      ],
-      "deviceId": "30",
-      "positions": [
-        {
-          "argumentValue": "-1.0",
-          "name": "Bright",
-          "actionID": "3258"
-        },
-        {
-          "argumentValue": "0.0",
-          "name": "Off",
-          "actionID": "3258"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Dim",
-          "actionID": "3259"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.Switch",
-      "device": "AN/AVS-7",
-      "name": "Pilot DSPL POS Down/Up",
-      "description": "Current position of this switch.",
-      "exports": [
-        {
-          "format": "%0.1f",
-          "isExportedEveryFrame": false,
-          "id": "1107"
-        }
-      ],
-      "deviceId": "30",
-      "positions": [
-        {
-          "argumentValue": "-1.0",
-          "name": "Up",
-          "actionID": "3260"
-        },
-        {
-          "argumentValue": "0.0",
-          "name": "Off",
-          "actionID": "3260"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Down",
-          "actionID": "3260"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.Switch",
-      "device": "AN/AVS-7",
-      "name": "Pilot DSPL POS Left/Right",
-      "description": "Current position of this switch.",
-      "exports": [
-        {
-          "format": "%0.1f",
-          "isExportedEveryFrame": false,
-          "id": "1108"
-        }
-      ],
-      "deviceId": "30",
-      "positions": [
-        {
-          "argumentValue": "-1.0",
-          "name": "Left",
-          "actionID": "3260"
-        },
-        {
-          "argumentValue": "0.0",
-          "name": "Off",
-          "actionID": "3260"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Right",
-          "actionID": "3260"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.Switch",
-      "device": "AN/AVS-7",
-      "name": "Copilot BRT/DIM",
-      "description": "Current position of this switch.",
-      "exports": [
-        {
-          "format": "%0.1f",
-          "isExportedEveryFrame": false,
-          "id": "1109"
-        }
-      ],
-      "deviceId": "30",
-      "positions": [
-        {
-          "argumentValue": "-1.0",
-          "name": "Bright",
-          "actionID": "3258"
-        },
-        {
-          "argumentValue": "0.0",
-          "name": "Off",
-          "actionID": "3258"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Dim",
-          "actionID": "3259"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.Switch",
-      "device": "AN/AVS-7",
-      "name": "Copilot DSPL POS Down/Up",
-      "description": "Current position of this switch.",
-      "exports": [
-        {
-          "format": "%0.1f",
-          "isExportedEveryFrame": false,
-          "id": "1110"
-        }
-      ],
-      "deviceId": "30",
-      "positions": [
-        {
-          "argumentValue": "-1.0",
-          "name": "Up",
-          "actionID": "3260"
-        },
-        {
-          "argumentValue": "0.0",
-          "name": "Off",
-          "actionID": "3260"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Down",
-          "actionID": "3260"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.Switch",
-      "device": "AN/AVS-7",
-      "name": "Copilot DSPL POS Left/Right",
-      "description": "Current position of this switch.",
-      "exports": [
-        {
-          "format": "%0.1f",
-          "isExportedEveryFrame": false,
-          "id": "1111"
-        }
-      ],
-      "deviceId": "30",
-      "positions": [
-        {
-          "argumentValue": "-1.0",
-          "name": "Left",
-          "actionID": "3260"
-        },
-        {
-          "argumentValue": "0.0",
-          "name": "Off",
-          "actionID": "3260"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Right",
-          "actionID": "3260"
         }
       ]
     },
@@ -4231,6 +881,32 @@
       ]
     },
     {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Chronometer (Copilot)",
+      "name": "Time Display",
+      "description": "Display of the Chronometer Time",
+      "exports": [
+        {
+          "id": "2098"
+        }
+      ],
+      "valueDescription": "Text",
+      "unit": "Text"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Chronometer (Copilot)",
+      "name": "Mode Display",
+      "description": "Display of the Chronometer Mode",
+      "exports": [
+        {
+          "id": "2099"
+        }
+      ],
+      "valueDescription": "Text",
+      "unit": "Text"
+    },
+    {
       "heliosType": "DCS.Common.PushButton",
       "device": "Chronometer (Copilot)",
       "name": "RESET/SET Button",
@@ -4295,6 +971,32 @@
           "releaseValue": "0.0"
         }
       ]
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Chronometer (Pilot)",
+      "name": "Time Display",
+      "description": "Display of the Chronometer Time",
+      "exports": [
+        {
+          "id": "2096"
+        }
+      ],
+      "valueDescription": "Text",
+      "unit": "Text"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Chronometer (Pilot)",
+      "name": "Mode Display",
+      "description": "Display of the Chronometer Mode",
+      "exports": [
+        {
+          "id": "2097"
+        }
+      ],
+      "valueDescription": "Text",
+      "unit": "Text"
     },
     {
       "heliosType": "DCS.Common.PushButton",
@@ -4885,6 +1587,595 @@
           "argumentValue": "0.0",
           "name": "Off",
           "actionID": "3409"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Doppler Nav",
+      "name": "Display Line 1",
+      "description": "Nav Computer first display line",
+      "exports": [
+        {
+          "id": "2091"
+        }
+      ],
+      "valueDescription": "Text",
+      "unit": "Text"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Doppler Nav",
+      "name": "Display Line 2",
+      "description": "Nav Computer second display line",
+      "exports": [
+        {
+          "id": "2092"
+        }
+      ],
+      "valueDescription": "Text",
+      "unit": "Text"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Doppler Nav",
+      "name": "Display Line 3",
+      "description": "Nav Computer third display line",
+      "exports": [
+        {
+          "id": "2093"
+        }
+      ],
+      "valueDescription": "Text",
+      "unit": "Text"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Doppler Nav",
+      "name": "Display Line 4",
+      "description": "Nav Computer fourth display line",
+      "exports": [
+        {
+          "id": "2094"
+        }
+      ],
+      "valueDescription": "Text",
+      "unit": "Text"
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Doppler Nav",
+      "name": "Display Selector",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.2f",
+          "isExportedEveryFrame": false,
+          "id": "500"
+        }
+      ],
+      "deviceId": "23",
+      "positions": [
+        {
+          "argumentValue": "0",
+          "name": "1",
+          "actionID": "3236"
+        },
+        {
+          "argumentValue": "0.01",
+          "name": "2",
+          "actionID": "3236"
+        },
+        {
+          "argumentValue": "0.02",
+          "name": "3",
+          "actionID": "3236"
+        },
+        {
+          "argumentValue": "0.03",
+          "name": "4",
+          "actionID": "3236"
+        },
+        {
+          "argumentValue": "0.04",
+          "name": "5",
+          "actionID": "3236"
+        },
+        {
+          "argumentValue": "0.05",
+          "name": "6",
+          "actionID": "3236"
+        },
+        {
+          "argumentValue": "0.06",
+          "name": "7",
+          "actionID": "3236"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Doppler Nav",
+      "name": "Mode Selector",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.2f",
+          "isExportedEveryFrame": false,
+          "id": "501"
+        }
+      ],
+      "deviceId": "23",
+      "positions": [
+        {
+          "argumentValue": "0",
+          "name": "1",
+          "actionID": "3235"
+        },
+        {
+          "argumentValue": "0.01",
+          "name": "2",
+          "actionID": "3235"
+        },
+        {
+          "argumentValue": "0.02",
+          "name": "3",
+          "actionID": "3235"
+        },
+        {
+          "argumentValue": "0.03",
+          "name": "4",
+          "actionID": "3235"
+        },
+        {
+          "argumentValue": "0.04",
+          "name": "5",
+          "actionID": "3235"
+        },
+        {
+          "argumentValue": "0.05",
+          "name": "6",
+          "actionID": "3235"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Doppler Nav",
+      "name": "Button Keyboard",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "502"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "23",
+          "pushId": "3237",
+          "pushValue": "1.0",
+          "releaseId": "3237",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Doppler Nav",
+      "name": "Button Letter Left",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "503"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "23",
+          "pushId": "3238",
+          "pushValue": "1.0",
+          "releaseId": "3238",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Doppler Nav",
+      "name": "Button Letter Middle",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "504"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "23",
+          "pushId": "3239",
+          "pushValue": "1.0",
+          "releaseId": "3239",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Doppler Nav",
+      "name": "Button Letter Right",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "505"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "23",
+          "pushId": "3240",
+          "pushValue": "1.0",
+          "releaseId": "3240",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Doppler Nav",
+      "name": "Button F1",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "506"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "23",
+          "pushId": "3241",
+          "pushValue": "1.0",
+          "releaseId": "3241",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Doppler Nav",
+      "name": "Button 1",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "507"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "23",
+          "pushId": "3242",
+          "pushValue": "1.0",
+          "releaseId": "3242",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Doppler Nav",
+      "name": "Button 2",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "508"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "23",
+          "pushId": "3243",
+          "pushValue": "1.0",
+          "releaseId": "3243",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Doppler Nav",
+      "name": "Button 3",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "509"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "23",
+          "pushId": "3244",
+          "pushValue": "1.0",
+          "releaseId": "3244",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Doppler Nav",
+      "name": "Button TGT STR",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "510"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "23",
+          "pushId": "3245",
+          "pushValue": "1.0",
+          "releaseId": "3245",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Doppler Nav",
+      "name": "Button 4",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "511"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "23",
+          "pushId": "3246",
+          "pushValue": "1.0",
+          "releaseId": "3246",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Doppler Nav",
+      "name": "Button 5",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "512"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "23",
+          "pushId": "3247",
+          "pushValue": "1.0",
+          "releaseId": "3247",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Doppler Nav",
+      "name": "Button 6",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "513"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "23",
+          "pushId": "3248",
+          "pushValue": "1.0",
+          "releaseId": "3248",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Doppler Nav",
+      "name": "Button Increment",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "514"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "23",
+          "pushId": "3249",
+          "pushValue": "1.0",
+          "releaseId": "3249",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Doppler Nav",
+      "name": "Button 7",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "515"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "23",
+          "pushId": "3250",
+          "pushValue": "1.0",
+          "releaseId": "3250",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Doppler Nav",
+      "name": "Button 8",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "516"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "23",
+          "pushId": "3251",
+          "pushValue": "1.0",
+          "releaseId": "3251",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Doppler Nav",
+      "name": "Button 9",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "517"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "23",
+          "pushId": "3252",
+          "pushValue": "1.0",
+          "releaseId": "3252",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Doppler Nav",
+      "name": "Button Decrement",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "518"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "23",
+          "pushId": "3253",
+          "pushValue": "1.0",
+          "releaseId": "3253",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Doppler Nav",
+      "name": "Button Clear",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "519"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "23",
+          "pushId": "3254",
+          "pushValue": "1.0",
+          "releaseId": "3254",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Doppler Nav",
+      "name": "Button 0",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "520"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "23",
+          "pushId": "3255",
+          "pushValue": "1.0",
+          "releaseId": "3255",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Doppler Nav",
+      "name": "Button Enter",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "521"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "23",
+          "pushId": "3256",
+          "pushValue": "1.0",
+          "releaseId": "3256",
+          "releaseValue": "0.0"
         }
       ]
     },
@@ -8770,6 +6061,378 @@
       ]
     },
     {
+      "heliosType": "DCS.Common.Switch",
+      "device": "NVG / HUD",
+      "name": "Power OFF/ON/ADJUST",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "1100"
+        }
+      ],
+      "deviceId": "30",
+      "positions": [
+        {
+          "argumentValue": "-1.0",
+          "name": "Off",
+          "actionID": "3257"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "On",
+          "actionID": "3257"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Adjust",
+          "actionID": "3257"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "NVG / HUD",
+      "name": "Program Pilot/Copilot",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "1101"
+        }
+      ],
+      "deviceId": "30",
+      "positions": [
+        {
+          "argumentValue": "-1.0",
+          "name": "Pilot",
+          "actionID": "3260"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Off",
+          "actionID": "3260"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Copilot",
+          "actionID": "3260"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "NVG / HUD",
+      "name": "Pilot MODE 1-4/DCLT",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "1102"
+        }
+      ],
+      "deviceId": "30",
+      "positions": [
+        {
+          "argumentValue": "-1.0",
+          "name": "Mode 1-4",
+          "actionID": "3260"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Off",
+          "actionID": "3260"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Declutter",
+          "actionID": "3260"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "NVG / HUD",
+      "name": "Copilot MODE 1-4/DCLT",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "1103"
+        }
+      ],
+      "deviceId": "30",
+      "positions": [
+        {
+          "argumentValue": "-1.0",
+          "name": "Mode 1-4",
+          "actionID": "3260"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Off",
+          "actionID": "3260"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Declutter",
+          "actionID": "3260"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "NVG / HUD",
+      "name": "BIT/ACK",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "1104"
+        }
+      ],
+      "deviceId": "30",
+      "positions": [
+        {
+          "argumentValue": "-1.0",
+          "name": "BIT",
+          "actionID": "3260"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Off",
+          "actionID": "3260"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Ack",
+          "actionID": "3260"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "NVG / HUD",
+      "name": "ALT/P/R DEC/INC PGM NXT/SEL",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "1105"
+        }
+      ],
+      "deviceId": "30",
+      "positions": [
+        {
+          "argumentValue": "-1.0",
+          "name": "Decrement",
+          "actionID": "3260"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Off",
+          "actionID": "3260"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Increment",
+          "actionID": "3260"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "NVG / HUD",
+      "name": "Pilot BRT/DIM",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "1106"
+        }
+      ],
+      "deviceId": "30",
+      "positions": [
+        {
+          "argumentValue": "-1.0",
+          "name": "Bright",
+          "actionID": "3258"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Off",
+          "actionID": "3258"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Dim",
+          "actionID": "3259"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "NVG / HUD",
+      "name": "Pilot DSPL POS Down/Up",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "1107"
+        }
+      ],
+      "deviceId": "30",
+      "positions": [
+        {
+          "argumentValue": "-1.0",
+          "name": "Up",
+          "actionID": "3260"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Off",
+          "actionID": "3260"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Down",
+          "actionID": "3260"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "NVG / HUD",
+      "name": "Pilot DSPL POS Left/Right",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "1108"
+        }
+      ],
+      "deviceId": "30",
+      "positions": [
+        {
+          "argumentValue": "-1.0",
+          "name": "Left",
+          "actionID": "3260"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Off",
+          "actionID": "3260"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Right",
+          "actionID": "3260"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "NVG / HUD",
+      "name": "Copilot BRT/DIM",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "1109"
+        }
+      ],
+      "deviceId": "30",
+      "positions": [
+        {
+          "argumentValue": "-1.0",
+          "name": "Bright",
+          "actionID": "3258"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Off",
+          "actionID": "3258"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Dim",
+          "actionID": "3259"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "NVG / HUD",
+      "name": "Copilot DSPL POS Down/Up",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "1110"
+        }
+      ],
+      "deviceId": "30",
+      "positions": [
+        {
+          "argumentValue": "-1.0",
+          "name": "Up",
+          "actionID": "3260"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Off",
+          "actionID": "3260"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Down",
+          "actionID": "3260"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "NVG / HUD",
+      "name": "Copilot DSPL POS Left/Right",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "1111"
+        }
+      ],
+      "deviceId": "30",
+      "positions": [
+        {
+          "argumentValue": "-1.0",
+          "name": "Left",
+          "actionID": "3260"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Off",
+          "actionID": "3260"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Right",
+          "actionID": "3260"
+        }
+      ]
+    },
+    {
       "heliosType": "DCS.Common.Axis",
       "device": "RADAR Alt (Copilot)",
       "name": "Low Altitude Set",
@@ -8858,6 +6521,126 @@
         "set": {
           "deviceId": "44",
           "actionId": "3415"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "RWR",
+      "name": "Power ON/OFF",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "270"
+        }
+      ],
+      "deviceId": "19",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "On",
+          "actionID": "3291"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Off",
+          "actionID": "3291"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "RWR",
+      "name": "Self Test",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "271"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "19",
+          "pushId": "3292",
+          "pushValue": "1.0",
+          "releaseId": "3292",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "RWR",
+      "name": "Altitude HIGH/LOW",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "272"
+        }
+      ],
+      "deviceId": "19",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "High",
+          "actionID": "3291"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Low",
+          "actionID": "3291"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "RWR",
+      "name": "Volume",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.3f",
+          "isExportedEveryFrame": false,
+          "id": "273"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.1,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "19",
+          "actionId": "3294"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "RWR",
+      "name": "Brightness",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.3f",
+          "isExportedEveryFrame": false,
+          "id": "274"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.1,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "19",
+          "actionId": "3295"
         }
       }
     },
@@ -9200,6 +6983,2275 @@
           "pushValue": "1.0",
           "releaseId": "3043",
           "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Tactical Radio FM1",
+      "name": "Display Text",
+      "description": "FM Radio Display Text",
+      "exports": [
+        {
+          "id": "2104"
+        }
+      ],
+      "valueDescription": "Text",
+      "unit": "Text"
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Tactical Radio FM1",
+      "name": "Preset Selector",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.2f",
+          "isExportedEveryFrame": false,
+          "id": "600"
+        }
+      ],
+      "deviceId": "2",
+      "positions": [
+        {
+          "argumentValue": "0",
+          "name": "1",
+          "actionID": "3315"
+        },
+        {
+          "argumentValue": "0.01",
+          "name": "2",
+          "actionID": "3315"
+        },
+        {
+          "argumentValue": "0.02",
+          "name": "3",
+          "actionID": "3315"
+        },
+        {
+          "argumentValue": "0.03",
+          "name": "4",
+          "actionID": "3315"
+        },
+        {
+          "argumentValue": "0.04",
+          "name": "5",
+          "actionID": "3315"
+        },
+        {
+          "argumentValue": "0.05",
+          "name": "6",
+          "actionID": "3315"
+        },
+        {
+          "argumentValue": "0.06",
+          "name": "7",
+          "actionID": "3315"
+        },
+        {
+          "argumentValue": "0.07",
+          "name": "8",
+          "actionID": "3315"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Tactical Radio FM1",
+      "name": "Function Selector",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.2f",
+          "isExportedEveryFrame": false,
+          "id": "601"
+        }
+      ],
+      "deviceId": "2",
+      "positions": [
+        {
+          "argumentValue": "0",
+          "name": "1",
+          "actionID": "3316"
+        },
+        {
+          "argumentValue": "0.01",
+          "name": "2",
+          "actionID": "3316"
+        },
+        {
+          "argumentValue": "0.02",
+          "name": "3",
+          "actionID": "3316"
+        },
+        {
+          "argumentValue": "0.03",
+          "name": "4",
+          "actionID": "3316"
+        },
+        {
+          "argumentValue": "0.04",
+          "name": "5",
+          "actionID": "3316"
+        },
+        {
+          "argumentValue": "0.05",
+          "name": "6",
+          "actionID": "3316"
+        },
+        {
+          "argumentValue": "0.06",
+          "name": "7",
+          "actionID": "3316"
+        },
+        {
+          "argumentValue": "0.07",
+          "name": "8",
+          "actionID": "3316"
+        },
+        {
+          "argumentValue": "0.08",
+          "name": "9",
+          "actionID": "3316"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Tactical Radio FM1",
+      "name": "PWR Selector",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.2f",
+          "isExportedEveryFrame": false,
+          "id": "602"
+        }
+      ],
+      "deviceId": "2",
+      "positions": [
+        {
+          "argumentValue": "0",
+          "name": "1",
+          "actionID": "3317"
+        },
+        {
+          "argumentValue": "0.01",
+          "name": "2",
+          "actionID": "3317"
+        },
+        {
+          "argumentValue": "0.02",
+          "name": "3",
+          "actionID": "3317"
+        },
+        {
+          "argumentValue": "0.03",
+          "name": "4",
+          "actionID": "3317"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Tactical Radio FM1",
+      "name": "Mode Selector",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.2f",
+          "isExportedEveryFrame": false,
+          "id": "603"
+        }
+      ],
+      "deviceId": "2",
+      "positions": [
+        {
+          "argumentValue": "0",
+          "name": "1",
+          "actionID": "3318"
+        },
+        {
+          "argumentValue": "0.01",
+          "name": "2",
+          "actionID": "3318"
+        },
+        {
+          "argumentValue": "0.02",
+          "name": "3",
+          "actionID": "3318"
+        },
+        {
+          "argumentValue": "0.03",
+          "name": "4",
+          "actionID": "3318"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Tactical Radio FM1",
+      "name": "Volume",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.3f",
+          "isExportedEveryFrame": false,
+          "id": "604"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.1,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "2",
+          "actionId": "3319"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Tactical Radio FM1",
+      "name": "Button 1",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "605"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "2",
+          "pushId": "3320",
+          "pushValue": "1.0",
+          "releaseId": "3320",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Tactical Radio FM1",
+      "name": "Button 2",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "606"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "2",
+          "pushId": "3321",
+          "pushValue": "1.0",
+          "releaseId": "3321",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Tactical Radio FM1",
+      "name": "Button 3",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "607"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "2",
+          "pushId": "3322",
+          "pushValue": "1.0",
+          "releaseId": "3322",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Tactical Radio FM1",
+      "name": "Button 4",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "608"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "2",
+          "pushId": "3323",
+          "pushValue": "1.0",
+          "releaseId": "3323",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Tactical Radio FM1",
+      "name": "Button 5",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "609"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "2",
+          "pushId": "3324",
+          "pushValue": "1.0",
+          "releaseId": "3324",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Tactical Radio FM1",
+      "name": "Button 6",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "610"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "2",
+          "pushId": "3325",
+          "pushValue": "1.0",
+          "releaseId": "3325",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Tactical Radio FM1",
+      "name": "Button 7",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "611"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "2",
+          "pushId": "3326",
+          "pushValue": "1.0",
+          "releaseId": "3326",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Tactical Radio FM1",
+      "name": "Button 8",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "612"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "2",
+          "pushId": "3327",
+          "pushValue": "1.0",
+          "releaseId": "3327",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Tactical Radio FM1",
+      "name": "Button 9",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "613"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "2",
+          "pushId": "3328",
+          "pushValue": "1.0",
+          "releaseId": "3328",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Tactical Radio FM1",
+      "name": "Button 0",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "614"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "2",
+          "pushId": "3329",
+          "pushValue": "1.0",
+          "releaseId": "3329",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Tactical Radio FM1",
+      "name": "Button Clear",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "615"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "2",
+          "pushId": "3330",
+          "pushValue": "1.0",
+          "releaseId": "3330",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Tactical Radio FM1",
+      "name": "Button Enter",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "616"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "2",
+          "pushId": "3331",
+          "pushValue": "1.0",
+          "releaseId": "3331",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Tactical Radio FM1",
+      "name": "Button Frequency",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "617"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "2",
+          "pushId": "3332",
+          "pushValue": "1.0",
+          "releaseId": "3332",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Tactical Radio FM1",
+      "name": "Button EFF/OFST",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "618"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "2",
+          "pushId": "3333",
+          "pushValue": "1.0",
+          "releaseId": "3333",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Tactical Radio FM1",
+      "name": "Button Time",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "619"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "2",
+          "pushId": "3334",
+          "pushValue": "1.0",
+          "releaseId": "3334",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Tactical Radio FM2",
+      "name": "Display Text",
+      "description": "FM Radio Display Text",
+      "exports": [
+        {
+          "id": "2105"
+        }
+      ],
+      "valueDescription": "Text",
+      "unit": "Text"
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Tactical Radio FM2",
+      "name": "Preset Selector",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.2f",
+          "isExportedEveryFrame": false,
+          "id": "700"
+        }
+      ],
+      "deviceId": "9",
+      "positions": [
+        {
+          "argumentValue": "0",
+          "name": "1",
+          "actionID": "3335"
+        },
+        {
+          "argumentValue": "0.01",
+          "name": "2",
+          "actionID": "3335"
+        },
+        {
+          "argumentValue": "0.02",
+          "name": "3",
+          "actionID": "3335"
+        },
+        {
+          "argumentValue": "0.03",
+          "name": "4",
+          "actionID": "3335"
+        },
+        {
+          "argumentValue": "0.04",
+          "name": "5",
+          "actionID": "3335"
+        },
+        {
+          "argumentValue": "0.05",
+          "name": "6",
+          "actionID": "3335"
+        },
+        {
+          "argumentValue": "0.06",
+          "name": "7",
+          "actionID": "3335"
+        },
+        {
+          "argumentValue": "0.07",
+          "name": "8",
+          "actionID": "3335"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Tactical Radio FM2",
+      "name": "Function Selector",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.2f",
+          "isExportedEveryFrame": false,
+          "id": "701"
+        }
+      ],
+      "deviceId": "9",
+      "positions": [
+        {
+          "argumentValue": "0",
+          "name": "1",
+          "actionID": "3336"
+        },
+        {
+          "argumentValue": "0.01",
+          "name": "2",
+          "actionID": "3336"
+        },
+        {
+          "argumentValue": "0.02",
+          "name": "3",
+          "actionID": "3336"
+        },
+        {
+          "argumentValue": "0.03",
+          "name": "4",
+          "actionID": "3336"
+        },
+        {
+          "argumentValue": "0.04",
+          "name": "5",
+          "actionID": "3336"
+        },
+        {
+          "argumentValue": "0.05",
+          "name": "6",
+          "actionID": "3336"
+        },
+        {
+          "argumentValue": "0.06",
+          "name": "7",
+          "actionID": "3336"
+        },
+        {
+          "argumentValue": "0.07",
+          "name": "8",
+          "actionID": "3336"
+        },
+        {
+          "argumentValue": "0.08",
+          "name": "9",
+          "actionID": "3336"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Tactical Radio FM2",
+      "name": "PWR Selector",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.2f",
+          "isExportedEveryFrame": false,
+          "id": "702"
+        }
+      ],
+      "deviceId": "9",
+      "positions": [
+        {
+          "argumentValue": "0",
+          "name": "1",
+          "actionID": "3337"
+        },
+        {
+          "argumentValue": "0.01",
+          "name": "2",
+          "actionID": "3337"
+        },
+        {
+          "argumentValue": "0.02",
+          "name": "3",
+          "actionID": "3337"
+        },
+        {
+          "argumentValue": "0.03",
+          "name": "4",
+          "actionID": "3337"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Tactical Radio FM2",
+      "name": "Mode Selector",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.2f",
+          "isExportedEveryFrame": false,
+          "id": "703"
+        }
+      ],
+      "deviceId": "9",
+      "positions": [
+        {
+          "argumentValue": "0",
+          "name": "1",
+          "actionID": "3338"
+        },
+        {
+          "argumentValue": "0.01",
+          "name": "2",
+          "actionID": "3338"
+        },
+        {
+          "argumentValue": "0.02",
+          "name": "3",
+          "actionID": "3338"
+        },
+        {
+          "argumentValue": "0.03",
+          "name": "4",
+          "actionID": "3338"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Tactical Radio FM2",
+      "name": "Volume",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.3f",
+          "isExportedEveryFrame": false,
+          "id": "704"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.1,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "9",
+          "actionId": "3339"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Tactical Radio FM2",
+      "name": "Button 1",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "705"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "9",
+          "pushId": "3340",
+          "pushValue": "1.0",
+          "releaseId": "3340",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Tactical Radio FM2",
+      "name": "Button 2",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "706"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "9",
+          "pushId": "3341",
+          "pushValue": "1.0",
+          "releaseId": "3341",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Tactical Radio FM2",
+      "name": "Button 3",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "707"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "9",
+          "pushId": "3342",
+          "pushValue": "1.0",
+          "releaseId": "3342",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Tactical Radio FM2",
+      "name": "Button 4",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "708"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "9",
+          "pushId": "3343",
+          "pushValue": "1.0",
+          "releaseId": "3343",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Tactical Radio FM2",
+      "name": "Button 5",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "709"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "9",
+          "pushId": "3344",
+          "pushValue": "1.0",
+          "releaseId": "3344",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Tactical Radio FM2",
+      "name": "Button 6",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "710"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "9",
+          "pushId": "3345",
+          "pushValue": "1.0",
+          "releaseId": "3345",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Tactical Radio FM2",
+      "name": "Button 7",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "711"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "9",
+          "pushId": "3346",
+          "pushValue": "1.0",
+          "releaseId": "3346",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Tactical Radio FM2",
+      "name": "Button 8",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "712"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "9",
+          "pushId": "3347",
+          "pushValue": "1.0",
+          "releaseId": "3347",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Tactical Radio FM2",
+      "name": "Button 9",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "713"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "9",
+          "pushId": "3348",
+          "pushValue": "1.0",
+          "releaseId": "3348",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Tactical Radio FM2",
+      "name": "Button 0",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "714"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "9",
+          "pushId": "3349",
+          "pushValue": "1.0",
+          "releaseId": "3349",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Tactical Radio FM2",
+      "name": "Button Clear",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "715"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "9",
+          "pushId": "3350",
+          "pushValue": "1.0",
+          "releaseId": "3350",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Tactical Radio FM2",
+      "name": "Button Enter",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "716"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "9",
+          "pushId": "3351",
+          "pushValue": "1.0",
+          "releaseId": "3351",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Tactical Radio FM2",
+      "name": "Button Frequency",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "717"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "9",
+          "pushId": "3352",
+          "pushValue": "1.0",
+          "releaseId": "3352",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Tactical Radio FM2",
+      "name": "Button ERF/OFST",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "718"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "9",
+          "pushId": "3353",
+          "pushValue": "1.0",
+          "releaseId": "3353",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Tactical Radio FM2",
+      "name": "Button Time",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "719"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "9",
+          "pushId": "3354",
+          "pushValue": "1.0",
+          "releaseId": "3354",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "UHF Radio",
+      "name": "Mode",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.2f",
+          "isExportedEveryFrame": false,
+          "id": "50"
+        }
+      ],
+      "deviceId": "3",
+      "positions": [
+        {
+          "argumentValue": "0",
+          "name": "1",
+          "actionID": "3261"
+        },
+        {
+          "argumentValue": "0.01",
+          "name": "2",
+          "actionID": "3261"
+        },
+        {
+          "argumentValue": "0.02",
+          "name": "3",
+          "actionID": "3261"
+        },
+        {
+          "argumentValue": "0.03",
+          "name": "4",
+          "actionID": "3261"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "UHF Radio",
+      "name": "Volume",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.3f",
+          "isExportedEveryFrame": false,
+          "id": "51"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.1,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "3",
+          "actionId": "3263"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "UHF Radio",
+      "name": "Manual/Preset/Guard",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.2f",
+          "isExportedEveryFrame": false,
+          "id": "52"
+        }
+      ],
+      "deviceId": "3",
+      "positions": [
+        {
+          "argumentValue": "0",
+          "name": "1",
+          "actionID": "3266"
+        },
+        {
+          "argumentValue": "0.01",
+          "name": "2",
+          "actionID": "3266"
+        },
+        {
+          "argumentValue": "0.02",
+          "name": "3",
+          "actionID": "3266"
+        },
+        {
+          "argumentValue": "0.03",
+          "name": "4",
+          "actionID": "3266"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "UHF Radio",
+      "name": "Digit 100",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.2f",
+          "isExportedEveryFrame": false,
+          "id": "53"
+        }
+      ],
+      "deviceId": "3",
+      "positions": [
+        {
+          "argumentValue": "0",
+          "name": "1",
+          "actionID": "3266"
+        },
+        {
+          "argumentValue": "0.1",
+          "name": "2",
+          "actionID": "3266"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "UHF Radio",
+      "name": "Digit 10",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.2f",
+          "isExportedEveryFrame": false,
+          "id": "54"
+        }
+      ],
+      "deviceId": "3",
+      "positions": [
+        {
+          "argumentValue": "0",
+          "name": "1",
+          "actionID": "3267"
+        },
+        {
+          "argumentValue": "0.1",
+          "name": "2",
+          "actionID": "3267"
+        },
+        {
+          "argumentValue": "0.2",
+          "name": "3",
+          "actionID": "3267"
+        },
+        {
+          "argumentValue": "0.3",
+          "name": "4",
+          "actionID": "3267"
+        },
+        {
+          "argumentValue": "0.4",
+          "name": "5",
+          "actionID": "3267"
+        },
+        {
+          "argumentValue": "0.5",
+          "name": "6",
+          "actionID": "3267"
+        },
+        {
+          "argumentValue": "0.6",
+          "name": "7",
+          "actionID": "3267"
+        },
+        {
+          "argumentValue": "0.7",
+          "name": "8",
+          "actionID": "3267"
+        },
+        {
+          "argumentValue": "0.8",
+          "name": "9",
+          "actionID": "3267"
+        },
+        {
+          "argumentValue": "0.9",
+          "name": "10",
+          "actionID": "3267"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "UHF Radio",
+      "name": "Digit 1",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.2f",
+          "isExportedEveryFrame": false,
+          "id": "55"
+        }
+      ],
+      "deviceId": "3",
+      "positions": [
+        {
+          "argumentValue": "0",
+          "name": "1",
+          "actionID": "3268"
+        },
+        {
+          "argumentValue": "0.1",
+          "name": "2",
+          "actionID": "3268"
+        },
+        {
+          "argumentValue": "0.2",
+          "name": "3",
+          "actionID": "3268"
+        },
+        {
+          "argumentValue": "0.3",
+          "name": "4",
+          "actionID": "3268"
+        },
+        {
+          "argumentValue": "0.4",
+          "name": "5",
+          "actionID": "3268"
+        },
+        {
+          "argumentValue": "0.5",
+          "name": "6",
+          "actionID": "3268"
+        },
+        {
+          "argumentValue": "0.6",
+          "name": "7",
+          "actionID": "3268"
+        },
+        {
+          "argumentValue": "0.7",
+          "name": "8",
+          "actionID": "3268"
+        },
+        {
+          "argumentValue": "0.8",
+          "name": "9",
+          "actionID": "3268"
+        },
+        {
+          "argumentValue": "0.9",
+          "name": "10",
+          "actionID": "3268"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "UHF Radio",
+      "name": "Digit 0.1",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.2f",
+          "isExportedEveryFrame": false,
+          "id": "56"
+        }
+      ],
+      "deviceId": "3",
+      "positions": [
+        {
+          "argumentValue": "0",
+          "name": "1",
+          "actionID": "3269"
+        },
+        {
+          "argumentValue": "0.1",
+          "name": "2",
+          "actionID": "3269"
+        },
+        {
+          "argumentValue": "0.2",
+          "name": "3",
+          "actionID": "3269"
+        },
+        {
+          "argumentValue": "0.3",
+          "name": "4",
+          "actionID": "3269"
+        },
+        {
+          "argumentValue": "0.4",
+          "name": "5",
+          "actionID": "3269"
+        },
+        {
+          "argumentValue": "0.5",
+          "name": "6",
+          "actionID": "3269"
+        },
+        {
+          "argumentValue": "0.6",
+          "name": "7",
+          "actionID": "3269"
+        },
+        {
+          "argumentValue": "0.7",
+          "name": "8",
+          "actionID": "3269"
+        },
+        {
+          "argumentValue": "0.8",
+          "name": "9",
+          "actionID": "3269"
+        },
+        {
+          "argumentValue": "0.9",
+          "name": "10",
+          "actionID": "3269"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "UHF Radio",
+      "name": "Digit 0.010",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.2f",
+          "isExportedEveryFrame": false,
+          "id": "57"
+        }
+      ],
+      "deviceId": "3",
+      "positions": [
+        {
+          "argumentValue": "0",
+          "name": "1",
+          "actionID": "3270"
+        },
+        {
+          "argumentValue": "0.1",
+          "name": "2",
+          "actionID": "3270"
+        },
+        {
+          "argumentValue": "0.2",
+          "name": "3",
+          "actionID": "3270"
+        },
+        {
+          "argumentValue": "0.3",
+          "name": "4",
+          "actionID": "3270"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "UHF Radio",
+      "name": "Preset",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.2f",
+          "isExportedEveryFrame": false,
+          "id": "58"
+        }
+      ],
+      "deviceId": "3",
+      "positions": [
+        {
+          "argumentValue": "0",
+          "name": "1",
+          "actionID": "3271"
+        },
+        {
+          "argumentValue": "0.05",
+          "name": "2",
+          "actionID": "3271"
+        },
+        {
+          "argumentValue": "0.1",
+          "name": "3",
+          "actionID": "3271"
+        },
+        {
+          "argumentValue": "0.15",
+          "name": "4",
+          "actionID": "3271"
+        },
+        {
+          "argumentValue": "0.2",
+          "name": "5",
+          "actionID": "3271"
+        },
+        {
+          "argumentValue": "0.25",
+          "name": "6",
+          "actionID": "3271"
+        },
+        {
+          "argumentValue": "0.3",
+          "name": "7",
+          "actionID": "3271"
+        },
+        {
+          "argumentValue": "0.35",
+          "name": "8",
+          "actionID": "3271"
+        },
+        {
+          "argumentValue": "0.4",
+          "name": "9",
+          "actionID": "3271"
+        },
+        {
+          "argumentValue": "0.45",
+          "name": "10",
+          "actionID": "3271"
+        },
+        {
+          "argumentValue": "0.5",
+          "name": "11",
+          "actionID": "3271"
+        },
+        {
+          "argumentValue": "0.55",
+          "name": "12",
+          "actionID": "3271"
+        },
+        {
+          "argumentValue": "0.6",
+          "name": "13",
+          "actionID": "3271"
+        },
+        {
+          "argumentValue": "0.65",
+          "name": "14",
+          "actionID": "3271"
+        },
+        {
+          "argumentValue": "0.7",
+          "name": "15",
+          "actionID": "3271"
+        },
+        {
+          "argumentValue": "0.75",
+          "name": "16",
+          "actionID": "3271"
+        },
+        {
+          "argumentValue": "0.8",
+          "name": "17",
+          "actionID": "3271"
+        },
+        {
+          "argumentValue": "0.85",
+          "name": "18",
+          "actionID": "3271"
+        },
+        {
+          "argumentValue": "0.9",
+          "name": "19",
+          "actionID": "3271"
+        },
+        {
+          "argumentValue": "0.95",
+          "name": "20",
+          "actionID": "3271"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "VHF Radio",
+      "name": "Volume",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.3f",
+          "isExportedEveryFrame": false,
+          "id": "410"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.1,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "7",
+          "actionId": "3355"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "VHF Radio",
+      "name": "Tone",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "411"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "7",
+          "pushId": "3356",
+          "pushValue": "1.0",
+          "releaseId": "3356",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "VHF Radio",
+      "name": "10MHz Selector",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.3f",
+          "isExportedEveryFrame": false,
+          "id": "412"
+        }
+      ],
+      "deviceId": "7",
+      "positions": [
+        {
+          "argumentValue": "0.000",
+          "name": "0",
+          "actionID": "3357"
+        },
+        {
+          "argumentValue": "0.083",
+          "name": "1",
+          "actionID": "3357"
+        },
+        {
+          "argumentValue": "0.167",
+          "name": "2",
+          "actionID": "3357"
+        },
+        {
+          "argumentValue": "0.250",
+          "name": "3",
+          "actionID": "3357"
+        },
+        {
+          "argumentValue": "0.333",
+          "name": "4",
+          "actionID": "3357"
+        },
+        {
+          "argumentValue": "0.416",
+          "name": "5",
+          "actionID": "3357"
+        },
+        {
+          "argumentValue": "0.500",
+          "name": "6",
+          "actionID": "3357"
+        },
+        {
+          "argumentValue": "0.583",
+          "name": "7",
+          "actionID": "3357"
+        },
+        {
+          "argumentValue": "0.667",
+          "name": "8",
+          "actionID": "3357"
+        },
+        {
+          "argumentValue": "0.750",
+          "name": "9",
+          "actionID": "3357"
+        },
+        {
+          "argumentValue": "0.833",
+          "name": "10",
+          "actionID": "3357"
+        },
+        {
+          "argumentValue": "0.916",
+          "name": "11",
+          "actionID": "3357"
+        },
+        {
+          "argumentValue": "1.000",
+          "name": "12",
+          "actionID": "3357"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "VHF Radio",
+      "name": "1MHz Selector",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "413"
+        }
+      ],
+      "deviceId": "7",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "0",
+          "actionID": "3358"
+        },
+        {
+          "argumentValue": "0.1",
+          "name": "1",
+          "actionID": "3358"
+        },
+        {
+          "argumentValue": "0.2",
+          "name": "2",
+          "actionID": "3358"
+        },
+        {
+          "argumentValue": "0.3",
+          "name": "3",
+          "actionID": "3358"
+        },
+        {
+          "argumentValue": "0.4",
+          "name": "4",
+          "actionID": "3358"
+        },
+        {
+          "argumentValue": "0.5",
+          "name": "5",
+          "actionID": "3358"
+        },
+        {
+          "argumentValue": "0.6",
+          "name": "6",
+          "actionID": "3358"
+        },
+        {
+          "argumentValue": "0.7",
+          "name": "7",
+          "actionID": "3358"
+        },
+        {
+          "argumentValue": "0.8",
+          "name": "8",
+          "actionID": "3358"
+        },
+        {
+          "argumentValue": "0.9",
+          "name": "9",
+          "actionID": "3358"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "VHF Radio",
+      "name": "100KHz Selector",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "414"
+        }
+      ],
+      "deviceId": "7",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "0",
+          "actionID": "3359"
+        },
+        {
+          "argumentValue": "0.1",
+          "name": "1",
+          "actionID": "3359"
+        },
+        {
+          "argumentValue": "0.2",
+          "name": "2",
+          "actionID": "3359"
+        },
+        {
+          "argumentValue": "0.3",
+          "name": "3",
+          "actionID": "3359"
+        },
+        {
+          "argumentValue": "0.4",
+          "name": "4",
+          "actionID": "3359"
+        },
+        {
+          "argumentValue": "0.5",
+          "name": "5",
+          "actionID": "3359"
+        },
+        {
+          "argumentValue": "0.6",
+          "name": "6",
+          "actionID": "3359"
+        },
+        {
+          "argumentValue": "0.7",
+          "name": "7",
+          "actionID": "3359"
+        },
+        {
+          "argumentValue": "0.8",
+          "name": "8",
+          "actionID": "3359"
+        },
+        {
+          "argumentValue": "0.9",
+          "name": "9",
+          "actionID": "3359"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "VHF Radio",
+      "name": "25KHz Selector",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.2f",
+          "isExportedEveryFrame": false,
+          "id": "415"
+        }
+      ],
+      "deviceId": "7",
+      "positions": [
+        {
+          "argumentValue": "0.00",
+          "name": "0",
+          "actionID": "3360"
+        },
+        {
+          "argumentValue": "0.25",
+          "name": "1",
+          "actionID": "3360"
+        },
+        {
+          "argumentValue": "0.50",
+          "name": "2",
+          "actionID": "3360"
+        },
+        {
+          "argumentValue": "0.75",
+          "name": "3",
+          "actionID": "3360"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "VHF Radio",
+      "name": "Frequency Control Selector",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.2f",
+          "isExportedEveryFrame": false,
+          "id": "416"
+        }
+      ],
+      "deviceId": "7",
+      "positions": [
+        {
+          "argumentValue": "0.00",
+          "name": "0",
+          "actionID": "3361"
+        },
+        {
+          "argumentValue": "0.33",
+          "name": "1",
+          "actionID": "3361"
+        },
+        {
+          "argumentValue": "0.67",
+          "name": "2",
+          "actionID": "3361"
+        },
+        {
+          "argumentValue": "1.00",
+          "name": "3",
+          "actionID": "3361"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "VHF Radio",
+      "name": "Load Pushbutton",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "417"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "7",
+          "pushId": "3362",
+          "pushValue": "1.0",
+          "releaseId": "3362",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "VHF Radio",
+      "name": "Preset Channel Selector",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.2f",
+          "isExportedEveryFrame": false,
+          "id": "418"
+        }
+      ],
+      "deviceId": "7",
+      "positions": [
+        {
+          "argumentValue": "0",
+          "name": "1",
+          "actionID": "3363"
+        },
+        {
+          "argumentValue": "0.05",
+          "name": "2",
+          "actionID": "3363"
+        },
+        {
+          "argumentValue": "0.1",
+          "name": "3",
+          "actionID": "3363"
+        },
+        {
+          "argumentValue": "0.15",
+          "name": "4",
+          "actionID": "3363"
+        },
+        {
+          "argumentValue": "0.2",
+          "name": "5",
+          "actionID": "3363"
+        },
+        {
+          "argumentValue": "0.25",
+          "name": "6",
+          "actionID": "3363"
+        },
+        {
+          "argumentValue": "0.3",
+          "name": "7",
+          "actionID": "3363"
+        },
+        {
+          "argumentValue": "0.35",
+          "name": "8",
+          "actionID": "3363"
+        },
+        {
+          "argumentValue": "0.4",
+          "name": "9",
+          "actionID": "3363"
+        },
+        {
+          "argumentValue": "0.45",
+          "name": "10",
+          "actionID": "3363"
+        },
+        {
+          "argumentValue": "0.5",
+          "name": "11",
+          "actionID": "3363"
+        },
+        {
+          "argumentValue": "0.55",
+          "name": "12",
+          "actionID": "3363"
+        },
+        {
+          "argumentValue": "0.6",
+          "name": "13",
+          "actionID": "3363"
+        },
+        {
+          "argumentValue": "0.65",
+          "name": "14",
+          "actionID": "3363"
+        },
+        {
+          "argumentValue": "0.7",
+          "name": "15",
+          "actionID": "3363"
+        },
+        {
+          "argumentValue": "0.75",
+          "name": "16",
+          "actionID": "3363"
+        },
+        {
+          "argumentValue": "0.8",
+          "name": "17",
+          "actionID": "3363"
+        },
+        {
+          "argumentValue": "0.85",
+          "name": "18",
+          "actionID": "3363"
+        },
+        {
+          "argumentValue": "0.9",
+          "name": "19",
+          "actionID": "3363"
+        },
+        {
+          "argumentValue": "0.95",
+          "name": "20",
+          "actionID": "3363"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "VHF Radio",
+      "name": "Mode Selector",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "419"
+        }
+      ],
+      "deviceId": "7",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "0",
+          "actionID": "3364"
+        },
+        {
+          "argumentValue": "0.5",
+          "name": "1",
+          "actionID": "3364"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "2",
+          "actionID": "3364"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "VOR ILS Receiver",
+      "name": "MHz Selector",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.2f",
+          "isExportedEveryFrame": false,
+          "id": "650"
+        }
+      ],
+      "deviceId": "41",
+      "positions": [
+        {
+          "argumentValue": "0",
+          "name": "1",
+          "actionID": "3398"
+        },
+        {
+          "argumentValue": "0.1",
+          "name": "2",
+          "actionID": "3398"
+        },
+        {
+          "argumentValue": "0.2",
+          "name": "3",
+          "actionID": "3398"
+        },
+        {
+          "argumentValue": "0.3",
+          "name": "4",
+          "actionID": "3398"
+        },
+        {
+          "argumentValue": "0.4",
+          "name": "5",
+          "actionID": "3398"
+        },
+        {
+          "argumentValue": "0.5",
+          "name": "6",
+          "actionID": "3398"
+        },
+        {
+          "argumentValue": "0.6",
+          "name": "7",
+          "actionID": "3398"
+        },
+        {
+          "argumentValue": "0.7",
+          "name": "8",
+          "actionID": "3398"
+        },
+        {
+          "argumentValue": "0.8",
+          "name": "9",
+          "actionID": "3398"
+        },
+        {
+          "argumentValue": "0.9",
+          "name": "10",
+          "actionID": "3398"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "VOR ILS Receiver",
+      "name": "KHz Selector",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.2f",
+          "isExportedEveryFrame": false,
+          "id": "651"
+        }
+      ],
+      "deviceId": "41",
+      "positions": [
+        {
+          "argumentValue": "0",
+          "name": "1",
+          "actionID": "3399"
+        },
+        {
+          "argumentValue": "0.1",
+          "name": "2",
+          "actionID": "3399"
+        },
+        {
+          "argumentValue": "0.2",
+          "name": "3",
+          "actionID": "3399"
+        },
+        {
+          "argumentValue": "0.3",
+          "name": "4",
+          "actionID": "3399"
+        },
+        {
+          "argumentValue": "0.4",
+          "name": "5",
+          "actionID": "3399"
+        },
+        {
+          "argumentValue": "0.5",
+          "name": "6",
+          "actionID": "3399"
+        },
+        {
+          "argumentValue": "0.6",
+          "name": "7",
+          "actionID": "3399"
+        },
+        {
+          "argumentValue": "0.7",
+          "name": "8",
+          "actionID": "3399"
+        },
+        {
+          "argumentValue": "0.8",
+          "name": "9",
+          "actionID": "3399"
+        },
+        {
+          "argumentValue": "0.9",
+          "name": "10",
+          "actionID": "3399"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "VOR ILS Receiver",
+      "name": "Marker Beacon HI/LO",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "652"
+        }
+      ],
+      "deviceId": "41",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "High",
+          "actionID": "3260"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Low",
+          "actionID": "3260"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "VOR ILS Receiver",
+      "name": "Power Selector OFF/ON/TEST",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "653"
+        }
+      ],
+      "deviceId": "41",
+      "positions": [
+        {
+          "argumentValue": "-1.0",
+          "name": "Off",
+          "actionID": "3400"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "On",
+          "actionID": "3400"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Test",
+          "actionID": "3400"
         }
       ]
     },
