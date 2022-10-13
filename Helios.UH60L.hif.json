@@ -1,7 +1,7 @@
 {
   "source": "Helios",
-  "version": "1.6.1000.0000",
-  "commit": "cea407555e764a1b49ebc05bfab9c1ba33228f93",
+  "version": "1.6.5400.0001",
+  "commit": "20d924d31c1372695f81879e0649143df943a4cc",
   "type": "Existing",
   "name": "DCS UH-60L Blackhawk",
   "module": "UH-60L",
@@ -881,17 +881,15 @@
       ]
     },
     {
-      "heliosType": "DCS.Common.NetworkValue",
+      "heliosType": "DCS.UH60L.Functions.Chronometer",
       "device": "Chronometer (Copilot)",
-      "name": "Time Display",
-      "description": "Display of the Chronometer Time",
+      "name": "Time",
+      "description": "Time in hours, minutes and delimited seconds",
       "exports": [
         {
           "id": "2098"
         }
-      ],
-      "valueDescription": "Text",
-      "unit": "Text"
+      ]
     },
     {
       "heliosType": "DCS.Common.NetworkValue",
@@ -973,17 +971,15 @@
       ]
     },
     {
-      "heliosType": "DCS.Common.NetworkValue",
+      "heliosType": "DCS.UH60L.Functions.Chronometer",
       "device": "Chronometer (Pilot)",
-      "name": "Time Display",
-      "description": "Display of the Chronometer Time",
+      "name": "Time",
+      "description": "Time in hours, minutes and delimited seconds",
       "exports": [
         {
           "id": "2096"
         }
-      ],
-      "valueDescription": "Text",
-      "unit": "Text"
+      ]
     },
     {
       "heliosType": "DCS.Common.NetworkValue",
@@ -4927,7 +4923,7 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "454"
+          "id": "453"
         }
       ]
     },
@@ -4938,7 +4934,7 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "455"
+          "id": "454"
         }
       ]
     },
@@ -6479,6 +6475,98 @@
       }
     },
     {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "RADAR Alt (Copilot)",
+      "name": "Altitude Needle",
+      "description": "Position of the altitude needle",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "186"
+        }
+      ],
+      "baseValue": 0.0,
+      "scale": 360.0,
+      "valueDescription": "Rotational position of the needle 0-360",
+      "unit": "Degrees"
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "RADAR Alt (Copilot)",
+      "name": "Low Altitude Bug Marker",
+      "description": "Position of the indicator showing the low altitude",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "191"
+        }
+      ],
+      "baseValue": 0.0,
+      "scale": 360.0,
+      "valueDescription": "Rotational position of the marker 0-360",
+      "unit": "Degrees"
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "RADAR Alt (Copilot)",
+      "name": "High Altitude Bug Marker",
+      "description": "Position of the indicator showing the high altitude",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "192"
+        }
+      ],
+      "baseValue": 0.0,
+      "scale": 360.0,
+      "valueDescription": "Rotational position of the marker 0-360",
+      "unit": "Degrees"
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "RADAR Alt (Copilot)",
+      "name": "Low flag",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "193"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "RADAR Alt (Copilot)",
+      "name": "High flag",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "194"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "RADAR Alt (Copilot)",
+      "name": "Off flag",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "195"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.UH60L.Functions.RADARAltimeter",
+      "device": "RADAR Alt (Copilot)",
+      "name": "Digital Altitude",
+      "description": "RADAR altitude above ground in feet for digital display.",
+      "exports": [
+        {
+          "id": "2056"
+        }
+      ]
+    },
+    {
       "heliosType": "DCS.Common.Axis",
       "device": "RADAR Alt (Pilot)",
       "name": "Low Altitude Set",
@@ -6523,6 +6611,98 @@
           "actionId": "3415"
         }
       }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "RADAR Alt (Pilot)",
+      "name": "Altitude Needle",
+      "description": "Position of the altitude needle",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "173"
+        }
+      ],
+      "baseValue": 0.0,
+      "scale": 360.0,
+      "valueDescription": "Rotational position of the needle 0-360",
+      "unit": "Degrees"
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "RADAR Alt (Pilot)",
+      "name": "Low Altitude Bug Marker",
+      "description": "Position of the indicator showing the low altitude",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "178"
+        }
+      ],
+      "baseValue": 0.0,
+      "scale": 360.0,
+      "valueDescription": "Rotational position of the marker 0-360",
+      "unit": "Degrees"
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "RADAR Alt (Pilot)",
+      "name": "High Altitude Bug Marker",
+      "description": "Position of the indicator showing the high altitude",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "179"
+        }
+      ],
+      "baseValue": 0.0,
+      "scale": 360.0,
+      "valueDescription": "Rotational position of the marker 0-360",
+      "unit": "Degrees"
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "RADAR Alt (Pilot)",
+      "name": "Low flag",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "180"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "RADAR Alt (Pilot)",
+      "name": "High flag",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "181"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "RADAR Alt (Pilot)",
+      "name": "Off flag",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "182"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.UH60L.Functions.RADARAltimeter",
+      "device": "RADAR Alt (Pilot)",
+      "name": "Digital Altitude",
+      "description": "RADAR altitude above ground in feet for digital display.",
+      "exports": [
+        {
+          "id": "2055"
+        }
+      ]
     },
     {
       "heliosType": "DCS.Common.Switch",
@@ -6802,7 +6982,7 @@
     },
     {
       "heliosType": "DCS.Common.Switch",
-      "device": "Stabilator Control",
+      "device": "Stability Control",
       "name": "Stabilator Manual Slew UP/DOWN",
       "description": "Current position of this switch.",
       "exports": [
@@ -6834,7 +7014,7 @@
     },
     {
       "heliosType": "DCS.Common.PushButton",
-      "device": "Stabilator Control",
+      "device": "Stability Control",
       "name": "Stabilator Auto ON/OFF",
       "description": "Current state of this button.",
       "exports": [
@@ -6856,7 +7036,7 @@
     },
     {
       "heliosType": "DCS.Common.PushButton",
-      "device": "Stabilator Control",
+      "device": "Stability Control",
       "name": "SAS 1 ON/OFF",
       "description": "Current state of this button.",
       "exports": [
@@ -6877,8 +7057,34 @@
       ]
     },
     {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Stability Control",
+      "name": "Stabilator Position",
+      "description": "Needle indicator",
+      "exports": [
+        {
+          "format": "%0.2f",
+          "id": "3406"
+        }
+      ],
+      "valueDescription": "-1 to 1",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Stability Control",
+      "name": "Off flag",
+      "description": "Flag indicating the stabilator position indicator is off",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "3407"
+        }
+      ]
+    },
+    {
       "heliosType": "DCS.Common.PushButton",
-      "device": "Stabilator Control",
+      "device": "Stability Control",
       "name": "SAS 2 ON/OFF",
       "description": "Current state of this button.",
       "exports": [
@@ -6900,7 +7106,7 @@
     },
     {
       "heliosType": "DCS.Common.PushButton",
-      "device": "Stabilator Control",
+      "device": "Stability Control",
       "name": "Trim ON/OFF",
       "description": "Current state of this button.",
       "exports": [
@@ -6922,7 +7128,7 @@
     },
     {
       "heliosType": "DCS.Common.PushButton",
-      "device": "Stabilator Control",
+      "device": "Stability Control",
       "name": "FPS ON/OFF",
       "description": "Current state of this button.",
       "exports": [
@@ -6944,7 +7150,7 @@
     },
     {
       "heliosType": "DCS.Common.PushButton",
-      "device": "Stabilator Control",
+      "device": "Stability Control",
       "name": "SAS Boost ON/OFF",
       "description": "Current state of this button.",
       "exports": [
@@ -6966,7 +7172,7 @@
     },
     {
       "heliosType": "DCS.Common.PushButton",
-      "device": "Stabilator Control",
+      "device": "Stability Control",
       "name": "SAS Power On Reset",
       "description": "Current state of this button.",
       "exports": [
