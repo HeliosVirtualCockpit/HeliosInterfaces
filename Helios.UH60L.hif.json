@@ -888,21 +888,14 @@
       "exports": [
         {
           "id": "2098"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.NetworkValue",
-      "device": "Chronometer (Copilot)",
-      "name": "Mode Display",
-      "description": "Display of the Chronometer Mode",
-      "exports": [
+        },
         {
           "id": "2099"
         }
       ],
-      "valueDescription": "Text",
-      "unit": "Text"
+      "device2": "Chronometer (Copilot)",
+      "name2": "Time",
+      "description2": "Chronometer mode setting."
     },
     {
       "heliosType": "DCS.Common.PushButton",
@@ -978,21 +971,14 @@
       "exports": [
         {
           "id": "2096"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.NetworkValue",
-      "device": "Chronometer (Pilot)",
-      "name": "Mode Display",
-      "description": "Display of the Chronometer Mode",
-      "exports": [
+        },
         {
           "id": "2097"
         }
       ],
-      "valueDescription": "Text",
-      "unit": "Text"
+      "device2": "Chronometer (Pilot)",
+      "name2": "Time",
+      "description2": "Chronometer mode setting."
     },
     {
       "heliosType": "DCS.Common.PushButton",
@@ -2804,7 +2790,7 @@
     {
       "heliosType": "DCS.UH60L.Functions.SegmentedMeter",
       "device": "Engine Management",
-      "name": "Transmission pressure",
+      "name": "Transmission Pressure",
       "description": "Pressure in transmission in PSI",
       "exports": [
         {
