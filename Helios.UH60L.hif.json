@@ -1,6 +1,6 @@
 {
   "source": "Helios",
-  "version": "1.6.5400.0001",
+  "version": "1.6.5400.0002",
   "commit": "20d924d31c1372695f81879e0649143df943a4cc",
   "type": "Existing",
   "name": "DCS UH-60L Blackhawk",
@@ -884,7 +884,7 @@
       "heliosType": "DCS.UH60L.Functions.Chronometer",
       "device": "Chronometer (Copilot)",
       "name": "Time",
-      "description": "Time in hours, minutes and delimited seconds",
+      "description": "Time in hours, minutes, delimited seconds and Chronometer Mode",
       "exports": [
         {
           "id": "2098"
@@ -892,10 +892,7 @@
         {
           "id": "2099"
         }
-      ],
-      "device2": "Chronometer (Copilot)",
-      "name2": "Time",
-      "description2": "Chronometer mode setting."
+      ]
     },
     {
       "heliosType": "DCS.Common.PushButton",
@@ -967,7 +964,7 @@
       "heliosType": "DCS.UH60L.Functions.Chronometer",
       "device": "Chronometer (Pilot)",
       "name": "Time",
-      "description": "Time in hours, minutes and delimited seconds",
+      "description": "Time in hours, minutes, delimited seconds and Chronometer Mode",
       "exports": [
         {
           "id": "2096"
@@ -975,10 +972,7 @@
         {
           "id": "2097"
         }
-      ],
-      "device2": "Chronometer (Pilot)",
-      "name2": "Time",
-      "description2": "Chronometer mode setting."
+      ]
     },
     {
       "heliosType": "DCS.Common.PushButton",
