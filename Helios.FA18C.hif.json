@@ -1,7 +1,7 @@
 {
   "source": "Helios",
-  "version": "1.6.5200.0003",
-  "commit": "",
+  "version": "1.6.5400.0002",
+  "commit": "a404d275563b6de091d564bed676962b36892cdb",
   "type": "Existing",
   "name": "DCS F/A-18C",
   "module": "FA-18C_hornet",
@@ -2151,20 +2151,20 @@
         {
           "argumentValue": "1",
           "name": "Open",
-          "actionID": "3002",
-          "stopActionID": "3002",
+          "actionID": "3001",
+          "stopActionID": "3001",
           "stopActionValue": "0"
         },
         {
           "argumentValue": "0",
           "name": "Hold",
-          "actionID": "3003"
+          "actionID": "3002"
         },
         {
           "argumentValue": "-1",
           "name": "Close",
-          "actionID": "3003",
-          "stopActionID": "3003",
+          "actionID": "3002",
+          "stopActionID": "3002",
           "stopActionValue": "0"
         }
       ]
