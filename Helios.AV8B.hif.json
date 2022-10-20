@@ -1,7 +1,7 @@
 {
   "source": "Helios",
-  "version": "1.6.5307.0008",
-  "commit": "",
+  "version": "1.6.5400.0003",
+  "commit": "a404d275563b6de091d564bed676962b36892cdb",
   "type": "Existing",
   "name": "DCS AV-8B",
   "module": "AV8BNA",
@@ -4209,7 +4209,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%1d",
+          "format": "%0.1f",
           "isExportedEveryFrame": false,
           "id": "220"
         }
@@ -4217,19 +4217,24 @@
       "deviceId": "26",
       "positions": [
         {
-          "argumentValue": "-1",
+          "exitValue": "0.0",
+          "argumentValue": "-1.0",
           "name": "Day",
-          "actionID": "3220"
+          "actionID": "3007",
+          "stopActionID": "3007",
+          "stopActionValue": "0.0"
         },
         {
-          "argumentValue": "0",
-          "name": "Off",
-          "actionID": "3220"
+          "argumentValue": "0.0",
+          "name": "Off"
         },
         {
-          "argumentValue": "1",
+          "exitValue": "0.0",
+          "argumentValue": "1.0",
           "name": "Night",
-          "actionID": "3220"
+          "actionID": "3008",
+          "stopActionID": "3008",
+          "stopActionValue": "0.0"
         }
       ]
     },
@@ -4240,7 +4245,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%1d",
+          "format": "%0.1f",
           "isExportedEveryFrame": false,
           "id": "221"
         }
@@ -4248,19 +4253,24 @@
       "deviceId": "26",
       "positions": [
         {
-          "argumentValue": "-1",
-          "name": "More",
-          "actionID": "3221"
+          "exitValue": "0.0",
+          "argumentValue": "1.0",
+          "name": "Up",
+          "actionID": "3001",
+          "stopActionID": "3001",
+          "stopActionValue": "0.0"
         },
         {
-          "argumentValue": "0",
-          "name": "Off",
-          "actionID": "3221"
+          "argumentValue": "0.0",
+          "name": "Off"
         },
         {
-          "argumentValue": "1",
-          "name": "Less",
-          "actionID": "3221"
+          "exitValue": "0.0",
+          "argumentValue": "-1.0",
+          "name": "Down",
+          "actionID": "3002",
+          "stopActionID": "3002",
+          "stopActionValue": "0.0"
         }
       ]
     },
@@ -4271,7 +4281,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%1d",
+          "format": "%0.1f",
           "isExportedEveryFrame": false,
           "id": "222"
         }
@@ -4279,19 +4289,24 @@
       "deviceId": "26",
       "positions": [
         {
-          "argumentValue": "-1",
+          "exitValue": "0.0",
+          "argumentValue": "1.0",
           "name": "Up",
-          "actionID": "3222"
+          "actionID": "3003",
+          "stopActionID": "3003",
+          "stopActionValue": "0.0"
         },
         {
-          "argumentValue": "0",
-          "name": "Off",
-          "actionID": "3222"
+          "argumentValue": "0.0",
+          "name": "Off"
         },
         {
-          "argumentValue": "1",
+          "exitValue": "0.0",
+          "argumentValue": "-1.0",
           "name": "Down",
-          "actionID": "3222"
+          "actionID": "3004",
+          "stopActionID": "3004",
+          "stopActionValue": "0.0"
         }
       ]
     },
@@ -4302,7 +4317,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%1d",
+          "format": "%0.1f",
           "isExportedEveryFrame": false,
           "id": "223"
         }
@@ -4310,19 +4325,24 @@
       "deviceId": "26",
       "positions": [
         {
-          "argumentValue": "-1",
+          "exitValue": "0.0",
+          "argumentValue": "1.0",
           "name": "Up",
-          "actionID": "3223"
+          "actionID": "3005",
+          "stopActionID": "3005",
+          "stopActionValue": "0.0"
         },
         {
-          "argumentValue": "0",
-          "name": "Off",
-          "actionID": "3223"
+          "argumentValue": "0.0",
+          "name": "Off"
         },
         {
-          "argumentValue": "1",
+          "exitValue": "0.0",
+          "argumentValue": "-1.0",
           "name": "Down",
-          "actionID": "3223"
+          "actionID": "3006",
+          "stopActionID": "3006",
+          "stopActionValue": "0.0"
         }
       ]
     },
@@ -5541,7 +5561,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%1d",
+          "format": "%0.1f",
           "isExportedEveryFrame": false,
           "id": "244"
         }
@@ -5549,19 +5569,24 @@
       "deviceId": "27",
       "positions": [
         {
-          "argumentValue": "-1",
+          "exitValue": "0.0",
+          "argumentValue": "-1.0",
           "name": "Day",
-          "actionID": "3244"
+          "actionID": "3017",
+          "stopActionID": "3017",
+          "stopActionValue": "0.0"
         },
         {
-          "argumentValue": "0",
-          "name": "Off",
-          "actionID": "3244"
+          "argumentValue": "0.0",
+          "name": "Off"
         },
         {
-          "argumentValue": "1",
+          "exitValue": "0.0",
+          "argumentValue": "1.0",
           "name": "Night",
-          "actionID": "3244"
+          "actionID": "3018",
+          "stopActionID": "3018",
+          "stopActionValue": "0.0"
         }
       ]
     },
@@ -5572,7 +5597,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%1d",
+          "format": "%0.1f",
           "isExportedEveryFrame": false,
           "id": "245"
         }
@@ -5580,19 +5605,24 @@
       "deviceId": "27",
       "positions": [
         {
-          "argumentValue": "-1",
-          "name": "More",
-          "actionID": "3245"
+          "exitValue": "0.0",
+          "argumentValue": "1.0",
+          "name": "Up",
+          "actionID": "3011",
+          "stopActionID": "3011",
+          "stopActionValue": "0.0"
         },
         {
-          "argumentValue": "0",
-          "name": "Off",
-          "actionID": "3245"
+          "argumentValue": "0.0",
+          "name": "Off"
         },
         {
-          "argumentValue": "1",
-          "name": "Less",
-          "actionID": "3245"
+          "exitValue": "0.0",
+          "argumentValue": "-1.0",
+          "name": "Down",
+          "actionID": "3012",
+          "stopActionID": "3012",
+          "stopActionValue": "0.0"
         }
       ]
     },
@@ -5603,7 +5633,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%1d",
+          "format": "%0.1f",
           "isExportedEveryFrame": false,
           "id": "246"
         }
@@ -5611,19 +5641,24 @@
       "deviceId": "27",
       "positions": [
         {
-          "argumentValue": "-1",
+          "exitValue": "0.0",
+          "argumentValue": "1.0",
           "name": "Up",
-          "actionID": "3246"
+          "actionID": "3013",
+          "stopActionID": "3013",
+          "stopActionValue": "0.0"
         },
         {
-          "argumentValue": "0",
-          "name": "Off",
-          "actionID": "3246"
+          "argumentValue": "0.0",
+          "name": "Off"
         },
         {
-          "argumentValue": "1",
+          "exitValue": "0.0",
+          "argumentValue": "-1.0",
           "name": "Down",
-          "actionID": "3246"
+          "actionID": "3014",
+          "stopActionID": "3014",
+          "stopActionValue": "0.0"
         }
       ]
     },
@@ -5634,7 +5669,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%1d",
+          "format": "%0.1f",
           "isExportedEveryFrame": false,
           "id": "247"
         }
@@ -5642,19 +5677,24 @@
       "deviceId": "27",
       "positions": [
         {
-          "argumentValue": "-1",
+          "exitValue": "0.0",
+          "argumentValue": "1.0",
           "name": "Up",
-          "actionID": "3247"
+          "actionID": "3015",
+          "stopActionID": "3015",
+          "stopActionValue": "0.0"
         },
         {
-          "argumentValue": "0",
-          "name": "Off",
-          "actionID": "3247"
+          "argumentValue": "0.0",
+          "name": "Off"
         },
         {
-          "argumentValue": "1",
+          "exitValue": "0.0",
+          "argumentValue": "-1.0",
           "name": "Down",
-          "actionID": "3247"
+          "actionID": "3016",
+          "stopActionID": "3016",
+          "stopActionValue": "0.0"
         }
       ]
     },
