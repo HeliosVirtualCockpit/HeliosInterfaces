@@ -3,7 +3,7 @@
   "version": "1.6.5400.0000",
   "commit": "0a199c5d",
   "type": "Existing",
-  "name": "DCS M2000C (from Helios)",
+  "name": "DCS M2000C",
   "module": "M-2000C",
   "vehicles": [
     "M-2000C"
