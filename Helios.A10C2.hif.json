@@ -1,7 +1,7 @@
 {
   "source": "Helios",
-  "version": "1.6.5400.0000",
-  "commit": "0c79936",
+  "version": "1.6.5500.0000",
+  "commit": "d8d5e5255a02ffc47d63290b21e7b2e686c819f7",
   "type": "Existing",
   "name": "DCS A-10C II",
   "module": "A-10C_2",
@@ -9645,20 +9645,23 @@
       "deviceId": "39",
       "positions": [
         {
+          "exitValue": "0.5",
           "argumentValue": "1.0",
-          "name": "Open",
-          "actionID": "3006"
-        },
-        {
-          "argumentValue": "0.5",
-          "name": "Hold",
-          "actionID": "3006"
-        },
-        {
-          "argumentValue": "0.0",
           "name": "Close",
           "actionID": "3007",
           "stopActionID": "3007",
+          "stopActionValue": "0.5"
+        },
+        {
+          "argumentValue": "0.5",
+          "name": "Hold"
+        },
+        {
+          "exitValue": "0.5",
+          "argumentValue": "0.0",
+          "name": "Open",
+          "actionID": "3006",
+          "stopActionID": "3006",
           "stopActionValue": "0.5"
         }
       ]
