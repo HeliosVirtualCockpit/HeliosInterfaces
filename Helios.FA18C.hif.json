@@ -1,7 +1,7 @@
 {
   "source": "Helios",
-  "version": "1.6.5400.0002",
-  "commit": "a404d275563b6de091d564bed676962b36892cdb",
+  "version": "1.6.5500.0000",
+  "commit": "7447b9263a285312019f143dd26807acb439fdd9",
   "type": "Existing",
   "name": "DCS F/A-18C",
   "module": "FA-18C_hornet",
@@ -3773,36 +3773,58 @@
       "deviceId": "5",
       "positions": [
         {
-          "argumentValue": "1",
-          "name": "On",
-          "actionID": "3005"
+          "exitValue": "0.0",
+          "argumentValue": "0.0",
+          "name": "Brake Off",
+          "actionID": "3005",
+          "stopActionID": "3005"
         },
         {
-          "argumentValue": "0",
-          "name": "Off",
-          "actionID": "3005"
+          "exitValue": "1.0",
+          "argumentValue": "1.0",
+          "name": "Parking Brake On",
+          "actionID": "3005",
+          "stopActionID": "3005"
         }
       ]
     },
     {
-      "heliosType": "DCS.Common.PushButton",
+      "heliosType": "DCS.Common.Switch",
       "device": "Gear system",
-      "name": "Brake Handle Park/Emergency",
-      "description": "Current state of this button.",
+      "name": "Emergency / Parking Brake Handle Park/Emergency",
+      "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.1f",
+          "format": "%0.3f",
           "isExportedEveryFrame": false,
           "id": "241"
         }
       ],
-      "buttons": [
+      "deviceId": "5",
+      "positions": [
         {
-          "deviceId": "5",
-          "pushId": "3006",
-          "pushValue": "1",
-          "releaseId": "3006",
-          "releaseValue": "0"
+          "exitValue": "0.000",
+          "argumentValue": "0.999",
+          "name": "Release",
+          "actionID": "3006",
+          "stopActionID": "3006",
+          "stopActionValue": "0.000"
+        },
+        {
+          "exitValue": "0.666",
+          "argumentValue": "0.666",
+          "name": "Park",
+          "actionID": "3007",
+          "stopActionID": "3007",
+          "stopActionValue": "0.666"
+        },
+        {
+          "exitValue": "0.000",
+          "argumentValue": "0.000",
+          "name": "Emergency",
+          "actionID": "3007",
+          "stopActionID": "3007",
+          "stopActionValue": "0.000"
         }
       ]
     },
