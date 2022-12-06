@@ -1,7 +1,7 @@
 {
   "source": "Helios",
   "version": "1.6.5500.0000",
-  "commit": "7447b9263a285312019f143dd26807acb439fdd9",
+  "commit": "9ee6d74eaad602b8a49ddf044c8bd22c70b17176",
   "type": "Existing",
   "name": "DCS F/A-18C",
   "module": "FA-18C_hornet",
@@ -759,14 +759,18 @@
       "deviceId": "3",
       "positions": [
         {
+          "exitValue": "1.0",
           "argumentValue": "1.0",
           "name": "ON",
-          "actionID": "3016"
+          "actionID": "3016",
+          "stopActionID": "3016"
         },
         {
+          "exitValue": "0.0",
           "argumentValue": "0.0",
           "name": "AUTO",
-          "actionID": "3016"
+          "actionID": "3016",
+          "stopActionID": "3016"
         }
       ]
     },
@@ -790,12 +794,12 @@
           "actionID": "3014"
         },
         {
-          "argumentValue": "0.5",
+          "argumentValue": "0.0",
           "name": "OFF",
           "actionID": "3014"
         },
         {
-          "argumentValue": "0.0",
+          "argumentValue": "-1.0",
           "name": "TEST",
           "actionID": "3014"
         }
@@ -2763,23 +2767,23 @@
       "deviceId": "11",
       "positions": [
         {
-          "argumentValue": "1.0",
-          "name": "R OFF",
+          "argumentValue": "0.0",
+          "name": "OFF",
           "actionID": "3001"
         },
         {
-          "argumentValue": "0.7",
+          "argumentValue": "0.1",
+          "name": "L OFF",
+          "actionID": "3001"
+        },
+        {
+          "argumentValue": "0.2",
           "name": "NORM",
           "actionID": "3001"
         },
         {
           "argumentValue": "0.3",
-          "name": "L OFF",
-          "actionID": "3001"
-        },
-        {
-          "argumentValue": "0.0",
-          "name": "OFF",
+          "name": "R OFF",
           "actionID": "3001"
         }
       ]
@@ -3869,12 +3873,12 @@
       "deviceId": "34",
       "positions": [
         {
-          "argumentValue": "1.0",
+          "argumentValue": "0.2",
           "name": "NORM",
           "actionID": "3001"
         },
         {
-          "argumentValue": "0.5",
+          "argumentValue": "0.1",
           "name": "REJ 1",
           "actionID": "3001"
         },
@@ -3972,17 +3976,12 @@
       "deviceId": "34",
       "positions": [
         {
-          "argumentValue": "1.0",
-          "name": "W",
+          "argumentValue": "0.2",
+          "name": "W/B",
           "actionID": "3005"
         },
         {
-          "argumentValue": "0.7",
-          "name": "B",
-          "actionID": "3005"
-        },
-        {
-          "argumentValue": "0.3",
+          "argumentValue": "0.1",
           "name": "VID",
           "actionID": "3005"
         },
@@ -4085,12 +4084,12 @@
           "actionID": "3009"
         },
         {
-          "argumentValue": "0.5",
+          "argumentValue": "0.0",
           "name": "AUTO",
           "actionID": "3009"
         },
         {
-          "argumentValue": "0.0",
+          "argumentValue": "-1.0",
           "name": "STBY",
           "actionID": "3009"
         }
@@ -7326,28 +7325,28 @@
       "deviceId": "53",
       "positions": [
         {
-          "argumentValue": "1.0",
-          "name": "N",
+          "argumentValue": "0.0",
+          "name": "F",
           "actionID": "3007"
         },
         {
-          "argumentValue": "0.8",
-          "name": "I",
+          "argumentValue": "0.1",
+          "name": "U",
           "actionID": "3007"
         },
         {
-          "argumentValue": "0.5",
+          "argumentValue": "0.2",
           "name": "A",
           "actionID": "3007"
         },
         {
           "argumentValue": "0.3",
-          "name": "U",
+          "name": "I",
           "actionID": "3007"
         },
         {
-          "argumentValue": "0.0",
-          "name": "F",
+          "argumentValue": "0.4",
+          "name": "N",
           "actionID": "3007"
         }
       ]
@@ -7608,23 +7607,6 @@
       ]
     },
     {
-      "heliosType": "DCS.Common.RotaryEncoder",
-      "device": "SAI",
-      "name": "Pitch Trim / Cage",
-      "exports": [],
-      "argumentValue": 0.1,
-      "actions": {
-        "increment": {
-          "deviceId": "32",
-          "actionId": "3210"
-        },
-        "decrement": {
-          "deviceId": "32",
-          "actionId": "3210"
-        }
-      }
-    },
-    {
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "SAI",
       "name": "Pitch",
@@ -7693,6 +7675,51 @@
           "id": "209"
         }
       ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "SAI",
+      "name": "Cage Pull Switch",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "213"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "32",
+          "pushId": "3002",
+          "pushValue": "1.0",
+          "releaseId": "3002",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "SAI",
+      "name": "Pitch Adjust Knob",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%0.2f",
+          "isExportedEveryFrame": false,
+          "id": "214"
+        }
+      ],
+      "loop": true,
+      "argumentValue": 0.05,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "32",
+          "actionId": "3003"
+        }
+      }
     },
     {
       "heliosType": "DCS.Common.PushButton",
