@@ -1,7 +1,7 @@
 {
   "source": "Helios",
   "version": "1.6.5501.0000",
-  "commit": "b7feabfa2e5fc762375e54225d087b6fed52fbbf",
+  "commit": "90603ce1ff4807efa954c040abe9db0c92e0ace2",
   "type": "Existing",
   "name": "DCS A-10C",
   "module": "A-10C",
@@ -12839,152 +12839,182 @@
       ]
     },
     {
-      "heliosType": "DCS.Common.Rocker",
+      "heliosType": "DCS.Common.Switch",
       "device": "UFC",
       "name": "Steer",
-      "description": "Current state of this rocker.",
+      "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%1d",
+          "format": "%0.1f",
           "isExportedEveryFrame": false,
           "id": "405"
         }
       ],
-      "vertical": true,
-      "buttons": [
+      "deviceId": "8",
+      "positions": [
         {
-          "deviceId": "8",
-          "pushId": "3020",
-          "pushValue": "1",
-          "releaseId": "3020",
-          "releaseValue": "0"
+          "exitValue": "0.0",
+          "argumentValue": "1.0",
+          "name": "Up",
+          "actionID": "3020",
+          "stopActionID": "3020",
+          "stopActionValue": "0.0"
         },
         {
-          "deviceId": "8",
-          "pushId": "3021",
-          "pushValue": "-1",
-          "releaseId": "3021",
-          "releaseValue": "0"
+          "argumentValue": "0.0",
+          "name": "Middle"
+        },
+        {
+          "exitValue": "0.0",
+          "argumentValue": "-1.0",
+          "name": "Down",
+          "actionID": "3021",
+          "stopActionID": "3021",
+          "stopActionValue": "0.0"
         }
       ]
     },
     {
-      "heliosType": "DCS.Common.Rocker",
+      "heliosType": "DCS.Common.Switch",
       "device": "UFC",
       "name": "Data",
-      "description": "Current state of this rocker.",
+      "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%1d",
+          "format": "%0.1f",
           "isExportedEveryFrame": false,
           "id": "406"
         }
       ],
-      "vertical": true,
-      "buttons": [
+      "deviceId": "8",
+      "positions": [
         {
-          "deviceId": "8",
-          "pushId": "3022",
-          "pushValue": "1",
-          "releaseId": "3022",
-          "releaseValue": "0"
+          "exitValue": "0.0",
+          "argumentValue": "1.0",
+          "name": "Up",
+          "actionID": "3022",
+          "stopActionID": "3022",
+          "stopActionValue": "0.0"
         },
         {
-          "deviceId": "8",
-          "pushId": "3023",
-          "pushValue": "-1",
-          "releaseId": "3023",
-          "releaseValue": "0"
+          "argumentValue": "0.0",
+          "name": "Middle"
+        },
+        {
+          "exitValue": "0.0",
+          "argumentValue": "-1.0",
+          "name": "Down",
+          "actionID": "3023",
+          "stopActionID": "3023",
+          "stopActionValue": "0.0"
         }
       ]
     },
     {
-      "heliosType": "DCS.Common.Rocker",
+      "heliosType": "DCS.Common.Switch",
       "device": "UFC",
       "name": "Select",
-      "description": "Current state of this rocker.",
+      "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%1d",
+          "format": "%0.1f",
           "isExportedEveryFrame": false,
           "id": "407"
         }
       ],
-      "vertical": true,
-      "buttons": [
+      "deviceId": "8",
+      "positions": [
         {
-          "deviceId": "8",
-          "pushId": "3024",
-          "pushValue": "1",
-          "releaseId": "3024",
-          "releaseValue": "0"
+          "exitValue": "0.0",
+          "argumentValue": "1.0",
+          "name": "Up",
+          "actionID": "3024",
+          "stopActionID": "3024",
+          "stopActionValue": "0.0"
         },
         {
-          "deviceId": "8",
-          "pushId": "3025",
-          "pushValue": "-1",
-          "releaseId": "3025",
-          "releaseValue": "0"
+          "argumentValue": "0.0",
+          "name": "Middle"
+        },
+        {
+          "exitValue": "0.0",
+          "argumentValue": "-1.0",
+          "name": "Down",
+          "actionID": "3025",
+          "stopActionID": "3025",
+          "stopActionValue": "0.0"
         }
       ]
     },
     {
-      "heliosType": "DCS.Common.Rocker",
+      "heliosType": "DCS.Common.Switch",
       "device": "UFC",
       "name": "Adjust Depressible Pipper",
-      "description": "Current state of this rocker.",
+      "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%1d",
+          "format": "%0.1f",
           "isExportedEveryFrame": false,
           "id": "408"
         }
       ],
-      "vertical": true,
-      "buttons": [
+      "deviceId": "8",
+      "positions": [
         {
-          "deviceId": "8",
-          "pushId": "3026",
-          "pushValue": "1",
-          "releaseId": "3026",
-          "releaseValue": "0"
+          "exitValue": "0.0",
+          "argumentValue": "1.0",
+          "name": "Up",
+          "actionID": "3026",
+          "stopActionID": "3026",
+          "stopActionValue": "0.0"
         },
         {
-          "deviceId": "8",
-          "pushId": "3027",
-          "pushValue": "-1",
-          "releaseId": "3027",
-          "releaseValue": "0"
+          "argumentValue": "0.0",
+          "name": "Middle"
+        },
+        {
+          "exitValue": "0.0",
+          "argumentValue": "-1.0",
+          "name": "Down",
+          "actionID": "3027",
+          "stopActionID": "3027",
+          "stopActionValue": "0.0"
         }
       ]
     },
     {
-      "heliosType": "DCS.Common.Rocker",
+      "heliosType": "DCS.Common.Switch",
       "device": "UFC",
       "name": "HUD Brightness",
-      "description": "Current state of this rocker.",
+      "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%1d",
+          "format": "%0.1f",
           "isExportedEveryFrame": false,
           "id": "409"
         }
       ],
-      "vertical": false,
-      "buttons": [
+      "deviceId": "8",
+      "positions": [
         {
-          "deviceId": "8",
-          "pushId": "3028",
-          "pushValue": "1",
-          "releaseId": "3028",
-          "releaseValue": "0"
+          "exitValue": "0.0",
+          "argumentValue": "-1.0",
+          "name": "Left",
+          "actionID": "3029",
+          "stopActionID": "3029",
+          "stopActionValue": "0.0"
         },
         {
-          "deviceId": "8",
-          "pushId": "3029",
-          "pushValue": "-1",
-          "releaseId": "3029",
-          "releaseValue": "0"
+          "argumentValue": "0.0",
+          "name": "Middle"
+        },
+        {
+          "exitValue": "0.0",
+          "argumentValue": "1.0",
+          "name": "Right",
+          "actionID": "3028",
+          "stopActionID": "3028",
+          "stopActionValue": "0.0"
         }
       ]
     },
