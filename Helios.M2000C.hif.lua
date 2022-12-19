@@ -1,26 +1,9 @@
---[[
-
 function driver.processHighImportance(mainPanelDevice)
-    -- called at configured update rate
-
-    -- example for combining/processing arguments:
-    helios.send(2001, string.format(
-            "%0.4f;%0.4f;%0.4f",
-            mainPanelDevice:get_argument_value(220),
-            mainPanelDevice:get_argument_value(219),
-            mainPanelDevice:get_argument_value(218)
-        )
-    )
-
-    -- example for structured indications data:
-    local li = helios.parseIndication(1)
-    if li then
-        helios.send(2002, string.format("%s", helios.ensureString(li.someNamedField1)))
-        helios.send(2003, string.format("%s", helios.ensureString(li.someNamedField2)))
-    end
+	-- Send Altimeter Values	
+	helios.send(2051, string.format("%0.4f;%0.4f;%0.4f", mainPanelDevice:get_argument_value(306), mainPanelDevice:get_argument_value(307), mainPanelDevice:get_argument_value(305)))
+	helios.send(2059, string.format("%0.2f;%0.2f;%0.2f;%0.3f", mainPanelDevice:get_argument_value(310), mainPanelDevice:get_argument_value(311), mainPanelDevice:get_argument_value(312), mainPanelDevice:get_argument_value(313)))		
 end
 
-]]
 
 function driver.processLowImportance(mainPanelDevice)
     -- PCA_UR structured data
