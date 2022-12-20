@@ -1,7 +1,7 @@
 {
   "source": "Helios",
   "version": "1.6.5501.0000",
-  "commit": "89f37359a38b5580af2ade57b2be94b045e0953f",
+  "commit": "4d004f0fb821bcbfe75523ad60721243265cf0bf",
   "type": "Existing",
   "name": "DCS M2000C",
   "module": "M-2000C",
@@ -3252,23 +3252,17 @@
       ]
     },
     {
-      "heliosType": "DCS.Common.Axis",
+      "heliosType": "DCS.Common.RotaryEncoder",
       "device": "HUD/VTB",
       "name": "Minimum Altitude Selector",
-      "description": "Current value of this axis.",
-      "exports": [
-        {
-          "format": "%.3f",
-          "isExportedEveryFrame": false,
-          "id": "192"
-        }
-      ],
-      "loop": false,
-      "argumentValue": 0.15,
-      "argumentMin": 0.0,
-      "argumentMax": 1.0,
+      "exports": [],
+      "argumentValue": 0.13,
       "actions": {
-        "set": {
+        "increment": {
+          "deviceId": "38",
+          "actionId": "3192"
+        },
+        "decrement": {
           "deviceId": "38",
           "actionId": "3192"
         }
