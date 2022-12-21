@@ -1,7 +1,7 @@
 {
   "source": "Helios",
   "version": "1.6.5501.0000",
-  "commit": "4d004f0fb821bcbfe75523ad60721243265cf0bf",
+  "commit": "57d7a3dcdb7afe129069b50cb0795c804f3f8b83",
   "type": "Existing",
   "name": "DCS M2000C",
   "module": "M-2000C",
@@ -8502,12 +8502,12 @@
           "actionID": "3486"
         },
         {
-          "argumentValue": "0.66",
+          "argumentValue": "0.67",
           "name": "Sil",
           "actionID": "3486"
         },
         {
-          "argumentValue": "0.99",
+          "argumentValue": "1.00",
           "name": "Em",
           "actionID": "3486"
         }
