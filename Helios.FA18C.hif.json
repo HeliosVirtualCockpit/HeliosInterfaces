@@ -1,7 +1,7 @@
 {
   "source": "Helios",
-  "version": "1.6.5500.0000",
-  "commit": "9ee6d74eaad602b8a49ddf044c8bd22c70b17176",
+  "version": "1.6.5601.0000",
+  "commit": "8754f5948b2e37e3fe803b5db46c8f2395170a8a",
   "type": "Existing",
   "name": "DCS F/A-18C",
   "module": "FA-18C_hornet",
@@ -4096,6 +4096,29 @@
       ]
     },
     {
+      "heliosType": "DCS.Common.Axis",
+      "device": "HMD",
+      "name": "HMD OFF/BRT Knob",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%0.2f",
+          "isExportedEveryFrame": false,
+          "id": "136"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.15,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "58",
+          "actionId": "3001"
+        }
+      }
+    },
+    {
       "heliosType": "DCS.Common.Switch",
       "device": "HOTAS",
       "name": "Exterior Lights Switch",
@@ -4301,68 +4324,6 @@
           "actionId": "3007"
         }
       }
-    },
-    {
-      "heliosType": "DCS.Common.Switch",
-      "device": "IFEI",
-      "name": "Video Record Selector Switch HMD/LDDI/RDDI",
-      "description": "Current position of this switch.",
-      "exports": [
-        {
-          "format": "%0.1f",
-          "isExportedEveryFrame": false,
-          "id": "175"
-        }
-      ],
-      "deviceId": "0",
-      "positions": [
-        {
-          "argumentValue": "1.0",
-          "name": "HMD",
-          "actionID": "3104"
-        },
-        {
-          "argumentValue": "0.5",
-          "name": "LDDI",
-          "actionID": "3104"
-        },
-        {
-          "argumentValue": "0.0",
-          "name": "RDDI",
-          "actionID": "3104"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.Switch",
-      "device": "IFEI",
-      "name": "Video Record Selector Switch, HUD/LDIR/RDDI",
-      "description": "Current position of this switch.",
-      "exports": [
-        {
-          "format": "%0.1f",
-          "isExportedEveryFrame": false,
-          "id": "176"
-        }
-      ],
-      "deviceId": "0",
-      "positions": [
-        {
-          "argumentValue": "1.0",
-          "name": "HUD",
-          "actionID": "3105"
-        },
-        {
-          "argumentValue": "0.5",
-          "name": "LDIR",
-          "actionID": "3105"
-        },
-        {
-          "argumentValue": "0.0",
-          "name": "RDDI",
-          "actionID": "3105"
-        }
-      ]
     },
     {
       "heliosType": "DCS.Common.Text",
@@ -4669,37 +4630,6 @@
         {
           "isExportedEveryFrame": false,
           "id": "2078"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.Switch",
-      "device": "IFEI",
-      "name": "Video Record Mode Selector Switch, MAN/OFF/AUTO",
-      "description": "Current position of this switch.",
-      "exports": [
-        {
-          "format": "%0.1f",
-          "isExportedEveryFrame": false,
-          "id": "314"
-        }
-      ],
-      "deviceId": "0",
-      "positions": [
-        {
-          "argumentValue": "1.0",
-          "name": "MAN",
-          "actionID": "3106"
-        },
-        {
-          "argumentValue": "0.5",
-          "name": "OFF",
-          "actionID": "3106"
-        },
-        {
-          "argumentValue": "0.0",
-          "name": "AUTO",
-          "actionID": "3106"
         }
       ]
     },
@@ -8124,6 +8054,89 @@
         "precision": 1
       },
       "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "TGP/FLIR",
+      "name": "FLIR Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "439"
+        }
+      ],
+      "deviceId": "62",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "ON",
+          "actionID": "3001"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "STBY",
+          "actionID": "3001"
+        },
+        {
+          "argumentValue": "-1.0",
+          "name": "OFF",
+          "actionID": "3001"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "TGP/FLIR",
+      "name": "LTD/R Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "441"
+        }
+      ],
+      "deviceId": "62",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "ARM",
+          "actionID": "3002"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "SAFE",
+          "actionID": "3002"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "TGP/FLIR",
+      "name": "LST/NFLR Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "442"
+        }
+      ],
+      "deviceId": "62",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "ON",
+          "actionID": "3003"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "OFF",
+          "actionID": "3003"
+        }
+      ]
     },
     {
       "heliosType": "DCS.Common.PushButton",
