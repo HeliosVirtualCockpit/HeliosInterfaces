@@ -1,7 +1,7 @@
 {
   "source": "Helios",
   "version": "1.6.5601.0000",
-  "commit": "8754f5948b2e37e3fe803b5db46c8f2395170a8a",
+  "commit": "d74d4fbb9c27c2c6ce0d095baccbf567f523df14",
   "type": "Existing",
   "name": "DCS F/A-18C",
   "module": "FA-18C_hornet",
@@ -7537,6 +7537,23 @@
       ]
     },
     {
+      "heliosType": "DCS.Common.RotaryEncoder",
+      "device": "SAI",
+      "name": "Pitch Adjust Knob",
+      "exports": [],
+      "argumentValue": 0.1,
+      "actions": {
+        "increment": {
+          "deviceId": "32",
+          "actionId": "3003"
+        },
+        "decrement": {
+          "deviceId": "32",
+          "actionId": "3003"
+        }
+      }
+    },
+    {
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "SAI",
       "name": "Pitch",
@@ -7607,6 +7624,48 @@
       ]
     },
     {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "SAI",
+      "name": "Pitch Adjustment",
+      "description": "Position of the pitch adjust.",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "210"
+        }
+      ],
+      "valueDescription": "(-1 to 1)",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "SAI",
+      "name": "Bank Steering Bar",
+      "description": "Current position of the steering bar.",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "211"
+        }
+      ],
+      "valueDescription": "(-1 to 1)",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "SAI",
+      "name": "Pitch Steering Bar",
+      "description": "Current position of the steering bar.",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "212"
+        }
+      ],
+      "valueDescription": "(-1 to 1)",
+      "unit": "Numeric"
+    },
+    {
       "heliosType": "DCS.Common.PushButton",
       "device": "SAI",
       "name": "Cage Pull Switch",
@@ -7627,29 +7686,6 @@
           "releaseValue": "0.0"
         }
       ]
-    },
-    {
-      "heliosType": "DCS.Common.Axis",
-      "device": "SAI",
-      "name": "Pitch Adjust Knob",
-      "description": "Current value of this axis.",
-      "exports": [
-        {
-          "format": "%0.2f",
-          "isExportedEveryFrame": false,
-          "id": "214"
-        }
-      ],
-      "loop": true,
-      "argumentValue": 0.05,
-      "argumentMin": 0.0,
-      "argumentMax": 1.0,
-      "actions": {
-        "set": {
-          "deviceId": "32",
-          "actionId": "3003"
-        }
-      }
     },
     {
       "heliosType": "DCS.Common.PushButton",
