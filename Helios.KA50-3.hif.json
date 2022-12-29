@@ -4487,7 +4487,7 @@
     },
     {
       "heliosType": "DCS.Common.Switch",
-      "device": "L_370E50",
+      "device": "Missile Warning System",
       "name": "ODS operation mode",
       "description": "Current position of this switch.",
       "exports": [
