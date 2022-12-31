@@ -1,7 +1,7 @@
 {
   "source": "Helios",
-  "version": "1.6.5601.0000",
-  "commit": "d74d4fbb9c27c2c6ce0d095baccbf567f523df14",
+  "version": "1.6.5700.0000",
+  "commit": "0d203887c2e5fd1184881b1351927b765218ec8e",
   "type": "Existing",
   "name": "DCS F/A-18C",
   "module": "FA-18C_hornet",
@@ -3697,16 +3697,18 @@
       "deviceId": "5",
       "positions": [
         {
-          "argumentValue": "-1.0",
+          "exitValue": "0.0",
+          "argumentValue": "0.0",
           "name": "Retract",
           "actionID": "3008",
-          "stopActionID": "3008",
-          "stopActionValue": "0.3"
+          "stopActionID": "3008"
         },
         {
+          "exitValue": "1.0",
           "argumentValue": "1.0",
           "name": "Extend",
-          "actionID": "3008"
+          "actionID": "3008",
+          "stopActionID": "3008"
         }
       ]
     },
@@ -3751,14 +3753,18 @@
       "deviceId": "9",
       "positions": [
         {
+          "exitValue": "1.0",
           "argumentValue": "1.0",
           "name": "Field",
-          "actionID": "3009"
+          "actionID": "3009",
+          "stopActionID": "3009"
         },
         {
+          "exitValue": "0.0",
           "argumentValue": "0.0",
           "name": "Carrier",
-          "actionID": "3009"
+          "actionID": "3009",
+          "stopActionID": "3009"
         }
       ]
     },
@@ -8175,6 +8181,40 @@
       ]
     },
     {
+      "heliosType": "DCS.Common.RotaryEncoder",
+      "device": "UFC",
+      "name": "UFC COMM 1 Channel Selector Knob",
+      "exports": [],
+      "argumentValue": 0.1,
+      "actions": {
+        "increment": {
+          "deviceId": "25",
+          "actionId": "3033"
+        },
+        "decrement": {
+          "deviceId": "25",
+          "actionId": "3033"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.RotaryEncoder",
+      "device": "UFC",
+      "name": "UFC COMM 2 Channel Selector Knob",
+      "exports": [],
+      "argumentValue": 0.1,
+      "actions": {
+        "increment": {
+          "deviceId": "25",
+          "actionId": "3034"
+        },
+        "decrement": {
+          "deviceId": "25",
+          "actionId": "3034"
+        }
+      }
+    },
+    {
       "heliosType": "DCS.Common.PushButton",
       "device": "UFC",
       "name": "UFC Option Select Pushbutton 1",
@@ -8671,29 +8711,6 @@
       }
     },
     {
-      "heliosType": "DCS.Common.Axis",
-      "device": "UFC",
-      "name": "UFC COMM 1 Channel Selector Knob",
-      "description": "Current value of this axis.",
-      "exports": [
-        {
-          "format": "%.3f",
-          "isExportedEveryFrame": false,
-          "id": "124"
-        }
-      ],
-      "loop": false,
-      "argumentValue": 0.1,
-      "argumentMin": 0.0,
-      "argumentMax": 1.0,
-      "actions": {
-        "set": {
-          "deviceId": "25",
-          "actionId": "3033"
-        }
-      }
-    },
-    {
       "heliosType": "DCS.Common.PushButton",
       "device": "UFC",
       "name": "UFC COMM 1 Channel Selector Pull",
@@ -8714,29 +8731,6 @@
           "releaseValue": "0"
         }
       ]
-    },
-    {
-      "heliosType": "DCS.Common.Axis",
-      "device": "UFC",
-      "name": "UFC COMM 2 Channel Selector Knob",
-      "description": "Current value of this axis.",
-      "exports": [
-        {
-          "format": "%.3f",
-          "isExportedEveryFrame": false,
-          "id": "126"
-        }
-      ],
-      "loop": false,
-      "argumentValue": 0.1,
-      "argumentMin": 0.0,
-      "argumentMax": 1.0,
-      "actions": {
-        "set": {
-          "deviceId": "25",
-          "actionId": "3034"
-        }
-      }
     },
     {
       "heliosType": "DCS.Common.PushButton",
