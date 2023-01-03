@@ -3601,14 +3601,18 @@
       "deviceId": "6",
       "positions": [
         {
+          "exitValue": "1.0",
           "argumentValue": "1.0",
           "name": "ON",
-          "actionID": "3003"
+          "actionID": "3003",
+          "stopActionID": "3003"
         },
         {
+          "exitValue": "0.0",
           "argumentValue": "0.0",
           "name": "OFF",
-          "actionID": "3003"
+          "actionID": "3003",
+          "stopActionID": "3003"
         }
       ]
     },
