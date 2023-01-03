@@ -3544,12 +3544,12 @@
           "actionID": "3005"
         },
         {
-          "argumentValue": "0.5",
+          "argumentValue": "0.0",
           "name": "NORM",
           "actionID": "3005"
         },
         {
-          "argumentValue": "0.0",
+          "argumentValue": "-1.0",
           "name": "ORIDE",
           "actionID": "3005"
         }
@@ -3575,12 +3575,12 @@
           "actionID": "3004"
         },
         {
-          "argumentValue": "0.5",
+          "argumentValue": "0.0",
           "name": "NORM",
           "actionID": "3004"
         },
         {
-          "argumentValue": "0.0",
+          "argumentValue": "-1.0",
           "name": "ORIDE",
           "actionID": "3004"
         }
