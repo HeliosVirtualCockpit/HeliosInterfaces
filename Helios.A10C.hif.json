@@ -1,7 +1,7 @@
 {
   "source": "Helios",
-  "version": "1.6.5501.0000",
-  "commit": "90603ce1ff4807efa954c040abe9db0c92e0ace2",
+  "version": "1.6.5801.0000",
+  "commit": "345bccd55047704a343abd2bd4d052dd7cc9c35d",
   "type": "Existing",
   "name": "DCS A-10C",
   "module": "A-10C",
@@ -7538,13 +7538,13 @@
       "deviceId": "53",
       "positions": [
         {
-          "argumentValue": "1",
-          "name": "On",
+          "argumentValue": "0",
+          "name": "Off",
           "actionID": "3001"
         },
         {
-          "argumentValue": "0",
-          "name": "Off",
+          "argumentValue": "1",
+          "name": "On",
           "actionID": "3001"
         }
       ]
