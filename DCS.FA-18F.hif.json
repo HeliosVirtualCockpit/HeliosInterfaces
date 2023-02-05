@@ -1,6 +1,6 @@
 {
   "source": "Helios",
-  "version": "1.6.5801.0000",
+  "version": "1.6.5900.0000",
   "commit": "ad6f4c85b00b90d9044a462c185f8623b5359e81",
   "type": "DCS",
   "name": "DCS FA-18F",
@@ -4934,7 +4934,7 @@
       "positions": [
         {
           "argumentValue": "0.0",
-          "name": "Off",
+          "name": "OFF",
           "actionID": "3001"
         },
         {
@@ -4949,22 +4949,27 @@
         },
         {
           "argumentValue": "0.3",
-          "name": "IFA",
+          "name": "NAV",
           "actionID": "3001"
         },
         {
           "argumentValue": "0.4",
-          "name": "GYRO",
+          "name": "IFA",
           "actionID": "3001"
         },
         {
           "argumentValue": "0.5",
-          "name": "GB",
+          "name": "GYRO",
           "actionID": "3001"
         },
         {
           "argumentValue": "0.6",
-          "name": "Test",
+          "name": "GB",
+          "actionID": "3001"
+        },
+        {
+          "argumentValue": "0.7",
+          "name": "TEST",
           "actionID": "3001"
         }
       ]
@@ -6152,12 +6157,12 @@
       "deviceId": "23",
       "positions": [
         {
-          "argumentValue": "1.0",
+          "argumentValue": "0.2",
           "name": "ORIDE",
           "actionID": "3013"
         },
         {
-          "argumentValue": "0.5",
+          "argumentValue": "0.1",
           "name": "NORM",
           "actionID": "3013"
         },
