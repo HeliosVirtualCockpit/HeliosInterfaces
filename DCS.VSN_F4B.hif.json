@@ -1,0 +1,13 @@
+{
+  "source": "Helios",
+  "version": "1.6.5900.0000",
+  "commit": "ad6f4c85b00b90d9044a462c185f8623b5359e81",
+  "type": "DCS",
+  "name": "DCS F-4B Phantom",
+  "module": "VSN_F4B",
+  "vehicles": [
+    "VSN_F4B"
+  ],
+  "functions": [
+  ]
+}
