@@ -1,0 +1,169 @@
+{
+  "source": "Helios",
+  "version": "1.6.5900.0000",
+  "commit": "bd49051d90858f7776dba3b51c25a5188bdd6818",
+  "type": "DCS",
+  "name": "DCS F-4C Phantom",
+  "module": "VSN_F4C",
+  "vehicles": [
+    "VSN_F4C"
+  ],
+ "functions": [
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Simulator Telemetry",
+      "name": "pitch",
+      "description": "Current pitch of the aircraft.",
+      "exports": [
+        {
+          "id": "T1"
+        }
+      ],
+      "valueDescription": "(-180 to 180)",
+      "unit": "Degrees"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Simulator Telemetry",
+      "name": "vertical velocity",
+      "description": "Current vertical velocity of the aircraft.",
+      "exports": [
+        {
+          "id": "T13"
+        }
+      ],
+      "valueDescription": "",
+      "unit": "MetersPerSecond"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Simulator Telemetry",
+      "name": "indicated airspeed",
+      "description": "Current indicated air speed of the aircraft.",
+      "exports": [
+        {
+          "id": "T14"
+        }
+      ],
+      "valueDescription": "",
+      "unit": "MetersPerSecond"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Simulator Telemetry",
+      "name": "angle of attack",
+      "description": "Current angle of attack for the aircraft.",
+      "exports": [
+        {
+          "id": "T16"
+        }
+      ],
+      "valueDescription": "",
+      "unit": "Degrees"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Simulator Telemetry",
+      "name": "glide deviation",
+      "description": "ILS Glide Deviation",
+      "exports": [
+        {
+          "id": "T17"
+        }
+      ],
+      "valueDescription": "-1 to 1",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Simulator Telemetry",
+      "name": "side deviation",
+      "description": "ILS Side Deiviation",
+      "exports": [
+        {
+          "id": "T18"
+        }
+      ],
+      "valueDescription": "-1 to 1",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Simulator Telemetry",
+      "name": "Mach",
+      "description": "Current Mach number",
+      "exports": [
+        {
+          "id": "T19"
+        }
+      ],
+      "valueDescription": "number in M",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Simulator Telemetry",
+      "name": "bank",
+      "description": "Current bank of the aircraft.",
+      "exports": [
+        {
+          "id": "T2"
+        }
+      ],
+      "valueDescription": "(-180 to 180)",
+      "unit": "Degrees"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Simulator Telemetry",
+      "name": "G",
+      "description": "Current G load",
+      "exports": [
+        {
+          "id": "T20"
+        }
+      ],
+      "valueDescription": "number in g",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Simulator Telemetry",
+      "name": "yaw",
+      "description": "Current yaw of the aircraft.",
+      "exports": [
+        {
+          "id": "T3"
+        }
+      ],
+      "valueDescription": "(-180 to 180)",
+      "unit": "Degrees"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Simulator Telemetry",
+      "name": "barometric altitude",
+      "description": "Current barometric altitude the aircraft.",
+      "exports": [
+        {
+          "id": "T4"
+        }
+      ],
+      "valueDescription": "",
+      "unit": "Meters"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Simulator Telemetry",
+      "name": "radar altitude",
+      "description": "Current radar altitude of the aircraft.",
+      "exports": [
+        {
+          "id": "T5"
+        }
+      ],
+      "valueDescription": "",
+      "unit": "Meters"
+    }
+  ]
+}

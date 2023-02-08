@@ -1,7 +1,7 @@
 {
   "source": "Helios",
-  "version": "1.6.5600.0000-DMA",
-  "commit": "",
+  "version": "1.6.5900.0000",
+  "commit": "ad6f4c85b00b90d9044a462c185f8623b5359e81",
   "type": "Existing",
   "name": "DCS F/A-18C",
   "module": "FA-18C_hornet",
@@ -5034,7 +5034,7 @@
       "positions": [
         {
           "argumentValue": "0.0",
-          "name": "Off",
+          "name": "OFF",
           "actionID": "3001"
         },
         {
@@ -5069,7 +5069,7 @@
         },
         {
           "argumentValue": "0.7",
-          "name": "Test",
+          "name": "TEST",
           "actionID": "3001"
         }
       ]
