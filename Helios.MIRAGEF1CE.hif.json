@@ -1,12 +1,12 @@
 {
   "source": "Helios",
   "version": "1.6.5900.0000",
-  "commit": "36311620be2e1e8b221f7f0a8df88c3931a45493",
+  "commit": "36311620be2e1e8b221f7f0a8df88c3931a45493"
   "type": "Existing",
   "name": "DCS Mirage F1CE",
-  "module": "Mirage-F1CE",
+  "module": "MIRAGE-F1CE",
   "vehicles": [
-    "Mirage-F1CE"
+    "MIRAGE-F1CE"
   ],
   "functions": [
     {

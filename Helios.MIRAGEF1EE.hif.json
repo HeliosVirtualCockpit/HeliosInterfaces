@@ -4,9 +4,9 @@
   "commit": "36311620be2e1e8b221f7f0a8df88c3931a45493",
   "type": "Existing",
   "name": "DCS Mirage F1EE",
-  "module": "Mirage-F1EE",
+  "module": "MIRAGE-F1EE",
   "vehicles": [
-    "Mirage-F1EE"
+    "MIRAGE-F1EE"
   ],
    "functions": [
     {
