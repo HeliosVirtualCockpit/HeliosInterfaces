@@ -1,14 +1,14 @@
 {
   "source": "Helios",
-  "version": "1.6.5900.0000",
-  "commit": "36311620be2e1e8b221f7f0a8df88c3931a45493",
+  "version": "1.6.5901.0000",
+  "commit": "59c81ee6ef37755fd5dac6e78bfd7d863b4d19a0",
   "type": "Existing",
   "name": "DCS Mirage F1EE",
   "module": "MIRAGE-F1EE",
   "vehicles": [
     "MIRAGE-F1EE"
   ],
-   "functions": [
+  "functions": [
     {
       "heliosType": "DCS.Common.PushButton",
       "device": "Accelerometer reset button and rheostat",
@@ -757,210 +757,178 @@
       ]
     },
     {
-      "heliosType": "DCS.Common.Switch",
+      "heliosType": "DCS.Common.PushButton",
       "device": "Armament control panel",
       "name": "Left MATRA R550 or Sidewinder missile pushbutton",
-      "description": "Current position of this switch.",
+      "description": "Current state of this button.",
       "exports": [
         {
-          "format": "%0.1f",
+          "format": "%1d",
           "isExportedEveryFrame": false,
           "id": "604"
         }
       ],
-      "deviceId": "1",
-      "positions": [
+      "buttons": [
         {
-          "argumentValue": "1.0",
-          "name": "Posn 1",
-          "actionID": "3587"
-        },
-        {
-          "argumentValue": "0.0",
-          "name": "Posn 2",
-          "actionID": "3587"
+          "deviceId": "1",
+          "pushId": "3587",
+          "pushValue": "1.0",
+          "releaseId": "3587",
+          "releaseValue": "0.0"
         }
       ]
     },
     {
-      "heliosType": "DCS.Common.Switch",
+      "heliosType": "DCS.Common.PushButton",
       "device": "Armament control panel",
       "name": "Left or fuselage MATRA R530 missile pushbutton",
-      "description": "Current position of this switch.",
+      "description": "Current state of this button.",
       "exports": [
         {
-          "format": "%0.1f",
+          "format": "%1d",
           "isExportedEveryFrame": false,
           "id": "606"
         }
       ],
-      "deviceId": "1",
-      "positions": [
+      "buttons": [
         {
-          "argumentValue": "1.0",
-          "name": "Posn 1",
-          "actionID": "3588"
-        },
-        {
-          "argumentValue": "0.0",
-          "name": "Posn 2",
-          "actionID": "3588"
+          "deviceId": "1",
+          "pushId": "3588",
+          "pushValue": "1.0",
+          "releaseId": "3588",
+          "releaseValue": "0.0"
         }
       ]
     },
     {
-      "heliosType": "DCS.Common.Switch",
+      "heliosType": "DCS.Common.PushButton",
       "device": "Armament control panel",
       "name": "Air-to-Air guns pushbutton",
-      "description": "Current position of this switch.",
+      "description": "Current state of this button.",
       "exports": [
         {
-          "format": "%0.1f",
+          "format": "%1d",
           "isExportedEveryFrame": false,
           "id": "608"
         }
       ],
-      "deviceId": "1",
-      "positions": [
+      "buttons": [
         {
-          "argumentValue": "1.0",
-          "name": "Posn 1",
-          "actionID": "3589"
-        },
-        {
-          "argumentValue": "0.0",
-          "name": "Posn 2",
-          "actionID": "3589"
+          "deviceId": "1",
+          "pushId": "3589",
+          "pushValue": "1.0",
+          "releaseId": "3589",
+          "releaseValue": "0.0"
         }
       ]
     },
     {
-      "heliosType": "DCS.Common.Switch",
+      "heliosType": "DCS.Common.PushButton",
       "device": "Armament control panel",
       "name": "Wing bombs pushbutton",
-      "description": "Current position of this switch.",
+      "description": "Current state of this button.",
       "exports": [
         {
-          "format": "%0.1f",
+          "format": "%1d",
           "isExportedEveryFrame": false,
           "id": "610"
         }
       ],
-      "deviceId": "1",
-      "positions": [
+      "buttons": [
         {
-          "argumentValue": "1.0",
-          "name": "Posn 1",
-          "actionID": "3590"
-        },
-        {
-          "argumentValue": "0.0",
-          "name": "Posn 2",
-          "actionID": "3590"
+          "deviceId": "1",
+          "pushId": "3590",
+          "pushValue": "1.0",
+          "releaseId": "3590",
+          "releaseValue": "0.0"
         }
       ]
     },
     {
-      "heliosType": "DCS.Common.Switch",
+      "heliosType": "DCS.Common.PushButton",
       "device": "Armament control panel",
       "name": "Right MATRA R550 or Sidewinder missile pushbutton",
-      "description": "Current position of this switch.",
+      "description": "Current state of this button.",
       "exports": [
         {
-          "format": "%0.1f",
+          "format": "%1d",
           "isExportedEveryFrame": false,
           "id": "612"
         }
       ],
-      "deviceId": "1",
-      "positions": [
+      "buttons": [
         {
-          "argumentValue": "1.0",
-          "name": "Posn 1",
-          "actionID": "3591"
-        },
-        {
-          "argumentValue": "0.0",
-          "name": "Posn 2",
-          "actionID": "3591"
+          "deviceId": "1",
+          "pushId": "3591",
+          "pushValue": "1.0",
+          "releaseId": "3591",
+          "releaseValue": "0.0"
         }
       ]
     },
     {
-      "heliosType": "DCS.Common.Switch",
+      "heliosType": "DCS.Common.PushButton",
       "device": "Armament control panel",
       "name": "Right MATRA R530 missile pushbutton",
-      "description": "Current position of this switch.",
+      "description": "Current state of this button.",
       "exports": [
         {
-          "format": "%0.1f",
+          "format": "%1d",
           "isExportedEveryFrame": false,
           "id": "614"
         }
       ],
-      "deviceId": "1",
-      "positions": [
+      "buttons": [
         {
-          "argumentValue": "1.0",
-          "name": "Posn 1",
-          "actionID": "3592"
-        },
-        {
-          "argumentValue": "0.0",
-          "name": "Posn 2",
-          "actionID": "3592"
+          "deviceId": "1",
+          "pushId": "3592",
+          "pushValue": "1.0",
+          "releaseId": "3592",
+          "releaseValue": "0.0"
         }
       ]
     },
     {
-      "heliosType": "DCS.Common.Switch",
+      "heliosType": "DCS.Common.PushButton",
       "device": "Armament control panel",
       "name": "Air-to-Ground guns or rockets pushbutton",
-      "description": "Current position of this switch.",
+      "description": "Current state of this button.",
       "exports": [
         {
-          "format": "%0.1f",
+          "format": "%1d",
           "isExportedEveryFrame": false,
           "id": "616"
         }
       ],
-      "deviceId": "1",
-      "positions": [
+      "buttons": [
         {
-          "argumentValue": "1.0",
-          "name": "Posn 1",
-          "actionID": "3593"
-        },
-        {
-          "argumentValue": "0.0",
-          "name": "Posn 2",
-          "actionID": "3593"
+          "deviceId": "1",
+          "pushId": "3593",
+          "pushValue": "1.0",
+          "releaseId": "3593",
+          "releaseValue": "0.0"
         }
       ]
     },
     {
-      "heliosType": "DCS.Common.Switch",
+      "heliosType": "DCS.Common.PushButton",
       "device": "Armament control panel",
       "name": "Fuselage bombs pushbutton",
-      "description": "Current position of this switch.",
+      "description": "Current state of this button.",
       "exports": [
         {
-          "format": "%0.1f",
+          "format": "%1d",
           "isExportedEveryFrame": false,
           "id": "618"
         }
       ],
-      "deviceId": "1",
-      "positions": [
+      "buttons": [
         {
-          "argumentValue": "1.0",
-          "name": "Posn 1",
-          "actionID": "3594"
-        },
-        {
-          "argumentValue": "0.0",
-          "name": "Posn 2",
-          "actionID": "3594"
+          "deviceId": "1",
+          "pushId": "3594",
+          "pushValue": "1.0",
+          "releaseId": "3594",
+          "releaseValue": "0.0"
         }
       ]
     },
@@ -4364,12 +4332,12 @@
         {
           "argumentValue": "-1.0",
           "name": "Posn 1",
-          "actionID": "3533",
-          "stopActionID": "3533",
+          "actionID": "3532",
+          "stopActionID": "3532",
           "stopActionValue": "0.0"
         },
         {
-          "argumentValue": "-1.0",
+          "argumentValue": "0.0",
           "name": "Posn 2"
         },
         {
@@ -5328,6 +5296,51 @@
           "releaseValue": "0.0"
         }
       ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "In-flight refuelling system",
+      "name": "Button Jammer detection / Feeder tanks overflow light",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "194"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "1",
+          "pushId": "3291",
+          "pushValue": "1.0",
+          "releaseId": "3291",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "In-flight refuelling system",
+      "name": "Lamp Jammer detection / Feeder tanks overflow light",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "195"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.5,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "1",
+          "actionId": "3292"
+        }
+      }
     },
     {
       "heliosType": "DCS.Common.Switch",
