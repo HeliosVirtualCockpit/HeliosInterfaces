@@ -1,7 +1,7 @@
 {
   "source": "Helios",
-  "version": "1.6.5801.0000",
-  "commit": "345bccd55047704a343abd2bd4d052dd7cc9c35d",
+  "version": "1.6.6000.0000",
+  "commit": "90a15977a12d1af23b56b0f4105cf4344b8f9f39",
   "type": "Existing",
   "name": "DCS A-10C II",
   "module": "A-10C_2",
@@ -858,6 +858,735 @@
       "baseValue": 0.0,
       "scale": 1000.0,
       "unit": "Celsius"
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "ARC-210",
+      "name": "Master switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "551"
+        }
+      ],
+      "deviceId": "55",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "OFF",
+          "actionID": "3043"
+        },
+        {
+          "argumentValue": "0.1",
+          "name": "TR G",
+          "actionID": "3043"
+        },
+        {
+          "argumentValue": "0.2",
+          "name": "TR",
+          "actionID": "3043"
+        },
+        {
+          "argumentValue": "0.3",
+          "name": "ADF",
+          "actionID": "3043"
+        },
+        {
+          "argumentValue": "0.4",
+          "name": "CHG PRST",
+          "actionID": "3043"
+        },
+        {
+          "argumentValue": "0.5",
+          "name": "TEST",
+          "actionID": "3043"
+        },
+        {
+          "argumentValue": "0.6",
+          "name": "ZERO (PULL)",
+          "actionID": "3043"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "ARC-210",
+      "name": "Channel select knob",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "552"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.1,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "55",
+          "actionId": "3027"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "ARC-210",
+      "name": "Secondary switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "553"
+        }
+      ],
+      "deviceId": "55",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "ECCM MASTER",
+          "actionID": "3044"
+        },
+        {
+          "argumentValue": "0.1",
+          "name": "ECCM",
+          "actionID": "3044"
+        },
+        {
+          "argumentValue": "0.2",
+          "name": "PRST",
+          "actionID": "3044"
+        },
+        {
+          "argumentValue": "0.3",
+          "name": "MAN",
+          "actionID": "3044"
+        },
+        {
+          "argumentValue": "0.4",
+          "name": "MAR",
+          "actionID": "3044"
+        },
+        {
+          "argumentValue": "0.5",
+          "name": "243",
+          "actionID": "3044"
+        },
+        {
+          "argumentValue": "0.6",
+          "name": "121 (PULL)",
+          "actionID": "3044"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "ARC-210",
+      "name": "100 MHz Selector",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "554"
+        }
+      ],
+      "deviceId": "55",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Posn 1",
+          "actionID": "3025"
+        },
+        {
+          "argumentValue": "0.1",
+          "name": "Posn 2",
+          "actionID": "3025"
+        },
+        {
+          "argumentValue": "0.2",
+          "name": "Posn 3",
+          "actionID": "3025"
+        },
+        {
+          "argumentValue": "0.3",
+          "name": "Posn 4",
+          "actionID": "3025"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "ARC-210",
+      "name": "10 MHz Selector",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "555"
+        }
+      ],
+      "deviceId": "55",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Posn 1",
+          "actionID": "3023"
+        },
+        {
+          "argumentValue": "0.1",
+          "name": "Posn 2",
+          "actionID": "3023"
+        },
+        {
+          "argumentValue": "0.2",
+          "name": "Posn 3",
+          "actionID": "3023"
+        },
+        {
+          "argumentValue": "0.3",
+          "name": "Posn 4",
+          "actionID": "3023"
+        },
+        {
+          "argumentValue": "0.4",
+          "name": "Posn 5",
+          "actionID": "3023"
+        },
+        {
+          "argumentValue": "0.5",
+          "name": "Posn 6",
+          "actionID": "3023"
+        },
+        {
+          "argumentValue": "0.6",
+          "name": "Posn 7",
+          "actionID": "3023"
+        },
+        {
+          "argumentValue": "0.7",
+          "name": "Posn 8",
+          "actionID": "3023"
+        },
+        {
+          "argumentValue": "0.8",
+          "name": "Posn 9",
+          "actionID": "3023"
+        },
+        {
+          "argumentValue": "0.9",
+          "name": "Posn 10",
+          "actionID": "3023"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "ARC-210",
+      "name": "1 MHz Selector",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "556"
+        }
+      ],
+      "deviceId": "55",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Posn 1",
+          "actionID": "3021"
+        },
+        {
+          "argumentValue": "0.1",
+          "name": "Posn 2",
+          "actionID": "3021"
+        },
+        {
+          "argumentValue": "0.2",
+          "name": "Posn 3",
+          "actionID": "3021"
+        },
+        {
+          "argumentValue": "0.3",
+          "name": "Posn 4",
+          "actionID": "3021"
+        },
+        {
+          "argumentValue": "0.4",
+          "name": "Posn 5",
+          "actionID": "3021"
+        },
+        {
+          "argumentValue": "0.5",
+          "name": "Posn 6",
+          "actionID": "3021"
+        },
+        {
+          "argumentValue": "0.6",
+          "name": "Posn 7",
+          "actionID": "3021"
+        },
+        {
+          "argumentValue": "0.7",
+          "name": "Posn 8",
+          "actionID": "3021"
+        },
+        {
+          "argumentValue": "0.8",
+          "name": "Posn 9",
+          "actionID": "3021"
+        },
+        {
+          "argumentValue": "0.9",
+          "name": "Posn 10",
+          "actionID": "3021"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "ARC-210",
+      "name": "100 KHz Selector",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "557"
+        }
+      ],
+      "deviceId": "55",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Posn 1",
+          "actionID": "3019"
+        },
+        {
+          "argumentValue": "0.1",
+          "name": "Posn 2",
+          "actionID": "3019"
+        },
+        {
+          "argumentValue": "0.2",
+          "name": "Posn 3",
+          "actionID": "3019"
+        },
+        {
+          "argumentValue": "0.3",
+          "name": "Posn 4",
+          "actionID": "3019"
+        },
+        {
+          "argumentValue": "0.4",
+          "name": "Posn 5",
+          "actionID": "3019"
+        },
+        {
+          "argumentValue": "0.5",
+          "name": "Posn 6",
+          "actionID": "3019"
+        },
+        {
+          "argumentValue": "0.6",
+          "name": "Posn 7",
+          "actionID": "3019"
+        },
+        {
+          "argumentValue": "0.7",
+          "name": "Posn 8",
+          "actionID": "3019"
+        },
+        {
+          "argumentValue": "0.8",
+          "name": "Posn 9",
+          "actionID": "3019"
+        },
+        {
+          "argumentValue": "0.9",
+          "name": "Posn 10",
+          "actionID": "3019"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "ARC-210",
+      "name": "25 KHz Selector",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "558"
+        }
+      ],
+      "deviceId": "55",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Posn 1",
+          "actionID": "3017"
+        },
+        {
+          "argumentValue": "0.1",
+          "name": "Posn 2",
+          "actionID": "3017"
+        },
+        {
+          "argumentValue": "0.2",
+          "name": "Posn 3",
+          "actionID": "3017"
+        },
+        {
+          "argumentValue": "0.3",
+          "name": "Posn 4",
+          "actionID": "3017"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "ARC-210",
+      "name": "Brightness decrease",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "559"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "55",
+          "pushId": "3009",
+          "pushValue": "1.0",
+          "releaseId": "3009",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "ARC-210",
+      "name": "Brightness increase",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "560"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "55",
+          "pushId": "3008",
+          "pushValue": "1.0",
+          "releaseId": "3008",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "ARC-210",
+      "name": "Lower FSK",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "561"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "55",
+          "pushId": "3007",
+          "pushValue": "1.0",
+          "releaseId": "3007",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "ARC-210",
+      "name": "Middle FSK",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "562"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "55",
+          "pushId": "3006",
+          "pushValue": "1.0",
+          "releaseId": "3006",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "ARC-210",
+      "name": "Upper FSK",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "563"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "55",
+          "pushId": "3005",
+          "pushValue": "1.0",
+          "releaseId": "3005",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "ARC-210",
+      "name": "Time of day send",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "564"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "55",
+          "pushId": "3001",
+          "pushValue": "1.0",
+          "releaseId": "3001",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "ARC-210",
+      "name": "Time of day receive",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "565"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "55",
+          "pushId": "3002",
+          "pushValue": "1.0",
+          "releaseId": "3002",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "ARC-210",
+      "name": "Global positioning system",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "566"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "55",
+          "pushId": "3003",
+          "pushValue": "1.0",
+          "releaseId": "3003",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "ARC-210",
+      "name": "Select receiver - transmitter",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "567"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "55",
+          "pushId": "3004",
+          "pushValue": "1.0",
+          "releaseId": "3004",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "ARC-210",
+      "name": "Squelch on/off",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "568"
+        }
+      ],
+      "deviceId": "55",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Off",
+          "actionID": "3015"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "On",
+          "actionID": "3015"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "ARC-210",
+      "name": "Menu pages",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "569"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "55",
+          "pushId": "3010",
+          "pushValue": "1.0",
+          "releaseId": "3010",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "ARC-210",
+      "name": "Amplitude modulation / frequency modulation select",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "570"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "55",
+          "pushId": "3011",
+          "pushValue": "1.0",
+          "releaseId": "3011",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "ARC-210",
+      "name": "Transmit / receive function toggle",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "571"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "55",
+          "pushId": "3012",
+          "pushValue": "1.0",
+          "releaseId": "3012",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "ARC-210",
+      "name": "Offset frequency",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "572"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "55",
+          "pushId": "3013",
+          "pushValue": "1.0",
+          "releaseId": "3013",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "ARC-210",
+      "name": "Enter",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "573"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "55",
+          "pushId": "3014",
+          "pushValue": "1.0",
+          "releaseId": "3014",
+          "releaseValue": "0.0"
+        }
+      ]
     },
     {
       "heliosType": "DCS.Common.Switch",
@@ -13094,6 +13823,28 @@
           "pushId": "3032",
           "pushValue": "1.0",
           "releaseId": "3032",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "UFC",
+      "name": "Toggle ARC-210 RT2 Status (long press)",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "534"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "8",
+          "pushId": "3033",
+          "pushValue": "1.0",
+          "releaseId": "3033",
           "releaseValue": "0.0"
         }
       ]
