@@ -1,7 +1,7 @@
 {
   "source": "Helios",
   "version": "1.6.6000.0000",
-  "commit": "90a15977a12d1af23b56b0f4105cf4344b8f9f39",
+  "commit": "498c146b54f2f5484c66fee7c16f3226a77caaed",
   "type": "Existing",
   "name": "DCS A-10C II",
   "module": "A-10C_2",
@@ -858,6 +858,110 @@
       "baseValue": 0.0,
       "scale": 1000.0,
       "unit": "Celsius"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "ARC-210",
+      "name": "Frequency Display",
+      "description": "Currently tuned frequency of the ARC-210 radio.",
+      "exports": [
+        {
+          "id": "2414"
+        }
+      ],
+      "valueDescription": "",
+      "unit": "Text"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "ARC-210",
+      "name": "Prev Label Display",
+      "description": "Value of the PREV label on top left hand corner of display",
+      "exports": [
+        {
+          "id": "2415"
+        }
+      ],
+      "valueDescription": "",
+      "unit": "Text"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "ARC-210",
+      "name": "Display of Previous Manual Frequency",
+      "description": "Previous frequency value",
+      "exports": [
+        {
+          "id": "2416"
+        }
+      ],
+      "valueDescription": "",
+      "unit": "Text"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "ARC-210",
+      "name": "Modulation Mode",
+      "description": "Modulation value which appears above the main frequency value on the display",
+      "exports": [
+        {
+          "id": "2417"
+        }
+      ],
+      "valueDescription": "",
+      "unit": "Text"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "ARC-210",
+      "name": "KY Submode",
+      "description": "Value of the label which displays the sub mode on the display.  This also shows initializing message on the display",
+      "exports": [
+        {
+          "id": "2418"
+        }
+      ],
+      "valueDescription": "",
+      "unit": "Text"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "ARC-210",
+      "name": "Communications Security Mode",
+      "description": "KY status in the middle of the display",
+      "exports": [
+        {
+          "id": "2419"
+        }
+      ],
+      "valueDescription": "",
+      "unit": "Text"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "ARC-210",
+      "name": "Communications Security Submode",
+      "description": "KY sub-status in the middle of the display",
+      "exports": [
+        {
+          "id": "2420"
+        }
+      ],
+      "valueDescription": "",
+      "unit": "Text"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "ARC-210",
+      "name": "RT Label",
+      "description": "Receive / Transmit status from the top right of the display",
+      "exports": [
+        {
+          "id": "2421"
+        }
+      ],
+      "valueDescription": "",
+      "unit": "Text"
     },
     {
       "heliosType": "DCS.Common.Switch",
