@@ -1,7 +1,7 @@
 {
   "source": "Helios",
-  "version": "1.6.5901.0000",
-  "commit": "59c81ee6ef37755fd5dac6e78bfd7d863b4d19a0",
+  "version": "1.6.6000.0000",
+  "commit": "4eb6b40fe687be2685f289795957bfe878db0312",
   "type": "Existing",
   "name": "DCS Mirage F1EE",
   "module": "MIRAGE-F1EE",
@@ -4332,12 +4332,12 @@
         {
           "argumentValue": "-1.0",
           "name": "Posn 1",
-          "actionID": "3532",
-          "stopActionID": "3532",
+          "actionID": "3533",
+          "stopActionID": "3533",
           "stopActionValue": "0.0"
         },
         {
-          "argumentValue": "0.0",
+          "argumentValue": "-1.0",
           "name": "Posn 2"
         },
         {
@@ -8574,51 +8574,6 @@
           "releaseValue": "0.0"
         }
       ]
-    },
-    {
-      "heliosType": "DCS.Common.PushButton",
-      "device": "Warning lights",
-      "name": "Button Jammer detection light",
-      "description": "Current state of this button.",
-      "exports": [
-        {
-          "format": "%1d",
-          "isExportedEveryFrame": false,
-          "id": "194"
-        }
-      ],
-      "buttons": [
-        {
-          "deviceId": "1",
-          "pushId": "3291",
-          "pushValue": "1.0",
-          "releaseId": "3291",
-          "releaseValue": "0.0"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.Axis",
-      "device": "Warning lights",
-      "name": "Lamp Jammer detection light",
-      "description": "Current value of this axis.",
-      "exports": [
-        {
-          "format": "%0.1f",
-          "isExportedEveryFrame": false,
-          "id": "195"
-        }
-      ],
-      "loop": false,
-      "argumentValue": 0.5,
-      "argumentMin": 0.0,
-      "argumentMax": 1.0,
-      "actions": {
-        "set": {
-          "deviceId": "1",
-          "actionId": "3292"
-        }
-      }
     },
     {
       "heliosType": "DCS.Common.PushButton",
