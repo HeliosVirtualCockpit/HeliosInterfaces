@@ -1,7 +1,7 @@
 {
   "source": "Helios",
-  "version": "1.6.6000.0000",
-  "commit": "498c146b54f2f5484c66fee7c16f3226a77caaed",
+  "version": "1.6.6000.0001",
+  "commit": "8d50c68a94919b35193be8af9c58903c6ff72f4a",
   "type": "Existing",
   "name": "DCS A-10C II",
   "module": "A-10C_2",
@@ -860,108 +860,32 @@
       "unit": "Celsius"
     },
     {
-      "heliosType": "DCS.Common.NetworkValue",
+      "heliosType": "DCS.Common.RotaryEncoder",
       "device": "ARC-210",
-      "name": "Frequency Display",
-      "description": "Currently tuned frequency of the ARC-210 radio.",
-      "exports": [
-        {
-          "id": "2414"
+      "name": "Channel select knob",
+      "exports": [],
+      "argumentValue": 0.1,
+      "actions": {
+        "increment": {
+          "deviceId": "55",
+          "actionId": "3027"
+        },
+        "decrement": {
+          "deviceId": "55",
+          "actionId": "3027"
         }
-      ],
-      "valueDescription": "",
-      "unit": "Text"
+      }
     },
     {
-      "heliosType": "DCS.Common.NetworkValue",
+      "heliosType": "DCS.A10C.Functions.ARC210Display",
       "device": "ARC-210",
-      "name": "Prev Label Display",
-      "description": "Value of the PREV label on top left hand corner of display",
+      "name": "Display",
+      "description": "The values contained on the display panel.",
       "exports": [
         {
-          "id": "2415"
+          "id": "2422"
         }
-      ],
-      "valueDescription": "",
-      "unit": "Text"
-    },
-    {
-      "heliosType": "DCS.Common.NetworkValue",
-      "device": "ARC-210",
-      "name": "Display of Previous Manual Frequency",
-      "description": "Previous frequency value",
-      "exports": [
-        {
-          "id": "2416"
-        }
-      ],
-      "valueDescription": "",
-      "unit": "Text"
-    },
-    {
-      "heliosType": "DCS.Common.NetworkValue",
-      "device": "ARC-210",
-      "name": "Modulation Mode",
-      "description": "Modulation value which appears above the main frequency value on the display",
-      "exports": [
-        {
-          "id": "2417"
-        }
-      ],
-      "valueDescription": "",
-      "unit": "Text"
-    },
-    {
-      "heliosType": "DCS.Common.NetworkValue",
-      "device": "ARC-210",
-      "name": "KY Submode",
-      "description": "Value of the label which displays the sub mode on the display.  This also shows initializing message on the display",
-      "exports": [
-        {
-          "id": "2418"
-        }
-      ],
-      "valueDescription": "",
-      "unit": "Text"
-    },
-    {
-      "heliosType": "DCS.Common.NetworkValue",
-      "device": "ARC-210",
-      "name": "Communications Security Mode",
-      "description": "KY status in the middle of the display",
-      "exports": [
-        {
-          "id": "2419"
-        }
-      ],
-      "valueDescription": "",
-      "unit": "Text"
-    },
-    {
-      "heliosType": "DCS.Common.NetworkValue",
-      "device": "ARC-210",
-      "name": "Communications Security Submode",
-      "description": "KY sub-status in the middle of the display",
-      "exports": [
-        {
-          "id": "2420"
-        }
-      ],
-      "valueDescription": "",
-      "unit": "Text"
-    },
-    {
-      "heliosType": "DCS.Common.NetworkValue",
-      "device": "ARC-210",
-      "name": "RT Label",
-      "description": "Receive / Transmit status from the top right of the display",
-      "exports": [
-        {
-          "id": "2421"
-        }
-      ],
-      "valueDescription": "",
-      "unit": "Text"
+      ]
     },
     {
       "heliosType": "DCS.Common.Switch",
@@ -1013,29 +937,6 @@
           "actionID": "3043"
         }
       ]
-    },
-    {
-      "heliosType": "DCS.Common.Axis",
-      "device": "ARC-210",
-      "name": "Channel select knob",
-      "description": "Current value of this axis.",
-      "exports": [
-        {
-          "format": "%0.1f",
-          "isExportedEveryFrame": false,
-          "id": "552"
-        }
-      ],
-      "loop": false,
-      "argumentValue": 0.1,
-      "argumentMin": 0.0,
-      "argumentMax": 1.0,
-      "actions": {
-        "set": {
-          "deviceId": "55",
-          "actionId": "3027"
-        }
-      }
     },
     {
       "heliosType": "DCS.Common.Switch",
