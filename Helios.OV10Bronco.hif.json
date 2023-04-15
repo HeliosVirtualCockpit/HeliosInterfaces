@@ -2,8 +2,8 @@
   "source": "Helios",
   "version": "1.6.6010.0000",
   "commit": "",
-  "type": "Existing",
-  "name": "DCS OV-10A Bronco (Alpha)",
+  "type": "DCS",
+  "name": "DCS OV-10A Bronco (Experimental)",
   "module": "Bronco-OV-10A",
   "vehicles": [
     "Bronco-OV-10A"
@@ -722,33 +722,6 @@
           "actionId": "3248"
         }
       }
-    },
-    {
-      "heliosType": "DCS.Common.ScaledNetworkValue",
-      "device": "Instruments",
-      "name": "G Meter Minimum",
-      "description": "Minimum G loading on aircraft",
-      "exports": [
-        {
-          "format": "%0.3f",
-          "id": "104"
-        }
-      ],
-      "calibration": {
-        "points": [
-          {
-            "value": -1.0,
-            "mappedValue": 0.0
-          },
-          {
-            "value": 1.0,
-            "mappedValue": -5.0
-          }
-        ],
-        "precision": 1
-      },
-      "valueDescription": "Value 1 to 10",
-      "unit": "G"
     },
     {
       "heliosType": "DCS.Common.ScaledNetworkValue",
@@ -1706,26 +1679,6 @@
       },
       "valueDescription": "Value 0 to 360",
       "unit": "Degrees"
-    },
-    {
-      "heliosType": "DCS.BroncoOV10A.Functions.TACANChannel",
-      "device": "TACAN",
-      "name": "Channel",
-      "description": "Currently tuned TACAN channel.",
-      "exports": [
-        {
-          "isExportedEveryFrame": false,
-          "id": "2263"
-        },
-        {
-          "format": "%0.1f",
-          "isExportedEveryFrame": false,
-          "id": "266"
-        }
-      ],
-      "device2": "TACAN",
-      "name2": "Channel Mode",
-      "description2": "Current TACAN channel mode."
     },
     {
       "heliosType": "DCS.Common.Switch",
