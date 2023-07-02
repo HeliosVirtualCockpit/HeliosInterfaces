@@ -12,7 +12,7 @@
     {
       "heliosType": "DCS.Common.Switch",
       "device": "AIR COND",
-      "name": "Air Conditiong Auto/Manual/Off",
+      "name": "Air Conditioning Auto/Manual/Off",
       "description": "Current position of this switch.",
       "exports": [
         {
@@ -25,17 +25,17 @@
       "positions": [
         {
           "argumentValue": "0.000",
-          "name": "Posn 1",
+          "name": "Auto",
           "actionID": "3562"
         },
         {
-          "argumentValue": "0.000",
-          "name": "Posn 2",
+          "argumentValue": "0.500",
+          "name": "Manual",
           "actionID": "3562"
         },
         {
-          "argumentValue": "0.000",
-          "name": "Posn 3",
+          "argumentValue": "1.000",
+          "name": "Off",
           "actionID": "3562"
         }
       ]
@@ -43,7 +43,7 @@
     {
       "heliosType": "DCS.Common.Switch",
       "device": "AIR COND",
-      "name": "Air Conditiong Max/Norm/Min",
+      "name": "Air Conditioning Max/Norm/Min",
       "description": "Current position of this switch.",
       "exports": [
         {
@@ -56,17 +56,17 @@
       "positions": [
         {
           "argumentValue": "0.000",
-          "name": "Posn 1",
+          "name": "Max",
           "actionID": "3563"
         },
         {
-          "argumentValue": "0.000",
-          "name": "Posn 2",
+          "argumentValue": "0.500",
+          "name": "Norm",
           "actionID": "3563"
         },
         {
-          "argumentValue": "0.000",
-          "name": "Posn 3",
+          "argumentValue": "1.000",
+          "name": "Min",
           "actionID": "3563"
         }
       ]
@@ -74,7 +74,7 @@
     {
       "heliosType": "DCS.Common.Axis",
       "device": "AIR COND",
-      "name": "Air Conditiong Cold/Hot",
+      "name": "Air Conditioning Cold/Hot",
       "description": "Current value of this axis.",
       "exports": [
         {
@@ -114,17 +114,17 @@
           "actionID": "3565"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "0.333",
           "name": "Posn 2",
           "actionID": "3565"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "0.667",
           "name": "Posn 3",
           "actionID": "3565"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "1.000",
           "name": "Posn 4",
           "actionID": "3565"
         }
@@ -425,32 +425,32 @@
           "actionID": "3321"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "0.167",
           "name": "Posn 2",
           "actionID": "3321"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "0.333",
           "name": "Posn 3",
           "actionID": "3321"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "0.500",
           "name": "Posn 4",
           "actionID": "3321"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "0.667",
           "name": "Posn 5",
           "actionID": "3321"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "0.833",
           "name": "Posn 6",
           "actionID": "3321"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "1.000",
           "name": "Posn 7",
           "actionID": "3321"
         }
@@ -546,17 +546,17 @@
           "actionID": "3600"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "0.333",
           "name": "Posn 2",
           "actionID": "3600"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "0.667",
           "name": "Posn 3",
           "actionID": "3600"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "1.000",
           "name": "Posn 4",
           "actionID": "3600"
         }
@@ -608,17 +608,17 @@
           "actionID": "3599"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "0.333",
           "name": "Posn 2",
           "actionID": "3599"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "0.667",
           "name": "Posn 3",
           "actionID": "3599"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "1.000",
           "name": "Posn 4",
           "actionID": "3599"
         }
@@ -644,12 +644,12 @@
           "actionID": "3452"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "0.500",
           "name": "Posn 2",
           "actionID": "3452"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "1.000",
           "name": "Posn 3",
           "actionID": "3452"
         }
@@ -675,12 +675,12 @@
           "actionID": "3453"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "0.500",
           "name": "Posn 2",
           "actionID": "3453"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "1.000",
           "name": "Posn 3",
           "actionID": "3453"
         }
@@ -706,12 +706,12 @@
           "actionID": "3454"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "0.500",
           "name": "Posn 2",
           "actionID": "3454"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "1.000",
           "name": "Posn 3",
           "actionID": "3454"
         }
@@ -1355,12 +1355,12 @@
           "actionID": "3911"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "0.500",
           "name": "BOTH",
           "actionID": "3911"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "1.000",
           "name": "CHAFF",
           "actionID": "3911"
         }
@@ -1386,22 +1386,22 @@
           "actionID": "3912"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "0.250",
           "name": "STBY",
           "actionID": "3912"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "0.500",
           "name": "MAN",
           "actionID": "3912"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "0.750",
           "name": "SEMI",
           "actionID": "3912"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "1.000",
           "name": "AUTO",
           "actionID": "3912"
         }
@@ -1497,12 +1497,12 @@
           "actionID": "3558"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "0.500",
           "name": "Posn 2",
           "actionID": "3558"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "1.000",
           "name": "Posn 3",
           "actionID": "3558"
         }
@@ -1784,12 +1784,12 @@
           "actionID": "3386"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "0.500",
           "name": "Posn 2",
           "actionID": "3386"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "1.000",
           "name": "Posn 3",
           "actionID": "3386"
         }
@@ -2023,12 +2023,12 @@
           "actionID": "3933"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "0.500",
           "name": "AUTO",
           "actionID": "3933"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "1.000",
           "name": "MAN",
           "actionID": "3933"
         }
@@ -2054,32 +2054,32 @@
           "actionID": "3465"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "0.167",
           "name": "Posn 2",
           "actionID": "3465"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "0.333",
           "name": "Posn 3",
           "actionID": "3465"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "0.500",
           "name": "Posn 4",
           "actionID": "3465"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "0.667",
           "name": "Posn 5",
           "actionID": "3465"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "0.833",
           "name": "Posn 6",
           "actionID": "3465"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "1.000",
           "name": "Posn 7",
           "actionID": "3465"
         }
@@ -2131,32 +2131,32 @@
           "actionID": "3467"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "0.167",
           "name": "Posn 2",
           "actionID": "3467"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "0.333",
           "name": "Posn 3",
           "actionID": "3467"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "0.500",
           "name": "Posn 4",
           "actionID": "3467"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "0.667",
           "name": "Posn 5",
           "actionID": "3467"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "0.833",
           "name": "Posn 6",
           "actionID": "3467"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "1.000",
           "name": "Posn 7",
           "actionID": "3467"
         }
@@ -2182,12 +2182,12 @@
           "actionID": "3468"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "0.500",
           "name": "Posn 2",
           "actionID": "3468"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "1.000",
           "name": "Posn 3",
           "actionID": "3468"
         }
@@ -2294,28 +2294,6 @@
           "actionId": "3401"
         }
       }
-    },
-    {
-      "heliosType": "DCS.Common.PushButton",
-      "device": "Flight Instruments (WSO)",
-      "name": "Button Backup ADI Cage/Pitch Adjust Knob - Pull and turn to uncage",
-      "description": "Current state of this button.",
-      "exports": [
-        {
-          "format": "%1d",
-          "isExportedEveryFrame": false,
-          "id": "1355"
-        }
-      ],
-      "buttons": [
-        {
-          "deviceId": "17",
-          "pushId": "3402",
-          "pushValue": "1.0",
-          "releaseId": "3402",
-          "releaseValue": "0.0"
-        }
-      ]
     },
     {
       "heliosType": "DCS.Common.Axis",
@@ -2582,12 +2560,12 @@
           "actionID": "3533"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "0.500",
           "name": "Posn 2",
           "actionID": "3533"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "1.000",
           "name": "Posn 3",
           "actionID": "3533"
         }
@@ -2613,32 +2591,32 @@
           "actionID": "3381"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "0.167",
           "name": "Posn 2",
           "actionID": "3381"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "0.333",
           "name": "Posn 3",
           "actionID": "3381"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "0.500",
           "name": "Posn 4",
           "actionID": "3381"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "0.667",
           "name": "Posn 5",
           "actionID": "3381"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "0.833",
           "name": "Posn 6",
           "actionID": "3381"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "1.000",
           "name": "Posn 7",
           "actionID": "3381"
         }
@@ -2739,12 +2717,12 @@
           "actionID": "3589"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "0.500",
           "name": "Posn 2",
           "actionID": "3589"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "1.000",
           "name": "Posn 3",
           "actionID": "3589"
         }
@@ -3021,12 +2999,12 @@
           "actionID": "3121"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "0.500",
           "name": "Posn 2",
           "actionID": "3121"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "1.000",
           "name": "Posn 3",
           "actionID": "3121"
         }
@@ -3270,12 +3248,12 @@
           "actionID": "3516"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "0.500",
           "name": "Posn 2",
           "actionID": "3516"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "1.000",
           "name": "Posn 3",
           "actionID": "3516"
         }
@@ -5935,12 +5913,12 @@
           "actionID": "3509"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "0.500",
           "name": "Posn 2",
           "actionID": "3509"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "1.000",
           "name": "Posn 3",
           "actionID": "3509"
         }
@@ -6019,12 +5997,12 @@
           "actionID": "3427"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "0.500",
           "name": "Posn 2",
           "actionID": "3427"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "1.000",
           "name": "Posn 3",
           "actionID": "3427"
         }
@@ -6150,12 +6128,12 @@
           "actionID": "3537"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "0.500",
           "name": "Posn 2",
           "actionID": "3537"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "1.000",
           "name": "Posn 3",
           "actionID": "3537"
         }
@@ -6321,12 +6299,12 @@
           "actionID": "3553"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "0.500",
           "name": "Posn 2",
           "actionID": "3553"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "1.000",
           "name": "Posn 3",
           "actionID": "3553"
         }
@@ -6409,12 +6387,12 @@
           "actionID": "3573"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "0.500",
           "name": "Posn 2",
           "actionID": "3573"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "1.000",
           "name": "Posn 3",
           "actionID": "3573"
         }
@@ -8240,12 +8218,12 @@
           "actionID": "3469"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "0.500",
           "name": "Posn 2",
           "actionID": "3469"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "1.000",
           "name": "Posn 3",
           "actionID": "3469"
         }
@@ -8271,12 +8249,12 @@
           "actionID": "3470"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "0.500",
           "name": "Posn 2",
           "actionID": "3470"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "1.000",
           "name": "Posn 3",
           "actionID": "3470"
         }
@@ -8302,17 +8280,17 @@
           "actionID": "3471"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "0.333",
           "name": "Posn 2",
           "actionID": "3471"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "0.667",
           "name": "Posn 3",
           "actionID": "3471"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "1.000",
           "name": "Posn 4",
           "actionID": "3471"
         }
@@ -8338,17 +8316,17 @@
           "actionID": "3472"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "0.333",
           "name": "Posn 2",
           "actionID": "3472"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "0.667",
           "name": "Posn 3",
           "actionID": "3472"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "1.000",
           "name": "Posn 4",
           "actionID": "3472"
         }
@@ -8420,12 +8398,12 @@
           "actionID": "3475"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "0.500",
           "name": "Posn 2",
           "actionID": "3475"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "1.000",
           "name": "Posn 3",
           "actionID": "3475"
         }
@@ -8451,22 +8429,22 @@
           "actionID": "3476"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "0.250",
           "name": "Posn 2",
           "actionID": "3476"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "0.500",
           "name": "Posn 3",
           "actionID": "3476"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "0.750",
           "name": "Posn 4",
           "actionID": "3476"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "1.000",
           "name": "Posn 5",
           "actionID": "3476"
         }
@@ -9056,12 +9034,12 @@
           "actionID": "3413"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "0.500",
           "name": "STBY",
           "actionID": "3413"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "1.000",
           "name": "ON",
           "actionID": "3413"
         }
