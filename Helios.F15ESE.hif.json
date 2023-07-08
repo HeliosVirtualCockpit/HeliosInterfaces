@@ -1,7 +1,7 @@
 {
   "source": "Helios",
-  "version": "1.6.6010.0000",
-  "commit": "d786300d33c4e6c1dbe08078587a7573b8f06421",
+  "version": "1.6.1000.20230707",
+  "commit": "ed16874af1aef7e018addc068b74c5bb497d0c6b",
   "type": "Existing",
   "name": "DCS F-15E Strike Eagle",
   "module": "F-15ESE",
@@ -119,14 +119,74 @@
           "actionID": "3565"
         },
         {
-          "argumentValue": "0.667",
+          "argumentValue": "0.666",
           "name": "Posn 3",
           "actionID": "3565"
         },
         {
-          "argumentValue": "1.000",
+          "argumentValue": "0.999",
           "name": "Posn 4",
           "actionID": "3565"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "AMAD Panel",
+      "name": "AMAD Fire Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "130"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "AMAD Panel",
+      "name": "Engine Fire Left Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "131"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "AMAD Panel",
+      "name": "Engine Fire Right Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "132"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "AMAD Panel",
+      "name": "Left Burn Thru Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "133"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "AMAD Panel",
+      "name": "Right Burn Thru Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "134"
         }
       ]
     },
@@ -430,27 +490,27 @@
           "actionID": "3321"
         },
         {
-          "argumentValue": "0.333",
+          "argumentValue": "0.334",
           "name": "Posn 3",
           "actionID": "3321"
         },
         {
-          "argumentValue": "0.500",
+          "argumentValue": "0.501",
           "name": "Posn 4",
           "actionID": "3321"
         },
         {
-          "argumentValue": "0.667",
+          "argumentValue": "0.668",
           "name": "Posn 5",
           "actionID": "3321"
         },
         {
-          "argumentValue": "0.833",
+          "argumentValue": "0.835",
           "name": "Posn 6",
           "actionID": "3321"
         },
         {
-          "argumentValue": "1.000",
+          "argumentValue": "1.002",
           "name": "Posn 7",
           "actionID": "3321"
         }
@@ -551,14 +611,50 @@
           "actionID": "3600"
         },
         {
-          "argumentValue": "0.667",
+          "argumentValue": "0.666",
           "name": "Posn 3",
           "actionID": "3600"
         },
         {
-          "argumentValue": "1.000",
+          "argumentValue": "0.999",
           "name": "Posn 4",
           "actionID": "3600"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "CANOPY",
+      "name": "Shoot Cue Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "196"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "CANOPY",
+      "name": "READY Refuelling Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "197"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "CANOPY",
+      "name": "Canopy Unlocked Indicator (Pilot)",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "408"
         }
       ]
     },
@@ -613,12 +709,12 @@
           "actionID": "3599"
         },
         {
-          "argumentValue": "0.667",
+          "argumentValue": "0.666",
           "name": "Posn 3",
           "actionID": "3599"
         },
         {
-          "argumentValue": "1.000",
+          "argumentValue": "0.999",
           "name": "Posn 4",
           "actionID": "3599"
         }
@@ -784,6 +880,18 @@
           "pushValue": "1.0",
           "releaseId": "3457",
           "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "CAS",
+      "name": "T/O Trim Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "458"
         }
       ]
     },
@@ -1609,6 +1717,18 @@
       ]
     },
     {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Emergency Jettison and Misc Handles",
+      "name": "Master Warning Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "402"
+        }
+      ]
+    },
+    {
       "heliosType": "DCS.Common.Switch",
       "device": "Emergency Jettison and Misc Handles",
       "name": "Emergency Vent Handle",
@@ -2059,27 +2179,27 @@
           "actionID": "3465"
         },
         {
-          "argumentValue": "0.333",
+          "argumentValue": "0.334",
           "name": "Posn 3",
           "actionID": "3465"
         },
         {
-          "argumentValue": "0.500",
+          "argumentValue": "0.501",
           "name": "Posn 4",
           "actionID": "3465"
         },
         {
-          "argumentValue": "0.667",
+          "argumentValue": "0.668",
           "name": "Posn 5",
           "actionID": "3465"
         },
         {
-          "argumentValue": "0.833",
+          "argumentValue": "0.835",
           "name": "Posn 6",
           "actionID": "3465"
         },
         {
-          "argumentValue": "1.000",
+          "argumentValue": "1.002",
           "name": "Posn 7",
           "actionID": "3465"
         }
@@ -2136,27 +2256,27 @@
           "actionID": "3467"
         },
         {
-          "argumentValue": "0.333",
+          "argumentValue": "0.334",
           "name": "Posn 3",
           "actionID": "3467"
         },
         {
-          "argumentValue": "0.500",
+          "argumentValue": "0.501",
           "name": "Posn 4",
           "actionID": "3467"
         },
         {
-          "argumentValue": "0.667",
+          "argumentValue": "0.668",
           "name": "Posn 5",
           "actionID": "3467"
         },
         {
-          "argumentValue": "0.833",
+          "argumentValue": "0.835",
           "name": "Posn 6",
           "actionID": "3467"
         },
         {
-          "argumentValue": "1.000",
+          "argumentValue": "1.002",
           "name": "Posn 7",
           "actionID": "3467"
         }
@@ -2251,6 +2371,62 @@
       ]
     },
     {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Flight Instruments",
+      "name": "IAS Airspeed",
+      "description": "Current indicated air speed of the aircraft.",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "345"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": 0.0,
+            "mappedValue": 0.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 1000.0
+          }
+        ],
+        "precision": 1
+      },
+      "unit": "Knots"
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Flight Instruments",
+      "name": "VVI",
+      "description": "Vertical velocity indicator -6000 to +6000.",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "362"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": -0.6,
+            "mappedValue": -6000.0
+          },
+          {
+            "value": 0.0,
+            "mappedValue": 0.0
+          },
+          {
+            "value": 0.6,
+            "mappedValue": 6000.0
+          }
+        ],
+        "precision": 1
+      },
+      "unit": "FeetPerMinute"
+    },
+    {
       "heliosType": "DCS.Common.PushButton",
       "device": "Flight Instruments (WSO)",
       "name": "Master Caution Button",
@@ -2269,6 +2445,18 @@
           "pushValue": "1.0",
           "releaseId": "3176",
           "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Flight Instruments (WSO)",
+      "name": "Master Warning Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "1177"
         }
       ]
     },
@@ -2572,6 +2760,42 @@
       ]
     },
     {
+      "heliosType": "DCS.AV8B.Functions.Digits4Display",
+      "device": "Fuel Monitor Panel",
+      "name": "Left Tank display",
+      "description": "Fuel left tank quantity",
+      "exports": [
+        {
+          "isExportedEveryFrame": false,
+          "id": "2011"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.AV8B.Functions.Digits4Display",
+      "device": "Fuel Monitor Panel",
+      "name": "Right Tank display",
+      "description": "Fuel right tank quantity",
+      "exports": [
+        {
+          "isExportedEveryFrame": false,
+          "id": "2012"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.AV8B.Functions.Digits4Display",
+      "device": "Fuel Monitor Panel",
+      "name": "Bingo value display",
+      "description": "Fuel Bingo amount",
+      "exports": [
+        {
+          "isExportedEveryFrame": false,
+          "id": "2013"
+        }
+      ]
+    },
+    {
       "heliosType": "DCS.Common.Switch",
       "device": "Fuel Monitor Panel",
       "name": "Fuel Totalizer Selector",
@@ -2596,27 +2820,27 @@
           "actionID": "3381"
         },
         {
-          "argumentValue": "0.333",
+          "argumentValue": "0.334",
           "name": "Posn 3",
           "actionID": "3381"
         },
         {
-          "argumentValue": "0.500",
+          "argumentValue": "0.501",
           "name": "Posn 4",
           "actionID": "3381"
         },
         {
-          "argumentValue": "0.667",
+          "argumentValue": "0.668",
           "name": "Posn 5",
           "actionID": "3381"
         },
         {
-          "argumentValue": "0.833",
+          "argumentValue": "0.835",
           "name": "Posn 6",
           "actionID": "3381"
         },
         {
-          "argumentValue": "1.000",
+          "argumentValue": "1.002",
           "name": "Posn 7",
           "actionID": "3381"
         }
@@ -2644,6 +2868,18 @@
           "actionId": "3385"
         }
       }
+    },
+    {
+      "heliosType": "DCS.AV8B.Functions.FuelTotalDisplay",
+      "device": "Fuel Quantity",
+      "name": "Total display",
+      "description": "Fuel Total value",
+      "exports": [
+        {
+          "isExportedEveryFrame": false,
+          "id": "2010"
+        }
+      ]
     },
     {
       "heliosType": "DCS.Common.Switch",
@@ -2775,13 +3011,25 @@
       "positions": [
         {
           "argumentValue": "1.0",
-          "name": "Posn 1",
+          "name": "ON",
           "actionID": "3595"
         },
         {
           "argumentValue": "0.0",
-          "name": "Posn 2",
+          "name": "OFF",
           "actionID": "3595"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Generators",
+      "name": "Jet Starter Ready Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "596"
         }
       ]
     },
@@ -3112,7 +3360,7 @@
     {
       "heliosType": "DCS.Common.PushButton",
       "device": "HUD Control Panel",
-      "name": "A/A Master Mode Selector",
+      "name": "AA Master Mode Selector",
       "description": "Current state of this button.",
       "exports": [
         {
@@ -3134,7 +3382,7 @@
     {
       "heliosType": "DCS.Common.PushButton",
       "device": "HUD Control Panel",
-      "name": "A/G Master Mode Selector",
+      "name": "AG Master Mode Selector",
       "description": "Current state of this button.",
       "exports": [
         {
@@ -3156,7 +3404,7 @@
     {
       "heliosType": "DCS.Common.PushButton",
       "device": "HUD Control Panel",
-      "name": "NAV Master Mode Selector",
+      "name": "Nav Master Mode Selector",
       "description": "Current state of this button.",
       "exports": [
         {
@@ -3178,7 +3426,7 @@
     {
       "heliosType": "DCS.Common.PushButton",
       "device": "HUD Control Panel",
-      "name": "INST Master Mode Selector",
+      "name": "Inst Master Mode Selector",
       "description": "Current state of this button.",
       "exports": [
         {
@@ -3194,6 +3442,54 @@
           "pushValue": "1.0",
           "releaseId": "3129",
           "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "HUD Control Panel",
+      "name": "AA Master Mode Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "326"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "HUD Control Panel",
+      "name": "AG Master Mode Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "327"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "HUD Control Panel",
+      "name": "Nav Master Mode Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "328"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "HUD Control Panel",
+      "name": "Inst Master Mode Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "329"
         }
       ]
     },
@@ -3287,6 +3583,66 @@
           "argumentValue": "-1.0",
           "name": "Posn 3",
           "actionID": "3517"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Indicators (Pilot)",
+      "name": "Laser Armed Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "409"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Indicators (Pilot)",
+      "name": "A/P Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "410"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Indicators (Pilot)",
+      "name": "Hook Down Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "493"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Indicators (Pilot)",
+      "name": "Bingo Fuel Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "496"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Indicators (Pilot)",
+      "name": "Anti-Skid Disabled Indicator ",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "499"
         }
       ]
     },
@@ -3805,6 +4161,150 @@
           "pushValue": "1.0",
           "releaseId": "3325",
           "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Landing Gear Panel",
+      "name": "Left Gear Down Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "330"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Landing Gear Panel",
+      "name": "Nose Gear Down Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "331"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Landing Gear Panel",
+      "name": "Right Gear Down Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "332"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Landing Gear Panel",
+      "name": "Gear Lever Warning Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "333"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Landing Gear Panel",
+      "name": "Half Flaps Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "338"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Landing Gear Panel",
+      "name": "Full Flaps Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "339"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Landing Gear/Flaps Indicators (WSO)",
+      "name": "Landing Gear Nose Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "1337"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Landing Gear/Flaps Indicators (WSO)",
+      "name": "Landing Gear Left Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "1338"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Landing Gear/Flaps Indicators (WSO)",
+      "name": "Landing Gear Right Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "1339"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Landing Gear/Flaps Indicators (WSO)",
+      "name": "Landing Gear Unsafe Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "1340"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Landing Gear/Flaps Indicators (WSO)",
+      "name": "Half Flaps Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "1343"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Landing Gear/Flaps Indicators (WSO)",
+      "name": "Full Flaps Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "1344"
         }
       ]
     },
@@ -5863,6 +6363,54 @@
       ]
     },
     {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Master Mode Indicators (WSO)",
+      "name": "A/A Master Mode Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "1333"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Master Mode Indicators (WSO)",
+      "name": "A/G Master Mode Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "1334"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Master Mode Indicators (WSO)",
+      "name": "NAV Master Mode Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "1335"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Master Mode Indicators (WSO)",
+      "name": "INST Master Mode Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "1336"
+        }
+      ]
+    },
+    {
       "heliosType": "DCS.Common.Switch",
       "device": "MICS",
       "name": "Crypto Switch",
@@ -6238,17 +6786,17 @@
       "positions": [
         {
           "argumentValue": "1.0",
-          "name": "Posn 1",
+          "name": "Emergency",
           "actionID": "3551"
         },
         {
           "argumentValue": "0.0",
-          "name": "Posn 2",
+          "name": "Normal",
           "actionID": "3551"
         },
         {
           "argumentValue": "-1.0",
-          "name": "Posn 3",
+          "name": "Test",
           "actionID": "3551"
         }
       ]
@@ -6269,7 +6817,7 @@
       "positions": [
         {
           "argumentValue": "1.0",
-          "name": "",
+          "name": "100%",
           "actionID": "3552"
         },
         {
@@ -6307,6 +6855,18 @@
           "argumentValue": "1.000",
           "name": "Posn 3",
           "actionID": "3553"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "OXYGEN",
+      "name": "Oxygen Flow Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "555"
         }
       ]
     },
@@ -6395,6 +6955,18 @@
           "argumentValue": "1.000",
           "name": "Posn 3",
           "actionID": "3573"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "OXYGEN Control Panel (WSO)",
+      "name": "Oxygen Flow Indicator (WSO)",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "1454"
         }
       ]
     },
@@ -8285,12 +8857,12 @@
           "actionID": "3471"
         },
         {
-          "argumentValue": "0.667",
+          "argumentValue": "0.666",
           "name": "Posn 3",
           "actionID": "3471"
         },
         {
-          "argumentValue": "1.000",
+          "argumentValue": "0.999",
           "name": "Posn 4",
           "actionID": "3471"
         }
@@ -8321,12 +8893,12 @@
           "actionID": "3472"
         },
         {
-          "argumentValue": "0.667",
+          "argumentValue": "0.666",
           "name": "Posn 3",
           "actionID": "3472"
         },
         {
-          "argumentValue": "1.000",
+          "argumentValue": "0.999",
           "name": "Posn 4",
           "actionID": "3472"
         }
@@ -8629,6 +9201,23 @@
       "unit": "Meters"
     },
     {
+      "heliosType": "DCS.AH64D.Functions.Altimeter",
+      "device": "Standby Altimeter",
+      "name": "Altitude",
+      "description": "Barometric altitude above sea level of the aircraft.",
+      "exports": [
+        {
+          "id": "2051"
+        },
+        {
+          "id": "2059"
+        }
+      ],
+      "device2": "Standby Altimeter",
+      "name2": "Pressure",
+      "description2": "Manually set barometric altitude."
+    },
+    {
       "heliosType": "DCS.Common.Switch",
       "device": "TEWS Control Panel (WSO)",
       "name": "ICS ON/OFF Switch",
@@ -8807,6 +9396,66 @@
           "argumentValue": "0.0",
           "name": "DEFEAT Switch",
           "actionID": "3903"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Threat Indicators (Pilot)",
+      "name": "EMS Limit Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "403"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Threat Indicators (Pilot)",
+      "name": "AI Threat Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "404"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Threat Indicators (Pilot)",
+      "name": "SAM Threat Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "405"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Threat Indicators (Pilot)",
+      "name": "Low Altitude Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "406"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Threat Indicators (Pilot)",
+      "name": "TF Fail Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "407"
         }
       ]
     },
@@ -9118,9 +9767,139 @@
       ]
     },
     {
+      "heliosType": "DCS.Common.RotaryEncoder",
+      "device": "UFC Panel (Pilot)",
+      "name": "Left UHF Preset Channel Selector",
+      "exports": [],
+      "argumentValue": 0.1,
+      "actions": {
+        "increment": {
+          "deviceId": "56",
+          "actionId": "3011"
+        },
+        "decrement": {
+          "deviceId": "56",
+          "actionId": "3011"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.RotaryEncoder",
+      "device": "UFC Panel (Pilot)",
+      "name": "Right UHF Preset Channel Selector",
+      "exports": [],
+      "argumentValue": 0.1,
+      "actions": {
+        "increment": {
+          "deviceId": "56",
+          "actionId": "3012"
+        },
+        "decrement": {
+          "deviceId": "56",
+          "actionId": "3012"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Text",
+      "device": "UFC Panel (Pilot)",
+      "name": "Option Line 1",
+      "description": "Text value of Option Line",
+      "exports": [
+        {
+          "isExportedEveryFrame": false,
+          "id": "2100"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Text",
+      "device": "UFC Panel (Pilot)",
+      "name": "Option Line 2",
+      "description": "Text value of Option Line",
+      "exports": [
+        {
+          "isExportedEveryFrame": false,
+          "id": "2101"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Text",
+      "device": "UFC Panel (Pilot)",
+      "name": "Option Line 3",
+      "description": "Text value of Option Line",
+      "exports": [
+        {
+          "isExportedEveryFrame": false,
+          "id": "2102"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Text",
+      "device": "UFC Panel (Pilot)",
+      "name": "Option Line 4",
+      "description": "Text value of Option Line",
+      "exports": [
+        {
+          "isExportedEveryFrame": false,
+          "id": "2103"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Text",
+      "device": "UFC Panel (Pilot)",
+      "name": "Option Line 5",
+      "description": "Text value of Option Line",
+      "exports": [
+        {
+          "isExportedEveryFrame": false,
+          "id": "2104"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Text",
+      "device": "UFC Panel (Pilot)",
+      "name": "Option Line 6",
+      "description": "Text value of Option Line",
+      "exports": [
+        {
+          "isExportedEveryFrame": false,
+          "id": "2105"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Text",
+      "device": "UFC Panel (Pilot)",
+      "name": "Option Line 1 Center Text",
+      "description": "Text value of Option Line",
+      "exports": [
+        {
+          "isExportedEveryFrame": false,
+          "id": "2106"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Text",
+      "device": "UFC Panel (Pilot)",
+      "name": "Option Line 6 Scratchpad",
+      "description": "Text value of Option Line",
+      "exports": [
+        {
+          "isExportedEveryFrame": false,
+          "id": "2107"
+        }
+      ]
+    },
+    {
       "heliosType": "DCS.Common.PushButton",
-      "device": "UFC Panel",
-      "name": "UFC Push button 1",
+      "device": "UFC Panel (Pilot)",
+      "name": "Option Push Button 1 Left",
       "description": "Current state of this button.",
       "exports": [
         {
@@ -9141,8 +9920,8 @@
     },
     {
       "heliosType": "DCS.Common.PushButton",
-      "device": "UFC Panel",
-      "name": "UFC Push button 2",
+      "device": "UFC Panel (Pilot)",
+      "name": "Option Push Button 2 Left",
       "description": "Current state of this button.",
       "exports": [
         {
@@ -9163,8 +9942,8 @@
     },
     {
       "heliosType": "DCS.Common.PushButton",
-      "device": "UFC Panel",
-      "name": "UFC Push button 3",
+      "device": "UFC Panel (Pilot)",
+      "name": "Option Push Button 3 Left",
       "description": "Current state of this button.",
       "exports": [
         {
@@ -9185,8 +9964,8 @@
     },
     {
       "heliosType": "DCS.Common.PushButton",
-      "device": "UFC Panel",
-      "name": "UFC Push button 4",
+      "device": "UFC Panel (Pilot)",
+      "name": "Option Push Button 4 Left",
       "description": "Current state of this button.",
       "exports": [
         {
@@ -9207,8 +9986,8 @@
     },
     {
       "heliosType": "DCS.Common.PushButton",
-      "device": "UFC Panel",
-      "name": "UFC Push button 5",
+      "device": "UFC Panel (Pilot)",
+      "name": "Option Push Button 5 Left",
       "description": "Current state of this button.",
       "exports": [
         {
@@ -9229,8 +10008,8 @@
     },
     {
       "heliosType": "DCS.Common.PushButton",
-      "device": "UFC Panel",
-      "name": "UFC Push button 10",
+      "device": "UFC Panel (Pilot)",
+      "name": "Option Push Button 1 Right",
       "description": "Current state of this button.",
       "exports": [
         {
@@ -9251,8 +10030,8 @@
     },
     {
       "heliosType": "DCS.Common.PushButton",
-      "device": "UFC Panel",
-      "name": "UFC Push button 9",
+      "device": "UFC Panel (Pilot)",
+      "name": "Option Push Button 2 Right",
       "description": "Current state of this button.",
       "exports": [
         {
@@ -9273,8 +10052,8 @@
     },
     {
       "heliosType": "DCS.Common.PushButton",
-      "device": "UFC Panel",
-      "name": "UFC Push button 8",
+      "device": "UFC Panel (Pilot)",
+      "name": "Option Push Button 3 Right",
       "description": "Current state of this button.",
       "exports": [
         {
@@ -9295,8 +10074,8 @@
     },
     {
       "heliosType": "DCS.Common.PushButton",
-      "device": "UFC Panel",
-      "name": "UFC Push button 7",
+      "device": "UFC Panel (Pilot)",
+      "name": "Option Push Button 4 Right",
       "description": "Current state of this button.",
       "exports": [
         {
@@ -9317,8 +10096,8 @@
     },
     {
       "heliosType": "DCS.Common.PushButton",
-      "device": "UFC Panel",
-      "name": "UFC Push button 6",
+      "device": "UFC Panel (Pilot)",
+      "name": "Option Push Button 5 Right",
       "description": "Current state of this button.",
       "exports": [
         {
@@ -9339,7 +10118,7 @@
     },
     {
       "heliosType": "DCS.Common.Axis",
-      "device": "UFC Panel",
+      "device": "UFC Panel (Pilot)",
       "name": "UHF Radio 1 Volume",
       "description": "Current value of this axis.",
       "exports": [
@@ -9362,7 +10141,7 @@
     },
     {
       "heliosType": "DCS.Common.Axis",
-      "device": "UFC Panel",
+      "device": "UFC Panel (Pilot)",
       "name": "UHF Radio 2 Volume",
       "description": "Current value of this axis.",
       "exports": [
@@ -9385,7 +10164,7 @@
     },
     {
       "heliosType": "DCS.Common.Axis",
-      "device": "UFC Panel",
+      "device": "UFC Panel (Pilot)",
       "name": "UHF Radio 3 Volume",
       "description": "Current value of this axis.",
       "exports": [
@@ -9408,7 +10187,7 @@
     },
     {
       "heliosType": "DCS.Common.Axis",
-      "device": "UFC Panel",
+      "device": "UFC Panel (Pilot)",
       "name": "UHF Radio 4 Volume",
       "description": "Current value of this axis.",
       "exports": [
@@ -9431,7 +10210,7 @@
     },
     {
       "heliosType": "DCS.Common.Axis",
-      "device": "UFC Panel",
+      "device": "UFC Panel (Pilot)",
       "name": "UFC LCD Brightness",
       "description": "Current value of this axis.",
       "exports": [
@@ -9454,8 +10233,8 @@
     },
     {
       "heliosType": "DCS.Common.PushButton",
-      "device": "UFC Panel",
-      "name": "Emission Limit",
+      "device": "UFC Panel (Pilot)",
+      "name": "Emission Limit Key",
       "description": "Current state of this button.",
       "exports": [
         {
@@ -9476,8 +10255,8 @@
     },
     {
       "heliosType": "DCS.Common.PushButton",
-      "device": "UFC Panel",
-      "name": "Left Guard Receiver - Channel/Manual Key",
+      "device": "UFC Panel (Pilot)",
+      "name": "Left Guard Receiver Key",
       "description": "Current state of this button.",
       "exports": [
         {
@@ -9498,8 +10277,8 @@
     },
     {
       "heliosType": "DCS.Common.PushButton",
-      "device": "UFC Panel",
-      "name": "A/1 Key",
+      "device": "UFC Panel (Pilot)",
+      "name": "A1 Key",
       "description": "Current state of this button.",
       "exports": [
         {
@@ -9520,8 +10299,8 @@
     },
     {
       "heliosType": "DCS.Common.PushButton",
-      "device": "UFC Panel",
-      "name": "N/2 Key",
+      "device": "UFC Panel (Pilot)",
+      "name": "N2 Key",
       "description": "Current state of this button.",
       "exports": [
         {
@@ -9542,8 +10321,8 @@
     },
     {
       "heliosType": "DCS.Common.PushButton",
-      "device": "UFC Panel",
-      "name": "B/3 Key",
+      "device": "UFC Panel (Pilot)",
+      "name": "B3 Key",
       "description": "Current state of this button.",
       "exports": [
         {
@@ -9564,8 +10343,8 @@
     },
     {
       "heliosType": "DCS.Common.PushButton",
-      "device": "UFC Panel",
-      "name": "Right Guard Receiver - Channel/Manual Key",
+      "device": "UFC Panel (Pilot)",
+      "name": "Right Guard Receiver Key",
       "description": "Current state of this button.",
       "exports": [
         {
@@ -9586,8 +10365,8 @@
     },
     {
       "heliosType": "DCS.Common.PushButton",
-      "device": "UFC Panel",
-      "name": "Mark key",
+      "device": "UFC Panel (Pilot)",
+      "name": "MARK key",
       "description": "Current state of this button.",
       "exports": [
         {
@@ -9608,8 +10387,8 @@
     },
     {
       "heliosType": "DCS.Common.PushButton",
-      "device": "UFC Panel",
-      "name": "W/4 Key",
+      "device": "UFC Panel (Pilot)",
+      "name": "W4 Key",
       "description": "Current state of this button.",
       "exports": [
         {
@@ -9630,8 +10409,8 @@
     },
     {
       "heliosType": "DCS.Common.PushButton",
-      "device": "UFC Panel",
-      "name": "M/5 Key",
+      "device": "UFC Panel (Pilot)",
+      "name": "M5 Key",
       "description": "Current state of this button.",
       "exports": [
         {
@@ -9652,8 +10431,8 @@
     },
     {
       "heliosType": "DCS.Common.PushButton",
-      "device": "UFC Panel",
-      "name": "E/6 Key",
+      "device": "UFC Panel (Pilot)",
+      "name": "E6 Key",
       "description": "Current state of this button.",
       "exports": [
         {
@@ -9674,8 +10453,8 @@
     },
     {
       "heliosType": "DCS.Common.PushButton",
-      "device": "UFC Panel",
-      "name": "I/P Key",
+      "device": "UFC Panel (Pilot)",
+      "name": "IP Key",
       "description": "Current state of this button.",
       "exports": [
         {
@@ -9696,8 +10475,8 @@
     },
     {
       "heliosType": "DCS.Common.PushButton",
-      "device": "UFC Panel",
-      "name": "Decimal Point Key",
+      "device": "UFC Panel (Pilot)",
+      "name": "Decimal Key",
       "description": "Current state of this button.",
       "exports": [
         {
@@ -9718,8 +10497,8 @@
     },
     {
       "heliosType": "DCS.Common.PushButton",
-      "device": "UFC Panel",
-      "name": ":/7 Key",
+      "device": "UFC Panel (Pilot)",
+      "name": "7 Key",
       "description": "Current state of this button.",
       "exports": [
         {
@@ -9740,8 +10519,8 @@
     },
     {
       "heliosType": "DCS.Common.PushButton",
-      "device": "UFC Panel",
-      "name": "S/8 Key",
+      "device": "UFC Panel (Pilot)",
+      "name": "S8 Key",
       "description": "Current state of this button.",
       "exports": [
         {
@@ -9762,8 +10541,8 @@
     },
     {
       "heliosType": "DCS.Common.PushButton",
-      "device": "UFC Panel",
-      "name": "C 9 Key",
+      "device": "UFC Panel (Pilot)",
+      "name": "C9 Key",
       "description": "Current state of this button.",
       "exports": [
         {
@@ -9784,7 +10563,7 @@
     },
     {
       "heliosType": "DCS.Common.PushButton",
-      "device": "UFC Panel",
+      "device": "UFC Panel (Pilot)",
       "name": "Shift Key",
       "description": "Current state of this button.",
       "exports": [
@@ -9806,8 +10585,8 @@
     },
     {
       "heliosType": "DCS.Common.PushButton",
-      "device": "UFC Panel",
-      "name": "A/P Key",
+      "device": "UFC Panel (Pilot)",
+      "name": "AP Key",
       "description": "Current state of this button.",
       "exports": [
         {
@@ -9828,8 +10607,8 @@
     },
     {
       "heliosType": "DCS.Common.PushButton",
-      "device": "UFC Panel",
-      "name": "Clear Key",
+      "device": "UFC Panel (Pilot)",
+      "name": "Clr Key",
       "description": "Current state of this button.",
       "exports": [
         {
@@ -9850,8 +10629,8 @@
     },
     {
       "heliosType": "DCS.Common.PushButton",
-      "device": "UFC Panel",
-      "name": "-/0 Key",
+      "device": "UFC Panel (Pilot)",
+      "name": "0 Key",
       "description": "Current state of this button.",
       "exports": [
         {
@@ -9872,7 +10651,7 @@
     },
     {
       "heliosType": "DCS.Common.PushButton",
-      "device": "UFC Panel",
+      "device": "UFC Panel (Pilot)",
       "name": "Data Key",
       "description": "Current state of this button.",
       "exports": [
@@ -9894,7 +10673,7 @@
     },
     {
       "heliosType": "DCS.Common.PushButton",
-      "device": "UFC Panel",
+      "device": "UFC Panel (Pilot)",
       "name": "Menu Key",
       "description": "Current state of this button.",
       "exports": [
@@ -9916,8 +10695,86 @@
     },
     {
       "heliosType": "DCS.Common.PushButton",
+      "device": "UFC Panel (Pilot)",
+      "name": "Left UHF Preset Channel Pull Switch",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "680"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "56",
+          "pushId": "3055",
+          "pushValue": "1.0",
+          "releaseId": "3055",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "UFC Panel (Pilot)",
+      "name": "Right UHF Preset Channel Pull Switch",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "681"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "56",
+          "pushId": "3056",
+          "pushValue": "1.0",
+          "releaseId": "3056",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.RotaryEncoder",
       "device": "UFC Panel (WSO)",
-      "name": "UFC Push button 1",
+      "name": "Left UHF Preset Channel Selector",
+      "exports": [],
+      "argumentValue": 0.1,
+      "actions": {
+        "increment": {
+          "deviceId": "57",
+          "actionId": "3011"
+        },
+        "decrement": {
+          "deviceId": "57",
+          "actionId": "3011"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.RotaryEncoder",
+      "device": "UFC Panel (WSO)",
+      "name": "Right UHF Preset Channel Selector",
+      "exports": [],
+      "argumentValue": 0.1,
+      "actions": {
+        "increment": {
+          "deviceId": "57",
+          "actionId": "3012"
+        },
+        "decrement": {
+          "deviceId": "57",
+          "actionId": "3012"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "UFC Panel (WSO)",
+      "name": "Option Push Button 1 Left",
       "description": "Current state of this button.",
       "exports": [
         {
@@ -9939,7 +10796,7 @@
     {
       "heliosType": "DCS.Common.PushButton",
       "device": "UFC Panel (WSO)",
-      "name": "UFC Push button 2",
+      "name": "Option Push Button 2 Left",
       "description": "Current state of this button.",
       "exports": [
         {
@@ -9961,7 +10818,7 @@
     {
       "heliosType": "DCS.Common.PushButton",
       "device": "UFC Panel (WSO)",
-      "name": "UFC Push button 3",
+      "name": "Option Push Button 3 Left",
       "description": "Current state of this button.",
       "exports": [
         {
@@ -9983,7 +10840,7 @@
     {
       "heliosType": "DCS.Common.PushButton",
       "device": "UFC Panel (WSO)",
-      "name": "UFC Push button 4",
+      "name": "Option Push Button 4 Left",
       "description": "Current state of this button.",
       "exports": [
         {
@@ -10005,7 +10862,7 @@
     {
       "heliosType": "DCS.Common.PushButton",
       "device": "UFC Panel (WSO)",
-      "name": "UFC Push button 5",
+      "name": "Option Push Button 5 Left",
       "description": "Current state of this button.",
       "exports": [
         {
@@ -10027,7 +10884,7 @@
     {
       "heliosType": "DCS.Common.PushButton",
       "device": "UFC Panel (WSO)",
-      "name": "UFC Push button 10",
+      "name": "Option Push Button 1 Right",
       "description": "Current state of this button.",
       "exports": [
         {
@@ -10049,7 +10906,7 @@
     {
       "heliosType": "DCS.Common.PushButton",
       "device": "UFC Panel (WSO)",
-      "name": "UFC Push button 9",
+      "name": "Option Push Button 2 Right",
       "description": "Current state of this button.",
       "exports": [
         {
@@ -10071,7 +10928,7 @@
     {
       "heliosType": "DCS.Common.PushButton",
       "device": "UFC Panel (WSO)",
-      "name": "UFC Push button 8",
+      "name": "Option Push Button 3 Right",
       "description": "Current state of this button.",
       "exports": [
         {
@@ -10093,7 +10950,7 @@
     {
       "heliosType": "DCS.Common.PushButton",
       "device": "UFC Panel (WSO)",
-      "name": "UFC Push button 7",
+      "name": "Option Push Button 4 Right",
       "description": "Current state of this button.",
       "exports": [
         {
@@ -10115,7 +10972,7 @@
     {
       "heliosType": "DCS.Common.PushButton",
       "device": "UFC Panel (WSO)",
-      "name": "UFC Push button 6",
+      "name": "Option Push Button 5 Right",
       "description": "Current state of this button.",
       "exports": [
         {
@@ -10130,6 +10987,50 @@
           "pushId": "3006",
           "pushValue": "1.0",
           "releaseId": "3006",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "UFC Panel (WSO)",
+      "name": "Left UHF Preset Channel Pull Switch",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "1304"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "57",
+          "pushId": "3055",
+          "pushValue": "1.0",
+          "releaseId": "3055",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "UFC Panel (WSO)",
+      "name": "Right UHF Preset Channel Pull Switch",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "1306"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "57",
+          "pushId": "3056",
+          "pushValue": "1.0",
+          "releaseId": "3056",
           "releaseValue": "0.0"
         }
       ]
@@ -10274,7 +11175,7 @@
     {
       "heliosType": "DCS.Common.PushButton",
       "device": "UFC Panel (WSO)",
-      "name": "Left Guard Receiver - Channel/Manual Key",
+      "name": "Left Guard Receiver Key",
       "description": "Current state of this button.",
       "exports": [
         {
@@ -10296,7 +11197,7 @@
     {
       "heliosType": "DCS.Common.PushButton",
       "device": "UFC Panel (WSO)",
-      "name": "A/1 Key",
+      "name": "A1 Key",
       "description": "Current state of this button.",
       "exports": [
         {
@@ -10318,7 +11219,7 @@
     {
       "heliosType": "DCS.Common.PushButton",
       "device": "UFC Panel (WSO)",
-      "name": "N/2 Key",
+      "name": "N2 Key",
       "description": "Current state of this button.",
       "exports": [
         {
@@ -10340,7 +11241,7 @@
     {
       "heliosType": "DCS.Common.PushButton",
       "device": "UFC Panel (WSO)",
-      "name": "B/3 Key",
+      "name": "B3 Key",
       "description": "Current state of this button.",
       "exports": [
         {
@@ -10362,7 +11263,7 @@
     {
       "heliosType": "DCS.Common.PushButton",
       "device": "UFC Panel (WSO)",
-      "name": "Right Guard Receiver - Channel/Manual Key",
+      "name": "Right Guard Receiver Key",
       "description": "Current state of this button.",
       "exports": [
         {
@@ -10406,7 +11307,7 @@
     {
       "heliosType": "DCS.Common.PushButton",
       "device": "UFC Panel (WSO)",
-      "name": "W/4 Key",
+      "name": "W4 Key",
       "description": "Current state of this button.",
       "exports": [
         {
@@ -10428,7 +11329,7 @@
     {
       "heliosType": "DCS.Common.PushButton",
       "device": "UFC Panel (WSO)",
-      "name": "M/5 Key",
+      "name": "M5 Key",
       "description": "Current state of this button.",
       "exports": [
         {
@@ -10450,7 +11351,7 @@
     {
       "heliosType": "DCS.Common.PushButton",
       "device": "UFC Panel (WSO)",
-      "name": "E/6 Key",
+      "name": "E6 Key",
       "description": "Current state of this button.",
       "exports": [
         {
@@ -10472,7 +11373,7 @@
     {
       "heliosType": "DCS.Common.PushButton",
       "device": "UFC Panel (WSO)",
-      "name": "I/P Key",
+      "name": "IP Key",
       "description": "Current state of this button.",
       "exports": [
         {
@@ -10516,7 +11417,7 @@
     {
       "heliosType": "DCS.Common.PushButton",
       "device": "UFC Panel (WSO)",
-      "name": ":/7 Key",
+      "name": "7 Key",
       "description": "Current state of this button.",
       "exports": [
         {
@@ -10538,7 +11439,7 @@
     {
       "heliosType": "DCS.Common.PushButton",
       "device": "UFC Panel (WSO)",
-      "name": "S/8 Key",
+      "name": "S8 Key",
       "description": "Current state of this button.",
       "exports": [
         {
@@ -10560,7 +11461,7 @@
     {
       "heliosType": "DCS.Common.PushButton",
       "device": "UFC Panel (WSO)",
-      "name": "C 9 Key",
+      "name": "C9 Key",
       "description": "Current state of this button.",
       "exports": [
         {
@@ -10604,7 +11505,7 @@
     {
       "heliosType": "DCS.Common.PushButton",
       "device": "UFC Panel (WSO)",
-      "name": "A/P Key",
+      "name": "AP Key",
       "description": "Current state of this button.",
       "exports": [
         {
@@ -10626,7 +11527,7 @@
     {
       "heliosType": "DCS.Common.PushButton",
       "device": "UFC Panel (WSO)",
-      "name": "Clear Key",
+      "name": "Clr Key",
       "description": "Current state of this button.",
       "exports": [
         {
@@ -10648,7 +11549,7 @@
     {
       "heliosType": "DCS.Common.PushButton",
       "device": "UFC Panel (WSO)",
-      "name": "-/0 Key",
+      "name": "0 Key",
       "description": "Current state of this button.",
       "exports": [
         {
@@ -10708,6 +11609,246 @@
           "pushValue": "1.0",
           "releaseId": "3038",
           "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Text",
+      "device": "UFC Panel (WSO)",
+      "name": "Option Line 1",
+      "description": "Text value of Option Line",
+      "exports": [
+        {
+          "isExportedEveryFrame": false,
+          "id": "2140"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Text",
+      "device": "UFC Panel (WSO)",
+      "name": "Option Line 2",
+      "description": "Text value of Option Line",
+      "exports": [
+        {
+          "isExportedEveryFrame": false,
+          "id": "2141"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Text",
+      "device": "UFC Panel (WSO)",
+      "name": "Option Line 3",
+      "description": "Text value of Option Line",
+      "exports": [
+        {
+          "isExportedEveryFrame": false,
+          "id": "2142"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Text",
+      "device": "UFC Panel (WSO)",
+      "name": "Option Line 4",
+      "description": "Text value of Option Line",
+      "exports": [
+        {
+          "isExportedEveryFrame": false,
+          "id": "2143"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Text",
+      "device": "UFC Panel (WSO)",
+      "name": "Option Line 5",
+      "description": "Text value of Option Line",
+      "exports": [
+        {
+          "isExportedEveryFrame": false,
+          "id": "2144"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Text",
+      "device": "UFC Panel (WSO)",
+      "name": "Option Line 6",
+      "description": "Text value of Option Line",
+      "exports": [
+        {
+          "isExportedEveryFrame": false,
+          "id": "2145"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Text",
+      "device": "UFC Panel (WSO)",
+      "name": "Option Line 1 Center Text",
+      "description": "Text value of Option Line",
+      "exports": [
+        {
+          "isExportedEveryFrame": false,
+          "id": "2146"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Text",
+      "device": "UFC Panel (WSO)",
+      "name": "Option Line 6 Scratchpad",
+      "description": "Text value of Option Line",
+      "exports": [
+        {
+          "isExportedEveryFrame": false,
+          "id": "2147"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Unknown Indicators (Pilot)",
+      "name": "Indicator 486",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "486"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Unknown Indicators (Pilot)",
+      "name": "Indicator 487",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "487"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Unknown Indicators (Pilot)",
+      "name": "Indicator 488",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "488"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Unknown Indicators (Pilot)",
+      "name": "Indicator 489",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "489"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Unknown Indicators (Pilot)",
+      "name": "Indicator 490",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "490"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Unknown Indicators (Pilot)",
+      "name": "Indicator 491",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "491"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Unknown Indicators (Pilot)",
+      "name": "Indicator 492",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "492"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Unknown Indicators (Pilot)",
+      "name": "Indicator 494",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "494"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Unknown Indicators (Pilot)",
+      "name": "Indicator 495",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "495"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Unknown Indicators (Pilot)",
+      "name": "Indicator 497",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "497"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Unknown Indicators (Pilot)",
+      "name": "Indicator 498",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "498"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Unknown Indicators (Pilot)",
+      "name": "Indicator 500",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "500"
         }
       ]
     },
@@ -10986,6 +12127,558 @@
           "actionId": "3515"
         }
       }
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning Indicators (WSO)",
+      "name": "Engine Fire Left Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "1171"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning Indicators (WSO)",
+      "name": "Engine Fire Right Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "1172"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning Indicators (WSO)",
+      "name": "Canopy Unlocked Indicator (Rear)",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "1173"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning Indicators (WSO)",
+      "name": "Low Altitude Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "1174"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning Indicators (WSO)",
+      "name": "AI Threat Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "1188"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning Indicators (WSO)",
+      "name": "SAM Threat Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "1189"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning Indicators (WSO)",
+      "name": "OBST Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "1190"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning Indicators (WSO)",
+      "name": "TF FAIL Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "1191"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning Panel (Pilot)",
+      "name": "Program Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "411"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning Panel (Pilot)",
+      "name": "Minimum Warning Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "412"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning Panel (Pilot)",
+      "name": "Chaff Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "413"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning Panel (Pilot)",
+      "name": "Flare Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "414"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning Panel (Pilot)",
+      "name": "Emergency BST On Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "415"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning Panel (Pilot)",
+      "name": "BST System Malfunction Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "416"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning Panel (Pilot)",
+      "name": "FUEL LOW Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "417"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning Panel (Pilot)",
+      "name": "Right Generator Warning",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "418"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning Panel (Pilot)",
+      "name": "Left Generator Warning",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "419"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning Panel (Pilot)",
+      "name": "NUCLEAR Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "420"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning Panel (Pilot)",
+      "name": "Engine Warning Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "421"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning Panel (Pilot)",
+      "name": "Flight Control Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "422"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning Panel (Pilot)",
+      "name": "Hydraulics Warning Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "423"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning Panel (Pilot)",
+      "name": "AV BIT Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "424"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning Panel (Pilot)",
+      "name": "DSPFLOLO Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "425"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning Panel (Pilot)",
+      "name": "Oxygen Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "426"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning Panel (Pilot)",
+      "name": "SPARE #1 Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "429"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning Panel (Pilot)",
+      "name": "SPARE #2 Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "430"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning Panel (Pilot)",
+      "name": "SPARE #3 Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "431"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning Panel (Pilot)",
+      "name": "SPARE #4 Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "432"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning Panel (WSO)",
+      "name": "Nuclear Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "1178"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning Panel (WSO)",
+      "name": "Engine Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "1179"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning Panel (WSO)",
+      "name": "Hydraulics Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "1180"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning Panel (WSO)",
+      "name": "Flight Control Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "1181"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning Panel (WSO)",
+      "name": "AV-BIT Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "1182"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning Panel (WSO)",
+      "name": "Master Arm Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "1183"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning Panel (WSO)",
+      "name": "A/P Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "1184"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning Panel (WSO)",
+      "name": "PROGRAM Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "1185"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning Panel (WSO)",
+      "name": "MINIMUM Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "1186"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning Panel (WSO)",
+      "name": "Display Flow Low Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "1187"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning Panel (WSO)",
+      "name": "Right Generator Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "1192"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning Panel (WSO)",
+      "name": "Left Generator Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "1193"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning Panel (WSO)",
+      "name": "EMIS Limit Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "1194"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning Panel (WSO)",
+      "name": "Fuel Low Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "1195"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning Panel (WSO)",
+      "name": "Unarmed Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "1196"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning Panel (WSO)",
+      "name": "Chaff Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "1197"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning Panel (WSO)",
+      "name": "Flare Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "1198"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning Panel (WSO)",
+      "name": "Oxygen Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "1199"
+        }
+      ]
     }
   ]
 }
