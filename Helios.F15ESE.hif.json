@@ -1,7 +1,7 @@
 {
   "source": "Helios",
-  "version": "1.6.1000.20230722",
-  "commit": "0c5561fae9de87ce13d4b07a609b4a063e16bbf9",
+  "version": "1.6.1000.20230724",
+  "commit": "6037626180075866fd918796ba48c4860d86cb9d",
   "type": "Existing",
   "name": "DCS F-15E Strike Eagle",
   "module": "F-15ESE",
@@ -721,7 +721,7 @@
       ]
     },
     {
-      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "heliosType": "DCS.Common.NetworkValue",
       "device": "CAS",
       "name": "Pitch Ratio",
       "description": "Numeric value of the pitch ratio",
@@ -731,20 +731,7 @@
           "id": "334"
         }
       ],
-      "calibration": {
-        "points": [
-          {
-            "value": 0.0,
-            "mappedValue": 0.0
-          },
-          {
-            "value": 1.0,
-            "mappedValue": 1.0
-          }
-        ],
-        "precision": 1
-      },
-      "valueDescription": "0 - 1",
+      "valueDescription": "0.0 to 1.0",
       "unit": "Numeric"
     },
     {
@@ -1023,7 +1010,7 @@
     {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Caution Panel (Pilot)",
-      "name": "FUEL LOW Indicator",
+      "name": "Nuclear Indicator",
       "description": "True when indicator is lit",
       "exports": [
         {
@@ -1035,7 +1022,7 @@
     {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Caution Panel (Pilot)",
-      "name": "Right Generator Warning",
+      "name": "FUEL LOW Indicator",
       "description": "True when indicator is lit",
       "exports": [
         {
@@ -1047,7 +1034,7 @@
     {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Caution Panel (Pilot)",
-      "name": "Left Generator Warning",
+      "name": "Left Generator Indicator",
       "description": "True when indicator is lit",
       "exports": [
         {
@@ -1059,7 +1046,7 @@
     {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Caution Panel (Pilot)",
-      "name": "Nuclear Indicator",
+      "name": "Right Generator Indicator",
       "description": "True when indicator is lit",
       "exports": [
         {
@@ -1149,18 +1136,6 @@
         {
           "format": "%1d",
           "id": "432"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.FlagValue",
-      "device": "Caution Panel (WSO)",
-      "name": "Nuclear Indicator",
-      "description": "True when indicator is lit",
-      "exports": [
-        {
-          "format": "%1d",
-          "id": "1178"
         }
       ]
     },
@@ -1275,6 +1250,18 @@
     {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Caution Panel (WSO)",
+      "name": "Left Generator Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "1191"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Caution Panel (WSO)",
       "name": "Right Generator Indicator",
       "description": "True when indicator is lit",
       "exports": [
@@ -1287,7 +1274,7 @@
     {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Caution Panel (WSO)",
-      "name": "Left Generator Indicator",
+      "name": "EMIS Limit Indicator",
       "description": "True when indicator is lit",
       "exports": [
         {
@@ -1299,7 +1286,7 @@
     {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Caution Panel (WSO)",
-      "name": "EMIS Limit Indicator",
+      "name": "Fuel Low Indicator",
       "description": "True when indicator is lit",
       "exports": [
         {
@@ -1311,7 +1298,7 @@
     {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Caution Panel (WSO)",
-      "name": "Fuel Low Indicator",
+      "name": "Nuclear Indicator",
       "description": "True when indicator is lit",
       "exports": [
         {
@@ -3312,6 +3299,87 @@
       "unit": "FeetPerMinute"
     },
     {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Flight Instruments",
+      "name": "Magnetic Compass Heading",
+      "description": "Compass heading in degrees",
+      "exports": [
+        {
+          "format": "%.3f",
+          "id": "753"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": 0.0,
+            "mappedValue": 0.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 360.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "0 to +360",
+      "unit": "Degrees"
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Flight Instruments",
+      "name": "Compass pitch",
+      "description": "Compassrose pitch",
+      "exports": [
+        {
+          "format": "%.3f",
+          "id": "754"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": -1.0,
+            "mappedValue": -90.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 90.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "-90 to +90",
+      "unit": "Degrees"
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Flight Instruments",
+      "name": "Compass roll",
+      "description": "Compassrose roll",
+      "exports": [
+        {
+          "format": "%.3f",
+          "id": "755"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": -1.0,
+            "mappedValue": -180.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 180.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "-180 to +180",
+      "unit": "Degrees"
+    },
+    {
       "heliosType": "DCS.Common.PushButton",
       "device": "Flight Instruments (WSO)",
       "name": "Master Caution Button",
@@ -3785,6 +3853,45 @@
           "argumentValue": "1.000",
           "name": "Posn 3",
           "actionID": "3533"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Fuel Gauge (WSO)",
+      "name": "Internal Fuel Value",
+      "description": "Internal fuel amount in pounds",
+      "exports": [
+        {
+          "format": "%.3f",
+          "id": "1372"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": 0.0,
+            "mappedValue": 0.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 20000.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "0-20000",
+      "unit": "Pounds"
+    },
+    {
+      "heliosType": "DCS.F15E.Functions.DigitsDisplay",
+      "device": "Fuel Gauge (WSO)",
+      "name": "Total Tank display",
+      "description": "Numeric value of  quantity",
+      "exports": [
+        {
+          "isExportedEveryFrame": false,
+          "id": "2013"
         }
       ]
     },
@@ -4897,7 +5004,7 @@
       "description": "True when indicator is lit",
       "exports": [
         {
-          "format": "%1d",
+          "format": "%.1f",
           "id": "330"
         }
       ]
@@ -4909,7 +5016,7 @@
       "description": "True when indicator is lit",
       "exports": [
         {
-          "format": "%1d",
+          "format": "%.1f",
           "id": "331"
         }
       ]
@@ -4921,7 +5028,7 @@
       "description": "True when indicator is lit",
       "exports": [
         {
-          "format": "%1d",
+          "format": "%.1f",
           "id": "332"
         }
       ]
@@ -4933,7 +5040,7 @@
       "description": "True when indicator is lit",
       "exports": [
         {
-          "format": "%1d",
+          "format": "%.1f",
           "id": "333"
         }
       ]
@@ -13566,6 +13673,18 @@
     {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Warning Indicators (WSO)",
+      "name": "TF FAIL Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "1178"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning Indicators (WSO)",
       "name": "AI Threat Indicator",
       "description": "True when indicator is lit",
       "exports": [
@@ -13596,18 +13715,6 @@
         {
           "format": "%1d",
           "id": "1190"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Indicators (WSO)",
-      "name": "TF FAIL Indicator",
-      "description": "True when indicator is lit",
-      "exports": [
-        {
-          "format": "%1d",
-          "id": "1191"
         }
       ]
     }
