@@ -1,7 +1,7 @@
 {
   "source": "Helios",
-  "version": "1.6.1000.20230724",
-  "commit": "6037626180075866fd918796ba48c4860d86cb9d",
+  "version": "1.6.6010.0000",
+  "commit": "42512c1cccb18642855d09db2c55353298021518",
   "type": "Existing",
   "name": "DCS F-15E Strike Eagle",
   "module": "F-15ESE",
@@ -16,7 +16,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.3f",
+          "format": "%0.1f",
           "isExportedEveryFrame": false,
           "id": "562"
         }
@@ -24,17 +24,17 @@
       "deviceId": "26",
       "positions": [
         {
-          "argumentValue": "0.000",
+          "argumentValue": "1.0",
           "name": "Auto",
           "actionID": "3562"
         },
         {
-          "argumentValue": "0.500",
+          "argumentValue": "0.5",
           "name": "Manual",
           "actionID": "3562"
         },
         {
-          "argumentValue": "1.000",
+          "argumentValue": "0.0",
           "name": "Off",
           "actionID": "3562"
         }
@@ -47,7 +47,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.3f",
+          "format": "%0.1f",
           "isExportedEveryFrame": false,
           "id": "563"
         }
@@ -55,17 +55,17 @@
       "deviceId": "26",
       "positions": [
         {
-          "argumentValue": "0.000",
+          "argumentValue": "1.0",
           "name": "Max",
           "actionID": "3563"
         },
         {
-          "argumentValue": "0.500",
+          "argumentValue": "0.5",
           "name": "Norm",
           "actionID": "3563"
         },
         {
-          "argumentValue": "1.000",
+          "argumentValue": "0.0",
           "name": "Min",
           "actionID": "3563"
         }
@@ -101,7 +101,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.3f",
+          "format": "%0.2f",
           "isExportedEveryFrame": false,
           "id": "565"
         }
@@ -109,22 +109,22 @@
       "deviceId": "26",
       "positions": [
         {
-          "argumentValue": "0.000",
+          "argumentValue": "0.00",
           "name": "Posn 1",
           "actionID": "3565"
         },
         {
-          "argumentValue": "0.333",
+          "argumentValue": "0.33",
           "name": "Posn 2",
           "actionID": "3565"
         },
         {
-          "argumentValue": "0.666",
+          "argumentValue": "0.66",
           "name": "Posn 3",
           "actionID": "3565"
         },
         {
-          "argumentValue": "0.999",
+          "argumentValue": "0.99",
           "name": "Posn 4",
           "actionID": "3565"
         }
@@ -253,28 +253,24 @@
       ]
     },
     {
-      "heliosType": "DCS.Common.Switch",
+      "heliosType": "DCS.Common.PushButton",
       "device": "AMAD Panel",
       "name": "AMAD Fire Switch",
-      "description": "Current position of this switch.",
+      "description": "Current state of this button.",
       "exports": [
         {
-          "format": "%0.1f",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "316"
         }
       ],
-      "deviceId": "15",
-      "positions": [
+      "buttons": [
         {
-          "argumentValue": "1.0",
-          "name": "Posn 1",
-          "actionID": "3316"
-        },
-        {
-          "argumentValue": "0.0",
-          "name": "Posn 2",
-          "actionID": "3316"
+          "deviceId": "15",
+          "pushId": "3316",
+          "pushValue": "1.0",
+          "releaseId": "3316",
+          "releaseValue": "0.0"
         }
       ]
     },
@@ -305,28 +301,24 @@
       ]
     },
     {
-      "heliosType": "DCS.Common.Switch",
+      "heliosType": "DCS.Common.PushButton",
       "device": "AMAD Panel",
       "name": "Left Engine Fire Switch",
-      "description": "Current position of this switch.",
+      "description": "Current state of this button.",
       "exports": [
         {
-          "format": "%0.1f",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "318"
         }
       ],
-      "deviceId": "15",
-      "positions": [
+      "buttons": [
         {
-          "argumentValue": "1.0",
-          "name": "Posn 1",
-          "actionID": "3318"
-        },
-        {
-          "argumentValue": "0.0",
-          "name": "Posn 2",
-          "actionID": "3318"
+          "deviceId": "15",
+          "pushId": "3318",
+          "pushValue": "1.0",
+          "releaseId": "3318",
+          "releaseValue": "0.0"
         }
       ]
     },
@@ -357,28 +349,24 @@
       ]
     },
     {
-      "heliosType": "DCS.Common.Switch",
+      "heliosType": "DCS.Common.PushButton",
       "device": "AMAD Panel",
       "name": "Right Engine Fire Switch",
-      "description": "Current position of this switch.",
+      "description": "Current state of this button.",
       "exports": [
         {
-          "format": "%0.1f",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "320"
         }
       ],
-      "deviceId": "15",
-      "positions": [
+      "buttons": [
         {
-          "argumentValue": "1.0",
-          "name": "Posn 1",
-          "actionID": "3320"
-        },
-        {
-          "argumentValue": "0.0",
-          "name": "Posn 2",
-          "actionID": "3320"
+          "deviceId": "15",
+          "pushId": "3320",
+          "pushValue": "1.0",
+          "releaseId": "3320",
+          "releaseValue": "0.0"
         }
       ]
     },
@@ -472,7 +460,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.3f",
+          "format": "%0.1f",
           "isExportedEveryFrame": false,
           "id": "321"
         }
@@ -480,38 +468,38 @@
       "deviceId": "44",
       "positions": [
         {
-          "argumentValue": "0.000",
-          "name": "Posn 1",
+          "argumentValue": "-0.9",
+          "name": "FF",
           "actionID": "3321"
         },
         {
-          "argumentValue": "0.167",
-          "name": "Posn 2",
+          "argumentValue": "-0.6",
+          "name": "Manual Ret",
           "actionID": "3321"
         },
         {
-          "argumentValue": "0.334",
-          "name": "Posn 3",
+          "argumentValue": "-0.3",
+          "name": "Alternating Release",
           "actionID": "3321"
         },
         {
-          "argumentValue": "0.501",
-          "name": "Posn 4",
+          "argumentValue": "0.0",
+          "name": "Off",
           "actionID": "3321"
         },
         {
-          "argumentValue": "0.668",
-          "name": "Posn 5",
+          "argumentValue": "0.3",
+          "name": "Combat",
           "actionID": "3321"
         },
         {
-          "argumentValue": "0.835",
-          "name": "Posn 6",
+          "argumentValue": "0.6",
+          "name": "A/A",
           "actionID": "3321"
         },
         {
-          "argumentValue": "1.002",
-          "name": "Posn 7",
+          "argumentValue": "0.9",
+          "name": "A/G",
           "actionID": "3321"
         }
       ]
@@ -554,12 +542,12 @@
       "positions": [
         {
           "argumentValue": "1.0",
-          "name": "Posn 1",
+          "name": "Arm",
           "actionID": "3323"
         },
         {
           "argumentValue": "0.0",
-          "name": "Posn 2",
+          "name": "Safe",
           "actionID": "3323"
         }
       ]
@@ -593,7 +581,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.3f",
+          "format": "%0.2f",
           "isExportedEveryFrame": false,
           "id": "1479"
         }
@@ -601,26 +589,40 @@
       "deviceId": "24",
       "positions": [
         {
-          "argumentValue": "0.000",
-          "name": "Posn 1",
+          "argumentValue": "1.0",
+          "name": "Locked",
           "actionID": "3600"
         },
         {
-          "argumentValue": "0.333",
-          "name": "Posn 2",
+          "argumentValue": "0.5",
+          "name": "Down",
           "actionID": "3600"
         },
         {
-          "argumentValue": "0.666",
-          "name": "Posn 3",
+          "argumentValue": "0.0",
+          "name": "Hold",
           "actionID": "3600"
         },
         {
-          "argumentValue": "0.999",
-          "name": "Posn 4",
+          "argumentValue": "-0.5",
+          "name": "Up",
           "actionID": "3600"
         }
       ]
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Canopy",
+      "name": "Shoot Cue Indicator Brightness",
+      "description": "Numeric value",
+      "exports": [
+        {
+          "format": "%.2f",
+          "id": "195"
+        }
+      ],
+      "valueDescription": "0 to 1",
+      "unit": "Numeric"
     },
     {
       "heliosType": "DCS.Common.FlagValue",
@@ -645,6 +647,20 @@
           "id": "197"
         }
       ]
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Canopy",
+      "name": "Canopy Position",
+      "description": "Numeric Value",
+      "exports": [
+        {
+          "format": "%.2f",
+          "id": "38"
+        }
+      ],
+      "valueDescription": "0 to 1",
+      "unit": "Numeric"
     },
     {
       "heliosType": "DCS.Common.FlagValue",
@@ -691,7 +707,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.3f",
+          "format": "%0.2f",
           "isExportedEveryFrame": false,
           "id": "599"
         }
@@ -699,23 +715,23 @@
       "deviceId": "24",
       "positions": [
         {
-          "argumentValue": "0.000",
-          "name": "Posn 1",
+          "argumentValue": "1.0",
+          "name": "Locked",
           "actionID": "3599"
         },
         {
-          "argumentValue": "0.333",
-          "name": "Posn 2",
+          "argumentValue": "0.5",
+          "name": "Down",
           "actionID": "3599"
         },
         {
-          "argumentValue": "0.666",
-          "name": "Posn 3",
+          "argumentValue": "0.0",
+          "name": "Hold",
           "actionID": "3599"
         },
         {
-          "argumentValue": "0.999",
-          "name": "Posn 4",
+          "argumentValue": "-0.5",
+          "name": "Up",
           "actionID": "3599"
         }
       ]
@@ -741,7 +757,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%.2f",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "335"
         }
@@ -750,12 +766,12 @@
       "positions": [
         {
           "argumentValue": "1.0",
-          "name": "Posn 1",
+          "name": "Auto",
           "actionID": "3335"
         },
         {
           "argumentValue": "0.0",
-          "name": "Posn 2",
+          "name": "EMERG",
           "actionID": "3335"
         }
       ]
@@ -763,11 +779,11 @@
     {
       "heliosType": "DCS.Common.Switch",
       "device": "CAS",
-      "name": "Yaw CAS Switch, when ON (LMB) RESET/(RMB) OFF",
+      "name": "Yaw CAS Switch",
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.3f",
+          "format": "%0.2f",
           "isExportedEveryFrame": false,
           "id": "452"
         }
@@ -775,18 +791,18 @@
       "deviceId": "18",
       "positions": [
         {
-          "argumentValue": "0.000",
-          "name": "Posn 1",
+          "argumentValue": "0.50",
+          "name": "On",
           "actionID": "3452"
         },
         {
-          "argumentValue": "0.500",
-          "name": "Posn 2",
+          "argumentValue": "0.25",
+          "name": "Reset",
           "actionID": "3452"
         },
         {
-          "argumentValue": "1.000",
-          "name": "Posn 3",
+          "argumentValue": "0.00",
+          "name": "Off",
           "actionID": "3452"
         }
       ]
@@ -794,11 +810,11 @@
     {
       "heliosType": "DCS.Common.Switch",
       "device": "CAS",
-      "name": "Roll CAS Switch, when ON (LMB) RESET/(RMB) OFF",
+      "name": "Roll CAS Switch",
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.3f",
+          "format": "%0.2f",
           "isExportedEveryFrame": false,
           "id": "453"
         }
@@ -806,18 +822,18 @@
       "deviceId": "18",
       "positions": [
         {
-          "argumentValue": "0.000",
-          "name": "Posn 1",
+          "argumentValue": "0.50",
+          "name": "On",
           "actionID": "3453"
         },
         {
-          "argumentValue": "0.500",
-          "name": "Posn 2",
+          "argumentValue": "0.25",
+          "name": "Reset",
           "actionID": "3453"
         },
         {
-          "argumentValue": "1.000",
-          "name": "Posn 3",
+          "argumentValue": "0.00",
+          "name": "Off",
           "actionID": "3453"
         }
       ]
@@ -825,11 +841,11 @@
     {
       "heliosType": "DCS.Common.Switch",
       "device": "CAS",
-      "name": "Pitch CAS Switch, when ON (LMB) RESET/(RMB) OFF",
+      "name": "Pitch CAS Switch",
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.3f",
+          "format": "%0.2f",
           "isExportedEveryFrame": false,
           "id": "454"
         }
@@ -837,18 +853,18 @@
       "deviceId": "18",
       "positions": [
         {
-          "argumentValue": "0.000",
-          "name": "Posn 1",
+          "argumentValue": "0.50",
+          "name": "On",
           "actionID": "3454"
         },
         {
-          "argumentValue": "0.500",
-          "name": "Posn 2",
+          "argumentValue": "0.25",
+          "name": "Reset",
           "actionID": "3454"
         },
         {
-          "argumentValue": "1.000",
-          "name": "Posn 3",
+          "argumentValue": "0.00",
+          "name": "Off",
           "actionID": "3454"
         }
       ]
@@ -2164,7 +2180,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.3f",
+          "format": "%0.1f",
           "isExportedEveryFrame": false,
           "id": "1475"
         }
@@ -2172,17 +2188,17 @@
       "deviceId": "60",
       "positions": [
         {
-          "argumentValue": "0.000",
+          "argumentValue": "1.0",
           "name": "FLARE",
           "actionID": "3911"
         },
         {
-          "argumentValue": "0.500",
+          "argumentValue": "0.5",
           "name": "BOTH",
           "actionID": "3911"
         },
         {
-          "argumentValue": "1.000",
+          "argumentValue": "0.0",
           "name": "CHAFF",
           "actionID": "3911"
         }
@@ -2195,7 +2211,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.3f",
+          "format": "%0.2f",
           "isExportedEveryFrame": false,
           "id": "1476"
         }
@@ -2203,27 +2219,27 @@
       "deviceId": "60",
       "positions": [
         {
-          "argumentValue": "0.000",
+          "argumentValue": "0.00",
           "name": "OFF",
           "actionID": "3912"
         },
         {
-          "argumentValue": "0.250",
+          "argumentValue": "0.25",
           "name": "STBY",
           "actionID": "3912"
         },
         {
-          "argumentValue": "0.500",
+          "argumentValue": "0.50",
           "name": "MAN",
           "actionID": "3912"
         },
         {
-          "argumentValue": "0.750",
+          "argumentValue": "0.75",
           "name": "SEMI",
           "actionID": "3912"
         },
         {
-          "argumentValue": "1.000",
+          "argumentValue": "1.00",
           "name": "AUTO",
           "actionID": "3912"
         }
@@ -2245,37 +2261,69 @@
       "positions": [
         {
           "argumentValue": "1.0",
-          "name": "Posn 1",
+          "name": "Open",
           "actionID": "3913"
         },
         {
           "argumentValue": "0.0",
-          "name": "Posn 2",
+          "name": "Closed",
           "actionID": "3913"
         }
       ]
     },
     {
-      "heliosType": "DCS.Common.PushButton",
+      "heliosType": "DCS.Common.Switch",
       "device": "CMD Control Panel (WSO)",
-      "name": "Flare Jettison Switch NORM/JETT",
-      "description": "Current state of this button.",
+      "name": "Flare Jettison Switch",
+      "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%.1f",
+          "format": "%0.1f",
           "isExportedEveryFrame": false,
           "id": "1478"
         }
       ],
-      "buttons": [
+      "deviceId": "60",
+      "positions": [
         {
-          "deviceId": "60",
-          "pushId": "3914",
-          "pushValue": "1.0",
-          "releaseId": "3914",
-          "releaseValue": "0.0"
+          "argumentValue": "1.0",
+          "name": "Norm",
+          "actionID": "3914"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Jettison",
+          "actionID": "3913"
         }
       ]
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Data Transfer Cartridge",
+      "name": "Inserted",
+      "description": "Numeric Value",
+      "exports": [
+        {
+          "format": "%.2f",
+          "id": "60"
+        }
+      ],
+      "valueDescription": "0 to 1",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Data Transfer Cartridge",
+      "name": "Position",
+      "description": "Numeric Value",
+      "exports": [
+        {
+          "format": "%.2f",
+          "id": "63"
+        }
+      ],
+      "valueDescription": "0 to 1",
+      "unit": "Numeric"
     },
     {
       "heliosType": "DCS.Common.PushButton",
@@ -2306,7 +2354,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.3f",
+          "format": "%0.1f",
           "isExportedEveryFrame": false,
           "id": "558"
         }
@@ -2314,17 +2362,17 @@
       "deviceId": "26",
       "positions": [
         {
-          "argumentValue": "0.000",
+          "argumentValue": "1.0",
           "name": "Posn 1",
           "actionID": "3558"
         },
         {
-          "argumentValue": "0.500",
+          "argumentValue": "0.5",
           "name": "Posn 2",
           "actionID": "3558"
         },
         {
-          "argumentValue": "1.000",
+          "argumentValue": "0.0",
           "name": "Posn 3",
           "actionID": "3558"
         }
@@ -2345,13 +2393,13 @@
       "deviceId": "21",
       "positions": [
         {
-          "argumentValue": "1.0",
-          "name": "Posn 1",
+          "argumentValue": "0.0",
+          "name": "Down",
           "actionID": "3336"
         },
         {
-          "argumentValue": "0.0",
-          "name": "Posn 2",
+          "argumentValue": "1.0",
+          "name": "Up",
           "actionID": "3336"
         }
       ]
@@ -2483,13 +2531,13 @@
       "deviceId": "21",
       "positions": [
         {
-          "argumentValue": "1.0",
-          "name": "Posn 1",
+          "argumentValue": "0.0",
+          "name": "Down",
           "actionID": "3344"
         },
         {
-          "argumentValue": "0.0",
-          "name": "Posn 2",
+          "argumentValue": "1.0",
+          "name": "Up",
           "actionID": "3344"
         }
       ]
@@ -2605,7 +2653,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.3f",
+          "format": "%0.1f",
           "isExportedEveryFrame": false,
           "id": "1386"
         }
@@ -2613,19 +2661,102 @@
       "deviceId": "24",
       "positions": [
         {
-          "argumentValue": "0.000",
+          "argumentValue": "1.0",
           "name": "Posn 1",
           "actionID": "3386"
         },
         {
-          "argumentValue": "0.500",
+          "argumentValue": "0.5",
           "name": "Posn 2",
           "actionID": "3386"
         },
         {
-          "argumentValue": "1.000",
+          "argumentValue": "0.0",
           "name": "Posn 3",
           "actionID": "3386"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Engine",
+      "name": "Left Generator",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "587"
+        }
+      ],
+      "deviceId": "6",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "On",
+          "actionID": "3587"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Off",
+          "actionID": "3587"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Engine",
+      "name": "Right Generator",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "588"
+        }
+      ],
+      "deviceId": "6",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "On",
+          "actionID": "3588"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Off",
+          "actionID": "3588"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Engine",
+      "name": "Emergency Generator",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "589"
+        }
+      ],
+      "deviceId": "6",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Auto",
+          "actionID": "3589"
+        },
+        {
+          "argumentValue": "0.5",
+          "name": "Man",
+          "actionID": "3589"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Isolate",
+          "actionID": "3589"
         }
       ]
     },
@@ -2645,12 +2776,12 @@
       "positions": [
         {
           "argumentValue": "1.0",
-          "name": "Posn 1",
+          "name": "On",
           "actionID": "3590"
         },
         {
           "argumentValue": "0.0",
-          "name": "Posn 2",
+          "name": "Off",
           "actionID": "3590"
         }
       ]
@@ -2671,12 +2802,12 @@
       "positions": [
         {
           "argumentValue": "1.0",
-          "name": "Posn 1",
+          "name": "On",
           "actionID": "3591"
         },
         {
           "argumentValue": "0.0",
-          "name": "Posn 2",
+          "name": "Off",
           "actionID": "3591"
         }
       ]
@@ -2697,12 +2828,12 @@
       "positions": [
         {
           "argumentValue": "1.0",
-          "name": "Posn 1",
+          "name": "Open",
           "actionID": "3592"
         },
         {
           "argumentValue": "0.0",
-          "name": "Posn 2",
+          "name": "Closed",
           "actionID": "3592"
         }
       ]
@@ -2723,13 +2854,82 @@
       "positions": [
         {
           "argumentValue": "1.0",
-          "name": "Posn 1",
+          "name": "On",
           "actionID": "3593"
         },
         {
           "argumentValue": "0.0",
-          "name": "Posn 2",
+          "name": "Off",
           "actionID": "3593"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Engine",
+      "name": "External Power Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "594"
+        }
+      ],
+      "deviceId": "6",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Reset",
+          "actionID": "3594"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Norm",
+          "actionID": "3594"
+        },
+        {
+          "argumentValue": "-1.0",
+          "name": "Off",
+          "actionID": "3594"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Engine",
+      "name": "Jet Starter",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "595"
+        }
+      ],
+      "deviceId": "6",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "ON",
+          "actionID": "3595"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "OFF",
+          "actionID": "3595"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Engine",
+      "name": "Jet Starter Ready Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%.1f",
+          "id": "596"
         }
       ]
     },
@@ -2749,12 +2949,12 @@
       "positions": [
         {
           "argumentValue": "1.0",
-          "name": "Posn 1",
+          "name": "Open",
           "actionID": "3597"
         },
         {
           "argumentValue": "0.0",
-          "name": "Posn 2",
+          "name": "Closed",
           "actionID": "3597"
         }
       ]
@@ -2775,12 +2975,12 @@
       "positions": [
         {
           "argumentValue": "1.0",
-          "name": "Posn 1",
+          "name": "On",
           "actionID": "3598"
         },
         {
           "argumentValue": "0.0",
-          "name": "Posn 2",
+          "name": "Off",
           "actionID": "3598"
         }
       ]
@@ -3014,7 +3214,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.3f",
+          "format": "%0.1f",
           "isExportedEveryFrame": false,
           "id": "1419"
         }
@@ -3022,17 +3222,17 @@
       "deviceId": "61",
       "positions": [
         {
-          "argumentValue": "0.000",
+          "argumentValue": "1.0",
           "name": "STBY",
           "actionID": "3933"
         },
         {
-          "argumentValue": "0.500",
+          "argumentValue": "0.5",
           "name": "AUTO",
           "actionID": "3933"
         },
         {
-          "argumentValue": "1.000",
+          "argumentValue": "0.0",
           "name": "MAN",
           "actionID": "3933"
         }
@@ -3665,17 +3865,17 @@
       "positions": [
         {
           "argumentValue": "1.0",
-          "name": "Posn 1",
+          "name": "Stop Trans",
           "actionID": "3527"
         },
         {
           "argumentValue": "0.0",
-          "name": "Posn 2",
+          "name": "Norm",
           "actionID": "3527"
         },
         {
           "argumentValue": "-1.0",
-          "name": "Posn 3",
+          "name": "Stop Refuel",
           "actionID": "3527"
         }
       ]
@@ -3696,17 +3896,17 @@
       "positions": [
         {
           "argumentValue": "1.0",
-          "name": "Posn 1",
+          "name": "Stop Trans",
           "actionID": "3528"
         },
         {
           "argumentValue": "0.0",
-          "name": "Posn 2",
+          "name": "Norm",
           "actionID": "3528"
         },
         {
           "argumentValue": "-1.0",
-          "name": "Posn 3",
+          "name": "Stop Refuel",
           "actionID": "3528"
         }
       ]
@@ -3727,17 +3927,17 @@
       "positions": [
         {
           "argumentValue": "1.0",
-          "name": "Posn 1",
+          "name": "Stop Trans",
           "actionID": "3529"
         },
         {
           "argumentValue": "0.0",
-          "name": "Posn 2",
+          "name": "Norm",
           "actionID": "3529"
         },
         {
           "argumentValue": "-1.0",
-          "name": "Posn 3",
+          "name": "Stop Refuel",
           "actionID": "3529"
         }
       ]
@@ -3758,12 +3958,12 @@
       "positions": [
         {
           "argumentValue": "1.0",
-          "name": "Posn 1",
+          "name": "Dump",
           "actionID": "3530"
         },
         {
           "argumentValue": "0.0",
-          "name": "Posn 2",
+          "name": "Norm",
           "actionID": "3530"
         }
       ]
@@ -3832,7 +4032,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.3f",
+          "format": "%0.1f",
           "isExportedEveryFrame": false,
           "id": "533"
         }
@@ -3840,18 +4040,18 @@
       "deviceId": "16",
       "positions": [
         {
-          "argumentValue": "0.000",
-          "name": "Posn 1",
+          "argumentValue": "1.0",
+          "name": "Override",
           "actionID": "3533"
         },
         {
-          "argumentValue": "0.500",
-          "name": "Posn 2",
+          "argumentValue": "0.5",
+          "name": "Open",
           "actionID": "3533"
         },
         {
-          "argumentValue": "1.000",
-          "name": "Posn 3",
+          "argumentValue": "0.0",
+          "name": "Closed",
           "actionID": "3533"
         }
       ]
@@ -3875,12 +4075,12 @@
           },
           {
             "value": 1.0,
-            "mappedValue": 20000.0
+            "mappedValue": 14000.0
           }
         ],
         "precision": 1
       },
-      "valueDescription": "0-20000",
+      "valueDescription": "0-14000",
       "unit": "Pounds"
     },
     {
@@ -3955,7 +4155,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.3f",
+          "format": "%0.1f",
           "isExportedEveryFrame": false,
           "id": "381"
         }
@@ -3963,37 +4163,37 @@
       "deviceId": "17",
       "positions": [
         {
-          "argumentValue": "-0.100",
+          "argumentValue": "-0.1",
           "name": "BIT",
           "actionID": "3381"
         },
         {
-          "argumentValue": "0.000",
+          "argumentValue": "0.0",
           "name": "Feed",
           "actionID": "3381"
         },
         {
-          "argumentValue": "0.100",
+          "argumentValue": "0.1",
           "name": "Int Wing",
           "actionID": "3381"
         },
         {
-          "argumentValue": "0.200",
+          "argumentValue": "0.2",
           "name": "Tank 1",
           "actionID": "3381"
         },
         {
-          "argumentValue": "0.300",
+          "argumentValue": "0.3",
           "name": "Ext Wing",
           "actionID": "3381"
         },
         {
-          "argumentValue": "0.400",
+          "argumentValue": "0.4",
           "name": "Ext Center",
           "actionID": "3381"
         },
         {
-          "argumentValue": "0.500",
+          "argumentValue": "0.5",
           "name": "Conformal Tanks",
           "actionID": "3381"
         }
@@ -4064,158 +4264,6 @@
       },
       "valueDescription": "0-14000",
       "unit": "Pounds"
-    },
-    {
-      "heliosType": "DCS.Common.Switch",
-      "device": "Generators",
-      "name": "Left Generator",
-      "description": "Current position of this switch.",
-      "exports": [
-        {
-          "format": "%0.1f",
-          "isExportedEveryFrame": false,
-          "id": "587"
-        }
-      ],
-      "deviceId": "6",
-      "positions": [
-        {
-          "argumentValue": "1.0",
-          "name": "Posn 1",
-          "actionID": "3587"
-        },
-        {
-          "argumentValue": "0.0",
-          "name": "Posn 2",
-          "actionID": "3587"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.Switch",
-      "device": "Generators",
-      "name": "Right Generator",
-      "description": "Current position of this switch.",
-      "exports": [
-        {
-          "format": "%0.1f",
-          "isExportedEveryFrame": false,
-          "id": "588"
-        }
-      ],
-      "deviceId": "6",
-      "positions": [
-        {
-          "argumentValue": "1.0",
-          "name": "Posn 1",
-          "actionID": "3588"
-        },
-        {
-          "argumentValue": "0.0",
-          "name": "Posn 2",
-          "actionID": "3588"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.Switch",
-      "device": "Generators",
-      "name": "Emergency Generator",
-      "description": "Current position of this switch.",
-      "exports": [
-        {
-          "format": "%0.3f",
-          "isExportedEveryFrame": false,
-          "id": "589"
-        }
-      ],
-      "deviceId": "6",
-      "positions": [
-        {
-          "argumentValue": "0.000",
-          "name": "Posn 1",
-          "actionID": "3589"
-        },
-        {
-          "argumentValue": "0.500",
-          "name": "Posn 2",
-          "actionID": "3589"
-        },
-        {
-          "argumentValue": "1.000",
-          "name": "Posn 3",
-          "actionID": "3589"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.Switch",
-      "device": "Generators",
-      "name": "External Power Switch",
-      "description": "Current position of this switch.",
-      "exports": [
-        {
-          "format": "%0.1f",
-          "isExportedEveryFrame": false,
-          "id": "594"
-        }
-      ],
-      "deviceId": "6",
-      "positions": [
-        {
-          "argumentValue": "-1.0",
-          "name": "Posn 1",
-          "actionID": "3594"
-        },
-        {
-          "argumentValue": "0.0",
-          "name": "Posn 2",
-          "actionID": "3594"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Posn 3",
-          "actionID": "3594"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.Switch",
-      "device": "Generators",
-      "name": "Jet Starter",
-      "description": "Current position of this switch.",
-      "exports": [
-        {
-          "format": "%0.1f",
-          "isExportedEveryFrame": false,
-          "id": "595"
-        }
-      ],
-      "deviceId": "6",
-      "positions": [
-        {
-          "argumentValue": "1.0",
-          "name": "ON",
-          "actionID": "3595"
-        },
-        {
-          "argumentValue": "0.0",
-          "name": "OFF",
-          "actionID": "3595"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.FlagValue",
-      "device": "Generators",
-      "name": "Jet Starter Ready Indicator",
-      "description": "True when indicator is lit",
-      "exports": [
-        {
-          "format": "%1d",
-          "id": "596"
-        }
-      ]
     },
     {
       "heliosType": "DCS.Common.Switch",
@@ -4418,7 +4466,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.3f",
+          "format": "%0.1f",
           "isExportedEveryFrame": false,
           "id": "121"
         }
@@ -4426,17 +4474,17 @@
       "deviceId": "55",
       "positions": [
         {
-          "argumentValue": "0.000",
+          "argumentValue": "1.0",
           "name": "Posn 1",
           "actionID": "3121"
         },
         {
-          "argumentValue": "0.500",
+          "argumentValue": "0.5",
           "name": "Posn 2",
           "actionID": "3121"
         },
         {
-          "argumentValue": "1.000",
+          "argumentValue": "0.0",
           "name": "Posn 3",
           "actionID": "3121"
         }
@@ -4693,17 +4741,17 @@
       "positions": [
         {
           "argumentValue": "1.0",
-          "name": "Posn 1",
+          "name": "B",
           "actionID": "3515"
         },
         {
           "argumentValue": "0.0",
-          "name": "Posn 2",
+          "name": "A",
           "actionID": "3515"
         },
         {
           "argumentValue": "-1.0",
-          "name": "Posn 3",
+          "name": "Out",
           "actionID": "3515"
         }
       ]
@@ -4715,7 +4763,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.3f",
+          "format": "%0.1f",
           "isExportedEveryFrame": false,
           "id": "516"
         }
@@ -4723,18 +4771,18 @@
       "deviceId": "17",
       "positions": [
         {
-          "argumentValue": "0.000",
-          "name": "Posn 1",
+          "argumentValue": "1.0",
+          "name": "Light",
           "actionID": "3516"
         },
         {
-          "argumentValue": "0.500",
-          "name": "Posn 2",
+          "argumentValue": "0.5",
+          "name": "Audio Rec",
           "actionID": "3516"
         },
         {
-          "argumentValue": "1.000",
-          "name": "Posn 3",
+          "argumentValue": "0.0",
+          "name": "Off",
           "actionID": "3516"
         }
       ]
@@ -4755,18 +4803,30 @@
       "positions": [
         {
           "argumentValue": "1.0",
-          "name": "Posn 1",
+          "name": "Low",
           "actionID": "3517"
         },
         {
           "argumentValue": "0.0",
-          "name": "Posn 2",
+          "name": "Norm",
           "actionID": "3517"
         },
         {
           "argumentValue": "-1.0",
-          "name": "Posn 3",
+          "name": "EMERG",
           "actionID": "3517"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "IFF",
+      "name": "IFF Reply Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%.1f",
+          "id": "541"
         }
       ]
     },
@@ -4791,18 +4851,6 @@
         {
           "format": "%1d",
           "id": "410"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.FlagValue",
-      "device": "Indicators (Pilot)",
-      "name": "OBST Indicator",
-      "description": "True when indicator is lit",
-      "exports": [
-        {
-          "format": "%1d",
-          "id": "429"
         }
       ]
     },
@@ -4926,6 +4974,32 @@
     {
       "heliosType": "DCS.Common.Switch",
       "device": "Jet Fuel Starter/Brake Panel",
+      "name": "Jet Fuel System Lever",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "386"
+        }
+      ],
+      "deviceId": "6",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Pulled",
+          "actionID": "3386"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Norm",
+          "actionID": "3386"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Jet Fuel Starter/Brake Panel",
       "name": "Parking Brake Switch",
       "description": "Current position of this switch.",
       "exports": [
@@ -4948,6 +5022,29 @@
           "actionID": "3387"
         }
       ]
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Jet Fuel Starter/Brake Panel",
+      "name": "Jet Fuel System Lever Rotation",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.2f",
+          "isExportedEveryFrame": false,
+          "id": "430"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.05,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "6",
+          "actionId": "3430"
+        }
+      }
     },
     {
       "heliosType": "DCS.Common.Switch",
@@ -4998,40 +5095,46 @@
       ]
     },
     {
-      "heliosType": "DCS.Common.FlagValue",
+      "heliosType": "DCS.Common.NetworkValue",
       "device": "Landing Gear Panel",
       "name": "Nose Gear Down Indicator",
-      "description": "True when indicator is lit",
+      "description": "Numeric value representing indicator color",
       "exports": [
         {
           "format": "%.1f",
           "id": "330"
         }
-      ]
+      ],
+      "valueDescription": "0.0 to 1.0",
+      "unit": "Numeric"
     },
     {
-      "heliosType": "DCS.Common.FlagValue",
+      "heliosType": "DCS.Common.NetworkValue",
       "device": "Landing Gear Panel",
       "name": "Left Gear Down Indicator",
-      "description": "True when indicator is lit",
+      "description": "Numeric value representing indicator color",
       "exports": [
         {
           "format": "%.1f",
           "id": "331"
         }
-      ]
+      ],
+      "valueDescription": "0.0 to 1.0",
+      "unit": "Numeric"
     },
     {
-      "heliosType": "DCS.Common.FlagValue",
+      "heliosType": "DCS.Common.NetworkValue",
       "device": "Landing Gear Panel",
       "name": "Right Gear Down Indicator",
-      "description": "True when indicator is lit",
+      "description": "Numeric value representing indicator color",
       "exports": [
         {
           "format": "%.1f",
           "id": "332"
         }
-      ]
+      ],
+      "valueDescription": "0.0 to 1.0",
+      "unit": "Numeric"
     },
     {
       "heliosType": "DCS.Common.FlagValue",
@@ -5042,6 +5145,32 @@
         {
           "format": "%.1f",
           "id": "333"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Landing Gear Panel",
+      "name": "Emergency Landing Gear Lever",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "337"
+        }
+      ],
+      "deviceId": "21",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Up",
+          "actionID": "3337"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Down",
+          "actionID": "3337"
         }
       ]
     },
@@ -5070,16 +5199,27 @@
       ]
     },
     {
-      "heliosType": "DCS.Common.FlagValue",
+      "heliosType": "DCS.Common.Axis",
       "device": "Landing Gear Panel",
-      "name": "Emergency Landing Gear Handle ROTATE",
-      "description": "Rotation value",
+      "name": "Emergency Landing Gear Handle Rotation",
+      "description": "Current value of this axis.",
       "exports": [
         {
-          "format": "%1d",
+          "format": "%.2f",
+          "isExportedEveryFrame": false,
           "id": "431"
         }
-      ]
+      ],
+      "loop": false,
+      "argumentValue": 0.05,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "21",
+          "actionId": "3431"
+        }
+      }
     },
     {
       "heliosType": "DCS.Common.FlagValue",
@@ -5247,17 +5387,17 @@
       "positions": [
         {
           "argumentValue": "1.0",
-          "name": "Posn 1",
+          "name": "Upper",
           "actionID": "3520"
         },
         {
           "argumentValue": "0.0",
-          "name": "Posn 2",
+          "name": "Both",
           "actionID": "3520"
         },
         {
           "argumentValue": "-1.0",
-          "name": "Posn 3",
+          "name": "Lower",
           "actionID": "3520"
         }
       ]
@@ -7208,13 +7348,251 @@
       ]
     },
     {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Lighting (Misc)",
+      "name": "Light Filter (Pilot)",
+      "description": "Numeric Value",
+      "exports": [
+        {
+          "format": "%.2f",
+          "id": "1013"
+        }
+      ],
+      "valueDescription": "0 to 1",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Lighting (Misc)",
+      "name": "Light Filter (WSO)",
+      "description": "Numeric Value",
+      "exports": [
+        {
+          "format": "%.2f",
+          "id": "1014"
+        }
+      ],
+      "valueDescription": "0 to 1",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Lighting (Misc)",
+      "name": "UFC Panel Lights (Pilot)",
+      "description": "Numeric Value",
+      "exports": [
+        {
+          "format": "%.2f",
+          "id": "178"
+        }
+      ],
+      "valueDescription": "0 to 1",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Lighting (Misc)",
+      "name": "UFC Panel Backlights (Pilot)",
+      "description": "Numeric Value",
+      "exports": [
+        {
+          "format": "%.2f",
+          "id": "179"
+        }
+      ],
+      "valueDescription": "0 to 1",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Lighting (Misc)",
+      "name": "Flood Illumination (Pilot)",
+      "description": "Numeric Value",
+      "exports": [
+        {
+          "format": "%.2f",
+          "id": "180"
+        }
+      ],
+      "valueDescription": "0 to 1",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Lighting (Misc)",
+      "name": "Indicator Lights (Pilot)",
+      "description": "Numeric Value",
+      "exports": [
+        {
+          "format": "%.2f",
+          "id": "181"
+        }
+      ],
+      "valueDescription": "0 to 1",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Lighting (Misc)",
+      "name": "White Instrument Lights (Pilot)",
+      "description": "Numeric Value",
+      "exports": [
+        {
+          "format": "%.2f",
+          "id": "182"
+        }
+      ],
+      "valueDescription": "0 to 1",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Lighting (Misc)",
+      "name": "Panel Lights (Pilot)",
+      "description": "Numeric Value",
+      "exports": [
+        {
+          "format": "%.2f",
+          "id": "183"
+        }
+      ],
+      "valueDescription": "0 to 1",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Lighting (Misc)",
+      "name": "White Compass Illumination (Pilot)",
+      "description": "Numeric Value",
+      "exports": [
+        {
+          "format": "%.2f",
+          "id": "184"
+        }
+      ],
+      "valueDescription": "0 to 1",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Lighting (Misc)",
+      "name": "Green Canopy Lamp (Pilot)",
+      "description": "Numeric Value",
+      "exports": [
+        {
+          "format": "%.2f",
+          "id": "185"
+        }
+      ],
+      "valueDescription": "0 to 1",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Lighting (Misc)",
+      "name": "Green Canopy Lamp (WSO)",
+      "description": "Numeric Value",
+      "exports": [
+        {
+          "format": "%.2f",
+          "id": "187"
+        }
+      ],
+      "valueDescription": "0 to 1",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Lighting (Misc)",
+      "name": "UFC Panel Backlights (WSO)",
+      "description": "Numeric Value",
+      "exports": [
+        {
+          "format": "%.2f",
+          "id": "189"
+        }
+      ],
+      "valueDescription": "0 to 1",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Lighting (Misc)",
+      "name": "UFC Panel Lights (WSO)",
+      "description": "Numeric Value",
+      "exports": [
+        {
+          "format": "%.2f",
+          "id": "190"
+        }
+      ],
+      "valueDescription": "0 to 1",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Lighting (Misc)",
+      "name": "Flood Illumination (WSO)",
+      "description": "Numeric Value",
+      "exports": [
+        {
+          "format": "%.2f",
+          "id": "191"
+        }
+      ],
+      "valueDescription": "0 to 1",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Lighting (Misc)",
+      "name": "Indicator Lights (WSO)",
+      "description": "Numeric Value",
+      "exports": [
+        {
+          "format": "%.2f",
+          "id": "192"
+        }
+      ],
+      "valueDescription": "0 to 1",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Lighting (Misc)",
+      "name": "White Instrument Lights (WSO)",
+      "description": "Numeric Value",
+      "exports": [
+        {
+          "format": "%.2f",
+          "id": "193"
+        }
+      ],
+      "valueDescription": "0 to 1",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Lighting (Misc)",
+      "name": "Panel Lights (WSO)",
+      "description": "Numeric Value",
+      "exports": [
+        {
+          "format": "%.2f",
+          "id": "194"
+        }
+      ],
+      "valueDescription": "0 to 1",
+      "unit": "Numeric"
+    },
+    {
       "heliosType": "DCS.Common.Switch",
       "device": "Lights External",
       "name": "Formation Lights Knob",
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.3f",
+          "format": "%0.2f",
           "isExportedEveryFrame": false,
           "id": "465"
         }
@@ -7222,37 +7600,37 @@
       "deviceId": "22",
       "positions": [
         {
-          "argumentValue": "0.000",
+          "argumentValue": "0.00",
           "name": "Posn 1",
           "actionID": "3465"
         },
         {
-          "argumentValue": "0.167",
+          "argumentValue": "0.17",
           "name": "Posn 2",
           "actionID": "3465"
         },
         {
-          "argumentValue": "0.334",
+          "argumentValue": "0.34",
           "name": "Posn 3",
           "actionID": "3465"
         },
         {
-          "argumentValue": "0.501",
+          "argumentValue": "0.51",
           "name": "Posn 4",
           "actionID": "3465"
         },
         {
-          "argumentValue": "0.668",
+          "argumentValue": "0.68",
           "name": "Posn 5",
           "actionID": "3465"
         },
         {
-          "argumentValue": "0.835",
+          "argumentValue": "0.85",
           "name": "Posn 6",
           "actionID": "3465"
         },
         {
-          "argumentValue": "1.002",
+          "argumentValue": "1.02",
           "name": "Posn 7",
           "actionID": "3465"
         }
@@ -7291,7 +7669,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.3f",
+          "format": "%0.2f",
           "isExportedEveryFrame": false,
           "id": "467"
         }
@@ -7299,37 +7677,37 @@
       "deviceId": "22",
       "positions": [
         {
-          "argumentValue": "0.000",
+          "argumentValue": "0.00",
           "name": "Posn 1",
           "actionID": "3467"
         },
         {
-          "argumentValue": "0.167",
+          "argumentValue": "0.17",
           "name": "Posn 2",
           "actionID": "3467"
         },
         {
-          "argumentValue": "0.334",
+          "argumentValue": "0.34",
           "name": "Posn 3",
           "actionID": "3467"
         },
         {
-          "argumentValue": "0.501",
+          "argumentValue": "0.51",
           "name": "Posn 4",
           "actionID": "3467"
         },
         {
-          "argumentValue": "0.668",
+          "argumentValue": "0.68",
           "name": "Posn 5",
           "actionID": "3467"
         },
         {
-          "argumentValue": "0.835",
+          "argumentValue": "0.85",
           "name": "Posn 6",
           "actionID": "3467"
         },
         {
-          "argumentValue": "1.002",
+          "argumentValue": "1.02",
           "name": "Posn 7",
           "actionID": "3467"
         }
@@ -7342,7 +7720,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.3f",
+          "format": "%0.1f",
           "isExportedEveryFrame": false,
           "id": "468"
         }
@@ -7350,18 +7728,18 @@
       "deviceId": "22",
       "positions": [
         {
-          "argumentValue": "0.000",
-          "name": "Posn 1",
+          "argumentValue": "1.0",
+          "name": "Bright",
           "actionID": "3468"
         },
         {
-          "argumentValue": "0.500",
-          "name": "Posn 2",
+          "argumentValue": "0.5",
+          "name": "Dim",
           "actionID": "3468"
         },
         {
-          "argumentValue": "1.000",
-          "name": "Posn 3",
+          "argumentValue": "0.0",
+          "name": "Off",
           "actionID": "3468"
         }
       ]
@@ -7382,17 +7760,17 @@
       "positions": [
         {
           "argumentValue": "1.0",
-          "name": "Posn 1",
+          "name": "Landing",
           "actionID": "3538"
         },
         {
           "argumentValue": "0.0",
-          "name": "Posn 2",
+          "name": "Off",
           "actionID": "3538"
         },
         {
           "argumentValue": "-1.0",
-          "name": "Posn 3",
+          "name": "Taxi",
           "actionID": "3538"
         }
       ]
@@ -7490,10 +7868,10 @@
       }
     },
     {
-      "heliosType": "DCS.Common.PushButton",
+      "heliosType": "DCS.Common.Switch",
       "device": "Lights Internal",
       "name": "Warning/Caution Lights Test",
-      "description": "Current state of this button.",
+      "description": "Current position of this switch.",
       "exports": [
         {
           "format": "%.1f",
@@ -7501,13 +7879,17 @@
           "id": "569"
         }
       ],
-      "buttons": [
+      "deviceId": "23",
+      "positions": [
         {
-          "deviceId": "23",
-          "pushId": "3569",
-          "pushValue": "1.0",
-          "releaseId": "3569",
-          "releaseValue": "0.0"
+          "argumentValue": "1.0",
+          "name": "Test",
+          "actionID": "3569"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Off",
+          "actionID": "3569"
         }
       ]
     },
@@ -7702,10 +8084,10 @@
       }
     },
     {
-      "heliosType": "DCS.Common.PushButton",
+      "heliosType": "DCS.Common.Switch",
       "device": "Lights Internal Control Panel (WSO)",
       "name": "Warning/Caution Lights Test",
-      "description": "Current state of this button.",
+      "description": "Current position of this switch.",
       "exports": [
         {
           "format": "%.1f",
@@ -7713,13 +8095,17 @@
           "id": "1459"
         }
       ],
-      "buttons": [
+      "deviceId": "23",
+      "positions": [
         {
-          "deviceId": "23",
-          "pushId": "3459",
-          "pushValue": "1.0",
-          "releaseId": "3459",
-          "releaseValue": "0.0"
+          "argumentValue": "1.0",
+          "name": "Test",
+          "actionID": "3459"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Off",
+          "actionID": "3459"
         }
       ]
     },
@@ -7931,17 +8317,17 @@
       "positions": [
         {
           "argumentValue": "1.0",
-          "name": "Posn 1",
+          "name": "Hold",
           "actionID": "3508"
         },
         {
           "argumentValue": "0.0",
-          "name": "Posn 2",
+          "name": "Normal",
           "actionID": "3508"
         },
         {
           "argumentValue": "-1.0",
-          "name": "Posn 3",
+          "name": "Zero",
           "actionID": "3508"
         }
       ]
@@ -7953,7 +8339,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.3f",
+          "format": "%0.1f",
           "isExportedEveryFrame": false,
           "id": "509"
         }
@@ -7961,18 +8347,18 @@
       "deviceId": "13",
       "positions": [
         {
-          "argumentValue": "0.000",
-          "name": "Posn 1",
+          "argumentValue": "1.0",
+          "name": "Rad Override",
           "actionID": "3509"
         },
         {
-          "argumentValue": "0.500",
-          "name": "Posn 2",
+          "argumentValue": "0.5",
+          "name": "On",
           "actionID": "3509"
         },
         {
-          "argumentValue": "1.000",
-          "name": "Posn 3",
+          "argumentValue": "0.0",
+          "name": "Off",
           "actionID": "3509"
         }
       ]
@@ -8037,25 +8423,25 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.3f",
+          "format": "%0.1f",
           "isExportedEveryFrame": false,
           "id": "1427"
         }
       ],
-      "deviceId": "17",
+      "deviceId": "13",
       "positions": [
         {
-          "argumentValue": "0.000",
+          "argumentValue": "1.0",
           "name": "Posn 1",
           "actionID": "3427"
         },
         {
-          "argumentValue": "0.500",
+          "argumentValue": "0.5",
           "name": "Posn 2",
           "actionID": "3427"
         },
         {
-          "argumentValue": "1.000",
+          "argumentValue": "0.0",
           "name": "Posn 3",
           "actionID": "3427"
         }
@@ -8085,116 +8471,7 @@
     },
     {
       "heliosType": "DCS.Common.Switch",
-      "device": "Miscellaneous",
-      "name": "Roll Ratio Switch",
-      "description": "Current position of this switch.",
-      "exports": [
-        {
-          "format": "%0.1f",
-          "isExportedEveryFrame": false,
-          "id": "534"
-        }
-      ],
-      "deviceId": "18",
-      "positions": [
-        {
-          "argumentValue": "1.0",
-          "name": "Posn 1",
-          "actionID": "3534"
-        },
-        {
-          "argumentValue": "0.0",
-          "name": "Posn 2",
-          "actionID": "3534"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.Switch",
-      "device": "Miscellaneous",
-      "name": "Left Inlet Ramp Switch",
-      "description": "Current position of this switch.",
-      "exports": [
-        {
-          "format": "%0.1f",
-          "isExportedEveryFrame": false,
-          "id": "535"
-        }
-      ],
-      "deviceId": "15",
-      "positions": [
-        {
-          "argumentValue": "1.0",
-          "name": "Posn 1",
-          "actionID": "3535"
-        },
-        {
-          "argumentValue": "0.0",
-          "name": "Posn 2",
-          "actionID": "3535"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.Switch",
-      "device": "Miscellaneous",
-      "name": "Right Inlet Ramp Switch",
-      "description": "Current position of this switch.",
-      "exports": [
-        {
-          "format": "%0.1f",
-          "isExportedEveryFrame": false,
-          "id": "536"
-        }
-      ],
-      "deviceId": "15",
-      "positions": [
-        {
-          "argumentValue": "1.0",
-          "name": "Posn 1",
-          "actionID": "3536"
-        },
-        {
-          "argumentValue": "0.0",
-          "name": "Posn 2",
-          "actionID": "3536"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.Switch",
-      "device": "Miscellaneous",
-      "name": "Anti Skid Switch",
-      "description": "Current position of this switch.",
-      "exports": [
-        {
-          "format": "%0.3f",
-          "isExportedEveryFrame": false,
-          "id": "537"
-        }
-      ],
-      "deviceId": "21",
-      "positions": [
-        {
-          "argumentValue": "0.000",
-          "name": "Posn 1",
-          "actionID": "3537"
-        },
-        {
-          "argumentValue": "0.500",
-          "name": "Posn 2",
-          "actionID": "3537"
-        },
-        {
-          "argumentValue": "1.000",
-          "name": "Posn 3",
-          "actionID": "3537"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.Switch",
-      "device": "Miscellaneous Controls (WSO)",
+      "device": "Miscellaneous Controls",
       "name": "Show/Hide Controls",
       "description": "Current position of this switch.",
       "exports": [
@@ -8215,6 +8492,115 @@
           "argumentValue": "0.0",
           "name": "Hide Controls",
           "actionID": "3001"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Miscellaneous Panel",
+      "name": "Roll Ratio Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "534"
+        }
+      ],
+      "deviceId": "18",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "AUTO",
+          "actionID": "3534"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "EMERG",
+          "actionID": "3534"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Miscellaneous Panel",
+      "name": "Left Inlet Ramp Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "535"
+        }
+      ],
+      "deviceId": "15",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "AUTO",
+          "actionID": "3535"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "EMERG",
+          "actionID": "3535"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Miscellaneous Panel",
+      "name": "Right Inlet Ramp Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "536"
+        }
+      ],
+      "deviceId": "15",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "AUTO",
+          "actionID": "3536"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "EMERG",
+          "actionID": "3536"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Miscellaneous Panel",
+      "name": "Anti Skid Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "537"
+        }
+      ],
+      "deviceId": "21",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Norm",
+          "actionID": "3537"
+        },
+        {
+          "argumentValue": "0.5",
+          "name": "Pulser",
+          "actionID": "3537"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Off",
+          "actionID": "3537"
         }
       ]
     },
@@ -8339,7 +8725,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.3f",
+          "format": "%0.1f",
           "isExportedEveryFrame": false,
           "id": "553"
         }
@@ -8347,17 +8733,17 @@
       "deviceId": "26",
       "positions": [
         {
-          "argumentValue": "0.000",
+          "argumentValue": "1.0",
           "name": "Posn 1",
           "actionID": "3553"
         },
         {
-          "argumentValue": "0.500",
+          "argumentValue": "0.5",
           "name": "Posn 2",
           "actionID": "3553"
         },
         {
-          "argumentValue": "1.000",
+          "argumentValue": "0.0",
           "name": "Posn 3",
           "actionID": "3553"
         }
@@ -8466,7 +8852,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.3f",
+          "format": "%0.1f",
           "isExportedEveryFrame": false,
           "id": "1452"
         }
@@ -8474,17 +8860,17 @@
       "deviceId": "26",
       "positions": [
         {
-          "argumentValue": "0.000",
+          "argumentValue": "1.0",
           "name": "Posn 1",
           "actionID": "3573"
         },
         {
-          "argumentValue": "0.500",
+          "argumentValue": "0.5",
           "name": "Posn 2",
           "actionID": "3573"
         },
         {
-          "argumentValue": "1.000",
+          "argumentValue": "0.0",
           "name": "Posn 3",
           "actionID": "3573"
         }
@@ -8596,13 +8982,13 @@
       "deviceId": "17",
       "positions": [
         {
-          "argumentValue": "1.0",
-          "name": "Posn 1",
+          "argumentValue": "0.0",
+          "name": "UHF 1",
           "actionID": "3513"
         },
         {
-          "argumentValue": "0.0",
-          "name": "Posn 2",
+          "argumentValue": "1.0",
+          "name": "UHF 2",
           "actionID": "3513"
         }
       ]
@@ -8623,12 +9009,12 @@
       "positions": [
         {
           "argumentValue": "1.0",
-          "name": "Posn 1",
+          "name": "Norm",
           "actionID": "3514"
         },
         {
           "argumentValue": "0.0",
-          "name": "Posn 2",
+          "name": "Only",
           "actionID": "3514"
         }
       ]
@@ -8648,13 +9034,13 @@
       "deviceId": "17",
       "positions": [
         {
-          "argumentValue": "1.0",
-          "name": "Posn 1",
+          "argumentValue": "0.0",
+          "name": "UHF 1",
           "actionID": "3429"
         },
         {
-          "argumentValue": "0.0",
-          "name": "Posn 2",
+          "argumentValue": "1.0",
+          "name": "UHF 2",
           "actionID": "3429"
         }
       ]
@@ -8675,12 +9061,12 @@
       "positions": [
         {
           "argumentValue": "1.0",
-          "name": "Posn 1",
+          "name": "Norm",
           "actionID": "3430"
         },
         {
           "argumentValue": "0.0",
-          "name": "Posn 2",
+          "name": "Only",
           "actionID": "3430"
         }
       ]
@@ -10332,11 +10718,11 @@
     {
       "heliosType": "DCS.Common.Switch",
       "device": "Sensor",
-      "name": "Terrain Follow Radar Switch",
+      "name": "Terrain Following Radar Switch",
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.3f",
+          "format": "%0.1f",
           "isExportedEveryFrame": false,
           "id": "469"
         }
@@ -10344,18 +10730,18 @@
       "deviceId": "65",
       "positions": [
         {
-          "argumentValue": "0.000",
-          "name": "Posn 1",
+          "argumentValue": "1.0",
+          "name": "On",
           "actionID": "3469"
         },
         {
-          "argumentValue": "0.500",
-          "name": "Posn 2",
+          "argumentValue": "0.5",
+          "name": "Standby",
           "actionID": "3469"
         },
         {
-          "argumentValue": "1.000",
-          "name": "Posn 3",
+          "argumentValue": "0.0",
+          "name": "Off",
           "actionID": "3469"
         }
       ]
@@ -10372,21 +10758,21 @@
           "id": "470"
         }
       ],
-      "deviceId": "31",
+      "deviceId": "67",
       "positions": [
         {
-          "argumentValue": "0.000",
-          "name": "Posn 1",
+          "argumentValue": "1.000",
+          "name": "Override",
           "actionID": "3470"
         },
         {
           "argumentValue": "0.500",
-          "name": "Posn 2",
+          "name": "On",
           "actionID": "3470"
         },
         {
-          "argumentValue": "1.000",
-          "name": "Posn 3",
+          "argumentValue": "0.000",
+          "name": "Off",
           "actionID": "3470"
         }
       ]
@@ -10398,7 +10784,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.3f",
+          "format": "%0.2f",
           "isExportedEveryFrame": false,
           "id": "471"
         }
@@ -10406,22 +10792,22 @@
       "deviceId": "3",
       "positions": [
         {
-          "argumentValue": "0.000",
+          "argumentValue": "0.00",
           "name": "Posn 1",
           "actionID": "3471"
         },
         {
-          "argumentValue": "0.333",
+          "argumentValue": "0.33",
           "name": "Posn 2",
           "actionID": "3471"
         },
         {
-          "argumentValue": "0.666",
+          "argumentValue": "0.66",
           "name": "Posn 3",
           "actionID": "3471"
         },
         {
-          "argumentValue": "0.999",
+          "argumentValue": "0.99",
           "name": "Posn 4",
           "actionID": "3471"
         }
@@ -10434,7 +10820,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.3f",
+          "format": "%0.2f",
           "isExportedEveryFrame": false,
           "id": "472"
         }
@@ -10442,22 +10828,22 @@
       "deviceId": "42",
       "positions": [
         {
-          "argumentValue": "0.000",
+          "argumentValue": "0.00",
           "name": "Posn 1",
           "actionID": "3472"
         },
         {
-          "argumentValue": "0.333",
+          "argumentValue": "0.33",
           "name": "Posn 2",
           "actionID": "3472"
         },
         {
-          "argumentValue": "0.666",
+          "argumentValue": "0.66",
           "name": "Posn 3",
           "actionID": "3472"
         },
         {
-          "argumentValue": "0.999",
+          "argumentValue": "0.99",
           "name": "Posn 4",
           "actionID": "3472"
         }
@@ -10516,7 +10902,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.3f",
+          "format": "%0.1f",
           "isExportedEveryFrame": false,
           "id": "475"
         }
@@ -10524,18 +10910,18 @@
       "deviceId": "50",
       "positions": [
         {
-          "argumentValue": "0.000",
-          "name": "Posn 1",
+          "argumentValue": "1.0",
+          "name": "On",
           "actionID": "3475"
         },
         {
-          "argumentValue": "0.500",
-          "name": "Posn 2",
+          "argumentValue": "0.5",
+          "name": "Standby",
           "actionID": "3475"
         },
         {
-          "argumentValue": "1.000",
-          "name": "Posn 3",
+          "argumentValue": "0.0",
+          "name": "Off",
           "actionID": "3475"
         }
       ]
@@ -10547,7 +10933,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.3f",
+          "format": "%0.2f",
           "isExportedEveryFrame": false,
           "id": "476"
         }
@@ -10555,28 +10941,28 @@
       "deviceId": "1",
       "positions": [
         {
-          "argumentValue": "0.000",
-          "name": "Posn 1",
+          "argumentValue": "0.00",
+          "name": "Off",
           "actionID": "3476"
         },
         {
-          "argumentValue": "0.250",
-          "name": "Posn 2",
+          "argumentValue": "0.25",
+          "name": "Poll",
           "actionID": "3476"
         },
         {
-          "argumentValue": "0.500",
-          "name": "Posn 3",
+          "argumentValue": "0.50",
+          "name": "Norm",
           "actionID": "3476"
         },
         {
-          "argumentValue": "0.750",
-          "name": "Posn 4",
+          "argumentValue": "0.75",
+          "name": "SIL",
           "actionID": "3476"
         },
         {
-          "argumentValue": "1.000",
-          "name": "Posn 5",
+          "argumentValue": "1.00",
+          "name": "Hold",
           "actionID": "3476"
         }
       ]
@@ -10943,6 +11329,42 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
+      "device": "TEWS Control Panel (WSO)",
+      "name": "ICS SET 1 Fail Indicator",
+      "description": "%.1f",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "1472"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "TEWS Control Panel (WSO)",
+      "name": "ICS SET 2 Fail Indicator",
+      "description": "%.1f",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "1473"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "TEWS Control Panel (WSO)",
+      "name": "ICS SET 3 Fail Indicator",
+      "description": "%.1f",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "1474"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
       "device": "Threat Indicators (Pilot)",
       "name": "EMS Limit Indicator",
       "description": "True when indicator is lit",
@@ -11002,6 +11424,18 @@
       ]
     },
     {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Threat Indicators (Pilot)",
+      "name": "OBST Indicator",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "429"
+        }
+      ]
+    },
+    {
       "heliosType": "DCS.Common.Switch",
       "device": "Throttle Quadrant",
       "name": "Flaps Control Switch",
@@ -11016,12 +11450,12 @@
       "deviceId": "18",
       "positions": [
         {
-          "argumentValue": "1.0",
+          "argumentValue": "0.0",
           "name": "Posn 1",
           "actionID": "3459"
         },
         {
-          "argumentValue": "0.0",
+          "argumentValue": "1.0",
           "name": "Posn 2",
           "actionID": "3459"
         }
@@ -11212,7 +11646,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.3f",
+          "format": "%0.1f",
           "isExportedEveryFrame": false,
           "id": "1413"
         }
@@ -11220,17 +11654,17 @@
       "deviceId": "54",
       "positions": [
         {
-          "argumentValue": "0.000",
+          "argumentValue": "1.0",
           "name": "OFF",
           "actionID": "3413"
         },
         {
-          "argumentValue": "0.500",
+          "argumentValue": "0.5",
           "name": "STBY",
           "actionID": "3413"
         },
         {
-          "argumentValue": "1.000",
+          "argumentValue": "0.0",
           "name": "ON",
           "actionID": "3413"
         }
@@ -13353,13 +13787,36 @@
       "description": "Current value of this axis.",
       "exports": [
         {
-          "format": "%0.1f",
+          "format": "%0.2f",
           "isExportedEveryFrame": false,
           "id": "502"
         }
       ],
       "loop": false,
-      "argumentValue": 0.1,
+      "argumentValue": 0.05,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "59",
+          "actionId": "3501"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Volume Controls",
+      "name": "Launch Volume",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%0.2f",
+          "isExportedEveryFrame": false,
+          "id": "503"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.05,
       "argumentMin": 0.0,
       "argumentMax": 1.0,
       "actions": {
@@ -13372,22 +13829,22 @@
     {
       "heliosType": "DCS.Common.Axis",
       "device": "Volume Controls",
-      "name": "Launch Volume",
+      "name": "ICS Volume",
       "description": "Current value of this axis.",
       "exports": [
         {
-          "format": "%0.1f",
+          "format": "%0.2f",
           "isExportedEveryFrame": false,
-          "id": "503"
+          "id": "504"
         }
       ],
       "loop": false,
-      "argumentValue": 0.1,
+      "argumentValue": 0.05,
       "argumentMin": 0.0,
       "argumentMax": 1.0,
       "actions": {
         "set": {
-          "deviceId": "59",
+          "deviceId": "13",
           "actionId": "3503"
         }
       }
@@ -13395,46 +13852,23 @@
     {
       "heliosType": "DCS.Common.Axis",
       "device": "Volume Controls",
-      "name": "ICS Volume",
+      "name": "WPN Volume",
       "description": "Current value of this axis.",
       "exports": [
         {
-          "format": "%0.1f",
-          "isExportedEveryFrame": false,
-          "id": "504"
-        }
-      ],
-      "loop": false,
-      "argumentValue": 0.1,
-      "argumentMin": 0.0,
-      "argumentMax": 1.0,
-      "actions": {
-        "set": {
-          "deviceId": "13",
-          "actionId": "3504"
-        }
-      }
-    },
-    {
-      "heliosType": "DCS.Common.Axis",
-      "device": "Volume Controls",
-      "name": "WPN Voume",
-      "description": "Current value of this axis.",
-      "exports": [
-        {
-          "format": "%0.1f",
+          "format": "%0.2f",
           "isExportedEveryFrame": false,
           "id": "505"
         }
       ],
       "loop": false,
-      "argumentValue": 0.1,
+      "argumentValue": 0.05,
       "argumentMin": 0.0,
       "argumentMax": 1.0,
       "actions": {
         "set": {
-          "deviceId": "44",
-          "actionId": "3505"
+          "deviceId": "47",
+          "actionId": "3504"
         }
       }
     },
@@ -13445,19 +13879,19 @@
       "description": "Current value of this axis.",
       "exports": [
         {
-          "format": "%0.1f",
+          "format": "%0.2f",
           "isExportedEveryFrame": false,
           "id": "506"
         }
       ],
       "loop": false,
-      "argumentValue": 0.1,
+      "argumentValue": 0.05,
       "argumentMin": 0.0,
       "argumentMax": 1.0,
       "actions": {
         "set": {
           "deviceId": "11",
-          "actionId": "3506"
+          "actionId": "3505"
         }
       }
     },
@@ -13468,19 +13902,19 @@
       "description": "Current value of this axis.",
       "exports": [
         {
-          "format": "%0.1f",
+          "format": "%0.2f",
           "isExportedEveryFrame": false,
           "id": "507"
         }
       ],
       "loop": false,
-      "argumentValue": 0.1,
+      "argumentValue": 0.05,
       "argumentMin": 0.0,
       "argumentMax": 1.0,
       "actions": {
         "set": {
           "deviceId": "10",
-          "actionId": "3507"
+          "actionId": "3506"
         }
       }
     },
@@ -13503,7 +13937,7 @@
       "actions": {
         "set": {
           "deviceId": "59",
-          "actionId": "3510"
+          "actionId": "3601"
         }
       }
     },
@@ -13526,7 +13960,7 @@
       "actions": {
         "set": {
           "deviceId": "59",
-          "actionId": "3511"
+          "actionId": "3602"
         }
       }
     },
@@ -13549,7 +13983,7 @@
       "actions": {
         "set": {
           "deviceId": "61",
-          "actionId": "3512"
+          "actionId": "3603"
         }
       }
     },
@@ -13571,8 +14005,8 @@
       "argumentMax": 1.0,
       "actions": {
         "set": {
-          "deviceId": "44",
-          "actionId": "3513"
+          "deviceId": "47",
+          "actionId": "3604"
         }
       }
     },
@@ -13595,7 +14029,7 @@
       "actions": {
         "set": {
           "deviceId": "11",
-          "actionId": "3514"
+          "actionId": "3605"
         }
       }
     },
@@ -13618,7 +14052,7 @@
       "actions": {
         "set": {
           "deviceId": "10",
-          "actionId": "3515"
+          "actionId": "3606"
         }
       }
     },
