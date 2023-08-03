@@ -1,7 +1,7 @@
 {
   "source": "Helios",
-  "version": "1.6.6010.0000",
-  "commit": "b90d0aa5d28e2d62cac28a1c3d33070c49670025",
+  "version": "1.6.6010.2000",
+  "commit": "4cdb956247eb8d1858746f79926e1a8d2c4ba139",
   "type": "Existing",
   "name": "DCS AH-64D Apache",
   "module": "AH-64D_BLK_II",
@@ -3800,28 +3800,6 @@
           "pushId": "3043",
           "pushValue": "1.0",
           "releaseId": "3043",
-          "releaseValue": "0.0"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.PushButton",
-      "device": "Handgrip Left (CP/G)",
-      "name": "Linear Motion Compensation (LMC) Button",
-      "description": "Current state of this button.",
-      "exports": [
-        {
-          "format": "%0.1f",
-          "isExportedEveryFrame": false,
-          "id": "502"
-        }
-      ],
-      "buttons": [
-        {
-          "deviceId": "51",
-          "pushId": "3044",
-          "pushValue": "1.0",
-          "releaseId": "3044",
           "releaseValue": "0.0"
         }
       ]
