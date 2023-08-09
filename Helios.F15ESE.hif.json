@@ -1,7 +1,7 @@
 {
   "source": "Helios",
   "version": "1.6.6010.0000",
-  "commit": "42512c1cccb18642855d09db2c55353298021518",
+  "commit": "52627169e5e6adef588cae5b3ecb3348a776d768",
   "type": "Existing",
   "name": "DCS F-15E Strike Eagle",
   "module": "F-15ESE",
@@ -4443,7 +4443,7 @@
       "description": "Current value of this axis.",
       "exports": [
         {
-          "format": "%0.1f",
+          "format": "%.2f",
           "isExportedEveryFrame": false,
           "id": "120"
         }
@@ -4550,7 +4550,7 @@
       "description": "Current value of this axis.",
       "exports": [
         {
-          "format": "%0.1f",
+          "format": "%.2f",
           "isExportedEveryFrame": false,
           "id": "124"
         }
@@ -4573,7 +4573,7 @@
       "description": "Current value of this axis.",
       "exports": [
         {
-          "format": "%0.1f",
+          "format": "%.2f",
           "isExportedEveryFrame": false,
           "id": "125"
         }
@@ -8536,12 +8536,12 @@
       "deviceId": "15",
       "positions": [
         {
-          "argumentValue": "1.0",
+          "argumentValue": "0.0",
           "name": "AUTO",
           "actionID": "3535"
         },
         {
-          "argumentValue": "0.0",
+          "argumentValue": "1.0",
           "name": "EMERG",
           "actionID": "3535"
         }
@@ -8562,12 +8562,12 @@
       "deviceId": "15",
       "positions": [
         {
-          "argumentValue": "1.0",
+          "argumentValue": "0.0",
           "name": "AUTO",
           "actionID": "3536"
         },
         {
-          "argumentValue": "0.0",
+          "argumentValue": "1.0",
           "name": "EMERG",
           "actionID": "3536"
         }
@@ -12075,7 +12075,7 @@
       "description": "Current value of this axis.",
       "exports": [
         {
-          "format": "%0.1f",
+          "format": "%.2f",
           "isExportedEveryFrame": false,
           "id": "282"
         }
@@ -12098,7 +12098,7 @@
       "description": "Current value of this axis.",
       "exports": [
         {
-          "format": "%0.1f",
+          "format": "%.2f",
           "isExportedEveryFrame": false,
           "id": "283"
         }
@@ -12121,7 +12121,7 @@
       "description": "Current value of this axis.",
       "exports": [
         {
-          "format": "%0.1f",
+          "format": "%.2f",
           "isExportedEveryFrame": false,
           "id": "284"
         }
@@ -12144,7 +12144,7 @@
       "description": "Current value of this axis.",
       "exports": [
         {
-          "format": "%0.1f",
+          "format": "%.2f",
           "isExportedEveryFrame": false,
           "id": "285"
         }
@@ -12167,7 +12167,7 @@
       "description": "Current value of this axis.",
       "exports": [
         {
-          "format": "%0.1f",
+          "format": "%.2f",
           "isExportedEveryFrame": false,
           "id": "286"
         }
