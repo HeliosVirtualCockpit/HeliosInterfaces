@@ -4882,7 +4882,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.-1f",
+          "format": "%0.1f",
           "isExportedEveryFrame": false,
           "id": "542"
         }
