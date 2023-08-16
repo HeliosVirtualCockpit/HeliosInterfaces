@@ -1,12 +1,12 @@
 {
   "source": "Helios",
-  "version": "1.6.6000.0000",
-  "commit": "4eb6b40fe687be2685f289795957bfe878db0312",
+  "version": "1.6.6010.0000",
+  "commit": "b2501991eba0b0eafca3f6c59f725e938a44e934",
   "type": "Existing",
   "name": "DCS Mirage F1EE",
-  "module": "MIRAGE-F1EE",
+  "module": "Mirage-F1EE",
   "vehicles": [
-    "MIRAGE-F1EE"
+    "Mirage-F1EE"
   ],
   "functions": [
     {
