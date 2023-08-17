@@ -1,7 +1,7 @@
 {
   "source": "Helios",
   "version": "1.6.6011.0000",
-  "commit": "4fd7d1787abf57fab85873f972fc9024b6b9dfcf",
+  "commit": "cacac73922d31c80aa6c8befac037ed532e3fffc",
   "type": "Existing",
   "name": "DCS F-15E Strike Eagle",
   "module": "F-15ESE",
@@ -3235,6 +3235,149 @@
           "argumentValue": "0.0",
           "name": "MAN",
           "actionID": "3933"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "External LGB Code Panel",
+      "name": "Digit Wheel 2",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "71"
+        }
+      ],
+      "deviceId": "44",
+      "positions": [
+        {
+          "argumentValue": "0.4",
+          "name": "5",
+          "actionID": "3071"
+        },
+        {
+          "argumentValue": "0.3",
+          "name": "6",
+          "actionID": "3071"
+        },
+        {
+          "argumentValue": "0.2",
+          "name": "7",
+          "actionID": "3071"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "External LGB Code Panel",
+      "name": "Digit Wheel 3",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "72"
+        }
+      ],
+      "deviceId": "44",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "1",
+          "actionID": "3072"
+        },
+        {
+          "argumentValue": "0.1",
+          "name": "2",
+          "actionID": "3072"
+        },
+        {
+          "argumentValue": "0.2",
+          "name": "3",
+          "actionID": "3072"
+        },
+        {
+          "argumentValue": "0.3",
+          "name": "4",
+          "actionID": "3072"
+        },
+        {
+          "argumentValue": "0.4",
+          "name": "5",
+          "actionID": "3072"
+        },
+        {
+          "argumentValue": "0.5",
+          "name": "6",
+          "actionID": "3072"
+        },
+        {
+          "argumentValue": "0.6",
+          "name": "7",
+          "actionID": "3072"
+        },
+        {
+          "argumentValue": "0.7",
+          "name": "8",
+          "actionID": "3072"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "External LGB Code Panel",
+      "name": "Digit Wheel 4",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "73"
+        }
+      ],
+      "deviceId": "44",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "1",
+          "actionID": "3073"
+        },
+        {
+          "argumentValue": "0.1",
+          "name": "2",
+          "actionID": "3073"
+        },
+        {
+          "argumentValue": "0.2",
+          "name": "3",
+          "actionID": "3073"
+        },
+        {
+          "argumentValue": "0.3",
+          "name": "4",
+          "actionID": "3073"
+        },
+        {
+          "argumentValue": "0.4",
+          "name": "5",
+          "actionID": "3073"
+        },
+        {
+          "argumentValue": "0.5",
+          "name": "6",
+          "actionID": "3073"
+        },
+        {
+          "argumentValue": "0.6",
+          "name": "7",
+          "actionID": "3073"
+        },
+        {
+          "argumentValue": "0.7",
+          "name": "8",
+          "actionID": "3073"
         }
       ]
     },
