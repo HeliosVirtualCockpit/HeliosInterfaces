@@ -996,7 +996,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.-1f",
+          "format": "%0.1f",
           "isExportedEveryFrame": false,
           "id": "470"
         }
@@ -3734,7 +3734,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.-1f",
+          "format": "%0.1f",
           "isExportedEveryFrame": false,
           "id": "399"
         }
@@ -4427,7 +4427,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.-1f",
+          "format": "%0.1f",
           "isExportedEveryFrame": false,
           "id": "749"
         }
@@ -4756,7 +4756,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.-1f",
+          "format": "%0.1f",
           "isExportedEveryFrame": false,
           "id": "970"
         }
@@ -4840,7 +4840,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.-1f",
+          "format": "%0.1f",
           "isExportedEveryFrame": false,
           "id": "382"
         }
@@ -5088,7 +5088,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.-1f",
+          "format": "%0.1f",
           "isExportedEveryFrame": false,
           "id": "1205"
         }
@@ -6046,7 +6046,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.-1f",
+          "format": "%0.1f",
           "isExportedEveryFrame": false,
           "id": "309"
         }
@@ -6507,7 +6507,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.-1f",
+          "format": "%0.1f",
           "isExportedEveryFrame": false,
           "id": "777"
         }
@@ -6711,7 +6711,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.-1f",
+          "format": "%0.1f",
           "isExportedEveryFrame": false,
           "id": "485"
         }
@@ -6825,7 +6825,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.-1f",
+          "format": "%0.1f",
           "isExportedEveryFrame": false,
           "id": "342"
         }
@@ -7176,7 +7176,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.-1f",
+          "format": "%0.1f",
           "isExportedEveryFrame": false,
           "id": "272"
         }
@@ -7616,7 +7616,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.-1f",
+          "format": "%0.1f",
           "isExportedEveryFrame": false,
           "id": "503"
         }
