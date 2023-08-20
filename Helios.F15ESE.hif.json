@@ -1,7 +1,7 @@
 {
   "source": "Helios",
   "version": "1.6.6011.0000",
-  "commit": "cacac73922d31c80aa6c8befac037ed532e3fffc",
+  "commit": "9a4ace1ea1c29e2d36163f5f697a45bb4467c8db",
   "type": "Existing",
   "name": "DCS F-15E Strike Eagle",
   "module": "F-15ESE",
@@ -3671,7 +3671,7 @@
     {
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Flight Instruments",
-      "name": "Compass pitch",
+      "name": "Magnetic Compass Pitch",
       "description": "Compassrose pitch",
       "exports": [
         {
@@ -3698,7 +3698,7 @@
     {
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Flight Instruments",
-      "name": "Compass roll",
+      "name": "Magnetic Compass Roll",
       "description": "Compassrose roll",
       "exports": [
         {
