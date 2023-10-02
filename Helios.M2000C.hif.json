@@ -1,7 +1,7 @@
 {
   "source": "Helios",
-  "version": "1.6.5501.0000",
-  "commit": "57d7a3dcdb7afe129069b50cb0795c804f3f8b83",
+  "version": "1.6.6030.0000",
+  "commit": "cf706c72f51ffb1c439c9f3bc2839b186ed2eb69",
   "type": "Existing",
   "name": "DCS M2000C",
   "module": "M-2000C",
@@ -312,12 +312,12 @@
       "deviceId": "17",
       "positions": [
         {
-          "argumentValue": "1.0",
+          "argumentValue": "0.0",
           "name": "On",
           "actionID": "3508"
         },
         {
-          "argumentValue": "0.0",
+          "argumentValue": "1.0",
           "name": "Off",
           "actionID": "3508"
         }
@@ -1253,6 +1253,76 @@
       }
     },
     {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "ECM Threat Panel",
+      "name": "ECM Box Clear Button",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "990"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "28",
+          "pushId": "3990",
+          "pushValue": "1.0",
+          "releaseId": "3990",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "ECM Threat Panel",
+      "name": "LL",
+      "description": "LL",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "991"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "ECM Threat Panel",
+      "name": "EM",
+      "description": "EM",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "992"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "ECM Threat Panel",
+      "name": "IR",
+      "description": "IR",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "993"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "ECM Threat Panel",
+      "name": "EO",
+      "description": "EO",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "994"
+        }
+      ]
+    },
+    {
       "heliosType": "DCS.Common.Switch",
       "device": "ECS Panel",
       "name": "ECS Main Mode Switch",
@@ -1349,24 +1419,28 @@
       ]
     },
     {
-      "heliosType": "DCS.Common.PushButton",
+      "heliosType": "DCS.Common.Switch",
       "device": "ECS Panel",
       "name": "ECS Air Exchange Switch",
-      "description": "Current state of this button.",
+      "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%.1f",
+          "format": "%0.1f",
           "isExportedEveryFrame": false,
           "id": "636"
         }
       ],
-      "buttons": [
+      "deviceId": "25",
+      "positions": [
         {
-          "deviceId": "25",
-          "pushId": "3636",
-          "pushValue": "1.0",
-          "releaseId": "3636",
-          "releaseValue": "0.0"
+          "argumentValue": "1.0",
+          "name": "On",
+          "actionID": "3636"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Off",
+          "actionID": "3636"
         }
       ]
     },
@@ -1558,27 +1632,35 @@
       ]
     },
     {
-      "heliosType": "DCS.Common.Axis",
+      "heliosType": "DCS.Common.Switch",
       "device": "Engine Start Panel",
       "name": "Emergency Throttle Handle",
-      "description": "Current value of this axis.",
+      "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%.3f",
+          "format": "%0.1f",
           "isExportedEveryFrame": false,
           "id": "465"
         }
       ],
-      "loop": false,
-      "argumentValue": 0.15,
-      "argumentMin": 0.0,
-      "argumentMax": 1.0,
-      "actions": {
-        "set": {
-          "deviceId": "7",
-          "actionId": "3465"
+      "deviceId": "7",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Low",
+          "actionID": "3465"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Mid",
+          "actionID": "3465"
+        },
+        {
+          "argumentValue": "-1.0",
+          "name": "High",
+          "actionID": "3465"
         }
-      }
+      ]
     },
     {
       "heliosType": "DCS.Common.PushButton",
@@ -1804,12 +1886,12 @@
       "deviceId": "4",
       "positions": [
         {
-          "argumentValue": "1.0",
+          "argumentValue": "0.0",
           "name": "Open",
           "actionID": "3477"
         },
         {
-          "argumentValue": "0.0",
+          "argumentValue": "1.0",
           "name": "Closed",
           "actionID": "3477"
         }
@@ -1830,12 +1912,12 @@
       "deviceId": "4",
       "positions": [
         {
-          "argumentValue": "1.0",
+          "argumentValue": "0.0",
           "name": "On",
           "actionID": "3478"
         },
         {
-          "argumentValue": "0.0",
+          "argumentValue": "1.0",
           "name": "Off",
           "actionID": "3478"
         }
@@ -2414,6 +2496,23 @@
       }
     },
     {
+      "heliosType": "DCS.Common.RotaryEncoder",
+      "device": "Flight Instruments",
+      "name": "Clock Adjustment Knob",
+      "exports": [],
+      "argumentValue": 0.005,
+      "actions": {
+        "increment": {
+          "deviceId": "2",
+          "actionId": "3922"
+        },
+        "decrement": {
+          "deviceId": "2",
+          "actionId": "3922"
+        }
+      }
+    },
+    {
       "heliosType": "DCS.M2000C.Functions.Altimeter",
       "device": "Flight Instruments",
       "name": "Barometric Altitude",
@@ -2431,26 +2530,58 @@
       "description2": "Manually set barometric pressure adjustment."
     },
     {
-      "heliosType": "DCS.Common.PushButton",
+      "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Flight Instruments",
-      "name": "G-Meter Reset",
-      "description": "Current state of this button.",
+      "name": "Indicated Air Speed",
+      "description": "Speed in Knots",
       "exports": [
         {
-          "format": "%.1f",
-          "isExportedEveryFrame": false,
-          "id": "308"
+          "format": "%.4f",
+          "id": "303"
         }
       ],
-      "buttons": [
+      "calibration": {
+        "points": [
+          {
+            "value": 0.0,
+            "mappedValue": 0.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 1000.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "0 to 1000",
+      "unit": "Knots"
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Flight Instruments",
+      "name": "Mach Number",
+      "description": "Speed in Mach",
+      "exports": [
         {
-          "deviceId": "1",
-          "pushId": "3308",
-          "pushValue": "1.0",
-          "releaseId": "3308",
-          "releaseValue": "0.0"
+          "format": "%.4f",
+          "id": "304"
         }
-      ]
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": 0.0,
+            "mappedValue": 0.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 10.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "0 to 10",
+      "unit": "Numeric"
     },
     {
       "heliosType": "DCS.Common.Switch",
@@ -2505,27 +2636,166 @@
       ]
     },
     {
-      "heliosType": "DCS.Common.Axis",
+      "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Flight Instruments",
-      "name": "Backup ADI Pitch Adjust Knob",
-      "description": "Current value of this axis.",
+      "name": "ADI Pitch",
+      "description": "Pitch",
       "exports": [
         {
-          "format": "%.3f",
-          "isExportedEveryFrame": false,
-          "id": "325"
+          "format": "%.4f",
+          "id": "316"
         }
       ],
-      "loop": false,
-      "argumentValue": 0.15,
-      "argumentMin": 0.0,
-      "argumentMax": 1.0,
-      "actions": {
-        "set": {
-          "deviceId": "1",
-          "actionId": "3325"
+      "calibration": {
+        "points": [
+          {
+            "value": -1.0,
+            "mappedValue": -90.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 90.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "-90 to 90",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Flight Instruments",
+      "name": "ADI Bank",
+      "description": "Bank",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "317"
         }
-      }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": -1.0,
+            "mappedValue": -180.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 180.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "-180 to 180",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Flight Instruments",
+      "name": "ADI Heading",
+      "description": "Heading",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "318"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": 0.0,
+            "mappedValue": 0.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 360.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "0 to 360",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Flight Instruments",
+      "name": "ADI OFF Flag",
+      "description": "Indicator flag on ADI gauge",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "319"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Flight Instruments",
+      "name": "ADI Slip Ball",
+      "description": "Slip Ball turn coordinator",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "320"
+        }
+      ],
+      "valueDescription": "-1 to 1",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Flight Instruments",
+      "name": "ADI ILS LOC VERT GLIDE",
+      "description": "ILS and localizer vertical needle",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "322"
+        }
+      ],
+      "valueDescription": "-1 to 1",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Flight Instruments",
+      "name": "ADI ILS GS HORIZ SLOPE",
+      "description": "ILS and Glideslope horizontal needle",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "323"
+        }
+      ],
+      "valueDescription": "-1 to 1",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Flight Instruments",
+      "name": "Vertical Velocity",
+      "description": "Aircraft vertical velocity",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "324"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": -1.0,
+            "mappedValue": -10000.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 10000.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "-6000 to 6000",
+      "unit": "FeetPerMinute"
     },
     {
       "heliosType": "DCS.Common.PushButton",
@@ -2536,18 +2806,291 @@
         {
           "format": "%.1f",
           "isExportedEveryFrame": false,
-          "id": "328"
+          "id": "325"
         }
       ],
       "buttons": [
         {
           "deviceId": "1",
-          "pushId": "3328",
+          "pushId": "3325",
           "pushValue": "1.0",
-          "releaseId": "3328",
+          "releaseId": "3325",
           "releaseValue": "0.0"
         }
       ]
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Flight Instruments",
+      "name": "Backup ADI Bank",
+      "description": "Bank",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "326"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": -1.0,
+            "mappedValue": -180.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 180.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "-180 to 180",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Flight Instruments",
+      "name": "Backup ADI Pitch",
+      "description": "Pitch",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "327"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": -1.0,
+            "mappedValue": -90.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 90.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "-90 to 90",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Flight Instruments",
+      "name": "Backup ADI Pitch Adjust Knob",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.3f",
+          "isExportedEveryFrame": false,
+          "id": "328"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.15,
+      "argumentMin": -1.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "1",
+          "actionId": "3328"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Flight Instruments",
+      "name": "ADI Backup OFF Flag",
+      "description": "Indicator flag on Backup ADI gauge",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "329"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Flight Instruments",
+      "name": "Accelerometer g",
+      "description": "g Number",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "347"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": -1.0,
+            "mappedValue": -10.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 10.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "-10.0 to 10.0",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Flight Instruments",
+      "name": "Accelerometer Reset button",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "348"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "1",
+          "pushId": "3348",
+          "pushValue": "1.0",
+          "releaseId": "3348",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Flight Instruments",
+      "name": "Clock Hours",
+      "description": "Hour value of current time",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "401"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": 0.0,
+            "mappedValue": 0.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 12.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "0 - 12",
+      "unit": "Hours"
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Flight Instruments",
+      "name": "Clock Minutes",
+      "description": "Minute value of current time",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "402"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": 0.0,
+            "mappedValue": 0.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 60.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "0 - 60",
+      "unit": "Minutes"
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Flight Instruments",
+      "name": "Stopwatch Seconds",
+      "description": "Seconds from stopwatch start ",
+      "exports": [
+        {
+          "format": "%.3f",
+          "id": "403"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": 0.0,
+            "mappedValue": 0.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 900.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "0 - 900",
+      "unit": "Seconds"
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Flight Instruments",
+      "name": "Accelerometer g High",
+      "description": "Highest g Number",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "441"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": -1.0,
+            "mappedValue": -10.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 10.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "-10.0 to 10.0",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Flight Instruments",
+      "name": "Accelerometer g Low",
+      "description": "Lowest g Number",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "442"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": -1.0,
+            "mappedValue": -10.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 10.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "-10.0 to 10.0",
+      "unit": "Numeric"
     },
     {
       "heliosType": "DCS.Common.Switch",
@@ -2564,7 +3107,7 @@
       "deviceId": "1",
       "positions": [
         {
-          "argumentValue": "0.0",
+          "argumentValue": "1.0",
           "name": "position 1",
           "actionID": "3665"
         },
@@ -2574,9 +3117,84 @@
           "actionID": "3665"
         },
         {
-          "argumentValue": "1.0",
+          "argumentValue": "0.0",
           "name": "position 3",
           "actionID": "3665"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Flight Instruments",
+      "name": "Compass Rose",
+      "description": "Magnetic compass direction",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "906"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": 0.0,
+            "mappedValue": 0.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 360.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "0 to 360",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Flight Instruments",
+      "name": "Stopwatch Start/Stop/Reset button",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "923"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "2",
+          "pushId": "3923",
+          "pushValue": "1.0",
+          "releaseId": "3923",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Flight Instruments",
+      "name": "Clock Adjustment Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "924"
+        }
+      ],
+      "deviceId": "2",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Normal",
+          "actionID": "3924"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Adjust",
+          "actionID": "3924"
         }
       ]
     },
@@ -3003,6 +3621,122 @@
     },
     {
       "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Gauges (Misc)",
+      "name": "Hydraulic Pressure Sdes: Servitudes (Ancillaries)",
+      "description": "Pressure Needle Left",
+      "exports": [
+        {
+          "format": "%.3f",
+          "id": "397"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": 0.0,
+            "mappedValue": 0.0
+          },
+          {
+            "value": 0.35,
+            "mappedValue": 1.0
+          }
+        ],
+        "precision": 2
+      },
+      "valueDescription": "0 - 1",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Gauges (Misc)",
+      "name": "Hydraulic Pressure Fs: Frein Secours (Emergency Brake)",
+      "description": "Pressure Needle Right",
+      "exports": [
+        {
+          "format": "%.3f",
+          "id": "398"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": 0.0,
+            "mappedValue": 0.0
+          },
+          {
+            "value": 0.35,
+            "mappedValue": 1.0
+          }
+        ],
+        "precision": 2
+      },
+      "valueDescription": "0 - 1",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Gauges (Misc)",
+      "name": "Altitude Cabin Pressure Indicator (x1000 ft)",
+      "description": "Equivalent altitude",
+      "exports": [
+        {
+          "format": "%.3f",
+          "id": "399"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": 0.0,
+            "mappedValue": 0.0
+          },
+          {
+            "value": 0.1,
+            "mappedValue": 0.0835
+          },
+          {
+            "value": 0.2,
+            "mappedValue": 0.411
+          },
+          {
+            "value": 0.4,
+            "mappedValue": 1.0
+          }
+        ],
+        "precision": 3
+      },
+      "valueDescription": "0 - 1",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Gauges (Misc)",
+      "name": "LOX: Liquid OXygen Gauge",
+      "description": "Amount in Litres",
+      "exports": [
+        {
+          "format": "%.3f",
+          "id": "518"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": 0.0,
+            "mappedValue": 0.0
+          },
+          {
+            "value": 0.5,
+            "mappedValue": 1.0
+          }
+        ],
+        "precision": 3
+      },
+      "valueDescription": "0 - 1",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "HSI Panel",
       "name": "Direction Needle",
       "description": "Direction Needle.",
@@ -3127,7 +3861,7 @@
       ],
       "loop": false,
       "argumentValue": 0.015,
-      "argumentMin": 0.0,
+      "argumentMin": -1.0,
       "argumentMax": 1.0,
       "actions": {
         "set": {
@@ -3284,17 +4018,17 @@
       "positions": [
         {
           "argumentValue": "1.0",
-          "name": "Up",
+          "name": "Test",
           "actionID": "3201"
         },
         {
           "argumentValue": "0.5",
-          "name": "Middle",
+          "name": "On",
           "actionID": "3201"
         },
         {
           "argumentValue": "0.0",
-          "name": "Down",
+          "name": "Off",
           "actionID": "3201"
         }
       ]
@@ -3314,7 +4048,7 @@
       "loop": false,
       "argumentValue": 0.1,
       "argumentMin": 0.0,
-      "argumentMax": 1.0,
+      "argumentMax": 2.0,
       "actions": {
         "set": {
           "deviceId": "36",
@@ -5529,32 +6263,6 @@
     {
       "heliosType": "DCS.Common.Switch",
       "device": "Miscellaneous Left Panel",
-      "name": "Cockpit Clock",
-      "description": "Current position of this switch.",
-      "exports": [
-        {
-          "format": "%0.1f",
-          "isExportedEveryFrame": false,
-          "id": "400"
-        }
-      ],
-      "deviceId": "22",
-      "positions": [
-        {
-          "argumentValue": "1.0",
-          "name": "On",
-          "actionID": "3400"
-        },
-        {
-          "argumentValue": "0,0",
-          "name": "Off",
-          "actionID": "3400"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.Switch",
-      "device": "Miscellaneous Left Panel",
       "name": "Drag Chute Lever",
       "description": "Current position of this switch.",
       "exports": [
@@ -5645,16 +6353,30 @@
       "deviceId": "22",
       "positions": [
         {
-          "argumentValue": "1.0",
+          "argumentValue": "0.0",
           "name": "On",
           "actionID": "3666"
         },
         {
-          "argumentValue": "0,0",
+          "argumentValue": "1,0",
           "name": "Off",
           "actionID": "3666"
         }
       ]
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Miscellaneous Left Panel",
+      "name": "Throttle Indicator",
+      "description": "Throttle Position",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "800"
+        }
+      ],
+      "valueDescription": "0 - 1",
+      "unit": "Numeric"
     },
     {
       "heliosType": "DCS.Common.Switch",
@@ -5780,12 +6502,12 @@
       "deviceId": "22",
       "positions": [
         {
-          "argumentValue": "1.0",
+          "argumentValue": "0.0",
           "name": "On",
           "actionID": "3660"
         },
         {
-          "argumentValue": "0.0",
+          "argumentValue": "1.0",
           "name": "Off",
           "actionID": "3660"
         }
@@ -6228,7 +6950,7 @@
     {
       "heliosType": "DCS.Common.Axis",
       "device": "Panel Lights",
-      "name": "Casution/Advisory Lights Rheostat",
+      "name": "Caution/Advisory Lights Rheostat",
       "description": "Current value of this axis.",
       "exports": [
         {
@@ -8266,62 +8988,62 @@
       "positions": [
         {
           "argumentValue": "-1.0",
-          "name": "N2 1",
+          "name": "%0.2f 1",
           "actionID": "3481"
         },
         {
           "argumentValue": "-0.8",
-          "name": "N2 2",
+          "name": "%0.2f 2",
           "actionID": "3481"
         },
         {
           "argumentValue": "-0.7",
-          "name": "N2 3",
+          "name": "%0.2f 3",
           "actionID": "3481"
         },
         {
           "argumentValue": "-0.5",
-          "name": "N2 4",
+          "name": "%0.2f 4",
           "actionID": "3481"
         },
         {
           "argumentValue": "-0.3",
-          "name": "N2 5",
+          "name": "%0.2f 5",
           "actionID": "3481"
         },
         {
           "argumentValue": "-0.2",
-          "name": "N2 6",
+          "name": "%0.2f 6",
           "actionID": "3481"
         },
         {
           "argumentValue": "0.0",
-          "name": "N2 7",
+          "name": "%0.2f 7",
           "actionID": "3481"
         },
         {
           "argumentValue": "0.2",
-          "name": "N2 8",
+          "name": "%0.2f 8",
           "actionID": "3481"
         },
         {
           "argumentValue": "0.3",
-          "name": "N2 9",
+          "name": "%0.2f 9",
           "actionID": "3481"
         },
         {
           "argumentValue": "0.5",
-          "name": "N2 10",
+          "name": "%0.2f 10",
           "actionID": "3481"
         },
         {
           "argumentValue": "0.7",
-          "name": "N2 11",
+          "name": "%0.2f 11",
           "actionID": "3481"
         },
         {
           "argumentValue": "0.8",
-          "name": "N2 12",
+          "name": "%0.2f 12",
           "actionID": "3481"
         }
       ]
@@ -8417,62 +9139,62 @@
       "positions": [
         {
           "argumentValue": "-1.0",
-          "name": "N2 1",
+          "name": "%0.2f 1",
           "actionID": "3485"
         },
         {
           "argumentValue": "-0.8",
-          "name": "N2 2",
+          "name": "%0.2f 2",
           "actionID": "3485"
         },
         {
           "argumentValue": "-0.7",
-          "name": "N2 3",
+          "name": "%0.2f 3",
           "actionID": "3485"
         },
         {
           "argumentValue": "-0.5",
-          "name": "N2 4",
+          "name": "%0.2f 4",
           "actionID": "3485"
         },
         {
           "argumentValue": "-0.3",
-          "name": "N2 5",
+          "name": "%0.2f 5",
           "actionID": "3485"
         },
         {
           "argumentValue": "-0.2",
-          "name": "N2 6",
+          "name": "%0.2f 6",
           "actionID": "3485"
         },
         {
           "argumentValue": "0.0",
-          "name": "N2 7",
+          "name": "%0.2f 7",
           "actionID": "3485"
         },
         {
           "argumentValue": "0.2",
-          "name": "N2 8",
+          "name": "%0.2f 8",
           "actionID": "3485"
         },
         {
           "argumentValue": "0.3",
-          "name": "N2 9",
+          "name": "%0.2f 9",
           "actionID": "3485"
         },
         {
           "argumentValue": "0.5",
-          "name": "N2 10",
+          "name": "%0.2f 10",
           "actionID": "3485"
         },
         {
           "argumentValue": "0.7",
-          "name": "N2 11",
+          "name": "%0.2f 11",
           "actionID": "3485"
         },
         {
           "argumentValue": "0.8",
-          "name": "N2 12",
+          "name": "%0.2f 12",
           "actionID": "3485"
         }
       ]
@@ -9397,7 +10119,7 @@
       "heliosType": "DCS.Common.NetworkValue",
       "device": "Simulator Telemetry",
       "name": "side deviation",
-      "description": "ILS Side Deiviation",
+      "description": "ILS Side Deviation",
       "exports": [
         {
           "id": "T18"
@@ -9873,12 +10595,12 @@
       "deviceId": "17",
       "positions": [
         {
-          "argumentValue": "1.0",
+          "argumentValue": "0.0",
           "name": "Open",
           "actionID": "3479"
         },
         {
-          "argumentValue": "0.0",
+          "argumentValue": "1.0",
           "name": "Closed",
           "actionID": "3479"
         }
@@ -9899,12 +10621,12 @@
       "deviceId": "17",
       "positions": [
         {
-          "argumentValue": "1.0",
+          "argumentValue": "0.0",
           "name": "On",
           "actionID": "3480"
         },
         {
-          "argumentValue": "0.0",
+          "argumentValue": "1.0",
           "name": "Off",
           "actionID": "3480"
         }
@@ -9973,12 +10695,12 @@
       "deviceId": "17",
       "positions": [
         {
-          "argumentValue": "1.0",
+          "argumentValue": "0.0",
           "name": "Open",
           "actionID": "3514"
         },
         {
-          "argumentValue": "0.0",
+          "argumentValue": "1.0",
           "name": "Closed",
           "actionID": "3514"
         }
@@ -9999,12 +10721,12 @@
       "deviceId": "17",
       "positions": [
         {
-          "argumentValue": "1.0",
+          "argumentValue": "0.0",
           "name": "ON",
           "actionID": "3515"
         },
         {
-          "argumentValue": "0.0",
+          "argumentValue": "1.0",
           "name": "OFF",
           "actionID": "3515"
         }
@@ -10025,12 +10747,12 @@
       "deviceId": "17",
       "positions": [
         {
-          "argumentValue": "1.0",
+          "argumentValue": "0.0",
           "name": "Open",
           "actionID": "3516"
         },
         {
-          "argumentValue": "0.0",
+          "argumentValue": "1.0",
           "name": "Closed",
           "actionID": "3516"
         }
@@ -10051,7 +10773,7 @@
       "deviceId": "17",
       "positions": [
         {
-          "argumentValue": "0.0",
+          "argumentValue": "1.0",
           "name": "C",
           "actionID": "3517"
         },
@@ -10061,7 +10783,7 @@
           "actionID": "3517"
         },
         {
-          "argumentValue": "1.0",
+          "argumentValue": "0.0",
           "name": "TEST",
           "actionID": "3517"
         }
