@@ -1,7 +1,7 @@
 {
   "source": "Helios",
-  "version": "1.6.6011.0000",
-  "commit": "9a4ace1ea1c29e2d36163f5f697a45bb4467c8db",
+  "version": "1.6.6030.0000",
+  "commit": "23b6c43127f84bce88ce12a4ed28430f55f5f1a0",
   "type": "Existing",
   "name": "DCS F-15E Strike Eagle",
   "module": "F-15ESE",
@@ -4611,18 +4611,18 @@
       "deviceId": "55",
       "positions": [
         {
-          "argumentValue": "1.0",
-          "name": "Posn 1",
+          "argumentValue": "0.0",
+          "name": "Normal",
           "actionID": "3121"
         },
         {
           "argumentValue": "0.5",
-          "name": "Posn 2",
+          "name": "Reject 1",
           "actionID": "3121"
         },
         {
-          "argumentValue": "0.0",
-          "name": "Posn 3",
+          "argumentValue": "1.0",
+          "name": "Reject 2",
           "actionID": "3121"
         }
       ]
@@ -4643,17 +4643,17 @@
       "positions": [
         {
           "argumentValue": "-1.0",
-          "name": "Posn 1",
+          "name": "Day",
           "actionID": "3122"
         },
         {
           "argumentValue": "0.0",
-          "name": "Posn 2",
+          "name": "Auto",
           "actionID": "3122"
         },
         {
           "argumentValue": "1.0",
-          "name": "Posn 3",
+          "name": "Night",
           "actionID": "3122"
         }
       ]
@@ -11195,7 +11195,7 @@
       "heliosType": "DCS.Common.NetworkValue",
       "device": "Simulator Telemetry",
       "name": "side deviation",
-      "description": "ILS Side Deiviation",
+      "description": "ILS Side Deviation",
       "exports": [
         {
           "id": "T18"
