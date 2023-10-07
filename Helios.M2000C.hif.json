@@ -1,7 +1,7 @@
 {
   "source": "Helios",
   "version": "1.6.6030.0000",
-  "commit": "cf706c72f51ffb1c439c9f3bc2839b186ed2eb69",
+  "commit": "17e2f8524fd89268d6b9f9271406ae1508b3cae6",
   "type": "Existing",
   "name": "DCS M2000C",
   "module": "M-2000C",
@@ -2429,28 +2429,6 @@
           "argumentValue": "1.00",
           "name": "10",
           "actionID": "3610"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.PushButton",
-      "device": "EW PANEL",
-      "name": "ECM Box Clear Button",
-      "description": "Current state of this button.",
-      "exports": [
-        {
-          "format": "%.1f",
-          "isExportedEveryFrame": false,
-          "id": "990"
-        }
-      ],
-      "buttons": [
-        {
-          "deviceId": "28",
-          "pushId": "3990",
-          "pushValue": "1.0",
-          "releaseId": "3990",
-          "releaseValue": "0.0"
         }
       ]
     },
