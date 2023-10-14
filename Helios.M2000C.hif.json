@@ -1,7 +1,7 @@
 {
   "source": "Helios",
-  "version": "1.6.6030.0000",
-  "commit": "17e2f8524fd89268d6b9f9271406ae1508b3cae6",
+  "version": "1.6.6031.0000",
+  "commit": "7c4030828e20526a9ce0379428b37c0e2fae44c0",
   "type": "Existing",
   "name": "DCS M2000C",
   "module": "M-2000C",
@@ -3015,6 +3015,29 @@
       },
       "valueDescription": "0 - 900",
       "unit": "Seconds"
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Flight Instruments",
+      "name": "Clock Outer Bezel Ring",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%0.3f",
+          "isExportedEveryFrame": false,
+          "id": "925"
+        }
+      ],
+      "loop": true,
+      "argumentValue": 0.005,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "2",
+          "actionId": "3925"
+        }
+      }
     },
     {
       "heliosType": "DCS.Common.ScaledNetworkValue",
