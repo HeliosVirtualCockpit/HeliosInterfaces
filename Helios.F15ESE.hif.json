@@ -1,7 +1,7 @@
 {
   "source": "Helios",
   "version": "1.6.6030.0000",
-  "commit": "23b6c43127f84bce88ce12a4ed28430f55f5f1a0",
+  "commit": "b77b94ed9ef8e4c948c66bb8c3d719094502b359",
   "type": "Existing",
   "name": "DCS F-15E Strike Eagle",
   "module": "F-15ESE",
@@ -903,7 +903,7 @@
           "id": "456"
         }
       ],
-      "deviceId": "18",
+      "deviceId": "65",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -5587,7 +5587,7 @@
           "id": "522"
         }
       ],
-      "deviceId": "17",
+      "deviceId": "65",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -5613,7 +5613,7 @@
           "id": "523"
         }
       ],
-      "deviceId": "17",
+      "deviceId": "65",
       "positions": [
         {
           "argumentValue": "1.0",
