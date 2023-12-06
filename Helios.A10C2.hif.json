@@ -1,7 +1,7 @@
 {
   "source": "Helios",
-  "version": "1.6.6000.0001",
-  "commit": "8d50c68a94919b35193be8af9c58903c6ff72f4a",
+  "version": "1.6.6041.0002",
+  "commit": "7b255c266db198a328b0893a33239544557c39ef",
   "type": "Existing",
   "name": "DCS A-10C II",
   "module": "A-10C_2",
@@ -5535,22 +5535,23 @@
       "deviceId": "4",
       "positions": [
         {
-          "argumentValue": "0.2",
+          "argumentValue": "1.0",
           "name": "Menu",
           "actionID": "3011",
           "stopActionID": "3011",
-          "stopActionValue": "0.1"
-        },
-        {
-          "argumentValue": "0.1",
-          "name": "On"
+          "stopActionValue": "0.0"
         },
         {
           "argumentValue": "0.0",
+          "name": "On",
+          "actionID": "3011"
+        },
+        {
+          "argumentValue": "-1.0",
           "name": "Off",
           "actionID": "3010",
           "stopActionID": "3010",
-          "stopActionValue": "0.1"
+          "stopActionValue": "0.0"
         }
       ]
     },
@@ -5569,22 +5570,23 @@
       "deviceId": "4",
       "positions": [
         {
-          "argumentValue": "0.2",
+          "argumentValue": "1.0",
           "name": "Menu",
           "actionID": "3013",
           "stopActionID": "3013",
-          "stopActionValue": "0.1"
-        },
-        {
-          "argumentValue": "0.1",
-          "name": "On"
+          "stopActionValue": "0.0"
         },
         {
           "argumentValue": "0.0",
+          "name": "On",
+          "actionID": "3013"
+        },
+        {
+          "argumentValue": "-1.0",
           "name": "Off",
           "actionID": "3012",
           "stopActionID": "3012",
-          "stopActionValue": "0.1"
+          "stopActionValue": "0.0"
         }
       ]
     },
@@ -5603,22 +5605,23 @@
       "deviceId": "4",
       "positions": [
         {
-          "argumentValue": "0.2",
+          "argumentValue": "1.0",
           "name": "Menu",
           "actionID": "3015",
           "stopActionID": "3015",
-          "stopActionValue": "0.1"
-        },
-        {
-          "argumentValue": "0.1",
-          "name": "On"
+          "stopActionValue": "0.0"
         },
         {
           "argumentValue": "0.0",
+          "name": "On",
+          "actionID": "3015"
+        },
+        {
+          "argumentValue": "-1.0",
           "name": "Off",
           "actionID": "3014",
           "stopActionID": "3014",
-          "stopActionValue": "0.1"
+          "stopActionValue": "0.0"
         }
       ]
     },
@@ -5637,22 +5640,23 @@
       "deviceId": "4",
       "positions": [
         {
-          "argumentValue": "0.2",
+          "argumentValue": "1.0",
           "name": "Menu",
           "actionID": "3017",
           "stopActionID": "3017",
-          "stopActionValue": "0.1"
-        },
-        {
-          "argumentValue": "0.1",
-          "name": "On"
+          "stopActionValue": "0.0"
         },
         {
           "argumentValue": "0.0",
+          "name": "On",
+          "actionID": "3017"
+        },
+        {
+          "argumentValue": "-1.0",
           "name": "Off",
           "actionID": "3016",
           "stopActionID": "3016",
-          "stopActionValue": "0.1"
+          "stopActionValue": "0.0"
         }
       ]
     },
@@ -6098,12 +6102,14 @@
         {
           "argumentValue": "0",
           "name": "Normal",
-          "actionID": "3003"
+          "actionID": "3007"
         },
         {
           "argumentValue": "-1",
           "name": "Motor",
-          "actionID": "3003"
+          "actionID": "3003",
+          "stopActionID": "3003",
+          "stopActionValue": "0"
         }
       ]
     },
@@ -6131,12 +6137,14 @@
         {
           "argumentValue": "0",
           "name": "Normal",
-          "actionID": "3004"
+          "actionID": "3008"
         },
         {
           "argumentValue": "-1",
           "name": "Motor",
-          "actionID": "3004"
+          "actionID": "3004",
+          "stopActionID": "3004",
+          "stopActionValue": "0"
         }
       ]
     },
@@ -12434,7 +12442,7 @@
       "heliosType": "DCS.Common.NetworkValue",
       "device": "Simulator Telemetry",
       "name": "side deviation",
-      "description": "ILS Side Deiviation",
+      "description": "ILS Side Deviation",
       "exports": [
         {
           "id": "T18"
