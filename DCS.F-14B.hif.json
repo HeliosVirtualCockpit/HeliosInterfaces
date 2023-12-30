@@ -69,17 +69,17 @@
       "positions": [
         {
           "argumentValue": "-1.0",
-          "name": "Position1",
+          "name": "Compass Mode COMP",
           "actionId": "3434"
         },
         {
           "argumentValue": "0.0",
-          "name": "Position2",
+          "name": "Compass Mode SLAVED",
           "actionId": "3434"
         },
         {
           "argumentValue": "1.0",
-          "name": "Position3",
+          "name": "Compass Mode DG",
           "actionId": "3434"
         }
       ]
@@ -172,7 +172,7 @@
           "id": "2100"
         }
       ],
-      "deviceId": "13",
+      "deviceId": "14",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -197,7 +197,7 @@
           "id": "2101"
         }
       ],
-      "deviceId": "13",
+      "deviceId": "14",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -226,12 +226,12 @@
       "positions": [
         {
           "argumentValue": "1.0",
-          "name": "AN",
+          "name": "ILS Power ON",
           "actionId": "3319"
         },
         {
           "argumentValue": "0.0",
-          "name": "ARA-63 Power",
+          "name": "ILS Power OFF",
           "actionId": "3319"
         }
       ]
@@ -387,7 +387,7 @@
       ],
       "buttons": [
         {
-          "deviceId": "27",
+          "deviceId": "28",
           "pushId": "3492",
           "pushValue": "1",
           "releaseId": "3492",
@@ -410,11 +410,11 @@
       "argumentValue": 0.025,
       "actions": {
         "increment": {
-          "deviceId": "27",
+          "deviceId": "28",
           "actionId": "3652"
         },
         "decrement": {
-          "deviceId": "27",
+          "deviceId": "28",
           "actionId": "3652"
         }
       }
@@ -433,7 +433,7 @@
       ],
       "buttons": [
         {
-          "deviceId": "27",
+          "deviceId": "28",
           "pushId": "3651",
           "pushValue": "1",
           "releaseId": "3651",
@@ -456,11 +456,11 @@
       "argumentValue": 0.025,
       "actions": {
         "increment": {
-          "deviceId": "27",
+          "deviceId": "28",
           "actionId": "3491"
         },
         "decrement": {
-          "deviceId": "27",
+          "deviceId": "28",
           "actionId": "3491"
         }
       }
@@ -480,11 +480,11 @@
       "argumentValue": 0.025,
       "actions": {
         "increment": {
-          "deviceId": "28",
+          "deviceId": "29",
           "actionId": "3489"
         },
         "decrement": {
-          "deviceId": "28",
+          "deviceId": "29",
           "actionId": "3489"
         }
       }
@@ -500,7 +500,7 @@
           "id": "20307"
         }
       ],
-      "deviceId": "28",
+      "deviceId": "29",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -534,11 +534,11 @@
       "argumentValue": 0.025,
       "actions": {
         "increment": {
-          "deviceId": "28",
+          "deviceId": "29",
           "actionId": "3486"
         },
         "decrement": {
-          "deviceId": "28",
+          "deviceId": "29",
           "actionId": "3486"
         }
       }
@@ -554,7 +554,7 @@
           "id": "307"
         }
       ],
-      "deviceId": "28",
+      "deviceId": "29",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -613,27 +613,27 @@
       "positions": [
         {
           "argumentValue": "0.0",
-          "name": "Position1",
+          "name": "ATTK Mode: Computer TGT",
           "actionId": "3151"
         },
         {
           "argumentValue": "0.3",
-          "name": "Position2",
+          "name": "ATTK Mode: Computer IP",
           "actionId": "3151"
         },
         {
           "argumentValue": "0.5",
-          "name": "Position3",
+          "name": "ATTK Mode: Computer PLT",
           "actionId": "3151"
         },
         {
           "argumentValue": "0.8",
-          "name": "Position4",
+          "name": "ATTK Mode: MAN",
           "actionId": "3151"
         },
         {
           "argumentValue": "1.0",
-          "name": "Position5",
+          "name": "ATTK Mode: D/L BOMB",
           "actionId": "3151"
         }
       ]
@@ -653,27 +653,27 @@
       "positions": [
         {
           "argumentValue": "0.0",
-          "name": "Position1",
+          "name": "Elec Fuse: Safe",
           "actionId": "3152"
         },
         {
           "argumentValue": "0.3",
-          "name": "Position2",
+          "name": "Elec Fuse: VT",
           "actionId": "3152"
         },
         {
           "argumentValue": "0.5",
-          "name": "Position3",
+          "name": "Elec Fuse: INST",
           "actionId": "3152"
         },
         {
           "argumentValue": "0.8",
-          "name": "Position4",
+          "name": "Elec Fuse: DLY1",
           "actionId": "3152"
         },
         {
           "argumentValue": "1.0",
-          "name": "Position5",
+          "name": "Elec Fuse: DLY2",
           "actionId": "3152"
         }
       ]
@@ -928,12 +928,12 @@
       "positions": [
         {
           "argumentValue": "1.0",
-          "name": "Single",
+          "name": "Delivery Mode: Single",
           "actionId": "3157"
         },
         {
           "argumentValue": "0.0",
-          "name": "Pairs",
+          "name": "Delivery Mode: Pairs",
           "actionId": "3157"
         }
       ]
@@ -1003,17 +1003,17 @@
       "positions": [
         {
           "argumentValue": "1.0",
-          "name": "Position1",
+          "name": "Mech Fuze Nose",
           "actionId": "3155"
         },
         {
           "argumentValue": "0.0",
-          "name": "Position2",
+          "name": "Mech Fuze Safe",
           "actionId": "3155"
         },
         {
           "argumentValue": "-1.0",
-          "name": "Position3",
+          "name": "Mech Fuze Nose/Tail",
           "actionId": "3155"
         }
       ]
@@ -1243,32 +1243,32 @@
       "positions": [
         {
           "argumentValue": "0.0",
-          "name": "Position1",
+          "name": "Missile Speed Gate: Wide",
           "actionId": "3153"
         },
         {
           "argumentValue": "0.2",
-          "name": "Position2",
+          "name": "Missile Speed Gate: Narrow",
           "actionId": "3153"
         },
         {
           "argumentValue": "0.4",
-          "name": "Position3",
+          "name": "Missile Speed Gate: Nose",
           "actionId": "3153"
         },
         {
           "argumentValue": "0.6",
-          "name": "Position4",
+          "name": "Missile Speed Gate: Nose Quater",
           "actionId": "3153"
         },
         {
           "argumentValue": "0.8",
-          "name": "Position5",
+          "name": "Missile Speed Gate: Tail Quater",
           "actionId": "3153"
         },
         {
           "argumentValue": "1.0",
-          "name": "Position6",
+          "name": "Missile Speed Gate: Tail",
           "actionId": "3153"
         }
       ]
@@ -1335,17 +1335,17 @@
       "positions": [
         {
           "argumentValue": "1.0",
-          "name": "Position1",
+          "name": "Missile Option: Sparrow Pulse Doppler",
           "actionId": "3156"
         },
         {
           "argumentValue": "0.0",
-          "name": "Position2",
+          "name": "Missile Option: normal",
           "actionId": "3156"
         },
         {
           "argumentValue": "-1.0",
-          "name": "Position3",
+          "name": "Missile Option: Phoenix Active",
           "actionId": "3156"
         }
       ]
@@ -1673,21 +1673,21 @@
           "id": "2109"
         }
       ],
-      "deviceId": "21",
+      "deviceId": "22",
       "positions": [
         {
           "argumentValue": "1.0",
-          "name": "Position1",
+          "name": "Autopilot Vector VEC/PCD",
           "actionId": "3037"
         },
         {
           "argumentValue": "0.0",
-          "name": "Position2",
+          "name": "Autopilot Vector Off",
           "actionId": "3037"
         },
         {
           "argumentValue": "-1.0",
-          "name": "Position3",
+          "name": "Autopilot Vector ACL",
           "actionId": "3037"
         }
       ]
@@ -1703,16 +1703,16 @@
           "id": "2110"
         }
       ],
-      "deviceId": "21",
+      "deviceId": "22",
       "positions": [
         {
           "argumentValue": "1.0",
-          "name": "Position1",
+          "name": "Altitude Hold On",
           "actionId": "3038"
         },
         {
           "argumentValue": "0.0",
-          "name": "Position2",
+          "name": "Altitude Hold Off",
           "actionId": "3038"
         }
       ]
@@ -1728,21 +1728,21 @@
           "id": "2111"
         }
       ],
-      "deviceId": "21",
+      "deviceId": "22",
       "positions": [
         {
           "argumentValue": "1.0",
-          "name": "Position1",
+          "name": "Heading Hold On",
           "actionId": "3039"
         },
         {
           "argumentValue": "0.0",
-          "name": "Position2",
+          "name": "Heading Hold Off",
           "actionId": "3039"
         },
         {
           "argumentValue": "-1.0",
-          "name": "Position3",
+          "name": "Heading Hold GT",
           "actionId": "3039"
         }
       ]
@@ -1758,16 +1758,16 @@
           "id": "2112"
         }
       ],
-      "deviceId": "21",
+      "deviceId": "22",
       "positions": [
         {
           "argumentValue": "1.0",
-          "name": "Position1",
+          "name": "Autopilot On",
           "actionId": "3040"
         },
         {
-          "argumentValue": "0.0",
-          "name": "Position2",
+          "argumentValue": "-1.0",
+          "name": "Autopilot Off",
           "actionId": "3040"
         }
       ]
@@ -1783,7 +1783,7 @@
           "id": "15098"
         }
       ],
-      "deviceId": "10",
+      "deviceId": "11",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -1808,7 +1808,7 @@
           "id": "934"
         }
       ],
-      "deviceId": "10",
+      "deviceId": "11",
       "positions": [
         {
           "argumentValue": "0.00",
@@ -1883,21 +1883,21 @@
           "id": "1072"
         }
       ],
-      "deviceId": "17",
+      "deviceId": "18",
       "positions": [
         {
           "argumentValue": "1.0",
-          "name": "Position1",
+          "name": "Antiskid & Spoiler BK - Both",
           "actionId": "3014"
         },
         {
           "argumentValue": "0.0",
-          "name": "Position2",
+          "name": "Antiskid & Spoiler BK - Off",
           "actionId": "3014"
         },
         {
           "argumentValue": "-1.0",
-          "name": "Position3",
+          "name": "Antiskid & Spoiler BK",
           "actionId": "3014"
         }
       ]
@@ -1913,7 +1913,7 @@
           "id": "237"
         }
       ],
-      "deviceId": "17",
+      "deviceId": "18",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -1941,7 +1941,7 @@
       ],
       "buttons": [
         {
-          "deviceId": "23",
+          "deviceId": "24",
           "pushId": "3522",
           "pushValue": "1",
           "releaseId": "3522",
@@ -1963,7 +1963,7 @@
       ],
       "buttons": [
         {
-          "deviceId": "23",
+          "deviceId": "24",
           "pushId": "3521",
           "pushValue": "1",
           "releaseId": "3521",
@@ -1985,7 +1985,7 @@
       ],
       "buttons": [
         {
-          "deviceId": "23",
+          "deviceId": "24",
           "pushId": "3520",
           "pushValue": "1",
           "releaseId": "3520",
@@ -2007,7 +2007,7 @@
       ],
       "buttons": [
         {
-          "deviceId": "23",
+          "deviceId": "24",
           "pushId": "3519",
           "pushValue": "1",
           "releaseId": "3519",
@@ -2029,7 +2029,7 @@
       ],
       "buttons": [
         {
-          "deviceId": "23",
+          "deviceId": "24",
           "pushId": "3518",
           "pushValue": "1",
           "releaseId": "3518",
@@ -2051,7 +2051,7 @@
       ],
       "buttons": [
         {
-          "deviceId": "23",
+          "deviceId": "24",
           "pushId": "3528",
           "pushValue": "1",
           "releaseId": "3528",
@@ -2073,7 +2073,7 @@
       ],
       "buttons": [
         {
-          "deviceId": "23",
+          "deviceId": "24",
           "pushId": "3527",
           "pushValue": "1",
           "releaseId": "3527",
@@ -2095,7 +2095,7 @@
       ],
       "buttons": [
         {
-          "deviceId": "23",
+          "deviceId": "24",
           "pushId": "3526",
           "pushValue": "1",
           "releaseId": "3526",
@@ -2117,7 +2117,7 @@
       ],
       "buttons": [
         {
-          "deviceId": "23",
+          "deviceId": "24",
           "pushId": "3525",
           "pushValue": "1",
           "releaseId": "3525",
@@ -2139,7 +2139,7 @@
       ],
       "buttons": [
         {
-          "deviceId": "23",
+          "deviceId": "24",
           "pushId": "3524",
           "pushValue": "1",
           "releaseId": "3524",
@@ -2161,7 +2161,7 @@
       ],
       "buttons": [
         {
-          "deviceId": "23",
+          "deviceId": "24",
           "pushId": "3523",
           "pushValue": "1",
           "releaseId": "3523",
@@ -2183,7 +2183,7 @@
       ],
       "buttons": [
         {
-          "deviceId": "23",
+          "deviceId": "24",
           "pushId": "3529",
           "pushValue": "1",
           "releaseId": "3529",
@@ -2205,7 +2205,7 @@
       ],
       "buttons": [
         {
-          "deviceId": "23",
+          "deviceId": "24",
           "pushId": "3541",
           "pushValue": "1",
           "releaseId": "3541",
@@ -2227,7 +2227,7 @@
       ],
       "buttons": [
         {
-          "deviceId": "23",
+          "deviceId": "24",
           "pushId": "3536",
           "pushValue": "1",
           "releaseId": "3536",
@@ -2249,7 +2249,7 @@
       ],
       "buttons": [
         {
-          "deviceId": "23",
+          "deviceId": "24",
           "pushId": "3537",
           "pushValue": "1",
           "releaseId": "3537",
@@ -2271,7 +2271,7 @@
       ],
       "buttons": [
         {
-          "deviceId": "23",
+          "deviceId": "24",
           "pushId": "3542",
           "pushValue": "1",
           "releaseId": "3542",
@@ -2293,7 +2293,7 @@
       ],
       "buttons": [
         {
-          "deviceId": "23",
+          "deviceId": "24",
           "pushId": "3543",
           "pushValue": "1",
           "releaseId": "3543",
@@ -2315,7 +2315,7 @@
       ],
       "buttons": [
         {
-          "deviceId": "23",
+          "deviceId": "24",
           "pushId": "3538",
           "pushValue": "1",
           "releaseId": "3538",
@@ -2337,7 +2337,7 @@
       ],
       "buttons": [
         {
-          "deviceId": "23",
+          "deviceId": "24",
           "pushId": "3544",
           "pushValue": "1",
           "releaseId": "3544",
@@ -2359,7 +2359,7 @@
       ],
       "buttons": [
         {
-          "deviceId": "23",
+          "deviceId": "24",
           "pushId": "3539",
           "pushValue": "1",
           "releaseId": "3539",
@@ -2381,7 +2381,7 @@
       ],
       "buttons": [
         {
-          "deviceId": "23",
+          "deviceId": "24",
           "pushId": "3535",
           "pushValue": "1",
           "releaseId": "3535",
@@ -2403,7 +2403,7 @@
       ],
       "buttons": [
         {
-          "deviceId": "23",
+          "deviceId": "24",
           "pushId": "3540",
           "pushValue": "1",
           "releaseId": "3540",
@@ -2425,7 +2425,7 @@
       ],
       "buttons": [
         {
-          "deviceId": "23",
+          "deviceId": "24",
           "pushId": "3533",
           "pushValue": "1",
           "releaseId": "3533",
@@ -2447,7 +2447,7 @@
       ],
       "buttons": [
         {
-          "deviceId": "23",
+          "deviceId": "24",
           "pushId": "3532",
           "pushValue": "1",
           "releaseId": "3532",
@@ -2469,7 +2469,7 @@
       ],
       "buttons": [
         {
-          "deviceId": "23",
+          "deviceId": "24",
           "pushId": "3531",
           "pushValue": "1",
           "releaseId": "3531",
@@ -2491,7 +2491,7 @@
       ],
       "buttons": [
         {
-          "deviceId": "23",
+          "deviceId": "24",
           "pushId": "3534",
           "pushValue": "1",
           "releaseId": "3534",
@@ -2510,7 +2510,7 @@
           "id": "98"
         }
       ],
-      "deviceId": "23",
+      "deviceId": "24",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -3525,7 +3525,7 @@
           "id": "122"
         }
       ],
-      "deviceId": "11",
+      "deviceId": "12",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -3550,7 +3550,7 @@
           "id": "2049"
         }
       ],
-      "deviceId": "11",
+      "deviceId": "12",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -3575,7 +3575,7 @@
           "id": "2051"
         }
       ],
-      "deviceId": "11",
+      "deviceId": "12",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -3600,7 +3600,7 @@
           "id": "224"
         }
       ],
-      "deviceId": "11",
+      "deviceId": "12",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -3625,7 +3625,7 @@
           "id": "3490"
         }
       ],
-      "deviceId": "11",
+      "deviceId": "12",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -3650,7 +3650,7 @@
           "id": "404"
         }
       ],
-      "deviceId": "11",
+      "deviceId": "12",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -3675,7 +3675,7 @@
           "id": "498"
         }
       ],
-      "deviceId": "11",
+      "deviceId": "12",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -5789,17 +5789,17 @@
       "positions": [
         {
           "argumentValue": "1.0",
-          "name": "Position1",
+          "name": "HSD Mode NAV",
           "actionId": "3235"
         },
         {
           "argumentValue": "0.0",
-          "name": "Position2",
+          "name": "HSD Mode TID",
           "actionId": "3235"
         },
         {
           "argumentValue": "-1.0",
-          "name": "Position3",
+          "name": "HSD Mode ECM - Unimplemented",
           "actionId": "3235"
         }
       ]
@@ -5819,12 +5819,12 @@
       "positions": [
         {
           "argumentValue": "1.0",
-          "name": "Position1",
+          "name": "HSD ECM Override On",
           "actionId": "3239"
         },
         {
           "argumentValue": "0.0",
-          "name": "Position2",
+          "name": "HSD ECM Override Off",
           "actionId": "3239"
         }
       ]
@@ -5844,12 +5844,12 @@
       "positions": [
         {
           "argumentValue": "1.0",
-          "name": "Position1",
+          "name": "VDI AWL ILS",
           "actionId": "3225"
         },
         {
           "argumentValue": "0.0",
-          "name": "Position2",
+          "name": "VDI AWL ACL",
           "actionId": "3225"
         }
       ]
@@ -5869,12 +5869,12 @@
       "positions": [
         {
           "argumentValue": "1.0",
-          "name": "Position1",
+          "name": "VDI Mode TV",
           "actionId": "3224"
         },
         {
           "argumentValue": "0.0",
-          "name": "Position2",
+          "name": "VDI Mode Norm",
           "actionId": "3224"
         }
       ]
@@ -5894,12 +5894,12 @@
       "positions": [
         {
           "argumentValue": "1.0",
-          "name": "Position1",
+          "name": "HUD AWL ILS",
           "actionId": "3227"
         },
         {
           "argumentValue": "0.0",
-          "name": "Position2",
+          "name": "HUD AWL ACL",
           "actionId": "3227"
         }
       ]
@@ -6032,7 +6032,7 @@
           "id": "156"
         }
       ],
-      "deviceId": "45",
+      "deviceId": "44",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -6062,7 +6062,7 @@
           "id": "168"
         }
       ],
-      "deviceId": "45",
+      "deviceId": "44",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -6092,7 +6092,7 @@
           "id": "189"
         }
       ],
-      "deviceId": "45",
+      "deviceId": "44",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -6117,7 +6117,7 @@
           "id": "190"
         }
       ],
-      "deviceId": "45",
+      "deviceId": "44",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -6153,7 +6153,7 @@
       "argumentMax": 1,
       "actions": {
         "set": {
-          "deviceId": "45",
+          "deviceId": "44",
           "actionId": "3245"
         }
       }
@@ -6172,7 +6172,7 @@
       ],
       "buttons": [
         {
-          "deviceId": "45",
+          "deviceId": "44",
           "pushId": "3246",
           "pushValue": "1",
           "releaseId": "3246",
@@ -6191,7 +6191,7 @@
           "id": "926"
         }
       ],
-      "deviceId": "14",
+      "deviceId": "15",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -6216,7 +6216,7 @@
           "id": "927"
         }
       ],
-      "deviceId": "14",
+      "deviceId": "15",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -6241,7 +6241,7 @@
           "id": "936"
         }
       ],
-      "deviceId": "14",
+      "deviceId": "15",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -6271,7 +6271,7 @@
           "id": "937"
         }
       ],
-      "deviceId": "14",
+      "deviceId": "15",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -6301,7 +6301,7 @@
           "id": "12300"
         }
       ],
-      "deviceId": "19",
+      "deviceId": "20",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -6326,7 +6326,7 @@
           "id": "12301"
         }
       ],
-      "deviceId": "19",
+      "deviceId": "20",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -6351,7 +6351,7 @@
           "id": "13132"
         }
       ],
-      "deviceId": "19",
+      "deviceId": "20",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -6376,7 +6376,7 @@
           "id": "16005"
         }
       ],
-      "deviceId": "19",
+      "deviceId": "20",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -6401,7 +6401,7 @@
           "id": "16006"
         }
       ],
-      "deviceId": "19",
+      "deviceId": "20",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -6426,7 +6426,7 @@
           "id": "16007"
         }
       ],
-      "deviceId": "19",
+      "deviceId": "20",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -6451,7 +6451,7 @@
           "id": "16008"
         }
       ],
-      "deviceId": "19",
+      "deviceId": "20",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -6476,7 +6476,7 @@
           "id": "2102"
         }
       ],
-      "deviceId": "19",
+      "deviceId": "20",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -6506,7 +6506,7 @@
           "id": "2103"
         }
       ],
-      "deviceId": "19",
+      "deviceId": "20",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -6536,7 +6536,7 @@
           "id": "2104"
         }
       ],
-      "deviceId": "19",
+      "deviceId": "20",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -6566,7 +6566,7 @@
           "id": "2105"
         }
       ],
-      "deviceId": "19",
+      "deviceId": "20",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -6591,7 +6591,7 @@
           "id": "941"
         }
       ],
-      "deviceId": "19",
+      "deviceId": "20",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -6621,7 +6621,7 @@
           "id": "119"
         }
       ],
-      "deviceId": "11",
+      "deviceId": "12",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -6646,7 +6646,7 @@
           "id": "8114"
         }
       ],
-      "deviceId": "11",
+      "deviceId": "12",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -6674,7 +6674,7 @@
       ],
       "buttons": [
         {
-          "deviceId": "11",
+          "deviceId": "12",
           "pushId": "3193",
           "pushValue": "1",
           "releaseId": "3193",
@@ -6696,7 +6696,7 @@
       ],
       "buttons": [
         {
-          "deviceId": "11",
+          "deviceId": "12",
           "pushId": "3195",
           "pushValue": "1",
           "releaseId": "3195",
@@ -6718,7 +6718,7 @@
       ],
       "buttons": [
         {
-          "deviceId": "11",
+          "deviceId": "12",
           "pushId": "3196",
           "pushValue": "1",
           "releaseId": "3196",
@@ -6740,7 +6740,7 @@
       ],
       "buttons": [
         {
-          "deviceId": "11",
+          "deviceId": "12",
           "pushId": "3197",
           "pushValue": "1",
           "releaseId": "3197",
@@ -6762,7 +6762,7 @@
       ],
       "buttons": [
         {
-          "deviceId": "11",
+          "deviceId": "12",
           "pushId": "3194",
           "pushValue": "1",
           "releaseId": "3194",
@@ -6781,7 +6781,7 @@
           "id": "938"
         }
       ],
-      "deviceId": "11",
+      "deviceId": "12",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -6806,7 +6806,7 @@
           "id": "939"
         }
       ],
-      "deviceId": "11",
+      "deviceId": "12",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -6831,7 +6831,7 @@
           "id": "940"
         }
       ],
-      "deviceId": "11",
+      "deviceId": "12",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -6856,7 +6856,7 @@
           "id": "942"
         }
       ],
-      "deviceId": "11",
+      "deviceId": "12",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -6886,7 +6886,7 @@
           "id": "950"
         }
       ],
-      "deviceId": "11",
+      "deviceId": "12",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -7269,7 +7269,7 @@
       "argumentMax": 1,
       "actions": {
         "set": {
-          "deviceId": "20",
+          "deviceId": "21",
           "actionId": "3069"
         }
       }
@@ -7291,7 +7291,7 @@
       "argumentMax": 1,
       "actions": {
         "set": {
-          "deviceId": "18",
+          "deviceId": "19",
           "actionId": "3044"
         }
       }
@@ -7307,21 +7307,21 @@
           "id": "1001"
         }
       ],
-      "deviceId": "20",
+      "deviceId": "21",
       "positions": [
         {
           "argumentValue": "1.0",
-          "name": "Position1",
+          "name": "Wing/External Transfer Oride",
           "actionId": "3066"
         },
         {
           "argumentValue": "0.0",
-          "name": "Position2",
+          "name": "Wing/External Transfer Auto",
           "actionId": "3066"
         },
         {
           "argumentValue": "-1.0",
-          "name": "Position3",
+          "name": "Wing/External Transfer Off",
           "actionId": "3066"
         }
       ]
@@ -7337,7 +7337,7 @@
           "id": "1044"
         }
       ],
-      "deviceId": "20",
+      "deviceId": "21",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -7362,21 +7362,21 @@
           "id": "1073"
         }
       ],
-      "deviceId": "20",
+      "deviceId": "21",
       "positions": [
         {
           "argumentValue": "1.0",
-          "name": "Position1",
+          "name": "Refuel Probe extend, Refuel All",
           "actionId": "3068"
         },
         {
           "argumentValue": "0.0",
-          "name": "Position2",
+          "name": "Refuel Probe extend, Refuel Fuselage",
           "actionId": "3068"
         },
         {
           "argumentValue": "-1.0",
-          "name": "Position3",
+          "name": "Refuel Probe Retract",
           "actionId": "3068"
         }
       ]
@@ -7392,7 +7392,7 @@
           "id": "1074"
         }
       ],
-      "deviceId": "20",
+      "deviceId": "21",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -7417,21 +7417,21 @@
           "id": "1076"
         }
       ],
-      "deviceId": "20",
+      "deviceId": "21",
       "positions": [
         {
           "argumentValue": "1.0",
-          "name": "Position1",
+          "name": "QTY Select Wing",
           "actionId": "3063"
         },
         {
           "argumentValue": "0.0",
-          "name": "Position2",
+          "name": "QTY Select Feed",
           "actionId": "3063"
         },
         {
           "argumentValue": "-1.0",
-          "name": "Position3",
+          "name": "QTY Select Ext",
           "actionId": "3063"
         }
       ]
@@ -7447,7 +7447,7 @@
           "id": "1094"
         }
       ],
-      "deviceId": "20",
+      "deviceId": "21",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -7472,7 +7472,7 @@
           "id": "1095"
         }
       ],
-      "deviceId": "20",
+      "deviceId": "21",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -7502,7 +7502,7 @@
           "id": "15081"
         }
       ],
-      "deviceId": "20",
+      "deviceId": "21",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -7898,21 +7898,21 @@
           "id": "1075"
         }
       ],
-      "deviceId": "17",
+      "deviceId": "18",
       "positions": [
         {
           "argumentValue": "1.0",
-          "name": "Position1",
+          "name": "Nose Strut Extend",
           "actionId": "3019"
         },
         {
           "argumentValue": "0.0",
-          "name": "Position2",
+          "name": "Nose Strut Off",
           "actionId": "3019"
         },
         {
           "argumentValue": "-1.0",
-          "name": "Position3",
+          "name": "Nose Strut Kneel",
           "actionId": "3019"
         }
       ]
@@ -7928,7 +7928,7 @@
           "id": "15078"
         }
       ],
-      "deviceId": "17",
+      "deviceId": "18",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -7953,7 +7953,7 @@
           "id": "16015"
         }
       ],
-      "deviceId": "17",
+      "deviceId": "18",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -7978,7 +7978,7 @@
           "id": "238"
         }
       ],
-      "deviceId": "17",
+      "deviceId": "18",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -8003,7 +8003,7 @@
           "id": "326"
         }
       ],
-      "deviceId": "17",
+      "deviceId": "18",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -8028,7 +8028,7 @@
           "id": "496"
         }
       ],
-      "deviceId": "17",
+      "deviceId": "18",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -8056,7 +8056,7 @@
       ],
       "buttons": [
         {
-          "deviceId": "17",
+          "deviceId": "18",
           "pushId": "3672",
           "pushValue": "1",
           "releaseId": "3672",
@@ -8075,7 +8075,7 @@
           "id": "633"
         }
       ],
-      "deviceId": "17",
+      "deviceId": "18",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -8666,7 +8666,7 @@
           "id": "13133"
         }
       ],
-      "deviceId": "12",
+      "deviceId": "13",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -8691,7 +8691,7 @@
           "id": "615"
         }
       ],
-      "deviceId": "12",
+      "deviceId": "13",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -8716,7 +8716,7 @@
           "id": "629"
         }
       ],
-      "deviceId": "12",
+      "deviceId": "13",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -8741,7 +8741,7 @@
           "id": "630"
         }
       ],
-      "deviceId": "12",
+      "deviceId": "13",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -8766,7 +8766,7 @@
           "id": "631"
         }
       ],
-      "deviceId": "12",
+      "deviceId": "13",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -8791,7 +8791,7 @@
           "id": "928"
         }
       ],
-      "deviceId": "12",
+      "deviceId": "13",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -10495,7 +10495,7 @@
           "id": "15006"
         }
       ],
-      "deviceId": "25",
+      "deviceId": "26",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -20287,7 +20287,7 @@
       ],
       "buttons": [
         {
-          "deviceId": "29",
+          "deviceId": "30",
           "pushId": "3485",
           "pushValue": "1",
           "releaseId": "3485",
@@ -20310,11 +20310,11 @@
       "argumentValue": 0.025,
       "actions": {
         "increment": {
-          "deviceId": "29",
+          "deviceId": "30",
           "actionId": "3484"
         },
         "decrement": {
-          "deviceId": "29",
+          "deviceId": "30",
           "actionId": "3484"
         }
       }
@@ -20360,7 +20360,7 @@
           "id": "2106"
         }
       ],
-      "deviceId": "21",
+      "deviceId": "22",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -20385,7 +20385,7 @@
           "id": "2107"
         }
       ],
-      "deviceId": "21",
+      "deviceId": "22",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -20410,7 +20410,7 @@
           "id": "2108"
         }
       ],
-      "deviceId": "21",
+      "deviceId": "22",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -20538,7 +20538,7 @@
       ],
       "buttons": [
         {
-          "deviceId": "30",
+          "deviceId": "31",
           "pushId": "3545",
           "pushValue": "1",
           "releaseId": "3545",
@@ -20561,11 +20561,11 @@
       "argumentValue": 0.025,
       "actions": {
         "increment": {
-          "deviceId": "30",
+          "deviceId": "31",
           "actionId": "3546"
         },
         "decrement": {
-          "deviceId": "30",
+          "deviceId": "31",
           "actionId": "3546"
         }
       }
@@ -20584,7 +20584,7 @@
       ],
       "buttons": [
         {
-          "deviceId": "30",
+          "deviceId": "31",
           "pushId": "3547",
           "pushValue": "1",
           "releaseId": "3547",
@@ -20607,11 +20607,11 @@
       "argumentValue": 0.025,
       "actions": {
         "increment": {
-          "deviceId": "30",
+          "deviceId": "31",
           "actionId": "3548"
         },
         "decrement": {
-          "deviceId": "30",
+          "deviceId": "31",
           "actionId": "3548"
         }
       }
@@ -21241,7 +21241,7 @@
       "argumentMax": 1,
       "actions": {
         "set": {
-          "deviceId": "37",
+          "deviceId": "38",
           "actionId": "3750"
         }
       }
@@ -21263,7 +21263,7 @@
       "argumentMax": 1,
       "actions": {
         "set": {
-          "deviceId": "37",
+          "deviceId": "38",
           "actionId": "3751"
         }
       }
@@ -21279,7 +21279,7 @@
           "id": "87"
         }
       ],
-      "deviceId": "37",
+      "deviceId": "38",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -21309,7 +21309,7 @@
           "id": "88"
         }
       ],
-      "deviceId": "37",
+      "deviceId": "38",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -21334,7 +21334,7 @@
           "id": "89"
         }
       ],
-      "deviceId": "37",
+      "deviceId": "38",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -21364,7 +21364,7 @@
           "id": "90"
         }
       ],
-      "deviceId": "37",
+      "deviceId": "38",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -21394,7 +21394,7 @@
           "id": "91"
         }
       ],
-      "deviceId": "37",
+      "deviceId": "38",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -22985,7 +22985,7 @@
       ],
       "buttons": [
         {
-          "deviceId": "26",
+          "deviceId": "27",
           "pushId": "3043",
           "pushValue": "1",
           "releaseId": "3043",
@@ -23110,11 +23110,11 @@
       "argumentValue": 0.025,
       "actions": {
         "increment": {
-          "deviceId": "26",
+          "deviceId": "27",
           "actionId": "3042"
         },
         "decrement": {
-          "deviceId": "26",
+          "deviceId": "27",
           "actionId": "3042"
         }
       }
@@ -23134,11 +23134,11 @@
       "argumentValue": 0.025,
       "actions": {
         "increment": {
-          "deviceId": "26",
+          "deviceId": "27",
           "actionId": "3710"
         },
         "decrement": {
-          "deviceId": "26",
+          "deviceId": "27",
           "actionId": "3710"
         }
       }
@@ -23157,7 +23157,7 @@
       ],
       "buttons": [
         {
-          "deviceId": "26",
+          "deviceId": "27",
           "pushId": "3711",
           "pushValue": "1",
           "releaseId": "3711",
@@ -23289,7 +23289,7 @@
       ],
       "buttons": [
         {
-          "deviceId": "34",
+          "deviceId": "35",
           "pushId": "3056",
           "pushValue": "1",
           "releaseId": "3056",
