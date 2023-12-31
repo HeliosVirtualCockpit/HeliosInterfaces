@@ -1,7 +1,7 @@
 {
   "source": "DCSFlightPanels",
-  "version": "0x5200",
-  "commit": "f24d22aebdf336fbd69fb69cb578d45c51d85425",
+  "version": "0x6040",
+  "commit": "",
   "type": "DCS",
   "name": "DCS P-47D",
   "module": "P-47D",
@@ -104,6 +104,31 @@
     },
     {
       "heliosType": "DCS.Common.Switch",
+      "device": "Drop Ordnance Panel",
+      "name": "OAP Ready Switch Cover",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "2139"
+        }
+      ],
+      "deviceId": "14",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Position1",
+          "actionId": "3037"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Position2",
+          "actionId": "3037"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.Switch",
       "device": "Arming Panel",
       "name": "Left Wing Bomb Switch",
       "description": "Current position of this switch.",
@@ -154,6 +179,31 @@
     },
     {
       "heliosType": "DCS.Common.Switch",
+      "device": "Drop Ordnance Panel",
+      "name": "OAP Ready Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "2141"
+        }
+      ],
+      "deviceId": "14",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Position1",
+          "actionId": "3039"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Position2",
+          "actionId": "3039"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.Switch",
       "device": "Arming Panel",
       "name": "Right Wing Bomb Switch",
       "description": "Current position of this switch.",
@@ -203,6 +253,31 @@
       ]
     },
     {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Drop Ordnance Panel",
+      "name": "OAP Selector Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "2143"
+        }
+      ],
+      "deviceId": "14",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Position1",
+          "actionId": "3041"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Position2",
+          "actionId": "3041"
+        }
+      ]
+    },
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Arming Panel",
       "name": "Belly Bomb Switch",
@@ -363,12 +438,12 @@
       "deviceId": "2",
       "positions": [
         {
-          "argumentValue": "1.0",
+          "argumentValue": "0.0",
           "name": "Position1",
           "actionId": "3020"
         },
         {
-          "argumentValue": "0.0",
+          "argumentValue": "1.0",
           "name": "Position2",
           "actionId": "3020"
         }
@@ -388,7 +463,7 @@
       "deviceId": "2",
       "positions": [
         {
-          "argumentValue": "1.0",
+          "argumentValue": "-1.0",
           "name": "OPEN",
           "actionId": "3013"
         },
@@ -398,7 +473,7 @@
           "actionId": "3013"
         },
         {
-          "argumentValue": "-1.0",
+          "argumentValue": "1.0",
           "name": "CLOSE",
           "actionId": "3013"
         }
@@ -407,7 +482,7 @@
     {
       "heliosType": "DCS.Common.PushButton",
       "device": "Circuit Brakers",
-      "name": "Drop Ordinance CB",
+      "name": "Drop Ordnance CB",
       "description": "Current state of this button.",
       "exports": [
         {
@@ -851,7 +926,7 @@
       "description": "TODO: assign units, set calibration points, and write description",
       "exports": [
         {
-          "format": "%.4f",
+          "format": "%.3f",
           "id": "180"
         }
       ],
@@ -903,7 +978,7 @@
       "description": "TODO: assign units, set calibration points, and write description",
       "exports": [
         {
-          "format": "%.5f",
+          "format": "%.3f",
           "id": "38"
         }
       ],
@@ -930,7 +1005,7 @@
       "description": "TODO: assign units, set calibration points, and write description",
       "exports": [
         {
-          "format": "%.4f",
+          "format": "%.3f",
           "id": "484"
         }
       ],
@@ -957,7 +1032,7 @@
       "description": "TODO: assign units, set calibration points, and write description",
       "exports": [
         {
-          "format": "%.4f",
+          "format": "%.3f",
           "id": "489"
         }
       ],
@@ -1016,12 +1091,12 @@
       "deviceId": "2",
       "positions": [
         {
-          "argumentValue": "1.0",
+          "argumentValue": "0.0",
           "name": "Position1",
           "actionId": "3052"
         },
         {
-          "argumentValue": "0.0",
+          "argumentValue": "1.0",
           "name": "Position2",
           "actionId": "3052"
         }
@@ -1034,7 +1109,7 @@
       "description": "Current value of this potentiometer.",
       "exports": [
         {
-          "format": "%.5f",
+          "format": "%.3f",
           "id": "161"
         }
       ],
@@ -1126,8 +1201,30 @@
       "description": "Current value of this potentiometer.",
       "exports": [
         {
-          "format": "%.5f",
+          "format": "%.3f",
           "id": "137"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.025,
+      "argumentMin": 0,
+      "argumentMax": 1,
+      "actions": {
+        "set": {
+          "deviceId": "24",
+          "actionId": "3004"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Detrola Receiver",
+      "name": "Detrola Volume",
+      "description": "Current value of this potentiometer.",
+      "exports": [
+        {
+          "format": "%.3f",
+          "id": "138"
         }
       ],
       "loop": false,
@@ -1142,105 +1239,8 @@
       }
     },
     {
-      "heliosType": "DCS.Common.Axis",
-      "device": "Detrola Receiver",
-      "name": "Detrola Volume",
-      "description": "Current value of this potentiometer.",
-      "exports": [
-        {
-          "format": "%.5f",
-          "id": "138"
-        }
-      ],
-      "loop": false,
-      "argumentValue": 0.025,
-      "argumentMin": 0,
-      "argumentMax": 1,
-      "actions": {
-        "set": {
-          "deviceId": "24",
-          "actionId": "3002"
-        }
-      }
-    },
-    {
       "heliosType": "DCS.Common.Switch",
-      "device": "Drop Ordinance Panel",
-      "name": "OAP Ready Switch Cover",
-      "description": "Current position of this switch.",
-      "exports": [
-        {
-          "format": "%0.1f",
-          "id": "139"
-        }
-      ],
-      "deviceId": "14",
-      "positions": [
-        {
-          "argumentValue": "1.0",
-          "name": "Position1",
-          "actionId": "3037"
-        },
-        {
-          "argumentValue": "0.0",
-          "name": "Position2",
-          "actionId": "3037"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.Switch",
-      "device": "Drop Ordinance Panel",
-      "name": "OAP Ready Switch",
-      "description": "Current position of this switch.",
-      "exports": [
-        {
-          "format": "%0.1f",
-          "id": "141"
-        }
-      ],
-      "deviceId": "14",
-      "positions": [
-        {
-          "argumentValue": "1.0",
-          "name": "Position1",
-          "actionId": "3039"
-        },
-        {
-          "argumentValue": "0.0",
-          "name": "Position2",
-          "actionId": "3039"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.Switch",
-      "device": "Drop Ordinance Panel",
-      "name": "OAP Selector Switch",
-      "description": "Current position of this switch.",
-      "exports": [
-        {
-          "format": "%0.1f",
-          "id": "143"
-        }
-      ],
-      "deviceId": "14",
-      "positions": [
-        {
-          "argumentValue": "1.0",
-          "name": "Position1",
-          "actionId": "3041"
-        },
-        {
-          "argumentValue": "0.0",
-          "name": "Position2",
-          "actionId": "3041"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.Switch",
-      "device": "Drop Ordinance Panel",
+      "device": "Drop Ordnance Panel",
       "name": "Arming Handle Belly",
       "description": "Current position of this switch.",
       "exports": [
@@ -1252,12 +1252,12 @@
       "deviceId": "14",
       "positions": [
         {
-          "argumentValue": "1.0",
+          "argumentValue": "0.0",
           "name": "Position1",
           "actionId": "3035"
         },
         {
-          "argumentValue": "0.0",
+          "argumentValue": "1.0",
           "name": "Position2",
           "actionId": "3035"
         }
@@ -1265,7 +1265,7 @@
     },
     {
       "heliosType": "DCS.Common.Switch",
-      "device": "Drop Ordinance Panel",
+      "device": "Drop Ordnance Panel",
       "name": "Arming Handle Left",
       "description": "Current position of this switch.",
       "exports": [
@@ -1277,12 +1277,12 @@
       "deviceId": "14",
       "positions": [
         {
-          "argumentValue": "1.0",
+          "argumentValue": "0.0",
           "name": "Position1",
           "actionId": "3031"
         },
         {
-          "argumentValue": "0.0",
+          "argumentValue": "1.0",
           "name": "Position2",
           "actionId": "3031"
         }
@@ -1290,7 +1290,7 @@
     },
     {
       "heliosType": "DCS.Common.Switch",
-      "device": "Drop Ordinance Panel",
+      "device": "Drop Ordnance Panel",
       "name": "Arming Handle Right",
       "description": "Current position of this switch.",
       "exports": [
@@ -1302,12 +1302,12 @@
       "deviceId": "14",
       "positions": [
         {
-          "argumentValue": "1.0",
+          "argumentValue": "0.0",
           "name": "Position1",
           "actionId": "3033"
         },
         {
-          "argumentValue": "0.0",
+          "argumentValue": "1.0",
           "name": "Position2",
           "actionId": "3033"
         }
@@ -1446,25 +1446,25 @@
     {
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Gauges",
-      "name": "Manifold Pressur Gauge",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "name": "Manifold Pressure Gauge",
+      "description": "Indicated Pressure",
       "exports": [
         {
-          "format": "%.5f",
+          "format": "%.3f",
           "id": "10"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
-      "unit": "Numeric",
+      "valueDescription": "10 to 75",
+      "unit": "InchesOfMercury",
       "calibration": {
         "points": [
           {
             "value": 0,
-            "mappedValue": 0
+            "mappedValue": 10
           },
           {
             "value": 1,
-            "mappedValue": 1
+            "mappedValue": 75
           }
         ],
         "precision": 5
@@ -1473,25 +1473,41 @@
     {
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Gauges",
-      "name": "Carburettor Temperature Gauge",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "name": "Carburetor Temperature Gauge",
+      "description": "Carb Temp in Degrees Celsius",
       "exports": [
         {
-          "format": "%.4f",
+          "format": "%.3f",
           "id": "102"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
-      "unit": "Numeric",
+      "valueDescription": "-70 to 150",
+      "unit": "Celsius",
       "calibration": {
         "points": [
-          {
-            "value": -0.5,
-            "mappedValue": -0.5
+		  {
+            "value": -0.375,
+            "mappedValue": -70
+          },
+		  {
+            "value": -0.205,
+            "mappedValue": -50
+          },
+		  {
+            "value": 0.105,
+            "mappedValue": 6.8
+          },
+		  {
+            "value": 0.365,
+            "mappedValue": 48.4
+          },
+		  {
+            "value": 0.64,
+            "mappedValue": 92.4
           },
           {
             "value": 1,
-            "mappedValue": 1
+            "mappedValue": 150
           }
         ],
         "precision": 4
@@ -1501,14 +1517,14 @@
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Gauges",
       "name": "Turbine Tachometer",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Turbo RPM in Hundreds",
       "exports": [
         {
-          "format": "%.5f",
+          "format": "%.3f",
           "id": "103"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
+      "valueDescription": "0 to 35 in Hundreds",
       "unit": "Numeric",
       "calibration": {
         "points": [
@@ -1518,7 +1534,7 @@
           },
           {
             "value": 1,
-            "mappedValue": 1
+            "mappedValue": 35
           }
         ],
         "precision": 5
@@ -1528,14 +1544,14 @@
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Gauges",
       "name": "Amperemeter",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Amp Draw",
       "exports": [
         {
-          "format": "%.5f",
+          "format": "%.3f",
           "id": "104"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
+      "valueDescription": "0 to 150",
       "unit": "Numeric",
       "calibration": {
         "points": [
@@ -1545,7 +1561,7 @@
           },
           {
             "value": 1,
-            "mappedValue": 1
+            "mappedValue": 150
           }
         ],
         "precision": 5
@@ -1555,24 +1571,24 @@
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Gauges",
       "name": "Compass Pitch",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Vertical Movement of Compass in Degrees",
       "exports": [
         {
-          "format": "%.4f",
-          "id": "105"
+          "format": "%.3f",
+          "id": "106"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
-      "unit": "Numeric",
+      "valueDescription": "-5 to 5",
+      "unit": "Degrees",
       "calibration": {
         "points": [
           {
             "value": -1,
-            "mappedValue": -1
+            "mappedValue": -5
           },
           {
             "value": 1,
-            "mappedValue": 1
+            "mappedValue": 5
           }
         ],
         "precision": 4
@@ -1582,24 +1598,24 @@
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Gauges",
       "name": "Compass Heading",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Horizontal Movement of Compass in Degrees",
       "exports": [
         {
-          "format": "%.4f",
-          "id": "106"
+          "format": "%.3f",
+          "id": "107"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
-      "unit": "Numeric",
+      "valueDescription": "0 to 360",
+      "unit": "Degrees",
       "calibration": {
         "points": [
           {
-            "value": -1,
-            "mappedValue": -1
+            "value": 0,
+            "mappedValue": 0
           },
           {
             "value": 1,
-            "mappedValue": 1
+            "mappedValue": 360
           }
         ],
         "precision": 4
@@ -1609,24 +1625,24 @@
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Gauges",
       "name": "Compass Bank",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Rotational Movement of Compass in Degrees",
       "exports": [
         {
-          "format": "%.4f",
-          "id": "107"
+          "format": "%.3f",
+          "id": "105"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
-      "unit": "Numeric",
+      "valueDescription": "-10 to 10",
+      "unit": "Degrees",
       "calibration": {
         "points": [
           {
             "value": -1,
-            "mappedValue": -1
+            "mappedValue": -10
           },
           {
             "value": 1,
-            "mappedValue": 1
+            "mappedValue": 10
           }
         ],
         "precision": 4
@@ -1636,14 +1652,14 @@
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Gauges",
       "name": "Water Pressure Gauge",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Pressure",
       "exports": [
         {
-          "format": "%.5f",
+          "format": "%.3f",
           "id": "108"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
+      "valueDescription": "0 to 5",
       "unit": "Numeric",
       "calibration": {
         "points": [
@@ -1653,7 +1669,7 @@
           },
           {
             "value": 1,
-            "mappedValue": 1
+            "mappedValue": 5
           }
         ],
         "precision": 5
@@ -1663,14 +1679,14 @@
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Gauges",
       "name": "Fuel Reserve Main Gauge",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Main Tank Fuel Remaining in Gallons",
       "exports": [
         {
-          "format": "%.5f",
+          "format": "%.3f",
           "id": "109"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
+      "valueDescription": "0 to 270",
       "unit": "Numeric",
       "calibration": {
         "points": [
@@ -1678,9 +1694,41 @@
             "value": 0,
             "mappedValue": 0
           },
+		  {
+            "value": 0.144,
+            "mappedValue": 18
+          },
+		       {
+            "value": 0.347,
+            "mappedValue": 53.4
+          },
+		       {
+            "value": 0.506,
+            "mappedValue": 83.1
+          },
+		       {
+            "value": 0.599,
+            "mappedValue": 110.4
+          },
+		       {
+            "value": 0.666,
+            "mappedValue": 136.8
+          },
+		       {
+            "value": 0.753,
+            "mappedValue": 184.8
+          },
+		       {
+            "value": 0.828,
+            "mappedValue": 231.3
+          },
+		       {
+            "value": 0.877,
+            "mappedValue": 259.5
+          },
           {
-            "value": 1,
-            "mappedValue": 1
+            "value": 0.9,
+            "mappedValue": 270
           }
         ],
         "precision": 5
@@ -1690,24 +1738,60 @@
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Gauges",
       "name": "Airspeed Gauge",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Indicated Airspeed in MPH",
       "exports": [
         {
-          "format": "%.5f",
+          "format": "%.4f",
           "id": "11"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
-      "unit": "Numeric",
+      "valueDescription": "0 to 700",
+      "unit": "MilesPerHour", 
       "calibration": {
         "points": [
           {
             "value": 0,
             "mappedValue": 0
           },
+		  {
+            "value": 0.05,
+            "mappedValue": 16
+          },
+		  {
+            "value": 0.1,
+            "mappedValue": 86
+          },
+		  {
+            "value": 0.15,
+            "mappedValue": 186
+          },
+		  {
+            "value": 0.2,
+            "mappedValue": 284
+          },
+		  {
+            "value": 0.25,
+            "mappedValue": 381
+          },
+		  {
+            "value": 0.3,
+            "mappedValue": 476
+          },
+		  {
+            "value": 0.4,
+            "mappedValue": 531
+          },
+		  {
+            "value": 0.5,
+            "mappedValue": 586
+          },
+		  {
+            "value": 0.6,
+            "mappedValue": 642
+          },
           {
-            "value": 0.9,
-            "mappedValue": 0.9
+            "value": 0.7,
+            "mappedValue": 700
           }
         ],
         "precision": 5
@@ -1717,14 +1801,14 @@
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Gauges",
       "name": "Fuel Reserve Aux Gauge",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Aux Fuel Remaining in Gallons",
       "exports": [
         {
-          "format": "%.5f",
+          "format": "%.3f",
           "id": "110"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
+      "valueDescription": "0 to 100",
       "unit": "Numeric",
       "calibration": {
         "points": [
@@ -1732,9 +1816,25 @@
             "value": 0,
             "mappedValue": 0
           },
+		   {
+            "value": 0.103,
+            "mappedValue": 10
+          },
+		   {
+            "value": 0.254,
+            "mappedValue": 31.1
+          },
+		   {
+            "value": 0.506,
+            "mappedValue": 65.4
+          },
+		   {
+            "value": 0.756,
+            "mappedValue": 86.3
+          },
           {
-            "value": 1,
-            "mappedValue": 1
+            "value": 0.9,
+            "mappedValue": 100
           }
         ],
         "precision": 5
@@ -1743,15 +1843,15 @@
     {
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Gauges",
-      "name": "Cylinder Heads Temperature Gauge",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "name": "Cylinder Head Temperature Gauge",
+      "description": "Cylinder Head Temp in Degrees ",
       "exports": [
         {
-          "format": "%.5f",
+          "format": "%.3f",
           "id": "111"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
+      "valueDescription": "0 to 350 degrees",
       "unit": "Numeric",
       "calibration": {
         "points": [
@@ -1761,7 +1861,7 @@
           },
           {
             "value": 1,
-            "mappedValue": 1
+            "mappedValue": 350
           }
         ],
         "precision": 5
@@ -1771,15 +1871,15 @@
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Gauges",
       "name": "DI Gauge",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Heading Direction Indicator in Degrees",
       "exports": [
         {
-          "format": "%.5f",
+          "format": "%.3f",
           "id": "12"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
-      "unit": "Numeric",
+      "valueDescription": "-180 to 180 ",
+      "unit": "Degrees",
       "calibration": {
         "points": [
           {
@@ -1788,7 +1888,7 @@
           },
           {
             "value": 1,
-            "mappedValue": 1
+            "mappedValue": 360
           }
         ],
         "precision": 5
@@ -1798,24 +1898,24 @@
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Gauges",
       "name": "Artificial Horizon - Zero",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Horizon Line Adjustment",
       "exports": [
         {
-          "format": "%.4f",
+          "format": "%.3f",
           "id": "136"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
+      "valueDescription": "-1 to 1",
       "unit": "Numeric",
       "calibration": {
         "points": [
           {
             "value": -1,
-            "mappedValue": -1
+            "mappedValue": -0.5
           },
           {
             "value": 1,
-            "mappedValue": 1
+            "mappedValue": 0.5
           }
         ],
         "precision": 4
@@ -1825,24 +1925,24 @@
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Gauges",
       "name": "Artificial Horizon - Bank",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Bank Angle in Degrees",
       "exports": [
         {
-          "format": "%.5f",
+          "format": "%.3f",
           "id": "14"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
-      "unit": "Numeric",
+      "valueDescription": "-180 to 180",
+      "unit": "Degrees",
       "calibration": {
         "points": [
           {
-            "value": 1,
-            "mappedValue": 1
+            "value": -1,
+            "mappedValue": -180
           },
           {
-            "value": -1,
-            "mappedValue": -1
+            "value": 1,
+            "mappedValue": 180
           }
         ],
         "precision": 5
@@ -1852,24 +1952,24 @@
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Gauges",
       "name": "Artificial Horizon - Pitch",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Pitch Angle in Degrees Limited Movement",
       "exports": [
         {
-          "format": "%.5f",
+          "format": "%.3f",
           "id": "15"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
+      "valueDescription": "-1 to 1",
       "unit": "Numeric",
       "calibration": {
         "points": [
           {
-            "value": 1,
-            "mappedValue": 1
-          },
-          {
             "value": -1,
             "mappedValue": -1
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
           }
         ],
         "precision": 5
@@ -1879,15 +1979,15 @@
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Gauges",
       "name": "Altimeter 100 ft Reference",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Altitude reference Pointer x10 ft",
       "exports": [
         {
-          "format": "%.5f",
+          "format": "%.3f",
           "id": "171"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
-      "unit": "Numeric",
+      "valueDescription": "0 to 10",
+      "unit": "Feet",
       "calibration": {
         "points": [
           {
@@ -1896,7 +1996,7 @@
           },
           {
             "value": 1,
-            "mappedValue": 1
+            "mappedValue": 10
           }
         ],
         "precision": 5
@@ -1906,15 +2006,15 @@
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Gauges",
       "name": "Altimeter 1000 ft Reference",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Altitude Reference Pointer x100ft",
       "exports": [
         {
-          "format": "%.5f",
+          "format": "%.3f",
           "id": "172"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
-      "unit": "Numeric",
+      "valueDescription": "0 to 10",
+      "unit": "Feet",
       "calibration": {
         "points": [
           {
@@ -1923,7 +2023,7 @@
           },
           {
             "value": 1,
-            "mappedValue": 1
+            "mappedValue": 10
           }
         ],
         "precision": 5
@@ -1933,24 +2033,24 @@
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Gauges",
       "name": "Accelerometer Main",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Acceleration in G-Force",
       "exports": [
         {
-          "format": "%.5f",
+          "format": "%.3f",
           "id": "175"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
+      "valueDescription": "-5 to 12 G's",
       "unit": "Numeric",
       "calibration": {
         "points": [
           {
             "value": 0,
-            "mappedValue": 0
+            "mappedValue": -5
           },
           {
             "value": 1,
-            "mappedValue": 1
+            "mappedValue": 12
           }
         ],
         "precision": 5
@@ -1960,24 +2060,24 @@
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Gauges",
       "name": "Accelerometer Min",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Acceleration Minimum in G-Force",
       "exports": [
         {
-          "format": "%.5f",
+          "format": "%.3f",
           "id": "177"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
+      "valueDescription": "-5 to 12 G's",
       "unit": "Numeric",
       "calibration": {
         "points": [
           {
             "value": 0,
-            "mappedValue": 0
+            "mappedValue": -5
           },
           {
             "value": 1,
-            "mappedValue": 1
+            "mappedValue": 12
           }
         ],
         "precision": 5
@@ -1987,24 +2087,24 @@
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Gauges",
       "name": "Accelerometer Max",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Acceleration Maximum in G-Force",
       "exports": [
         {
-          "format": "%.5f",
+          "format": "%.3f",
           "id": "178"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
+      "valueDescription": "-5 to 12 G's",
       "unit": "Numeric",
       "calibration": {
         "points": [
           {
             "value": 0,
-            "mappedValue": 0
+            "mappedValue": -5
           },
           {
             "value": 1,
-            "mappedValue": 1
+            "mappedValue": 12
           }
         ],
         "precision": 5
@@ -2014,14 +2114,14 @@
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Gauges",
       "name": "Mk_8 Slipball",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Sideslip Indication From Center",
       "exports": [
         {
-          "format": "%.4f",
+          "format": "%.3f",
           "id": "183"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
+      "valueDescription": "Numeric",
       "unit": "Numeric",
       "calibration": {
         "points": [
@@ -2040,15 +2140,15 @@
     {
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Gauges",
-      "name": "Artificial Horizon - Cage",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "name": "Artificial Horizon - Caged Flag",
+      "description": "CAGED flag on gauge",
       "exports": [
         {
-          "format": "%.5f",
+          "format": "%.2f",
           "id": "20"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
+      "valueDescription": "0 is the flag hidden, and 1 is the flag displayed",
       "unit": "Numeric",
       "calibration": {
         "points": [
@@ -2071,7 +2171,7 @@
       "description": "TODO: assign units, set calibration points, and write description",
       "exports": [
         {
-          "format": "%.5f",
+          "format": "%.3f",
           "id": "21"
         }
       ],
@@ -2081,11 +2181,11 @@
         "points": [
           {
             "value": 0,
-            "mappedValue": 0
+            "mappedValue": 28
           },
           {
             "value": 1,
-            "mappedValue": 1
+            "mappedValue": 31
           }
         ],
         "precision": 5
@@ -2095,14 +2195,14 @@
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Gauges",
       "name": "Tachometer Gauge",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Propellor RPM",
       "exports": [
         {
-          "format": "%.5f",
+          "format": "%.3f",
           "id": "23"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
+      "valueDescription": "RPM 0 to 45 in Hundreds",
       "unit": "Numeric",
       "calibration": {
         "points": [
@@ -2112,7 +2212,7 @@
           },
           {
             "value": 1,
-            "mappedValue": 1
+            "mappedValue": 45
           }
         ],
         "precision": 5
@@ -2122,15 +2222,15 @@
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Gauges",
       "name": "Altimeter 100 ft",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Altitude ASL in Feet x100",
       "exports": [
         {
-          "format": "%.5f",
+          "format": "%.3f",
           "id": "24"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
-      "unit": "Numeric",
+      "valueDescription": "0 to 10",
+      "unit": "Feet",
       "calibration": {
         "points": [
           {
@@ -2139,7 +2239,7 @@
           },
           {
             "value": 1,
-            "mappedValue": 1
+            "mappedValue": 10
           }
         ],
         "precision": 5
@@ -2149,15 +2249,15 @@
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Gauges",
       "name": "Altimeter 1000 ft",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Altitude ASL in Feet x100",
       "exports": [
         {
-          "format": "%.5f",
+          "format": "%.3f",
           "id": "25"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
-      "unit": "Numeric",
+      "valueDescription": "0 to 10",
+      "unit": "Feet",
       "calibration": {
         "points": [
           {
@@ -2166,7 +2266,7 @@
           },
           {
             "value": 1,
-            "mappedValue": 1
+            "mappedValue": 10
           }
         ],
         "precision": 5
@@ -2176,15 +2276,15 @@
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Gauges",
       "name": "Altimeter 10000 ft",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Altitude ASL x1000",
       "exports": [
         {
-          "format": "%.5f",
+          "format": "%.3f",
           "id": "26"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
-      "unit": "Numeric",
+      "valueDescription": "0 to 10",
+      "unit": "Feet",
       "calibration": {
         "points": [
           {
@@ -2193,7 +2293,7 @@
           },
           {
             "value": 1,
-            "mappedValue": 1
+            "mappedValue": 10
           }
         ],
         "precision": 5
@@ -2203,14 +2303,14 @@
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Gauges",
       "name": "Turn Needle",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Turn Indicator",
       "exports": [
         {
-          "format": "%.4f",
+          "format": "%.3f",
           "id": "27"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
+      "valueDescription": "Numeric",
       "unit": "Numeric",
       "calibration": {
         "points": [
@@ -2230,14 +2330,14 @@
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Gauges",
       "name": "Slipball",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Sideslip Indication From Center",
       "exports": [
         {
-          "format": "%.4f",
+          "format": "%.3f",
           "id": "28"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
+      "valueDescription": "Numeric",
       "unit": "Numeric",
       "calibration": {
         "points": [
@@ -2257,24 +2357,80 @@
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Gauges",
       "name": "Variometer",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Rate of Climb",
       "exports": [
         {
-          "format": "%.4f",
+          "format": "%.3f",
           "id": "29"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
-      "unit": "Numeric",
+      "valueDescription": "-6000 to 6000",
+      "unit": "FeetPerMinute",
       "calibration": {
         "points": [
           {
             "value": -0.6,
-            "mappedValue": -0.6
+            "mappedValue": -6000
+          },
+		  {
+            "value": -0.5,
+            "mappedValue": -5320
+          },
+		  {
+            "value": -0.4,
+            "mappedValue": -4590
+          },
+		  {
+            "value": -0.3,
+            "mappedValue": -3810
+          },
+		  {
+            "value": -0.2,
+            "mappedValue": -2850
+          },
+		  {
+            "value": -0.1,
+            "mappedValue": -1610
+          },
+		  {
+            "value": -0.05,
+            "mappedValue": -810
+          },
+		  {
+            "value": 0.0,
+            "mappedValue": 0
+          },
+		  {
+            "value": 0.05,
+            "mappedValue": 810
+          },
+		  {
+            "value": 0.1,
+            "mappedValue": 1610
+          },
+		  {
+            "value": 0.2,
+            "mappedValue": 2850
+          },
+		  {
+            "value": 0.3,
+            "mappedValue": 3810
+          },
+		  {
+            "value": 0.4,
+            "mappedValue": 4590
+          },
+		  {
+            "value": 0.5,
+            "mappedValue": 5320
+          },
+		  {
+            "value": 0.6,
+            "mappedValue": 6000
           },
           {
             "value": 0.6,
-            "mappedValue": 0.6
+            "mappedValue": 6000
           }
         ],
         "precision": 4
@@ -2284,24 +2440,60 @@
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Gauges",
       "name": "TriGauge Oil Temperature",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Oil Temperature in Celsius",
       "exports": [
         {
-          "format": "%.4f",
+          "format": "%.3f",
           "id": "30"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
-      "unit": "Numeric",
+      "valueDescription": "-70 to 150",
+      "unit": "Celsius",
       "calibration": {
         "points": [
           {
-            "value": -1,
-            "mappedValue": -1
+            "value": 0,
+            "mappedValue": -70
+          },
+		  {
+            "value": 0.08,
+            "mappedValue": -52.4
+          },
+		  {
+            "value": 0.19,
+            "mappedValue": -28.8
+          },
+		  {
+            "value": 0.31,
+            "mappedValue": -1.8
+          },
+		  {
+            "value": 0.42,
+            "mappedValue": 22.4
+          },
+		  {
+            "value": 0.54,
+            "mappedValue": 48.8
+          },
+		  {
+            "value": 0.65,
+            "mappedValue": 73
+          },
+		  {
+            "value": 0.77,
+            "mappedValue": 99.4
+          },
+		  {
+            "value": 0.89,
+            "mappedValue": 125.8
+          },
+		  {
+            "value": 0.945,
+            "mappedValue": 137.9
           },
           {
             "value": 1,
-            "mappedValue": 1
+            "mappedValue": 150
           }
         ],
         "precision": 4
@@ -2311,15 +2503,15 @@
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Gauges",
       "name": "TriGauge Oil Pressure",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Oil Pressure in PSI",
       "exports": [
         {
-          "format": "%.5f",
+          "format": "%.3f",
           "id": "31"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
-      "unit": "Numeric",
+      "valueDescription": "0 to 200",
+      "unit": "PoundsPerSquareInch",
       "calibration": {
         "points": [
           {
@@ -2328,7 +2520,7 @@
           },
           {
             "value": 1,
-            "mappedValue": 1
+            "mappedValue": 200
           }
         ],
         "precision": 5
@@ -2338,15 +2530,15 @@
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Gauges",
       "name": "TriGauge Fuel Pressure",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Fuel Pressure in PSI",
       "exports": [
         {
-          "format": "%.5f",
+          "format": "%.3f",
           "id": "32"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
-      "unit": "Numeric",
+      "valueDescription": "0 to 35",
+      "unit": "PoundsPerSquareInch",
       "calibration": {
         "points": [
           {
@@ -2355,7 +2547,7 @@
           },
           {
             "value": 1,
-            "mappedValue": 1
+            "mappedValue": 35
           }
         ],
         "precision": 5
@@ -2365,14 +2557,14 @@
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Gauges",
       "name": "Oxygen Delivery Gauge",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Oxygen Flow",
       "exports": [
         {
-          "format": "%.5f",
+          "format": "%.2f",
           "id": "33"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
+      "valueDescription": "0 to 1",
       "unit": "Numeric",
       "calibration": {
         "points": [
@@ -2392,15 +2584,15 @@
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Gauges",
       "name": "Oxygen Pressure Gauge",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Remaining Presure in PSI",
       "exports": [
         {
-          "format": "%.5f",
+          "format": "%.3f",
           "id": "34"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
-      "unit": "Numeric",
+      "valueDescription": "0 to 500",
+      "unit": "PoundsPerSquareInch",
       "calibration": {
         "points": [
           {
@@ -2409,7 +2601,7 @@
           },
           {
             "value": 1,
-            "mappedValue": 1
+            "mappedValue": 500
           }
         ],
         "precision": 5
@@ -2419,15 +2611,15 @@
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Gauges",
       "name": "Clock Hours Needle",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Hours Hand",
       "exports": [
         {
-          "format": "%.5f",
+          "format": "%.3f",
           "id": "4"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
-      "unit": "Numeric",
+      "valueDescription": "0 to 12",
+      "unit": "Hours",
       "calibration": {
         "points": [
           {
@@ -2436,7 +2628,7 @@
           },
           {
             "value": 1,
-            "mappedValue": 1
+            "mappedValue": 12
           }
         ],
         "precision": 5
@@ -2446,15 +2638,15 @@
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Gauges",
       "name": "Clock Minutes Needle",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Minutes Hand",
       "exports": [
         {
-          "format": "%.5f",
+          "format": "%.3f",
           "id": "5"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
-      "unit": "Numeric",
+      "valueDescription": "0 to 60",
+      "unit": "Minutes",
       "calibration": {
         "points": [
           {
@@ -2463,7 +2655,7 @@
           },
           {
             "value": 1,
-            "mappedValue": 1
+            "mappedValue": 60
           }
         ],
         "precision": 5
@@ -2473,15 +2665,15 @@
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Gauges",
       "name": "Clock Seconds Needle",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "seconds Hand",
       "exports": [
         {
-          "format": "%.5f",
+          "format": "%.3f",
           "id": "6"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
-      "unit": "Numeric",
+      "valueDescription": "0 to 60",
+      "unit": "Seconds",
       "calibration": {
         "points": [
           {
@@ -2490,7 +2682,7 @@
           },
           {
             "value": 1,
-            "mappedValue": 1
+            "mappedValue": 60
           }
         ],
         "precision": 5
@@ -2500,15 +2692,15 @@
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Gauges",
       "name": "Hydro Pressure Gauge",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Hydraulic Pressure in PSI",
       "exports": [
         {
-          "format": "%.5f",
+          "format": "%.3f",
           "id": "78"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
-      "unit": "Numeric",
+      "valueDescription": "0 to 2000",
+      "unit": "PoundsPerSquareInch",
       "calibration": {
         "points": [
           {
@@ -2517,7 +2709,7 @@
           },
           {
             "value": 1,
-            "mappedValue": 1
+            "mappedValue": 2000
           }
         ],
         "precision": 5
@@ -2527,14 +2719,14 @@
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Gauges",
       "name": "Intercooler Flap Position",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Intercooler Position Marker",
       "exports": [
         {
-          "format": "%.5f",
+          "format": "%.3f",
           "id": "89"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
+      "valueDescription": "General Position Indication",
       "unit": "Numeric",
       "calibration": {
         "points": [
@@ -2554,14 +2746,14 @@
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Gauges",
       "name": "Suction Gauge",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Vaccum",
       "exports": [
         {
-          "format": "%.5f",
+          "format": "%.3f",
           "id": "9"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
+      "valueDescription": "0 to 10",
       "unit": "Numeric",
       "calibration": {
         "points": [
@@ -2571,7 +2763,7 @@
           },
           {
             "value": 1,
-            "mappedValue": 1
+            "mappedValue": 10
           }
         ],
         "precision": 5
@@ -2581,14 +2773,14 @@
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Gauges",
       "name": "Oil Cooler Flap Position",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Oil Cooler Flap Marker",
       "exports": [
         {
-          "format": "%.5f",
+          "format": "%.3f",
           "id": "90"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
+      "valueDescription": "General Position Indication",
       "unit": "Numeric",
       "calibration": {
         "points": [
@@ -2611,7 +2803,7 @@
       "description": "Current value of this potentiometer.",
       "exports": [
         {
-          "format": "%.5f",
+          "format": "%.3f",
           "id": "35"
         }
       ],
@@ -2633,7 +2825,7 @@
       "description": "Current value of this potentiometer.",
       "exports": [
         {
-          "format": "%.5f",
+          "format": "%.3f",
           "id": "36"
         }
       ],
@@ -2695,6 +2887,11 @@
           "argumentValue": "0.0",
           "name": "Position2",
           "actionId": "3032"
+        },
+		{
+          "argumentValue": "-1.0",
+          "name": "Position3",
+          "actionId": "3032"
         }
       ]
     },
@@ -2730,7 +2927,7 @@
       "description": "Current position of this rotary encoder knob.",
       "exports": [
         {
-          "format": "%.5f",
+          "format": "%.3f",
           "id": "13"
         }
       ],
@@ -2779,7 +2976,7 @@
       "description": "Current value of this potentiometer.",
       "exports": [
         {
-          "format": "%.5f",
+          "format": "%.3f",
           "id": "17"
         }
       ],
@@ -2830,13 +3027,13 @@
       "deviceId": "10",
       "positions": [
         {
-          "argumentValue": "1.0",
-          "name": "Position1",
+          "argumentValue": "0.0",
+          "name": "Off",
           "actionId": "3007"
         },
         {
-          "argumentValue": "0.0",
-          "name": "Position2",
+          "argumentValue": "1.0",
+          "name": "On",
           "actionId": "3007"
         }
       ]
@@ -2848,7 +3045,7 @@
       "description": "Current position of this rotary encoder knob.",
       "exports": [
         {
-          "format": "%.5f",
+          "format": "%.3f",
           "id": "22"
         }
       ],
@@ -2946,7 +3143,7 @@
       "description": "Current value of this potentiometer.",
       "exports": [
         {
-          "format": "%.5f",
+          "format": "%.3f",
           "id": "65"
         }
       ],
@@ -3003,7 +3200,7 @@
       "description": "Current position of this rotary encoder knob.",
       "exports": [
         {
-          "format": "%.5f",
+          "format": "%.3f",
           "id": "7"
         }
       ],
@@ -3147,13 +3344,13 @@
       "deviceId": "2",
       "positions": [
         {
-          "argumentValue": "1.0",
-          "name": "Position1",
-          "actionId": "3028"
-        },
-        {
           "argumentValue": "0.0",
           "name": "Position2",
+          "actionId": "3028"
+        },
+		{
+          "argumentValue": "0.8",
+          "name": "Position1",
           "actionId": "3028"
         }
       ]
@@ -3165,7 +3362,7 @@
       "description": "Current value of this potentiometer.",
       "exports": [
         {
-          "format": "%.5f",
+          "format": "%.3f",
           "id": "170"
         }
       ],
@@ -3187,7 +3384,7 @@
       "description": "Current value of this potentiometer.",
       "exports": [
         {
-          "format": "%.5f",
+          "format": "%.3f",
           "id": "194"
         }
       ],
@@ -3209,7 +3406,7 @@
       "description": "Current value of this potentiometer.",
       "exports": [
         {
-          "format": "%.5f",
+          "format": "%.3f",
           "id": "195"
         }
       ],
@@ -3431,7 +3628,7 @@
       "description": "Current value of this potentiometer.",
       "exports": [
         {
-          "format": "%.5f",
+          "format": "%.3f",
           "id": "61"
         }
       ],
@@ -3508,7 +3705,7 @@
       "description": "Current value of this potentiometer.",
       "exports": [
         {
-          "format": "%.5f",
+          "format": "%.3f",
           "id": "130"
         }
       ],
@@ -3556,18 +3753,18 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "153"
+          "id": "150"
         }
       ],
       "deviceId": "2",
       "positions": [
         {
-          "argumentValue": "-1.0",
+          "argumentValue": "1.0",
           "name": "Position1",
           "actionId": "3034"
         },
         {
-          "argumentValue": "1.0",
+          "argumentValue": "-1.0",
           "name": "Position2",
           "actionId": "3034"
         }
@@ -3580,7 +3777,7 @@
       "description": "Current value of this potentiometer.",
       "exports": [
         {
-          "format": "%.5f",
+          "format": "%.3f",
           "id": "166"
         }
       ],
@@ -3689,12 +3886,12 @@
       "deviceId": "2",
       "positions": [
         {
-          "argumentValue": "1.0",
+          "argumentValue": "0.0",
           "name": "Position1",
           "actionId": "3039"
         },
         {
-          "argumentValue": "0.0",
+          "argumentValue": "1.0",
           "name": "Position2",
           "actionId": "3039"
         }
@@ -3804,22 +4001,22 @@
       "deviceId": "3",
       "positions": [
         {
-          "argumentValue": "0.0",
+          "argumentValue": "0.3",
           "name": "Position1",
           "actionId": "3029"
         },
         {
-          "argumentValue": "0.1",
+          "argumentValue": "0.0",
           "name": "Position2",
           "actionId": "3029"
         },
         {
-          "argumentValue": "0.2",
+          "argumentValue": "0.1",
           "name": "Position3",
           "actionId": "3029"
         },
         {
-          "argumentValue": "0.3",
+          "argumentValue": "0.2",
           "name": "Position4",
           "actionId": "3029"
         }
@@ -3839,12 +4036,12 @@
       "deviceId": "23",
       "positions": [
         {
-          "argumentValue": "1.0",
+          "argumentValue": "0.0",
           "name": "Position1",
           "actionId": "3001"
         },
         {
-          "argumentValue": "0.0",
+          "argumentValue": "1.0",
           "name": "Position2",
           "actionId": "3001"
         }
@@ -3864,12 +4061,12 @@
       "deviceId": "23",
       "positions": [
         {
-          "argumentValue": "1.0",
+          "argumentValue": "0.0",
           "name": "Position1",
           "actionId": "3002"
         },
         {
-          "argumentValue": "0.0",
+          "argumentValue": "1.0",
           "name": "Position2",
           "actionId": "3002"
         }
@@ -3889,12 +4086,12 @@
       "deviceId": "23",
       "positions": [
         {
-          "argumentValue": "1.0",
+          "argumentValue": "0.0",
           "name": "Position1",
           "actionId": "3003"
         },
         {
-          "argumentValue": "0.0",
+          "argumentValue": "1.0",
           "name": "Position2",
           "actionId": "3003"
         }
@@ -3914,12 +4111,12 @@
       "deviceId": "23",
       "positions": [
         {
-          "argumentValue": "1.0",
+          "argumentValue": "0.0",
           "name": "Position1",
           "actionId": "3004"
         },
         {
-          "argumentValue": "0.0",
+          "argumentValue": "1.0",
           "name": "Position2",
           "actionId": "3004"
         }
@@ -3939,12 +4136,12 @@
       "deviceId": "23",
       "positions": [
         {
-          "argumentValue": "1.0",
+          "argumentValue": "0.0",
           "name": "Position1",
           "actionId": "3005"
         },
         {
-          "argumentValue": "0.0",
+          "argumentValue": "1.0",
           "name": "Position2",
           "actionId": "3005"
         }
@@ -4068,7 +4265,7 @@
       "description": "Current value of this potentiometer.",
       "exports": [
         {
-          "format": "%.5f",
+          "format": "%.3f",
           "id": "77"
         }
       ],
@@ -4226,6 +4423,33 @@
       ]
     },
     {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Rockets Control Panel",
+      "name": "Rocket Count",
+      "description": "Rocket Drum Number",
+      "exports": [
+        {
+          "format": "%.3f",
+          "id": "223"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": 0.0,
+            "mappedValue": 0.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 24.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Numeric Value between 1 and 24",
+      "unit": "Numeric"
+    },
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Rockets Control Panel",
       "name": "Rockets Release Mode",
@@ -4269,12 +4493,12 @@
       "deviceId": "22",
       "positions": [
         {
-          "argumentValue": "1.0",
+          "argumentValue": "0.0",
           "name": "Position1",
           "actionId": "3004"
         },
         {
-          "argumentValue": "0.0",
+          "argumentValue": "1.0",
           "name": "Position2",
           "actionId": "3004"
         }
@@ -4367,7 +4591,7 @@
       "description": "Current value of this potentiometer.",
       "exports": [
         {
-          "format": "%.5f",
+          "format": "%.3f",
           "id": "168"
         }
       ],
@@ -4397,9 +4621,9 @@
       "buttons": [
         {
           "deviceId": "15",
-          "pushId": "3087",
+          "pushId": "3001",
           "pushValue": "1",
-          "releaseId": "3087",
+          "releaseId": "3001",
           "releaseValue": "0"
         }
       ]
@@ -4419,31 +4643,9 @@
       "buttons": [
         {
           "deviceId": "15",
-          "pushId": "3089",
+          "pushId": "3002",
           "pushValue": "1",
-          "releaseId": "3089",
-          "releaseValue": "0"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.PushButton",
-      "device": "Throttle Quadrant",
-      "name": "NOS Button",
-      "description": "Current state of this button.",
-      "exports": [
-        {
-          "format": "%1d",
-          "isExportedEveryFrame": false,
-          "id": "40"
-        }
-      ],
-      "buttons": [
-        {
-          "deviceId": "3",
-          "pushId": "3001",
-          "pushValue": "1",
-          "releaseId": "3001",
+          "releaseId": "3002",
           "releaseValue": "0"
         }
       ]
@@ -4546,7 +4748,7 @@
       "description": "Current value of this potentiometer.",
       "exports": [
         {
-          "format": "%.5f",
+          "format": "%.3f",
           "id": "46"
         }
       ],
@@ -4568,8 +4770,8 @@
       "description": "Current value of this potentiometer.",
       "exports": [
         {
-          "format": "%.5f",
-          "id": "48"
+          "format": "%.3f",
+          "id": "47"
         }
       ],
       "loop": false,
@@ -4612,7 +4814,7 @@
       "description": "Current value of this potentiometer.",
       "exports": [
         {
-          "format": "%.5f",
+          "format": "%.3f",
           "id": "57"
         }
       ],
@@ -4634,7 +4836,7 @@
       "description": "Current value of this potentiometer.",
       "exports": [
         {
-          "format": "%.5f",
+          "format": "%.3f",
           "id": "58"
         }
       ],
@@ -4656,7 +4858,7 @@
       "description": "Current value of this potentiometer.",
       "exports": [
         {
-          "format": "%.5f",
+          "format": "%.3f",
           "id": "91"
         }
       ],
@@ -4678,7 +4880,7 @@
       "description": "Current value of this potentiometer.",
       "exports": [
         {
-          "format": "%.5f",
+          "format": "%.3f",
           "id": "92"
         }
       ],
@@ -4700,7 +4902,7 @@
       "description": "Current value of this potentiometer.",
       "exports": [
         {
-          "format": "%.5f",
+          "format": "%.3f",
           "id": "93"
         }
       ],

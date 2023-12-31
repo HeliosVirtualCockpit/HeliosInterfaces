@@ -1,7 +1,7 @@
 {
   "source": "DCSFlightPanels",
-  "version": "0x8800",
-  "commit": "42ce6d9d05321c973efee68acad67003b92ffe62",
+  "version": "0x8900",
+  "commit": "1fbfb7b3135b231b6aca0d164e04409be7febb51",
   "type": "DCS",
   "name": "DCS A-29B",
   "module": "A-29B",
@@ -20,17 +20,17 @@
           "id": "761"
         }
       ],
-      "deviceId": "18",
+      "deviceId": "20",
       "positions": [
         {
           "argumentValue": "1.0",
           "name": "Normal",
-          "actionId": "3227"
+          "actionId": "3226"
         },
         {
           "argumentValue": "0.0",
           "name": "Backup",
-          "actionId": "3227"
+          "actionId": "3226"
         }
       ]
     },
@@ -51,7 +51,7 @@
       "argumentMax": 1,
       "actions": {
         "set": {
-          "deviceId": "18",
+          "deviceId": "20",
           "actionId": "3363"
         }
       }
@@ -73,7 +73,7 @@
       "argumentMax": 1,
       "actions": {
         "set": {
-          "deviceId": "18",
+          "deviceId": "20",
           "actionId": "3364"
         }
       }
@@ -95,7 +95,7 @@
       "argumentMax": 1,
       "actions": {
         "set": {
-          "deviceId": "18",
+          "deviceId": "20",
           "actionId": "3365"
         }
       }
@@ -117,7 +117,7 @@
       "argumentMax": 1,
       "actions": {
         "set": {
-          "deviceId": "18",
+          "deviceId": "20",
           "actionId": "3366"
         }
       }
@@ -139,7 +139,7 @@
       "argumentMax": 1,
       "actions": {
         "set": {
-          "deviceId": "18",
+          "deviceId": "20",
           "actionId": "3367"
         }
       }
@@ -161,7 +161,7 @@
       "argumentMax": 1,
       "actions": {
         "set": {
-          "deviceId": "18",
+          "deviceId": "20",
           "actionId": "3368"
         }
       }
@@ -183,7 +183,7 @@
       "argumentMax": 1,
       "actions": {
         "set": {
-          "deviceId": "18",
+          "deviceId": "20",
           "actionId": "3369"
         }
       }
@@ -205,7 +205,7 @@
       "argumentMax": 1,
       "actions": {
         "set": {
-          "deviceId": "18",
+          "deviceId": "20",
           "actionId": "3370"
         }
       }
@@ -227,7 +227,7 @@
       "argumentMax": 1,
       "actions": {
         "set": {
-          "deviceId": "18",
+          "deviceId": "20",
           "actionId": "3371"
         }
       }
@@ -249,7 +249,7 @@
       "argumentMax": 1,
       "actions": {
         "set": {
-          "deviceId": "18",
+          "deviceId": "20",
           "actionId": "3372"
         }
       }
@@ -268,7 +268,7 @@
       ],
       "buttons": [
         {
-          "deviceId": "25",
+          "deviceId": "27",
           "pushId": "3374",
           "pushValue": "1",
           "releaseId": "3374",
@@ -290,7 +290,7 @@
       ],
       "buttons": [
         {
-          "deviceId": "25",
+          "deviceId": "27",
           "pushId": "3375",
           "pushValue": "1",
           "releaseId": "3375",
@@ -312,7 +312,7 @@
       ],
       "buttons": [
         {
-          "deviceId": "25",
+          "deviceId": "27",
           "pushId": "3376",
           "pushValue": "1",
           "releaseId": "3376",
@@ -334,7 +334,7 @@
       ],
       "buttons": [
         {
-          "deviceId": "25",
+          "deviceId": "27",
           "pushId": "3377",
           "pushValue": "1",
           "releaseId": "3377",
@@ -356,7 +356,7 @@
       ],
       "buttons": [
         {
-          "deviceId": "25",
+          "deviceId": "27",
           "pushId": "3378",
           "pushValue": "1",
           "releaseId": "3378",
@@ -378,7 +378,7 @@
       ],
       "buttons": [
         {
-          "deviceId": "25",
+          "deviceId": "27",
           "pushId": "3379",
           "pushValue": "1",
           "releaseId": "3379",
@@ -400,7 +400,7 @@
       ],
       "buttons": [
         {
-          "deviceId": "25",
+          "deviceId": "27",
           "pushId": "3380",
           "pushValue": "1",
           "releaseId": "3380",
@@ -422,7 +422,7 @@
       ],
       "buttons": [
         {
-          "deviceId": "25",
+          "deviceId": "27",
           "pushId": "3381",
           "pushValue": "1",
           "releaseId": "3381",
@@ -482,25 +482,25 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "771"
+          "id": "741"
         }
       ],
-      "deviceId": "17",
+      "deviceId": "20",
       "positions": [
         {
           "argumentValue": "1.0",
           "name": "Position1",
-          "actionId": "3222"
+          "actionId": "3221"
         },
         {
           "argumentValue": "0.0",
           "name": "Position2",
-          "actionId": "3222"
+          "actionId": "3221"
         },
         {
           "argumentValue": "-1.0",
           "name": "Position3",
-          "actionId": "3222"
+          "actionId": "3221"
         }
       ]
     },
@@ -512,25 +512,25 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "772"
+          "id": "742"
         }
       ],
-      "deviceId": "17",
+      "deviceId": "20",
       "positions": [
         {
           "argumentValue": "1.0",
           "name": "Position1",
-          "actionId": "3223"
+          "actionId": "3222"
         },
         {
           "argumentValue": "0.0",
           "name": "Position2",
-          "actionId": "3223"
-        },
-        {
-          "argumentValue": "-1.0",
-          "name": "Position3",
-          "actionId": "3223"
+          "actionId": "3222"
+		  
+		 
+								  
+							  
+							
         }
       ]
     },
@@ -542,31 +542,31 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "773"
+          "id": "743"
         }
       ],
-      "deviceId": "17",
+      "deviceId": "20",
       "positions": [
         {
           "argumentValue": "1.0",
           "name": "Free",
-          "actionId": "3224"
+          "actionId": "3223"
         },
         {
           "argumentValue": "0.0",
           "name": "Slave",
-          "actionId": "3224"
+          "actionId": "3223"
         },
         {
           "argumentValue": "-1.0",
           "name": "Fast Slave",
-          "actionId": "3224"
+          "actionId": "3223"
         }
       ]
     },
     {
       "heliosType": "DCS.Common.Switch",
-      "device": "Avionics",
+      "device": "Electric System",
       "name": "MDP 1 (On/Off)",
       "description": "Current position of this switch.",
       "exports": [
@@ -580,18 +580,18 @@
         {
           "argumentValue": "1.0",
           "name": "On",
-          "actionId": "3195"
+          "actionId": "3194"
         },
         {
           "argumentValue": "0.0",
           "name": "Off",
-          "actionId": "3195"
+          "actionId": "3194"
         }
       ]
     },
     {
       "heliosType": "DCS.Common.Switch",
-      "device": "Avionics",
+      "device": "Electric System",
       "name": "MDP 2 (On/Off)",
       "description": "Current position of this switch.",
       "exports": [
@@ -605,18 +605,18 @@
         {
           "argumentValue": "1.0",
           "name": "On",
-          "actionId": "3196"
+          "actionId": "3195"
         },
         {
           "argumentValue": "0.0",
           "name": "Off",
-          "actionId": "3196"
+          "actionId": "3195"
         }
       ]
     },
     {
       "heliosType": "DCS.Common.Switch",
-      "device": "Avionics",
+      "device": "Electric System",
       "name": "Avionics Master (On/Off)",
       "description": "Current position of this switch.",
       "exports": [
@@ -630,18 +630,18 @@
         {
           "argumentValue": "1.0",
           "name": "On",
-          "actionId": "3197"
+          "actionId": "3196"
         },
         {
           "argumentValue": "0.0",
           "name": "Off",
-          "actionId": "3197"
+          "actionId": "3196"
         }
       ]
     },
     {
       "heliosType": "DCS.Common.Switch",
-      "device": "Avionics",
+      "device": "Electric System",
       "name": "SMS (On/Off)",
       "description": "Current position of this switch.",
       "exports": [
@@ -655,18 +655,18 @@
         {
           "argumentValue": "1.0",
           "name": "On",
-          "actionId": "3198"
+          "actionId": "3197"
         },
         {
           "argumentValue": "0.0",
           "name": "Off",
-          "actionId": "3198"
+          "actionId": "3197"
         }
       ]
     },
     {
       "heliosType": "DCS.Common.Switch",
-      "device": "Avionics",
+      "device": "Electric System",
       "name": "V/UHF (Guard/Normal)",
       "description": "Current position of this switch.",
       "exports": [
@@ -680,12 +680,12 @@
         {
           "argumentValue": "1.0",
           "name": "Guard",
-          "actionId": "3199"
+          "actionId": "3198"
         },
         {
           "argumentValue": "0.0",
           "name": "Normal",
-          "actionId": "3199"
+          "actionId": "3198"
         }
       ]
     },
@@ -705,17 +705,17 @@
         {
           "argumentValue": "1.0",
           "name": "Left",
-          "actionId": "3216"
+          "actionId": "3215"
         },
         {
           "argumentValue": "0.0",
           "name": "Stop",
-          "actionId": "3216"
+          "actionId": "3215"
         },
         {
           "argumentValue": "-1.0",
           "name": "Right",
-          "actionId": "3216"
+          "actionId": "3215"
         }
       ]
     },
@@ -735,17 +735,17 @@
         {
           "argumentValue": "1.0",
           "name": "Down",
-          "actionId": "3217"
+          "actionId": "3216"
         },
         {
           "argumentValue": "0.0",
           "name": "Stop",
-          "actionId": "3217"
+          "actionId": "3216"
         },
         {
           "argumentValue": "-1.0",
           "name": "Up",
-          "actionId": "3217"
+          "actionId": "3216"
         }
       ]
     },
@@ -765,17 +765,17 @@
         {
           "argumentValue": "1.0",
           "name": "Engage",
-          "actionId": "3218"
+          "actionId": "3217"
         },
         {
           "argumentValue": "0.0",
           "name": "Power",
-          "actionId": "3218"
+          "actionId": "3217"
         },
         {
           "argumentValue": "-1.0",
           "name": "Off",
-          "actionId": "3218"
+          "actionId": "3217"
         }
       ]
     },
@@ -794,9 +794,9 @@
       "buttons": [
         {
           "deviceId": "10",
-          "pushId": "3231",
+          "pushId": "3230",
           "pushValue": "1",
-          "releaseId": "3231",
+          "releaseId": "3230",
           "releaseValue": "0"
         }
       ]
@@ -816,9 +816,9 @@
       "buttons": [
         {
           "deviceId": "10",
-          "pushId": "3232",
+          "pushId": "3231",
           "pushValue": "1",
-          "releaseId": "3232",
+          "releaseId": "3231",
           "releaseValue": "0"
         }
       ]
@@ -838,9 +838,9 @@
       "buttons": [
         {
           "deviceId": "10",
-          "pushId": "3233",
+          "pushId": "3232",
           "pushValue": "1",
-          "releaseId": "3233",
+          "releaseId": "3232",
           "releaseValue": "0"
         }
       ]
@@ -860,9 +860,9 @@
       "buttons": [
         {
           "deviceId": "10",
-          "pushId": "3234",
+          "pushId": "3233",
           "pushValue": "1",
-          "releaseId": "3234",
+          "releaseId": "3233",
           "releaseValue": "0"
         }
       ]
@@ -882,9 +882,9 @@
       "buttons": [
         {
           "deviceId": "10",
-          "pushId": "3235",
+          "pushId": "3234",
           "pushValue": "1",
-          "releaseId": "3235",
+          "releaseId": "3234",
           "releaseValue": "0"
         }
       ]
@@ -904,9 +904,9 @@
       "buttons": [
         {
           "deviceId": "10",
-          "pushId": "3236",
+          "pushId": "3235",
           "pushValue": "1",
-          "releaseId": "3236",
+          "releaseId": "3235",
           "releaseValue": "0"
         }
       ]
@@ -926,9 +926,9 @@
       "buttons": [
         {
           "deviceId": "10",
-          "pushId": "3237",
+          "pushId": "3236",
           "pushValue": "1",
-          "releaseId": "3237",
+          "releaseId": "3236",
           "releaseValue": "0"
         }
       ]
@@ -948,9 +948,9 @@
       "buttons": [
         {
           "deviceId": "10",
-          "pushId": "3238",
+          "pushId": "3237",
           "pushValue": "1",
-          "releaseId": "3238",
+          "releaseId": "3237",
           "releaseValue": "0"
         }
       ]
@@ -970,9 +970,9 @@
       "buttons": [
         {
           "deviceId": "10",
-          "pushId": "3239",
+          "pushId": "3238",
           "pushValue": "1",
-          "releaseId": "3239",
+          "releaseId": "3238",
           "releaseValue": "0"
         }
       ]
@@ -992,9 +992,9 @@
       "buttons": [
         {
           "deviceId": "10",
-          "pushId": "3240",
+          "pushId": "3239",
           "pushValue": "1",
-          "releaseId": "3240",
+          "releaseId": "3239",
           "releaseValue": "0"
         }
       ]
@@ -1014,9 +1014,9 @@
       "buttons": [
         {
           "deviceId": "10",
-          "pushId": "3241",
+          "pushId": "3240",
           "pushValue": "1",
-          "releaseId": "3241",
+          "releaseId": "3240",
           "releaseValue": "0"
         }
       ]
@@ -1036,9 +1036,9 @@
       "buttons": [
         {
           "deviceId": "10",
-          "pushId": "3242",
+          "pushId": "3241",
           "pushValue": "1",
-          "releaseId": "3242",
+          "releaseId": "3241",
           "releaseValue": "0"
         }
       ]
@@ -1058,9 +1058,9 @@
       "buttons": [
         {
           "deviceId": "10",
-          "pushId": "3243",
+          "pushId": "3242",
           "pushValue": "1",
-          "releaseId": "3243",
+          "releaseId": "3242",
           "releaseValue": "0"
         }
       ]
@@ -1080,9 +1080,9 @@
       "buttons": [
         {
           "deviceId": "10",
-          "pushId": "3244",
+          "pushId": "3243",
           "pushValue": "1",
-          "releaseId": "3244",
+          "releaseId": "3243",
           "releaseValue": "0"
         }
       ]
@@ -1102,9 +1102,9 @@
       "buttons": [
         {
           "deviceId": "10",
-          "pushId": "3245",
+          "pushId": "3244",
           "pushValue": "1",
-          "releaseId": "3245",
+          "releaseId": "3244",
           "releaseValue": "0"
         }
       ]
@@ -1124,9 +1124,9 @@
       "buttons": [
         {
           "deviceId": "10",
-          "pushId": "3246",
+          "pushId": "3245",
           "pushValue": "1",
-          "releaseId": "3246",
+          "releaseId": "3245",
           "releaseValue": "0"
         }
       ]
@@ -1146,9 +1146,9 @@
       "buttons": [
         {
           "deviceId": "10",
-          "pushId": "3247",
+          "pushId": "3246",
           "pushValue": "1",
-          "releaseId": "3247",
+          "releaseId": "3246",
           "releaseValue": "0"
         }
       ]
@@ -1168,9 +1168,9 @@
       "buttons": [
         {
           "deviceId": "10",
-          "pushId": "3248",
+          "pushId": "3247",
           "pushValue": "1",
-          "releaseId": "3248",
+          "releaseId": "3247",
           "releaseValue": "0"
         }
       ]
@@ -1190,9 +1190,9 @@
       "buttons": [
         {
           "deviceId": "10",
-          "pushId": "3249",
+          "pushId": "3248",
           "pushValue": "1",
-          "releaseId": "3249",
+          "releaseId": "3248",
           "releaseValue": "0"
         }
       ]
@@ -1212,9 +1212,9 @@
       "buttons": [
         {
           "deviceId": "10",
-          "pushId": "3250",
+          "pushId": "3249",
           "pushValue": "1",
-          "releaseId": "3250",
+          "releaseId": "3249",
           "releaseValue": "0"
         }
       ]
@@ -1234,9 +1234,9 @@
       "buttons": [
         {
           "deviceId": "10",
-          "pushId": "3251",
+          "pushId": "3250",
           "pushValue": "1",
-          "releaseId": "3251",
+          "releaseId": "3250",
           "releaseValue": "0"
         }
       ]
@@ -1256,9 +1256,9 @@
       "buttons": [
         {
           "deviceId": "10",
-          "pushId": "3252",
+          "pushId": "3251",
           "pushValue": "1",
-          "releaseId": "3252",
+          "releaseId": "3251",
           "releaseValue": "0"
         }
       ]
@@ -1278,9 +1278,9 @@
       "buttons": [
         {
           "deviceId": "10",
-          "pushId": "3253",
+          "pushId": "3252",
           "pushValue": "1",
-          "releaseId": "3253",
+          "releaseId": "3252",
           "releaseValue": "0"
         }
       ]
@@ -1300,9 +1300,9 @@
       "buttons": [
         {
           "deviceId": "10",
-          "pushId": "3254",
+          "pushId": "3253",
           "pushValue": "1",
-          "releaseId": "3254",
+          "releaseId": "3253",
           "releaseValue": "0"
         }
       ]
@@ -1322,9 +1322,9 @@
       "buttons": [
         {
           "deviceId": "10",
-          "pushId": "3255",
+          "pushId": "3254",
           "pushValue": "1",
-          "releaseId": "3255",
+          "releaseId": "3254",
           "releaseValue": "0"
         }
       ]
@@ -1344,9 +1344,9 @@
       "buttons": [
         {
           "deviceId": "10",
-          "pushId": "3256",
+          "pushId": "3255",
           "pushValue": "1",
-          "releaseId": "3256",
+          "releaseId": "3255",
           "releaseValue": "0"
         }
       ]
@@ -1366,9 +1366,9 @@
       "buttons": [
         {
           "deviceId": "10",
-          "pushId": "3257",
+          "pushId": "3256",
           "pushValue": "1",
-          "releaseId": "3257",
+          "releaseId": "3256",
           "releaseValue": "0"
         }
       ]
@@ -1388,9 +1388,9 @@
       "buttons": [
         {
           "deviceId": "10",
-          "pushId": "3258",
+          "pushId": "3257",
           "pushValue": "1",
-          "releaseId": "3258",
+          "releaseId": "3257",
           "releaseValue": "0"
         }
       ]
@@ -1409,14 +1409,14 @@
       "deviceId": "10",
       "positions": [
         {
-          "argumentValue": "1.0",
+          "argumentValue": "0.0",
           "name": "On",
-          "actionId": "3259"
+          "actionId": "3258"
         },
         {
-          "argumentValue": "0.0",
+          "argumentValue": "1.0",
           "name": "Off",
-          "actionId": "3259"
+          "actionId": "3258"
         }
       ]
     },
@@ -1436,17 +1436,17 @@
         {
           "argumentValue": "1.0",
           "name": "Position1",
-          "actionId": "3260"
+          "actionId": "3259"
         },
         {
           "argumentValue": "0.0",
           "name": "Position2",
-          "actionId": "3260"
+          "actionId": "3259"
         },
         {
           "argumentValue": "-1.0",
           "name": "Position3",
-          "actionId": "3260"
+          "actionId": "3259"
         }
       ]
     },
@@ -1466,17 +1466,17 @@
         {
           "argumentValue": "1.0",
           "name": "Position1",
-          "actionId": "3261"
+          "actionId": "3260"
         },
         {
           "argumentValue": "0.0",
           "name": "Position2",
-          "actionId": "3261"
+          "actionId": "3260"
         },
         {
           "argumentValue": "-1.0",
           "name": "Position3",
-          "actionId": "3261"
+          "actionId": "3260"
         }
       ]
     },
@@ -1496,17 +1496,17 @@
         {
           "argumentValue": "1.0",
           "name": "Position1",
-          "actionId": "3262"
+          "actionId": "3261"
         },
         {
           "argumentValue": "0.0",
           "name": "Position2",
-          "actionId": "3262"
+          "actionId": "3261"
         },
         {
           "argumentValue": "-1.0",
           "name": "Position3",
-          "actionId": "3262"
+          "actionId": "3261"
         }
       ]
     },
@@ -1525,9 +1525,9 @@
       "buttons": [
         {
           "deviceId": "10",
-          "pushId": "3263",
+          "pushId": "3262",
           "pushValue": "1",
-          "releaseId": "3263",
+          "releaseId": "3262",
           "releaseValue": "0"
         }
       ]
@@ -1547,9 +1547,9 @@
       "buttons": [
         {
           "deviceId": "10",
-          "pushId": "3264",
+          "pushId": "3263",
           "pushValue": "1",
-          "releaseId": "3264",
+          "releaseId": "3263",
           "releaseValue": "0"
         }
       ]
@@ -1569,9 +1569,9 @@
       "buttons": [
         {
           "deviceId": "10",
-          "pushId": "3265",
+          "pushId": "3264",
           "pushValue": "1",
-          "releaseId": "3265",
+          "releaseId": "3264",
           "releaseValue": "0"
         }
       ]
@@ -1591,9 +1591,9 @@
       "buttons": [
         {
           "deviceId": "10",
-          "pushId": "3266",
+          "pushId": "3265",
           "pushValue": "1",
-          "releaseId": "3266",
+          "releaseId": "3265",
           "releaseValue": "0"
         }
       ]
@@ -1613,9 +1613,9 @@
       "buttons": [
         {
           "deviceId": "10",
-          "pushId": "3267",
+          "pushId": "3266",
           "pushValue": "1",
-          "releaseId": "3267",
+          "releaseId": "3266",
           "releaseValue": "0"
         }
       ]
@@ -1635,9 +1635,9 @@
       "buttons": [
         {
           "deviceId": "10",
-          "pushId": "3268",
+          "pushId": "3267",
           "pushValue": "1",
-          "releaseId": "3268",
+          "releaseId": "3267",
           "releaseValue": "0"
         }
       ]
@@ -1657,9 +1657,9 @@
       "buttons": [
         {
           "deviceId": "10",
-          "pushId": "3269",
+          "pushId": "3268",
           "pushValue": "1",
-          "releaseId": "3269",
+          "releaseId": "3268",
           "releaseValue": "0"
         }
       ]
@@ -1679,9 +1679,9 @@
       "buttons": [
         {
           "deviceId": "10",
-          "pushId": "3270",
+          "pushId": "3269",
           "pushValue": "1",
-          "releaseId": "3270",
+          "releaseId": "3269",
           "releaseValue": "0"
         }
       ]
@@ -1701,9 +1701,9 @@
       "buttons": [
         {
           "deviceId": "10",
-          "pushId": "3271",
+          "pushId": "3270",
           "pushValue": "1",
-          "releaseId": "3271",
+          "releaseId": "3270",
           "releaseValue": "0"
         }
       ]
@@ -1723,9 +1723,9 @@
       "buttons": [
         {
           "deviceId": "10",
-          "pushId": "3272",
+          "pushId": "3271",
           "pushValue": "1",
-          "releaseId": "3272",
+          "releaseId": "3271",
           "releaseValue": "0"
         }
       ]
@@ -1745,9 +1745,9 @@
       "buttons": [
         {
           "deviceId": "10",
-          "pushId": "3273",
+          "pushId": "3272",
           "pushValue": "1",
-          "releaseId": "3273",
+          "releaseId": "3272",
           "releaseValue": "0"
         }
       ]
@@ -1767,9 +1767,9 @@
       "buttons": [
         {
           "deviceId": "10",
-          "pushId": "3274",
+          "pushId": "3273",
           "pushValue": "1",
-          "releaseId": "3274",
+          "releaseId": "3273",
           "releaseValue": "0"
         }
       ]
@@ -1789,9 +1789,9 @@
       "buttons": [
         {
           "deviceId": "10",
-          "pushId": "3275",
+          "pushId": "3274",
           "pushValue": "1",
-          "releaseId": "3275",
+          "releaseId": "3274",
           "releaseValue": "0"
         }
       ]
@@ -1811,9 +1811,9 @@
       "buttons": [
         {
           "deviceId": "10",
-          "pushId": "3276",
+          "pushId": "3275",
           "pushValue": "1",
-          "releaseId": "3276",
+          "releaseId": "3275",
           "releaseValue": "0"
         }
       ]
@@ -1833,9 +1833,9 @@
       "buttons": [
         {
           "deviceId": "10",
-          "pushId": "3277",
+          "pushId": "3276",
           "pushValue": "1",
-          "releaseId": "3277",
+          "releaseId": "3276",
           "releaseValue": "0"
         }
       ]
@@ -1855,9 +1855,9 @@
       "buttons": [
         {
           "deviceId": "10",
-          "pushId": "3278",
+          "pushId": "3277",
           "pushValue": "1",
-          "releaseId": "3278",
+          "releaseId": "3277",
           "releaseValue": "0"
         }
       ]
@@ -1877,9 +1877,9 @@
       "buttons": [
         {
           "deviceId": "10",
-          "pushId": "3279",
+          "pushId": "3278",
           "pushValue": "1",
-          "releaseId": "3279",
+          "releaseId": "3278",
           "releaseValue": "0"
         }
       ]
@@ -1899,9 +1899,9 @@
       "buttons": [
         {
           "deviceId": "10",
-          "pushId": "3280",
+          "pushId": "3279",
           "pushValue": "1",
-          "releaseId": "3280",
+          "releaseId": "3279",
           "releaseValue": "0"
         }
       ]
@@ -1921,9 +1921,9 @@
       "buttons": [
         {
           "deviceId": "10",
-          "pushId": "3281",
+          "pushId": "3280",
           "pushValue": "1",
-          "releaseId": "3281",
+          "releaseId": "3280",
           "releaseValue": "0"
         }
       ]
@@ -1943,9 +1943,9 @@
       "buttons": [
         {
           "deviceId": "10",
-          "pushId": "3282",
+          "pushId": "3281",
           "pushValue": "1",
-          "releaseId": "3282",
+          "releaseId": "3281",
           "releaseValue": "0"
         }
       ]
@@ -1965,9 +1965,9 @@
       "buttons": [
         {
           "deviceId": "10",
-          "pushId": "3283",
+          "pushId": "3282",
           "pushValue": "1",
-          "releaseId": "3283",
+          "releaseId": "3282",
           "releaseValue": "0"
         }
       ]
@@ -1987,9 +1987,9 @@
       "buttons": [
         {
           "deviceId": "10",
-          "pushId": "3284",
+          "pushId": "3283",
           "pushValue": "1",
-          "releaseId": "3284",
+          "releaseId": "3283",
           "releaseValue": "0"
         }
       ]
@@ -2009,9 +2009,9 @@
       "buttons": [
         {
           "deviceId": "10",
-          "pushId": "3285",
+          "pushId": "3284",
           "pushValue": "1",
-          "releaseId": "3285",
+          "releaseId": "3284",
           "releaseValue": "0"
         }
       ]
@@ -2031,9 +2031,9 @@
       "buttons": [
         {
           "deviceId": "10",
-          "pushId": "3286",
+          "pushId": "3285",
           "pushValue": "1",
-          "releaseId": "3286",
+          "releaseId": "3285",
           "releaseValue": "0"
         }
       ]
@@ -2053,9 +2053,9 @@
       "buttons": [
         {
           "deviceId": "10",
-          "pushId": "3287",
+          "pushId": "3286",
           "pushValue": "1",
-          "releaseId": "3287",
+          "releaseId": "3286",
           "releaseValue": "0"
         }
       ]
@@ -2075,9 +2075,9 @@
       "buttons": [
         {
           "deviceId": "10",
-          "pushId": "3288",
+          "pushId": "3287",
           "pushValue": "1",
-          "releaseId": "3288",
+          "releaseId": "3287",
           "releaseValue": "0"
         }
       ]
@@ -2097,9 +2097,9 @@
       "buttons": [
         {
           "deviceId": "10",
-          "pushId": "3289",
+          "pushId": "3288",
           "pushValue": "1",
-          "releaseId": "3289",
+          "releaseId": "3288",
           "releaseValue": "0"
         }
       ]
@@ -2119,9 +2119,9 @@
       "buttons": [
         {
           "deviceId": "10",
-          "pushId": "3290",
+          "pushId": "3289",
           "pushValue": "1",
-          "releaseId": "3290",
+          "releaseId": "3289",
           "releaseValue": "0"
         }
       ]
@@ -2140,14 +2140,14 @@
       "deviceId": "10",
       "positions": [
         {
-          "argumentValue": "1.0",
+          "argumentValue": "0.0",
           "name": "On",
-          "actionId": "3291"
+          "actionId": "3290"
         },
         {
-          "argumentValue": "0.0",
+          "argumentValue": "1.0",
           "name": "Off",
-          "actionId": "3291"
+          "actionId": "3290"
         }
       ]
     },
@@ -2167,17 +2167,17 @@
         {
           "argumentValue": "1.0",
           "name": "Position1",
-          "actionId": "3292"
+          "actionId": "3291"
         },
         {
           "argumentValue": "0.0",
           "name": "Position2",
-          "actionId": "3292"
+          "actionId": "3291"
         },
         {
           "argumentValue": "-1.0",
           "name": "Position3",
-          "actionId": "3292"
+          "actionId": "3291"
         }
       ]
     },
@@ -2197,17 +2197,17 @@
         {
           "argumentValue": "1.0",
           "name": "Position1",
-          "actionId": "3293"
+          "actionId": "3292"
         },
         {
           "argumentValue": "0.0",
           "name": "Position2",
-          "actionId": "3293"
+          "actionId": "3292"
         },
         {
           "argumentValue": "-1.0",
           "name": "Position3",
-          "actionId": "3293"
+          "actionId": "3292"
         }
       ]
     },
@@ -2227,17 +2227,17 @@
         {
           "argumentValue": "1.0",
           "name": "Position1",
-          "actionId": "3294"
+          "actionId": "3293"
         },
         {
           "argumentValue": "0.0",
           "name": "Position2",
-          "actionId": "3294"
+          "actionId": "3293"
         },
         {
           "argumentValue": "-1.0",
           "name": "Position3",
-          "actionId": "3294"
+          "actionId": "3293"
         }
       ]
     },
@@ -2256,9 +2256,9 @@
       "buttons": [
         {
           "deviceId": "17",
-          "pushId": "3295",
+          "pushId": "3294",
           "pushValue": "1",
-          "releaseId": "3295",
+          "releaseId": "3294",
           "releaseValue": "0"
         }
       ]
@@ -2278,9 +2278,9 @@
       "buttons": [
         {
           "deviceId": "17",
-          "pushId": "3296",
+          "pushId": "3295",
           "pushValue": "1",
-          "releaseId": "3296",
+          "releaseId": "3295",
           "releaseValue": "0"
         }
       ]
@@ -2321,7 +2321,7 @@
           "id": "1625"
         }
       ],
-      "deviceId": "1",
+      "deviceId": "18",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -2349,19 +2349,19 @@
       "deviceId": "9",
       "positions": [
         {
-          "argumentValue": "1.0",
+          "argumentValue": "-1.0",
           "name": "Position1",
-          "actionId": "3221"
+          "actionId": "3220"
         },
         {
           "argumentValue": "0.0",
           "name": "Position2",
-          "actionId": "3221"
+          "actionId": "3220"
         },
         {
-          "argumentValue": "-1.0",
+          "argumentValue": "1.0",
           "name": "Position3",
-          "actionId": "3221"
+          "actionId": "3220"
         }
       ]
     },
@@ -2379,10 +2379,10 @@
       ],
       "buttons": [
         {
-          "deviceId": "17",
+          "deviceId": "20",
           "pushId": "3215",
           "pushValue": "1",
-          "releaseId": "3215",
+          "releaseId": "3214",
           "releaseValue": "0"
         }
       ]
@@ -2398,22 +2398,22 @@
           "id": "881"
         }
       ],
-      "deviceId": "17",
+      "deviceId": "20",
       "positions": [
         {
           "argumentValue": "1.0",
           "name": "Close",
-          "actionId": "3213"
+          "actionId": "3212"
         },
         {
           "argumentValue": "0.0",
           "name": "Off",
-          "actionId": "3213"
+          "actionId": "3212"
         },
         {
           "argumentValue": "-1.0",
           "name": "Normal",
-          "actionId": "3213"
+          "actionId": "3212"
         }
       ]
     },
@@ -2428,22 +2428,22 @@
           "id": "891"
         }
       ],
-      "deviceId": "17",
+      "deviceId": "20",
       "positions": [
         {
           "argumentValue": "1.0",
           "name": "Up",
-          "actionId": "3212"
+          "actionId": "3211"
         },
         {
           "argumentValue": "0.0",
           "name": "Stop",
-          "actionId": "3212"
+          "actionId": "3211"
         },
         {
           "argumentValue": "-1.0",
           "name": "Down",
-          "actionId": "3212"
+          "actionId": "3211"
         }
       ]
     },
@@ -2477,6 +2477,35 @@
         }
       ]
     },
+	
+	{
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Engine",
+      "name": "Throttle Indicator",
+      "description": "TODO: assign units, set calibration points, and write description",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "2008"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": -1,
+            "mappedValue": -1
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 4
+      }
+    },
+	
     {
       "heliosType": "DCS.Common.Switch",
       "device": "Cockpit Mechanics",
@@ -2488,17 +2517,17 @@
           "id": "912"
         }
       ],
-      "deviceId": "16",
+      "deviceId": "19",
       "positions": [
         {
           "argumentValue": "1.0",
           "name": "Up",
-          "actionId": "3015"
+          "actionId": "3014"
         },
         {
-          "argumentValue": "0.0",
+          "argumentValue": "-1.0",
           "name": "Down",
-          "actionId": "3015"
+          "actionId": "3014"
         }
       ]
     },
@@ -2519,7 +2548,7 @@
       "argumentMax": 1,
       "actions": {
         "set": {
-          "deviceId": "17",
+          "deviceId": "20",
           "actionId": "3220"
         }
       }
@@ -2540,17 +2569,17 @@
         {
           "argumentValue": "1.0",
           "name": "Reset",
-          "actionId": "3178"
+          "actionId": "3177"
         },
         {
           "argumentValue": "0.0",
           "name": "On",
-          "actionId": "3178"
+          "actionId": "3177"
         },
         {
           "argumentValue": "-1.0",
           "name": "Off",
-          "actionId": "3178"
+          "actionId": "3177"
         }
       ]
     },
@@ -2570,12 +2599,12 @@
         {
           "argumentValue": "1.0",
           "name": "On",
-          "actionId": "3179"
+          "actionId": "3178"
         },
         {
           "argumentValue": "0.0",
           "name": "Off-Reset",
-          "actionId": "3179"
+          "actionId": "3178"
         }
       ]
     },
@@ -2595,12 +2624,12 @@
         {
           "argumentValue": "1.0",
           "name": "ON",
-          "actionId": "3181"
+          "actionId": "3180"
         },
         {
           "argumentValue": "0.0",
           "name": "Off",
-          "actionId": "3181"
+          "actionId": "3180"
         }
       ]
     },
@@ -2620,12 +2649,12 @@
         {
           "argumentValue": "1.0",
           "name": "Auto",
-          "actionId": "3182"
+          "actionId": "3181"
         },
         {
           "argumentValue": "0.0",
           "name": "Off",
-          "actionId": "3182"
+          "actionId": "3181"
         }
       ]
     },
@@ -2645,17 +2674,17 @@
         {
           "argumentValue": "1.0",
           "name": "Emergency",
-          "actionId": "3183"
+          "actionId": "3182"
         },
         {
           "argumentValue": "0.0",
           "name": "Auto",
-          "actionId": "3183"
+          "actionId": "3182"
         },
         {
           "argumentValue": "-1.0",
           "name": "Auto",
-          "actionId": "3183"
+          "actionId": "3182"
         }
       ]
     },
@@ -2675,17 +2704,17 @@
         {
           "argumentValue": "1.0",
           "name": "On",
-          "actionId": "3184"
+          "actionId": "3183"
         },
         {
           "argumentValue": "0.0",
           "name": "Off",
-          "actionId": "3184"
+          "actionId": "3183"
         },
         {
           "argumentValue": "-1.0",
           "name": "Off",
-          "actionId": "3184"
+          "actionId": "3183"
         }
       ]
     },
@@ -2705,17 +2734,17 @@
         {
           "argumentValue": "1.0",
           "name": "Open",
-          "actionId": "3214"
+          "actionId": "3213"
         },
         {
           "argumentValue": "0.0",
           "name": "Close",
-          "actionId": "3214"
+          "actionId": "3213"
         },
         {
           "argumentValue": "-1.0",
           "name": "Close",
-          "actionId": "3214"
+          "actionId": "3213"
         }
       ]
     },
@@ -2735,12 +2764,12 @@
         {
           "argumentValue": "1.0",
           "name": "Auto",
-          "actionId": "3167"
+          "actionId": "3166"
         },
         {
           "argumentValue": "0.0",
           "name": "Manual",
-          "actionId": "3167"
+          "actionId": "3166"
         }
       ]
     },
@@ -2760,17 +2789,17 @@
         {
           "argumentValue": "1.0",
           "name": "On",
-          "actionId": "3168"
+          "actionId": "3167"
         },
         {
           "argumentValue": "0.0",
           "name": "Auto",
-          "actionId": "3168"
+          "actionId": "3167"
         },
         {
           "argumentValue": "-1.0",
           "name": "Off",
-          "actionId": "3168"
+          "actionId": "3167"
         }
       ]
     },
@@ -2790,17 +2819,17 @@
         {
           "argumentValue": "1.0",
           "name": "Start",
-          "actionId": "3166"
+          "actionId": "3165"
         },
         {
           "argumentValue": "0.0",
           "name": "No Function",
-          "actionId": "3166"
+          "actionId": "3165"
         },
         {
           "argumentValue": "-1.0",
           "name": "Interrupt",
-          "actionId": "3166"
+          "actionId": "3165"
         }
       ]
     },
@@ -2820,12 +2849,12 @@
         {
           "argumentValue": "1.0",
           "name": "Open",
-          "actionId": "3169"
+          "actionId": "3168"
         },
         {
           "argumentValue": "0.0",
           "name": "Close",
-          "actionId": "3169"
+          "actionId": "3168"
         }
       ]
     },
@@ -2847,7 +2876,7 @@
       "actions": {
         "set": {
           "deviceId": "7",
-          "actionId": "3200"
+          "actionId": "3199"
         }
       }
     },
@@ -2867,12 +2896,12 @@
         {
           "argumentValue": "1.0",
           "name": "On",
-          "actionId": "3201"
+          "actionId": "3200"
         },
         {
           "argumentValue": "0.0",
           "name": "Off",
-          "actionId": "3201"
+          "actionId": "3200"
         }
       ]
     },
@@ -2892,12 +2921,12 @@
         {
           "argumentValue": "1.0",
           "name": "Auto",
-          "actionId": "3202"
+          "actionId": "3201"
         },
         {
           "argumentValue": "0.0",
           "name": "Manual",
-          "actionId": "3202"
+          "actionId": "3201"
         }
       ]
     },
@@ -2917,12 +2946,12 @@
         {
           "argumentValue": "1.0",
           "name": "On",
-          "actionId": "3203"
+          "actionId": "3202"
         },
         {
           "argumentValue": "0.0",
           "name": "Off",
-          "actionId": "3203"
+          "actionId": "3202"
         }
       ]
     },
@@ -3020,12 +3049,12 @@
         {
           "argumentValue": "1.0",
           "name": "On",
-          "actionId": "3170"
+          "actionId": "3169"
         },
         {
           "argumentValue": "0.0",
           "name": "Off",
-          "actionId": "3170"
+          "actionId": "3169"
         }
       ]
     },
@@ -3045,12 +3074,12 @@
         {
           "argumentValue": "1.0",
           "name": "On",
-          "actionId": "3171"
+          "actionId": "3170"
         },
         {
           "argumentValue": "0.0",
           "name": "Off",
-          "actionId": "3171"
+          "actionId": "3170"
         }
       ]
     },
@@ -3070,12 +3099,12 @@
         {
           "argumentValue": "1.0",
           "name": "On",
-          "actionId": "3172"
+          "actionId": "3171"
         },
         {
           "argumentValue": "0.0",
           "name": "Off",
-          "actionId": "3172"
+          "actionId": "3171"
         }
       ]
     },
@@ -3095,12 +3124,12 @@
         {
           "argumentValue": "1.0",
           "name": "On",
-          "actionId": "3173"
+          "actionId": "3172"
         },
         {
           "argumentValue": "0.0",
           "name": "Off",
-          "actionId": "3173"
+          "actionId": "3172"
         }
       ]
     },
@@ -3120,17 +3149,17 @@
         {
           "argumentValue": "1.0",
           "name": "Brt",
-          "actionId": "3174"
+          "actionId": "3173"
         },
         {
           "argumentValue": "0.0",
           "name": "Dim",
-          "actionId": "3174"
+          "actionId": "3173"
         },
         {
           "argumentValue": "-1.0",
           "name": "Off",
-          "actionId": "3174"
+          "actionId": "3173"
         }
       ]
     },
@@ -3150,12 +3179,12 @@
         {
           "argumentValue": "1.0",
           "name": "On",
-          "actionId": "3175"
+          "actionId": "3174"
         },
         {
           "argumentValue": "0.0",
           "name": "Off",
-          "actionId": "3175"
+          "actionId": "3174"
         }
       ]
     },
@@ -3175,17 +3204,17 @@
         {
           "argumentValue": "1.0",
           "name": "On",
-          "actionId": "3176"
+          "actionId": "3175"
         },
         {
           "argumentValue": "0.0",
           "name": "Auto",
-          "actionId": "3176"
+          "actionId": "3175"
         },
         {
           "argumentValue": "-1.0",
           "name": "Off",
-          "actionId": "3176"
+          "actionId": "3175"
         }
       ]
     },
@@ -3205,12 +3234,12 @@
         {
           "argumentValue": "1.0",
           "name": "On",
-          "actionId": "3177"
+          "actionId": "3176"
         },
         {
           "argumentValue": "0.0",
           "name": "Off",
-          "actionId": "3177"
+          "actionId": "3176"
         }
       ]
     },
@@ -3229,11 +3258,11 @@
       "argumentValue": 0.025,
       "actions": {
         "increment": {
-          "deviceId": "17",
+          "deviceId": "20",
           "actionId": "3230"
         },
         "decrement": {
-          "deviceId": "17",
+          "deviceId": "20",
           "actionId": "3230"
         }
       }
@@ -3252,7 +3281,7 @@
       ],
       "buttons": [
         {
-          "deviceId": "17",
+          "deviceId": "20",
           "pushId": "3229",
           "pushValue": "1",
           "releaseId": "3229",
@@ -3274,10 +3303,10 @@
       ],
       "buttons": [
         {
-          "deviceId": "17",
-          "pushId": "3228",
+          "deviceId": "20",
+          "pushId": "3227",
           "pushValue": "1",
-          "releaseId": "3228",
+          "releaseId": "3227",
           "releaseValue": "0"
         }
       ]
@@ -3296,10 +3325,10 @@
       ],
       "buttons": [
         {
-          "deviceId": "17",
-          "pushId": "3020",
+          "deviceId": "20",
+          "pushId": "3019",
           "pushValue": "1",
-          "releaseId": "3020",
+          "releaseId": "3019",
           "releaseValue": "0"
         }
       ]
@@ -3319,12 +3348,12 @@
       "argumentValue": 0.025,
       "actions": {
         "increment": {
-          "deviceId": "17",
-          "actionId": "3019"
+          "deviceId": "20",
+          "actionId": "3018"
         },
         "decrement": {
-          "deviceId": "17",
-          "actionId": "3019"
+          "deviceId": "20",
+          "actionId": "3018"
         }
       }
     },
@@ -3342,14 +3371,14 @@
       "deviceId": "3",
       "positions": [
         {
-          "argumentValue": "1.0",
+          "argumentValue": "0.0",
           "name": "Auto",
-          "actionId": "3209"
+          "actionId": "3208"
         },
         {
-          "argumentValue": "0.0",
+          "argumentValue": "1.0",
           "name": "Off",
-          "actionId": "3209"
+          "actionId": "3208"
         }
       ]
     },
@@ -3369,27 +3398,27 @@
         {
           "argumentValue": "0.0",
           "name": "Position1",
-          "actionId": "3210"
+          "actionId": "3209"
         },
         {
           "argumentValue": "0.3",
           "name": "Position2",
-          "actionId": "3210"
+          "actionId": "3209"
         },
         {
           "argumentValue": "0.5",
           "name": "Position3",
-          "actionId": "3210"
-        },
-        {
-          "argumentValue": "0.8",
-          "name": "Position4",
-          "actionId": "3210"
+          "actionId": "3209"
+		  
+		 
+								 
+							  
+							
         },
         {
           "argumentValue": "1.0",
-          "name": "Position5",
-          "actionId": "3210"
+          "name": "Position4",
+          "actionId": "3209"
         }
       ]
     },
@@ -3404,22 +3433,22 @@
           "id": "803"
         }
       ],
-      "deviceId": "20",
+      "deviceId": "3",
       "positions": [
         {
           "argumentValue": "1.0",
           "name": "U-Wing",
-          "actionId": "3211"
+          "actionId": "3210"
         },
         {
           "argumentValue": "0.0",
           "name": "Ventral-Auto",
-          "actionId": "3211"
+          "actionId": "3210"
         },
         {
           "argumentValue": "-1.0",
           "name": "Off",
-          "actionId": "3211"
+          "actionId": "3210"
         }
       ]
     },
@@ -3574,12 +3603,12 @@
         {
           "argumentValue": "-1.0",
           "name": "Up",
-          "actionId": "3205"
+          "actionId": "3204"
         },
         {
           "argumentValue": "1.0",
           "name": "Down",
-          "actionId": "3205"
+          "actionId": "3204"
         }
       ]
     },
@@ -3598,9 +3627,9 @@
       "buttons": [
         {
           "deviceId": "8",
-          "pushId": "3206",
+          "pushId": "3205",
           "pushValue": "1",
-          "releaseId": "3206",
+          "releaseId": "3205",
           "releaseValue": "0"
         }
       ]
@@ -3620,9 +3649,9 @@
       "buttons": [
         {
           "deviceId": "8",
-          "pushId": "3207",
+          "pushId": "3206",
           "pushValue": "1",
-          "releaseId": "3207",
+          "releaseId": "3206",
           "releaseValue": "0"
         }
       ]
@@ -3641,14 +3670,14 @@
       "deviceId": "8",
       "positions": [
         {
-          "argumentValue": "1.0",
+          "argumentValue": "0.0",
           "name": "Down",
-          "actionId": "3208"
+          "actionId": "3207"
         },
         {
-          "argumentValue": "0.0",
+          "argumentValue": "1.0",
           "name": "Normal",
-          "actionId": "3208"
+          "actionId": "3207"
         }
       ]
     },
@@ -3668,12 +3697,12 @@
         {
           "argumentValue": "1.0",
           "name": "On",
-          "actionId": "3185"
+          "actionId": "3184"
         },
         {
           "argumentValue": "0.0",
           "name": "Off",
-          "actionId": "3185"
+          "actionId": "3184"
         }
       ]
     },
@@ -3693,17 +3722,17 @@
         {
           "argumentValue": "1.0",
           "name": "Start",
-          "actionId": "3186"
+          "actionId": "3185"
         },
         {
           "argumentValue": "0.0",
           "name": "Set",
-          "actionId": "3186"
+          "actionId": "3185"
         },
         {
           "argumentValue": "-1.0",
           "name": "Off",
-          "actionId": "3186"
+          "actionId": "3185"
         }
       ]
     },
@@ -3723,12 +3752,12 @@
         {
           "argumentValue": "1.0",
           "name": "On",
-          "actionId": "3187"
+          "actionId": "3186"
         },
         {
           "argumentValue": "0.0",
           "name": "Off",
-          "actionId": "3187"
+          "actionId": "3186"
         }
       ]
     },
@@ -3748,12 +3777,12 @@
         {
           "argumentValue": "1.0",
           "name": "On",
-          "actionId": "3188"
+          "actionId": "3187"
         },
         {
           "argumentValue": "0.0",
           "name": "Off",
-          "actionId": "3188"
+          "actionId": "3187"
         }
       ]
     },
@@ -3775,7 +3804,7 @@
       "actions": {
         "set": {
           "deviceId": "5",
-          "actionId": "3189"
+          "actionId": "3188"
         }
       }
     },
@@ -3795,12 +3824,12 @@
         {
           "argumentValue": "1.0",
           "name": "On",
-          "actionId": "3190"
+          "actionId": "3189"
         },
         {
           "argumentValue": "0.0",
           "name": "Off",
-          "actionId": "3190"
+          "actionId": "3189"
         }
       ]
     },
@@ -3822,7 +3851,7 @@
       "actions": {
         "set": {
           "deviceId": "5",
-          "actionId": "3191"
+          "actionId": "3190"
         }
       }
     },
@@ -3842,17 +3871,17 @@
         {
           "argumentValue": "1.0",
           "name": "Position1",
-          "actionId": "3192"
+          "actionId": "3191"
         },
         {
           "argumentValue": "0.0",
           "name": "Position2",
-          "actionId": "3192"
+          "actionId": "3191"
         },
         {
           "argumentValue": "-1.0",
-          "name": "Position3",
-          "actionId": "3192"
+          "name": "Position0",
+          "actionId": "3191"
         }
       ]
     },
@@ -3874,7 +3903,7 @@
       "actions": {
         "set": {
           "deviceId": "5",
-          "actionId": "3193"
+          "actionId": "3192"
         }
       }
     },
@@ -3894,12 +3923,12 @@
         {
           "argumentValue": "1.0",
           "name": "NVG",
-          "actionId": "3194"
+          "actionId": "3193"
         },
         {
           "argumentValue": "0.0",
           "name": "Norm",
-          "actionId": "3194"
+          "actionId": "3193"
         }
       ]
     },
@@ -3917,10 +3946,10 @@
       ],
       "buttons": [
         {
-          "deviceId": "20",
-          "pushId": "3297",
+          "deviceId": "23",
+          "pushId": "3296",
           "pushValue": "1",
-          "releaseId": "3297",
+          "releaseId": "3296",
           "releaseValue": "0"
         }
       ]
@@ -3939,10 +3968,10 @@
       ],
       "buttons": [
         {
-          "deviceId": "20",
-          "pushId": "3298",
+          "deviceId": "23",
+          "pushId": "3297",
           "pushValue": "1",
-          "releaseId": "3298",
+          "releaseId": "3297",
           "releaseValue": "0"
         }
       ]
@@ -3961,10 +3990,10 @@
       ],
       "buttons": [
         {
-          "deviceId": "20",
-          "pushId": "3300",
+          "deviceId": "23",
+          "pushId": "3299",
           "pushValue": "1",
-          "releaseId": "3300",
+          "releaseId": "3299",
           "releaseValue": "0"
         }
       ]
@@ -3983,10 +4012,10 @@
       ],
       "buttons": [
         {
-          "deviceId": "20",
-          "pushId": "3301",
+          "deviceId": "23",
+          "pushId": "3300",
           "pushValue": "1",
-          "releaseId": "3301",
+          "releaseId": "3300",
           "releaseValue": "0"
         }
       ]
@@ -4005,10 +4034,10 @@
       ],
       "buttons": [
         {
-          "deviceId": "20",
-          "pushId": "3302",
+          "deviceId": "23",
+          "pushId": "3301",
           "pushValue": "1",
-          "releaseId": "3302",
+          "releaseId": "3301",
           "releaseValue": "0"
         }
       ]
@@ -4027,10 +4056,10 @@
       ],
       "buttons": [
         {
-          "deviceId": "20",
-          "pushId": "3303",
+          "deviceId": "23",
+          "pushId": "3302",
           "pushValue": "1",
-          "releaseId": "3303",
+          "releaseId": "3302",
           "releaseValue": "0"
         }
       ]
@@ -4049,10 +4078,10 @@
       ],
       "buttons": [
         {
-          "deviceId": "20",
-          "pushId": "3304",
+          "deviceId": "23",
+          "pushId": "3303",
           "pushValue": "1",
-          "releaseId": "3304",
+          "releaseId": "3303",
           "releaseValue": "0"
         }
       ]
@@ -4071,10 +4100,10 @@
       ],
       "buttons": [
         {
-          "deviceId": "20",
-          "pushId": "3305",
+          "deviceId": "23",
+          "pushId": "3304",
           "pushValue": "1",
-          "releaseId": "3305",
+          "releaseId": "3304",
           "releaseValue": "0"
         }
       ]
@@ -4093,10 +4122,10 @@
       ],
       "buttons": [
         {
-          "deviceId": "20",
-          "pushId": "3306",
+          "deviceId": "23",
+          "pushId": "3305",
           "pushValue": "1",
-          "releaseId": "3306",
+          "releaseId": "3305",
           "releaseValue": "0"
         }
       ]
@@ -4115,10 +4144,10 @@
       ],
       "buttons": [
         {
-          "deviceId": "20",
-          "pushId": "3307",
+          "deviceId": "23",
+          "pushId": "3306",
           "pushValue": "1",
-          "releaseId": "3307",
+          "releaseId": "3306",
           "releaseValue": "0"
         }
       ]
@@ -4137,10 +4166,10 @@
       ],
       "buttons": [
         {
-          "deviceId": "20",
-          "pushId": "3308",
+          "deviceId": "23",
+          "pushId": "3307",
           "pushValue": "1",
-          "releaseId": "3308",
+          "releaseId": "3307",
           "releaseValue": "0"
         }
       ]
@@ -4159,10 +4188,10 @@
       ],
       "buttons": [
         {
-          "deviceId": "20",
-          "pushId": "3309",
+          "deviceId": "23",
+          "pushId": "3308",
           "pushValue": "1",
-          "releaseId": "3309",
+          "releaseId": "3308",
           "releaseValue": "0"
         }
       ]
@@ -4181,10 +4210,10 @@
       ],
       "buttons": [
         {
-          "deviceId": "20",
-          "pushId": "3310",
+          "deviceId": "23",
+          "pushId": "3309",
           "pushValue": "1",
-          "releaseId": "3310",
+          "releaseId": "3309",
           "releaseValue": "0"
         }
       ]
@@ -4203,10 +4232,10 @@
       ],
       "buttons": [
         {
-          "deviceId": "20",
-          "pushId": "3311",
+          "deviceId": "23",
+          "pushId": "3310",
           "pushValue": "1",
-          "releaseId": "3311",
+          "releaseId": "3310",
           "releaseValue": "0"
         }
       ]
@@ -4225,10 +4254,10 @@
       ],
       "buttons": [
         {
-          "deviceId": "20",
-          "pushId": "3312",
+          "deviceId": "23",
+          "pushId": "3311",
           "pushValue": "1",
-          "releaseId": "3312",
+          "releaseId": "3311",
           "releaseValue": "0"
         }
       ]
@@ -4247,10 +4276,10 @@
       ],
       "buttons": [
         {
-          "deviceId": "20",
-          "pushId": "3313",
+          "deviceId": "23",
+          "pushId": "3312",
           "pushValue": "1",
-          "releaseId": "3313",
+          "releaseId": "3312",
           "releaseValue": "0"
         }
       ]
@@ -4269,10 +4298,10 @@
       ],
       "buttons": [
         {
-          "deviceId": "20",
-          "pushId": "3314",
+          "deviceId": "23",
+          "pushId": "3313",
           "pushValue": "1",
-          "releaseId": "3314",
+          "releaseId": "3313",
           "releaseValue": "0"
         }
       ]
@@ -4291,10 +4320,10 @@
       ],
       "buttons": [
         {
-          "deviceId": "20",
-          "pushId": "3315",
+          "deviceId": "23",
+          "pushId": "3314",
           "pushValue": "1",
-          "releaseId": "3315",
+          "releaseId": "3314",
           "releaseValue": "0"
         }
       ]
@@ -4313,10 +4342,10 @@
       ],
       "buttons": [
         {
-          "deviceId": "20",
-          "pushId": "3318",
+          "deviceId": "23",
+          "pushId": "3317",
           "pushValue": "1",
-          "releaseId": "3318",
+          "releaseId": "3317",
           "releaseValue": "0"
         }
       ]
@@ -4335,10 +4364,10 @@
       ],
       "buttons": [
         {
-          "deviceId": "20",
-          "pushId": "3319",
+          "deviceId": "23",
+          "pushId": "3318",
           "pushValue": "1",
-          "releaseId": "3319",
+          "releaseId": "3318",
           "releaseValue": "0"
         }
       ]
@@ -4357,10 +4386,10 @@
       ],
       "buttons": [
         {
-          "deviceId": "20",
-          "pushId": "3320",
+          "deviceId": "23",
+          "pushId": "3319",
           "pushValue": "1",
-          "releaseId": "3320",
+          "releaseId": "3319",
           "releaseValue": "0"
         }
       ]
@@ -4379,10 +4408,10 @@
       ],
       "buttons": [
         {
-          "deviceId": "20",
-          "pushId": "3321",
+          "deviceId": "23",
+          "pushId": "3320",
           "pushValue": "1",
-          "releaseId": "3321",
+          "releaseId": "3320",
           "releaseValue": "0"
         }
       ]
@@ -4401,10 +4430,10 @@
       ],
       "buttons": [
         {
-          "deviceId": "20",
-          "pushId": "3322",
+          "deviceId": "23",
+          "pushId": "3321",
           "pushValue": "1",
-          "releaseId": "3322",
+          "releaseId": "3321",
           "releaseValue": "0"
         }
       ]
@@ -4423,10 +4452,10 @@
       ],
       "buttons": [
         {
-          "deviceId": "20",
-          "pushId": "3316",
+          "deviceId": "23",
+          "pushId": "3315",
           "pushValue": "1",
-          "releaseId": "3316",
+          "releaseId": "3315",
           "releaseValue": "0"
         }
       ]
@@ -4445,10 +4474,10 @@
       ],
       "buttons": [
         {
-          "deviceId": "20",
-          "pushId": "3317",
+          "deviceId": "23",
+          "pushId": "3316",
           "pushValue": "1",
-          "releaseId": "3317",
+          "releaseId": "3316",
           "releaseValue": "0"
         }
       ]
@@ -4464,22 +4493,22 @@
           "id": "476"
         }
       ],
-      "deviceId": "20",
+      "deviceId": "23",
       "positions": [
         {
           "argumentValue": "1.0",
           "name": "Day",
-          "actionId": "3323"
+          "actionId": "3322"
         },
         {
           "argumentValue": "0.0",
           "name": "Night",
-          "actionId": "3323"
+          "actionId": "3322"
         },
         {
           "argumentValue": "-1.0",
           "name": "Auto",
-          "actionId": "3323"
+          "actionId": "3322"
         }
       ]
     },
@@ -4494,22 +4523,22 @@
           "id": "478"
         }
       ],
-      "deviceId": "20",
+      "deviceId": "23",
       "positions": [
         {
           "argumentValue": "1.0",
           "name": "Rec",
-          "actionId": "3325"
+          "actionId": "3324"
         },
         {
           "argumentValue": "0.0",
           "name": "Standby",
-          "actionId": "3325"
+          "actionId": "3324"
         },
         {
           "argumentValue": "-1.0",
           "name": "Off",
-          "actionId": "3325"
+          "actionId": "3324"
         }
       ]
     },
@@ -4521,20 +4550,20 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "478"
+          "id": "477"
         }
       ],
-      "deviceId": "20",
+      "deviceId": "23",
       "positions": [
         {
           "argumentValue": "1.0",
           "name": "Transmit",
-          "actionId": "3324"
+          "actionId": "3323"
         },
         {
-          "argumentValue": "0.0",
+          "argumentValue": "-1.0",
           "name": "Off",
-          "actionId": "3324"
+          "actionId": "3323"
         }
       ]
     },
@@ -4549,32 +4578,32 @@
           "id": "479"
         }
       ],
-      "deviceId": "20",
+      "deviceId": "23",
       "positions": [
         {
           "argumentValue": "0.0",
           "name": "Nav",
-          "actionId": "3326"
+          "actionId": "3325"
         },
         {
           "argumentValue": "0.3",
           "name": "Align",
-          "actionId": "3326"
+          "actionId": "3325"
         },
         {
           "argumentValue": "0.5",
           "name": "Storage Heading",
-          "actionId": "3326"
+          "actionId": "3325"
         },
         {
           "argumentValue": "0.8",
           "name": "Off",
-          "actionId": "3326"
+          "actionId": "3325"
         },
         {
           "argumentValue": "1.0",
           "name": "Test",
-          "actionId": "3326"
+          "actionId": "3325"
         }
       ]
     },
@@ -4595,8 +4624,8 @@
       "argumentMax": 1,
       "actions": {
         "set": {
-          "deviceId": "20",
-          "actionId": "3327"
+          "deviceId": "23",
+          "actionId": "3326"
         }
       }
     },
@@ -4611,17 +4640,17 @@
           "id": "481"
         }
       ],
-      "deviceId": "20",
+      "deviceId": "23",
       "positions": [
         {
           "argumentValue": "1.0",
           "name": "Position1",
-          "actionId": "3328"
+          "actionId": "3327"
         },
         {
           "argumentValue": "0.0",
           "name": "Position2",
-          "actionId": "3328"
+          "actionId": "3327"
         }
       ]
     },
@@ -4636,17 +4665,17 @@
           "id": "482"
         }
       ],
-      "deviceId": "20",
+      "deviceId": "23",
       "positions": [
         {
           "argumentValue": "1.0",
           "name": "Position1",
-          "actionId": "3329"
+          "actionId": "3328"
         },
         {
           "argumentValue": "0.0",
           "name": "Position2",
-          "actionId": "3329"
+          "actionId": "3328"
         }
       ]
     },
@@ -4668,7 +4697,7 @@
       "actions": {
         "set": {
           "deviceId": "11",
-          "actionId": "3330"
+          "actionId": "3329"
         }
       }
     },
@@ -4689,8 +4718,8 @@
       "argumentMax": 1,
       "actions": {
         "set": {
-          "deviceId": "20",
-          "actionId": "3331"
+          "deviceId": "23",
+          "actionId": "3330"
         }
       }
     },
@@ -4708,10 +4737,10 @@
       ],
       "buttons": [
         {
-          "deviceId": "20",
-          "pushId": "3332",
+          "deviceId": "23",
+          "pushId": "3331",
           "pushValue": "1",
-          "releaseId": "3332",
+          "releaseId": "3331",
           "releaseValue": "0"
         }
       ]
@@ -4730,10 +4759,10 @@
       ],
       "buttons": [
         {
-          "deviceId": "20",
-          "pushId": "3333",
+          "deviceId": "23",
+          "pushId": "3332",
           "pushValue": "1",
-          "releaseId": "3333",
+          "releaseId": "3332",
           "releaseValue": "0"
         }
       ]
@@ -4752,10 +4781,10 @@
       ],
       "buttons": [
         {
-          "deviceId": "20",
-          "pushId": "3334",
+          "deviceId": "23",
+          "pushId": "3333",
           "pushValue": "1",
-          "releaseId": "3334",
+          "releaseId": "3333",
           "releaseValue": "0"
         }
       ]
@@ -4774,10 +4803,10 @@
       ],
       "buttons": [
         {
-          "deviceId": "20",
-          "pushId": "3335",
+          "deviceId": "23",
+          "pushId": "3334",
           "pushValue": "1",
-          "releaseId": "3335",
+          "releaseId": "3334",
           "releaseValue": "0"
         }
       ]
@@ -4874,7 +4903,7 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "207"
+          "id": "212"
         }
       ]
     },
@@ -4970,7 +4999,7 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "216"
+          "id": "217"
         }
       ]
     },
@@ -4982,7 +5011,7 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "217"
+          "id": "216"
         }
       ]
     },
@@ -4994,7 +5023,7 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "218"
+          "id": "219"
         }
       ]
     },
@@ -5006,7 +5035,7 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "219"
+          "id": "218"
         }
       ]
     },
@@ -5018,7 +5047,7 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "220"
+          "id": "221"
         }
       ]
     },
@@ -5030,7 +5059,7 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "221"
+          "id": "220"
         }
       ]
     },
@@ -5042,7 +5071,7 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "222"
+          "id": "223"
         }
       ]
     },
@@ -5054,7 +5083,7 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "223"
+          "id": "222"
         }
       ]
     },
@@ -5066,7 +5095,7 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "224"
+          "id": "225"
         }
       ]
     },
@@ -5078,7 +5107,91 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "225"
+          "id": "224"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning, Caution and IndicatorLights",
+      "name": "Light MainPump L",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "2001"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning, Caution and IndicatorLights",
+      "name": "Light MainPump R",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "2002"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning, Caution and IndicatorLights",
+      "name": "Light AuxPump L",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "2003"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning, Caution and IndicatorLights",
+      "name": "Light AuxPump R",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "2004"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning, Caution and IndicatorLights",
+      "name": "Light OVRD L",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "2005"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning, Caution and IndicatorLights",
+      "name": "Light OVRD R",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "2006"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning, Caution and IndicatorLights",
+      "name": "Light VNTRL",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "2007"
         }
       ]
     },
@@ -5105,22 +5218,22 @@
           "id": "781"
         }
       ],
-      "deviceId": "18",
+      "deviceId": "21",
       "positions": [
         {
-          "argumentValue": "1.0",
+          "argumentValue": "-1.0",
           "name": "Sim",
-          "actionId": "3225"
+          "actionId": "3224"
         },
         {
           "argumentValue": "0.0",
           "name": "Save",
-          "actionId": "3225"
+          "actionId": "3224"
         },
         {
-          "argumentValue": "-1.0",
+          "argumentValue": "1.0",
           "name": "Live",
-          "actionId": "3225"
+          "actionId": "3224"
         }
       ]
     },
@@ -5135,22 +5248,22 @@
           "id": "782"
         }
       ],
-      "deviceId": "18",
+      "deviceId": "21",
       "positions": [
         {
           "argumentValue": "1.0",
           "name": "Position1",
-          "actionId": "3226"
+          "actionId": "3225"
         },
         {
           "argumentValue": "0.0",
           "name": "Position2",
-          "actionId": "3226"
+          "actionId": "3225"
         },
         {
           "argumentValue": "-1.0",
           "name": "Position3",
-          "actionId": "3226"
+          "actionId": "3225"
         }
       ]
     },
@@ -5168,10 +5281,10 @@
       ],
       "buttons": [
         {
-          "deviceId": "18",
-          "pushId": "3204",
+          "deviceId": "21",
+          "pushId": "3203",
           "pushValue": "1",
-          "releaseId": "3204",
+          "releaseId": "3203",
           "releaseValue": "0"
         }
       ]

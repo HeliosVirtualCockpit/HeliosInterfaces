@@ -1,0 +1,2294 @@
+{
+  "source": "Helios",
+  "version": "1.6.6010.0000",
+  "commit": "",
+  "type": "DCS",
+  "name": "DCS OV-10A Bronco (Experimental)",
+  "module": "Bronco-OV-10A",
+  "vehicles": [
+    "Bronco-OV-10A"
+  ],
+  "functions": [
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Electric system",
+      "name": "Batterie",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "00"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "-1.0",
+          "name": "Posn 1",
+          "actionID": "3201"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Posn 2",
+          "actionID": "3201"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Posn 3",
+          "actionID": "3201"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Electric system",
+      "name": "R GEN",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "01"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "-1.0",
+          "name": "Posn 1",
+          "actionID": "3202"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Posn 2",
+          "actionID": "3202"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Posn 3",
+          "actionID": "3202"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Electric system",
+      "name": "L GEN",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "02"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "-1.0",
+          "name": "Posn 1",
+          "actionID": "3203"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Posn 2",
+          "actionID": "3203"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Posn 3",
+          "actionID": "3203"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Electric system",
+      "name": "R START",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "03"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "-1.0",
+          "name": "Posn 1",
+          "actionID": "3204"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Posn 2",
+          "actionID": "3204"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Posn 3",
+          "actionID": "3204"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Electric system",
+      "name": "L START",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "04"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "-1.0",
+          "name": "Posn 1",
+          "actionID": "3205"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Posn 2",
+          "actionID": "3205"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Posn 3",
+          "actionID": "3205"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Electric system",
+      "name": "Inverter",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "05"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "-1.0",
+          "name": "Posn 1",
+          "actionID": "3206"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Posn 2",
+          "actionID": "3206"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Posn 3",
+          "actionID": "3206"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Electric system",
+      "name": "R Crank",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "06"
+        }
+      ],
+      "deviceId": "8",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Posn 1",
+          "actionID": "3207"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Posn 2",
+          "actionID": "3207"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Electric system",
+      "name": "L Crank",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "07"
+        }
+      ],
+      "deviceId": "8",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Posn 1",
+          "actionID": "3208"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Posn 2",
+          "actionID": "3208"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Engine",
+      "name": "Engine Cutoff Right",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "600"
+        }
+      ],
+      "deviceId": "8",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Posn 1",
+          "actionID": "3253"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Posn 2",
+          "actionID": "3253"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Engine",
+      "name": "Engine Cutoff Left",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "601"
+        }
+      ],
+      "deviceId": "8",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Posn 1",
+          "actionID": "3254"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Posn 2",
+          "actionID": "3254"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Engine",
+      "name": "Landing GEAR",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "602"
+        }
+      ],
+      "deviceId": "10",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Posn 1",
+          "actionID": "3255"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Posn 2",
+          "actionID": "3255"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Engine",
+      "name": "FLAPS Lever",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "603"
+        }
+      ],
+      "deviceId": "10",
+      "positions": [
+        {
+          "argumentValue": "-1.0",
+          "name": "Posn 1",
+          "actionID": "3256"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Posn 2",
+          "actionID": "3256"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Posn 3",
+          "actionID": "3256"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "FLAPS",
+      "name": "LTS",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "10"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "-1.0",
+          "name": "Posn 1",
+          "actionID": "3209"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Posn 2",
+          "actionID": "3209"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Posn 3",
+          "actionID": "3209"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "FLAPS",
+      "name": "Norm Trim",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "11"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "-1.0",
+          "name": "Posn 1",
+          "actionID": "3210"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Posn 2",
+          "actionID": "3210"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Posn 3",
+          "actionID": "3210"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "FLAPS",
+      "name": "Trim",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "12"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "-1.0",
+          "name": "Posn 1",
+          "actionID": "3211"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Posn 2",
+          "actionID": "3211"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Posn 3",
+          "actionID": "3211"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "FLAPS",
+      "name": "Flaps Alt",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "13"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "-1.0",
+          "name": "Posn 1",
+          "actionID": "3212"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Posn 2",
+          "actionID": "3212"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Posn 3",
+          "actionID": "3212"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "FLAPS",
+      "name": "Select Trim",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "14"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "-1.0",
+          "name": "Posn 1",
+          "actionID": "3213"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Posn 2",
+          "actionID": "3213"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Posn 3",
+          "actionID": "3213"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "FLAPS",
+      "name": "Yaw Damper",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "15"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "-1.0",
+          "name": "Posn 1",
+          "actionID": "3214"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Posn 2",
+          "actionID": "3214"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Posn 3",
+          "actionID": "3214"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "FLAPS",
+      "name": "Trim Alt",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "16"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "-1.0",
+          "name": "Posn 1",
+          "actionID": "3215"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Posn 2",
+          "actionID": "3215"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Posn 3",
+          "actionID": "3215"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "HUD",
+      "name": "HUD BRT",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "30"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.1,
+      "argumentMin": 0.0,
+      "argumentMax": 100.0,
+      "actions": {
+        "set": {
+          "deviceId": "9",
+          "actionId": "3243"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "HUD",
+      "name": "Film",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "31"
+        }
+      ],
+      "deviceId": "9",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Posn 1",
+          "actionID": "3244"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Posn 2",
+          "actionID": "3244"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "HUD",
+      "name": "Warn",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "32"
+        }
+      ],
+      "deviceId": "9",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Posn 1",
+          "actionID": "3245"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Posn 2",
+          "actionID": "3245"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "HUD",
+      "name": "Smoke",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "33"
+        }
+      ],
+      "deviceId": "9",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Posn 1",
+          "actionID": "3246"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Posn 2",
+          "actionID": "3246"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "HUD",
+      "name": "HUD glass tint",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "34"
+        }
+      ],
+      "deviceId": "9",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Posn 1",
+          "actionID": "3247"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Posn 2",
+          "actionID": "3247"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "HUD",
+      "name": "HUD Elevation",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "35"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.1,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "9",
+          "actionId": "3248"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Instruments",
+      "name": "ADI Roll",
+      "description": "Roll in degrees",
+      "exports": [
+        {
+          "format": "%0.3f",
+          "id": "105"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": -1.0,
+            "mappedValue": -180.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 180.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Value -180 to 180",
+      "unit": "Degrees"
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Instruments",
+      "name": "ADI Pitch",
+      "description": "Pitch in degrees",
+      "exports": [
+        {
+          "format": "%0.3f",
+          "id": "106"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": -1.0,
+            "mappedValue": -90.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 90.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Value -90 to 90",
+      "unit": "Degrees"
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Instruments",
+      "name": "ADI Roll Secu?",
+      "description": "Roll in degrees",
+      "exports": [
+        {
+          "format": "%0.3f",
+          "id": "107"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": -1.0,
+            "mappedValue": -180.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 180.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Value -180 to 180",
+      "unit": "Degrees"
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Instruments",
+      "name": "ADI Pitch Secu?",
+      "description": "Pitch in degrees",
+      "exports": [
+        {
+          "format": "%0.3f",
+          "id": "108"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": -1.0,
+            "mappedValue": -90.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 90.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Value -90 to 90",
+      "unit": "Degrees"
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Instruments",
+      "name": "VVI",
+      "description": "Vertical velocity of the aircraft",
+      "exports": [
+        {
+          "format": "%0.3f",
+          "id": "109"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": -1.0,
+            "mappedValue": -6000.0
+          },
+          {
+            "value": -0.8,
+            "mappedValue": -4000.0
+          },
+          {
+            "value": -0.2,
+            "mappedValue": -1000.0
+          },
+          {
+            "value": 0.0,
+            "mappedValue": 0.0
+          },
+          {
+            "value": 0.2,
+            "mappedValue": 1000.0
+          },
+          {
+            "value": 0.8,
+            "mappedValue": 4000.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 6000.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Value -6000 to 6000",
+      "unit": "FeetPerSecond"
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Instruments",
+      "name": "Chronometer (hours)",
+      "description": "Hours display on the chronometer",
+      "exports": [
+        {
+          "format": "%0.3f",
+          "id": "114"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": -1.0,
+            "mappedValue": 0.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 12.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Value 0 to 12",
+      "unit": "Hours"
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Instruments",
+      "name": "Chronometer (minutes)",
+      "description": "Minutes display on the chronometer",
+      "exports": [
+        {
+          "format": "%0.3f",
+          "id": "115"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": -1.0,
+            "mappedValue": 0.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 60.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Value 0 to 60",
+      "unit": "Minutes"
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Instruments",
+      "name": "Chronometer (seconds)",
+      "description": "seconds display on the chronometer",
+      "exports": [
+        {
+          "format": "%0.3f",
+          "id": "116"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": -1.0,
+            "mappedValue": 0.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 60.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Value 0 to 60",
+      "unit": "Seconds"
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Instruments",
+      "name": "Slide angle",
+      "description": "slide angle of aircraft in degrees",
+      "exports": [
+        {
+          "format": "%0.3f",
+          "id": "117"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": -1.0,
+            "mappedValue": -10.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 10.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Value -10 to 10",
+      "unit": "Degrees"
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Instruments",
+      "name": "Turn rate indicator",
+      "description": "Turn rate of aircraft in degrees",
+      "exports": [
+        {
+          "format": "%0.3f",
+          "id": "118"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": -1.0,
+            "mappedValue": -45.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 45.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Value -45 to 45",
+      "unit": "Degrees"
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Light EXT",
+      "name": "NAV light",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "100"
+        }
+      ],
+      "deviceId": "6",
+      "positions": [
+        {
+          "argumentValue": "-1.0",
+          "name": "Posn 1",
+          "actionID": "3236"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Posn 2",
+          "actionID": "3236"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Posn 3",
+          "actionID": "3236"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Light EXT",
+      "name": "AntiCol light",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "101"
+        }
+      ],
+      "deviceId": "6",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Posn 1",
+          "actionID": "3237"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Posn 2",
+          "actionID": "3237"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Light EXT",
+      "name": "Formation light",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "102"
+        }
+      ],
+      "deviceId": "6",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Posn 1",
+          "actionID": "3238"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Posn 2",
+          "actionID": "3238"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Light EXT",
+      "name": "Landing Phare light",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "103"
+        }
+      ],
+      "deviceId": "6",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Posn 1",
+          "actionID": "3239"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Posn 2",
+          "actionID": "3239"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Light INT",
+      "name": "FLOOD",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "110"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.1,
+      "argumentMin": 0.0,
+      "argumentMax": 100.0,
+      "actions": {
+        "set": {
+          "deviceId": "7",
+          "actionId": "3240"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Light INT",
+      "name": "CONSOL",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "111"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.1,
+      "argumentMin": 0.0,
+      "argumentMax": 100.0,
+      "actions": {
+        "set": {
+          "deviceId": "7",
+          "actionId": "3241"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Light INT",
+      "name": "INSTRUMENT",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "112"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.1,
+      "argumentMin": 0.0,
+      "argumentMax": 100.0,
+      "actions": {
+        "set": {
+          "deviceId": "7",
+          "actionId": "3242"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.RotaryEncoder",
+      "device": "RADIO",
+      "name": "Channel preset",
+      "exports": [],
+      "argumentValue": 0.1,
+      "actions": {
+        "increment": {
+          "deviceId": "1",
+          "actionId": "3222"
+        },
+        "decrement": {
+          "deviceId": "1",
+          "actionId": "3222"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "RADIO",
+      "name": "MAN/XMIT",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "20"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "MAN",
+          "actionID": "3216"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "XMIT",
+          "actionID": "3216"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "RADIO",
+      "name": "UHF Mode",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.3f",
+          "isExportedEveryFrame": false,
+          "id": "21"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "0.000",
+          "name": "Posn 1",
+          "actionID": "3217"
+        },
+        {
+          "argumentValue": "0.000",
+          "name": "Posn 2",
+          "actionID": "3217"
+        },
+        {
+          "argumentValue": "0.000",
+          "name": "Posn 3",
+          "actionID": "3217"
+        },
+        {
+          "argumentValue": "0.000",
+          "name": "Posn 4",
+          "actionID": "3217"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "RADIO",
+      "name": "UHF frequency (tens)",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%0.3f",
+          "isExportedEveryFrame": false,
+          "id": "22"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.1,
+      "argumentMin": 0.0,
+      "argumentMax": 100.0,
+      "actions": {
+        "set": {
+          "deviceId": "1",
+          "actionId": "3218"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "RADIO",
+      "name": "UHF frequency (units)",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%0.3f",
+          "isExportedEveryFrame": false,
+          "id": "23"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.1,
+      "argumentMin": 0.0,
+      "argumentMax": 100.0,
+      "actions": {
+        "set": {
+          "deviceId": "1",
+          "actionId": "3219"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "RADIO",
+      "name": "UHF frequency (hundreds)",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%0.3f",
+          "isExportedEveryFrame": false,
+          "id": "24"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.1,
+      "argumentMin": 0.0,
+      "argumentMax": 100.0,
+      "actions": {
+        "set": {
+          "deviceId": "1",
+          "actionId": "3220"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "RADIO",
+      "name": "Volume",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "25"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.1,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "1",
+          "actionId": "3221"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Simulator Telemetry",
+      "name": "pitch",
+      "description": "Current pitch of the aircraft.",
+      "exports": [
+        {
+          "id": "T1"
+        }
+      ],
+      "valueDescription": "(-180 to 180)",
+      "unit": "Degrees"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Simulator Telemetry",
+      "name": "vertical velocity",
+      "description": "Current vertical velocity of the aircraft.",
+      "exports": [
+        {
+          "id": "T13"
+        }
+      ],
+      "valueDescription": "",
+      "unit": "MetersPerSecond"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Simulator Telemetry",
+      "name": "indicated airspeed",
+      "description": "Current indicated air speed of the aircraft.",
+      "exports": [
+        {
+          "id": "T14"
+        }
+      ],
+      "valueDescription": "",
+      "unit": "MetersPerSecond"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Simulator Telemetry",
+      "name": "angle of attack",
+      "description": "Current angle of attack for the aircraft.",
+      "exports": [
+        {
+          "id": "T16"
+        }
+      ],
+      "valueDescription": "",
+      "unit": "Degrees"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Simulator Telemetry",
+      "name": "glide deviation",
+      "description": "ILS Glide Deviation",
+      "exports": [
+        {
+          "id": "T17"
+        }
+      ],
+      "valueDescription": "-1 to 1",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Simulator Telemetry",
+      "name": "side deviation",
+      "description": "ILS Side Deiviation",
+      "exports": [
+        {
+          "id": "T18"
+        }
+      ],
+      "valueDescription": "-1 to 1",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Simulator Telemetry",
+      "name": "Mach",
+      "description": "Current Mach number",
+      "exports": [
+        {
+          "id": "T19"
+        }
+      ],
+      "valueDescription": "number in M",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Simulator Telemetry",
+      "name": "bank",
+      "description": "Current bank of the aircraft.",
+      "exports": [
+        {
+          "id": "T2"
+        }
+      ],
+      "valueDescription": "(-180 to 180)",
+      "unit": "Degrees"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Simulator Telemetry",
+      "name": "G",
+      "description": "Current G load",
+      "exports": [
+        {
+          "id": "T20"
+        }
+      ],
+      "valueDescription": "number in g",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Simulator Telemetry",
+      "name": "yaw",
+      "description": "Current yaw of the aircraft.",
+      "exports": [
+        {
+          "id": "T3"
+        }
+      ],
+      "valueDescription": "(-180 to 180)",
+      "unit": "Degrees"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Simulator Telemetry",
+      "name": "barometric altitude",
+      "description": "Current barometric altitude the aircraft.",
+      "exports": [
+        {
+          "id": "T4"
+        }
+      ],
+      "valueDescription": "",
+      "unit": "Meters"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Simulator Telemetry",
+      "name": "radar altitude",
+      "description": "Current radar altitude of the aircraft.",
+      "exports": [
+        {
+          "id": "T5"
+        }
+      ],
+      "valueDescription": "",
+      "unit": "Meters"
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "TACAN",
+      "name": "TACAN channel (hundreds digit)",
+      "description": "TACAN channel (hundreds digit)",
+      "exports": [
+        {
+          "format": "%0.3f",
+          "id": "119"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": -1.0,
+            "mappedValue": 0.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 1000.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Value 0 to 1000",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "TACAN",
+      "name": "TACAN channel (tens digit)",
+      "description": "TACAN channel (tens digit)",
+      "exports": [
+        {
+          "format": "%0.3f",
+          "id": "120"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": -1.0,
+            "mappedValue": 0.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 100.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Value 0 to 100",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "TACAN",
+      "name": "TACAN channel (units digit)",
+      "description": "TACAN channel (units digit)",
+      "exports": [
+        {
+          "format": "%0.3f",
+          "id": "121"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": -1.0,
+            "mappedValue": 0.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 10.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Value 0 to 10",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "TACAN",
+      "name": "TACAN bearing",
+      "description": "TACAN bearing to station",
+      "exports": [
+        {
+          "format": "%0.3f",
+          "id": "122"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": -1.0,
+            "mappedValue": 0.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 360.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Value 0 to 360",
+      "unit": "Degrees"
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "TACAN",
+      "name": "TACAN bearing (tens)",
+      "description": "TACAN bearing to station (tens)",
+      "exports": [
+        {
+          "format": "%0.3f",
+          "id": "123"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": -1.0,
+            "mappedValue": 0.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 360.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Value 0 to 360",
+      "unit": "Degrees"
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "TACAN",
+      "name": "TACAN range (units)",
+      "description": "TACAN range to station (units)",
+      "exports": [
+        {
+          "format": "%0.3f",
+          "id": "124"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": -1.0,
+            "mappedValue": 0.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 10.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Value 0 to 360",
+      "unit": "Degrees"
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "TACAN",
+      "name": "TACAN Mode",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.3f",
+          "isExportedEveryFrame": false,
+          "id": "40"
+        }
+      ],
+      "deviceId": "11",
+      "positions": [
+        {
+          "argumentValue": "0.000",
+          "name": "Posn 1",
+          "actionID": "3249"
+        },
+        {
+          "argumentValue": "0.000",
+          "name": "Posn 2",
+          "actionID": "3249"
+        },
+        {
+          "argumentValue": "0.000",
+          "name": "Posn 3",
+          "actionID": "3249"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "TACAN",
+      "name": "TACAN Channel (Units)",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.3f",
+          "isExportedEveryFrame": false,
+          "id": "41"
+        }
+      ],
+      "deviceId": "11",
+      "positions": [
+        {
+          "argumentValue": "0.000",
+          "name": "Posn 1",
+          "actionID": "3250"
+        },
+        {
+          "argumentValue": "0.000",
+          "name": "Posn 2",
+          "actionID": "3250"
+        },
+        {
+          "argumentValue": "0.000",
+          "name": "Posn 3",
+          "actionID": "3250"
+        },
+        {
+          "argumentValue": "0.000",
+          "name": "Posn 4",
+          "actionID": "3250"
+        },
+        {
+          "argumentValue": "0.000",
+          "name": "Posn 5",
+          "actionID": "3250"
+        },
+        {
+          "argumentValue": "0.000",
+          "name": "Posn 6",
+          "actionID": "3250"
+        },
+        {
+          "argumentValue": "0.000",
+          "name": "Posn 7",
+          "actionID": "3250"
+        },
+        {
+          "argumentValue": "0.000",
+          "name": "Posn 8",
+          "actionID": "3250"
+        },
+        {
+          "argumentValue": "0.000",
+          "name": "Posn 9",
+          "actionID": "3250"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "TACAN",
+      "name": "TACAN Channel (Tens)",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.3f",
+          "isExportedEveryFrame": false,
+          "id": "42"
+        }
+      ],
+      "deviceId": "11",
+      "positions": [
+        {
+          "argumentValue": "0.000",
+          "name": "Posn 1",
+          "actionID": "3251"
+        },
+        {
+          "argumentValue": "0.000",
+          "name": "Posn 2",
+          "actionID": "3251"
+        },
+        {
+          "argumentValue": "0.000",
+          "name": "Posn 3",
+          "actionID": "3251"
+        },
+        {
+          "argumentValue": "0.000",
+          "name": "Posn 4",
+          "actionID": "3251"
+        },
+        {
+          "argumentValue": "0.000",
+          "name": "Posn 5",
+          "actionID": "3251"
+        },
+        {
+          "argumentValue": "0.000",
+          "name": "Posn 6",
+          "actionID": "3251"
+        },
+        {
+          "argumentValue": "0.000",
+          "name": "Posn 7",
+          "actionID": "3251"
+        },
+        {
+          "argumentValue": "0.000",
+          "name": "Posn 8",
+          "actionID": "3251"
+        },
+        {
+          "argumentValue": "0.000",
+          "name": "Posn 9",
+          "actionID": "3251"
+        },
+        {
+          "argumentValue": "0.000",
+          "name": "Posn 10",
+          "actionID": "3251"
+        },
+        {
+          "argumentValue": "0.000",
+          "name": "Posn 11",
+          "actionID": "3251"
+        },
+        {
+          "argumentValue": "0.000",
+          "name": "Posn 12",
+          "actionID": "3251"
+        },
+        {
+          "argumentValue": "0.000",
+          "name": "Posn 13",
+          "actionID": "3251"
+        },
+        {
+          "argumentValue": "0.000",
+          "name": "Posn 14",
+          "actionID": "3251"
+        },
+        {
+          "argumentValue": "0.000",
+          "name": "Posn 15",
+          "actionID": "3251"
+        },
+        {
+          "argumentValue": "0.000",
+          "name": "Posn 16",
+          "actionID": "3251"
+        },
+        {
+          "argumentValue": "0.000",
+          "name": "Posn 17",
+          "actionID": "3251"
+        },
+        {
+          "argumentValue": "0.000",
+          "name": "Posn 18",
+          "actionID": "3251"
+        },
+        {
+          "argumentValue": "0.000",
+          "name": "Posn 19",
+          "actionID": "3251"
+        },
+        {
+          "argumentValue": "0.000",
+          "name": "Posn 20",
+          "actionID": "3251"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "TACAN",
+      "name": "TACAN Volume",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "43"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.1,
+      "argumentMin": 0.0,
+      "argumentMax": 100.0,
+      "actions": {
+        "set": {
+          "deviceId": "11",
+          "actionId": "3252"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "WEAPON",
+      "name": "MASTER ARM",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "300"
+        }
+      ],
+      "deviceId": "2",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Posn 1",
+          "actionID": "3223"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Posn 2",
+          "actionID": "3223"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "WEAPON",
+      "name": "Bomb Interval",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "301"
+        }
+      ],
+      "deviceId": "2",
+      "positions": [
+        {
+          "argumentValue": "-1.0",
+          "name": "Posn 1",
+          "actionID": "3224"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Posn 2",
+          "actionID": "3224"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Posn 3",
+          "actionID": "3224"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "WEAPON",
+      "name": "MK 4 POD",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "302"
+        }
+      ],
+      "deviceId": "2",
+      "positions": [
+        {
+          "argumentValue": "-1.0",
+          "name": "Posn 1",
+          "actionID": "3225"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Posn 2",
+          "actionID": "3225"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Posn 3",
+          "actionID": "3225"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "WEAPON",
+      "name": "Copilot GUNS Right",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "303"
+        }
+      ],
+      "deviceId": "2",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Posn 1",
+          "actionID": "3226"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Posn 2",
+          "actionID": "3226"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "WEAPON",
+      "name": "GUNS Left",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "304"
+        }
+      ],
+      "deviceId": "2",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Posn 1",
+          "actionID": "3227"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Posn 2",
+          "actionID": "3227"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "WEAPON",
+      "name": "SPA 1",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "305"
+        }
+      ],
+      "deviceId": "2",
+      "positions": [
+        {
+          "argumentValue": "-1.0",
+          "name": "Posn 1",
+          "actionID": "3228"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Posn 2",
+          "actionID": "3228"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Posn 3",
+          "actionID": "3228"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "WEAPON",
+      "name": "SPA 2",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "306"
+        }
+      ],
+      "deviceId": "2",
+      "positions": [
+        {
+          "argumentValue": "-1.0",
+          "name": "Posn 1",
+          "actionID": "3229"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Posn 2",
+          "actionID": "3229"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Posn 3",
+          "actionID": "3229"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "WEAPON",
+      "name": "SPA 3",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "307"
+        }
+      ],
+      "deviceId": "2",
+      "positions": [
+        {
+          "argumentValue": "-1.0",
+          "name": "Posn 1",
+          "actionID": "3230"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Posn 2",
+          "actionID": "3230"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Posn 3",
+          "actionID": "3230"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "WEAPON",
+      "name": "SPA 4",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "308"
+        }
+      ],
+      "deviceId": "2",
+      "positions": [
+        {
+          "argumentValue": "-1.0",
+          "name": "Posn 1",
+          "actionID": "3231"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Posn 2",
+          "actionID": "3231"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Posn 3",
+          "actionID": "3231"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "WEAPON",
+      "name": "SPA 5",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "309"
+        }
+      ],
+      "deviceId": "2",
+      "positions": [
+        {
+          "argumentValue": "-1.0",
+          "name": "Posn 1",
+          "actionID": "3232"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Posn 2",
+          "actionID": "3232"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Posn 3",
+          "actionID": "3232"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "WEAPON",
+      "name": "Wing R",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "310"
+        }
+      ],
+      "deviceId": "2",
+      "positions": [
+        {
+          "argumentValue": "-1.0",
+          "name": "Posn 1",
+          "actionID": "3233"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Posn 2",
+          "actionID": "3233"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Posn 3",
+          "actionID": "3233"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "WEAPON",
+      "name": "Wing L",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "311"
+        }
+      ],
+      "deviceId": "2",
+      "positions": [
+        {
+          "argumentValue": "-1.0",
+          "name": "Posn 1",
+          "actionID": "3234"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Posn 2",
+          "actionID": "3234"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Posn 3",
+          "actionID": "3234"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "WEAPON",
+      "name": "Emergency jettison",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "312"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "2",
+          "pushId": "3235",
+          "pushValue": "1.0",
+          "releaseId": "3235",
+          "releaseValue": "0.0"
+        }
+      ]
+    }
+  ]
+}

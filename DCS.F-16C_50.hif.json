@@ -2077,31 +2077,6 @@
       ]
     },
     {
-      "heliosType": "DCS.Common.Switch",
-      "device": "Cockpit Mechanics",
-      "name": "Ejection Safety Lever [2]",
-      "description": "Current position of this switch.",
-      "exports": [
-        {
-          "format": "%0.1f",
-          "id": "785"
-        }
-      ],
-      "deviceId": "10",
-      "positions": [
-        {
-          "argumentValue": "1.0",
-          "name": "ARMED",
-          "actionId": "3009"
-        },
-        {
-          "argumentValue": "0.0",
-          "name": "LOCKED",
-          "actionId": "3009"
-        }
-      ]
-    },
-    {
       "heliosType": "DCS.Common.NetworkValue",
       "device": "Cockpit Mechanics",
       "name": "SEAT_ADJ",
@@ -2757,30 +2732,6 @@
       "exports": [
         {
           "format": "%.5f",
-          "id": "43"
-        }
-      ],
-      "unit": "Numeric",
-      "argumentValue": 0.025,
-      "actions": {
-        "increment": {
-          "deviceId": "28",
-          "actionId": "3004"
-        },
-        "decrement": {
-          "deviceId": "28",
-          "actionId": "3004"
-        }
-      }
-    },
-    {
-      "heliosType": "DCS.Common.RotaryEncoder",
-      "device": "EHSI",
-      "name": "EHSI HDG Set Knob",
-      "description": "Current position of this rotary encoder knob.",
-      "exports": [
-        {
-          "format": "%.5f",
           "id": "44"
         }
       ],
@@ -2789,11 +2740,11 @@
       "actions": {
         "increment": {
           "deviceId": "28",
-          "actionId": "3002"
+          "actionId": "3004"
         },
         "decrement": {
           "deviceId": "28",
-          "actionId": "3002"
+          "actionId": "3004"
         }
       }
     },
@@ -7205,45 +7156,6 @@
       }
     },
     {
-      "heliosType": "DCS.Common.ScaledNetworkValue",
-      "device": "Oxygen System",
-      "name": "Flow Indicator Gauge",
-      "description": "TODO: assign units, set calibration points, and write description",
-      "exports": [
-        {
-          "format": "%.5f",
-          "id": "725"
-        }
-      ],
-      "valueDescription": "TODO: describe range of output values after calibration",
-      "unit": "Numeric",
-      "calibration": {
-        "points": [
-          {
-            "value": 0,
-            "mappedValue": 0
-          },
-          {
-            "value": 1,
-            "mappedValue": 1
-          }
-        ],
-        "precision": 5
-      }
-    },
-    {
-      "heliosType": "DCS.Common.FlagValue",
-      "device": "Oxygen System",
-      "name": "Flow Indicator Light",
-      "description": "Current state of this indicator light.",
-      "exports": [
-        {
-          "format": "%0.1f",
-          "id": "725"
-        }
-      ]
-    },
-    {
       "heliosType": "DCS.Common.NetworkValue",
       "device": "Oxygen System",
       "name": "OXY_EMERG_LVR",
@@ -9259,34 +9171,6 @@
       ]
     },
     {
-      "heliosType": "DCS.Common.NetworkValue",
-      "device": "UHF",
-      "name": "UHF_CHAN_DISP",
-      "description": "Unimplemented Callback [UNKNOWN] UHF_CHAN_DISP",
-      "exports": [
-        {
-          "id": "UNKNOWN"
-        }
-      ],
-      "callback": true,
-      "indicationDeviceId": "indication10",
-      "unimplemented": true
-    },
-    {
-      "heliosType": "DCS.Common.NetworkValue",
-      "device": "UHF",
-      "name": "UHF_FREQ_DISP",
-      "description": "Unimplemented Callback [UNKNOWN] UHF_FREQ_DISP",
-      "exports": [
-        {
-          "id": "UNKNOWN"
-        }
-      ],
-      "callback": true,
-      "indicationDeviceId": "indication11",
-      "unimplemented": true
-    },
-    {
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Vertical Velocity Indicator",
       "name": "VVI",
@@ -10872,34 +10756,6 @@
           "id": "791"
         }
       ]
-    },
-    {
-      "heliosType": "DCS.Common.NetworkValue",
-      "device": "_MissingDeviceName_",
-      "name": "undefined",
-      "description": "Unimplemented Callback [UNKNOWN] undefined",
-      "exports": [
-        {
-          "id": "UNKNOWN"
-        }
-      ],
-      "callback": true,
-      "indicationDeviceId": "indication6",
-      "unimplemented": true
-    },
-    {
-      "heliosType": "DCS.Common.NetworkValue",
-      "device": "_MissingDeviceName_",
-      "name": "undefined [2]",
-      "description": "Unimplemented Callback [UNKNOWN] undefined",
-      "exports": [
-        {
-          "id": "UNKNOWN"
-        }
-      ],
-      "callback": true,
-      "indicationDeviceId": "indication16",
-      "unimplemented": true
     }
   ]
 }

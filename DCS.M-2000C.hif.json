@@ -3,7 +3,7 @@
   "version": "0x7200",
   "commit": "3bcf2bf2c3d04316a19497ad608c3599f154a6a0",
   "type": "DCS",
-  "name": "DCS M-2000C",
+  "name": "DCS M-2000C (from DCSFlightPanels)",
   "module": "M-2000C",
   "vehicles": [
     "M-2000C"

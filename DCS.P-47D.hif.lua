@@ -22,10 +22,9 @@ end
 
 ]]
 
---[[
-
 function driver.processLowImportance(mainPanelDevice) --luacheck: no unused args
-    -- same things as processHighImportance can be done here, called a few times per second at most
+        -- Resend argumments which are also used by the -40 variant    
+	    helios.send(2139, string.format("%1d",mainPanelDevice:get_argument_value(139))
+	    helios.send(2141, string.format("%1d",mainPanelDevice:get_argument_value(141))
+	    helios.send(2143, string.format("%1d",mainPanelDevice:get_argument_value(143))
 end
-
-]]

@@ -2,11 +2,11 @@
   "source": "Helios",
   "version": "1.6.5900.0000",
   "commit": "ad6f4c85b00b90d9044a462c185f8623b5359e81",
-  "type": "Existing",
-  "name": "DCS F/A-18C",
-  "module": "FA-18C_hornet",
+  "type": "DCS",
+  "name": "DCS FA-18F",
+  "module": "FA-18F",
   "vehicles": [
-    "FA-18C_hornet"
+    "FA-18F"
   ],
   "functions": [
     {
