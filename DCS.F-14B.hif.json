@@ -411,11 +411,11 @@
       "actions": {
         "increment": {
           "deviceId": "28",
-          "actionId": "3652"
+          "actionId": "3651"
         },
         "decrement": {
           "deviceId": "28",
-          "actionId": "3652"
+          "actionId": "3651"
         }
       }
     },
@@ -434,9 +434,9 @@
       "buttons": [
         {
           "deviceId": "28",
-          "pushId": "3651",
+          "pushId": "3652",
           "pushValue": "1",
-          "releaseId": "3651",
+          "releaseId": "3652",
           "releaseValue": "0"
         }
       ]
