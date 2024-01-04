@@ -1,7 +1,7 @@
 {
   "source": "Helios",
-  "version": "1.6.6010.2000",
-  "commit": "4cdb956247eb8d1858746f79926e1a8d2c4ba139",
+  "version": "1.6.6060.0000",
+  "commit": "7852c504449dc4347ead9330d183ab1f107cea3d",
   "type": "Existing",
   "name": "DCS AH-64D Apache",
   "module": "AH-64D_BLK_II",
@@ -9,6 +9,23 @@
     "AH-64D_BLK_II"
   ],
   "functions": [
+    {
+      "heliosType": "DCS.AH64D.Functions.Altimeter",
+      "device": "Altimeter",
+      "name": "Altitude",
+      "description": "Barometric altitude above sea level of the aircraft.",
+      "exports": [
+        {
+          "id": "2051"
+        },
+        {
+          "id": "2059"
+        }
+      ],
+      "device2": "Altimeter",
+      "name2": "Pressure",
+      "description2": "Manually set barometric altitude."
+    },
     {
       "heliosType": "DCS.Common.PushButton",
       "device": "Armament Panel (CP/G)",
@@ -10603,7 +10620,7 @@
       "heliosType": "DCS.Common.NetworkValue",
       "device": "Simulator Telemetry",
       "name": "side deviation",
-      "description": "ILS Side Deiviation",
+      "description": "ILS Side Deviation",
       "exports": [
         {
           "id": "T18"
@@ -10691,21 +10708,17 @@
       "unit": "Meters"
     },
     {
-      "heliosType": "DCS.AH64D.Functions.Altimeter",
-      "device": "Standby Altimeter",
-      "name": "Altitude",
-      "description": "Barometric altitude above sea level of the aircraft.",
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Simulator Telemetry",
+      "name": "magnetic yaw",
+      "description": "Current magnetic yaw of the aircraft.",
       "exports": [
         {
-          "id": "2051"
-        },
-        {
-          "id": "2059"
+          "id": "T6"
         }
       ],
-      "device2": "Standby Altimeter",
-      "name2": "Pressure",
-      "description2": "Manually set barometric altitude."
+      "valueDescription": "(-180 to 180)",
+      "unit": "Degrees"
     },
     {
       "heliosType": "DCS.Common.Axis",

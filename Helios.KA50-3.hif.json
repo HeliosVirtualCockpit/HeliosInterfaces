@@ -1,7 +1,7 @@
 {
   "source": "Helios",
-  "version": "1.6.5601.0000",
-  "commit": "e989caa7875aeae4a75dc4f0f103b49d8c8c3b27",
+  "version": "1.6.6060.0000",
+  "commit": "7852c504449dc4347ead9330d183ab1f107cea3d",
   "type": "Existing",
   "name": "DCS Black Shark 3",
   "module": "Ka-50_3",
@@ -4487,32 +4487,6 @@
     },
     {
       "heliosType": "DCS.Common.Switch",
-      "device": "Missile Warning System",
-      "name": "ODS operation mode",
-      "description": "Current position of this switch.",
-      "exports": [
-        {
-          "format": "%1d",
-          "isExportedEveryFrame": false,
-          "id": "49"
-        }
-      ],
-      "deviceId": "64",
-      "positions": [
-        {
-          "argumentValue": "1",
-          "name": "On",
-          "actionID": "3001"
-        },
-        {
-          "argumentValue": "0",
-          "name": "Off",
-          "actionID": "3001"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.Switch",
       "device": "Landing Light",
       "name": "On/Off/Retract",
       "description": "Current position of this switch.",
@@ -5641,6 +5615,32 @@
       "scale": 60.0,
       "valueDescription": "-60 - 50",
       "unit": "Celsius"
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Missile Warning System",
+      "name": "ODS operation mode",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "49"
+        }
+      ],
+      "deviceId": "64",
+      "positions": [
+        {
+          "argumentValue": "1",
+          "name": "On",
+          "actionID": "3001"
+        },
+        {
+          "argumentValue": "0",
+          "name": "Off",
+          "actionID": "3001"
+        }
+      ]
     },
     {
       "heliosType": "DCS.Common.Switch",
@@ -8670,7 +8670,7 @@
       "heliosType": "DCS.Common.NetworkValue",
       "device": "Simulator Telemetry",
       "name": "side deviation",
-      "description": "ILS Side Deiviation",
+      "description": "ILS Side Deviation",
       "exports": [
         {
           "id": "T18"
@@ -8756,6 +8756,19 @@
       ],
       "valueDescription": "",
       "unit": "Meters"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Simulator Telemetry",
+      "name": "magnetic yaw",
+      "description": "Current magnetic yaw of the aircraft.",
+      "exports": [
+        {
+          "id": "T6"
+        }
+      ],
+      "valueDescription": "(-180 to 180)",
+      "unit": "Degrees"
     },
     {
       "heliosType": "DCS.Common.Switch",

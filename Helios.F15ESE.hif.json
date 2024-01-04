@@ -1,7 +1,7 @@
 {
   "source": "Helios",
-  "version": "1.6.6040.0000",
-  "commit": "d3b95e6194c1a3a613badbb277915cc00eec59ee",
+  "version": "1.6.6060.0000",
+  "commit": "7852c504449dc4347ead9330d183ab1f107cea3d",
   "type": "Existing",
   "name": "DCS F-15E Strike Eagle",
   "module": "F-15ESE",
@@ -11281,6 +11281,19 @@
       ],
       "valueDescription": "",
       "unit": "Meters"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Simulator Telemetry",
+      "name": "magnetic yaw",
+      "description": "Current magnetic yaw of the aircraft.",
+      "exports": [
+        {
+          "id": "T6"
+        }
+      ],
+      "valueDescription": "(-180 to 180)",
+      "unit": "Degrees"
     },
     {
       "heliosType": "DCS.Common.Switch",

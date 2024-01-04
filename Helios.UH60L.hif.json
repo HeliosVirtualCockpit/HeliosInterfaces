@@ -1,7 +1,7 @@
 {
   "source": "Helios",
-  "version": "1.6.5400.0002",
-  "commit": "20d924d31c1372695f81879e0649143df943a4cc",
+  "version": "1.6.6060.0000",
+  "commit": "7852c504449dc4347ead9330d183ab1f107cea3d",
   "type": "Existing",
   "name": "DCS UH-60L Blackhawk",
   "module": "UH-60L",
@@ -6873,7 +6873,7 @@
       "heliosType": "DCS.Common.NetworkValue",
       "device": "Simulator Telemetry",
       "name": "side deviation",
-      "description": "ILS Side Deiviation",
+      "description": "ILS Side Deviation",
       "exports": [
         {
           "id": "T18"
@@ -6959,6 +6959,19 @@
       ],
       "valueDescription": "",
       "unit": "Meters"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Simulator Telemetry",
+      "name": "magnetic yaw",
+      "description": "Current magnetic yaw of the aircraft.",
+      "exports": [
+        {
+          "id": "T6"
+        }
+      ],
+      "valueDescription": "(-180 to 180)",
+      "unit": "Degrees"
     },
     {
       "heliosType": "DCS.Common.Switch",

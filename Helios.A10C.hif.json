@@ -1,7 +1,7 @@
 {
   "source": "Helios",
-  "version": "1.6.6041.0002",
-  "commit": "7b255c266db198a328b0893a33239544557c39ef",
+  "version": "1.6.6060.0000",
+  "commit": "7852c504449dc4347ead9330d183ab1f107cea3d",
   "type": "Existing",
   "name": "DCS A-10C",
   "module": "A-10C",
@@ -11763,6 +11763,19 @@
       ],
       "valueDescription": "",
       "unit": "Meters"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Simulator Telemetry",
+      "name": "magnetic yaw",
+      "description": "Current magnetic yaw of the aircraft.",
+      "exports": [
+        {
+          "id": "T6"
+        }
+      ],
+      "valueDescription": "(-180 to 180)",
+      "unit": "Degrees"
     },
     {
       "heliosType": "DCS.Common.Axis",

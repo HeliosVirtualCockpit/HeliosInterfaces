@@ -1,7 +1,7 @@
 {
   "source": "Helios",
-  "version": "1.6.5400.0003",
-  "commit": "a404d275563b6de091d564bed676962b36892cdb",
+  "version": "1.6.6060.0000",
+  "commit": "7852c504449dc4347ead9330d183ab1f107cea3d",
   "type": "Existing",
   "name": "DCS AV-8B",
   "module": "AV8BNA",
@@ -2308,8 +2308,6 @@
           "id": "2059"
         }
       ],
-      "altitudeComments": "Value is adjusted per altimeter pressure setting.",
-      "pressureComments": "",
       "device2": "Flight Instruments",
       "name2": "Air Pressure",
       "description2": "Manually set barometric altitude."
@@ -6147,7 +6145,7 @@
       "heliosType": "DCS.Common.NetworkValue",
       "device": "Simulator Telemetry",
       "name": "side deviation",
-      "description": "ILS Side Deiviation",
+      "description": "ILS Side Deviation",
       "exports": [
         {
           "id": "T18"
@@ -6233,6 +6231,19 @@
       ],
       "valueDescription": "",
       "unit": "Meters"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Simulator Telemetry",
+      "name": "magnetic yaw",
+      "description": "Current magnetic yaw of the aircraft.",
+      "exports": [
+        {
+          "id": "T6"
+        }
+      ],
+      "valueDescription": "(-180 to 180)",
+      "unit": "Degrees"
     },
     {
       "heliosType": "DCS.Common.ScaledNetworkValue",
