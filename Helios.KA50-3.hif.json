@@ -1,7 +1,7 @@
 {
   "source": "Helios",
   "version": "1.6.6060.0000",
-  "commit": "7852c504449dc4347ead9330d183ab1f107cea3d",
+  "commit": "0b967712abb9765c5f535e5c005ffd854bb62848",
   "type": "Existing",
   "name": "DCS Black Shark 3",
   "module": "Ka-50_3",
@@ -7908,20 +7908,52 @@
             "mappedValue": 0.0
           },
           {
-            "value": 0.1838,
+            "value": 0.0,
+            "mappedValue": 0.0
+          },
+          {
+            "value": 0.095,
+            "mappedValue": 10.0
+          },
+          {
+            "value": 0.181,
             "mappedValue": 20.0
           },
           {
-            "value": 0.4631,
+            "value": 0.264,
+            "mappedValue": 30.0
+          },
+          {
+            "value": 0.345,
+            "mappedValue": 40.0
+          },
+          {
+            "value": 0.427,
             "mappedValue": 50.0
           },
           {
-            "value": 0.7541,
+            "value": 0.51,
+            "mappedValue": 80.0
+          },
+          {
+            "value": 0.57,
+            "mappedValue": 100.0
+          },
+          {
+            "value": 0.659,
+            "mappedValue": 130.0
+          },
+          {
+            "value": 0.716,
             "mappedValue": 150.0
           },
           {
-            "value": 0.833,
+            "value": 0.802,
             "mappedValue": 200.0
+          },
+          {
+            "value": 0.875,
+            "mappedValue": 250.0
           },
           {
             "value": 0.9329,
@@ -7930,11 +7962,15 @@
           {
             "value": 1.0,
             "mappedValue": 350.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 350.0
           }
         ],
         "precision": 1
       },
-      "valueDescription": "0-300",
+      "valueDescription": "0-350",
       "unit": "Meters"
     },
     {
@@ -7954,20 +7990,52 @@
             "mappedValue": 0.0
           },
           {
-            "value": 0.1838,
+            "value": 0.0,
+            "mappedValue": 0.0
+          },
+          {
+            "value": 0.095,
+            "mappedValue": 10.0
+          },
+          {
+            "value": 0.181,
             "mappedValue": 20.0
           },
           {
-            "value": 0.4631,
+            "value": 0.264,
+            "mappedValue": 30.0
+          },
+          {
+            "value": 0.345,
+            "mappedValue": 40.0
+          },
+          {
+            "value": 0.427,
             "mappedValue": 50.0
           },
           {
-            "value": 0.7541,
+            "value": 0.51,
+            "mappedValue": 80.0
+          },
+          {
+            "value": 0.57,
+            "mappedValue": 100.0
+          },
+          {
+            "value": 0.659,
+            "mappedValue": 130.0
+          },
+          {
+            "value": 0.716,
             "mappedValue": 150.0
           },
           {
-            "value": 0.833,
+            "value": 0.802,
             "mappedValue": 200.0
+          },
+          {
+            "value": 0.875,
+            "mappedValue": 250.0
           },
           {
             "value": 0.9329,
@@ -7976,11 +8044,15 @@
           {
             "value": 1.0,
             "mappedValue": 350.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 350.0
           }
         ],
         "precision": 1
       },
-      "valueDescription": "0-300",
+      "valueDescription": "0-350",
       "unit": "Meters"
     },
     {
@@ -8756,19 +8828,6 @@
       ],
       "valueDescription": "",
       "unit": "Meters"
-    },
-    {
-      "heliosType": "DCS.Common.NetworkValue",
-      "device": "Simulator Telemetry",
-      "name": "magnetic yaw",
-      "description": "Current magnetic yaw of the aircraft.",
-      "exports": [
-        {
-          "id": "T6"
-        }
-      ],
-      "valueDescription": "(-180 to 180)",
-      "unit": "Degrees"
     },
     {
       "heliosType": "DCS.Common.Switch",
