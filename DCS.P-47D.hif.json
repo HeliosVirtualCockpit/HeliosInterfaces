@@ -1,7 +1,7 @@
 {
   "source": "DCSFlightPanels",
-  "version": "1.6.6060.2",
-  "commit": "76eb08be050fb932016b2fd828e771e6a03a814e",
+  "version": "1.6.6060.3",
+  "commit": "3ff9ab1cb66caad35b29befdbfa0871274de86ea",
   "type": "DCS",
   "name": "DCS P-47D",
   "module": "P-47D",
@@ -109,19 +109,19 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.1f",
+          "format": null,
           "id": "2139"
         }
       ],
       "deviceId": "14",
       "positions": [
         {
-          "argumentValue": "1.0",
+          "argumentValue": "0",
           "name": "Position1",
           "actionId": "3037"
         },
         {
-          "argumentValue": "0.0",
+          "argumentValue": "1",
           "name": "Position2",
           "actionId": "3037"
         }
@@ -184,19 +184,19 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.1f",
+          "format": null,
           "id": "2141"
         }
       ],
       "deviceId": "14",
       "positions": [
         {
-          "argumentValue": "1.0",
+          "argumentValue": "0",
           "name": "Position1",
           "actionId": "3039"
         },
         {
-          "argumentValue": "0.0",
+          "argumentValue": "1",
           "name": "Position2",
           "actionId": "3039"
         }
@@ -259,19 +259,19 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.1f",
+          "format": null,
           "id": "2143"
         }
       ],
       "deviceId": "14",
       "positions": [
         {
-          "argumentValue": "1.0",
+          "argumentValue": "0",
           "name": "Position1",
           "actionId": "3041"
         },
         {
-          "argumentValue": "0.0",
+          "argumentValue": "1",
           "name": "Position2",
           "actionId": "3041"
         }
