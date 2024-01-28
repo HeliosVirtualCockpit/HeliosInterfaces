@@ -1,7 +1,7 @@
 {
   "source": "DCSFlightPanels",
-  "version": "0x6040",
-  "commit": "",
+  "version": "1.6.6060.2",
+  "commit": "76eb08be050fb932016b2fd828e771e6a03a814e",
   "type": "DCS",
   "name": "DCS P-47D",
   "module": "P-47D",
@@ -2168,14 +2168,14 @@
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Gauges",
       "name": "Altimeter Pressure",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Barometric Air Pressure Adjustment inHg",
       "exports": [
         {
           "format": "%.3f",
           "id": "21"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
+      "valueDescription": "28-31 inHg",
       "unit": "Numeric",
       "calibration": {
         "points": [
@@ -4740,6 +4740,28 @@
           "releaseValue": "0"
         }
       ]
+    },
+	{
+      "heliosType": "DCS.Common.Axis",
+      "device": "Throttle Quadrant",
+      "name": "Throttle Lever",
+      "description": "Current value of this potentiometer.",
+      "exports": [
+        {
+          "format": "%.3f",
+          "id": "43"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.025,
+      "argumentMin": 0,
+      "argumentMax": 1,
+      "actions": {
+        "set": {
+          "deviceId": "3",
+          "actionId": "3003"
+        }
+      }
     },
     {
       "heliosType": "DCS.Common.Axis",
