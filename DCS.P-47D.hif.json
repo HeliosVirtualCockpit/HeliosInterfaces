@@ -116,12 +116,12 @@
       "deviceId": "14",
       "positions": [
         {
-          "argumentValue": "0",
+          "argumentValue": "1",
           "name": "Position1",
           "actionId": "3037"
         },
         {
-          "argumentValue": "1",
+          "argumentValue": "0",
           "name": "Position2",
           "actionId": "3037"
         }
@@ -191,12 +191,12 @@
       "deviceId": "14",
       "positions": [
         {
-          "argumentValue": "0",
+          "argumentValue": "1",
           "name": "Position1",
           "actionId": "3039"
         },
         {
-          "argumentValue": "1",
+          "argumentValue": "0",
           "name": "Position2",
           "actionId": "3039"
         }
@@ -266,12 +266,12 @@
       "deviceId": "14",
       "positions": [
         {
-          "argumentValue": "0",
+          "argumentValue": "1",
           "name": "Position1",
           "actionId": "3041"
         },
         {
-          "argumentValue": "1",
+          "argumentValue": "0",
           "name": "Position2",
           "actionId": "3041"
         }
