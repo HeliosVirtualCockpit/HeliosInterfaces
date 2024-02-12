@@ -1,7 +1,7 @@
 {
   "source": "DCSFlightPanels",
-  "version": "0x4600",
-  "commit": "b48e5fb9aeda3615d5e4c54304f5d7da049e738b",
+  "version": "1.6.6070.0",
+  "commit": "3ed2fc5aa6660564228fcd138e3a1194a5291af2",
   "type": "DCS",
   "name": "DCS AJS37",
   "module": "AJS37",
@@ -11,6 +11,7 @@
   "functions": [
     {
       "heliosType": "DCS.Common.Switch",
+      464 "",
       "device": "Countermeasures",
       "name": "Countermeasure Release Mode",
       "description": "Current position of this switch.",
@@ -3208,96 +3209,26 @@
       ]
     },
     {
-      "heliosType": "DCS.Common.NetworkValue",
-      "device": "Flight Data Unit",
-      "name": "AFK 15 Deg Mode",
-      "description": "Unimplemented [464] AFK_15_DEG_MODE",
-      "exports": [
-        {
-          "id": "464"
-        }
-      ],
-      "unimplemented": true,
-      "dcsbios": {
-        "id": 464,
-        "key": "AFK_15_DEG_MODE",
-        "reference": {
-          "info": {
-            "actiondId": 3402,
-            "doc": {
-              "control_type": "action",
-              "description": "AFK 15 Deg Mode",
-              "inputs": [
-                {
-                  "argument": "TOGGLE",
-                  "description": "toggle switch state",
-                  "interface": "action"
-                }
-              ],
-              "momentary_positions": "none",
-              "outputs": [
-                {
-                  "address": 17940,
-                  "description": "selector position",
-                  "mask": 4096,
-                  "max_value": 1,
-                  "shift_by": 12,
-                  "suffix": "",
-                  "type": "integer"
-                }
-              ],
-              "physical_variant": "limited_rotary"
-            },
-            "type": "toggleSwitchToggleOnly"
-          }
-        }
-      }
-    },
-    {
-      "heliosType": "DCS.Common.NetworkValue",
+      "heliosType": "DCS.Common.PushButton",
       "device": "Flight Data Unit",
       "name": "AFK Mode 3",
-      "description": "Unimplemented [464] AFK_MODE_3",
+      "description": "Current state of this button.",
       "exports": [
         {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
           "id": "464"
         }
       ],
-      "unimplemented": true,
-      "dcsbios": {
-        "id": 464,
-        "key": "AFK_MODE_3",
-        "reference": {
-          "info": {
-            "actiondId": 3402,
-            "doc": {
-              "control_type": "action",
-              "description": "AFK Mode 3",
-              "inputs": [
-                {
-                  "argument": "TOGGLE",
-                  "description": "toggle switch state",
-                  "interface": "action"
-                }
-              ],
-              "momentary_positions": "none",
-              "outputs": [
-                {
-                  "address": 17940,
-                  "description": "selector position",
-                  "mask": 2048,
-                  "max_value": 1,
-                  "shift_by": 11,
-                  "suffix": "",
-                  "type": "integer"
-                }
-              ],
-              "physical_variant": "limited_rotary"
-            },
-            "type": "toggleSwitchToggleOnly"
-          }
+      "buttons": [
+        {
+          "deviceId": "25",
+          "pushId": "3402",
+          "pushValue": "1",
+          "releaseId": "3402",
+          "releaseValue": "0"
         }
-      }
+      ]
     },
     {
       "heliosType": "DCS.Common.Switch",
