@@ -1,7 +1,7 @@
 {
-  "source": "DCSFlightPanels",
-  "version": "1.6.6070.0",
-  "commit": "3ed2fc5aa6660564228fcd138e3a1194a5291af2",
+  "source": "Helios",
+  "version": "0x4600",
+  "commit": "b48e5fb9aeda3615d5e4c54304f5d7da049e738b",
   "type": "DCS",
   "name": "DCS AJS37",
   "module": "AJS37",
@@ -10,18 +10,41 @@
   ],
   "functions": [
     {
-      "heliosType": "DCS.Common.Switch",
-      464 "",
+      "heliosType": "DCS.Common.RotaryEncoder",
       "device": "Countermeasures",
-      "name": "Countermeasure Release Mode",
-      "description": "Current position of this switch.",
+      "name": "Countermeasure Release Mode (Writable)",
+      "description": "Current position of this rotary encoder knob.",
       "exports": [
         {
-          "format": "%0.1f",
+          "format": "%.5f",
           "id": "184"
         }
       ],
-      "deviceId": "22",
+      "unit": "Numeric",
+      "argumentValue": 1,
+      "actions": {
+        "increment": {
+          "deviceId": "28",
+          "actionId": "3805"
+        },
+        "decrement": {
+          "deviceId": "28",
+          "actionId": "3805"
+        }
+      }
+    },
+{
+      "heliosType": "DCS.Common.Switch",
+      "device": "Countermeasures",
+      "name": "Countermeasure Release Mode (Readable)",
+      "description": "Current position of this switch. Cannot be set via this.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "2002"
+        }
+      ],
+      "deviceId": "28",
       "positions": [
         {
           "argumentValue": "-1.0",
@@ -39,7 +62,10 @@
           "actionId": "3001"
         }
       ]
-    },
+    },	
+	
+	
+	
     {
       "heliosType": "DCS.Common.Switch",
       "device": "Countermeasures",
@@ -215,79 +241,31 @@
         }
       ]
     },
+
     {
-      "heliosType": "DCS.Common.NetworkValue",
-      "device": "Destination",
-      "name": "AJS37_DEST_INDICATOR_DATA_1",
-      "description": "Unimplemented Callback [UNKNOWN] AJS37_DEST_INDICATOR_DATA_1",
-      "exports": [
-        {
-          "id": "UNKNOWN"
-        }
-      ],
-      "callback": true,
-      "indicationDeviceId": "indication1",
-      "unimplemented": true
-    },
-    {
-      "heliosType": "DCS.Common.NetworkValue",
-      "device": "Destination",
-      "name": "AJS37_DEST_INDICATOR_DATA_2",
-      "description": "Unimplemented Callback [UNKNOWN] AJS37_DEST_INDICATOR_DATA_2",
-      "exports": [
-        {
-          "id": "UNKNOWN"
-        }
-      ],
-      "callback": true,
-      "indicationDeviceId": "indication1",
-      "unimplemented": true
-    },
-    {
-      "heliosType": "DCS.Common.NetworkValue",
+      "heliosType": "DCS.Common.Switch",
       "device": "Doppler",
       "name": "Doppler Land/Sea Mode",
-      "description": "Unimplemented [213] DOPPLER_LAND_SEA_MODE",
+      "description": "Current position of Doppler Land Sea Mode Switch",
       "exports": [
         {
+          "format": "%0.1f",			
           "id": "213"
         }
-      ],
-      "unimplemented": true,
-      "dcsbios": {
-        "id": 213,
-        "key": "DOPPLER_LAND_SEA_MODE",
-        "reference": {
-          "info": {
-            "actiondId": 3001,
-            "doc": {
-              "control_type": "action",
-              "description": "Doppler Land/Sea Mode",
-              "inputs": [
-                {
-                  "argument": "TOGGLE",
-                  "description": "toggle switch state",
-                  "interface": "action"
-                }
-              ],
-              "momentary_positions": "none",
-              "outputs": [
-                {
-                  "address": 17936,
-                  "description": "selector position",
-                  "mask": 2,
-                  "max_value": 1,
-                  "shift_by": 1,
-                  "suffix": "",
-                  "type": "integer"
-                }
-              ],
-              "physical_variant": "limited_rotary"
-            },
-            "type": "toggleSwitchToggleOnly"
-          }
+      ],    
+      "deviceId": "21",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position2",
+          "actionId": "3001"
         }
-      }
+      ]
     },
     {
       "heliosType": "DCS.Common.Switch",
@@ -364,34 +342,10 @@
         }
       ]
     },
+    
     {
       "heliosType": "DCS.Common.Switch",
-      "device": "Engine Panel",
-      "name": "IFF/Transponder Power",
-      "description": "Current position of this switch.",
-      "exports": [
-        {
-          "format": "%0.1f",
-          "id": "1203"
-        }
-      ],
-      "deviceId": "18",
-      "positions": [
-        {
-          "argumentValue": "1.0",
-          "name": "Position1",
-          "actionId": "3920"
-        },
-        {
-          "argumentValue": "0.0",
-          "name": "Position2",
-          "actionId": "3920"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.Switch",
-      "device": "Engine Panel",
+      "device": "Radar",
       "name": "IFF Channel Selector",
       "description": "Current position of this switch.",
       "exports": [
@@ -458,7 +412,7 @@
           "actionId": "3304"
         },
         {
-          "argumentValue": "1.1",
+          "argumentValue": "1.0",
           "name": "Position2",
           "actionId": "3304"
         }
@@ -478,14 +432,14 @@
       "deviceId": "18",
       "positions": [
         {
-          "argumentValue": "1.0",
+          "argumentValue": "0.0",
           "name": "Position1",
-          "actionId": "3005"
+          "actionId": "3004"
         },
         {
-          "argumentValue": "0.0",
+          "argumentValue": "1.0",
           "name": "Position2",
-          "actionId": "3005"
+          "actionId": "3004"
         }
       ]
     },
@@ -836,6 +790,31 @@
     {
       "heliosType": "DCS.Common.Switch",
       "device": "Engine Panel",
+      "name": "DISABLED_IN_DATA Tank Pump",
+      "description": "NOT_WORKING Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "314"
+        }
+      ],
+      "deviceId": "18",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Position1",
+          "actionId": "3007"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Position2",
+          "actionId": "3007"
+        }
+      ]
+    },	
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Engine Panel",
       "name": "Flight Recorder",
       "description": "Current position of this switch.",
       "exports": [
@@ -847,12 +826,12 @@
       "deviceId": "18",
       "positions": [
         {
-          "argumentValue": "0.0",
+          "argumentValue": "-1.0",
           "name": "Position1",
           "actionId": "3924"
         },
         {
-          "argumentValue": "0.5",
+          "argumentValue": "0.0",
           "name": "Position2",
           "actionId": "3924"
         },
@@ -863,25 +842,23 @@
         }
       ]
     },
-    {
-      "heliosType": "DCS.Common.RotaryEncoder",
+	{
+      "heliosType": "DCS.Common.Axis",
       "device": "Engine Panel",
       "name": "Drysuit Ventilation Adjustment",
-      "description": "Current position of this rotary encoder knob.",
+      "description": "Current value of this potentiometer.",
       "exports": [
         {
           "format": "%.5f",
           "id": "396"
         }
       ],
-      "unit": "Numeric",
+      "loop": false,
       "argumentValue": 0.025,
+      "argumentMin": 0,
+      "argumentMax": 1,
       "actions": {
-        "increment": {
-          "deviceId": "18",
-          "actionId": "3917"
-        },
-        "decrement": {
+        "set": {
           "deviceId": "18",
           "actionId": "3917"
         }
@@ -890,8 +867,8 @@
     {
       "heliosType": "DCS.Common.Switch",
       "device": "Engine Panel",
-      "name": "Cabin Air Valve",
-      "description": "Current position of this switch.",
+      "name": "Bypass Stores Release Mechanism Guard",
+      "description": "Current position of this Guard.",
       "exports": [
         {
           "format": "%0.1f",
@@ -916,12 +893,12 @@
       "heliosType": "DCS.Common.PushButton",
       "device": "Engine Panel",
       "name": "Missile Select Button",
-      "description": "Current state of this button.",
+      "description": "FIXME Current state of this button.",
       "exports": [
         {
           "format": "%1d",
           "isExportedEveryFrame": false,
-          "id": "400"
+          "id": "4001"
         }
       ],
       "buttons": [
@@ -959,25 +936,23 @@
         }
       ]
     },
-    {
-      "heliosType": "DCS.Common.RotaryEncoder",
+ 	{
+      "heliosType": "DCS.Common.Axis",
       "device": "Engine Panel",
       "name": "Maintenance Testing Mode",
-      "description": "Current position of this rotary encoder knob.",
+      "description": "Current value of this potentiometer.",
       "exports": [
         {
           "format": "%.5f",
           "id": "675"
         }
       ],
-      "unit": "Numeric",
+      "loop": false,
       "argumentValue": 0.025,
+      "argumentMin": 0,
+      "argumentMax": 1,
       "actions": {
-        "increment": {
-          "deviceId": "18",
-          "actionId": "3913"
-        },
-        "decrement": {
+        "set": {
           "deviceId": "18",
           "actionId": "3913"
         }
@@ -1440,182 +1415,6 @@
       ]
     },
     {
-      "heliosType": "DCS.Common.NetworkValue",
-      "device": "External Aircraft Model",
-      "name": "EXT_SPEED_BRAKE_LEFT",
-      "description": "Unimplemented Callback [[anonymous callback 10]] EXT_SPEED_BRAKE_LEFT",
-      "exports": [
-        {
-          "id": "[anonymous callback 10]"
-        }
-      ],
-      "callback": true,
-      "unimplemented": true
-    },
-    {
-      "heliosType": "DCS.Common.NetworkValue",
-      "device": "External Aircraft Model",
-      "name": "EXT_POSITION_LIGHTS",
-      "description": "Unimplemented Callback [[anonymous callback 11]] EXT_POSITION_LIGHTS",
-      "exports": [
-        {
-          "id": "[anonymous callback 11]"
-        }
-      ],
-      "callback": true,
-      "unimplemented": true
-    },
-    {
-      "heliosType": "DCS.Common.NetworkValue",
-      "device": "External Aircraft Model",
-      "name": "EXT_NAV_LIGHTS_WING",
-      "description": "Unimplemented Callback [[anonymous callback 12]] EXT_NAV_LIGHTS_WING",
-      "exports": [
-        {
-          "id": "[anonymous callback 12]"
-        }
-      ],
-      "callback": true,
-      "unimplemented": true
-    },
-    {
-      "heliosType": "DCS.Common.NetworkValue",
-      "device": "External Aircraft Model",
-      "name": "EXT_NAV_LIGHTS_TAIL",
-      "description": "Unimplemented Callback [[anonymous callback 13]] EXT_NAV_LIGHTS_TAIL",
-      "exports": [
-        {
-          "id": "[anonymous callback 13]"
-        }
-      ],
-      "callback": true,
-      "unimplemented": true
-    },
-    {
-      "heliosType": "DCS.Common.NetworkValue",
-      "device": "External Aircraft Model",
-      "name": "EXT_STROBE_LIGHTS",
-      "description": "Unimplemented Callback [[anonymous callback 14]] EXT_STROBE_LIGHTS",
-      "exports": [
-        {
-          "id": "[anonymous callback 14]"
-        }
-      ],
-      "callback": true,
-      "unimplemented": true
-    },
-    {
-      "heliosType": "DCS.Common.NetworkValue",
-      "device": "External Aircraft Model",
-      "name": "EXT_FORMATION_LIGHTS",
-      "description": "Unimplemented Callback [[anonymous callback 15]] EXT_FORMATION_LIGHTS",
-      "exports": [
-        {
-          "id": "[anonymous callback 15]"
-        }
-      ],
-      "callback": true,
-      "unimplemented": true
-    },
-    {
-      "heliosType": "DCS.Common.NetworkValue",
-      "device": "External Aircraft Model",
-      "name": "EXT_WOW_NOSE",
-      "description": "Unimplemented Callback [[anonymous callback 16]] EXT_WOW_NOSE",
-      "exports": [
-        {
-          "id": "[anonymous callback 16]"
-        }
-      ],
-      "callback": true,
-      "unimplemented": true
-    },
-    {
-      "heliosType": "DCS.Common.NetworkValue",
-      "device": "External Aircraft Model",
-      "name": "EXT_WOW_RIGHT",
-      "description": "Unimplemented Callback [[anonymous callback 17]] EXT_WOW_RIGHT",
-      "exports": [
-        {
-          "id": "[anonymous callback 17]"
-        }
-      ],
-      "callback": true,
-      "unimplemented": true
-    },
-    {
-      "heliosType": "DCS.Common.NetworkValue",
-      "device": "External Aircraft Model",
-      "name": "EXT_WOW_LEFT",
-      "description": "Unimplemented Callback [[anonymous callback 18]] EXT_WOW_LEFT",
-      "exports": [
-        {
-          "id": "[anonymous callback 18]"
-        }
-      ],
-      "callback": true,
-      "unimplemented": true
-    },
-    {
-      "heliosType": "DCS.Common.NetworkValue",
-      "device": "External Aircraft Model",
-      "name": "EXT_SPEED_BRAKE_RIGHT",
-      "description": "Unimplemented Callback [[anonymous callback 9]] EXT_SPEED_BRAKE_RIGHT",
-      "exports": [
-        {
-          "id": "[anonymous callback 9]"
-        }
-      ],
-      "callback": true,
-      "unimplemented": true
-    },
-    {
-      "heliosType": "DCS.Common.NetworkValue",
-      "device": "FR22 Radio",
-      "name": "Radio Manual Frequency Setting Modulation",
-      "description": "Unimplemented [170] FR22_SET_MODULATION",
-      "exports": [
-        {
-          "id": "170"
-        }
-      ],
-      "unimplemented": true,
-      "dcsbios": {
-        "id": 170,
-        "key": "FR22_SET_MODULATION",
-        "reference": {
-          "info": {
-            "actiondId": 3008,
-            "doc": {
-              "control_type": "action",
-              "description": "Radio Manual Frequency Setting Modulation",
-              "inputs": [
-                {
-                  "argument": "TOGGLE",
-                  "description": "toggle switch state",
-                  "interface": "action"
-                }
-              ],
-              "momentary_positions": "none",
-              "outputs": [
-                {
-                  "address": 17942,
-                  "description": "selector position",
-                  "mask": 32768,
-                  "max_value": 1,
-                  "shift_by": 15,
-                  "suffix": "",
-                  "type": "integer"
-                }
-              ],
-              "physical_variant": "limited_rotary"
-            },
-            "type": "toggleSwitchToggleOnly"
-          }
-        }
-      }
-    },
-    {
       "heliosType": "DCS.Common.RotaryEncoder",
       "device": "FR22 Radio",
       "name": "Radio Frequency Knob Inner Left",
@@ -1627,14 +1426,14 @@
         }
       ],
       "unit": "Numeric",
-      "argumentValue": 0.025,
+      "argumentValue": 1.0,
       "actions": {
         "increment": {
-          "deviceId": "31",
+          "deviceId": "30",
           "actionId": "3003"
         },
         "decrement": {
-          "deviceId": "31",
+          "deviceId": "30",
           "actionId": "3003"
         }
       }
@@ -1651,14 +1450,14 @@
         }
       ],
       "unit": "Numeric",
-      "argumentValue": 0.025,
+      "argumentValue": 1.0,
       "actions": {
         "increment": {
-          "deviceId": "31",
+          "deviceId": "30",
           "actionId": "3004"
         },
         "decrement": {
-          "deviceId": "31",
+          "deviceId": "30",
           "actionId": "3004"
         }
       }
@@ -1675,14 +1474,14 @@
         }
       ],
       "unit": "Numeric",
-      "argumentValue": 0.025,
+      "argumentValue": 1.0,
       "actions": {
         "increment": {
-          "deviceId": "31",
+          "deviceId": "30",
           "actionId": "3005"
         },
         "decrement": {
-          "deviceId": "31",
+          "deviceId": "30",
           "actionId": "3005"
         }
       }
@@ -1699,87 +1498,42 @@
         }
       ],
       "unit": "Numeric",
-      "argumentValue": 0.025,
+      "argumentValue": 1.0,
       "actions": {
         "increment": {
-          "deviceId": "31",
+          "deviceId": "30",
           "actionId": "3006"
         },
         "decrement": {
-          "deviceId": "31",
+          "deviceId": "30",
           "actionId": "3006"
         }
       }
     },
     {
-      "heliosType": "DCS.Common.Switch",
+      "heliosType": "DCS.Common.RotaryEncoder",
       "device": "FR22 Radio",
       "name": "FR22 Group Selector",
-      "description": "Current position of this switch.",
+      "description": "Current position of this rotary encoder knob.",
       "exports": [
         {
-          "format": "%0.1f",
+          "format": "%.5f",
           "id": "360"
         }
       ],
-      "deviceId": "31",
-      "positions": [
-        {
-          "argumentValue": "0.0",
-          "name": "Position1",
+
+      "unit": "Numeric",
+      "argumentValue": 1.0,
+      "actions": {
+        "increment": {
+          "deviceId": "30",
           "actionId": "3307"
         },
-        {
-          "argumentValue": "0.1",
-          "name": "Position2",
-          "actionId": "3307"
-        },
-        {
-          "argumentValue": "0.2",
-          "name": "Position3",
-          "actionId": "3307"
-        },
-        {
-          "argumentValue": "0.3",
-          "name": "Position4",
-          "actionId": "3307"
-        },
-        {
-          "argumentValue": "0.4",
-          "name": "Position5",
-          "actionId": "3307"
-        },
-        {
-          "argumentValue": "0.5",
-          "name": "Position6",
-          "actionId": "3307"
-        },
-        {
-          "argumentValue": "0.6",
-          "name": "Position7",
-          "actionId": "3307"
-        },
-        {
-          "argumentValue": "0.7",
-          "name": "Position8",
-          "actionId": "3307"
-        },
-        {
-          "argumentValue": "0.8",
-          "name": "Position9",
-          "actionId": "3307"
-        },
-        {
-          "argumentValue": "0.9",
-          "name": "Position10",
-          "actionId": "3307"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Position11",
+        "decrement": {
+          "deviceId": "30",
           "actionId": "3307"
         }
-      ]
+      }
     },
     {
       "heliosType": "DCS.Common.PushButton",
@@ -1795,7 +1549,7 @@
       ],
       "buttons": [
         {
-          "deviceId": "31",
+          "deviceId": "30",
           "pushId": "3200",
           "pushValue": "1",
           "releaseId": "3200",
@@ -1817,7 +1571,7 @@
       ],
       "buttons": [
         {
-          "deviceId": "31",
+          "deviceId": "30",
           "pushId": "3201",
           "pushValue": "1",
           "releaseId": "3201",
@@ -1839,7 +1593,7 @@
       ],
       "buttons": [
         {
-          "deviceId": "31",
+          "deviceId": "30",
           "pushId": "3202",
           "pushValue": "1",
           "releaseId": "3202",
@@ -1861,7 +1615,7 @@
       ],
       "buttons": [
         {
-          "deviceId": "31",
+          "deviceId": "30",
           "pushId": "3203",
           "pushValue": "1",
           "releaseId": "3203",
@@ -1883,7 +1637,7 @@
       ],
       "buttons": [
         {
-          "deviceId": "31",
+          "deviceId": "30",
           "pushId": "3204",
           "pushValue": "1",
           "releaseId": "3204",
@@ -1905,7 +1659,7 @@
       ],
       "buttons": [
         {
-          "deviceId": "31",
+          "deviceId": "30",
           "pushId": "3205",
           "pushValue": "1",
           "releaseId": "3205",
@@ -1927,7 +1681,7 @@
       ],
       "buttons": [
         {
-          "deviceId": "31",
+          "deviceId": "30",
           "pushId": "3206",
           "pushValue": "1",
           "releaseId": "3206",
@@ -1949,7 +1703,7 @@
       ],
       "buttons": [
         {
-          "deviceId": "31",
+          "deviceId": "30",
           "pushId": "3207",
           "pushValue": "1",
           "releaseId": "3207",
@@ -1971,7 +1725,7 @@
       ],
       "buttons": [
         {
-          "deviceId": "31",
+          "deviceId": "30",
           "pushId": "3208",
           "pushValue": "1",
           "releaseId": "3208",
@@ -1993,7 +1747,7 @@
       ],
       "buttons": [
         {
-          "deviceId": "31",
+          "deviceId": "30",
           "pushId": "3209",
           "pushValue": "1",
           "releaseId": "3209",
@@ -2015,7 +1769,7 @@
       ],
       "buttons": [
         {
-          "deviceId": "31",
+          "deviceId": "30",
           "pushId": "3210",
           "pushValue": "1",
           "releaseId": "3210",
@@ -2037,7 +1791,7 @@
       ],
       "buttons": [
         {
-          "deviceId": "31",
+          "deviceId": "30",
           "pushId": "3211",
           "pushValue": "1",
           "releaseId": "3211",
@@ -2059,7 +1813,7 @@
       ],
       "buttons": [
         {
-          "deviceId": "31",
+          "deviceId": "30",
           "pushId": "3212",
           "pushValue": "1",
           "releaseId": "3212",
@@ -2081,7 +1835,7 @@
       ],
       "buttons": [
         {
-          "deviceId": "31",
+          "deviceId": "30",
           "pushId": "3213",
           "pushValue": "1",
           "releaseId": "3213",
@@ -2103,7 +1857,7 @@
       ],
       "buttons": [
         {
-          "deviceId": "31",
+          "deviceId": "30",
           "pushId": "3214",
           "pushValue": "1",
           "releaseId": "3214",
@@ -2125,7 +1879,7 @@
       ],
       "buttons": [
         {
-          "deviceId": "31",
+          "deviceId": "30",
           "pushId": "3215",
           "pushValue": "1",
           "releaseId": "3215",
@@ -2147,7 +1901,7 @@
       ],
       "buttons": [
         {
-          "deviceId": "31",
+          "deviceId": "30",
           "pushId": "3216",
           "pushValue": "1",
           "releaseId": "3216",
@@ -2169,7 +1923,7 @@
       ],
       "buttons": [
         {
-          "deviceId": "31",
+          "deviceId": "30",
           "pushId": "3217",
           "pushValue": "1",
           "releaseId": "3217",
@@ -2191,7 +1945,7 @@
       ],
       "buttons": [
         {
-          "deviceId": "31",
+          "deviceId": "30",
           "pushId": "3218",
           "pushValue": "1",
           "releaseId": "3218",
@@ -2213,7 +1967,7 @@
       ],
       "buttons": [
         {
-          "deviceId": "31",
+          "deviceId": "30",
           "pushId": "3219",
           "pushValue": "1",
           "releaseId": "3219",
@@ -2235,7 +1989,7 @@
       ],
       "buttons": [
         {
-          "deviceId": "31",
+          "deviceId": "30",
           "pushId": "3011",
           "pushValue": "1",
           "releaseId": "3011",
@@ -2243,39 +1997,62 @@
         }
       ]
     },
-    {
-      "heliosType": "DCS.Common.RotaryEncoder",
+	{
+      "heliosType": "DCS.Common.Axis",
       "device": "FR22 Radio",
       "name": "Radio Volume",
-      "description": "Current position of this rotary encoder knob.",
+      "description": "Current value of this potentiometer.",
       "exports": [
         {
           "format": "%.5f",
           "id": "385"
         }
       ],
-      "unit": "Numeric",
+      "loop": false,
       "argumentValue": 0.025,
+      "argumentMin": 0,
+      "argumentMax": 1,
+      "actions": {
+        "set": {
+          "deviceId": "30",
+          "actionId": "3112"
+        }
+      }
+    },	
+    {
+      "heliosType": "DCS.Common.RotaryEncoder",
+      "device": "FR22 Radio",
+      "name": "FR24 Mode Selector (Writable)",
+      "description": "Current position of this rotary encoder knob.",
+      "exports": [
+        {
+          "format": "%.5f",
+          "isExportedEveryFrame": false,		  
+          "id": "386"
+        }
+      ],
+      "unit": "Numeric",
+      "argumentValue": 1,
       "actions": {
         "increment": {
-          "deviceId": "21",
-          "actionId": "3112"
+          "deviceId": "30",
+          "actionId": "3110"
         },
         "decrement": {
-          "deviceId": "21",
-          "actionId": "3112"
+          "deviceId": "30",
+          "actionId": "3110"
         }
       }
     },
     {
       "heliosType": "DCS.Common.Switch",
       "device": "FR22 Radio",
-      "name": "FR24 Mode Selector",
-      "description": "Current position of this switch.",
+      "name": "FR24 Mode Selector (Readable)",
+      "description": "Current value of the FR24 Mode Selector Dial.",
       "exports": [
         {
           "format": "%0.1f",
-          "id": "386"
+          "id": "2001"
         }
       ],
       "deviceId": "31",
@@ -2313,171 +2090,117 @@
       ]
     },
     {
-      "heliosType": "DCS.Common.Switch",
+	  "heliosType": "DCS.Common.RotaryEncoder",
       "device": "FR22 Radio",
       "name": "FR22 Base Selector",
-      "description": "Current position of this switch.",
+      "description": "Current position of this rotary encoder knob.",
       "exports": [
         {
-          "format": "%0.2f",
+          "format": "%.5f",
           "id": "492"
         }
       ],
-      "deviceId": "31",
-      "positions": [
-        {
-          "argumentValue": "0.00",
-          "name": "Position1",
+      "unit": "Numeric",
+      "argumentValue": 1.0,
+      "actions": {
+        "increment": {
+          "deviceId": "30",
           "actionId": "3230"
         },
-        {
-          "argumentValue": "0.05",
-          "name": "Position2",
-          "actionId": "3230"
-        },
-        {
-          "argumentValue": "0.10",
-          "name": "Position3",
-          "actionId": "3230"
-        },
-        {
-          "argumentValue": "0.15",
-          "name": "Position4",
-          "actionId": "3230"
-        },
-        {
-          "argumentValue": "0.20",
-          "name": "Position5",
-          "actionId": "3230"
-        },
-        {
-          "argumentValue": "0.25",
-          "name": "Position6",
-          "actionId": "3230"
-        },
-        {
-          "argumentValue": "0.30",
-          "name": "Position7",
-          "actionId": "3230"
-        },
-        {
-          "argumentValue": "0.35",
-          "name": "Position8",
-          "actionId": "3230"
-        },
-        {
-          "argumentValue": "0.40",
-          "name": "Position9",
-          "actionId": "3230"
-        },
-        {
-          "argumentValue": "0.45",
-          "name": "Position10",
-          "actionId": "3230"
-        },
-        {
-          "argumentValue": "0.50",
-          "name": "Position11",
-          "actionId": "3230"
-        },
-        {
-          "argumentValue": "0.55",
-          "name": "Position12",
-          "actionId": "3230"
-        },
-        {
-          "argumentValue": "0.60",
-          "name": "Position13",
-          "actionId": "3230"
-        },
-        {
-          "argumentValue": "0.65",
-          "name": "Position14",
-          "actionId": "3230"
-        },
-        {
-          "argumentValue": "0.70",
-          "name": "Position15",
-          "actionId": "3230"
-        },
-        {
-          "argumentValue": "0.75",
-          "name": "Position16",
-          "actionId": "3230"
-        },
-        {
-          "argumentValue": "0.80",
-          "name": "Position17",
-          "actionId": "3230"
-        },
-        {
-          "argumentValue": "0.85",
-          "name": "Position18",
-          "actionId": "3230"
-        },
-        {
-          "argumentValue": "0.90",
-          "name": "Position19",
-          "actionId": "3230"
-        },
-        {
-          "argumentValue": "0.95",
-          "name": "Position20",
-          "actionId": "3230"
-        },
-        {
-          "argumentValue": "1.00",
-          "name": "Position21",
+        "decrement": {
+          "deviceId": "30",
           "actionId": "3230"
         }
-      ]
+      }				
     },
     {
-      "heliosType": "DCS.Common.NetworkValue",
-      "device": "Flight Data Unit",
-      "name": "HUD Reflector Glass Position",
-      "description": "Unimplemented [11] HUD_GLASS_POSITION",
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "FR22 Radio",
+      "name": "Radio Group numerical display",
+      "description": "Current position of display drum",
       "exports": [
         {
+          "format": "%.5f",
+          "id": "490"
+        }
+      ],
+      "valueDescription": "0-1, last value at 0.430, increment step 0.1",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 5
+      }
+    },		
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "FR22 Radio",
+      "name": "Radio Base numerical display",
+      "description": "Current position of display drum",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "491"
+        }
+      ],
+      "valueDescription": "0-1, last value at 0.850, increment step 0.1",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 5
+      }
+    },		
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Flight Data Unit",
+      "name": "HUD Reflector Glass Position",
+      "description": "Current state of this button.",
+	"exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
           "id": "11"
         }
       ],
-      "unimplemented": true,
-      "dcsbios": {
-        "id": 11,
-        "key": "HUD_GLASS_POSITION",
-        "reference": {
-          "info": {
-            "actiondId": 3401,
-            "doc": {
-              "control_type": "action",
-              "description": "HUD Reflector Glass Position",
-              "inputs": [
-                {
-                  "argument": "TOGGLE",
-                  "description": "toggle switch state",
-                  "interface": "action"
-                }
-              ],
-              "momentary_positions": "none",
-              "outputs": [
-                {
-                  "address": 17940,
-                  "description": "selector position",
-                  "mask": 1024,
-                  "max_value": 1,
-                  "shift_by": 10,
-                  "suffix": "",
-                  "type": "integer"
-                }
-              ],
-              "physical_variant": "limited_rotary"
-            },
-            "type": "toggleSwitchToggleOnly"
-          }
+      "buttons": [
+        {
+          "deviceId": "22",
+          "pushId": "3401",
+          "pushValue": "1",
+          "releaseId": "3401",
+          "releaseValue": "0"
         }
-      }
-    },
+      ]
+    },		
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Engine Panel",
+      "name": "low pressure fuel LT-KRAN light",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "404"
+        }
+      ]
+    },	
     {
       "heliosType": "DCS.Common.Switch",
       "device": "Flight Data Unit",
@@ -2492,26 +2215,49 @@
       "deviceId": "22",
       "positions": [
         {
-          "argumentValue": "1.0",
+          "argumentValue": "0.0",
           "name": "Position1",
           "actionId": "3719"
         },
         {
-          "argumentValue": "0.0",
+          "argumentValue": "1.0",
           "name": "Position2",
           "actionId": "3719"
         }
       ]
     },
     {
-      "heliosType": "DCS.Common.RotaryEncoder",
+      "heliosType": "DCS.Common.Axis",
       "device": "Flight Data Unit",
       "name": "Magnetic Declination Correction",
-      "description": "Current position of this rotary encoder knob.",
+      "description": "Current value of this potentiometer.",
       "exports": [
         {
           "format": "%.5f",
           "id": "1201"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.2,
+      "argumentMin": -1,
+      "argumentMax": 1,
+      "actions": {
+        "set": {
+          "deviceId": "22",
+          "actionId": "3724"
+        }
+      }
+    },	
+	
+    {
+      "heliosType": "DCS.Common.RotaryEncoder",
+      "device": "Flight Data Unit",
+      "name": "Backup Altimeter Setting",
+      "description": "Current changeof this rotary encoder knob.",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "126"
         }
       ],
       "unit": "Numeric",
@@ -2519,36 +2265,14 @@
       "actions": {
         "increment": {
           "deviceId": "22",
-          "actionId": "3724"
+          "actionId": "3721"
         },
         "decrement": {
-          "deviceId": "22",
-          "actionId": "3724"
-        }
-      }
-    },
-    {
-      "heliosType": "DCS.Common.Axis",
-      "device": "Flight Data Unit",
-      "name": "Backup Altimeter Setting",
-      "description": "Current value of this potentiometer.",
-      "exports": [
-        {
-          "format": "%.5f",
-          "id": "126"
-        }
-      ],
-      "loop": false,
-      "argumentValue": 0.025,
-      "argumentMin": 0,
-      "argumentMax": 1,
-      "actions": {
-        "set": {
           "deviceId": "22",
           "actionId": "3721"
         }
       }
-    },
+    },	
     {
       "heliosType": "DCS.Common.PushButton",
       "device": "Flight Data Unit",
@@ -2558,12 +2282,12 @@
         {
           "format": "%1d",
           "isExportedEveryFrame": false,
-          "id": "134"
+          "id": "0"
         }
       ],
       "buttons": [
         {
-          "deviceId": "25",
+          "deviceId": "22",
           "pushId": "3802",
           "pushValue": "1",
           "releaseId": "3802",
@@ -2617,6 +2341,7 @@
         }
       ]
     },
+
     {
       "heliosType": "DCS.Common.Switch",
       "device": "Flight Data Unit",
@@ -2639,28 +2364,6 @@
           "argumentValue": "0.0",
           "name": "Position2",
           "actionId": "3718"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.PushButton",
-      "device": "Flight Data Unit",
-      "name": "Countermeasure Fast Release",
-      "description": "Current state of this button.",
-      "exports": [
-        {
-          "format": "%1d",
-          "isExportedEveryFrame": false,
-          "id": "184"
-        }
-      ],
-      "buttons": [
-        {
-          "deviceId": "22",
-          "pushId": "3001",
-          "pushValue": "1",
-          "releaseId": "3001",
-          "releaseValue": "0"
         }
       ]
     },
@@ -2786,6 +2489,37 @@
       ]
     },
     {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Flight Data Unit",
+      "name": "Seat Height Adjustment",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "212"
+        }
+      ],
+      "deviceId": "22",
+      "positions": [
+        {
+          "argumentValue": "-1.0",
+          "name": "Position1",
+          "actionId": "3404"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Position2",
+          "actionId": "3404"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position3",
+          "actionId": "3404"
+        }		
+      ]
+    },	
+	
+    {
       "heliosType": "DCS.Common.PushButton",
       "device": "Flight Data Unit",
       "name": "Canopy Jettison",
@@ -2830,51 +2564,30 @@
       }
     },
     {
-      "heliosType": "DCS.Common.NetworkValue",
+      "heliosType": "DCS.Common.Switch",
       "device": "Flight Data Unit",
       "name": "Parking Brake",
-      "description": "Unimplemented [22] PARKING_BRAKE",
+      "description": "Current position of this switch.",
       "exports": [
         {
+          "format": "%0.1f",
           "id": "22"
         }
       ],
-      "unimplemented": true,
-      "dcsbios": {
-        "id": 22,
-        "key": "PARKING_BRAKE",
-        "reference": {
-          "info": {
-            "actiondId": 3408,
-            "doc": {
-              "control_type": "action",
-              "description": "Parking Brake",
-              "inputs": [
-                {
-                  "argument": "TOGGLE",
-                  "description": "toggle switch state",
-                  "interface": "action"
-                }
-              ],
-              "momentary_positions": "none",
-              "outputs": [
-                {
-                  "address": 17940,
-                  "description": "selector position",
-                  "mask": 512,
-                  "max_value": 1,
-                  "shift_by": 9,
-                  "suffix": "",
-                  "type": "integer"
-                }
-              ],
-              "physical_variant": "limited_rotary"
-            },
-            "type": "toggleSwitchToggleOnly"
-          }
+      "deviceId": "22",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3408"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position2",
+          "actionId": "3408"
         }
-      }
-    },
+      ]
+    },	
     {
       "heliosType": "DCS.Common.Switch",
       "device": "Flight Data Unit",
@@ -3081,7 +2794,7 @@
       "deviceId": "22",
       "positions": [
         {
-          "argumentValue": "1.0",
+          "argumentValue": "-1.0",
           "name": "Position1",
           "actionId": "3918"
         },
@@ -3089,7 +2802,12 @@
           "argumentValue": "0.0",
           "name": "Position2",
           "actionId": "3918"
-        }
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position3",
+          "actionId": "3918"
+        }		
       ]
     },
     {
@@ -3106,7 +2824,7 @@
       "deviceId": "22",
       "positions": [
         {
-          "argumentValue": "1.0",
+          "argumentValue": "-1.0",
           "name": "Position1",
           "actionId": "3717"
         },
@@ -3114,7 +2832,12 @@
           "argumentValue": "0.0",
           "name": "Position2",
           "actionId": "3717"
-        }
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position3",
+          "actionId": "3717"
+        }		
       ]
     },
     {
@@ -3131,7 +2854,7 @@
       "deviceId": "22",
       "positions": [
         {
-          "argumentValue": "1.0",
+          "argumentValue": "-1.0",
           "name": "Position1",
           "actionId": "3716"
         },
@@ -3139,94 +2862,11 @@
           "argumentValue": "0.0",
           "name": "Position2",
           "actionId": "3716"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.PushButton",
-      "device": "Flight Data Unit",
-      "name": "SPAK",
-      "description": "Current state of this button.",
-      "exports": [
+        },
         {
-          "format": "%1d",
-          "isExportedEveryFrame": false,
-          "id": "401"
-        }
-      ],
-      "buttons": [
-        {
-          "deviceId": "22",
-          "pushId": "3301",
-          "pushValue": "1",
-          "releaseId": "3301",
-          "releaseValue": "0"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.PushButton",
-      "device": "Flight Data Unit",
-      "name": "Attitude Hold",
-      "description": "Current state of this button.",
-      "exports": [
-        {
-          "format": "%1d",
-          "isExportedEveryFrame": false,
-          "id": "402"
-        }
-      ],
-      "buttons": [
-        {
-          "deviceId": "22",
-          "pushId": "3302",
-          "pushValue": "1",
-          "releaseId": "3302",
-          "releaseValue": "0"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.PushButton",
-      "device": "Flight Data Unit",
-      "name": "Altitude Hold",
-      "description": "Current state of this button.",
-      "exports": [
-        {
-          "format": "%1d",
-          "isExportedEveryFrame": false,
-          "id": "403"
-        }
-      ],
-      "buttons": [
-        {
-          "deviceId": "22",
-          "pushId": "3303",
-          "pushValue": "1",
-          "releaseId": "3303",
-          "releaseValue": "0"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.PushButton",
-      "device": "Flight Data Unit",
-      "name": "AFK Mode 3",
-      "description": "Current state of this button.",
-      "exports": [
-        {
-          "format": "%1d",
-          "isExportedEveryFrame": false,
-          "id": "464"
-        }
-      ],
-      "buttons": [
-        {
-          "deviceId": "25",
-          "pushId": "3402",
-          "pushValue": "1",
-          "releaseId": "3402",
-          "releaseValue": "0"
+          "argumentValue": "1.0",
+          "name": "Position3",
+          "actionId": "3716"
         }
       ]
     },
@@ -3310,72 +2950,29 @@
         }
       ]
     },
-    {
-      "heliosType": "DCS.Common.RotaryEncoder",
+	{
+      "heliosType": "DCS.Common.Axis",
       "device": "Flight Data Unit",
       "name": "HUD Brightness Knob",
-      "description": "Current position of this rotary encoder knob.",
+      "description": "Current value of this potentiometer.",
       "exports": [
         {
           "format": "%.5f",
           "id": "9999"
         }
       ],
-      "unit": "Numeric",
+      "loop": false,
       "argumentValue": 0.025,
+      "argumentMin": 0,
+      "argumentMax": 1,
       "actions": {
-        "increment": {
-          "deviceId": "22",
-          "actionId": "3409"
-        },
-        "decrement": {
+        "set": {
           "deviceId": "22",
           "actionId": "3409"
         }
       }
-    },
-    {
-      "heliosType": "DCS.Common.NetworkValue",
-      "device": "Front Panel Lights",
-      "name": "BURNER_STAGE1_L",
-      "description": "Unimplemented Callback [405] BURNER_STAGE1_L",
-      "exports": [
-        {
-          "id": "405"
-        }
-      ],
-      "callback": true,
-      "indicationDeviceId": "0",
-      "unimplemented": true
-    },
-    {
-      "heliosType": "DCS.Common.NetworkValue",
-      "device": "Front Panel Lights",
-      "name": "BURNER_STAGE2_L",
-      "description": "Unimplemented Callback [405] BURNER_STAGE2_L",
-      "exports": [
-        {
-          "id": "405"
-        }
-      ],
-      "callback": true,
-      "indicationDeviceId": "0",
-      "unimplemented": true
-    },
-    {
-      "heliosType": "DCS.Common.NetworkValue",
-      "device": "Front Panel Lights",
-      "name": "BURNER_STAGE3_L",
-      "description": "Unimplemented Callback [405] BURNER_STAGE3_L",
-      "exports": [
-        {
-          "id": "405"
-        }
-      ],
-      "callback": true,
-      "indicationDeviceId": "0",
-      "unimplemented": true
-    },
+    },	
+
     {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Front Panel Lights",
@@ -3412,10 +3009,37 @@
         }
       ]
     },
+	{
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "CI",
+      "name": "Central Indicator Flag",
+      "description": "",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "163"
+        }
+      ],
+      "valueDescription": "0-1, 0 = flag visible, 1 flag off",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 5
+      }
+    },			
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Front Panel Lights",
-      "name": "Radar Display upper/right Lamp (white)",
+      "device": "CI",
+      "name": "RWR upper/right Lamp (white)",
       "description": "Current state of this indicator light.",
       "exports": [
         {
@@ -3426,8 +3050,8 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Front Panel Lights",
-      "name": "Radar Display right Lamp (white)",
+      "device": "CI",
+      "name": "RWR right Lamp (white)",
       "description": "Current state of this indicator light.",
       "exports": [
         {
@@ -3438,8 +3062,8 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Front Panel Lights",
-      "name": "Radar Display lower/right Lamp (white)",
+      "device": "CI",
+      "name": "RWR lower/right Lamp (white)",
       "description": "Current state of this indicator light.",
       "exports": [
         {
@@ -3450,8 +3074,8 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Front Panel Lights",
-      "name": "Radar Display lower/left Lamp (white)",
+      "device": "CI",
+      "name": "RWR lower/left Lamp (white)",
       "description": "Current state of this indicator light.",
       "exports": [
         {
@@ -3462,8 +3086,8 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Front Panel Lights",
-      "name": "Radar Display left Lamp (white)",
+      "device": "CI",
+      "name": "RWR left Lamp (white)",
       "description": "Current state of this indicator light.",
       "exports": [
         {
@@ -3474,8 +3098,8 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Front Panel Lights",
-      "name": "Radar Display upper/left Lamp (white)",
+      "device": "CI",
+      "name": "RWR upper/left Lamp (white)",
       "description": "Current state of this indicator light.",
       "exports": [
         {
@@ -3483,7 +3107,34 @@
           "id": "456"
         }
       ]
-    },
+    },   
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Cockpit Gauges",
+      "name": "Afterburner stage lamps",
+      "description": "Current afterburner stage lamp 1 2 3",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "405"
+        }
+      ],
+      "valueDescription": "0-1 where >= 0.3 is lamp 1, >= 0.6 is lamp 2 and >= 0.9 is lamp 3",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 5
+      }
+    },	  	
     {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Front Panel Lights",
@@ -3532,174 +3183,97 @@
         }
       ]
     },
-    {
-      "heliosType": "DCS.Common.FlagValue",
-      "device": "Front Panel Lights",
-      "name": "AOA 15deg Lamp (white)",
-      "description": "Current state of this indicator light.",
+	{
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Flight Data Unit",
+      "name": "AFK Mode 3 / AOA 15deg Lamp (white)",
+      "description": "Current state of this button and indicator light.",
       "exports": [
         {
-          "format": "%0.1f",
+          "format": "%1d",
+          "isExportedEveryFrame": false,
           "id": "464"
         }
+      ],
+      "buttons": [
+        {
+          "deviceId": "22",
+          "pushId": "3402",
+          "pushValue": "1",
+          "releaseId": "3402",
+          "releaseValue": "0"
+        }
       ]
     },
     {
-      "heliosType": "DCS.Common.NetworkValue",
-      "device": "Gauge Values",
-      "name": "Airspeed Value",
-      "description": "Unimplemented Callback [100] AIRSPEED_VALUE",
-      "exports": [
-        {
-          "id": "100"
-        }
-      ],
-      "callback": true,
-      "indicationDeviceId": "0",
-      "maxValue": 65000,
-      "unimplemented": true
-    },
-    {
-      "heliosType": "DCS.Common.NetworkValue",
-      "device": "Gauge Values",
-      "name": "Altitude Value",
-      "description": "Unimplemented Callback [114] ALTITUDE_VALUE",
-      "exports": [
-        {
-          "id": "114"
-        }
-      ],
-      "callback": true,
-      "indicationDeviceId": "0",
-      "maxValue": 65000,
-      "unimplemented": true
-    },
-    {
-      "heliosType": "DCS.Common.NetworkValue",
-      "device": "Gauge Values",
-      "name": "CI Heading Value",
-      "description": "Unimplemented Callback [128] CI_HEADING_VALUE",
-      "exports": [
-        {
-          "id": "128"
-        }
-      ],
-      "callback": true,
-      "indicationDeviceId": "0",
-      "maxValue": 65000,
-      "unimplemented": true
-    },
-    {
-      "heliosType": "DCS.Common.NetworkValue",
-      "device": "Gauge Values",
-      "name": "CI Commanded Heading Value",
-      "description": "Unimplemented Callback [129] CI_COMMAND_HEADING_VALUE",
-      "exports": [
-        {
-          "id": "129"
-        }
-      ],
-      "callback": true,
-      "indicationDeviceId": "0",
-      "maxValue": 65000,
-      "unimplemented": true
-    },
-    {
-      "heliosType": "DCS.Common.NetworkValue",
-      "device": "Gauge Values",
-      "name": "Engine RPM Value",
-      "description": "Unimplemented Callback [139] ENGINE_RPM_VALUE",
-      "exports": [
-        {
-          "id": "139"
-        }
-      ],
-      "callback": true,
-      "indicationDeviceId": "0",
-      "maxValue": 65000,
-      "unimplemented": true
-    },
-    {
-      "heliosType": "DCS.Common.NetworkValue",
-      "device": "Gauge Values",
-      "name": "Fuel Level Value",
-      "description": "Unimplemented Callback [144] FUEL_LEVEL_VALUE",
-      "exports": [
-        {
-          "id": "144"
-        }
-      ],
-      "callback": true,
-      "indicationDeviceId": "0",
-      "maxValue": 65000,
-      "unimplemented": true
-    },
-    {
-      "heliosType": "DCS.Common.NetworkValue",
-      "device": "Gauge Values",
-      "name": "Fuel Needed Value",
-      "description": "Unimplemented Callback [145] FUEL_NEEDED_VALUE",
-      "exports": [
-        {
-          "id": "145"
-        }
-      ],
-      "callback": true,
-      "indicationDeviceId": "0",
-      "maxValue": 65000,
-      "unimplemented": true
-    },
-    {
-      "heliosType": "DCS.Common.NetworkValue",
-      "device": "Gauge Values",
-      "name": "Engine Temp Value",
-      "description": "Unimplemented Callback [146] ENGINE_TEMP_VALUE",
-      "exports": [
-        {
-          "id": "146"
-        }
-      ],
-      "callback": true,
-      "indicationDeviceId": "0",
-      "maxValue": 65000,
-      "unimplemented": true
-    },
-    {
-      "heliosType": "DCS.Common.FlagValue",
+      "heliosType": "DCS.Common.PushButton",
       "device": "Indicator Lights",
-      "name": "SPAK Lamp",
-      "description": "Current state of this indicator light.",
+      "name": "SPAK PushableLamp",
+      "description": "Current state of this indicator light and button.",
       "exports": [
         {
-          "format": "%0.1f",
+          "format": "%1d",
+          "isExportedEveryFrame": false,
           "id": "401"
         }
+      ],
+      "buttons": [
+        {
+          "deviceId": "22",
+          "pushId": "3301",
+          "pushValue": "1",
+          "releaseId": "3301",
+          "releaseValue": "0"
+        }
       ]
     },
+	
+	
     {
-      "heliosType": "DCS.Common.FlagValue",
+      "heliosType": "DCS.Common.PushButton",
       "device": "Indicator Lights",
-      "name": "ATT Lamp",
-      "description": "Current state of this indicator light.",
+      "name": "ATT Pushable Lamp",
+      "description": "Current state of this indicator light and button.",
       "exports": [
         {
-          "format": "%0.1f",
+          "format": "%1d",
+          "isExportedEveryFrame": false,
           "id": "402"
         }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.FlagValue",
-      "device": "Indicator Lights",
-      "name": "HOJD Lamp",
-      "description": "Current state of this indicator light.",
-      "exports": [
+      ],
+      "buttons": [
         {
-          "format": "%0.1f",
-          "id": "403"
+          "deviceId": "22",
+          "pushId": "3302",
+          "pushValue": "1",
+          "releaseId": "3302",
+          "releaseValue": "0"
         }
       ]
     },
+		
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Indicator Lights",
+      "name": "HOJD Pushable Lamp",
+      "description": "Current state of this indicator light and button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "403"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "22",
+          "pushId": "3303",
+          "pushValue": "1",
+          "releaseId": "3303",
+          "releaseValue": "0"
+        }
+      ]
+    },	
     {
       "heliosType": "DCS.Common.Switch",
       "device": "Lights",
@@ -3849,13 +3423,18 @@
       "deviceId": "17",
       "positions": [
         {
-          "argumentValue": "1.0",
+          "argumentValue": "-1.0",
           "name": "Position1",
           "actionId": "3009"
         },
         {
           "argumentValue": "0.0",
           "name": "Position2",
+          "actionId": "3009"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position3",
           "actionId": "3009"
         }
       ]
@@ -3874,12 +3453,12 @@
       "deviceId": "17",
       "positions": [
         {
-          "argumentValue": "1.0",
+          "argumentValue": "0.0",
           "name": "Position1",
           "actionId": "3010"
         },
         {
-          "argumentValue": "0.0",
+          "argumentValue": "1.0",
           "name": "Position2",
           "actionId": "3010"
         }
@@ -4557,95 +4136,12 @@
         }
       ]
     },
-    {
-      "heliosType": "DCS.Common.NetworkValue",
-      "device": "Navigation Panel",
-      "name": "AJS37_NAV_INDICATOR_DATA_1",
-      "description": "Unimplemented Callback [UNKNOWN] AJS37_NAV_INDICATOR_DATA_1",
-      "exports": [
-        {
-          "id": "UNKNOWN"
-        }
-      ],
-      "callback": true,
-      "indicationDeviceId": "indication2",
-      "unimplemented": true
-    },
-    {
-      "heliosType": "DCS.Common.NetworkValue",
-      "device": "Navigation Panel",
-      "name": "AJS37_NAV_INDICATOR_DATA_2",
-      "description": "Unimplemented Callback [UNKNOWN] AJS37_NAV_INDICATOR_DATA_2",
-      "exports": [
-        {
-          "id": "UNKNOWN"
-        }
-      ],
-      "callback": true,
-      "indicationDeviceId": "indication2",
-      "unimplemented": true
-    },
-    {
-      "heliosType": "DCS.Common.NetworkValue",
-      "device": "Navigation Panel",
-      "name": "AJS37_NAV_INDICATOR_DATA_3",
-      "description": "Unimplemented Callback [UNKNOWN] AJS37_NAV_INDICATOR_DATA_3",
-      "exports": [
-        {
-          "id": "UNKNOWN"
-        }
-      ],
-      "callback": true,
-      "indicationDeviceId": "indication2",
-      "unimplemented": true
-    },
-    {
-      "heliosType": "DCS.Common.NetworkValue",
-      "device": "Navigation Panel",
-      "name": "AJS37_NAV_INDICATOR_DATA_4",
-      "description": "Unimplemented Callback [UNKNOWN] AJS37_NAV_INDICATOR_DATA_4",
-      "exports": [
-        {
-          "id": "UNKNOWN"
-        }
-      ],
-      "callback": true,
-      "indicationDeviceId": "indication2",
-      "unimplemented": true
-    },
-    {
-      "heliosType": "DCS.Common.NetworkValue",
-      "device": "Navigation Panel",
-      "name": "AJS37_NAV_INDICATOR_DATA_5",
-      "description": "Unimplemented Callback [UNKNOWN] AJS37_NAV_INDICATOR_DATA_5",
-      "exports": [
-        {
-          "id": "UNKNOWN"
-        }
-      ],
-      "callback": true,
-      "indicationDeviceId": "indication2",
-      "unimplemented": true
-    },
-    {
-      "heliosType": "DCS.Common.NetworkValue",
-      "device": "Navigation Panel",
-      "name": "AJS37_NAV_INDICATOR_DATA_6",
-      "description": "Unimplemented Callback [UNKNOWN] AJS37_NAV_INDICATOR_DATA_6",
-      "exports": [
-        {
-          "id": "UNKNOWN"
-        }
-      ],
-      "callback": true,
-      "indicationDeviceId": "indication2",
-      "unimplemented": true
-    },
+    
     {
       "heliosType": "DCS.Common.Switch",
       "device": "RWR",
-      "name": "Radar Warning Indication Selector",
-      "description": "Current position of this switch.",
+      "name": "Radar Warning Indication Mode Selector",
+      "description": "Fran, ljus, ljus/ljud - Current position of this switch.",
       "exports": [
         {
           "format": "%0.1f",
@@ -4734,12 +4230,12 @@
         {
           "argumentValue": "1.0",
           "name": "Position1",
-          "actionId": "3001"
+          "actionId": "3920"
         },
         {
           "argumentValue": "0.0",
           "name": "Position2",
-          "actionId": "3001"
+          "actionId": "3920"
         }
       ]
     },
@@ -5001,12 +4497,12 @@
       "deviceId": "18",
       "positions": [
         {
-          "argumentValue": "1.0",
+          "argumentValue": "0.0",
           "name": "Position1",
           "actionId": "3918"
         },
         {
-          "argumentValue": "0.0",
+          "argumentValue": "1.0",
           "name": "Position2",
           "actionId": "3918"
         }
@@ -5061,16 +4557,138 @@
     },
     {
       "heliosType": "DCS.Common.ScaledNetworkValue",
-      "device": "Raw Gauge Values",
+      "device": "Radar",
+      "name": "Radar Range Scale Number",
+      "description": "Current Radar Range in Kilometers",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "3000"
+        }
+      ],
+      "valueDescription": "Range in kilometers, 0 is off / no range. Other values 15, 30, 60 and 120",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 0.1,
+            "mappedValue": 15
+          },		  
+          {
+            "value": 0.2,
+            "mappedValue": 30
+          },		  
+          {
+            "value": 0.3,
+            "mappedValue": 60
+          },		  
+          {
+            "value": 0.4,
+            "mappedValue": 120
+          }
+        ],
+        "precision": 5
+      }
+    },	
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Cockpit Gauges",
       "name": "Airspeed m/s",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Indicated Airspeed in kilometers",
       "exports": [
         {
           "format": "%.5f",
           "id": "100"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
+      "valueDescription": "0 to 1400",
+      "unit": "KilometersPerHour",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 0.098,
+            "mappedValue": 200
+          },
+          {
+            "value": 0.1823,
+            "mappedValue": 250
+          },
+          {
+            "value": 0.2584,
+            "mappedValue": 300
+          },
+          {
+            "value": 0.3186,
+            "mappedValue": 350
+          },
+          {
+            "value": 0.3794,
+            "mappedValue": 400
+          },
+          {
+            "value": 0.4723,
+            "mappedValue": 500
+          },
+          {
+            "value": 0.5587,
+            "mappedValue": 600
+          },
+          {
+            "value": 0.6289,
+            "mappedValue": 700
+          },
+          {
+            "value": 0.6919,
+            "mappedValue": 800
+          },
+		            {
+            "value": 0.7519,
+            "mappedValue": 900
+          },
+		            {
+            "value": 0.8059,
+            "mappedValue": 1000
+          },
+		            {
+            "value": 0.8589,
+            "mappedValue": 1100
+          },
+		            {
+            "value": 0.9087,
+            "mappedValue": 1200
+          },
+          {
+            "value": 0.956,
+            "mappedValue": 1300
+          },		  
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 5
+      }	  
+    },
+	{
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Cockpit Gauges",
+      "name": "Airspeed Indicator Flag",
+      "description": "Airspeed Indicator Power Flag",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "2007"
+        }
+      ],
+      "valueDescription": "0-1, 1 is power off",
       "unit": "Numeric",
       "calibration": {
         "points": [
@@ -5085,19 +4703,19 @@
         ],
         "precision": 5
       }
-    },
+    },			
     {
       "heliosType": "DCS.Common.ScaledNetworkValue",
-      "device": "Raw Gauge Values",
+      "device": "Cockpit Gauges",
       "name": "Mach Meter Integer X_00",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "First number of mach meter's numeric display",
       "exports": [
         {
           "format": "%.5f",
           "id": "101"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
+      "valueDescription": "0-9",
       "unit": "Numeric",
       "calibration": {
         "points": [
@@ -5107,7 +4725,7 @@
           },
           {
             "value": 1,
-            "mappedValue": 1
+            "mappedValue": 9
           }
         ],
         "precision": 5
@@ -5115,16 +4733,16 @@
     },
     {
       "heliosType": "DCS.Common.ScaledNetworkValue",
-      "device": "Raw Gauge Values",
+      "device": "Cockpit Gauges",
       "name": "Mach Meter First Decimal 0_X0",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "First decimal of mach meter's numeric display",
       "exports": [
         {
           "format": "%.5f",
           "id": "102"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
+      "valueDescription": "0-9",
       "unit": "Numeric",
       "calibration": {
         "points": [
@@ -5134,7 +4752,7 @@
           },
           {
             "value": 1,
-            "mappedValue": 1
+            "mappedValue": 9
           }
         ],
         "precision": 5
@@ -5142,16 +4760,43 @@
     },
     {
       "heliosType": "DCS.Common.ScaledNetworkValue",
-      "device": "Raw Gauge Values",
+      "device": "Cockpit Gauges",
       "name": "Mach Meter Second Decimal 0_0X",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "First decimal of mach meter's numeric display",
       "exports": [
         {
           "format": "%.5f",
           "id": "103"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
+      "valueDescription": "0-9",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 9
+          }
+        ],
+        "precision": 5
+      }
+    },
+	    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "ADI Gauge",
+      "name": "ADI Flag",
+      "description": "ADI Power Flag",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "160"
+        }
+      ],
+      "valueDescription": "0-1, 1 is power off",
       "unit": "Numeric",
       "calibration": {
         "points": [
@@ -5167,28 +4812,55 @@
         "precision": 5
       }
     },
+	    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Cockpit Gauges",
+      "name": "Backup ADI Flag",
+      "description": "Backup ADI Flag",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "164"
+        }
+      ],
+      "valueDescription": "0-1, 1 is flag visible",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 5
+      }
+    },	
     {
       "heliosType": "DCS.Common.ScaledNetworkValue",
-      "device": "Raw Gauge Values",
+      "device": "ADI Gauge",
       "name": "ADI Pitch",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "ADI Pitch",
       "exports": [
         {
           "format": "%.5f",
           "id": "105"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
-      "unit": "Numeric",
+      "valueDescription": "Pitch in degrees, -180 to 180, 0 is level, extemes are upside down level",
+      "unit": "Degrees",
       "calibration": {
         "points": [
           {
-            "value": 1,
-            "mappedValue": 1
+            "value": -1,
+            "mappedValue": -180
           },
           {
-            "value": -1,
-            "mappedValue": -1
+            "value": 1,
+            "mappedValue": 180
           }
         ],
         "precision": 5
@@ -5196,26 +4868,26 @@
     },
     {
       "heliosType": "DCS.Common.ScaledNetworkValue",
-      "device": "Raw Gauge Values",
+      "device": "ADI Gauge",
       "name": "ADI Heading",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "ADI Heading",
       "exports": [
         {
           "format": "%.5f",
           "id": "106"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
-      "unit": "Numeric",
+      "valueDescription": "Heading in degrees, -180 to 180, 0 is south",
+      "unit": "Degrees",
       "calibration": {
         "points": [
           {
-            "value": 1,
-            "mappedValue": 1
+            "value": -1,
+            "mappedValue": -180
           },
           {
-            "value": -1,
-            "mappedValue": -1
+            "value": 1,
+            "mappedValue": 180
           }
         ],
         "precision": 5
@@ -5223,26 +4895,26 @@
     },
     {
       "heliosType": "DCS.Common.ScaledNetworkValue",
-      "device": "Raw Gauge Values",
+      "device": "ADI Gauge",
       "name": "ADI Roll",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "ADI Roll",
       "exports": [
         {
           "format": "%.4f",
           "id": "107"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
-      "unit": "Numeric",
+      "valueDescription": "Roll in degrees, -180 to 180. 0 is level",
+      "unit": "Degrees",
       "calibration": {
         "points": [
           {
             "value": -1,
-            "mappedValue": -1
+            "mappedValue": -180
           },
           {
             "value": 1,
-            "mappedValue": 1
+            "mappedValue": 180
           }
         ],
         "precision": 4
@@ -5250,26 +4922,26 @@
     },
     {
       "heliosType": "DCS.Common.ScaledNetworkValue",
-      "device": "Raw Gauge Values",
+      "device": "ADI Gauge",
       "name": "ADI Vertical Velocity",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Vertical Velocity",
       "exports": [
         {
           "format": "%.4f",
           "id": "108"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
-      "unit": "Numeric",
+      "valueDescription": "-5 to 5 in m/s",
+      "unit": "MetersPerSecond",
       "calibration": {
         "points": [
           {
             "value": -1,
-            "mappedValue": -1
+            "mappedValue": -5
           },
           {
             "value": 1,
-            "mappedValue": 1
+            "mappedValue": 5
           }
         ],
         "precision": 4
@@ -5277,26 +4949,26 @@
     },
     {
       "heliosType": "DCS.Common.ScaledNetworkValue",
-      "device": "Raw Gauge Values",
+      "device": "ADI Gauge",
       "name": "ADI Vertical ILS",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "ILS Vertical needle offset (left/right from glidepath)",
       "exports": [
         {
           "format": "%.5f",
           "id": "109"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
+      "valueDescription": "Needle horizontal offset from center line -1 to 1",
       "unit": "Numeric",
       "calibration": {
         "points": [
           {
-            "value": 1,
-            "mappedValue": 1
-          },
-          {
             "value": -1,
             "mappedValue": -1
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
           }
         ],
         "precision": 5
@@ -5304,26 +4976,26 @@
     },
     {
       "heliosType": "DCS.Common.ScaledNetworkValue",
-      "device": "Raw Gauge Values",
+      "device": "ADI Gauge",
       "name": "ADI Horizontal ILS",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "ILS Horizontal needle offset (up/down from glidepath)",
       "exports": [
         {
           "format": "%.5f",
           "id": "110"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
+      "valueDescription": "Needle vertical offset from center line -1 to 1",
       "unit": "Numeric",
       "calibration": {
         "points": [
           {
-            "value": 1,
-            "mappedValue": 1
-          },
-          {
             "value": -1,
             "mappedValue": -1
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
           }
         ],
         "precision": 5
@@ -5331,16 +5003,16 @@
     },
     {
       "heliosType": "DCS.Common.ScaledNetworkValue",
-      "device": "Raw Gauge Values",
+      "device": "ADI Gauge",
       "name": "ADI Slipball",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "ADI Slip Indicator",
       "exports": [
         {
           "format": "%.4f",
-          "id": "111"
+          "id": "1810"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
+      "valueDescription": "Ball offset from center, -1 to 1",
       "unit": "Numeric",
       "calibration": {
         "points": [
@@ -5358,17 +5030,17 @@
     },
     {
       "heliosType": "DCS.Common.ScaledNetworkValue",
-      "device": "Raw Gauge Values",
+      "device": "Cockpit Gauges",
       "name": "Altimeter 1000 Meter",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Altimeter values up to 1000 meters",
       "exports": [
         {
           "format": "%.5f",
           "id": "113"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
-      "unit": "Numeric",
+      "valueDescription": "0-1000",
+      "unit": "Meters",
       "calibration": {
         "points": [
           {
@@ -5377,7 +5049,7 @@
           },
           {
             "value": 1,
-            "mappedValue": 1
+            "mappedValue": 1000
           }
         ],
         "precision": 5
@@ -5385,16 +5057,43 @@
     },
     {
       "heliosType": "DCS.Common.ScaledNetworkValue",
-      "device": "Raw Gauge Values",
+      "device": "Cockpit Gauges",
       "name": "Altimeter 10000 Meter",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Altimeter values up to 1000 meters",
       "exports": [
         {
           "format": "%.5f",
           "id": "114"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
+      "valueDescription": "0-10000",
+      "unit": "Meters",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 10000
+          }
+        ],
+        "precision": 5
+      }
+    },
+	    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Cockpit Gauges",
+      "name": "Altimeter Flag",
+      "description": "Altimeter Power Flag",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "2008"
+        }
+      ],
+      "valueDescription": "0-1, 1 is power off",
       "unit": "Numeric",
       "calibration": {
         "points": [
@@ -5409,19 +5108,19 @@
         ],
         "precision": 5
       }
-    },
+    },	
     {
       "heliosType": "DCS.Common.ScaledNetworkValue",
-      "device": "Raw Gauge Values",
-      "name": "Altimeter Baro 1 hPa 000X",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "device": "Cockpit Gauges",
+      "name": "Barometric QFE 1 hPa 000X",
+      "description": "Last digit of four digit barometric pressure in hectopascals (hPa)",
       "exports": [
         {
           "format": "%.5f",
           "id": "115"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
+      "valueDescription": "0-9",
       "unit": "Numeric",
       "calibration": {
         "points": [
@@ -5431,7 +5130,7 @@
           },
           {
             "value": 1,
-            "mappedValue": 1
+            "mappedValue": 9
           }
         ],
         "precision": 5
@@ -5439,16 +5138,16 @@
     },
     {
       "heliosType": "DCS.Common.ScaledNetworkValue",
-      "device": "Raw Gauge Values",
-      "name": "Altimeter Baro 10 hPa 00X0",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "device": "Cockpit Gauges",
+      "name": "Barometric QFE 10 hPa 00X0",
+      "description": "Third digit of four digit barometric pressure in hectopascals (hPa)",
       "exports": [
         {
           "format": "%.5f",
           "id": "116"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
+      "valueDescription": "0-9",
       "unit": "Numeric",
       "calibration": {
         "points": [
@@ -5458,7 +5157,7 @@
           },
           {
             "value": 1,
-            "mappedValue": 1
+            "mappedValue": 9
           }
         ],
         "precision": 5
@@ -5466,16 +5165,16 @@
     },
     {
       "heliosType": "DCS.Common.ScaledNetworkValue",
-      "device": "Raw Gauge Values",
-      "name": "Altimeter Baro 100 hPa 0X00",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "device": "Cockpit Gauges",
+      "name": "Barometric QFE 100 hPa 0X00",
+      "description": "Second digit of four digit barometric pressure in hectopascals (hPa)",
       "exports": [
         {
           "format": "%.5f",
           "id": "117"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
+      "valueDescription": "0-9",
       "unit": "Numeric",
       "calibration": {
         "points": [
@@ -5485,7 +5184,7 @@
           },
           {
             "value": 1,
-            "mappedValue": 1
+            "mappedValue": 9
           }
         ],
         "precision": 5
@@ -5493,16 +5192,43 @@
     },
     {
       "heliosType": "DCS.Common.ScaledNetworkValue",
-      "device": "Raw Gauge Values",
-      "name": "Altimeter Baro 1000 hPa X000",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "device": "Cockpit Gauges",
+      "name": "Barometric QFE 1000 hPa X000",
+      "description": "First digit of four digit barometric pressure in hectopascals (hPa)",
       "exports": [
         {
           "format": "%.5f",
           "id": "118"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
+      "valueDescription": "0-9",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 9
+          }
+        ],
+        "precision": 5
+      }
+    },
+	{
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Cockpit Gauges",
+      "name": "Altimeter QFE Flag",
+      "description": "Altimeter QFE Power Flag",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "165"
+        }
+      ],
+      "valueDescription": "0-1, 1 is power off",
       "unit": "Numeric",
       "calibration": {
         "points": [
@@ -5517,29 +5243,29 @@
         ],
         "precision": 5
       }
-    },
+    },		
     {
       "heliosType": "DCS.Common.ScaledNetworkValue",
-      "device": "Raw Gauge Values",
+      "device": "Cockpit Gauges",
       "name": "Backup Pitch",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Backup ADI Pitch",
       "exports": [
         {
           "format": "%.5f",
           "id": "121"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
+      "valueDescription": "-1 to 1. 0 is level, -1 is 70 degrees nose down, 1 is 70 degrees nose up",
       "unit": "Numeric",
       "calibration": {
         "points": [
           {
-            "value": 1,
-            "mappedValue": 1
-          },
-          {
             "value": -1,
             "mappedValue": -1
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
           }
         ],
         "precision": 5
@@ -5547,26 +5273,26 @@
     },
     {
       "heliosType": "DCS.Common.ScaledNetworkValue",
-      "device": "Raw Gauge Values",
+      "device": "Cockpit Gauges",
       "name": "Backup Roll",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Backup ADI roll",
       "exports": [
         {
           "format": "%.5f",
           "id": "122"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
+      "valueDescription": "-1 to 1. 0 is level, extremes are 180",
       "unit": "Numeric",
       "calibration": {
         "points": [
           {
-            "value": 1,
-            "mappedValue": 1
-          },
-          {
             "value": -1,
             "mappedValue": -1
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
           }
         ],
         "precision": 5
@@ -5574,17 +5300,17 @@
     },
     {
       "heliosType": "DCS.Common.ScaledNetworkValue",
-      "device": "Raw Gauge Values",
+      "device": "Cockpit Gauges",
       "name": "Backup Altimeter 1000 Meter",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Altimeter values up to 1000 meters",
       "exports": [
         {
           "format": "%.5f",
           "id": "124"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
-      "unit": "Numeric",
+      "valueDescription": "0-1000",
+      "unit": "Meters",
       "calibration": {
         "points": [
           {
@@ -5593,7 +5319,7 @@
           },
           {
             "value": 1,
-            "mappedValue": 1
+            "mappedValue": 1000
           }
         ],
         "precision": 5
@@ -5601,16 +5327,43 @@
     },
     {
       "heliosType": "DCS.Common.ScaledNetworkValue",
-      "device": "Raw Gauge Values",
+      "device": "Cockpit Gauges",
       "name": "Backup Altimeter 10000 Meter",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Altimeter values up to 1000 meters",
       "exports": [
         {
           "format": "%.5f",
           "id": "125"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
+      "valueDescription": "0-10000",
+      "unit": "Meters",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 10000
+          }
+        ],
+        "precision": 5
+      }
+    },
+{
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Cockpit Gauges",
+      "name": "Backup QFE 1 hPa 000X",
+      "description": "Last digit of four digit barometric pressure in hectopascals (hPa)",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "468"
+        }
+      ],
+      "valueDescription": "0-9",
       "unit": "Numeric",
       "calibration": {
         "points": [
@@ -5620,7 +5373,7 @@
           },
           {
             "value": 1,
-            "mappedValue": 1
+            "mappedValue": 9
           }
         ],
         "precision": 5
@@ -5628,26 +5381,108 @@
     },
     {
       "heliosType": "DCS.Common.ScaledNetworkValue",
-      "device": "Raw Gauge Values",
+      "device": "Cockpit Gauges",
+      "name": "Backup QFE 10 hPa 00X0",
+      "description": "Third digit of four digit barometric pressure in hectopascals (hPa)",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "467"
+        }
+      ],
+      "valueDescription": "0-9",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 9
+          }
+        ],
+        "precision": 5
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Cockpit Gauges",
+      "name": "Backup QFE 100 hPa 0X00",
+      "description": "Second digit of four digit barometric pressure in hectopascals (hPa)",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "466"
+        }
+      ],
+      "valueDescription": "0-9",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 9
+          }
+        ],
+        "precision": 5
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Cockpit Gauges",
+      "name": "Backup QFE 1000 hPa X000",
+      "description": "First digit of four digit barometric pressure in hectopascals (hPa)",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "465"
+        }
+      ],
+      "valueDescription": "0-9",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 9
+          }
+        ],
+        "precision": 5
+      }
+    },	
+	
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Cockpit Gauges",
       "name": "Magnetic Heading",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Magnetic heading",
       "exports": [
         {
           "format": "%.5f",
           "id": "127"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
+      "valueDescription": "-180 to 180, 0 is south, -180 and 180 north",
       "unit": "Numeric",
       "calibration": {
         "points": [
           {
-            "value": 1,
-            "mappedValue": 1
+            "value": -1,
+            "mappedValue": -180
           },
           {
-            "value": -1,
-            "mappedValue": -1
+            "value": 1,
+            "mappedValue": 180
           }
         ],
         "precision": 5
@@ -5655,26 +5490,26 @@
     },
     {
       "heliosType": "DCS.Common.ScaledNetworkValue",
-      "device": "Raw Gauge Values",
+      "device": "CI",
       "name": "CI Heading",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Central Indicator Heading",
       "exports": [
         {
           "format": "%.5f",
           "id": "128"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
-      "unit": "Numeric",
+      "valueDescription": "Central Indicator Heading in degrees, -180 to 180, 0 is South.",
+      "unit": "Degrees",
       "calibration": {
         "points": [
           {
-            "value": 1,
-            "mappedValue": 1
+            "value": -1,
+            "mappedValue": -180
           },
           {
-            "value": -1,
-            "mappedValue": -1
+            "value": 1,
+            "mappedValue": 180
           }
         ],
         "precision": 5
@@ -5682,26 +5517,26 @@
     },
     {
       "heliosType": "DCS.Common.ScaledNetworkValue",
-      "device": "Raw Gauge Values",
+      "device": "CI",
       "name": "CI Commanded Heading",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Central Indicator Commanded Heading",
       "exports": [
         {
           "format": "%.5f",
           "id": "129"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
+      "valueDescription": "Commanded Heading as degrees, 0 - 360",
       "unit": "Numeric",
       "calibration": {
         "points": [
           {
-            "value": 1,
-            "mappedValue": 1
-          },
-          {
             "value": 0,
             "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 360
           }
         ],
         "precision": 5
@@ -5709,26 +5544,34 @@
     },
     {
       "heliosType": "DCS.Common.ScaledNetworkValue",
-      "device": "Raw Gauge Values",
-      "name": "Vertical Acceleration G Meter",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "device": "Cockpit Gauges",
+      "name": "Accelometer (G-Indicator)",
+      "description": "Current G-Load",
       "exports": [
         {
           "format": "%.4f",
           "id": "136"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
+      "valueDescription": "Current G value from -2 to 9",
       "unit": "Numeric",
       "calibration": {
         "points": [
-          {
-            "value": -0.3,
-            "mappedValue": -0.3
+		          {
+            "value": -0.4,
+            "mappedValue": -2
           },
           {
-            "value": 0.8,
-            "mappedValue": 0.8
+            "value": 0,
+            "mappedValue": 1
+          },
+		  {        
+            "value": 0.378,
+            "mappedValue": 4
+          },
+          {
+            "value": 1,
+            "mappedValue": 9
           }
         ],
         "precision": 4
@@ -5736,26 +5579,54 @@
     },
     {
       "heliosType": "DCS.Common.ScaledNetworkValue",
-      "device": "Raw Gauge Values",
+      "device": "Cockpit Gauges",
       "name": "Backup Indicated Airspeed",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Airspeed in kilometers per hour",
       "exports": [
         {
           "format": "%.5f",
           "id": "138"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
-      "unit": "Numeric",
+      "valueDescription": "200-800 km/h",
+      "unit": "KilometersPerHour",
       "calibration": {
         "points": [
           {
             "value": 0,
-            "mappedValue": 0
+            "mappedValue": 200
           },
           {
+            "value": 0.158,
+            "mappedValue": 250
+          },
+          {
+            "value": 0.292,
+            "mappedValue": 300
+          },
+          {
+            "value": 0.403,
+            "mappedValue": 350
+          },		  
+          {
+            "value": 0.498,
+            "mappedValue": 400
+          },
+          {
+            "value": 0.657,
+            "mappedValue": 500
+          },		  
+          {
+            "value": 0.791,
+            "mappedValue": 600
+          },		  
+          {
+            "value": 0.903,
+            "mappedValue": 700
+          },		    
+          {
             "value": 1,
-            "mappedValue": 1
+            "mappedValue": 800
           }
         ],
         "precision": 5
@@ -5763,26 +5634,26 @@
     },
     {
       "heliosType": "DCS.Common.ScaledNetworkValue",
-      "device": "Raw Gauge Values",
+      "device": "Cockpit Gauges",
       "name": "Engine RPM 100",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Engine RPM% x100",
       "exports": [
         {
           "format": "%.4f",
           "id": "139"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
+      "valueDescription": "0-11",
       "unit": "Numeric",
       "calibration": {
         "points": [
           {
             "value": -1,
-            "mappedValue": -1
+            "mappedValue": 0
           },
           {
             "value": 1,
-            "mappedValue": 1
+            "mappedValue": 11
           }
         ],
         "precision": 4
@@ -5790,16 +5661,16 @@
     },
     {
       "heliosType": "DCS.Common.ScaledNetworkValue",
-      "device": "Raw Gauge Values",
+      "device": "Cockpit Gauges",
       "name": "Engine RPM 10",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Engine RPM% x10",
       "exports": [
         {
           "format": "%.5f",
           "id": "140"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
+      "valueDescription": "0-10",
       "unit": "Numeric",
       "calibration": {
         "points": [
@@ -5809,7 +5680,7 @@
           },
           {
             "value": 1,
-            "mappedValue": 1
+            "mappedValue": 10
           }
         ],
         "precision": 5
@@ -5817,16 +5688,74 @@
     },
     {
       "heliosType": "DCS.Common.ScaledNetworkValue",
-      "device": "Raw Gauge Values",
+      "device": "Cockpit Gauges",
+      "name": "Engine EPR",
+      "description": "Engine Pressure Ratio, Pt7/Pt2 (intake/exhaust pressure)",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "141"
+        }
+      ],
+      "valueDescription": "1-2.7",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 1
+          },
+          {
+            "value": 1,
+            "mappedValue": 2.7
+          }
+        ],
+        "precision": 5
+      }
+    },	
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Cockpit Gauges",
       "name": "Distance Indicator",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Distance to next waypoint in kilometers or swedish MILs.",
       "exports": [
         {
           "format": "%.5f",
           "id": "142"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
+      "valueDescription": "0-40",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+		            {
+            "value": 0.4,
+            "mappedValue": 40
+          },
+          {
+            "value": 1,
+            "mappedValue": 100
+          }
+        ],
+        "precision": 5
+      }
+    },
+	{
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Cockpit Gauges",
+      "name": "Distance Indicator Scale Type",
+      "description": "Scale KM / MIL",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "143"
+        }
+      ],
+      "valueDescription": "0-1, 0 is KM and 1 is MIL",
       "unit": "Numeric",
       "calibration": {
         "points": [
@@ -5841,19 +5770,19 @@
         ],
         "precision": 5
       }
-    },
+    },		
     {
       "heliosType": "DCS.Common.ScaledNetworkValue",
-      "device": "Raw Gauge Values",
+      "device": "Cockpit Gauges",
       "name": "Fuel Level",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Fuel percentage 0-135 of full capacity",
       "exports": [
         {
           "format": "%.5f",
           "id": "144"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
+      "valueDescription": "0-135",
       "unit": "Numeric",
       "calibration": {
         "points": [
@@ -5863,7 +5792,7 @@
           },
           {
             "value": 1,
-            "mappedValue": 1
+            "mappedValue": 135
           }
         ],
         "precision": 5
@@ -5871,16 +5800,16 @@
     },
     {
       "heliosType": "DCS.Common.ScaledNetworkValue",
-      "device": "Raw Gauge Values",
+      "device": "Cockpit Gauges",
       "name": "Fuel Needed",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Fuel needed for current route as percentage 0-135 of full capacity",
       "exports": [
         {
           "format": "%.5f",
           "id": "145"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
+      "valueDescription": "0-135",
       "unit": "Numeric",
       "calibration": {
         "points": [
@@ -5890,24 +5819,289 @@
           },
           {
             "value": 1,
-            "mappedValue": 1
+            "mappedValue": 135
           }
         ],
         "precision": 5
       }
     },
+	    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Cockpit Gauges",
+      "name": "Brake Pressure (Bromstr)",
+      "description": "Brake pressure",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "150"
+        }
+      ],
+      "valueDescription": "0-3.5  (x100 kp/cm^2)",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 0.282,
+            "mappedValue": 1
+          },		  
+          {
+            "value": 0.582,
+            "mappedValue": 2
+          },		  		  
+          {
+            "value": 0.862,
+            "mappedValue": 3
+          },		  				  
+          {
+            "value": 1,
+            "mappedValue": 3.5
+          }
+        ],
+        "precision": 5
+      }
+    },	
+	    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Cockpit Gauges",
+      "name": "Cabin Pressure (Kabtr)",
+      "description": "Cabin pressure",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "149"
+        }
+      ],
+      "valueDescription": "0-3  (x100 kp/cm^2)",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 0.333,
+            "mappedValue": 1
+          },		  
+          {
+            "value": 0.666,
+            "mappedValue": 2
+          },		  		  
+          {
+            "value": 1,
+            "mappedValue": 3
+          }
+        ],
+        "precision": 5
+      }
+    },	
+	{
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Cockpit Gauges",
+      "name": "Pitch Trim gauge",
+      "description": "Current position of the pitch trimmer",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "151"
+        }
+      ],
+      "valueDescription": "-10 to 10 degrees",
+      "unit": "Degrees",
+      "calibration": {
+        "points": [
+          {
+            "value": -1,
+            "mappedValue": -10
+          },
+          {
+            "value": 1,
+            "mappedValue": 10
+          }
+        ],
+        "precision": 5
+      }
+    },	
+	{
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Cockpit Gauges",
+      "name": "Oxygen (syrgas)",
+      "description": "Oxygen",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "148"
+        }
+      ],
+      "valueDescription": "0-200 kp/cm^2",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 200
+          }
+        ],
+        "precision": 5
+      }
+    },		
+	
+	
+	{
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Cockpit Clock",
+      "name": "Clock Hours",
+      "description": "Clock Hours",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "130"
+        }
+      ],
+      "valueDescription": "0-12",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 12
+          }
+        ],
+        "precision": 5
+      }
+    },
+	{
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Cockpit Clock",
+      "name": "Clock Minutes",
+      "description": "Clock Minutes",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "131"
+        }
+      ],
+      "valueDescription": "0-60",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 60
+          }
+        ],
+        "precision": 5
+      }
+    },
+	{
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Cockpit Clock",
+      "name": "Clock stopwtach minutes",
+      "description": "Clock stopwatch minutes",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "133"
+        }
+      ],
+      "valueDescription": "0-60",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 60
+          }
+        ],
+        "precision": 5
+      }
+    },	
+{
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Cockpit Clock",
+      "name": "Clock stopwatch seconds",
+      "description": "Clock stopwatch seconds",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "1333"
+        }
+      ],
+      "valueDescription": "0-60",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 60
+          }
+        ],
+        "precision": 5
+      }
+    },		
     {
       "heliosType": "DCS.Common.ScaledNetworkValue",
-      "device": "Raw Gauge Values",
+      "device": "Cockpit Gauges",
       "name": "Engine Temp",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Engine Exhaust Gas Temperature",
       "exports": [
         {
           "format": "%.5f",
           "id": "146"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
+      "valueDescription": "EGT in Celsius degrees, 100-800 ",
+      "unit": "Celsius",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 100
+          },
+          {
+            "value": 1,
+            "mappedValue": 800
+          }
+        ],
+        "precision": 5
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Cockpit Gauges",
+      "name": "Engine Nozzle Indicator",
+      "description": "Engine nozzle and current afterburner zone",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "147"
+        }
+      ],
+      "valueDescription": "0-1",
       "unit": "Numeric",
       "calibration": {
         "points": [
@@ -5925,16 +6119,43 @@
     },
     {
       "heliosType": "DCS.Common.ScaledNetworkValue",
-      "device": "Raw Gauge Values",
-      "name": "ADI AoA Indicator",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "device": "Cockpit Gauges",
+      "name": "Angle Of Attack",
+      "description": "Current angle of attack (α)",
       "exports": [
         {
           "format": "%.5f",
-          "id": "147"
+          "id": "120"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
+      "valueDescription": "α in degrees 0-30",
+      "unit": "Degrees",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 30
+          }
+        ],
+        "precision": 5
+      }
+    },	
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "FR22 Radio",
+      "name": "100 MHz",
+      "description": "Selected number of 100 MHz dial",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "177"
+        }
+      ],
+      "valueDescription": "0 - 1, Offset in dial numbers from 0 to 9 and again 0",
       "unit": "Numeric",
       "calibration": {
         "points": [
@@ -5949,7 +6170,171 @@
         ],
         "precision": 5
       }
+    },	
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "FR22 Radio",
+      "name": "10 MHz",
+      "description": "Selected number of 10 MHz dial",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "178"
+        }
+      ],
+      "valueDescription": "0 - 1, Offset in dial numbers from 0 to 9 and again 0",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 5
+      }
+    },		
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "FR22 Radio",
+      "name": "1 MHz",
+      "description": "Selected number of 1 MHz dial",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "179"
+        }
+      ],
+      "valueDescription": "0 - 1, Offset in dial numbers from 0 to 9 and again 0",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 5
+      }
+    },	
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "FR22 Radio",
+      "name": "0.1 MHz",
+      "description": "Selected number of 0.1 MHz dial",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "180"
+        }
+      ],
+      "valueDescription": "0 - 1, Offset in dial numbers from 0 to 9 and again 0",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 5
+      }
+    },	
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "FR22 Radio",
+      "name": "0.01 MHz",
+      "description": "Selected number of 0.01 MHz dial",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "181"
+        }
+      ],
+      "valueDescription": "0 - 1, Offset in dial numbers from 0 to 9 and again 0",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 5
+      }
+    },		
+{
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "FR22 Radio",
+      "name": "0.001 MHz",
+      "description": "Selected number of 0.001 MHz dial",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "182"
+        }
+      ],
+      "valueDescription": "0 - 1, Offset in dial numbers from 0 to 9 and again 0",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 5
+      }
+    },	
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "FR22 Radio",
+      "name": "FM - AM Selector",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "170"
+        }
+      ],
+      "deviceId": "30",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "AM",
+          "actionID": "3014"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "FM",
+          "actionID": "3014"
+        }
+      ]
     },
+
+
+	
     {
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Raw Gauge Values",
@@ -6397,12 +6782,12 @@
       "deviceId": "2",
       "positions": [
         {
-          "argumentValue": "1.0",
+          "argumentValue": "0.0",
           "name": "Position1",
           "actionId": "3306"
         },
         {
-          "argumentValue": "0.0",
+          "argumentValue": "1.0",
           "name": "Position2",
           "actionId": "3306"
         }
@@ -6422,12 +6807,12 @@
       "deviceId": "2",
       "positions": [
         {
-          "argumentValue": "1.0",
+          "argumentValue": "0.0",
           "name": "Position1",
           "actionId": "3307"
         },
         {
-          "argumentValue": "0.0",
+          "argumentValue": "1.0",
           "name": "Position2",
           "actionId": "3307"
         }
