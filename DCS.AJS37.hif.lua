@@ -1,4 +1,4 @@
-
+-- 1.6.6070.0 b22edbfbaa6c59d21f20d12668ad998cff07b63d
 
 function driver.processHighImportance(mainPanelDevice)
     -- called at configured update rate

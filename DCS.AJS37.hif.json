@@ -1,7 +1,7 @@
 {
   "source": "Helios",
-  "version": "0x4600",
-  "commit": "b48e5fb9aeda3615d5e4c54304f5d7da049e738b",
+  "version": "1.6.6070.0",
+  "commit": "b22edbfbaa6c59d21f20d12668ad998cff07b63d",
   "type": "DCS",
   "name": "DCS AJS37",
   "module": "AJS37",
