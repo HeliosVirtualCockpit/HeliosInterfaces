@@ -1,7 +1,7 @@
 {
   "source": "Helios",
-  "version": "1.6.6060.0000",
-  "commit": "7852c504449dc4347ead9330d183ab1f107cea3d",
+  "version": "1.6.6070.2000",
+  "commit": "e53599e43fc28e9770bbbc54ac1245055b277221",
   "type": "Existing",
   "name": "DCS AH-64D Apache",
   "module": "AH-64D_BLK_II",
@@ -11187,7 +11187,7 @@
       "deviceId": "51",
       "positions": [
         {
-          "argumentValue": "0.0",
+          "argumentValue": "1.0",
           "name": "Day",
           "actionID": "3001"
         },
@@ -11197,7 +11197,7 @@
           "actionID": "3001"
         },
         {
-          "argumentValue": "1.0",
+          "argumentValue": "0.0",
           "name": "Off",
           "actionID": "3001"
         }
