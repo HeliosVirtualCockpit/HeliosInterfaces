@@ -2749,12 +2749,12 @@
         {
           "argumentValue": "1.0",
           "name": "Position1",
-          "actionId": "3200"
+          "actionId": "3097"
         },
         {
           "argumentValue": "0.0",
           "name": "Position2",
-          "actionId": "3200"
+          "actionId": "3097"
         }
       ]
     },
@@ -4614,23 +4614,35 @@
             "mappedValue": 0
           },
           {
-            "value": 0.098,
+            "value": 0.075,
+            "mappedValue": 100
+          },
+		  {
+            "value": 0.085,
+            "mappedValue": 140
+          },
+		  		  {
+            "value": 0.095,
+            "mappedValue": 180
+          },
+          {
+            "value": 0.1,
             "mappedValue": 200
           },
           {
-            "value": 0.1823,
+            "value": 0.184,
             "mappedValue": 250
           },
           {
-            "value": 0.2584,
+            "value": 0.262,
             "mappedValue": 300
           },
           {
-            "value": 0.3186,
+            "value": 0.321,
             "mappedValue": 350
           },
           {
-            "value": 0.3794,
+            "value": 0.381,
             "mappedValue": 400
           },
           {
@@ -4671,7 +4683,7 @@
           },		  
           {
             "value": 1,
-            "mappedValue": 1
+            "mappedValue": 1400
           }
         ],
         "precision": 5
@@ -5243,7 +5255,33 @@
         ],
         "precision": 5
       }
-    },		
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Cockpit Gauges",
+      "name": "Altimeter Knob Pull",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "119"
+        }
+      ],
+      "deviceId": "22",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Out",
+          "actionID": "3715"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "In",
+          "actionID": "3715"
+        }
+      ]
+    },	
     {
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Cockpit Gauges",
@@ -5577,6 +5615,45 @@
         "precision": 4
       }
     },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Cockpit Gauges",
+      "name": "Max G-Load",
+      "description": "Max G-Load",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "137"
+        }
+      ],
+      "valueDescription": "Max G value from -2 to 9",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+		          {
+            "value": -0.3,
+            "mappedValue": -2
+          },
+		  {
+            "value": -0.1,
+            "mappedValue": 0
+          },
+          {
+            "value": 0,
+            "mappedValue": 1
+          },
+		  {        
+            "value": 0.250,
+            "mappedValue": 3
+          },
+          {
+            "value": 1,
+            "mappedValue": 9
+          }
+        ],
+        "precision": 4
+      }
+    },	
     {
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Cockpit Gauges",
