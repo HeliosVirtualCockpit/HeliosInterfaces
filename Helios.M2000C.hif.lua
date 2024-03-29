@@ -19,13 +19,13 @@ function driver.processLowImportance(mainPanelDevice)
     -- VHF Comm structured data
     li = helios.parseIndication(8)
     if li then
-        helios.send(2062, string.format("%-8s", helios.ensureString(li.text_COM_VHF)))
+        helios.send(2062, string.format("%.8s", helios.ensureString(li.text_COM_VHF):reverse():sub(1,8):reverse()))
     end
     -- UHF Comm structured data
     li = helios.parseIndication(7)
     if li then
-        helios.send(2063, string.format("%-8s", helios.ensureString(li.text_COM_UHF1)))
-        helios.send(2064, string.format("%-8s", helios.ensureString(li.text_COM_UHF2)))
+        helios.send(2063, string.format("%.8s", helios.ensureString(li.text_COM_UHF1):reverse():sub(1,8):reverse()))
+        helios.send(2064, string.format("%.8s", helios.ensureString(li.text_COM_UHF2):reverse():sub(1,8):reverse()))
     end
     -- PPA structured data
     li = helios.parseIndication(6)
@@ -41,10 +41,15 @@ function driver.processLowImportance(mainPanelDevice)
     -- PCN U structured data
     li = helios.parseIndication(9)
     if li then
-        helios.send(2068, string.format("%6s", helios.ensureString(li.PCN_UL_DIGITS)))
-        helios.send(2069, string.format("%6s", helios.ensureString(li.PCN_UL_POINTS)))
-        helios.send(2070, string.format("%6s", helios.ensureString(li.PCN_UR_DIGITS)))
-        helios.send(2071, string.format("%6s", helios.ensureString(li.PCN_UR_POINTS)))
+		if li.PCN_UL_SEG0 then
+			helios.send(2068, string.format("%6s", helios.ensureString(decode7Seg(string.format("%6s%6s%6s%6s%6s%6s%6s",li.PCN_UL_SEG2,li.PCN_UL_SEG3,li.PCN_UL_SEG4,li.PCN_UL_SEG5,li.PCN_UL_SEG0,li.PCN_UL_SEG1,li.PCN_UL_SEG6),6))))
+			helios.send(2069, string.format("%7s", helios.ensureString(li.PCN_UL_SEG7:gsub("([a-z])","."))))
+		end      
+		if li.PCN_UR_SEG0 then
+			helios.send(2070, string.format("%6s", helios.ensureString(decode7Seg(string.format("%6s%6s%6s%6s%6s%6s%6s",li.PCN_UR_SEG2,li.PCN_UR_SEG3,li.PCN_UR_SEG4,li.PCN_UR_SEG5,li.PCN_UR_SEG0,li.PCN_UR_SEG1,li.PCN_UR_SEG6),6))))
+			helios.send(2071, string.format("%7s", helios.ensureString(li.PCN_UR_SEG7:gsub("([a-z])","."))))
+		end
+
         helios.send(2072, string.format("%1d", li["PCN_UL_N"] and 1 or 0))
         helios.send(2073, string.format("%1d", li["PCN_UL_S"] and 1 or 0))
         helios.send(2074, string.format("%1d", li["PCN_UR_E"] and 1 or 0))
@@ -57,8 +62,12 @@ function driver.processLowImportance(mainPanelDevice)
     -- PCN B structured data
     li = helios.parseIndication(10)
     if li then
-        helios.send(2080, string.format("%s", helios.ensureString(li.PCN_BL_DIGITS)))
-        helios.send(2081, string.format("%s", helios.ensureString(li.PCN_BR_DIGITS)))
+		if li.PCN_BL_SEG0 then
+	        helios.send(2080, string.format("%s", helios.ensureString(decode7Seg(string.format("%2s%2s%2s%2s%2s%2s%2s",li.PCN_BL_SEG2,li.PCN_BL_SEG3,li.PCN_BL_SEG4,li.PCN_BL_SEG5,li.PCN_BL_SEG0,li.PCN_BL_SEG1,li.PCN_BL_SEG6),2))))
+		end
+		if li.PCN_BR_SEG0 then
+	        helios.send(2081, string.format("%s", helios.ensureString(decode7Seg(string.format("%2s%2s%2s%2s%2s%2s%2s",li.PCN_BR_SEG2,li.PCN_BR_SEG3,li.PCN_BR_SEG4,li.PCN_BR_SEG5,li.PCN_BR_SEG0,li.PCN_BR_SEG1,li.PCN_BR_SEG6),2))))
+		end
     end
     -- EVF structured data
     li = helios.parseIndication(11)
@@ -66,5 +75,48 @@ function driver.processLowImportance(mainPanelDevice)
         helios.send(2082, string.format("%-2s", helios.ensureString(li["evf-digits"])))
     end
 
+end
+function decode7Seg( segmentData, digitCount)
+	local segDecode = {
+	  ["****** "] = "0",
+	  [" **    "] = "1",
+	  ["** ** *"] = "2",
+	  ["****  *"] = "3",
+	  [" **  **"] = "4",
+	  ["* ** **"] = "5",
+	  ["* *****"] = "6",
+	  ["***    "] = "7",
+	  ["*******"] = "8",
+	  ["**** **"] = "9",
+	  ["       "] = " "
+	}
+	local segments = ""
+	segmentData = segmentData:gsub("([a-z])","*")
+	for j= 1, digitCount do
+		local seg = ""
+		for i= 0,digitCount*6, digitCount  do
+			seg = seg .. segmentData:sub(j+i,j+i)
+		end
+		local decodedSeg = helios.ensureString(segDecode[seg])
+		if decodedSeg == "" then
+			-- Likely to be due to the fake RAZBAM display error so we'll make an attempt to guess a correction
+			-- This is not fool-proof and can result in incorrect digits
+			for i = 1 , 7 do
+				local tempSeg = seg
+				if tempSeg:sub(i,i) == " " then
+					tempSeg = ("%s%s%s"):format(seg:sub(1,i-1), "*", seg:sub(i+1))
+					if helios.ensureString(segDecode[tempSeg]) == "" then
+							decodedSeg = "X" 
+						else
+							decodedSeg = segDecode[tempSeg]
+							break
+					end
+				end
+			end
+			--
+		end
+		segments = segments .. decodedSeg
+	end
+	return segments
 end
 
