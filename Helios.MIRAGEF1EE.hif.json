@@ -1,7 +1,7 @@
 {
   "source": "Helios",
-  "version": "1.6.6060.0000",
-  "commit": "7852c504449dc4347ead9330d183ab1f107cea3d",
+  "version": "1.6.6080.0000",
+  "commit": "a0964c6c4d0eb13095e2b424e7a5c0fe0c478008",
   "type": "Existing",
   "name": "DCS Mirage F1EE",
   "module": "Mirage-F1EE",
@@ -8390,68 +8390,38 @@
       ]
     },
     {
-      "heliosType": "DCS.Common.PushButton",
+      "heliosType": "DCS.Common.FlagValue",
       "device": "Warning lights",
       "name": "A/B INJ light",
-      "description": "Current state of this button.",
+      "description": "Current state of this lamp.",
       "exports": [
         {
           "format": "%1d",
-          "isExportedEveryFrame": false,
-          "id": "1029"
-        }
-      ],
-      "buttons": [
-        {
-          "deviceId": "1",
-          "pushId": "3278",
-          "pushValue": "1.0",
-          "releaseId": "3278",
-          "releaseValue": "0.0"
+          "id": "1030"
         }
       ]
     },
     {
-      "heliosType": "DCS.Common.PushButton",
+      "heliosType": "DCS.Common.FlagValue",
       "device": "Warning lights",
       "name": "A/B ON light",
-      "description": "Current state of this button.",
+      "description": "Current state of this lamp.",
       "exports": [
         {
           "format": "%1d",
-          "isExportedEveryFrame": false,
-          "id": "1031"
-        }
-      ],
-      "buttons": [
-        {
-          "deviceId": "1",
-          "pushId": "3279",
-          "pushValue": "1.0",
-          "releaseId": "3279",
-          "releaseValue": "0.0"
+          "id": "1032"
         }
       ]
     },
     {
-      "heliosType": "DCS.Common.PushButton",
+      "heliosType": "DCS.Common.FlagValue",
       "device": "Warning lights",
       "name": "A/B SRL light",
-      "description": "Current state of this button.",
+      "description": "Current state of this lamp.",
       "exports": [
         {
           "format": "%1d",
-          "isExportedEveryFrame": false,
-          "id": "1033"
-        }
-      ],
-      "buttons": [
-        {
-          "deviceId": "1",
-          "pushId": "3280",
-          "pushValue": "1.0",
-          "releaseId": "3280",
-          "releaseValue": "0.0"
+          "id": "1034"
         }
       ]
     },
@@ -8522,27 +8492,16 @@
       ]
     },
     {
-      "heliosType": "DCS.Common.Axis",
+      "heliosType": "DCS.Common.FlagValue",
       "device": "Warning lights",
       "name": "Lamp Cannons too hot light",
-      "description": "Current value of this axis.",
+      "description": "Current state of this lamp.",
       "exports": [
         {
           "format": "%0.1f",
-          "isExportedEveryFrame": false,
           "id": "109"
         }
-      ],
-      "loop": false,
-      "argumentValue": 0.5,
-      "argumentMin": 0.0,
-      "argumentMax": 1.0,
-      "actions": {
-        "set": {
-          "deviceId": "1",
-          "actionId": "3298"
-        }
-      }
+      ]
     },
     {
       "heliosType": "DCS.Common.PushButton",
@@ -8815,72 +8774,40 @@
       ]
     },
     {
-      "heliosType": "DCS.Common.Axis",
+      "heliosType": "DCS.Common.FlagValue",
       "device": "Warning lights",
       "name": "Lamp Airbrake light",
-      "description": "Current value of this axis.",
+      "description": "Current state of this lamp.",
       "exports": [
         {
           "format": "%0.1f",
-          "isExportedEveryFrame": false,
           "id": "945"
-        }
-      ],
-      "loop": false,
-      "argumentValue": 0.5,
-      "argumentMin": 0.0,
-      "argumentMax": 1.0,
-      "actions": {
-        "set": {
-          "deviceId": "1",
-          "actionId": "3274"
-        }
-      }
-    },
-    {
-      "heliosType": "DCS.Common.PushButton",
-      "device": "Warning lights",
-      "name": "Button Nose wheel steering light",
-      "description": "Current state of this button.",
-      "exports": [
-        {
-          "format": "%1d",
-          "isExportedEveryFrame": false,
-          "id": "950"
-        }
-      ],
-      "buttons": [
-        {
-          "deviceId": "1",
-          "pushId": "3270",
-          "pushValue": "1.0",
-          "releaseId": "3270",
-          "releaseValue": "0.0"
         }
       ]
     },
     {
-      "heliosType": "DCS.Common.Axis",
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning lights",
+      "name": "Button Nose wheel steering light",
+      "description": "Current state of this lamp.",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "950"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
       "device": "Warning lights",
       "name": "Lamp Nose wheel steering light",
-      "description": "Current value of this axis.",
+      "description": "Current state of this lamp.",
       "exports": [
         {
           "format": "%0.1f",
-          "isExportedEveryFrame": false,
-          "id": "951"
+          "id": "952"
         }
-      ],
-      "loop": false,
-      "argumentValue": 0.5,
-      "argumentMin": 0.0,
-      "argumentMax": 1.0,
-      "actions": {
-        "set": {
-          "deviceId": "1",
-          "actionId": "3271"
-        }
-      }
+      ]
     },
     {
       "heliosType": "DCS.Common.PushButton",
@@ -8905,26 +8832,333 @@
       ]
     },
     {
-      "heliosType": "DCS.Common.Axis",
+      "heliosType": "DCS.Common.FlagValue",
       "device": "Warning lights",
       "name": "Lamp Combat flaps light",
-      "description": "Current value of this axis.",
+      "description": "Current state of this lamp.",
       "exports": [
         {
           "format": "%0.1f",
-          "isExportedEveryFrame": false,
-          "id": "957"
+          "id": "958"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Radar lights",
+      "name": "Radar light HA",
+      "description": "Current state of this lamp.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "842"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Radar lights",
+      "name": "Radar light IC",
+      "description": "Current state of this lamp.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "843"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Radar lights",
+      "name": "Radar light TL",
+      "description": "Current state of this lamp.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "844"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Radar lights",
+      "name": "Radar light BZ",
+      "description": "Current state of this lamp.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "845"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Radar lights",
+      "name": "Radar light TS",
+      "description": "Current state of this lamp.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "846"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Radar lights",
+      "name": "Radar light V1",
+      "description": "Current state of this lamp.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "847"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Radar lights",
+      "name": "Radar light V2",
+      "description": "Current state of this lamp.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "848"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Radar lights",
+      "name": "Radar light DC",
+      "description": "Current state of this lamp.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "849"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Radar lights",
+      "name": "Radar light PR",
+      "description": "Current state of this lamp.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "850"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Radar lights",
+      "name": "Radar light AC",
+      "description": "Current state of this lamp.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "851"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Radar lights",
+      "name": "Radar light DB",
+      "description": "Current state of this lamp.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "852"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Radar lights",
+      "name": "Radar light Yellow",
+      "description": "Current state of this lamp.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "853"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Radar lights",
+      "name": "Radar light Green",
+      "description": "Current state of this lamp.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "854"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Radar lights",
+      "name": "Radar light Red",
+      "description": "Current state of this lamp.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "855"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Radar lights",
+      "name": "Radar light 7",
+      "description": "Current state of this lamp.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "856"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Radar lights",
+      "name": "Radar light 15",
+      "description": "Current state of this lamp.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "857"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Radar lights",
+      "name": "Radar light 35",
+      "description": "Current state of this lamp.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "858"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Radar lights",
+      "name": "Radar light 60",
+      "description": "Current state of this lamp.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "859"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Radar lights",
+      "name": "Radar light AP",
+      "description": "Current state of this lamp.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "860"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Radar lights",
+      "name": "Radar light TCH",
+      "description": "Current state of this lamp.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "861"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Radar lights",
+      "name": "Radar light EMI",
+      "description": "Current state of this lamp.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "862"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Radar lights",
+      "name": "Radar light PNE",
+      "description": "Current state of this lamp.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "863"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "REACTOR",
+      "name": "RPM x 100",
+      "description": "TODO: assign units, set calibration points, and write description",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "1106"
         }
       ],
-      "loop": false,
-      "argumentValue": 0.5,
-      "argumentMin": 0.0,
-      "argumentMax": 1.0,
-      "actions": {
-        "set": {
-          "deviceId": "1",
-          "actionId": "3267"
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 4
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "REACTOR",
+      "name": "RPM x 1000",
+      "description": "TODO: assign units, set calibration points, and write description",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "1027"
         }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 4
       }
     }
   ]
