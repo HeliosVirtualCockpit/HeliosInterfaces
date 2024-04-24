@@ -1,7 +1,7 @@
 {
   "source": "DCSFlightPanels",
-  "version": "0x4400",
-  "commit": "6aa89501aaaf0d4655dea71a13e4ff173fcd0c0a",
+  "version": "1.6.6080.0",
+  "commit": "e796b74e57b4a18030e2eeaa72f6b57cd9709cb7",
   "type": "DCS",
   "name": "DCS F-16C_50",
   "module": "F-16C_50",
