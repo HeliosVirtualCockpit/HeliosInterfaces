@@ -1389,20 +1389,6 @@
       ]
     },
     {
-      "heliosType": "DCS.Common.NetworkValue",
-      "device": "ARC-15 OP",
-      "name": "OP_ARC_FREQ_L [3]",
-      "description": "Unimplemented Callback [639] OP_ARC_FREQ_L",
-      "exports": [
-        {
-          "id": "639"
-        }
-      ],
-      "callback": true,
-      "indicationDeviceId": "0",
-      "unimplemented": true
-    },
-    {
       "heliosType": "DCS.Common.Switch",
       "device": "ARC-15 OP",
       "name": "OPERATOR ARC-15 Left Frequency 10KHz",
@@ -1466,20 +1452,6 @@
           "actionId": "3005"
         }
       ]
-    },
-    {
-      "heliosType": "DCS.Common.NetworkValue",
-      "device": "ARC-15 OP",
-      "name": "OP_ARC_FREQ_L [2]",
-      "description": "Unimplemented Callback [640] OP_ARC_FREQ_L",
-      "exports": [
-        {
-          "id": "640"
-        }
-      ],
-      "callback": true,
-      "indicationDeviceId": "0",
-      "unimplemented": true
     },
     {
       "heliosType": "DCS.Common.Switch",
@@ -1596,20 +1568,7 @@
         }
       ]
     },
-    {
-      "heliosType": "DCS.Common.NetworkValue",
-      "device": "ARC-15 OP",
-      "name": "OP_ARC_FREQ_L",
-      "description": "Unimplemented Callback [641] OP_ARC_FREQ_L",
-      "exports": [
-        {
-          "id": "641"
-        }
-      ],
-      "callback": true,
-      "indicationDeviceId": "0",
-      "unimplemented": true
-    },
+
     {
       "heliosType": "DCS.Common.Switch",
       "device": "ARC-15 OP",
@@ -1716,20 +1675,6 @@
       ]
     },
     {
-      "heliosType": "DCS.Common.NetworkValue",
-      "device": "ARC-15 OP",
-      "name": "OP_ARC_FREQ_R [3]",
-      "description": "Unimplemented Callback [642] OP_ARC_FREQ_R",
-      "exports": [
-        {
-          "id": "642"
-        }
-      ],
-      "callback": true,
-      "indicationDeviceId": "0",
-      "unimplemented": true
-    },
-    {
       "heliosType": "DCS.Common.Switch",
       "device": "ARC-15 OP",
       "name": "OPERATOR ARC-15 Right Frequency 10KHz",
@@ -1793,20 +1738,6 @@
           "actionId": "3008"
         }
       ]
-    },
-    {
-      "heliosType": "DCS.Common.NetworkValue",
-      "device": "ARC-15 OP",
-      "name": "OP_ARC_FREQ_R [2]",
-      "description": "Unimplemented Callback [643] OP_ARC_FREQ_R",
-      "exports": [
-        {
-          "id": "643"
-        }
-      ],
-      "callback": true,
-      "indicationDeviceId": "0",
-      "unimplemented": true
     },
     {
       "heliosType": "DCS.Common.Switch",
@@ -1922,20 +1853,6 @@
           "actionId": "3009"
         }
       ]
-    },
-    {
-      "heliosType": "DCS.Common.NetworkValue",
-      "device": "ARC-15 OP",
-      "name": "OP_ARC_FREQ_R",
-      "description": "Unimplemented Callback [644] OP_ARC_FREQ_R",
-      "exports": [
-        {
-          "id": "644"
-        }
-      ],
-      "callback": true,
-      "indicationDeviceId": "0",
-      "unimplemented": true
     },
     {
       "heliosType": "DCS.Common.PushButton",
@@ -2194,20 +2111,6 @@
       ]
     },
     {
-      "heliosType": "DCS.Common.NetworkValue",
-      "device": "ARC-15 PLT",
-      "name": "PLT_ARC_FREQ_R",
-      "description": "Unimplemented Callback [464] PLT_ARC_FREQ_R",
-      "exports": [
-        {
-          "id": "464"
-        }
-      ],
-      "callback": true,
-      "indicationDeviceId": "0",
-      "unimplemented": true
-    },
-    {
       "heliosType": "DCS.Common.Switch",
       "device": "ARC-15 PLT",
       "name": "PILOT ARC-15 Right Frequency 10KHz",
@@ -2271,20 +2174,6 @@
           "actionId": "3008"
         }
       ]
-    },
-    {
-      "heliosType": "DCS.Common.NetworkValue",
-      "device": "ARC-15 PLT",
-      "name": "PLT_ARC_FREQ_R [2]",
-      "description": "Unimplemented Callback [465] PLT_ARC_FREQ_R",
-      "exports": [
-        {
-          "id": "465"
-        }
-      ],
-      "callback": true,
-      "indicationDeviceId": "0",
-      "unimplemented": true
     },
     {
       "heliosType": "DCS.Common.Switch",
@@ -2402,20 +2291,6 @@
       ]
     },
     {
-      "heliosType": "DCS.Common.NetworkValue",
-      "device": "ARC-15 PLT",
-      "name": "PLT_ARC_FREQ_R [3]",
-      "description": "Unimplemented Callback [466] PLT_ARC_FREQ_R",
-      "exports": [
-        {
-          "id": "466"
-        }
-      ],
-      "callback": true,
-      "indicationDeviceId": "0",
-      "unimplemented": true
-    },
-    {
       "heliosType": "DCS.Common.Switch",
       "device": "ARC-15 PLT",
       "name": "PILOT ARC-15 Left Frequency 100KHz",
@@ -2521,20 +2396,6 @@
       ]
     },
     {
-      "heliosType": "DCS.Common.NetworkValue",
-      "device": "ARC-15 PLT",
-      "name": "PLT_ARC_FREQ_L",
-      "description": "Unimplemented Callback [467] PLT_ARC_FREQ_L",
-      "exports": [
-        {
-          "id": "467"
-        }
-      ],
-      "callback": true,
-      "indicationDeviceId": "0",
-      "unimplemented": true
-    },
-    {
       "heliosType": "DCS.Common.Switch",
       "device": "ARC-15 PLT",
       "name": "PILOT ARC-15 Left Frequency 10KHz",
@@ -2598,20 +2459,6 @@
           "actionId": "3005"
         }
       ]
-    },
-    {
-      "heliosType": "DCS.Common.NetworkValue",
-      "device": "ARC-15 PLT",
-      "name": "PLT_ARC_FREQ_L [2]",
-      "description": "Unimplemented Callback [468] PLT_ARC_FREQ_L",
-      "exports": [
-        {
-          "id": "468"
-        }
-      ],
-      "callback": true,
-      "indicationDeviceId": "0",
-      "unimplemented": true
     },
     {
       "heliosType": "DCS.Common.Switch",
@@ -2729,20 +2576,6 @@
       ]
     },
     {
-      "heliosType": "DCS.Common.NetworkValue",
-      "device": "ARC-15 PLT",
-      "name": "PLT_ARC_FREQ_L [3]",
-      "description": "Unimplemented Callback [469] PLT_ARC_FREQ_L",
-      "exports": [
-        {
-          "id": "469"
-        }
-      ],
-      "callback": true,
-      "indicationDeviceId": "0",
-      "unimplemented": true
-    },
-    {
       "heliosType": "DCS.Common.Switch",
       "device": "ARC-U2 ",
       "name": "PILOT ARC-U2 switcher ON/OFF",
@@ -2768,76 +2601,36 @@
       ]
     },
     {
-      "heliosType": "DCS.Common.NetworkValue",
+      "heliosType": "DCS.Common.Rocker",
       "device": "ARC-U2 ",
       "name": "PILOT ARC-U2 switcher L–RAMKA-P",
-      "description": "Unimplemented [325] PLT_ARCU2_FRAME",
+      "description": "Current state of this rocker switch",
       "exports": [
         {
+          "format": "%1d",
+          "isExportedEveryFrame": false,			
           "id": "325"
         }
       ],
-      "actions": [
+      "vertical": false,
+      "buttons": [
         {
-          "actionArg": "-1",
-          "actionId": 3002,
-          "name": "off"
+          "deviceId": "54",
+          "pushId": "3002",
+          "pushValue": "1",
+          "releaseId": "3002",
+          "releaseValue": "0"
         },
         {
-          "actionArg": "0",
-          "actionId": 3002,
-          "name": "middle1"
-        },
-        {
-          "actionArg": "-1",
-          "actionId": 3003,
-          "name": "middle2"
-        },
-        {
-          "actionArg": "1",
-          "actionId": 3002,
-          "name": "up1"
-        },
-        {
-          "actionArg": "0",
-          "actionId": 3002,
-          "name": "up2"
+          "deviceId": "54",
+          "pushId": "3003",
+          "pushValue": "-1",
+          "releaseId": "3003",
+          "releaseValue": "0"
         }
-      ],
-      "unimplemented": true,
-      "dcsbios": {
-        "id": 325,
-        "key": "PLT_ARCU2_FRAME",
-        "reference": {
-          "info": {
-            "actiondId": 3002,
-            "doc": {
-              "control_type": "3Pos_2Command_Switch",
-              "description": "PILOT ARC-U2 switcher L–RAMKA-P",
-              "inputs": [
-                {
-                  "description": "set the switch position",
-                  "interface": "set_state",
-                  "max_value": 2
-                }
-              ],
-              "outputs": [
-                {
-                  "address": 27138,
-                  "description": "switch position -- 0 = Down, 1 = Mid ,  2 = UP",
-                  "mask": 3072,
-                  "max_value": 2,
-                  "shift_by": 10,
-                  "suffix": "",
-                  "type": "integer"
-                }
-              ]
-            },
-            "type": "3Pos2CommandSwitch"
-          }
-        }
-      }
-    },
+      ]
+    },	  
+	 
     {
       "heliosType": "DCS.Common.Switch",
       "device": "ARC-U2 ",
@@ -3080,7 +2873,7 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "966"
+          "id": "967"
         }
       ]
     },
@@ -3125,11 +2918,11 @@
       "actions": {
         "increment": {
           "deviceId": "16",
-          "actionId": "3046"
+          "actionId": "3048"
         },
         "decrement": {
           "deviceId": "16",
-          "actionId": "3046"
+          "actionId": "3049"
         }
       }
     },
@@ -3147,7 +2940,7 @@
       "deviceId": "16",
       "positions": [
         {
-          "argumentValue": "1.0",
+          "argumentValue": "0.5",
           "name": "MANUAL",
           "actionId": "3001"
         },
@@ -3172,7 +2965,7 @@
       "deviceId": "16",
       "positions": [
         {
-          "argumentValue": "1.0",
+          "argumentValue": "0.5",
           "name": "SYNC",
           "actionId": "3002"
         },
@@ -3391,31 +3184,6 @@
       ]
     },
     {
-      "heliosType": "DCS.Common.Switch",
-      "device": "ASP-17",
-      "name": "OPERATOR USR check",
-      "description": "Current position of this switch.",
-      "exports": [
-        {
-          "format": "%0.1f",
-          "id": "762"
-        }
-      ],
-      "deviceId": "16",
-      "positions": [
-        {
-          "argumentValue": "1.0",
-          "name": "Position1",
-          "actionId": "3016"
-        },
-        {
-          "argumentValue": "0.0",
-          "name": "Position2",
-          "actionId": "3016"
-        }
-      ]
-    },
-    {
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "ASP-17 Gauges",
       "name": "PILOT ASP-17 Up Down",
@@ -3431,12 +3199,12 @@
       "calibration": {
         "points": [
           {
-            "value": 1,
-            "mappedValue": 1
-          },
-          {
             "value": 0,
             "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
           }
         ],
         "precision": 5
@@ -3871,7 +3639,7 @@
       "actions": {
         "set": {
           "deviceId": "41",
-          "actionId": "3001"
+          "actionId": "3002"
         }
       }
     },
@@ -4818,7 +4586,7 @@
       "exports": [
         {
           "format": "%.5f",
-          "id": "961"
+          "id": "691"
         }
       ],
       "valueDescription": "TODO: describe range of output values after calibration",
@@ -4918,7 +4686,7 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "231"
+          "id": "229"
         }
       ]
     },
@@ -4930,7 +4698,7 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "299"
+          "id": "231"
         }
       ]
     },
@@ -5370,6 +5138,81 @@
         }
       ]
     },
+{
+      "heliosType": "DCS.Common.Switch",
+      "device": "Cockpit Mechanics PLT",
+      "name": "PILOT Clock Heating Switch, ON/OFF",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "386"
+        }
+      ],
+      "deviceId": "11",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "ON",
+          "actionId": "3047"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "OFF",
+          "actionId": "3047"
+        }
+      ]
+    },	
+{
+      "heliosType": "DCS.Common.Switch",
+      "device": "Cockpit Mechanics PLT",
+      "name": "PILOT Heating PPD Left, ON/OFF",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "387"
+        }
+      ],
+      "deviceId": "11",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "ON",
+          "actionId": "3043"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "OFF",
+          "actionId": "3043"
+        }
+      ]
+    },	
+	{
+      "heliosType": "DCS.Common.Switch",
+      "device": "Cockpit Mechanics PLT",
+      "name": "PILOT Heating PPD Right, ON/OFF",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "389"
+        }
+      ],
+      "deviceId": "11",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "ON",
+          "actionId": "3045"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "OFF",
+          "actionId": "3045"
+        }
+      ]
+    },	
     {
       "heliosType": "DCS.Common.Switch",
       "device": "Cockpit Mechanics PLT",
@@ -5439,12 +5282,12 @@
       "deviceId": "11",
       "positions": [
         {
-          "argumentValue": "1.0",
+          "argumentValue": "0.0",
           "name": "Position1",
           "actionId": "3027"
         },
         {
-          "argumentValue": "0.0",
+          "argumentValue": "1.0",
           "name": "Position2",
           "actionId": "3027"
         }
@@ -5660,6 +5503,18 @@
         }
       ]
     },
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "DISS-15",
+      "name": "PILOT DISS-15 ON/OFF Switch Indicator Light (orange)",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "380"
+        }
+      ]
+    },		
     {
       "heliosType": "DCS.Common.Switch",
       "device": "DISS-15",
@@ -6158,12 +6013,12 @@
       "calibration": {
         "points": [
           {
-            "value": 1,
-            "mappedValue": 1
-          },
-          {
             "value": 0,
             "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
           }
         ],
         "precision": 5
@@ -6185,12 +6040,12 @@
       "calibration": {
         "points": [
           {
-            "value": 1,
-            "mappedValue": 1
-          },
-          {
             "value": 0,
             "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
           }
         ],
         "precision": 5
@@ -6839,7 +6694,7 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "221"
+          "id": "222"
         }
       ]
     },
@@ -6874,7 +6729,7 @@
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Electric Gauges",
       "name": "PILOT Amperemeter DC Generator",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "APU Generator gauge",
       "exports": [
         {
           "format": "%.5f",
@@ -10040,14 +9895,14 @@
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Engine Gauges",
       "name": "PILOT Left Engine Temperature 100",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Left Engine Temperature, 100x scale",
       "exports": [
         {
           "format": "%.5f",
           "id": "43"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
+      "valueDescription": "Left Engine Temperature 0-1 (scale to 0-12 x100)",
       "unit": "Numeric",
       "calibration": {
         "points": [
@@ -10067,14 +9922,14 @@
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Engine Gauges",
       "name": "PILOT Left Engine Temperature 10",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Left Engine Temperature, 10x scale",
       "exports": [
         {
           "format": "%.5f",
           "id": "44"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
+      "valueDescription": "Left Engine Temperature, 0-1 (scale to 0-10 x10)",
       "unit": "Numeric",
       "calibration": {
         "points": [
@@ -10094,14 +9949,14 @@
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Engine Gauges",
       "name": "PILOT Right Engine Temperature 100",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Left Engine Temperature x100",
       "exports": [
         {
           "format": "%.5f",
           "id": "45"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
+      "valueDescription": "Left Engine Temperature 0-1 (scale to 0-12 x100)",
       "unit": "Numeric",
       "calibration": {
         "points": [
@@ -10121,14 +9976,14 @@
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Engine Gauges",
       "name": "PILOT Right Engine Temperature 10",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Left Engine Temperature, 10x scale",
       "exports": [
         {
           "format": "%.5f",
           "id": "46"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
+      "valueDescription": "Left Engine Temperature, 0-1 (scale to 0-10 x10)",
       "unit": "Numeric",
       "calibration": {
         "points": [
@@ -10442,8 +10297,8 @@
     {
       "heliosType": "DCS.Common.Switch",
       "device": "Engine Interface",
-      "name": "PILOT Engine Select RIGHT/LEFT [2]",
-      "description": "Current position of this switch.",
+      "name": "PILOT Engine Select CRANK/START",
+      "description": "Engine Start Method: Crank/Start.",
       "exports": [
         {
           "format": "%0.1f",
@@ -10522,19 +10377,7 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "64"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.FlagValue",
-      "device": "Engine Lights",
-      "name": "PILOT APU OFF Light (yellow)",
-      "description": "Current state of this indicator light.",
-      "exports": [
-        {
-          "format": "%0.1f",
-          "id": "79"
+          "id": "72"
         }
       ]
     },
@@ -10618,7 +10461,7 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "94"
+          "id": "178"
         }
       ]
     },
@@ -10698,20 +10541,6 @@
           "actionId": "3001"
         }
       ]
-    },
-    {
-      "heliosType": "DCS.Common.NetworkValue",
-      "device": "Eucalypt-M24",
-      "name": "PLT_R828_CHAN_S",
-      "description": "Unimplemented Callback [337] PLT_R828_CHAN_S",
-      "exports": [
-        {
-          "id": "337"
-        }
-      ],
-      "callback": true,
-      "indicationDeviceId": "0",
-      "unimplemented": true
     },
     {
       "heliosType": "DCS.Common.Axis",
@@ -10811,14 +10640,14 @@
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Eucalypt-M24 Gauges",
       "name": "PILOT Eucalypt-M24 Channel Gauge",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Position of selected channel in the digit disc",
       "exports": [
         {
           "format": "%.5f",
           "id": "338"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
+      "valueDescription": "0-1",
       "unit": "Numeric",
       "calibration": {
         "points": [
@@ -11008,6 +10837,18 @@
         }
       ]
     },
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Ext Light System",
+      "name": "PILOT Tip Lights Switch Indicator Light (yellow)",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "416"
+        }
+      ]
+    },	
     {
       "heliosType": "DCS.Common.Switch",
       "device": "Ext Light System",
@@ -11460,92 +11301,66 @@
           "actionId": "3013"
         },
         {
-          "argumentValue": "0.3",
+          "argumentValue": "0.1",
           "name": "1",
           "actionId": "3013"
         },
         {
-          "argumentValue": "0.6",
+          "argumentValue": "0.2",
           "name": "2",
           "actionId": "3013"
         },
         {
-          "argumentValue": "0.9",
+          "argumentValue": "0.3",
           "name": "3",
           "actionId": "3013"
         }
       ]
     },
-    {
-      "heliosType": "DCS.Common.NetworkValue",
+	{
+      "heliosType": "DCS.Common.FlagValue",
       "device": "Fire Extinguisher",
-      "name": "PILOT Extinguisher Squib Control",
-      "description": "Unimplemented [486] PLT_FIRE_EX_SQUIB",
+      "name": "PILOT Fire Extinguisher Sensor Channel Switch Indicator Light (yellow)",
+      "description": "Current state of this indicator light.",
       "exports": [
         {
+          "format": "%0.1f",
+          "id": "485"
+        }
+      ]
+    },		
+	
+    {
+      "heliosType": "DCS.Common.Rocker",
+      "device": "Fire Extinguisher",
+      "name": "PILOT Extinguisher Squib Control",
+      "description": "Springloaded momentary switch, set squib",	
+	
+	      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
           "id": "486"
         }
       ],
-      "actions": [
+      "deviceId": "13",
+      "vertical": true,
+      "buttons": [
         {
-          "actionArg": "-1",
-          "actionId": 3012,
-          "name": "off"
+          "deviceId": "13",
+          "pushId": "3012",
+          "pushValue": "1",
+          "releaseId": "3012",
+          "releaseValue": "0"
         },
         {
-          "actionArg": "0",
-          "actionId": 3012,
-          "name": "middle1"
-        },
-        {
-          "actionArg": "-1",
-          "actionId": 3011,
-          "name": "middle2"
-        },
-        {
-          "actionArg": "1",
-          "actionId": 3012,
-          "name": "up1"
-        },
-        {
-          "actionArg": "0",
-          "actionId": 3012,
-          "name": "up2"
+          "deviceId": "13",
+          "pushId": "3011",
+          "pushValue": "-1",
+          "releaseId": "3011",
+          "releaseValue": "0"
         }
-      ],
-      "unimplemented": true,
-      "dcsbios": {
-        "id": 486,
-        "key": "PLT_FIRE_EX_SQUIB",
-        "reference": {
-          "info": {
-            "actiondId": 3012,
-            "doc": {
-              "control_type": "3Pos_2Command_Switch",
-              "description": "PILOT Extinguisher Squib Control",
-              "inputs": [
-                {
-                  "description": "set the switch position",
-                  "interface": "set_state",
-                  "max_value": 2
-                }
-              ],
-              "outputs": [
-                {
-                  "address": 26910,
-                  "description": "switch position -- 0 = Down, 1 = Mid ,  2 = UP",
-                  "mask": 192,
-                  "max_value": 2,
-                  "shift_by": 6,
-                  "suffix": "",
-                  "type": "integer"
-                }
-              ]
-            },
-            "type": "3Pos2CommandSwitch"
-          }
-        }
-      }
+      ]
     },
     {
       "heliosType": "DCS.Common.Switch",
@@ -12300,7 +12115,7 @@
         }
       ],
       "unit": "Numeric",
-      "argumentValue": 0.025,
+      "argumentValue": 0.1,
       "actions": {
         "increment": {
           "deviceId": "27",
@@ -12342,6 +12157,18 @@
         }
       ]
     },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "GREBEN",
+      "name": "GREBEN Middle Light (green)",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "439"
+        }
+      ]
+    },	
     {
       "heliosType": "DCS.Common.PushButton",
       "device": "GREBEN",
@@ -12417,14 +12244,14 @@
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "GREBEN Gauges",
       "name": "PILOT Greben North 10s",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Northern Latitude Tenths",
       "exports": [
         {
           "format": "%.5f",
           "id": "440"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
+      "valueDescription": "Current position in number drum",
       "unit": "Numeric",
       "calibration": {
         "points": [
@@ -12444,14 +12271,14 @@
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "GREBEN Gauges",
       "name": "PILOT Greben North 1",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Northern Latitude Ones",
       "exports": [
         {
           "format": "%.5f",
           "id": "441"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
+      "valueDescription": "Current position in number drum",
       "unit": "Numeric",
       "calibration": {
         "points": [
@@ -12471,14 +12298,14 @@
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "GREBEN Gauges",
       "name": "PILOT Greben North 10",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Northern Latitude Tens",
       "exports": [
         {
           "format": "%.5f",
           "id": "442"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
+      "valueDescription": "Current position in number drum",
       "unit": "Numeric",
       "calibration": {
         "points": [
@@ -12498,14 +12325,14 @@
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "GREBEN Gauges",
       "name": "PILOT Greben North Closed",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Shutter of northern latitude display",
       "exports": [
         {
           "format": "%.5f",
           "id": "443"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
+      "valueDescription": "Current position of shutter",
       "unit": "Numeric",
       "calibration": {
         "points": [
@@ -12525,14 +12352,14 @@
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "GREBEN Gauges",
       "name": "PILOT Greben South 10s",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Southern Latitude Tenths",
       "exports": [
         {
           "format": "%.5f",
           "id": "444"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
+      "valueDescription": "Current position in number drum",
       "unit": "Numeric",
       "calibration": {
         "points": [
@@ -12552,14 +12379,14 @@
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "GREBEN Gauges",
       "name": "PILOT Greben South 1",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Southern Latitude Ones",
       "exports": [
         {
           "format": "%.5f",
           "id": "445"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
+      "valueDescription": "Current position in number drum",
       "unit": "Numeric",
       "calibration": {
         "points": [
@@ -12579,14 +12406,14 @@
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "GREBEN Gauges",
       "name": "PILOT Greben South 10",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Southern Latitude Tens",
       "exports": [
         {
           "format": "%.5f",
           "id": "446"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
+      "valueDescription": "Current position in number drum",
       "unit": "Numeric",
       "calibration": {
         "points": [
@@ -12606,14 +12433,14 @@
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "GREBEN Gauges",
       "name": "PILOT Greben South Closed",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Shutter of southern latitude display",
       "exports": [
         {
           "format": "%.5f",
           "id": "447"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
+      "valueDescription": "Current position of shutter",
       "unit": "Numeric",
       "calibration": {
         "points": [
@@ -12718,7 +12545,7 @@
       "exports": [
         {
           "format": "%.4f",
-          "id": "1"
+          "id": "95"
         }
       ],
       "valueDescription": "TODO: describe range of output values after calibration",
@@ -12795,11 +12622,11 @@
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Gauges PLT",
       "name": "PILOT G-Meter Max",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "FIXME: Conflicts with PILOT Barometric pressure knob (id=18). Use that for input values. Currently this id (18) is replaced with arbirary id = 1899 and does not work",
       "exports": [
         {
           "format": "%.4f",
-          "id": "18"
+          "id": "1899"
         }
       ],
       "valueDescription": "TODO: describe range of output values after calibration",
@@ -12822,21 +12649,21 @@
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Gauges PLT",
       "name": "PILOT IAS Speed",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Pilot Speedometer",
       "exports": [
         {
           "format": "%.4f",
           "id": "790"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
+      "valueDescription": "IAS -1 .. 1 (scale to 0 - 455)",
       "unit": "Numeric",
       "calibration": {
         "points": [
           {
             "value": -1,
             "mappedValue": -1
-          },
+          },		  
           {
             "value": 1,
             "mappedValue": 1
@@ -14376,467 +14203,289 @@
       }
     },
     {
-      "heliosType": "DCS.Common.NetworkValue",
+      "heliosType": "DCS.Common.RotaryEncoder",
       "device": "Jadro-1I",
-      "name": "JADRO_FREQ [3]",
-      "description": "Unimplemented Callback [427] JADRO_FREQ",
+      "name": "Jadro Freq 100Hz knob",
+      "description": "Current position of this rotary encoder knob.",
       "exports": [
         {
+          "format": "%.5f",
           "id": "427"
         }
       ],
-      "callback": true,
-      "indicationDeviceId": "0",
-      "unimplemented": true
-    },
-    {
-      "heliosType": "DCS.Common.NetworkValue",
-      "device": "Jadro-1I",
-      "name": "PILOT Jadro-1I Frequency 100Hz",
-      "description": "Unimplemented [427] PLT_JADRO_100H",
-      "exports": [
-        {
-          "id": "427"
-        }
-      ],
-      "output_map": [
-        "0",
-        "1",
-        "2",
-        "3",
-        "4",
-        "5",
-        "6",
-        "7",
-        "8",
-        "9"
-      ],
-      "rel_args": [
-        -0.1,
-        0.1
-      ],
-      "unimplemented": true,
-      "dcsbios": {
-        "id": 427,
-        "key": "PLT_JADRO_100H",
-        "reference": {
-          "info": {
-            "actiondId": 3016,
-            "doc": {
-              "control_type": "discrete_dial",
-              "description": "PILOT Jadro-1I Frequency 100Hz",
-              "inputs": [
-                {
-                  "description": "switch to previous or next state",
-                  "interface": "fixed_step"
-                }
-              ],
-              "momentary_positions": "none",
-              "outputs": [
-                {
-                  "address": 27132,
-                  "description": "selector position",
-                  "mask": 3840,
-                  "max_value": 10,
-                  "shift_by": 8,
-                  "suffix": "_INT",
-                  "type": "integer"
-                },
-                {
-                  "address": 27138,
-                  "description": "possible values: \"0\" \"1\" \"2\" \"3\" \"4\" \"5\" \"6\" \"7\" \"8\" \"9\" ",
-                  "max_length": 1,
-                  "suffix": "_STR",
-                  "type": "string"
-                }
-              ],
-              "physical_variant": "infinite_rotary"
-            },
-            "type": "fixedStepTumb",
-            "limits": [
-              0,
-              1
-            ],
-            "step": 0.1,
-            "cycle": true
-          }
+      "unit": "Numeric",
+      "argumentValue": 0.1,
+      "actions": {
+        "increment": {
+          "deviceId": "50",
+          "actionId": "3016"
+        },
+        "decrement": {
+          "deviceId": "50",
+          "actionId": "3016"
         }
       }
-    },
+    },	
     {
-      "heliosType": "DCS.Common.NetworkValue",
+      "heliosType": "DCS.Common.RotaryEncoder",
       "device": "Jadro-1I",
-      "name": "JADRO_FREQ [2]",
-      "description": "Unimplemented Callback [428] JADRO_FREQ",
+      "name": "Jadro Freq 1kHz knob",
+      "description": "Current position of this rotary encoder knob.",
       "exports": [
         {
+          "format": "%.5f",
           "id": "428"
         }
       ],
-      "callback": true,
-      "indicationDeviceId": "0",
-      "unimplemented": true
-    },
+      "unit": "Numeric",
+      "argumentValue": 0.1,
+      "actions": {
+        "increment": {
+          "deviceId": "50",
+          "actionId": "3013"
+        },
+        "decrement": {
+          "deviceId": "50",
+          "actionId": "3013"
+        }
+      }
+    },	
     {
-      "heliosType": "DCS.Common.NetworkValue",
+      "heliosType": "DCS.Common.RotaryEncoder",
       "device": "Jadro-1I",
-      "name": "PILOT Jadro-1I Frequency 1KHz",
-      "description": "Unimplemented [428] PLT_JADRO_1K",
+      "name": "Jadro Freq 10kHz knob",
+      "description": "Current position of this rotary encoder knob.",
       "exports": [
         {
-          "id": "428"
+          "format": "%.5f",
+          "id": "429"
         }
       ],
-      "output_map": [
-        "0",
-        "1",
-        "2",
-        "3",
-        "4",
-        "5",
-        "6",
-        "7",
-        "8",
-        "9"
+      "unit": "Numeric",
+      "argumentValue": 0.1,
+      "actions": {
+        "increment": {
+          "deviceId": "50",
+          "actionId": "3010"
+        },
+        "decrement": {
+          "deviceId": "50",
+          "actionId": "3010"
+        }
+      }
+    },	
+    {
+      "heliosType": "DCS.Common.RotaryEncoder",
+      "device": "Jadro-1I",
+      "name": "Jadro Freq 100kHz knob",
+      "description": "Current position of this rotary encoder knob.",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "436"
+        }
       ],
-      "rel_args": [
-        -0.1,
-        0.1
-      ],
-      "unimplemented": true,
-      "dcsbios": {
-        "id": 428,
-        "key": "PLT_JADRO_1K",
-        "reference": {
-          "info": {
-            "actiondId": 3013,
-            "doc": {
-              "control_type": "discrete_dial",
-              "description": "PILOT Jadro-1I Frequency 1KHz",
-              "inputs": [
-                {
-                  "description": "switch to previous or next state",
-                  "interface": "fixed_step"
-                }
-              ],
-              "momentary_positions": "none",
-              "outputs": [
-                {
-                  "address": 27128,
-                  "description": "selector position",
-                  "mask": 61440,
-                  "max_value": 10,
-                  "shift_by": 12,
-                  "suffix": "_INT",
-                  "type": "integer"
-                },
-                {
-                  "address": 27136,
-                  "description": "possible values: \"0\" \"1\" \"2\" \"3\" \"4\" \"5\" \"6\" \"7\" \"8\" \"9\" ",
-                  "max_length": 1,
-                  "suffix": "_STR",
-                  "type": "string"
-                }
-              ],
-              "physical_variant": "infinite_rotary"
-            },
-            "type": "fixedStepTumb",
-            "limits": [
-              0,
-              1
-            ],
-            "step": 0.1,
-            "cycle": true
-          }
+      "unit": "Numeric",
+      "argumentValue": 0.1,
+      "actions": {
+        "increment": {
+          "deviceId": "50",
+          "actionId": "3007"
+        },
+        "decrement": {
+          "deviceId": "50",
+          "actionId": "3007"
         }
       }
     },
     {
-      "heliosType": "DCS.Common.NetworkValue",
+      "heliosType": "DCS.Common.RotaryEncoder",
       "device": "Jadro-1I",
-      "name": "JADRO_FREQ [5]",
-      "description": "Unimplemented Callback [429] JADRO_FREQ",
+      "name": "Jadro Freq 1-17MHz knob",
+      "description": "Current position of this rotary encoder knob.",
       "exports": [
         {
-          "id": "429"
+          "format": "%.5f",
+          "id": "437"
         }
       ],
-      "callback": true,
-      "indicationDeviceId": "0",
-      "unimplemented": true
-    },
-    {
-      "heliosType": "DCS.Common.NetworkValue",
-      "device": "Jadro-1I",
-      "name": "PILOT Jadro-1I Frequency 10KHz",
-      "description": "Unimplemented [429] PLT_JADRO_10K",
-      "exports": [
-        {
-          "id": "429"
-        }
-      ],
-      "output_map": [
-        "0",
-        "1",
-        "2",
-        "3",
-        "4",
-        "5",
-        "6",
-        "7",
-        "8",
-        "9"
-      ],
-      "rel_args": [
-        -0.1,
-        0.1
-      ],
-      "unimplemented": true,
-      "dcsbios": {
-        "id": 429,
-        "key": "PLT_JADRO_10K",
-        "reference": {
-          "info": {
-            "actiondId": 3010,
-            "doc": {
-              "control_type": "discrete_dial",
-              "description": "PILOT Jadro-1I Frequency 10KHz",
-              "inputs": [
-                {
-                  "description": "switch to previous or next state",
-                  "interface": "fixed_step"
-                }
-              ],
-              "momentary_positions": "none",
-              "outputs": [
-                {
-                  "address": 27128,
-                  "description": "selector position",
-                  "mask": 3840,
-                  "max_value": 10,
-                  "shift_by": 8,
-                  "suffix": "_INT",
-                  "type": "integer"
-                },
-                {
-                  "address": 27134,
-                  "description": "possible values: \"0\" \"1\" \"2\" \"3\" \"4\" \"5\" \"6\" \"7\" \"8\" \"9\" ",
-                  "max_length": 1,
-                  "suffix": "_STR",
-                  "type": "string"
-                }
-              ],
-              "physical_variant": "infinite_rotary"
-            },
-            "type": "fixedStepTumb",
-            "limits": [
-              0,
-              1
-            ],
-            "step": 0.1,
-            "cycle": true
-          }
+      "unit": "Numeric",
+      "argumentValue": 0.1,
+      "actions": {
+        "increment": {
+          "deviceId": "50",
+          "actionId": "3004"
+        },
+        "decrement": {
+          "deviceId": "50",
+          "actionId": "3004"
         }
       }
     },
+
     {
-      "heliosType": "DCS.Common.NetworkValue",
+      "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Jadro-1I",
-      "name": "JADRO_FREQ [4]",
-      "description": "Unimplemented Callback [435] JADRO_FREQ",
+      "name": "Jadro Freq 100Hz",
+      "description": "Position in the number drum",
       "exports": [
         {
+          "format": "%.5f",
+          "id": "430"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 5
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Jadro-1I",
+      "name": "Jadro Freq 1kHz",
+      "description": "Position in the number drum",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "431"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 5
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Jadro-1I",
+      "name": "Jadro Freq 10kHz",
+      "description": "Position in the number drum",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "432"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 5
+      }
+    },	
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Jadro-1I",
+      "name": "Jadro Freq 100kHz",
+      "description": "Position in the number drum",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "433"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 5
+      }
+    },	
+{
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Jadro-1I",
+      "name": "Jadro Freq 1MHz",
+      "description": "Position in the number drum",
+      "exports": [
+        {
+          "format": "%.5f",
+          "id": "434"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 5
+      }
+    },	
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Jadro-1I",
+      "name": "Jadro Freq 10MHz",
+      "description": "Position in the number drum",
+      "exports": [
+        {
+          "format": "%.5f",
           "id": "435"
         }
       ],
-      "callback": true,
-      "indicationDeviceId": "0",
-      "unimplemented": true
-    },
-    {
-      "heliosType": "DCS.Common.NetworkValue",
-      "device": "Jadro-1I",
-      "name": "JADRO_FREQ [6]",
-      "description": "Unimplemented Callback [436] JADRO_FREQ",
-      "exports": [
-        {
-          "id": "436"
-        }
-      ],
-      "callback": true,
-      "indicationDeviceId": "0",
-      "unimplemented": true
-    },
-    {
-      "heliosType": "DCS.Common.NetworkValue",
-      "device": "Jadro-1I",
-      "name": "PILOT Jadro-1I Frequency 100KHz",
-      "description": "Unimplemented [436] PLT_JADRO_100K",
-      "exports": [
-        {
-          "id": "436"
-        }
-      ],
-      "output_map": [
-        "0",
-        "1",
-        "2",
-        "3",
-        "4",
-        "5",
-        "6",
-        "7",
-        "8",
-        "9"
-      ],
-      "rel_args": [
-        -0.1,
-        0.1
-      ],
-      "unimplemented": true,
-      "dcsbios": {
-        "id": 436,
-        "key": "PLT_JADRO_100K",
-        "reference": {
-          "info": {
-            "actiondId": 3007,
-            "doc": {
-              "control_type": "discrete_dial",
-              "description": "PILOT Jadro-1I Frequency 100KHz",
-              "inputs": [
-                {
-                  "description": "switch to previous or next state",
-                  "interface": "fixed_step"
-                }
-              ],
-              "momentary_positions": "none",
-              "outputs": [
-                {
-                  "address": 27128,
-                  "description": "selector position",
-                  "mask": 240,
-                  "max_value": 10,
-                  "shift_by": 4,
-                  "suffix": "_INT",
-                  "type": "integer"
-                },
-                {
-                  "address": 27132,
-                  "description": "possible values: \"0\" \"1\" \"2\" \"3\" \"4\" \"5\" \"6\" \"7\" \"8\" \"9\" ",
-                  "max_length": 1,
-                  "suffix": "_STR",
-                  "type": "string"
-                }
-              ],
-              "physical_variant": "infinite_rotary"
-            },
-            "type": "fixedStepTumb",
-            "limits": [
-              0,
-              1
-            ],
-            "step": 0.1,
-            "cycle": true
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
           }
-        }
+        ],
+        "precision": 5
       }
-    },
-    {
-      "heliosType": "DCS.Common.NetworkValue",
-      "device": "Jadro-1I",
-      "name": "JADRO_FREQ",
-      "description": "Unimplemented Callback [437] JADRO_FREQ",
-      "exports": [
-        {
-          "id": "437"
-        }
-      ],
-      "callback": true,
-      "indicationDeviceId": "0",
-      "unimplemented": true
-    },
-    {
-      "heliosType": "DCS.Common.NetworkValue",
-      "device": "Jadro-1I",
-      "name": "PILOT Jadro-1I Frequency 1MHz",
-      "description": "Unimplemented [437] PLT_JADRO_1M",
-      "exports": [
-        {
-          "id": "437"
-        }
-      ],
-      "output_map": [
-        "0",
-        "1",
-        "2",
-        "3",
-        "4",
-        "5",
-        "6",
-        "7",
-        "8",
-        "9",
-        "10",
-        "11",
-        "12",
-        "13",
-        "14",
-        "15",
-        "16",
-        "17"
-      ],
-      "rel_args": [
-        -0.1,
-        0.1
-      ],
-      "unimplemented": true,
-      "dcsbios": {
-        "id": 437,
-        "key": "PLT_JADRO_1M",
-        "reference": {
-          "info": {
-            "actiondId": 3004,
-            "doc": {
-              "control_type": "discrete_dial",
-              "description": "PILOT Jadro-1I Frequency 1MHz",
-              "inputs": [
-                {
-                  "description": "switch to previous or next state",
-                  "interface": "fixed_step"
-                }
-              ],
-              "momentary_positions": "none",
-              "outputs": [
-                {
-                  "address": 27128,
-                  "description": "selector position",
-                  "mask": 15,
-                  "max_value": 10,
-                  "shift_by": 0,
-                  "suffix": "_INT",
-                  "type": "integer"
-                },
-                {
-                  "address": 27130,
-                  "description": "possible values: \"0\" \"1\" \"2\" \"3\" \"4\" \"5\" \"6\" \"7\" \"8\" \"9\" \"10\" \"11\" \"12\" \"13\" \"14\" \"15\" \"16\" \"17\" ",
-                  "max_length": 2,
-                  "suffix": "_STR",
-                  "type": "string"
-                }
-              ],
-              "physical_variant": "infinite_rotary"
-            },
-            "type": "fixedStepTumb",
-            "limits": [
-              0,
-              1
-            ],
-            "step": 0.1,
-            "cycle": true
-          }
-        }
-      }
-    },
+    },	
+    
     {
       "heliosType": "DCS.Common.Switch",
       "device": "Jadro-1I",
@@ -14990,8 +14639,8 @@
       "deviceId": "45",
       "positions": [
         {
-          "argumentValue": "1.0",
-          "name": "BRIGHT",
+          "argumentValue": "-1.0",
+          "name": "DIM",
           "actionId": "3011"
         },
         {
@@ -15000,36 +14649,38 @@
           "actionId": "3011"
         },
         {
-          "argumentValue": "-1.0",
-          "name": "DIM",
+          "argumentValue": "1.0",
+          "name": "BRIGHT",
           "actionId": "3011"
         }
       ]
     },
     {
-      "heliosType": "DCS.Common.Axis",
+      "heliosType": "DCS.Common.RotaryEncoder",
       "device": "MAP DISPLAY",
       "name": "PILOT Set the vertical position of the helicopter on the Map",
-      "description": "Current value of this potentiometer.",
+      "description": "Current value of this potentiometer. FIXME: 291 is used for pedal warning lamp already! 291 replaced with arbitary 4999 until DCS fixes. Works for writing thou.",
       "exports": [
         {
           "format": "%.5f",
-          "id": "291"
+          "id": "4999"
         }
       ],
-      "loop": false,
-      "argumentValue": 0.025,
-      "argumentMin": 0,
-      "argumentMax": 1,
+	  "unit": "Numeric",
+      "argumentValue": 0.1,
       "actions": {
-        "set": {
+        "increment": {
+          "deviceId": "45",
+          "actionId": "3004"
+        },
+        "decrement": {
           "deviceId": "45",
           "actionId": "3004"
         }
       }
     },
     {
-      "heliosType": "DCS.Common.Axis",
+      "heliosType": "DCS.Common.RotaryEncoder",
       "device": "MAP DISPLAY",
       "name": "PILOT Set the horizontal position of the helicopter on the Map",
       "description": "Current value of this potentiometer.",
@@ -15039,12 +14690,14 @@
           "id": "983"
         }
       ],
-      "loop": false,
-      "argumentValue": 0.025,
-      "argumentMin": 0,
-      "argumentMax": 1,
+	  "unit": "Numeric",
+      "argumentValue": 0.1,
       "actions": {
-        "set": {
+        "increment": {
+          "deviceId": "45",
+          "actionId": "3006"
+        },
+        "decrement": {
           "deviceId": "45",
           "actionId": "3006"
         }
@@ -15563,24 +15216,24 @@
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "PKP-72M Gauges",
       "name": "OPERTOR ADI Bank Gauge",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Operators ADI bank angle",
       "exports": [
         {
           "format": "%.5f",
           "id": "783"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
+      "valueDescription": "Bank angle as 0.5 to -0.5, representing 90 to -90 degrees where -90 is left",
       "unit": "Numeric",
       "calibration": {
         "points": [
           {
-            "value": 0.5,
-            "mappedValue": 0.5
-          },
-          {
             "value": -0.5,
             "mappedValue": -0.5
+          },
+          {
+            "value": 0.5,
+            "mappedValue": 0.5
           }
         ],
         "precision": 5
@@ -15590,24 +15243,24 @@
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "PKP-72M Gauges",
       "name": "OPERTOR ADI Slip Ball",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Operator's ADI slip ball",
       "exports": [
         {
           "format": "%.5f",
           "id": "784"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
+      "valueDescription": "Slip ball offset as an inversed value, 1 to -1, -1 being left offset",
       "unit": "Numeric",
       "calibration": {
         "points": [
           {
-            "value": 1,
-            "mappedValue": 1
-          },
-          {
             "value": -1,
             "mappedValue": -1
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
           }
         ],
         "precision": 5
@@ -15779,24 +15432,24 @@
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "PKP-72M Gauges",
       "name": "PILOT ADI Bank Gauge",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Pilot's ADI bank angle",
       "exports": [
         {
           "format": "%.5f",
           "id": "942"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
+      "valueDescription": "Bank angle as 0.5 to -0.5, representing 90 to -90 degrees where -90 is left",
       "unit": "Numeric",
       "calibration": {
         "points": [
           {
-            "value": 0.5,
-            "mappedValue": 0.5
-          },
-          {
             "value": -0.5,
             "mappedValue": -0.5
+          },
+          {
+            "value": 0.5,
+            "mappedValue": 0.5
           }
         ],
         "precision": 5
@@ -15806,24 +15459,24 @@
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "PKP-72M Gauges",
       "name": "PILOT ADI Slip Ball",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Pilot's ADI slip ball",
       "exports": [
         {
           "format": "%.5f",
           "id": "943"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
+      "valueDescription": "Slip ball offset as an inversed value, 1 to -1, -1 being left offset",
       "unit": "Numeric",
       "calibration": {
         "points": [
           {
-            "value": 1,
-            "mappedValue": 1
-          },
-          {
             "value": -1,
             "mappedValue": -1
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
           }
         ],
         "precision": 5
@@ -16950,18 +16603,6 @@
     {
       "heliosType": "DCS.Common.FlagValue",
       "device": "PUVL Lights OP",
-      "name": "OPERATOR PUVL KMG Light (yellow)",
-      "description": "Current state of this indicator light.",
-      "exports": [
-        {
-          "format": "%0.1f",
-          "id": "707"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.FlagValue",
-      "device": "PUVL Lights OP",
       "name": "OPERATOR PUVL KMG Powered Light (yellow)",
       "description": "Current state of this indicator light.",
       "exports": [
@@ -17232,32 +16873,40 @@
         }
       ]
     },
-    {
-      "heliosType": "DCS.Common.ScaledNetworkValue",
+    {      
+      "heliosType": "DCS.Common.Switch",
       "device": "R-852 Gauges",
       "name": "PILOT R-852 Channel Gauge",
       "description": "TODO: assign units, set calibration points, and write description",
       "exports": [
         {
-          "format": "%.5f",
+          "format": "%.1f",
           "id": "519"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
-      "unit": "Numeric",
-      "calibration": {
-        "points": [
-          {
-            "value": 0,
-            "mappedValue": 0
-          },
-          {
-            "value": 1,
-            "mappedValue": 1
-          }
-        ],
-        "precision": 5
-      }
+            "deviceId": "52",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.1",
+          "name": "Position2",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.2",
+          "name": "Position3",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.3",
+          "name": "Position4",
+          "actionId": "3001"
+        }
+      ]
     },
     {
       "heliosType": "DCS.Common.Switch",
@@ -17520,20 +17169,6 @@
           "actionId": "3007"
         }
       ]
-    },
-    {
-      "heliosType": "DCS.Common.NetworkValue",
-      "device": "R-863",
-      "name": "PLT_R863_CHAN_S",
-      "description": "Unimplemented Callback [513] PLT_R863_CHAN_S",
-      "exports": [
-        {
-          "id": "513"
-        }
-      ],
-      "callback": true,
-      "indicationDeviceId": "0",
-      "unimplemented": true
     },
     {
       "heliosType": "DCS.Common.ScaledNetworkValue",
@@ -17899,27 +17534,42 @@
       ]
     },
     {
-      "heliosType": "DCS.Common.PushButton",
+      "heliosType": "DCS.Common.Switch",
       "device": "Radar Altimeter",
       "name": "PILOT RV-5 ON/OFF",
-      "description": "Current state of this button.",
+      "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%1d",
-          "isExportedEveryFrame": false,
+          "format": "%0.1f",
           "id": "372"
         }
       ],
-      "buttons": [
+      "deviceId": "12",
+      "positions": [
         {
-          "deviceId": "12",
-          "pushId": "3003",
-          "pushValue": "1",
-          "releaseId": "3003",
-          "releaseValue": "0"
+          "argumentValue": "1.0",
+          "name": "ON",
+          "actionId": "3003"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "OFF",
+          "actionId": "3003"
         }
       ]
     },
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Radar Altimeter",
+      "name": "PILOT RV-5 ON/OFF Switch indicator light (yellow)",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "382"
+        }
+      ]
+    },	
     {
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Radar Altimeter Gauges",
@@ -18165,11 +17815,11 @@
       "actions": {
         "increment": {
           "deviceId": "10",
-          "actionId": "3021"
+          "actionId": "3023"
         },
         "decrement": {
           "deviceId": "10",
-          "actionId": "3021"
+          "actionId": "3023"
         }
       }
     },
@@ -18177,7 +17827,7 @@
       "heliosType": "DCS.Common.PushButton",
       "device": "SAU",
       "name": "PILOT SAU H Channel OFF",
-      "description": "Current state of this button.",
+      "description": "Current state of YAW Channel OFF button.",
       "exports": [
         {
           "format": "%1d",
@@ -18199,7 +17849,7 @@
       "heliosType": "DCS.Common.PushButton",
       "device": "SAU",
       "name": "PILOT SAU H Channel ON",
-      "description": "Current state of this button.",
+      "description": "Current state of YAW Channel ON button.",
       "exports": [
         {
           "format": "%1d",
@@ -18260,11 +17910,11 @@
       "actions": {
         "increment": {
           "deviceId": "10",
-          "actionId": "3023"
+          "actionId": "3021"
         },
         "decrement": {
           "deviceId": "10",
-          "actionId": "3023"
+          "actionId": "3021"
         }
       }
     },
@@ -18272,7 +17922,7 @@
       "heliosType": "DCS.Common.PushButton",
       "device": "SAU",
       "name": "PILOT SAU K Channel OFF",
-      "description": "Current state of this button.",
+      "description": "Current state of ROLL Channel OFF button.",
       "exports": [
         {
           "format": "%1d",
@@ -18294,7 +17944,7 @@
       "heliosType": "DCS.Common.PushButton",
       "device": "SAU",
       "name": "PILOT SAU K Channel ON",
-      "description": "Current state of this button.",
+      "description": "Current state of ROLL Channel ON button.",
       "exports": [
         {
           "format": "%1d",
@@ -18367,7 +18017,7 @@
       "heliosType": "DCS.Common.PushButton",
       "device": "SAU",
       "name": "PILOT SAU T Channel OFF",
-      "description": "Current state of this button.",
+      "description": "Current state of PITCH Channel OFF button.",
       "exports": [
         {
           "format": "%1d",
@@ -18389,7 +18039,7 @@
       "heliosType": "DCS.Common.PushButton",
       "device": "SAU",
       "name": "PILOT SAU T Channel ON",
-      "description": "Current state of this button.",
+      "description": "Current state of PITCH Channel ON button.",
       "exports": [
         {
           "format": "%1d",
@@ -18408,78 +18058,42 @@
       ]
     },
     {
-      "heliosType": "DCS.Common.NetworkValue",
+      "heliosType": "DCS.Common.Rocker",
       "device": "SAU",
       "name": "PILOT SAU Altitude Control",
-      "description": "Unimplemented [253] PLT_SAU_ALT_CONTROL",
-      "exports": [
+      "description": "Springloaded momentary switch, set altitude",	
+	
+	      "exports": [
         {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
           "id": "253"
         }
       ],
-      "actions": [
+      "deviceId": "10",
+      "vertical": true,
+      "buttons": [
         {
-          "actionArg": 1,
-          "actionId": 3019,
-          "name": "pushUp"
+          "deviceId": "10",
+          "pushId": "3017",
+          "pushValue": "1",
+          "releaseId": "3017",
+          "releaseValue": "0"
         },
         {
-          "actionArg": 0,
-          "actionId": 3019,
-          "name": "releaseUp"
-        },
-        {
-          "actionArg": -1,
-          "actionId": 3017,
-          "name": "pushDown"
-        },
-        {
-          "actionArg": 0,
-          "actionId": 3017,
-          "name": "releaseDown"
+          "deviceId": "10",
+          "pushId": "3019",
+          "pushValue": "-1",
+          "releaseId": "3019",
+          "releaseValue": "0"
         }
-      ],
-      "unimplemented": true,
-      "dcsbios": {
-        "id": 253,
-        "key": "PLT_SAU_ALT_CONTROL",
-        "reference": {
-          "info": {
-            "actiondId": 3019,
-            "doc": {
-              "control_type": "selector",
-              "description": "PILOT SAU Altitude Control",
-              "inputs": [
-                {
-                  "description": "set the switch position -- 0 = held left/down, 1 = centered, 2 = held right/up",
-                  "interface": "set_state",
-                  "max_value": 2
-                }
-              ],
-              "momentary_positions": "first_and_last",
-              "outputs": [
-                {
-                  "address": 26876,
-                  "description": "selector position",
-                  "mask": 24,
-                  "max_value": 2,
-                  "shift_by": 3,
-                  "suffix": "",
-                  "type": "integer"
-                }
-              ],
-              "physical_variant": "rocker_switch"
-            },
-            "type": "rockerSwitch"
-          }
-        }
-      }
+      ]
     },
     {
       "heliosType": "DCS.Common.PushButton",
       "device": "SAU",
       "name": "PILOT SAU B Channel OFF",
-      "description": "Current state of this button.",
+      "description": "Current state of ALT Channel OFF button.",
       "exports": [
         {
           "format": "%1d",
@@ -18501,7 +18115,7 @@
       "heliosType": "DCS.Common.PushButton",
       "device": "SAU",
       "name": "PILOT SAU B Channel ON",
-      "description": "Current state of this button.",
+      "description": "Current state of ALT Channel ON button.",
       "exports": [
         {
           "format": "%1d",
@@ -18653,48 +18267,7 @@
         }
       }
     },
-    {
-      "heliosType": "DCS.Common.NetworkValue",
-      "device": "SAU",
-      "name": "PLT_SAU_ROUTE_AZIMUTH_DISPLAY_STR",
-      "description": "Unimplemented Callback [263] PLT_SAU_ROUTE_AZIMUTH_DISPLAY_STR",
-      "exports": [
-        {
-          "id": "263"
-        }
-      ],
-      "callback": true,
-      "indicationDeviceId": "0",
-      "unimplemented": true
-    },
-    {
-      "heliosType": "DCS.Common.NetworkValue",
-      "device": "SAU",
-      "name": "PLT_SAU_ROUTE_AZIMUTH_DISPLAY_STR [2]",
-      "description": "Unimplemented Callback [264] PLT_SAU_ROUTE_AZIMUTH_DISPLAY_STR",
-      "exports": [
-        {
-          "id": "264"
-        }
-      ],
-      "callback": true,
-      "indicationDeviceId": "0",
-      "unimplemented": true
-    },
-    {
-      "heliosType": "DCS.Common.NetworkValue",
-      "device": "SAU",
-      "name": "PLT_SAU_ROUTE_AZIMUTH_DISPLAY_STR [3]",
-      "description": "Unimplemented Callback [265] PLT_SAU_ROUTE_AZIMUTH_DISPLAY_STR",
-      "exports": [
-        {
-          "id": "265"
-        }
-      ],
-      "callback": true,
-      "indicationDeviceId": "0",
-      "unimplemented": true
-    },
+			    
     {
       "heliosType": "DCS.Common.Switch",
       "device": "SAU",
@@ -18930,7 +18503,7 @@
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "SAU Gauges",
       "name": "PILOT SAU Altitude Delta",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "TODO: assign units, set calibration points, and write description. FIXME: DCS has same id for MAP's green light",
       "exports": [
         {
           "format": "%.4f",
@@ -18957,14 +18530,14 @@
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "SAU Gauges",
       "name": "PILOT SAU Course 1",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Degrees 0-9 of route",
       "exports": [
         {
           "format": "%.5f",
           "id": "263"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
+      "valueDescription": "Scale 0-1, 0.0 = 0, 0.085 = 9, 0.185 = 8, 1.0 = 0, increment step 0.1",
       "unit": "Numeric",
       "calibration": {
         "points": [
@@ -18984,14 +18557,14 @@
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "SAU Gauges",
       "name": "PILOT SAU Course 10",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Degrees 10-90 of route",
       "exports": [
         {
           "format": "%.5f",
           "id": "264"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
+      "valueDescription": "Scale 0-1, 0.0 = 0, 0.085 = 9, 0.185 = 8, 1.0 = 0, increment step 0.1",
       "unit": "Numeric",
       "calibration": {
         "points": [
@@ -19011,14 +18584,14 @@
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "SAU Gauges",
       "name": "PILOT SAU Course 100",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Degrees 100-900 of route",
       "exports": [
         {
           "format": "%.5f",
           "id": "265"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
+      "valueDescription": "Scale 0-1, 0.0 = 0, 0.085 = 9, 0.185 = 8, 1.0 = 0, increment step 0.1",
       "unit": "Numeric",
       "calibration": {
         "points": [
@@ -19038,7 +18611,7 @@
       "heliosType": "DCS.Common.FlagValue",
       "device": "SAU Lights",
       "name": "PILOT SAU H OFF Light (red)",
-      "description": "Current state of this indicator light.",
+      "description": "Current state of YAW OFF indicator light.",
       "exports": [
         {
           "format": "%0.1f",
@@ -19050,7 +18623,7 @@
       "heliosType": "DCS.Common.FlagValue",
       "device": "SAU Lights",
       "name": "PILOT SAU H ON Light (green)",
-      "description": "Current state of this indicator light.",
+      "description": "Current state of YAW ON indicator light.",
       "exports": [
         {
           "format": "%0.1f",
@@ -19062,7 +18635,7 @@
       "heliosType": "DCS.Common.FlagValue",
       "device": "SAU Lights",
       "name": "PILOT SAU K OFF Light (red)",
-      "description": "Current state of this indicator light.",
+      "description": "Current state of ROLL OFF indicator light.",
       "exports": [
         {
           "format": "%0.1f",
@@ -19074,7 +18647,7 @@
       "heliosType": "DCS.Common.FlagValue",
       "device": "SAU Lights",
       "name": "PILOT SAU K ON Light (green)",
-      "description": "Current state of this indicator light.",
+      "description": "Current state of ROLL ON indicator light.",
       "exports": [
         {
           "format": "%0.1f",
@@ -19086,7 +18659,7 @@
       "heliosType": "DCS.Common.FlagValue",
       "device": "SAU Lights",
       "name": "PILOT SAU T OFF Light (red)",
-      "description": "Current state of this indicator light.",
+      "description": "Current state of PITCH OFF indicator light.",
       "exports": [
         {
           "format": "%0.1f",
@@ -19098,7 +18671,7 @@
       "heliosType": "DCS.Common.FlagValue",
       "device": "SAU Lights",
       "name": "PILOT SAU T ON Light (green)",
-      "description": "Current state of this indicator light.",
+      "description": "Current state of PITCH ON indicator light.",
       "exports": [
         {
           "format": "%0.1f",
@@ -19110,7 +18683,7 @@
       "heliosType": "DCS.Common.FlagValue",
       "device": "SAU Lights",
       "name": "PILOT SAU B OFF Light (red)",
-      "description": "Current state of this indicator light.",
+      "description": "Current state of ALT OFF indicator light.",
       "exports": [
         {
           "format": "%0.1f",
@@ -19122,7 +18695,7 @@
       "heliosType": "DCS.Common.FlagValue",
       "device": "SAU Lights",
       "name": "PILOT SAU B ON Light (green)",
-      "description": "Current state of this indicator light.",
+      "description": "Current state of ALT ON indicator light.",
       "exports": [
         {
           "format": "%0.1f",
@@ -19240,6 +18813,18 @@
         }
       ]
     },
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "SPO-10",
+      "name": "PILOT RWR Power Switch Indicator Light (yellow)",
+      "description": "Current state of this indicator light. FIXME: Id 439 conflicts with Greben lamp, so DISABLED with random id 4391",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "4391"
+        }
+      ]
+    },	
     {
       "heliosType": "DCS.Common.Switch",
       "device": "SPO-10",
@@ -19877,72 +19462,35 @@
       }
     },
     {
-      "heliosType": "DCS.Common.NetworkValue",
+      "heliosType": "DCS.Common.Rocker",
       "device": "SPUU-52",
       "name": "PILOT SPUU Control Switch, P/NONE/T",
-      "description": "Unimplemented [277] PLT_SPUU_CONTROL",
+      "description": "SPUU-52 Switch (springloaded momentary)",
       "exports": [
         {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
           "id": "277"
         }
       ],
-      "actions": [
+      "deviceId": "19",
+	  "vertical": false,
+      "buttons": [
         {
-          "actionArg": 1,
-          "actionId": 3007,
-          "name": "pushUp"
+          "deviceId": "19",
+          "pushId": "3006",
+          "pushValue": "1",
+          "releaseId": "3006",
+          "releaseValue": "0"
         },
         {
-          "actionArg": 0,
-          "actionId": 3007,
-          "name": "releaseUp"
-        },
-        {
-          "actionArg": -1,
-          "actionId": 3006,
-          "name": "pushDown"
-        },
-        {
-          "actionArg": 0,
-          "actionId": 3006,
-          "name": "releaseDown"
+          "deviceId": "19",
+          "pushId": "3007",
+          "pushValue": "-1",
+          "releaseId": "3007",
+          "releaseValue": "0"
         }
-      ],
-      "unimplemented": true,
-      "dcsbios": {
-        "id": 277,
-        "key": "PLT_SPUU_CONTROL",
-        "reference": {
-          "info": {
-            "actiondId": 3007,
-            "doc": {
-              "control_type": "selector",
-              "description": "PILOT SPUU Control Switch, P/NONE/T",
-              "inputs": [
-                {
-                  "description": "set the switch position -- 0 = held left/down, 1 = centered, 2 = held right/up",
-                  "interface": "set_state",
-                  "max_value": 2
-                }
-              ],
-              "momentary_positions": "first_and_last",
-              "outputs": [
-                {
-                  "address": 26910,
-                  "description": "selector position",
-                  "mask": 6144,
-                  "max_value": 2,
-                  "shift_by": 11,
-                  "suffix": "",
-                  "type": "integer"
-                }
-              ],
-              "physical_variant": "rocker_switch"
-            },
-            "type": "rockerSwitch"
-          }
-        }
-      }
+      ]	  
     },
     {
       "heliosType": "DCS.Common.ScaledNetworkValue",
@@ -20222,6 +19770,36 @@
       ]
     },
     {
+      "heliosType": "DCS.Common.Switch",
+      "device": "SARPP12I1",
+      "name": "PILOT SARPP-12 Mode Switch, MANUAL/AUTO",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "357"
+        }
+      ],
+      "deviceId": "62",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "MANUAL",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "AUTO",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "OFF",
+          "actionId": "3001"
+        }
+      ]
+    },	
+    {
       "heliosType": "DCS.Common.PushButton",
       "device": "Stick",
       "name": "OPERATOR Stick Fire Weapons",
@@ -20466,24 +20044,24 @@
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "UKT-2 Gauges",
       "name": "PILOT UKT-2 Roll",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Backup ADI roll angle",
       "exports": [
         {
           "format": "%.5f",
           "id": "950"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
+      "valueDescription": "1 to -1 representing angles from 90 to -90 (-90 is left)",
       "unit": "Numeric",
       "calibration": {
         "points": [
           {
-            "value": 1,
-            "mappedValue": 1
+            "value": -1,
+            "mappedValue": -1 
           },
           {
-            "value": -1,
-            "mappedValue": -1
+            "value": 1,
+            "mappedValue": 1
           }
         ],
         "precision": 5
@@ -20497,7 +20075,7 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "320"
+          "id": "702"
         }
       ]
     },
@@ -20801,6 +20379,152 @@
         }
       ]
     },
+	
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning, Caution and IndicatorLights PLT",
+      "name": "PILOT LH Engine Vibration (orange)",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "159"
+        }
+      ]
+    },	
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning, Caution and IndicatorLights PLT",
+      "name": "PILOT RH Engine Vibration (orange)",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "160"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning, Caution and IndicatorLights PLT",
+      "name": "PILOT LH Engine STOP (red)",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "166"
+        }
+      ]
+    },		
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning, Caution and IndicatorLights PLT",
+      "name": "PILOT RH Engine STOP (red)",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "167"
+        }
+      ]
+    },			
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning, Caution and IndicatorLights PLT",
+      "name": "PILOT Chip In LH Gearbox (orange)",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "168"
+        }
+      ]
+    },			
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning, Caution and IndicatorLights PLT",
+      "name": "PILOT Chip In RH Gearbox (orange)",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "169"
+        }
+      ]
+    },			
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning, Caution and IndicatorLights PLT",
+      "name": "PILOT High Cabin Pressure - Backup Lamp (orange)",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "164"
+        }
+      ]
+    },			
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning, Caution and IndicatorLights PLT",
+      "name": "PILOT High Pedal Push Rate - Backup Lamp (orange)",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "165"
+        }
+      ]
+    },			
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning, Caution and IndicatorLights PLT",
+      "name": "PILOT Reserve Code (green)",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "170"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning, Caution and IndicatorLights PLT",
+      "name": "PILOT SPO-2 Failure (orange)",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "171"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning, Caution and IndicatorLights PLT",
+      "name": "PILOT Speed Hold (green)",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "173"
+        }
+      ]
+    },		
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning, Caution and IndicatorLights PLT",
+      "name": "PILOT Map Limit (orange)",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "174"
+        }
+      ]
+    },		
+	
     {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Warning, Caution and IndicatorLights PLT",
@@ -20900,6 +20624,54 @@
     {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Warning, Caution and IndicatorLights PLT",
+      "name": "PILOT Left Engine Temperature Control (yellow)",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "203"
+        }
+      ]
+    },	
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning, Caution and IndicatorLights PLT",
+      "name": "PILOT Right Engine Temperature Control (yellow)",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "204"
+        }
+      ]
+    },		
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning, Caution and IndicatorLights PLT",
+      "name": "PILOT Left Engine Gevernor Off (yellow)",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "205"
+        }
+      ]
+    },	
+	    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning, Caution and IndicatorLights PLT",
+      "name": "PILOT Right Engine Gevernor Off (yellow)",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "206"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning, Caution and IndicatorLights PLT",
       "name": "PILOT Wheel Brake Lamp (red)",
       "description": "Current state of this indicator light.",
       "exports": [
@@ -20933,6 +20705,31 @@
         }
       ]
     },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning, Caution and IndicatorLights PLT",
+      "name": "PILOT Left Pitot Heating Fail (orange)",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "388"
+        }
+      ]
+    },	
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Warning, Caution and IndicatorLights PLT",
+      "name": "PILOT Right Pitot Heating Fail (orange)",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "390"
+        }
+      ]
+    },		
+	
     {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Warning, Caution and IndicatorLights PLT",
@@ -21910,7 +21707,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.1f",
+          "format": "%0.2f",
           "id": "418"
         }
       ],
@@ -21920,109 +21717,41 @@
           "argumentValue": "0.0",
           "name": "OFF",
           "actionId": "3020"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.Switch",
-      "device": "Wiper",
-      "name": "PILOT Windscreen Wiper Control Switch, RESET",
-      "description": "Current position of this switch.",
-      "exports": [
-        {
-          "format": "%0.1f",
-          "id": "418"
-        }
-      ],
-      "deviceId": "11",
-      "positions": [
-        {
-          "argumentValue": "0.0",
-          "name": "Position1",
-          "actionId": "3020"
-        },
-        {
-          "argumentValue": "0.3",
-          "name": "Position2",
-          "actionId": "3020"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.Switch",
-      "device": "Wiper",
-      "name": "PILOT Windscreen Wiper Control Switch, SPEED 1",
-      "description": "Current position of this switch.",
-      "exports": [
-        {
-          "format": "%0.1f",
-          "id": "418"
-        }
-      ],
-      "deviceId": "11",
-      "positions": [
-        {
-          "argumentValue": "0.0",
-          "name": "Position1",
-          "actionId": "3020"
-        },
-        {
-          "argumentValue": "0.1",
-          "name": "Position2",
-          "actionId": "3020"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.Switch",
-      "device": "Wiper",
-      "name": "PILOT Windscreen Wiper Control Switch, SPEED 2",
-      "description": "Current position of this switch.",
-      "exports": [
-        {
-          "format": "%0.1f",
-          "id": "418"
-        }
-      ],
-      "deviceId": "11",
-      "positions": [
-        {
-          "argumentValue": "0.0",
-          "name": "Position1",
-          "actionId": "3020"
-        },
-        {
-          "argumentValue": "0.3",
-          "name": "Position2",
-          "actionId": "3020"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.Switch",
-      "device": "Wiper",
-      "name": "PILOT Windscreen Wiper Control Switch, START",
-      "description": "Current position of this switch.",
-      "exports": [
-        {
-          "format": "%0.2f",
-          "id": "418"
-        }
-      ],
-      "deviceId": "11",
-      "positions": [
-        {
-          "argumentValue": "0.00",
-          "name": "Position1",
-          "actionId": "3020"
         },
         {
           "argumentValue": "0.05",
-          "name": "Position2",
+          "name": "START",
+          "actionId": "3020"
+        },
+        {
+          "argumentValue": "0.15",
+          "name": "SPEED1",
+          "actionId": "3020"
+        },
+        {
+          "argumentValue": "0.25",
+          "name": "SPEED2",
+          "actionId": "3020"
+        },
+        {
+          "argumentValue": "0.35",
+          "name": "RESET",
           "actionId": "3020"
         }
+		]
+	},
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Wiper",
+      "name": "PILOT Windscreen Wiper Control Switch Indicator Light (orange)",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "419"
+        }
       ]
-    },
+    },		
     {
       "heliosType": "DCS.Common.Switch",
       "device": "Wiper",
@@ -22030,7 +21759,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.1f",
+          "format": "%0.2f",
           "id": "674"
         }
       ],
@@ -22040,108 +21769,29 @@
           "argumentValue": "0.0",
           "name": "OFF",
           "actionId": "3021"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.Switch",
-      "device": "Wiper",
-      "name": "OPERATOR Windscreen Wiper Control Switch, RESET",
-      "description": "Current position of this switch.",
-      "exports": [
-        {
-          "format": "%0.1f",
-          "id": "674"
-        }
-      ],
-      "deviceId": "11",
-      "positions": [
-        {
-          "argumentValue": "0.0",
-          "name": "Position1",
-          "actionId": "3021"
-        },
-        {
-          "argumentValue": "0.3",
-          "name": "Position2",
-          "actionId": "3021"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.Switch",
-      "device": "Wiper",
-      "name": "OPERATOR Windscreen Wiper Control Switch, SPEED 1",
-      "description": "Current position of this switch.",
-      "exports": [
-        {
-          "format": "%0.1f",
-          "id": "674"
-        }
-      ],
-      "deviceId": "11",
-      "positions": [
-        {
-          "argumentValue": "0.0",
-          "name": "Position1",
-          "actionId": "3021"
-        },
-        {
-          "argumentValue": "0.1",
-          "name": "Position2",
-          "actionId": "3021"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.Switch",
-      "device": "Wiper",
-      "name": "OPERATOR Windscreen Wiper Control Switch, SPEED 2",
-      "description": "Current position of this switch.",
-      "exports": [
-        {
-          "format": "%0.1f",
-          "id": "674"
-        }
-      ],
-      "deviceId": "11",
-      "positions": [
-        {
-          "argumentValue": "0.0",
-          "name": "Position1",
-          "actionId": "3021"
-        },
-        {
-          "argumentValue": "0.3",
-          "name": "Position2",
-          "actionId": "3021"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.Switch",
-      "device": "Wiper",
-      "name": "OPERATOR Windscreen Wiper Control Switch, START",
-      "description": "Current position of this switch.",
-      "exports": [
-        {
-          "format": "%0.2f",
-          "id": "674"
-        }
-      ],
-      "deviceId": "11",
-      "positions": [
-        {
-          "argumentValue": "0.00",
-          "name": "Position1",
-          "actionId": "3021"
         },
         {
           "argumentValue": "0.05",
-          "name": "Position2",
+          "name": "START",
+          "actionId": "3021"
+        },
+        {
+          "argumentValue": "0.15",
+          "name": "SPEED1",
+          "actionId": "3021"
+        },
+        {
+          "argumentValue": "0.25",
+          "name": "SPEED2",
+          "actionId": "3021"
+        },
+        {
+          "argumentValue": "0.35",
+          "name": "RESET",
           "actionId": "3021"
         }
-      ]
-    }
+		]
+	},	
+	
   ]
 }

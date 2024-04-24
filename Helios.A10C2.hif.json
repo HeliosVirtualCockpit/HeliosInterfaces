@@ -1,7 +1,7 @@
 {
   "source": "Helios",
-  "version": "1.6.6041.0002",
-  "commit": "7b255c266db198a328b0893a33239544557c39ef",
+  "version": "1.6.6080.0000",
+  "commit": "e3eca4aec85ac8f31bfb26d81fdc0f5af250bcbc",
   "type": "Existing",
   "name": "DCS A-10C II",
   "module": "A-10C_2",
@@ -3098,32 +3098,38 @@
       ]
     },
     {
-      "heliosType": "DCS.Common.Rocker",
+      "heliosType": "DCS.Common.Switch",
       "device": "CDU",
       "name": "Brightness",
-      "description": "Current state of this rocker.",
+      "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%1d",
+          "format": "%0.1f",
           "isExportedEveryFrame": false,
           "id": "424"
         }
       ],
-      "vertical": false,
-      "buttons": [
+      "deviceId": "9",
+      "positions": [
         {
-          "deviceId": "9",
-          "pushId": "3060",
-          "pushValue": "1",
-          "releaseId": "3060",
-          "releaseValue": "0"
+          "exitValue": "0.0",
+          "argumentValue": "1.0",
+          "name": "Right",
+          "actionID": "3061",
+          "stopActionID": "3061",
+          "stopActionValue": "0.0"
         },
         {
-          "deviceId": "9",
-          "pushId": "3061",
-          "pushValue": "-1",
-          "releaseId": "3061",
-          "releaseValue": "0"
+          "argumentValue": "0.0",
+          "name": "Middle"
+        },
+        {
+          "exitValue": "0.0",
+          "argumentValue": "-1.0",
+          "name": "Left",
+          "actionID": "3060",
+          "stopActionID": "3060",
+          "stopActionValue": "0.0"
         }
       ]
     },
@@ -12530,6 +12536,19 @@
       "unit": "Meters"
     },
     {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Simulator Telemetry",
+      "name": "magnetic yaw",
+      "description": "Current magnetic yaw of the aircraft.",
+      "exports": [
+        {
+          "id": "T6"
+        }
+      ],
+      "valueDescription": "(-180 to 180)",
+      "unit": "Degrees"
+    },
+    {
       "heliosType": "DCS.Common.Axis",
       "device": "Stall Warning",
       "name": "Stall Volume",
@@ -13858,6 +13877,50 @@
           "pushId": "3033",
           "pushValue": "1.0",
           "releaseId": "3033",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "UFC",
+      "name": "Toggle ECCM",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "535"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "8",
+          "pushId": "3034",
+          "pushValue": "1.0",
+          "releaseId": "3034",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "UFC",
+      "name": "Toggle IDM R/T",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "536"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "8",
+          "pushId": "3035",
+          "pushValue": "1.0",
+          "releaseId": "3035",
           "releaseValue": "0.0"
         }
       ]

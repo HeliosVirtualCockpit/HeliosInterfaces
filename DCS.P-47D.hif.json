@@ -1,7 +1,7 @@
 {
   "source": "DCSFlightPanels",
-  "version": "0x6040",
-  "commit": "",
+  "version": "1.6.6060.3",
+  "commit": "3ff9ab1cb66caad35b29befdbfa0871274de86ea",
   "type": "DCS",
   "name": "DCS P-47D",
   "module": "P-47D",
@@ -109,19 +109,19 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.1f",
+          "format": null,
           "id": "2139"
         }
       ],
       "deviceId": "14",
       "positions": [
         {
-          "argumentValue": "1.0",
+          "argumentValue": "1",
           "name": "Position1",
           "actionId": "3037"
         },
         {
-          "argumentValue": "0.0",
+          "argumentValue": "0",
           "name": "Position2",
           "actionId": "3037"
         }
@@ -184,19 +184,19 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.1f",
+          "format": null,
           "id": "2141"
         }
       ],
       "deviceId": "14",
       "positions": [
         {
-          "argumentValue": "1.0",
+          "argumentValue": "1",
           "name": "Position1",
           "actionId": "3039"
         },
         {
-          "argumentValue": "0.0",
+          "argumentValue": "0",
           "name": "Position2",
           "actionId": "3039"
         }
@@ -259,19 +259,19 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.1f",
+          "format": null,
           "id": "2143"
         }
       ],
       "deviceId": "14",
       "positions": [
         {
-          "argumentValue": "1.0",
+          "argumentValue": "1",
           "name": "Position1",
           "actionId": "3041"
         },
         {
-          "argumentValue": "0.0",
+          "argumentValue": "0",
           "name": "Position2",
           "actionId": "3041"
         }
@@ -2168,14 +2168,14 @@
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Gauges",
       "name": "Altimeter Pressure",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Barometric Air Pressure Adjustment inHg",
       "exports": [
         {
           "format": "%.3f",
           "id": "21"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
+      "valueDescription": "28-31 inHg",
       "unit": "Numeric",
       "calibration": {
         "points": [
@@ -4740,6 +4740,28 @@
           "releaseValue": "0"
         }
       ]
+    },
+	{
+      "heliosType": "DCS.Common.Axis",
+      "device": "Throttle Quadrant",
+      "name": "Throttle Lever",
+      "description": "Current value of this potentiometer.",
+      "exports": [
+        {
+          "format": "%.3f",
+          "id": "43"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.025,
+      "argumentMin": 0,
+      "argumentMax": 1,
+      "actions": {
+        "set": {
+          "deviceId": "3",
+          "actionId": "3003"
+        }
+      }
     },
     {
       "heliosType": "DCS.Common.Axis",

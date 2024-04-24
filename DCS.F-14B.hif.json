@@ -1,7 +1,7 @@
 {
   "source": "DCSFlightPanels",
-  "version": "0x1200",
-  "commit": "f9d38f38aeb01407ac2f3f2a34d71ce033da7f89",
+  "version": "1.6.6060.0000",
+  "commit": "3a76c4fde9513ca429a7c5e80fba7c9258b8b75b",
   "type": "DCS",
   "name": "DCS F-14B",
   "module": "F-14B",

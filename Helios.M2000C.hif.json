@@ -1,7 +1,7 @@
 {
   "source": "Helios",
-  "version": "1.6.6031.0000",
-  "commit": "7c4030828e20526a9ce0379428b37c0e2fae44c0",
+  "version": "1.6.6060.0000",
+  "commit": "7852c504449dc4347ead9330d183ab1f107cea3d",
   "type": "Existing",
   "name": "DCS M2000C",
   "module": "M-2000C",
@@ -3017,29 +3017,6 @@
       "unit": "Seconds"
     },
     {
-      "heliosType": "DCS.Common.Axis",
-      "device": "Flight Instruments",
-      "name": "Clock Outer Bezel Ring",
-      "description": "Current value of this axis.",
-      "exports": [
-        {
-          "format": "%0.3f",
-          "isExportedEveryFrame": false,
-          "id": "925"
-        }
-      ],
-      "loop": true,
-      "argumentValue": 0.005,
-      "argumentMin": 0.0,
-      "argumentMax": 1.0,
-      "actions": {
-        "set": {
-          "deviceId": "2",
-          "actionId": "3925"
-        }
-      }
-    },
-    {
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Flight Instruments",
       "name": "Accelerometer g High",
@@ -3198,6 +3175,29 @@
           "actionID": "3924"
         }
       ]
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Flight Instruments",
+      "name": "Clock Outer Bezel Ring",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%0.3f",
+          "isExportedEveryFrame": false,
+          "id": "925"
+        }
+      ],
+      "loop": true,
+      "argumentValue": 0.005,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "2",
+          "actionId": "3925"
+        }
+      }
     },
     {
       "heliosType": "DCS.Common.Switch",
@@ -10206,6 +10206,19 @@
       ],
       "valueDescription": "",
       "unit": "Meters"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Simulator Telemetry",
+      "name": "magnetic yaw",
+      "description": "Current magnetic yaw of the aircraft.",
+      "exports": [
+        {
+          "id": "T6"
+        }
+      ],
+      "valueDescription": "(-180 to 180)",
+      "unit": "Degrees"
     },
     {
       "heliosType": "DCS.Common.Switch",

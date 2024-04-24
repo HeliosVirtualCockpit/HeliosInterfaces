@@ -1,7 +1,7 @@
 {
   "source": "Helios",
-  "version": "1.6.6010.0000",
-  "commit": "b2501991eba0b0eafca3f6c59f725e938a44e934",
+  "version": "1.6.6060.0000",
+  "commit": "7852c504449dc4347ead9330d183ab1f107cea3d",
   "type": "Existing",
   "name": "DCS Mirage F1CE",
   "module": "Mirage-F1CE",
@@ -1004,12 +1004,12 @@
       "deviceId": "1",
       "positions": [
         {
-          "argumentValue": "0",
+          "argumentValue": "0.0",
           "name": "Posn 1",
           "actionID": "3314"
         },
         {
-          "argumentValue": "1",
+          "argumentValue": "1.0",
           "name": "Posn 2",
           "actionID": "3314"
         }
@@ -3742,17 +3742,17 @@
       "deviceId": "1",
       "positions": [
         {
-          "argumentValue": "-1",
+          "argumentValue": "-1.0",
           "name": "Posn 1",
           "actionID": "3123"
         },
         {
-          "argumentValue": "0",
+          "argumentValue": "0.0",
           "name": "Posn 2",
           "actionID": "3123"
         },
         {
-          "argumentValue": "1",
+          "argumentValue": "1.0",
           "name": "Posn 3",
           "actionID": "3123"
         }
@@ -4435,17 +4435,17 @@
       "deviceId": "1",
       "positions": [
         {
-          "argumentValue": "-1",
+          "argumentValue": "-1.0",
           "name": "Posn 1",
           "actionID": "3546"
         },
         {
-          "argumentValue": "0",
+          "argumentValue": "0.0",
           "name": "Posn 2",
           "actionID": "3546"
         },
         {
-          "argumentValue": "1",
+          "argumentValue": "1.0",
           "name": "Posn 3",
           "actionID": "3546"
         }
@@ -4764,17 +4764,17 @@
       "deviceId": "1",
       "positions": [
         {
-          "argumentValue": "-1",
+          "argumentValue": "-1.0",
           "name": "Posn 1",
           "actionID": "3081"
         },
         {
-          "argumentValue": "0",
+          "argumentValue": "0.0",
           "name": "Posn 2",
           "actionID": "3081"
         },
         {
-          "argumentValue": "1",
+          "argumentValue": "1.0",
           "name": "Posn 3",
           "actionID": "3081"
         }
@@ -4848,12 +4848,12 @@
       "deviceId": "1",
       "positions": [
         {
-          "argumentValue": "0",
+          "argumentValue": "0.0",
           "name": "Posn 1",
           "actionID": "3319"
         },
         {
-          "argumentValue": "1",
+          "argumentValue": "1.0",
           "name": "Posn 2",
           "actionID": "3319"
         }
@@ -5096,12 +5096,12 @@
       "deviceId": "1",
       "positions": [
         {
-          "argumentValue": "0",
+          "argumentValue": "0.0",
           "name": "Posn 1",
           "actionID": "3557"
         },
         {
-          "argumentValue": "1",
+          "argumentValue": "1.0",
           "name": "Posn 2",
           "actionID": "3557"
         }
@@ -6054,12 +6054,12 @@
       "deviceId": "1",
       "positions": [
         {
-          "argumentValue": "0",
+          "argumentValue": "0.0",
           "name": "Posn 1",
           "actionID": "3130"
         },
         {
-          "argumentValue": "1",
+          "argumentValue": "1.0",
           "name": "Posn 2",
           "actionID": "3130"
         }
@@ -6515,12 +6515,12 @@
       "deviceId": "1",
       "positions": [
         {
-          "argumentValue": "0",
+          "argumentValue": "0.0",
           "name": "Posn 1",
           "actionID": "3494"
         },
         {
-          "argumentValue": "1",
+          "argumentValue": "1.0",
           "name": "Posn 2",
           "actionID": "3494"
         }
@@ -6595,7 +6595,7 @@
       "heliosType": "DCS.Common.NetworkValue",
       "device": "Simulator Telemetry",
       "name": "side deviation",
-      "description": "ILS Side Deiviation",
+      "description": "ILS Side Deviation",
       "exports": [
         {
           "id": "T18"
@@ -6683,6 +6683,19 @@
       "unit": "Meters"
     },
     {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Simulator Telemetry",
+      "name": "magnetic yaw",
+      "description": "Current magnetic yaw of the aircraft.",
+      "exports": [
+        {
+          "id": "T6"
+        }
+      ],
+      "valueDescription": "(-180 to 180)",
+      "unit": "Degrees"
+    },
+    {
       "heliosType": "DCS.Common.PushButton",
       "device": "TACAN control box",
       "name": "TACAN test button",
@@ -6719,12 +6732,12 @@
       "deviceId": "1",
       "positions": [
         {
-          "argumentValue": "0",
+          "argumentValue": "0.0",
           "name": "Posn 1",
           "actionID": "3335"
         },
         {
-          "argumentValue": "1",
+          "argumentValue": "1.0",
           "name": "Posn 2",
           "actionID": "3335"
         }
@@ -6833,17 +6846,17 @@
       "deviceId": "1",
       "positions": [
         {
-          "argumentValue": "-1",
+          "argumentValue": "-1.0",
           "name": "Posn 1",
           "actionID": "3457"
         },
         {
-          "argumentValue": "0",
+          "argumentValue": "0.0",
           "name": "Posn 2",
           "actionID": "3457"
         },
         {
-          "argumentValue": "1",
+          "argumentValue": "1.0",
           "name": "Posn 3",
           "actionID": "3457"
         }
@@ -7184,17 +7197,17 @@
       "deviceId": "1",
       "positions": [
         {
-          "argumentValue": "-1",
+          "argumentValue": "-1.0",
           "name": "Posn 1",
           "actionID": "3145"
         },
         {
-          "argumentValue": "0",
+          "argumentValue": "0.0",
           "name": "Posn 2",
           "actionID": "3145"
         },
         {
-          "argumentValue": "1",
+          "argumentValue": "1.0",
           "name": "Posn 3",
           "actionID": "3145"
         }
@@ -7624,12 +7637,12 @@
       "deviceId": "1",
       "positions": [
         {
-          "argumentValue": "0",
+          "argumentValue": "0.0",
           "name": "Posn 1",
           "actionID": "3340"
         },
         {
-          "argumentValue": "1",
+          "argumentValue": "1.0",
           "name": "Posn 2",
           "actionID": "3340"
         }
