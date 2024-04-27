@@ -14678,7 +14678,7 @@
           "actionId": "3004"
         }
       }
-    },
+    },	
     {
       "heliosType": "DCS.Common.RotaryEncoder",
       "device": "MAP DISPLAY",
@@ -19169,7 +19169,7 @@
     {
       "heliosType": "DCS.Common.Switch",
       "device": "SPU-8 PLT",
-      "name": "PILOT SPU-8 Switch NET-1 ON/OFF",
+      "name": "PILOT SPU-8 Switch NET-2 ON/OFF",
       "description": "Current position of this switch.",
       "exports": [
         {
@@ -19194,7 +19194,7 @@
     {
       "heliosType": "DCS.Common.Switch",
       "device": "SPU-8 PLT",
-      "name": "PILOT SPU-8 Switch NET-2 ON/OFF",
+      "name": "PILOT SPU-8 Switch NET-1 ON/OFF",
       "description": "Current position of this switch.",
       "exports": [
         {
@@ -21792,6 +21792,131 @@
         }
 		]
 	},	
-	
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "R-60 Interface",
+      "name": "R-60 Power light (green)",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "1031"
+        }
+      ]
+    },	
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "R-60 Interface",
+      "name": "R-60 Working light (yellow)",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "1029"
+        }
+      ]
+    },	
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "R-60 Interface",
+      "name": "R-60 Ready light (green)",
+      "description": "Current state of this indicator light.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "1030"
+        }
+      ]
+    },	
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "R-60 Interface",
+      "name": "R-60 Power Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "1033"
+        }
+      ],
+      "deviceId": "73",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Position1",
+          "actionId": "3001"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Position2",
+          "actionId": "3001"
+        }
+      ]
+    },	
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "R-60 Interface",
+      "name": "R-60 Fuze Selector",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "1034"
+        }
+      ],
+      "deviceId": "73",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Position1",
+          "actionId": "3002"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Position2",
+          "actionId": "3002"
+        }
+      ]
+    },	
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "R-60 Interface",
+      "name": "R-60 Station Selector",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "1032"
+        }
+      ],
+      "deviceId": "73",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "OFF",
+          "actionId": "3003"
+        },
+        {
+          "argumentValue": "0.1",
+          "name": "Pylon1",
+          "actionId": "3003"
+        },
+        {
+          "argumentValue": "0.2",
+          "name": "Pylon2",
+          "actionId": "3003"
+        },
+        {
+          "argumentValue": "0.3",
+          "name": "Pylon3",
+          "actionId": "3003"
+        },
+        {
+          "argumentValue": "0.4",
+          "name": "Pylon4",
+          "actionId": "3003"
+        }
+      ]
+    },	
   ]
 }
