@@ -1,7 +1,7 @@
 {
   "source": "DCSFlightPanels",
-  "version": "0x6800",
-  "commit": "cc472b7d1e35f9887f65f968dfae7981b090165b",
+  "version": "1.6.6080.0",
+  "commit": "cd93132803ec449049b6685676eac45a30924a07",
   "type": "DCS",
   "name": "DCS Mi-24P",
   "module": "Mi-24P",
