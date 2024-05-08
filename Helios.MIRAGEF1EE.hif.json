@@ -1,7 +1,7 @@
 {
   "source": "Helios",
-  "version": "1.6.6080.0001",
-  "commit": "bb75c35bf9158a2b29c0f6e27833adce90f23b10",
+  "version": "1.6.6080.0002",
+  "commit": "a1377590c373b0052cbc74d3f2fb024b4332c49f",
   "type": "Existing",
   "name": "DCS Mirage F1EE",
   "module": "Mirage-F1EE",
@@ -5741,134 +5741,6 @@
     },
     {
       "heliosType": "DCS.Common.Switch",
-      "device": "Navigation indicator",
-      "name": "Gyromagnetic/True IDN heading selector",
-      "description": "Current position of this switch.",
-      "exports": [
-        {
-          "format": "%0.1f",
-          "isExportedEveryFrame": false,
-          "id": "1254"
-        }
-      ],
-      "deviceId": "1",
-      "positions": [
-        {
-          "argumentValue": "-1.0",
-          "name": "Posn 1",
-          "actionID": "3655"
-        },
-        {
-          "argumentValue": "0.0",
-          "name": "Posn 2",
-          "actionID": "3655"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.Switch",
-      "device": "Navigation indicator",
-      "name": "VOR/Radar narrow needle selector",
-      "description": "Current position of this switch.",
-      "exports": [
-        {
-          "format": "%0.1f",
-          "isExportedEveryFrame": false,
-          "id": "1255"
-        }
-      ],
-      "deviceId": "1",
-      "positions": [
-        {
-          "argumentValue": "-1.0",
-          "name": "Posn 1",
-          "actionID": "3656"
-        },
-        {
-          "argumentValue": "0.0",
-          "name": "Posn 2",
-          "actionID": "3656"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.Switch",
-      "device": "Navigation indicator",
-      "name": "Mode selector switch",
-      "description": "Current position of this switch.",
-      "exports": [
-        {
-          "format": "%0.1f",
-          "isExportedEveryFrame": false,
-          "id": "1256"
-        }
-      ],
-      "deviceId": "1",
-      "positions": [
-        {
-          "argumentValue": "0.0",
-          "name": "Posn 1",
-          "actionID": "3657"
-        },
-        {
-          "argumentValue": "0.2",
-          "name": "Posn 2",
-          "actionID": "3657"
-        },
-        {
-          "argumentValue": "0.4",
-          "name": "Posn 3",
-          "actionID": "3657"
-        },
-        {
-          "argumentValue": "0.6",
-          "name": "Posn 4",
-          "actionID": "3657"
-        },
-        {
-          "argumentValue": "0.8",
-          "name": "Posn 5",
-          "actionID": "3657"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Posn 6",
-          "actionID": "3657"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.Switch",
-      "device": "Navigation indicator",
-      "name": "Additional vector bearing/distance adjustment switch",
-      "description": "Current position of this switch.",
-      "exports": [
-        {
-          "format": "%0.1f",
-          "isExportedEveryFrame": false,
-          "id": "1257"
-        }
-      ],
-      "deviceId": "1",
-      "positions": [
-        {
-          "argumentValue": "-1.0",
-          "name": "Posn 1",
-          "actionID": "3659",
-          "stopActionID": "3659",
-          "stopActionValue": "0.0"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Posn 2",
-          "actionID": "3660",
-          "stopActionID": "3660",
-          "stopActionValue": "0.0"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.Switch",
       "device": "Omnibearing and VOR/ILS-TAC selector box",
       "name": "VOR-ILS/OFF/TACAN selector",
       "description": "Current position of this switch.",
@@ -8250,62 +8122,6 @@
       ]
     },
     {
-      "heliosType": "DCS.Common.Switch",
-      "device": "VOR/ILS control box",
-      "name": "VOR-ILS control unit ON/OFF selector",
-      "description": "Current position of this switch.",
-      "exports": [
-        {
-          "format": "%0.1f",
-          "isExportedEveryFrame": false,
-          "id": "503"
-        }
-      ],
-      "deviceId": "1",
-      "positions": [
-        {
-          "argumentValue": "0.0",
-          "name": "Posn 1",
-          "actionID": "3340"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Posn 2",
-          "actionID": "3340"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.Switch",
-      "device": "VOR/ILS control box",
-      "name": "VOR-ILS control unit test selector",
-      "description": "Current position of this switch.",
-      "exports": [
-        {
-          "format": "%0.1f",
-          "isExportedEveryFrame": false,
-          "id": "505"
-        }
-      ],
-      "deviceId": "1",
-      "positions": [
-        {
-          "argumentValue": "-1.0",
-          "name": "Posn 1",
-          "actionID": "3343",
-          "stopActionID": "3343",
-          "stopActionValue": "0.0"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Posn 2",
-          "actionID": "3342",
-          "stopActionID": "3342",
-          "stopActionValue": "0.0"
-        }
-      ]
-    },
-    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Warning lights",
       "name": "A/B INJ light",
@@ -8313,7 +8129,7 @@
       "exports": [
         {
           "format": "%1d",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "1030"
         }
       ]
@@ -8326,7 +8142,7 @@
       "exports": [
         {
           "format": "%1d",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "1032"
         }
       ]
@@ -8339,7 +8155,7 @@
       "exports": [
         {
           "format": "%1d",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "1034"
         }
       ]
@@ -8374,7 +8190,7 @@
       "exports": [
         {
           "format": "%0.1f",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "109"
         }
       ]
@@ -8657,7 +8473,7 @@
       "exports": [
         {
           "format": "%1d",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "945"
         }
       ]
@@ -8670,7 +8486,7 @@
       "exports": [
         {
           "format": "%1d",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "950"
         }
       ]
@@ -8717,12 +8533,12 @@
       "exports": [
         {
           "format": "%0.1f",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "958"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Radar lights",
       "name": "Radar light HA",
@@ -8730,12 +8546,12 @@
       "exports": [
         {
           "format": "%0.1f",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "842"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Radar lights",
       "name": "Radar light IC",
@@ -8743,12 +8559,12 @@
       "exports": [
         {
           "format": "%0.1f",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "843"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Radar lights",
       "name": "Radar light TL",
@@ -8756,12 +8572,12 @@
       "exports": [
         {
           "format": "%0.1f",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "844"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Radar lights",
       "name": "Radar light BZ",
@@ -8769,12 +8585,12 @@
       "exports": [
         {
           "format": "%0.1f",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "845"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Radar lights",
       "name": "Radar light TS",
@@ -8782,12 +8598,12 @@
       "exports": [
         {
           "format": "%0.1f",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "846"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Radar lights",
       "name": "Radar light V1",
@@ -8795,12 +8611,12 @@
       "exports": [
         {
           "format": "%0.1f",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "847"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Radar lights",
       "name": "Radar light V2",
@@ -8808,12 +8624,12 @@
       "exports": [
         {
           "format": "%0.1f",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "848"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Radar lights",
       "name": "Radar light DC",
@@ -8821,12 +8637,12 @@
       "exports": [
         {
           "format": "%0.1f",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "849"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Radar lights",
       "name": "Radar light PR",
@@ -8834,12 +8650,12 @@
       "exports": [
         {
           "format": "%0.1f",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "850"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Radar lights",
       "name": "Radar light AC",
@@ -8847,12 +8663,12 @@
       "exports": [
         {
           "format": "%0.1f",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "851"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Radar lights",
       "name": "Radar light DB",
@@ -8860,12 +8676,12 @@
       "exports": [
         {
           "format": "%0.1f",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "852"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Radar lights",
       "name": "Radar light Yellow",
@@ -8873,12 +8689,12 @@
       "exports": [
         {
           "format": "%0.1f",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "853"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Radar lights",
       "name": "Radar light Green",
@@ -8886,12 +8702,12 @@
       "exports": [
         {
           "format": "%0.1f",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "854"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Radar lights",
       "name": "Radar light Red",
@@ -8899,12 +8715,12 @@
       "exports": [
         {
           "format": "%0.1f",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "855"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Radar lights",
       "name": "Radar light 7",
@@ -8912,12 +8728,12 @@
       "exports": [
         {
           "format": "%0.1f",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "856"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Radar lights",
       "name": "Radar light 15",
@@ -8925,12 +8741,12 @@
       "exports": [
         {
           "format": "%0.1f",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "857"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Radar lights",
       "name": "Radar light 35",
@@ -8938,12 +8754,12 @@
       "exports": [
         {
           "format": "%0.1f",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "858"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Radar lights",
       "name": "Radar light 60",
@@ -8951,12 +8767,12 @@
       "exports": [
         {
           "format": "%0.1f",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "859"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Radar lights",
       "name": "Radar light AP",
@@ -8964,12 +8780,12 @@
       "exports": [
         {
           "format": "%0.1f",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "860"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Radar lights",
       "name": "Radar light TCH",
@@ -8977,12 +8793,12 @@
       "exports": [
         {
           "format": "%0.1f",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "861"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Radar lights",
       "name": "Radar light EMI",
@@ -8990,12 +8806,12 @@
       "exports": [
         {
           "format": "%0.1f",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "862"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Radar lights",
       "name": "Radar light PNE",
@@ -9015,7 +8831,7 @@
       "exports": [
         {
           "format": "%.4f",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "1106"
         }
       ],
@@ -9035,7 +8851,7 @@
         "precision": 4
       }
     },
-	{
+    {
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "REACTOR",
       "name": "RPM x 1000",
@@ -9043,7 +8859,7 @@
       "exports": [
         {
           "format": "%.4f",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "1027"
         }
       ],
@@ -9063,7 +8879,7 @@
         "precision": 4
       }
     },
-	{
+    {
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "REACTOR",
       "name": "Temp_JPT",
@@ -9071,7 +8887,7 @@
       "exports": [
         {
           "format": "%.4f",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "1028"
         }
       ],
@@ -9091,7 +8907,7 @@
         "precision": 4
       }
     },
-	{
+    {
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "CARBURANT",
       "name": "Reservoir gauche",
@@ -9099,7 +8915,7 @@
       "exports": [
         {
           "format": "%0.3f",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "1142"
         }
       ],
@@ -9119,7 +8935,7 @@
         "precision": 3
       }
     },
-	{
+    {
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "CARBURANT",
       "name": "Reservoir droit",
@@ -9127,7 +8943,7 @@
       "exports": [
         {
           "format": "%0.3f",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "1143"
         }
       ],
@@ -9147,7 +8963,7 @@
         "precision": 3
       }
     },
-	{
+    {
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "CARBURANT",
       "name": "Fuel R drum x1000",
@@ -9155,7 +8971,7 @@
       "exports": [
         {
           "format": "%.3f",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "1146"
         }
       ],
@@ -9175,7 +8991,7 @@
         "precision": 3
       }
     },
-	{
+    {
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "CARBURANT",
       "name": "Fuel R drum x100",
@@ -9183,7 +8999,7 @@
       "exports": [
         {
           "format": "%.3f",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "1147"
         }
       ],
@@ -9203,7 +9019,7 @@
         "precision": 3
       }
     },
-	{
+    {
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "CARBURANT",
       "name": "Fuel R drum x10",
@@ -9211,7 +9027,7 @@
       "exports": [
         {
           "format": "%.3f",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "1148"
         }
       ],
@@ -9231,7 +9047,7 @@
         "precision": 3
       }
     },
-	{
+    {
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "CARBURANT",
       "name": "Fuel R drum x1",
@@ -9239,7 +9055,7 @@
       "exports": [
         {
           "format": "%.3f",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "1149"
         }
       ],
@@ -9259,7 +9075,7 @@
         "precision": 3
       }
     },
-	{
+    {
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "parametres vol",
       "name": "cap",
@@ -9267,7 +9083,7 @@
       "exports": [
         {
           "format": "%.3f",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "76"
         }
       ],
@@ -9287,7 +9103,7 @@
         "precision": 3
       }
     },
-	{
+    {
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "parametres vol",
       "name": "Flight pitch",
@@ -9295,7 +9111,7 @@
       "exports": [
         {
           "format": "%.3f",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "77"
         }
       ],
@@ -9315,7 +9131,7 @@
         "precision": 3
       }
     },
-	{
+    {
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "parametres vol",
       "name": "bank",
@@ -9323,7 +9139,7 @@
       "exports": [
         {
           "format": "%.3f",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "78"
         }
       ],
@@ -9343,7 +9159,7 @@
         "precision": 3
       }
     },
-	{
+    {
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "parametres vol",
       "name": "deviation",
@@ -9351,7 +9167,7 @@
       "exports": [
         {
           "format": "%.3f",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "539"
         }
       ],
@@ -9371,7 +9187,7 @@
         "precision": 3
       }
     },
-	{
+    {
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Sphere",
       "name": "ILS_H",
@@ -9379,7 +9195,7 @@
       "exports": [
         {
           "format": "%.3f",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "1108"
         }
       ],
@@ -9399,7 +9215,7 @@
         "precision": 3
       }
     },
-	{
+    {
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Sphere",
       "name": "ILS_V",
@@ -9407,7 +9223,7 @@
       "exports": [
         {
           "format": "%.3f",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "1109"
         }
       ],
@@ -9427,7 +9243,7 @@
         "precision": 3
       }
     },
-	{
+    {
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Sphere",
       "name": "Sphere_Pitch",
@@ -9435,7 +9251,7 @@
       "exports": [
         {
           "format": "%.3f",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "1110"
         }
       ],
@@ -9455,7 +9271,7 @@
         "precision": 3
       }
     },
-	{
+    {
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Sphere",
       "name": "Sphere_Bank",
@@ -9463,7 +9279,7 @@
       "exports": [
         {
           "format": "%.3f",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "1111"
         }
       ],
@@ -9483,7 +9299,7 @@
         "precision": 3
       }
     },
-	{
+    {
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Sphere",
       "name": "Sphere_heading",
@@ -9491,7 +9307,7 @@
       "exports": [
         {
           "format": "%.3f",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "1112"
         }
       ],
@@ -9511,7 +9327,7 @@
         "precision": 3
       }
     },
-	{
+    {
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Sphere",
       "name": "Sphere_slip",
@@ -9519,7 +9335,7 @@
       "exports": [
         {
           "format": "%.3f",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "1113"
         }
       ],
@@ -9539,7 +9355,7 @@
         "precision": 3
       }
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Sphere",
       "name": "Sphere_Flag",
@@ -9547,12 +9363,12 @@
       "exports": [
         {
           "format": "%1d",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "1115"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Altimeter",
       "name": "Alti_Slaved_x1000",
@@ -9560,7 +9376,7 @@
       "exports": [
         {
           "format": "%.3f",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "1049"
         }
       ],
@@ -9580,7 +9396,7 @@
         "precision": 3
       }
     },
-	{
+    {
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Altimeter",
       "name": "Alti_Slaved_x100",
@@ -9588,7 +9404,7 @@
       "exports": [
         {
           "format": "%.3f",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "1050"
         }
       ],
@@ -9608,7 +9424,7 @@
         "precision": 3
       }
     },
-	{
+    {
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Altimeter",
       "name": "Alti_Slaved_x10",
@@ -9616,7 +9432,7 @@
       "exports": [
         {
           "format": "%.3f",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "1051"
         }
       ],
@@ -9636,7 +9452,7 @@
         "precision": 3
       }
     },
-	{
+    {
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Altimeter",
       "name": "Alti_Slaved_x1",
@@ -9644,7 +9460,7 @@
       "exports": [
         {
           "format": "%.3f",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "1052"
         }
       ],
@@ -9664,7 +9480,7 @@
         "precision": 3
       }
     },
-	{
+    {
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Altimeter",
       "name": "Alti_x1000",
@@ -9672,7 +9488,7 @@
       "exports": [
         {
           "format": "%.3f",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "1068"
         }
       ],
@@ -9692,7 +9508,7 @@
         "precision": 3
       }
     },
-	{
+    {
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Altimeter",
       "name": "Alti_x100",
@@ -9700,7 +9516,7 @@
       "exports": [
         {
           "format": "%.3f",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "1069"
         }
       ],
@@ -9720,7 +9536,7 @@
         "precision": 3
       }
     },
-	{
+    {
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Altimeter",
       "name": "Alti_x10",
@@ -9728,7 +9544,7 @@
       "exports": [
         {
           "format": "%.3f",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "1070"
         }
       ],
@@ -9748,7 +9564,7 @@
         "precision": 3
       }
     },
-	{
+    {
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Altimeter",
       "name": "Alti_x1",
@@ -9756,7 +9572,7 @@
       "exports": [
         {
           "format": "%.3f",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "1071"
         }
       ],
@@ -9776,7 +9592,7 @@
         "precision": 3
       }
     },
-	{
+    {
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Altimeter",
       "name": "Alti_Slaved_Needle",
@@ -9784,7 +9600,7 @@
       "exports": [
         {
           "format": "%.3f",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "1043"
         }
       ],
@@ -9804,7 +9620,7 @@
         "precision": 3
       }
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Altimeter",
       "name": "Alti_Slaved_Flag",
@@ -9812,12 +9628,12 @@
       "exports": [
         {
           "format": "%1d",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "1044"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "PTransfert",
       "name": "Reservoir_4G",
@@ -9825,12 +9641,12 @@
       "exports": [
         {
           "format": "%1d",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "1154"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "PTransfert",
       "name": "Reservoir_2C",
@@ -9838,12 +9654,12 @@
       "exports": [
         {
           "format": "%1d",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "1155"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "PTransfert",
       "name": "Reservoir_4D",
@@ -9851,12 +9667,12 @@
       "exports": [
         {
           "format": "%1d",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "1156"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "PTransfert",
       "name": "Reservoir_1G",
@@ -9864,12 +9680,12 @@
       "exports": [
         {
           "format": "%1d",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "1159"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "PTransfert",
       "name": "Reservoir_RG",
@@ -9877,12 +9693,12 @@
       "exports": [
         {
           "format": "%1d",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "1157"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "PTransfert",
       "name": "Reservoir_RC",
@@ -9890,12 +9706,12 @@
       "exports": [
         {
           "format": "%1d",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "1160"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "PTransfert",
       "name": "Reservoir_RD",
@@ -9903,12 +9719,12 @@
       "exports": [
         {
           "format": "%1d",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "1158"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "PTransfert",
       "name": "Reservoir_1D",
@@ -9916,12 +9732,12 @@
       "exports": [
         {
           "format": "%1d",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "1161"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "PTransfert",
       "name": "Reservoir_3G",
@@ -9929,12 +9745,12 @@
       "exports": [
         {
           "format": "%1d",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "1162"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "PTransfert",
       "name": "Reservoir_3D",
@@ -9942,12 +9758,12 @@
       "exports": [
         {
           "format": "%1d",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "1163"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "PTransfert",
       "name": "Reservoir_5G",
@@ -9955,12 +9771,12 @@
       "exports": [
         {
           "format": "%1d",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "1164"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "PTransfert",
       "name": "Reservoir_5D",
@@ -9968,12 +9784,12 @@
       "exports": [
         {
           "format": "%1d",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "1165"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.PushButton",
       "device": "PTransfert",
       "name": "Push test",
@@ -9995,7 +9811,7 @@
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Panel_slats_flaps_gears",
       "name": "V_Slats-2",
@@ -10003,12 +9819,12 @@
       "exports": [
         {
           "format": "%1d",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "1083"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Panel_slats_flaps_gears",
       "name": "V_Slats-1",
@@ -10016,12 +9832,12 @@
       "exports": [
         {
           "format": "%1d",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "1084"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Panel_slats_flaps_gears",
       "name": "V_Slats",
@@ -10029,12 +9845,12 @@
       "exports": [
         {
           "format": "%1d",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "1085"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Panel_slats_flaps_gears",
       "name": "V_Flaps",
@@ -10042,12 +9858,12 @@
       "exports": [
         {
           "format": "%1d",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "1086"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Panel_slats_flaps_gears",
       "name": "V_Flaps-1",
@@ -10055,12 +9871,12 @@
       "exports": [
         {
           "format": "%1d",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "1087"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Panel_slats_flaps_gears",
       "name": "V_Flaps-2",
@@ -10068,12 +9884,12 @@
       "exports": [
         {
           "format": "%1d",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "1088"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Panel_slats_flaps_gears",
       "name": "V_Breake",
@@ -10081,12 +9897,12 @@
       "exports": [
         {
           "format": "%1d",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "1089"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Panel_slats_flaps_gears",
       "name": "V_Left_Gear",
@@ -10094,12 +9910,12 @@
       "exports": [
         {
           "format": "%1d",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "1090"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Panel_slats_flaps_gears",
       "name": "V_Gear",
@@ -10107,12 +9923,12 @@
       "exports": [
         {
           "format": "%1d",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "1091"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Panel_slats_flaps_gears",
       "name": "V_Nose_Gear",
@@ -10120,12 +9936,12 @@
       "exports": [
         {
           "format": "%1d",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "1092"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Panel_slats_flaps_gears",
       "name": "V_Right_Gear",
@@ -10133,12 +9949,12 @@
       "exports": [
         {
           "format": "%1d",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "1093"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.PushButton",
       "device": "Panel_slats_flaps_gears",
       "name": "Test_config",
@@ -10160,7 +9976,7 @@
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.PushButton",
       "device": "Panel_slats_flaps_gears",
       "name": "Bip_config",
@@ -10182,7 +9998,7 @@
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Autopilot_light",
       "name": "BTN-1_P_red",
@@ -10190,12 +10006,12 @@
       "exports": [
         {
           "format": "%1d",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "975"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Autopilot_light",
       "name": "BTN-1_A_green",
@@ -10203,12 +10019,12 @@
       "exports": [
         {
           "format": "%1d",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "976"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Autopilot_light",
       "name": "BTN-2_ALT_green",
@@ -10216,12 +10032,12 @@
       "exports": [
         {
           "format": "%1d",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "978"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Autopilot_light",
       "name": "BTN-2_ALT_red",
@@ -10229,12 +10045,12 @@
       "exports": [
         {
           "format": "%1d",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "979"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Autopilot_light",
       "name": "BTN-3_CAP_green",
@@ -10242,12 +10058,12 @@
       "exports": [
         {
           "format": "%1d",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "981"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Autopilot_light",
       "name": "BTN-4_left_arrow_red",
@@ -10255,12 +10071,12 @@
       "exports": [
         {
           "format": "%1d",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "983"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Autopilot_light",
       "name": "BTN-4_R_red",
@@ -10268,12 +10084,12 @@
       "exports": [
         {
           "format": "%1d",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "984"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Autopilot_light",
       "name": "BTN-4_Right_arrow_red",
@@ -10281,12 +10097,12 @@
       "exports": [
         {
           "format": "%1d",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "985"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Autopilot_light",
       "name": "BTN-4_Bottom_green",
@@ -10294,12 +10110,12 @@
       "exports": [
         {
           "format": "%1d",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "986"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Autopilot_light",
       "name": "BTN-5_G_red",
@@ -10307,12 +10123,12 @@
       "exports": [
         {
           "format": "%1d",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "988"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Autopilot_light",
       "name": "BTN-5_upper_red",
@@ -10320,12 +10136,12 @@
       "exports": [
         {
           "format": "%1d",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "989"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Autopilot_light",
       "name": "BTN-5_right_green",
@@ -10333,12 +10149,12 @@
       "exports": [
         {
           "format": "%1d",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "990"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Autopilot_light",
       "name": "BTN-5_lower_red",
@@ -10346,12 +10162,12 @@
       "exports": [
         {
           "format": "%1d",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "991"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Panel_Trim",
       "name": "Ruder_Trim",
@@ -10359,7 +10175,7 @@
       "exports": [
         {
           "format": "%.3f",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "723"
         }
       ],
@@ -10379,7 +10195,7 @@
         "precision": 3
       }
     },
-	{
+    {
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Panel_Trim",
       "name": "Roll_Trim",
@@ -10387,7 +10203,7 @@
       "exports": [
         {
           "format": "%.3f",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "724"
         }
       ],
@@ -10407,7 +10223,7 @@
         "precision": 3
       }
     },
-	{
+    {
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Panel_Trim",
       "name": "Pitch_Trim",
@@ -10415,7 +10231,7 @@
       "exports": [
         {
           "format": "%.3f",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "725"
         }
       ],
@@ -10435,7 +10251,7 @@
         "precision": 3
       }
     },
-	{
+    {
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Pannel_Pression_cabine",
       "name": "Pression_cabine",
@@ -10443,7 +10259,7 @@
       "exports": [
         {
           "format": "%.3f",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "726"
         }
       ],
@@ -10463,7 +10279,7 @@
         "precision": 3
       }
     },
-	{
+    {
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Pannel_Pression_hydro",
       "name": "Pression_hydro1",
@@ -10471,7 +10287,7 @@
       "exports": [
         {
           "format": "%.3f",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "721"
         }
       ],
@@ -10490,8 +10306,8 @@
         ],
         "precision": 3
       }
-	},
-	{
+    },
+    {
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Pannel_Pression_hydro",
       "name": "Pression_hydro2",
@@ -10499,7 +10315,7 @@
       "exports": [
         {
           "format": "%.3f",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "722"
         }
       ],
@@ -10519,7 +10335,7 @@
         "precision": 3
       }
     },
-	{
+    {
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Pannel_Gmeter",
       "name": "Gmax",
@@ -10527,7 +10343,35 @@
       "exports": [
         {
           "format": "%.3f",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
+          "id": "217"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0.000,
+            "mappedValue": 0.000
+          },
+          {
+            "value": 1.000,
+            "mappedValue": 1.000
+          }
+        ],
+        "precision": 3
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Pannel_Gmeter",
+      "name": "G",
+      "description": "Valeur : 0 / 70 pixels ",
+      "exports": [
+        {
+          "format": "%.3f",
+          "isExportedEveryFrame": true,
           "id": "218"
         }
       ],
@@ -10536,26 +10380,26 @@
       "calibration": {
         "points": [
           {
-            "value": 0,
-            "mappedValue": 0
+            "value": 0.000,
+            "mappedValue": 0.000
           },
           {
-            "value": 1,
-            "mappedValue": 70
+            "value": 1.000,
+            "mappedValue": 1.000
           }
         ],
         "precision": 3
       }
     },
-	{
+    {
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Pannel_Gmeter",
-      "name": "G",
+      "name": "Gmin",
       "description": "Valeur : 0 / 70 pixels ",
       "exports": [
         {
           "format": "%.3f",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "219"
         }
       ],
@@ -10564,46 +10408,18 @@
       "calibration": {
         "points": [
           {
-            "value": 0,
-            "mappedValue": 0
+            "value": 0.000,
+            "mappedValue": 0.000
           },
           {
-            "value": 1,
-            "mappedValue": 70
+            "value": 1.000,
+            "mappedValue": 1.000
           }
         ],
         "precision": 3
       }
     },
-	{
-      "heliosType": "DCS.Common.ScaledNetworkValue",
-      "device": "Pannel_Gmeter",
-      "name": "Gmin",
-      "description": "Valeur : 0 / 70 pixels ",
-      "exports": [
-        {
-          "format": "%.3f",
-		  "isExportedEveryFrame": true,
-          "id": "220"
-        }
-      ],
-      "valueDescription": "TODO: describe range of output values after calibration",
-      "unit": "Numeric",
-      "calibration": {
-        "points": [
-          {
-            "value": 0,
-            "mappedValue": 0
-          },
-          {
-            "value": 1,
-            "mappedValue": 70
-          }
-        ],
-        "precision": 3
-      }
-    },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Panel_warning",
       "name": "W_Batt",
@@ -10611,12 +10427,12 @@
       "exports": [
         {
           "format": "%1d",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "120"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Panel_warning",
       "name": "W_Alt1",
@@ -10624,12 +10440,12 @@
       "exports": [
         {
           "format": "%1d",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "121"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Panel_warning",
       "name": "W_Alt2",
@@ -10637,12 +10453,12 @@
       "exports": [
         {
           "format": "%1d",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "122"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Panel_warning",
       "name": "W_Tr1",
@@ -10650,12 +10466,12 @@
       "exports": [
         {
           "format": "%1d",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "123"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Panel_warning",
       "name": "W_Sec",
@@ -10663,12 +10479,12 @@
       "exports": [
         {
           "format": "%1d",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "124"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Panel_warning",
       "name": "W_Bp",
@@ -10676,12 +10492,12 @@
       "exports": [
         {
           "format": "%1d",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "125"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Panel_warning",
       "name": "W_Bpg",
@@ -10689,12 +10505,12 @@
       "exports": [
         {
           "format": "%1d",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "126"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Panel_warning",
       "name": "W_Bpd",
@@ -10702,12 +10518,12 @@
       "exports": [
         {
           "format": "%1d",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "127"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Panel_warning",
       "name": "W_Tr2",
@@ -10715,12 +10531,12 @@
       "exports": [
         {
           "format": "%1d",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "128"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Panel_warning",
       "name": "W_Niv",
@@ -10728,12 +10544,12 @@
       "exports": [
         {
           "format": "%1d",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "129"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Panel_warning",
       "name": "W_Huile",
@@ -10741,12 +10557,12 @@
       "exports": [
         {
           "format": "%1d",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "130"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Panel_warning",
       "name": "W_Ep",
@@ -10754,12 +10570,12 @@
       "exports": [
         {
           "format": "%1d",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "131"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Panel_warning",
       "name": "W_Hyds",
@@ -10767,12 +10583,12 @@
       "exports": [
         {
           "format": "%1d",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "132"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Panel_warning",
       "name": "W_Hydr1",
@@ -10780,12 +10596,12 @@
       "exports": [
         {
           "format": "%1d",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "133"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Panel_warning",
       "name": "W_Hydr2",
@@ -10793,12 +10609,12 @@
       "exports": [
         {
           "format": "%1d",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "134"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Panel_warning",
       "name": "W_Rego2",
@@ -10806,12 +10622,12 @@
       "exports": [
         {
           "format": "%1d",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "135"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Panel_warning",
       "name": "W_5mmo2",
@@ -10819,12 +10635,12 @@
       "exports": [
         {
           "format": "%1d",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "136"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Panel_warning",
       "name": "W_Teq",
@@ -10832,12 +10648,12 @@
       "exports": [
         {
           "format": "%1d",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "137"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Panel_warning",
       "name": "W_Tcab",
@@ -10845,12 +10661,12 @@
       "exports": [
         {
           "format": "%1d",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "138"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Panel_warning",
       "name": "W_Pcab",
@@ -10858,12 +10674,12 @@
       "exports": [
         {
           "format": "%1d",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "139"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Panel_warning",
       "name": "W_Trim",
@@ -10871,12 +10687,12 @@
       "exports": [
         {
           "format": "%1d",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "140"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Panel_warning",
       "name": "W_Pa",
@@ -10884,12 +10700,12 @@
       "exports": [
         {
           "format": "%1d",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "141"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Panel_warning",
       "name": "W_Cap",
@@ -10897,12 +10713,12 @@
       "exports": [
         {
           "format": "%1d",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "142"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Panel_warning",
       "name": "W_Anemo",
@@ -10910,12 +10726,12 @@
       "exports": [
         {
           "format": "%1d",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "143"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Panel_warning",
       "name": "W_Caero",
@@ -10923,12 +10739,12 @@
       "exports": [
         {
           "format": "%1d",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "144"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Panel_warning",
       "name": "W_Lacet",
@@ -10936,12 +10752,12 @@
       "exports": [
         {
           "format": "%1d",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "145"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Panel_warning",
       "name": "W_Tang",
@@ -10949,12 +10765,12 @@
       "exports": [
         {
           "format": "%1d",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "146"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Panel_warning",
       "name": "W_Roul",
@@ -10962,12 +10778,12 @@
       "exports": [
         {
           "format": "%1d",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "147"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Panel_warning",
       "name": "W_Emp",
@@ -10975,12 +10791,12 @@
       "exports": [
         {
           "format": "%1d",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "148"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Panel_warning",
       "name": "W_Dir",
@@ -10988,12 +10804,12 @@
       "exports": [
         {
           "format": "%1d",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "149"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Panel_warning",
       "name": "W_Hyper",
@@ -11001,12 +10817,12 @@
       "exports": [
         {
           "format": "%1d",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "150"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Panel_warning",
       "name": "W_Modul",
@@ -11014,12 +10830,12 @@
       "exports": [
         {
           "format": "%1d",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "151"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Panel_warning",
       "name": "W_Vand",
@@ -11027,12 +10843,12 @@
       "exports": [
         {
           "format": "%1d",
-		  "isExportedEveryFrame": true,
+          "isExportedEveryFrame": true,
           "id": "152"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.Switch",
       "device": "TACAN",
       "name": "TACAN X/Y mode selector",
@@ -11058,7 +10874,35 @@
         }
       ]
     },
-	{
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "TACAN",
+      "name": "AFF TACAN X/Y",
+      "description": "Aff TACAN X or Y",
+      "exports": [
+        {
+          "format": "%.1d",
+          "isExportedEveryFrame": true,
+          "id": "481"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 0
+      }
+    },
+    {
       "heliosType": "DCS.Common.Switch",
       "device": "TACAN",
       "name": "TACAN mode selector",
@@ -11074,35 +10918,35 @@
       "positions": [
         {
           "argumentValue": "0.0000",
-          "name": "Posn 1",
-          "actionID": "3337"
+          "name": "Position1",
+          "actionID": "3299"
         },
         {
           "argumentValue": "0.3333",
-          "name": "Posn 2",
-          "actionID": "3337"
+          "name": "Position2",
+          "actionID": "3299"
         },
         {
           "argumentValue": "0.6666",
-          "name": "Posn 3",
-          "actionID": "3337"
+          "name": "Position3",
+          "actionID": "3299"
         },
         {
           "argumentValue": "0.9999",
-          "name": "Posn 4",
-          "actionID": "3337"
+          "name": "Position4",
+          "actionID": "3299"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.Switch",
       "device": "TACAN",
-      "name": "I - TACAN Channel 10 Selector",
+      "name": "TACAN Channel 10 Selector",
       "description": "Current position of this switch.",
       "exports": [
         {
           "format": "%0.2f",
-          "id": "486"
+          "id": "482"
         }
       ],
       "deviceId": "23",
@@ -11174,10 +11018,38 @@
         }
       ]
     },
-	{
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "TACAN",
+      "name": "AFF TACAN x10",
+      "description": "Aff TACAN x10",
+      "exports": [
+        {
+          "format": "%.5f",
+          "isExportedEveryFrame": true,
+          "id": "486"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 0.69,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 5
+      }
+    },
+    {
       "heliosType": "DCS.Common.Switch",
       "device": "TACAN",
-      "name": "I - TACAN Channel 1 Selector",
+      "name": "Select TACAN Channel x1",
       "description": "Current position of this switch.",
       "exports": [
         {
@@ -11238,6 +11110,593 @@
           "actionId": "3301"
         }
       ]
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "TACAN",
+      "name": "AFF TACAN x1",
+      "description": "Aff TACAN x1",
+      "exports": [
+        {
+          "format": "%.5f",
+          "isExportedEveryFrame": true,
+          "id": "484"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0.0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 5
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Navigation",
+      "name": "Rose_cap",
+      "description": "Valeur rot : 0 - 1 ",
+      "exports": [
+        {
+          "format": "%.3f",
+          "isExportedEveryFrame": true,
+          "id": "1189"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0.000,
+            "mappedValue": 0.000
+          },
+          {
+            "value": 1.000,
+            "mappedValue": 1.000
+          }
+        ],
+        "precision": 3
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Navigation",
+      "name": "Heading for autopilot",
+      "description": "Valeur rot : 0 - 1 ",
+      "exports": [
+        {
+          "format": "%.3f",
+          "isExportedEveryFrame": true,
+          "id": "1190"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0.000,
+            "mappedValue": 0.000
+          },
+          {
+            "value": 1.000,
+            "mappedValue": 1.000
+          }
+        ],
+        "precision": 3
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Navigation",
+      "name": "TACAN Target bearing",
+      "description": "Valeur rot : 0 - 1 ",
+      "exports": [
+        {
+          "format": "%.3f",
+          "isExportedEveryFrame": true,
+          "id": "1191"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0.000,
+            "mappedValue": 0.000
+          },
+          {
+            "value": 1.000,
+            "mappedValue": 1.000
+          }
+        ],
+        "precision": 3
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Navigation",
+      "name": "Needle_VOR-Radar",
+      "description": "Valeur rot : 0 - 1 ",
+      "exports": [
+        {
+          "format": "%.3f",
+          "isExportedEveryFrame": true,
+          "id": "1192"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0.000,
+            "mappedValue": 0.000
+          },
+          {
+            "value": 1.000,
+            "mappedValue": 1.000
+          }
+        ],
+        "precision": 3
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Navigation",
+      "name": "Tacan target dist x100",
+      "description": "Valeur rot : 0 - 1 ",
+      "exports": [
+        {
+          "format": "%.4f",
+          "isExportedEveryFrame": true,
+          "id": "1193"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0.0000,
+            "mappedValue": 0.0000
+          },
+          {
+            "value": 1.0000,
+            "mappedValue": 1.0000
+          }
+        ],
+        "precision": 4
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Navigation",
+      "name": "Tacan target dist x10",
+      "description": "Valeur rot : 0 - 1 ",
+      "exports": [
+        {
+          "format": "%.4f",
+          "isExportedEveryFrame": true,
+          "id": "1194"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0.0000,
+            "mappedValue": 0.0000
+          },
+          {
+            "value": 1.0000,
+            "mappedValue": 1.0000
+          }
+        ],
+        "precision": 4
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Navigation",
+      "name": "Tacan target dist x1",
+      "description": "Valeur rot : 0 - 1 ",
+      "exports": [
+        {
+          "format": "%.4f",
+          "isExportedEveryFrame": true,
+          "id": "1195"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0.0000,
+            "mappedValue": 0.0000
+          },
+          {
+            "value": 1.0000,
+            "mappedValue": 1.0000
+          }
+        ],
+        "precision": 4
+      }
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Navigation",
+      "name": "Flag_dist",
+      "description": "Current state of this flaps : FALSE / TRUE",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": true,
+          "id": "1196"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Navigation",
+      "name": "Flag_rose",
+      "description": "Current state of this flaps : FALSE / TRUE",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": true,
+          "id": "1203"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Navigation",
+      "name": "Flag_IDN",
+      "description": "Current state of this flaps : FALSE / TRUE",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": true,
+          "id": "1306"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Navigation",
+      "name": "Mode selector switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "1256"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionID": "3657"
+        },
+        {
+          "argumentValue": "0.2",
+          "name": "Position2",
+          "actionID": "3657"
+        },
+        {
+          "argumentValue": "0.4",
+          "name": "Position3",
+          "actionID": "3657"
+        },
+        {
+          "argumentValue": "0.6",
+          "name": "Position4",
+          "actionID": "3657"
+        },
+        {
+          "argumentValue": "0.8",
+          "name": "Position5",
+          "actionID": "3657"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Position6",
+          "actionID": "3657"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Navigation",
+      "name": "Gyromagnetic/True IDN heading selector",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "1254"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Position1",
+          "actionID": "3655"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Position2",
+          "actionID": "3655"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Navigation",
+      "name": "VOR/Radar narrow needle selector",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "1255"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Position1",
+          "actionID": "3656"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Position2",
+          "actionID": "3656"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Navigation",
+      "name": "Additional vector bearing/distance adjustment switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "1257"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "-1.0",
+          "name": "Posn 1",
+          "actionID": "3659",
+          "stopActionID": "3659",
+          "stopActionValue": "0.0"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Posn 2",
+          "actionID": "3660",
+          "stopActionID": "3660",
+          "stopActionValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "VOR/ILS control box",
+      "name": "VOR-ILS control unit ON/OFF selector",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "503"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Posn 1",
+          "actionID": "3340"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Posn 2",
+          "actionID": "3340"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "VOR/ILS control box",
+      "name": "VOR-ILS control unit test selector",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "505"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "-1.0",
+          "name": "Posn 1",
+          "actionID": "3343",
+          "stopActionID": "3343",
+          "stopActionValue": "0.0"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Posn 2",
+          "actionID": "3342",
+          "stopActionID": "3342",
+          "stopActionValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "VOR/ILS control box",
+      "name": "VOR-ILS_x100_Gauge",
+      "description": "Valeur rot : 0 - 1 ",
+      "exports": [
+        {
+          "format": "%.4f",
+          "isExportedEveryFrame": true,
+          "id": "498"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0.0000,
+            "mappedValue": 0.0000
+          },
+          {
+            "value": 1.0000,
+            "mappedValue": 1.0000
+          }
+        ],
+        "precision": 4
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "VOR/ILS control box",
+      "name": "VOR-ILS_x10_Gauge",
+      "description": "Valeur rot : 0 - 1 ",
+      "exports": [
+        {
+          "format": "%.4f",
+          "isExportedEveryFrame": true,
+          "id": "499"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0.0000,
+            "mappedValue": 0.0000
+          },
+          {
+            "value": 1.0000,
+            "mappedValue": 1.0000
+          }
+        ],
+        "precision": 4
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "VOR/ILS control box",
+      "name": "VOR-ILS_x1_Gauge",
+      "description": "Valeur rot : 0 - 1 ",
+      "exports": [
+        {
+          "format": "%.4f",
+          "isExportedEveryFrame": true,
+          "id": "500"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0.0000,
+            "mappedValue": 0.0000
+          },
+          {
+            "value": 1.0000,
+            "mappedValue": 1.0000
+          }
+        ],
+        "precision": 4
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "VOR/ILS control box",
+      "name": "VOR-ILS_x01_Gauge",
+      "description": "Valeur rot : 0 - 1 ",
+      "exports": [
+        {
+          "format": "%.4f",
+          "isExportedEveryFrame": true,
+          "id": "501"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0.0000,
+            "mappedValue": 0.0000
+          },
+          {
+            "value": 1.0000,
+            "mappedValue": 1.0000
+          }
+        ],
+        "precision": 4
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "VOR/ILS control box",
+      "name": "VOR-ILS_x001_Gauge",
+      "description": "Valeur rot : 0 - 1 ",
+      "exports": [
+        {
+          "format": "%.4f",
+          "isExportedEveryFrame": true,
+          "id": "502"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0.0000,
+            "mappedValue": 0.0000
+          },
+          {
+            "value": 1.0000,
+            "mappedValue": 1.0000
+          }
+        ],
+        "precision": 4
+      }
     }
   ]
 }
