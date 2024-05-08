@@ -1,7 +1,7 @@
 {
   "source": "Helios",
-  "version": "1.6.6080.0000",
-  "commit": "a0964c6c4d0eb13095e2b424e7a5c0fe0c478008",
+  "version": "1.6.6080.0001",
+  "commit": "bb75c35bf9158a2b29c0f6e27833adce90f23b10",
   "type": "Existing",
   "name": "DCS Mirage F1EE",
   "module": "Mirage-F1EE",
@@ -3448,28 +3448,6 @@
           "argumentValue": "0.0",
           "name": "Posn 2",
           "actionID": "3085"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.PushButton",
-      "device": "Fuel transfer, refuelling and indication",
-      "name": "Fuel transfer indicator test",
-      "description": "Current state of this button.",
-      "exports": [
-        {
-          "format": "%1d",
-          "isExportedEveryFrame": false,
-          "id": "1166"
-        }
-      ],
-      "buttons": [
-        {
-          "deviceId": "1",
-          "pushId": "3086",
-          "pushValue": "1.0",
-          "releaseId": "3086",
-          "releaseValue": "0.0"
         }
       ]
     },
@@ -7430,68 +7408,6 @@
     },
     {
       "heliosType": "DCS.Common.Switch",
-      "device": "TACAN control box",
-      "name": "TACAN X/Y mode selector",
-      "description": "Current position of this switch.",
-      "exports": [
-        {
-          "format": "%0.1f",
-          "isExportedEveryFrame": false,
-          "id": "485"
-        }
-      ],
-      "deviceId": "1",
-      "positions": [
-        {
-          "argumentValue": "0.0",
-          "name": "Posn 1",
-          "actionID": "3335"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Posn 2",
-          "actionID": "3335"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.Switch",
-      "device": "TACAN control box",
-      "name": "TACAN mode selector",
-      "description": "Current position of this switch.",
-      "exports": [
-        {
-          "format": "%0.4f",
-          "isExportedEveryFrame": false,
-          "id": "487"
-        }
-      ],
-      "deviceId": "1",
-      "positions": [
-        {
-          "argumentValue": "0.0000",
-          "name": "Posn 1",
-          "actionID": "3337"
-        },
-        {
-          "argumentValue": "0.3333",
-          "name": "Posn 2",
-          "actionID": "3337"
-        },
-        {
-          "argumentValue": "0.6666",
-          "name": "Posn 3",
-          "actionID": "3337"
-        },
-        {
-          "argumentValue": "0.9999",
-          "name": "Posn 4",
-          "actionID": "3337"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.Switch",
       "device": "UHF radio (TRT - TRAP 137B)",
       "name": "5W/25W selector switch",
       "description": "Current position of this switch.",
@@ -8393,10 +8309,11 @@
       "heliosType": "DCS.Common.FlagValue",
       "device": "Warning lights",
       "name": "A/B INJ light",
-      "description": "Current state of this lamp.",
+      "description": "Current state of this lamp : FALSE / TRUE",
       "exports": [
         {
           "format": "%1d",
+		  "isExportedEveryFrame": true,
           "id": "1030"
         }
       ]
@@ -8405,10 +8322,11 @@
       "heliosType": "DCS.Common.FlagValue",
       "device": "Warning lights",
       "name": "A/B ON light",
-      "description": "Current state of this lamp.",
+      "description": "Current state of this lamp : FALSE / TRUE",
       "exports": [
         {
           "format": "%1d",
+		  "isExportedEveryFrame": true,
           "id": "1032"
         }
       ]
@@ -8417,10 +8335,11 @@
       "heliosType": "DCS.Common.FlagValue",
       "device": "Warning lights",
       "name": "A/B SRL light",
-      "description": "Current state of this lamp.",
+      "description": "Current state of this lamp : FALSE / TRUE",
       "exports": [
         {
           "format": "%1d",
+		  "isExportedEveryFrame": true,
           "id": "1034"
         }
       ]
@@ -8448,57 +8367,14 @@
       ]
     },
     {
-      "heliosType": "DCS.Common.PushButton",
-      "device": "Warning lights",
-      "name": "BIP button",
-      "description": "Current state of this button.",
-      "exports": [
-        {
-          "format": "%1d",
-          "isExportedEveryFrame": false,
-          "id": "1081"
-        }
-      ],
-      "buttons": [
-        {
-          "deviceId": "1",
-          "pushId": "3300",
-          "pushValue": "1.0",
-          "releaseId": "3300",
-          "releaseValue": "0.0"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.PushButton",
-      "device": "Warning lights",
-      "name": "Configuration indicator test button",
-      "description": "Current state of this button.",
-      "exports": [
-        {
-          "format": "%1d",
-          "isExportedEveryFrame": false,
-          "id": "1082"
-        }
-      ],
-      "buttons": [
-        {
-          "deviceId": "1",
-          "pushId": "3284",
-          "pushValue": "1.0",
-          "releaseId": "3284",
-          "releaseValue": "0.0"
-        }
-      ]
-    },
-    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Warning lights",
       "name": "Lamp Cannons too hot light",
-      "description": "Current state of this lamp.",
+      "description": "Current state of this lamp : FALSE / TRUE",
       "exports": [
         {
           "format": "%0.1f",
+		  "isExportedEveryFrame": true,
           "id": "109"
         }
       ]
@@ -8777,10 +8653,11 @@
       "heliosType": "DCS.Common.FlagValue",
       "device": "Warning lights",
       "name": "Lamp Airbrake light",
-      "description": "Current state of this lamp.",
+      "description": "Current state of this lamp : FALSE / TRUE",
       "exports": [
         {
-          "format": "%0.1f",
+          "format": "%1d",
+		  "isExportedEveryFrame": true,
           "id": "945"
         }
       ]
@@ -8789,10 +8666,11 @@
       "heliosType": "DCS.Common.FlagValue",
       "device": "Warning lights",
       "name": "Button Nose wheel steering light",
-      "description": "Current state of this lamp.",
+      "description": "Current state of this lamp : FALSE / TRUE",
       "exports": [
         {
           "format": "%1d",
+		  "isExportedEveryFrame": true,
           "id": "950"
         }
       ]
@@ -8801,7 +8679,7 @@
       "heliosType": "DCS.Common.FlagValue",
       "device": "Warning lights",
       "name": "Lamp Nose wheel steering light",
-      "description": "Current state of this lamp.",
+      "description": "Current state of this lamp : FALSE / TRUE",
       "exports": [
         {
           "format": "%0.1f",
@@ -8835,271 +8713,293 @@
       "heliosType": "DCS.Common.FlagValue",
       "device": "Warning lights",
       "name": "Lamp Combat flaps light",
-      "description": "Current state of this lamp.",
+      "description": "Current state of this lamp : FALSE / TRUE",
       "exports": [
         {
           "format": "%0.1f",
+		  "isExportedEveryFrame": true,
           "id": "958"
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.FlagValue",
       "device": "Radar lights",
       "name": "Radar light HA",
-      "description": "Current state of this lamp.",
+      "description": "Current state of this lamp : FALSE / TRUE",
       "exports": [
         {
           "format": "%0.1f",
+		  "isExportedEveryFrame": true,
           "id": "842"
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.FlagValue",
       "device": "Radar lights",
       "name": "Radar light IC",
-      "description": "Current state of this lamp.",
+      "description": "Current state of this lamp : FALSE / TRUE",
       "exports": [
         {
           "format": "%0.1f",
+		  "isExportedEveryFrame": true,
           "id": "843"
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.FlagValue",
       "device": "Radar lights",
       "name": "Radar light TL",
-      "description": "Current state of this lamp.",
+      "description": "Current state of this lamp : FALSE / TRUE",
       "exports": [
         {
           "format": "%0.1f",
+		  "isExportedEveryFrame": true,
           "id": "844"
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.FlagValue",
       "device": "Radar lights",
       "name": "Radar light BZ",
-      "description": "Current state of this lamp.",
+      "description": "Current state of this lamp : FALSE / TRUE",
       "exports": [
         {
           "format": "%0.1f",
+		  "isExportedEveryFrame": true,
           "id": "845"
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.FlagValue",
       "device": "Radar lights",
       "name": "Radar light TS",
-      "description": "Current state of this lamp.",
+      "description": "Current state of this lamp : FALSE / TRUE",
       "exports": [
         {
           "format": "%0.1f",
+		  "isExportedEveryFrame": true,
           "id": "846"
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.FlagValue",
       "device": "Radar lights",
       "name": "Radar light V1",
-      "description": "Current state of this lamp.",
+      "description": "Current state of this lamp : FALSE / TRUE",
       "exports": [
         {
           "format": "%0.1f",
+		  "isExportedEveryFrame": true,
           "id": "847"
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.FlagValue",
       "device": "Radar lights",
       "name": "Radar light V2",
-      "description": "Current state of this lamp.",
+      "description": "Current state of this lamp : FALSE / TRUE",
       "exports": [
         {
           "format": "%0.1f",
+		  "isExportedEveryFrame": true,
           "id": "848"
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.FlagValue",
       "device": "Radar lights",
       "name": "Radar light DC",
-      "description": "Current state of this lamp.",
+      "description": "Current state of this lamp : FALSE / TRUE",
       "exports": [
         {
           "format": "%0.1f",
+		  "isExportedEveryFrame": true,
           "id": "849"
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.FlagValue",
       "device": "Radar lights",
       "name": "Radar light PR",
-      "description": "Current state of this lamp.",
+      "description": "Current state of this lamp : FALSE / TRUE",
       "exports": [
         {
           "format": "%0.1f",
+		  "isExportedEveryFrame": true,
           "id": "850"
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.FlagValue",
       "device": "Radar lights",
       "name": "Radar light AC",
-      "description": "Current state of this lamp.",
+      "description": "Current state of this lamp : FALSE / TRUE",
       "exports": [
         {
           "format": "%0.1f",
+		  "isExportedEveryFrame": true,
           "id": "851"
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.FlagValue",
       "device": "Radar lights",
       "name": "Radar light DB",
-      "description": "Current state of this lamp.",
+      "description": "Current state of this lamp : FALSE / TRUE",
       "exports": [
         {
           "format": "%0.1f",
+		  "isExportedEveryFrame": true,
           "id": "852"
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.FlagValue",
       "device": "Radar lights",
       "name": "Radar light Yellow",
-      "description": "Current state of this lamp.",
+      "description": "Current state of this lamp : FALSE / TRUE",
       "exports": [
         {
           "format": "%0.1f",
+		  "isExportedEveryFrame": true,
           "id": "853"
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.FlagValue",
       "device": "Radar lights",
       "name": "Radar light Green",
-      "description": "Current state of this lamp.",
+      "description": "Current state of this lamp : FALSE / TRUE",
       "exports": [
         {
           "format": "%0.1f",
+		  "isExportedEveryFrame": true,
           "id": "854"
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.FlagValue",
       "device": "Radar lights",
       "name": "Radar light Red",
-      "description": "Current state of this lamp.",
+      "description": "Current state of this lamp : FALSE / TRUE",
       "exports": [
         {
           "format": "%0.1f",
+		  "isExportedEveryFrame": true,
           "id": "855"
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.FlagValue",
       "device": "Radar lights",
       "name": "Radar light 7",
-      "description": "Current state of this lamp.",
+      "description": "Current state of this lamp : FALSE / TRUE",
       "exports": [
         {
           "format": "%0.1f",
+		  "isExportedEveryFrame": true,
           "id": "856"
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.FlagValue",
       "device": "Radar lights",
       "name": "Radar light 15",
-      "description": "Current state of this lamp.",
+      "description": "Current state of this lamp : FALSE / TRUE",
       "exports": [
         {
           "format": "%0.1f",
+		  "isExportedEveryFrame": true,
           "id": "857"
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.FlagValue",
       "device": "Radar lights",
       "name": "Radar light 35",
-      "description": "Current state of this lamp.",
+      "description": "Current state of this lamp : FALSE / TRUE",
       "exports": [
         {
           "format": "%0.1f",
+		  "isExportedEveryFrame": true,
           "id": "858"
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.FlagValue",
       "device": "Radar lights",
       "name": "Radar light 60",
-      "description": "Current state of this lamp.",
+      "description": "Current state of this lamp : FALSE / TRUE",
       "exports": [
         {
           "format": "%0.1f",
+		  "isExportedEveryFrame": true,
           "id": "859"
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.FlagValue",
       "device": "Radar lights",
       "name": "Radar light AP",
-      "description": "Current state of this lamp.",
+      "description": "Current state of this lamp : FALSE / TRUE",
       "exports": [
         {
           "format": "%0.1f",
+		  "isExportedEveryFrame": true,
           "id": "860"
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.FlagValue",
       "device": "Radar lights",
       "name": "Radar light TCH",
-      "description": "Current state of this lamp.",
+      "description": "Current state of this lamp : FALSE / TRUE",
       "exports": [
         {
           "format": "%0.1f",
+		  "isExportedEveryFrame": true,
           "id": "861"
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.FlagValue",
       "device": "Radar lights",
       "name": "Radar light EMI",
-      "description": "Current state of this lamp.",
+      "description": "Current state of this lamp : FALSE / TRUE",
       "exports": [
         {
           "format": "%0.1f",
+		  "isExportedEveryFrame": true,
           "id": "862"
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.FlagValue",
       "device": "Radar lights",
       "name": "Radar light PNE",
-      "description": "Current state of this lamp.",
+      "description": "Current state of this lamp : FALSE / TRUE",
       "exports": [
         {
           "format": "%0.1f",
@@ -9111,10 +9011,11 @@
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "REACTOR",
       "name": "RPM x 100",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "RPM reactor x100 : 0/1",
       "exports": [
         {
           "format": "%.4f",
+		  "isExportedEveryFrame": true,
           "id": "1106"
         }
       ],
@@ -9134,14 +9035,15 @@
         "precision": 4
       }
     },
-    {
+	{
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "REACTOR",
       "name": "RPM x 1000",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "RPM reactor x1000 : 0 / 1",
       "exports": [
         {
           "format": "%.4f",
+		  "isExportedEveryFrame": true,
           "id": "1027"
         }
       ],
@@ -9160,6 +9062,2182 @@
         ],
         "precision": 4
       }
+    },
+	{
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "REACTOR",
+      "name": "Temp_JPT",
+      "description": "Temp tuyere : 0 / 1",
+      "exports": [
+        {
+          "format": "%.4f",
+		  "isExportedEveryFrame": true,
+          "id": "1028"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 4
+      }
+    },
+	{
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "CARBURANT",
+      "name": "Reservoir gauche",
+      "description": "Jauge reservoir gauche : 0 / 1",
+      "exports": [
+        {
+          "format": "%0.3f",
+		  "isExportedEveryFrame": true,
+          "id": "1142"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0.000,
+            "mappedValue": 0.000
+          },
+          {
+            "value": 1.000,
+            "mappedValue": 1.000
+          }
+        ],
+        "precision": 3
+      }
+    },
+	{
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "CARBURANT",
+      "name": "Reservoir droit",
+      "description": "Jauge reservoir droit : 0 / 1",
+      "exports": [
+        {
+          "format": "%0.3f",
+		  "isExportedEveryFrame": true,
+          "id": "1143"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0.000,
+            "mappedValue": 0.000
+          },
+          {
+            "value": 1.000,
+            "mappedValue": 1.000
+          }
+        ],
+        "precision": 3
+      }
+    },
+	{
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "CARBURANT",
+      "name": "Fuel R drum x1000",
+      "description": "Fuel x1000 : 0 / 1",
+      "exports": [
+        {
+          "format": "%.3f",
+		  "isExportedEveryFrame": true,
+          "id": "1146"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 3
+      }
+    },
+	{
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "CARBURANT",
+      "name": "Fuel R drum x100",
+      "description": "Fuel x100 : 0 / 1",
+      "exports": [
+        {
+          "format": "%.3f",
+		  "isExportedEveryFrame": true,
+          "id": "1147"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 3
+      }
+    },
+	{
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "CARBURANT",
+      "name": "Fuel R drum x10",
+      "description": "Fuel x10 : 0 /1",
+      "exports": [
+        {
+          "format": "%.3f",
+		  "isExportedEveryFrame": true,
+          "id": "1148"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 3
+      }
+    },
+	{
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "CARBURANT",
+      "name": "Fuel R drum x1",
+      "description": "Fuel x1 : 0 / 1",
+      "exports": [
+        {
+          "format": "%.3f",
+		  "isExportedEveryFrame": true,
+          "id": "1149"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 3
+      }
+    },
+	{
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "parametres vol",
+      "name": "cap",
+      "description": "Flight Heading",
+      "exports": [
+        {
+          "format": "%.3f",
+		  "isExportedEveryFrame": true,
+          "id": "76"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": -1,
+            "mappedValue": -1
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 3
+      }
+    },
+	{
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "parametres vol",
+      "name": "Flight pitch",
+      "description": "Pitch",
+      "exports": [
+        {
+          "format": "%.3f",
+		  "isExportedEveryFrame": true,
+          "id": "77"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": -1,
+            "mappedValue": -1
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 3
+      }
+    },
+	{
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "parametres vol",
+      "name": "bank",
+      "description": "Flight Bank",
+      "exports": [
+        {
+          "format": "%.3f",
+		  "isExportedEveryFrame": true,
+          "id": "78"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": -1,
+            "mappedValue": -1
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 3
+      }
+    },
+	{
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "parametres vol",
+      "name": "deviation",
+      "description": "Flight Slide",
+      "exports": [
+        {
+          "format": "%.3f",
+		  "isExportedEveryFrame": true,
+          "id": "539"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": -1,
+            "mappedValue": -1
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 3
+      }
+    },
+	{
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Sphere",
+      "name": "ILS_H",
+      "description": "TODO: ILS déviation H",
+      "exports": [
+        {
+          "format": "%.3f",
+		  "isExportedEveryFrame": true,
+          "id": "1108"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": -1,
+            "mappedValue": -1
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 3
+      }
+    },
+	{
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Sphere",
+      "name": "ILS_V",
+      "description": "TODO: ILS déviation V",
+      "exports": [
+        {
+          "format": "%.3f",
+		  "isExportedEveryFrame": true,
+          "id": "1109"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": -1,
+            "mappedValue": -1
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 3
+      }
+    },
+	{
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Sphere",
+      "name": "Sphere_Pitch",
+      "description": "Sphere_Pitch : -90 / 90",
+      "exports": [
+        {
+          "format": "%.3f",
+		  "isExportedEveryFrame": true,
+          "id": "1110"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": -1,
+            "mappedValue": 90
+          },
+          {
+            "value": 1,
+            "mappedValue": -90
+          }
+        ],
+        "precision": 3
+      }
+    },
+	{
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Sphere",
+      "name": "Sphere_Bank",
+      "description": "Sphere Bank : -90 / 90",
+      "exports": [
+        {
+          "format": "%.3f",
+		  "isExportedEveryFrame": true,
+          "id": "1111"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": -1,
+            "mappedValue": -90
+          },
+          {
+            "value": 1,
+            "mappedValue": 90
+          }
+        ],
+        "precision": 3
+      }
+    },
+	{
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Sphere",
+      "name": "Sphere_heading",
+      "description": "Sphere heading : 180 / -180",
+      "exports": [
+        {
+          "format": "%.3f",
+		  "isExportedEveryFrame": true,
+          "id": "1112"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": -1,
+            "mappedValue": 180
+          },
+          {
+            "value": 1,
+            "mappedValue": -180
+          }
+        ],
+        "precision": 3
+      }
+    },
+	{
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Sphere",
+      "name": "Sphere_slip",
+      "description": "Sphere Slip : -1 / 1",
+      "exports": [
+        {
+          "format": "%.3f",
+		  "isExportedEveryFrame": true,
+          "id": "1113"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": -1,
+            "mappedValue": -1
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 3
+      }
+    },
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Sphere",
+      "name": "Sphere_Flag",
+      "description": "Current state of this flag FALSE / TRUE.",
+      "exports": [
+        {
+          "format": "%1d",
+		  "isExportedEveryFrame": true,
+          "id": "1115"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Altimeter",
+      "name": "Alti_Slaved_x1000",
+      "description": "Altimeter Slaved x1000 feet",
+      "exports": [
+        {
+          "format": "%.3f",
+		  "isExportedEveryFrame": true,
+          "id": "1049"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 3
+      }
+    },
+	{
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Altimeter",
+      "name": "Alti_Slaved_x100",
+      "description": "Altimeter Slaved x100 feet",
+      "exports": [
+        {
+          "format": "%.3f",
+		  "isExportedEveryFrame": true,
+          "id": "1050"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 3
+      }
+    },
+	{
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Altimeter",
+      "name": "Alti_Slaved_x10",
+      "description": "Altimeter Slave x10 feet",
+      "exports": [
+        {
+          "format": "%.3f",
+		  "isExportedEveryFrame": true,
+          "id": "1051"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 3
+      }
+    },
+	{
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Altimeter",
+      "name": "Alti_Slaved_x1",
+      "description": "Altimeter_Slaved_x1 feet",
+      "exports": [
+        {
+          "format": "%.3f",
+		  "isExportedEveryFrame": true,
+          "id": "1052"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 3
+      }
+    },
+	{
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Altimeter",
+      "name": "Alti_x1000",
+      "description": "Altimeter x1000 feet",
+      "exports": [
+        {
+          "format": "%.3f",
+		  "isExportedEveryFrame": true,
+          "id": "1068"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 3
+      }
+    },
+	{
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Altimeter",
+      "name": "Alti_x100",
+      "description": "Altimeter x100 feet",
+      "exports": [
+        {
+          "format": "%.3f",
+		  "isExportedEveryFrame": true,
+          "id": "1069"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 3
+      }
+    },
+	{
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Altimeter",
+      "name": "Alti_x10",
+      "description": "Altimeter x10 feet",
+      "exports": [
+        {
+          "format": "%.3f",
+		  "isExportedEveryFrame": true,
+          "id": "1070"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 3
+      }
+    },
+	{
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Altimeter",
+      "name": "Alti_x1",
+      "description": "Altimeter x1 feet",
+      "exports": [
+        {
+          "format": "%.3f",
+		  "isExportedEveryFrame": true,
+          "id": "1071"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 3
+      }
+    },
+	{
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Altimeter",
+      "name": "Alti_Slaved_Needle",
+      "description": "Altimeter Slaved Needle : 0 / 1",
+      "exports": [
+        {
+          "format": "%.3f",
+		  "isExportedEveryFrame": true,
+          "id": "1043"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 3
+      }
+    },
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Altimeter",
+      "name": "Alti_Slaved_Flag",
+      "description": "Alti_Slaved_Flag TRUE/FALSE",
+      "exports": [
+        {
+          "format": "%1d",
+		  "isExportedEveryFrame": true,
+          "id": "1044"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "PTransfert",
+      "name": "Reservoir_4G",
+      "description": "Current state of this lamp : FALSE / TRUE",
+      "exports": [
+        {
+          "format": "%1d",
+		  "isExportedEveryFrame": true,
+          "id": "1154"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "PTransfert",
+      "name": "Reservoir_2C",
+      "description": "Current state of this lamp : FALSE / TRUE",
+      "exports": [
+        {
+          "format": "%1d",
+		  "isExportedEveryFrame": true,
+          "id": "1155"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "PTransfert",
+      "name": "Reservoir_4D",
+      "description": "Current state of this lamp : FALSE / TRUE",
+      "exports": [
+        {
+          "format": "%1d",
+		  "isExportedEveryFrame": true,
+          "id": "1156"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "PTransfert",
+      "name": "Reservoir_1G",
+      "description": "Current state of this lamp : FALSE / TRUE",
+      "exports": [
+        {
+          "format": "%1d",
+		  "isExportedEveryFrame": true,
+          "id": "1159"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "PTransfert",
+      "name": "Reservoir_RG",
+      "description": "Current state of this lamp : FALSE / TRUE",
+      "exports": [
+        {
+          "format": "%1d",
+		  "isExportedEveryFrame": true,
+          "id": "1157"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "PTransfert",
+      "name": "Reservoir_RC",
+      "description": "Current state of this lamp : FALSE / TRUE",
+      "exports": [
+        {
+          "format": "%1d",
+		  "isExportedEveryFrame": true,
+          "id": "1160"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "PTransfert",
+      "name": "Reservoir_RD",
+      "description": "Current state of this lamp : FALSE / TRUE",
+      "exports": [
+        {
+          "format": "%1d",
+		  "isExportedEveryFrame": true,
+          "id": "1158"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "PTransfert",
+      "name": "Reservoir_1D",
+      "description": "Current state of this lamp : FALSE / TRUE",
+      "exports": [
+        {
+          "format": "%1d",
+		  "isExportedEveryFrame": true,
+          "id": "1161"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "PTransfert",
+      "name": "Reservoir_3G",
+      "description": "Current state of this lamp : FALSE / TRUE",
+      "exports": [
+        {
+          "format": "%1d",
+		  "isExportedEveryFrame": true,
+          "id": "1162"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "PTransfert",
+      "name": "Reservoir_3D",
+      "description": "Current state of this lamp : FALSE / TRUE",
+      "exports": [
+        {
+          "format": "%1d",
+		  "isExportedEveryFrame": true,
+          "id": "1163"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "PTransfert",
+      "name": "Reservoir_5G",
+      "description": "Current state of this lamp : FALSE / TRUE",
+      "exports": [
+        {
+          "format": "%1d",
+		  "isExportedEveryFrame": true,
+          "id": "1164"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "PTransfert",
+      "name": "Reservoir_5D",
+      "description": "Current state of this lamp : FALSE / TRUE",
+      "exports": [
+        {
+          "format": "%1d",
+		  "isExportedEveryFrame": true,
+          "id": "1165"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.PushButton",
+      "device": "PTransfert",
+      "name": "Push test",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "1166"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "1",
+          "pushId": "3073",
+          "pushValue": "1.0",
+          "releaseId": "3073",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Panel_slats_flaps_gears",
+      "name": "V_Slats-2",
+      "description": "Current state of this lamp : FALSE / TRUE",
+      "exports": [
+        {
+          "format": "%1d",
+		  "isExportedEveryFrame": true,
+          "id": "1083"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Panel_slats_flaps_gears",
+      "name": "V_Slats-1",
+      "description": "Current state of this lamp : FALSE / TRUE",
+      "exports": [
+        {
+          "format": "%1d",
+		  "isExportedEveryFrame": true,
+          "id": "1084"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Panel_slats_flaps_gears",
+      "name": "V_Slats",
+      "description": "Current state of this lamp : FALSE / TRUE",
+      "exports": [
+        {
+          "format": "%1d",
+		  "isExportedEveryFrame": true,
+          "id": "1085"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Panel_slats_flaps_gears",
+      "name": "V_Flaps",
+      "description": "Current state of this lamp : FALSE / TRUE",
+      "exports": [
+        {
+          "format": "%1d",
+		  "isExportedEveryFrame": true,
+          "id": "1086"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Panel_slats_flaps_gears",
+      "name": "V_Flaps-1",
+      "description": "Current state of this lamp : FALSE / TRUE",
+      "exports": [
+        {
+          "format": "%1d",
+		  "isExportedEveryFrame": true,
+          "id": "1087"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Panel_slats_flaps_gears",
+      "name": "V_Flaps-2",
+      "description": "Current state of this lamp : FALSE / TRUE",
+      "exports": [
+        {
+          "format": "%1d",
+		  "isExportedEveryFrame": true,
+          "id": "1088"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Panel_slats_flaps_gears",
+      "name": "V_Breake",
+      "description": "Current state of this lamp : FALSE / TRUE",
+      "exports": [
+        {
+          "format": "%1d",
+		  "isExportedEveryFrame": true,
+          "id": "1089"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Panel_slats_flaps_gears",
+      "name": "V_Left_Gear",
+      "description": "Current state of this lamp : FALSE / TRUE",
+      "exports": [
+        {
+          "format": "%1d",
+		  "isExportedEveryFrame": true,
+          "id": "1090"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Panel_slats_flaps_gears",
+      "name": "V_Gear",
+      "description": "Current state of this lamp : FALSE / TRUE",
+      "exports": [
+        {
+          "format": "%1d",
+		  "isExportedEveryFrame": true,
+          "id": "1091"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Panel_slats_flaps_gears",
+      "name": "V_Nose_Gear",
+      "description": "Current state of this lamp : FALSE / TRUE",
+      "exports": [
+        {
+          "format": "%1d",
+		  "isExportedEveryFrame": true,
+          "id": "1092"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Panel_slats_flaps_gears",
+      "name": "V_Right_Gear",
+      "description": "Current state of this lamp : FALSE / TRUE",
+      "exports": [
+        {
+          "format": "%1d",
+		  "isExportedEveryFrame": true,
+          "id": "1093"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Panel_slats_flaps_gears",
+      "name": "Test_config",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "1082"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "1",
+          "pushId": "3250",
+          "pushValue": "1.0",
+          "releaseId": "3250",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Panel_slats_flaps_gears",
+      "name": "Bip_config",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "1081"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "1",
+          "pushId": "3266",
+          "pushValue": "1.0",
+          "releaseId": "3266",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Autopilot_light",
+      "name": "BTN-1_P_red",
+      "description": "Current state of this lamp : FALSE / TRUE",
+      "exports": [
+        {
+          "format": "%1d",
+		  "isExportedEveryFrame": true,
+          "id": "975"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Autopilot_light",
+      "name": "BTN-1_A_green",
+      "description": "Current state of this lamp : FALSE / TRUE",
+      "exports": [
+        {
+          "format": "%1d",
+		  "isExportedEveryFrame": true,
+          "id": "976"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Autopilot_light",
+      "name": "BTN-2_ALT_green",
+      "description": "Current state of this lamp : FALSE / TRUE",
+      "exports": [
+        {
+          "format": "%1d",
+		  "isExportedEveryFrame": true,
+          "id": "978"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Autopilot_light",
+      "name": "BTN-2_ALT_red",
+      "description": "Current state of this lamp : FALSE / TRUE",
+      "exports": [
+        {
+          "format": "%1d",
+		  "isExportedEveryFrame": true,
+          "id": "979"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Autopilot_light",
+      "name": "BTN-3_CAP_green",
+      "description": "Current state of this lamp : FALSE / TRUE",
+      "exports": [
+        {
+          "format": "%1d",
+		  "isExportedEveryFrame": true,
+          "id": "981"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Autopilot_light",
+      "name": "BTN-4_left_arrow_red",
+      "description": "Current state of this lamp : FALSE / TRUE",
+      "exports": [
+        {
+          "format": "%1d",
+		  "isExportedEveryFrame": true,
+          "id": "983"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Autopilot_light",
+      "name": "BTN-4_R_red",
+      "description": "Current state of this lamp : FALSE / TRUE",
+      "exports": [
+        {
+          "format": "%1d",
+		  "isExportedEveryFrame": true,
+          "id": "984"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Autopilot_light",
+      "name": "BTN-4_Right_arrow_red",
+      "description": "Current state of this lamp : FALSE / TRUE",
+      "exports": [
+        {
+          "format": "%1d",
+		  "isExportedEveryFrame": true,
+          "id": "985"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Autopilot_light",
+      "name": "BTN-4_Bottom_green",
+      "description": "Current state of this lamp : FALSE / TRUE",
+      "exports": [
+        {
+          "format": "%1d",
+		  "isExportedEveryFrame": true,
+          "id": "986"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Autopilot_light",
+      "name": "BTN-5_G_red",
+      "description": "Current state of this lamp : FALSE / TRUE",
+      "exports": [
+        {
+          "format": "%1d",
+		  "isExportedEveryFrame": true,
+          "id": "988"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Autopilot_light",
+      "name": "BTN-5_upper_red",
+      "description": "Current state of this lamp : FALSE / TRUE",
+      "exports": [
+        {
+          "format": "%1d",
+		  "isExportedEveryFrame": true,
+          "id": "989"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Autopilot_light",
+      "name": "BTN-5_right_green",
+      "description": "Current state of this lamp : FALSE / TRUE",
+      "exports": [
+        {
+          "format": "%1d",
+		  "isExportedEveryFrame": true,
+          "id": "990"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Autopilot_light",
+      "name": "BTN-5_lower_red",
+      "description": "Current state of this lamp : FALSE / TRUE",
+      "exports": [
+        {
+          "format": "%1d",
+		  "isExportedEveryFrame": true,
+          "id": "991"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Panel_Trim",
+      "name": "Ruder_Trim",
+      "description": "Valeur : -1 / 1 x coeff",
+      "exports": [
+        {
+          "format": "%.3f",
+		  "isExportedEveryFrame": true,
+          "id": "723"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": -1,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 20
+          }
+        ],
+        "precision": 3
+      }
+    },
+	{
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Panel_Trim",
+      "name": "Roll_Trim",
+      "description": "Valeur : -1 / 1",
+      "exports": [
+        {
+          "format": "%.3f",
+		  "isExportedEveryFrame": true,
+          "id": "724"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": -1,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 3
+      }
+    },
+	{
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Panel_Trim",
+      "name": "Pitch_Trim",
+      "description": "Valeur : -1 / 1 x coeff",
+      "exports": [
+        {
+          "format": "%.3f",
+		  "isExportedEveryFrame": true,
+          "id": "725"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": -1,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 20
+          }
+        ],
+        "precision": 3
+      }
+    },
+	{
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Pannel_Pression_cabine",
+      "name": "Pression_cabine",
+      "description": "Valeur : 0 / 1 ",
+      "exports": [
+        {
+          "format": "%.3f",
+		  "isExportedEveryFrame": true,
+          "id": "726"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 3
+      }
+    },
+	{
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Pannel_Pression_hydro",
+      "name": "Pression_hydro1",
+      "description": "Valeur : 1 / 0 ",
+      "exports": [
+        {
+          "format": "%.3f",
+		  "isExportedEveryFrame": true,
+          "id": "721"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 1
+          },
+          {
+            "value": 1,
+            "mappedValue": 0
+          }
+        ],
+        "precision": 3
+      }
+	},
+	{
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Pannel_Pression_hydro",
+      "name": "Pression_hydro2",
+      "description": "Valeur : 0 / 1 ",
+      "exports": [
+        {
+          "format": "%.3f",
+		  "isExportedEveryFrame": true,
+          "id": "722"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 3
+      }
+    },
+	{
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Pannel_Gmeter",
+      "name": "Gmax",
+      "description": "Valeur : 0 / 70 pixels ",
+      "exports": [
+        {
+          "format": "%.3f",
+		  "isExportedEveryFrame": true,
+          "id": "218"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 70
+          }
+        ],
+        "precision": 3
+      }
+    },
+	{
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Pannel_Gmeter",
+      "name": "G",
+      "description": "Valeur : 0 / 70 pixels ",
+      "exports": [
+        {
+          "format": "%.3f",
+		  "isExportedEveryFrame": true,
+          "id": "219"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 70
+          }
+        ],
+        "precision": 3
+      }
+    },
+	{
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Pannel_Gmeter",
+      "name": "Gmin",
+      "description": "Valeur : 0 / 70 pixels ",
+      "exports": [
+        {
+          "format": "%.3f",
+		  "isExportedEveryFrame": true,
+          "id": "220"
+        }
+      ],
+      "valueDescription": "TODO: describe range of output values after calibration",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 70
+          }
+        ],
+        "precision": 3
+      }
+    },
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Panel_warning",
+      "name": "W_Batt",
+      "description": "Current state of this lamp : FALSE / TRUE",
+      "exports": [
+        {
+          "format": "%1d",
+		  "isExportedEveryFrame": true,
+          "id": "120"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Panel_warning",
+      "name": "W_Alt1",
+      "description": "Current state of this lamp : FALSE / TRUE",
+      "exports": [
+        {
+          "format": "%1d",
+		  "isExportedEveryFrame": true,
+          "id": "121"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Panel_warning",
+      "name": "W_Alt2",
+      "description": "Current state of this lamp : FALSE / TRUE",
+      "exports": [
+        {
+          "format": "%1d",
+		  "isExportedEveryFrame": true,
+          "id": "122"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Panel_warning",
+      "name": "W_Tr1",
+      "description": "Current state of this lamp : FALSE / TRUE",
+      "exports": [
+        {
+          "format": "%1d",
+		  "isExportedEveryFrame": true,
+          "id": "123"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Panel_warning",
+      "name": "W_Sec",
+      "description": "Current state of this lamp : FALSE / TRUE",
+      "exports": [
+        {
+          "format": "%1d",
+		  "isExportedEveryFrame": true,
+          "id": "124"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Panel_warning",
+      "name": "W_Bp",
+      "description": "Current state of this lamp : FALSE / TRUE",
+      "exports": [
+        {
+          "format": "%1d",
+		  "isExportedEveryFrame": true,
+          "id": "125"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Panel_warning",
+      "name": "W_Bpg",
+      "description": "Current state of this lamp : FALSE / TRUE",
+      "exports": [
+        {
+          "format": "%1d",
+		  "isExportedEveryFrame": true,
+          "id": "126"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Panel_warning",
+      "name": "W_Bpd",
+      "description": "Current state of this lamp : FALSE / TRUE",
+      "exports": [
+        {
+          "format": "%1d",
+		  "isExportedEveryFrame": true,
+          "id": "127"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Panel_warning",
+      "name": "W_Tr2",
+      "description": "Current state of this lamp : FALSE / TRUE",
+      "exports": [
+        {
+          "format": "%1d",
+		  "isExportedEveryFrame": true,
+          "id": "128"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Panel_warning",
+      "name": "W_Niv",
+      "description": "Current state of this lamp : FALSE / TRUE",
+      "exports": [
+        {
+          "format": "%1d",
+		  "isExportedEveryFrame": true,
+          "id": "129"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Panel_warning",
+      "name": "W_Huile",
+      "description": "Current state of this lamp : FALSE / TRUE",
+      "exports": [
+        {
+          "format": "%1d",
+		  "isExportedEveryFrame": true,
+          "id": "130"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Panel_warning",
+      "name": "W_Ep",
+      "description": "Current state of this lamp : FALSE / TRUE",
+      "exports": [
+        {
+          "format": "%1d",
+		  "isExportedEveryFrame": true,
+          "id": "131"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Panel_warning",
+      "name": "W_Hyds",
+      "description": "Current state of this lamp : FALSE / TRUE",
+      "exports": [
+        {
+          "format": "%1d",
+		  "isExportedEveryFrame": true,
+          "id": "132"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Panel_warning",
+      "name": "W_Hydr1",
+      "description": "Current state of this lamp : FALSE / TRUE",
+      "exports": [
+        {
+          "format": "%1d",
+		  "isExportedEveryFrame": true,
+          "id": "133"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Panel_warning",
+      "name": "W_Hydr2",
+      "description": "Current state of this lamp : FALSE / TRUE",
+      "exports": [
+        {
+          "format": "%1d",
+		  "isExportedEveryFrame": true,
+          "id": "134"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Panel_warning",
+      "name": "W_Rego2",
+      "description": "Current state of this lamp : FALSE / TRUE",
+      "exports": [
+        {
+          "format": "%1d",
+		  "isExportedEveryFrame": true,
+          "id": "135"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Panel_warning",
+      "name": "W_5mmo2",
+      "description": "Current state of this lamp : FALSE / TRUE",
+      "exports": [
+        {
+          "format": "%1d",
+		  "isExportedEveryFrame": true,
+          "id": "136"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Panel_warning",
+      "name": "W_Teq",
+      "description": "Current state of this lamp : FALSE / TRUE",
+      "exports": [
+        {
+          "format": "%1d",
+		  "isExportedEveryFrame": true,
+          "id": "137"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Panel_warning",
+      "name": "W_Tcab",
+      "description": "Current state of this lamp : FALSE / TRUE",
+      "exports": [
+        {
+          "format": "%1d",
+		  "isExportedEveryFrame": true,
+          "id": "138"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Panel_warning",
+      "name": "W_Pcab",
+      "description": "Current state of this lamp : FALSE / TRUE",
+      "exports": [
+        {
+          "format": "%1d",
+		  "isExportedEveryFrame": true,
+          "id": "139"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Panel_warning",
+      "name": "W_Trim",
+      "description": "Current state of this lamp : FALSE / TRUE",
+      "exports": [
+        {
+          "format": "%1d",
+		  "isExportedEveryFrame": true,
+          "id": "140"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Panel_warning",
+      "name": "W_Pa",
+      "description": "Current state of this lamp : FALSE / TRUE",
+      "exports": [
+        {
+          "format": "%1d",
+		  "isExportedEveryFrame": true,
+          "id": "141"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Panel_warning",
+      "name": "W_Cap",
+      "description": "Current state of this lamp : FALSE / TRUE",
+      "exports": [
+        {
+          "format": "%1d",
+		  "isExportedEveryFrame": true,
+          "id": "142"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Panel_warning",
+      "name": "W_Anemo",
+      "description": "Current state of this lamp : FALSE / TRUE",
+      "exports": [
+        {
+          "format": "%1d",
+		  "isExportedEveryFrame": true,
+          "id": "143"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Panel_warning",
+      "name": "W_Caero",
+      "description": "Current state of this lamp : FALSE / TRUE",
+      "exports": [
+        {
+          "format": "%1d",
+		  "isExportedEveryFrame": true,
+          "id": "144"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Panel_warning",
+      "name": "W_Lacet",
+      "description": "Current state of this lamp : FALSE / TRUE",
+      "exports": [
+        {
+          "format": "%1d",
+		  "isExportedEveryFrame": true,
+          "id": "145"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Panel_warning",
+      "name": "W_Tang",
+      "description": "Current state of this lamp : FALSE / TRUE",
+      "exports": [
+        {
+          "format": "%1d",
+		  "isExportedEveryFrame": true,
+          "id": "146"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Panel_warning",
+      "name": "W_Roul",
+      "description": "Current state of this lamp : FALSE / TRUE",
+      "exports": [
+        {
+          "format": "%1d",
+		  "isExportedEveryFrame": true,
+          "id": "147"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Panel_warning",
+      "name": "W_Emp",
+      "description": "Current state of this lamp : FALSE / TRUE",
+      "exports": [
+        {
+          "format": "%1d",
+		  "isExportedEveryFrame": true,
+          "id": "148"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Panel_warning",
+      "name": "W_Dir",
+      "description": "Current state of this lamp : FALSE / TRUE",
+      "exports": [
+        {
+          "format": "%1d",
+		  "isExportedEveryFrame": true,
+          "id": "149"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Panel_warning",
+      "name": "W_Hyper",
+      "description": "Current state of this lamp : FALSE / TRUE",
+      "exports": [
+        {
+          "format": "%1d",
+		  "isExportedEveryFrame": true,
+          "id": "150"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Panel_warning",
+      "name": "W_Modul",
+      "description": "Current state of this lamp : FALSE / TRUE",
+      "exports": [
+        {
+          "format": "%1d",
+		  "isExportedEveryFrame": true,
+          "id": "151"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Panel_warning",
+      "name": "W_Vand",
+      "description": "Current state of this lamp : FALSE / TRUE",
+      "exports": [
+        {
+          "format": "%1d",
+		  "isExportedEveryFrame": true,
+          "id": "152"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.Switch",
+      "device": "TACAN",
+      "name": "TACAN X/Y mode selector",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "485"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Posn 1",
+          "actionID": "3335"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Posn 2",
+          "actionID": "3335"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.Switch",
+      "device": "TACAN",
+      "name": "TACAN mode selector",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.4f",
+          "isExportedEveryFrame": false,
+          "id": "487"
+        }
+      ],
+      "deviceId": "1",
+      "positions": [
+        {
+          "argumentValue": "0.0000",
+          "name": "Posn 1",
+          "actionID": "3337"
+        },
+        {
+          "argumentValue": "0.3333",
+          "name": "Posn 2",
+          "actionID": "3337"
+        },
+        {
+          "argumentValue": "0.6666",
+          "name": "Posn 3",
+          "actionID": "3337"
+        },
+        {
+          "argumentValue": "0.9999",
+          "name": "Posn 4",
+          "actionID": "3337"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.Switch",
+      "device": "TACAN",
+      "name": "I - TACAN Channel 10 Selector",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.2f",
+          "id": "486"
+        }
+      ],
+      "deviceId": "23",
+      "positions": [
+        {
+          "argumentValue": "0.00",
+          "name": "Position1",
+          "actionId": "3298"
+        },
+        {
+          "argumentValue": "0.07",
+          "name": "Position2",
+          "actionId": "3298"
+        },
+        {
+          "argumentValue": "0.15",
+          "name": "Position3",
+          "actionId": "3298"
+        },
+        {
+          "argumentValue": "0.23",
+          "name": "Position4",
+          "actionId": "3298"
+        },
+        {
+          "argumentValue": "0.30",
+          "name": "Position5",
+          "actionId": "3298"
+        },
+        {
+          "argumentValue": "0.38",
+          "name": "Position6",
+          "actionId": "3298"
+        },
+        {
+          "argumentValue": "0.46",
+          "name": "Position7",
+          "actionId": "3298"
+        },
+        {
+          "argumentValue": "0.53",
+          "name": "Position8",
+          "actionId": "3298"
+        },
+        {
+          "argumentValue": "0.61",
+          "name": "Position9",
+          "actionId": "3298"
+        },
+        {
+          "argumentValue": "0.69",
+          "name": "Position10",
+          "actionId": "3298"
+        },
+        {
+          "argumentValue": "0.76",
+          "name": "Position11",
+          "actionId": "3298"
+        },
+        {
+          "argumentValue": "0.84",
+          "name": "Position12",
+          "actionId": "3298"
+        },
+        {
+          "argumentValue": "0.92",
+          "name": "Position13",
+          "actionId": "3298"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.Switch",
+      "device": "TACAN",
+      "name": "I - TACAN Channel 1 Selector",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "488"
+        }
+      ],
+      "deviceId": "23",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "Position1",
+          "actionId": "3301"
+        },
+        {
+          "argumentValue": "0.1",
+          "name": "Position2",
+          "actionId": "3301"
+        },
+        {
+          "argumentValue": "0.2",
+          "name": "Position3",
+          "actionId": "3301"
+        },
+        {
+          "argumentValue": "0.3",
+          "name": "Position4",
+          "actionId": "3301"
+        },
+        {
+          "argumentValue": "0.4",
+          "name": "Position5",
+          "actionId": "3301"
+        },
+        {
+          "argumentValue": "0.5",
+          "name": "Position6",
+          "actionId": "3301"
+        },
+        {
+          "argumentValue": "0.6",
+          "name": "Position7",
+          "actionId": "3301"
+        },
+        {
+          "argumentValue": "0.7",
+          "name": "Position8",
+          "actionId": "3301"
+        },
+        {
+          "argumentValue": "0.8",
+          "name": "Position9",
+          "actionId": "3301"
+        },
+        {
+          "argumentValue": "0.9",
+          "name": "Position10",
+          "actionId": "3301"
+        }
+      ]
     }
   ]
 }
