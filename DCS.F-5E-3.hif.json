@@ -3766,16 +3766,16 @@
       "calibration": {
         "points": [
           {
-            "value": -1,
-            "mappedValue": -0.1
+            "value": -0.1,
+            "mappedValue": -1
           },
           {
             "value": 0,
             "mappedValue": 0
           },
           {
-            "value": 10,
-            "mappedValue": 1
+            "value": 1,
+            "mappedValue": 10
           }
         ],
         "precision": 5
