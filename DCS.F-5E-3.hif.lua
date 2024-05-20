@@ -1,31 +1,8 @@
---[[
-
+-- Exports.Lua from Helios DCS F-5E-3 Tiger II
 function driver.processHighImportance(mainPanelDevice)
-    -- called at configured update rate
-
-    -- example for combining/processing arguments:
-    helios.send(2001, string.format(
-            "%0.4f;%0.4f;%0.4f",
-            mainPanelDevice:get_argument_value(220),
-            mainPanelDevice:get_argument_value(219),
-            mainPanelDevice:get_argument_value(218)
-        )
-    )
-
-    -- example for structured indications data:
-    local li = helios.parseIndication(1)
-    if li then
-        helios.send(2002, string.format("%s", helios.ensureString(li.someNamedField1)))
-        helios.send(2003, string.format("%s", helios.ensureString(li.someNamedField2)))
-    end
+	-- Send Altimeter Values	
+	helios.send(2051, string.format("%0.4f;%0.4f;%0.4f", mainPanelDevice:get_argument_value(11), mainPanelDevice:get_argument_value(520), mainPanelDevice:get_argument_value(521)))													--  Altitude
+	helios.send(2059, string.format("%0.2f;%0.2f;%0.2f;%0.3f", mainPanelDevice:get_argument_value(56), mainPanelDevice:get_argument_value(57), mainPanelDevice:get_argument_value(58), mainPanelDevice:get_argument_value(59)))		-- QNH pressure 	
 end
-
-]]
-
---[[
-
-function driver.processLowImportance(mainPanelDevice) --luacheck: no unused args
-    -- same things as processHighImportance can be done here, called a few times per second at most
+function driver.processLowImportance(mainPanelDevice)		
 end
-
-]]
