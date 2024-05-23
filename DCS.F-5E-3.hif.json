@@ -1,7 +1,7 @@
 {
   "source": "DCSFlightPanels",
-  "version": "1.6.6080.6",
-  "commit": "000000000000000000000000000000000000000",
+  "version": "1.6.6080.7",
+  "commit": "c89143fabd4d9f6e7a6d7059f882937e6a2efe14",
   "type": "DCS",
   "name": "DCS F-5E-3",
   "module": "F-5E-3",
@@ -1929,9 +1929,9 @@
     },
     {
       "heliosType": "DCS.F5E.Functions.Altimeter",
-      "device": "Altimeter",
+      "device": "Gauges",
       "name": "Altitude",
-      "description": "Barometric altitude above sea level of the aircraft.",
+      "description": "Barometric altitude.",
       "exports": [
         {
           "id": "2051"
@@ -1940,9 +1940,9 @@
           "id": "2059"
         }
       ],
-      "device2": "Altimeter",
+      "device2": "Gauges",
       "name2": "Pressure",
-      "description2": "Manually set barometric pressure."
+      "description2": "Barometric pressure."
     },
     {
       "heliosType": "DCS.Common.ScaledNetworkValue",
@@ -2757,141 +2757,6 @@
     {
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Gauges",
-      "name": "HSI Range 100",
-      "description": "Generic Value",
-      "exports": [
-        {
-          "format": "%.3f",
-          "id": "268"
-        }
-      ],
-      "valueDescription": "0 to 1",
-      "unit": "Numeric",
-      "calibration": {
-        "points": [
-          {
-            "value": 0,
-            "mappedValue": 0
-          },
-          {
-            "value": 1,
-            "mappedValue": 1
-          }
-        ],
-        "precision": 5
-      }
-    },
-    {
-      "heliosType": "DCS.Common.ScaledNetworkValue",
-      "device": "Gauges",
-      "name": "HSI Range 10",
-      "description": "Generic Value",
-      "exports": [
-        {
-          "format": "%.3f",
-          "id": "269"
-        }
-      ],
-      "valueDescription": "0 to 1",
-      "unit": "Numeric",
-      "calibration": {
-        "points": [
-          {
-            "value": 0,
-            "mappedValue": 0
-          },
-          {
-            "value": 1,
-            "mappedValue": 1
-          }
-        ],
-        "precision": 5
-      }
-    },
-    {
-      "heliosType": "DCS.Common.ScaledNetworkValue",
-      "device": "Gauges",
-      "name": "HSI Range 1",
-      "description": "Generic Value",
-      "exports": [
-        {
-          "format": "%.3f",
-          "id": "270"
-        }
-      ],
-      "valueDescription": "0 to 1",
-      "unit": "Numeric",
-      "calibration": {
-        "points": [
-          {
-            "value": 0,
-            "mappedValue": 0
-          },
-          {
-            "value": 1,
-            "mappedValue": 1
-          }
-        ],
-        "precision": 5
-      }
-    },
-    {
-      "heliosType": "DCS.Common.ScaledNetworkValue",
-      "device": "Gauges",
-      "name": "HSI CourseSel 100 10",
-      "description": "Generic Value",
-      "exports": [
-        {
-          "format": "%.3f",
-          "id": "276"
-        }
-      ],
-      "valueDescription": "0 to 1",
-      "unit": "Numeric",
-      "calibration": {
-        "points": [
-          {
-            "value": 0,
-            "mappedValue": 0
-          },
-          {
-            "value": 1,
-            "mappedValue": 1
-          }
-        ],
-        "precision": 5
-      }
-    },
-    {
-      "heliosType": "DCS.Common.ScaledNetworkValue",
-      "device": "Gauges",
-      "name": "HSI CourseSel 1",
-      "description": "Generic Value",
-      "exports": [
-        {
-          "format": "%.3f",
-          "id": "277"
-        }
-      ],
-      "valueDescription": "0 to 1",
-      "unit": "Numeric",
-      "calibration": {
-        "points": [
-          {
-            "value": 0,
-            "mappedValue": 0
-          },
-          {
-            "value": 1,
-            "mappedValue": 1
-          }
-        ],
-        "precision": 5
-      }
-    },
-    {
-      "heliosType": "DCS.Common.ScaledNetworkValue",
-      "device": "Gauges",
       "name": "Slipball",
       "description": "Horizontal Movement Generic Value",
       "exports": [
@@ -3106,7 +2971,7 @@
       }
     },
     {
-      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "heliosType": "DCS.Common.NetworkValue",
       "device": "Gauges",
       "name": "HSI Bearing Pointer",
       "description": "Generic Value",
@@ -3117,23 +2982,10 @@
         }
       ],
       "valueDescription": "0 to 1",
-      "unit": "Numeric",
-      "calibration": {
-        "points": [
-          {
-            "value": 0,
-            "mappedValue": 0
-          },
-          {
-            "value": 1,
-            "mappedValue": 1
-          }
-        ],
-        "precision": 5
-      }
+      "unit": "Numeric"
     },
     {
-      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "heliosType": "DCS.Common.NetworkValue",
       "device": "Gauges",
       "name": "HSI DevDF Window",
       "description": "Generic Value",
@@ -3144,23 +2996,10 @@
         }
       ],
       "valueDescription": "0 to 1",
-      "unit": "Numeric",
-      "calibration": {
-        "points": [
-          {
-            "value": 0,
-            "mappedValue": 0
-          },
-          {
-            "value": 1,
-            "mappedValue": 1
-          }
-        ],
-        "precision": 5
-      }
+      "unit": "Numeric"
     },
     {
-      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "heliosType": "DCS.Common.NetworkValue",
       "device": "Gauges",
       "name": "HSI OFF Flag",
       "description": "Generic Value",
@@ -3171,23 +3010,10 @@
         }
       ],
       "valueDescription": "0 to 1",
-      "unit": "Numeric",
-      "calibration": {
-        "points": [
-          {
-            "value": 0,
-            "mappedValue": 0
-          },
-          {
-            "value": 1,
-            "mappedValue": 1
-          }
-        ],
-        "precision": 5
-      }
+      "unit": "Numeric"
     },
     {
-      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "heliosType": "DCS.Common.NetworkValue",
       "device": "Gauges",
       "name": "HSI Heading Mark",
       "description": "Generic Value",
@@ -3198,20 +3024,7 @@
         }
       ],
       "valueDescription": "0 to 1",
-      "unit": "Numeric",
-      "calibration": {
-        "points": [
-          {
-            "value": 0,
-            "mappedValue": 0
-          },
-          {
-            "value": 1,
-            "mappedValue": 1
-          }
-        ],
-        "precision": 5
-      }
+      "unit": "Numeric"
     },
     {
       "heliosType": "DCS.Common.ScaledNetworkValue",
@@ -3229,8 +3042,8 @@
       "calibration": {
         "points": [
           {
-            "value": 0,
-            "mappedValue": 0
+            "value": -1,
+            "mappedValue": -1
           },
           {
             "value": 1,
@@ -3241,7 +3054,7 @@
       }
     },
     {
-      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "heliosType": "DCS.Common.NetworkValue",
       "device": "Gauges",
       "name": "HSI Compass Card",
       "description": "Generic Value",
@@ -3252,23 +3065,10 @@
         }
       ],
       "valueDescription": "0 to 1",
-      "unit": "Numeric",
-      "calibration": {
-        "points": [
-          {
-            "value": 0,
-            "mappedValue": 0
-          },
-          {
-            "value": 1,
-            "mappedValue": 1
-          }
-        ],
-        "precision": 5
-      }
+      "unit": "Numeric"
     },
     {
-      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "heliosType": "DCS.Common.NetworkValue",
       "device": "Gauges",
       "name": "HSI Course Arrow",
       "description": "Generic Value",
@@ -3279,20 +3079,7 @@
         }
       ],
       "valueDescription": "0 to 1",
-      "unit": "Numeric",
-      "calibration": {
-        "points": [
-          {
-            "value": 0,
-            "mappedValue": 0
-          },
-          {
-            "value": 1,
-            "mappedValue": 1
-          }
-        ],
-        "precision": 5
-      }
+      "unit": "Numeric"
     },
     {
       "heliosType": "DCS.Common.ScaledNetworkValue",
@@ -3320,6 +3107,126 @@
         ],
         "precision": 5
       }
+    },
+    {
+      "heliosType": "DCS.F5E.Functions.HSIMiles",
+      "device": "Gauges",
+      "name": "HSI Range to Beacon",
+      "description": "Range in nautical miles to the currently selected steerpoint or TACAN station.",
+      "exports": [
+        {
+          "id": "2029"
+        }
+      ],
+      "valueDescription": "0 to 999",
+      "unit": "NauticalMiles"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Gauges",
+      "name": "HSI Range 100",
+      "description": "Generic Value",
+      "exports": [
+        {
+          "format": "%.3f",
+          "id": "268"
+        }
+      ],
+      "valueDescription": "0 to 1",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Gauges",
+      "name": "HSI Range 10",
+      "description": "Generic Value",
+      "exports": [
+        {
+          "format": "%.3f",
+          "id": "269"
+        }
+      ],
+      "valueDescription": "0 to 1",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Gauges",
+      "name": "HSI Range 1",
+      "description": "Generic Value",
+      "exports": [
+        {
+          "format": "%.3f",
+          "id": "270"
+        }
+      ],
+      "valueDescription": "0 to 1",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Gauges",
+      "name": "HSI Range Flag",
+      "description": "Current state of this flag.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "142"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.F5E.Functions.HSICourse",
+      "device": "Gauges",
+      "name": "HSI Course",
+      "description": "Range in nautical miles to the currently selected steerpoint or TACAN station.",
+      "exports": [
+        {
+          "id": "2030"
+        }
+      ],
+      "valueDescription": "0 to 360",
+      "unit": "Degrees"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Gauges",
+      "name": "HSI CourseSel 100 10",
+      "description": "Generic Value",
+      "exports": [
+        {
+          "format": "%.3f",
+          "id": "276"
+        }
+      ],
+      "valueDescription": "0 to 1",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Gauges",
+      "name": "HSI CourseSel 1",
+      "description": "Generic Value",
+      "exports": [
+        {
+          "format": "%.3f",
+          "id": "277"
+        }
+      ],
+      "valueDescription": "0 to 1",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Gauges",
+      "name": "HSI Course Flag",
+      "description": "Current state of this flag.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "145"
+        }
+      ]
     },
     {
       "heliosType": "DCS.Common.ScaledNetworkValue",
@@ -3459,6 +3366,101 @@
     {
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Gauges",
+      "name": "SAI Pitch",
+      "description": "Generic Value",
+      "exports": [
+        {
+          "format": "%.3f",
+          "id": "438"
+        }
+      ],
+      "valueDescription": "-180 to 180",
+      "unit": "Degrees",
+      "calibration": {
+        "points": [
+          {
+            "value": -1,
+            "mappedValue": -180
+          },
+          {
+            "value": 1,
+            "mappedValue": 180
+          }
+        ],
+        "precision": 5
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Gauges",
+      "name": "SAI Bank",
+      "description": "Generic Value",
+      "exports": [
+        {
+          "format": "%.3f",
+          "id": "439"
+        }
+      ],
+      "valueDescription": "-180 to 180",
+      "unit": "Degrees",
+      "calibration": {
+        "points": [
+          {
+            "value": -1,
+            "mappedValue": -180
+          },
+          {
+            "value": 1,
+            "mappedValue": 180
+          }
+        ],
+        "precision": 5
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Gauges",
+      "name": "SAI Knob Arrow",
+      "description": "Generic Value",
+      "exports": [
+        {
+          "format": "%.3f",
+          "id": "443"
+        }
+      ],
+      "valueDescription": "-30 to 30",
+      "unit": "Degrees",
+      "calibration": {
+        "points": [
+          {
+            "value": -1,
+            "mappedValue": -30
+          },
+          {
+            "value": 1,
+            "mappedValue": 30
+          }
+        ],
+        "precision": 5
+      }
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Gauges",
+      "name": "SAI OFF Flag",
+      "description": "Generic Value",
+      "exports": [
+        {
+          "format": "%.3f",
+          "id": "440"
+        }
+      ],
+      "valueDescription": "0 to 1",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Gauges",
       "name": "Ret Depression Drum 100",
       "description": "100's position",
       "exports": [
@@ -3486,60 +3488,6 @@
     {
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Gauges",
-      "name": "SAI Pitch",
-      "description": "Generic Value",
-      "exports": [
-        {
-          "format": "%.3f",
-          "id": "438"
-        }
-      ],
-      "valueDescription": "-1 to 1",
-      "unit": "Numeric",
-      "calibration": {
-        "points": [
-          {
-            "value": -1,
-            "mappedValue": -1
-          },
-          {
-            "value": 1,
-            "mappedValue": 1
-          }
-        ],
-        "precision": 5
-      }
-    },
-    {
-      "heliosType": "DCS.Common.ScaledNetworkValue",
-      "device": "Gauges",
-      "name": "SAI Bank",
-      "description": "Generic Value",
-      "exports": [
-        {
-          "format": "%.3f",
-          "id": "439"
-        }
-      ],
-      "valueDescription": "-1 to 1",
-      "unit": "Numeric",
-      "calibration": {
-        "points": [
-          {
-            "value": -1,
-            "mappedValue": -1
-          },
-          {
-            "value": 1,
-            "mappedValue": 1
-          }
-        ],
-        "precision": 5
-      }
-    },
-    {
-      "heliosType": "DCS.Common.ScaledNetworkValue",
-      "device": "Gauges",
       "name": "Ret Depression Drum 10",
       "description": "10's Position",
       "exports": [
@@ -3555,60 +3503,6 @@
           {
             "value": 0,
             "mappedValue": 0
-          },
-          {
-            "value": 1,
-            "mappedValue": 1
-          }
-        ],
-        "precision": 5
-      }
-    },
-    {
-      "heliosType": "DCS.Common.ScaledNetworkValue",
-      "device": "Gauges",
-      "name": "SAI OFF Flag",
-      "description": "Generic Value",
-      "exports": [
-        {
-          "format": "%.3f",
-          "id": "440"
-        }
-      ],
-      "valueDescription": "0 to 1",
-      "unit": "Numeric",
-      "calibration": {
-        "points": [
-          {
-            "value": 0,
-            "mappedValue": 0
-          },
-          {
-            "value": 1,
-            "mappedValue": 1
-          }
-        ],
-        "precision": 5
-      }
-    },
-    {
-      "heliosType": "DCS.Common.ScaledNetworkValue",
-      "device": "Gauges",
-      "name": "SAI Knob Arrow",
-      "description": "Generic Value",
-      "exports": [
-        {
-          "format": "%.3f",
-          "id": "443"
-        }
-      ],
-      "valueDescription": "-1 to 1",
-      "unit": "Numeric",
-      "calibration": {
-        "points": [
-          {
-            "value": -1,
-            "mappedValue": -1
           },
           {
             "value": 1,
@@ -7579,18 +7473,6 @@
         {
           "format": "%0.1f",
           "id": "555"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning, Caution and IndicatorLights",
-      "name": "HSI Range Flag",
-      "description": "Current state of this indicator light.",
-      "exports": [
-        {
-          "format": "%0.1f",
-          "id": "142"
         }
       ]
     },
