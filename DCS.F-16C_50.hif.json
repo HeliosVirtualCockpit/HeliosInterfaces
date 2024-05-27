@@ -2122,7 +2122,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.1f",
+          "format": null,
           "id": "Ejection Handle, PULL/STOW"
         }
       ],
@@ -8510,9 +8510,9 @@
       "description": "Current state of this button.",
       "exports": [
         {
-          "format": "%1d",
+          "format": null,
           "isExportedEveryFrame": false,
-          "id": "184"
+          "id": "2184"
         }
       ],
       "buttons": [
@@ -8532,9 +8532,9 @@
       "description": "Current state of this button.",
       "exports": [
         {
-          "format": "%1d",
+          "format": null,
           "isExportedEveryFrame": false,
-          "id": "184"
+          "id": "3184"
         }
       ],
       "buttons": [
@@ -8554,9 +8554,9 @@
       "description": "Current state of this button.",
       "exports": [
         {
-          "format": "%1d",
+          "format": null,
           "isExportedEveryFrame": false,
-          "id": "185"
+          "id": "2185"
         }
       ],
       "buttons": [
@@ -8576,9 +8576,9 @@
       "description": "Current state of this button.",
       "exports": [
         {
-          "format": "%1d",
+          "format": null,
           "isExportedEveryFrame": false,
-          "id": "185"
+          "id": "3185"
         }
       ],
       "buttons": [
@@ -9361,7 +9361,7 @@
       "description": "Unimplemented Callback [UNKNOWN] UHF_CHAN_DISP",
       "exports": [
         {
-          "id": "UNKNOWN"
+          "id": "UNKNOWN 1"
         }
       ],
       "callback": true,
@@ -9375,7 +9375,7 @@
       "description": "Unimplemented Callback [UNKNOWN] UHF_FREQ_DISP",
       "exports": [
         {
-          "id": "UNKNOWN"
+          "id": "UNKNOWN 2"
         }
       ],
       "callback": true,
@@ -10976,7 +10976,7 @@
       "description": "Unimplemented Callback [UNKNOWN] undefined",
       "exports": [
         {
-          "id": "UNKNOWN"
+          "id": "UNKNOWN 3"
         }
       ],
       "callback": true,
@@ -10990,7 +10990,7 @@
       "description": "Unimplemented Callback [UNKNOWN] undefined",
       "exports": [
         {
-          "id": "UNKNOWN"
+          "id": "UNKNOWN 4"
         }
       ],
       "callback": true,
