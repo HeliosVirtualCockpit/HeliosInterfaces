@@ -516,28 +516,29 @@
       ]
     },
     {
-      "heliosType": "DCS.Common.PushButton",
+      "heliosType": "DCS.Common.RotaryEncoder",
       "device": "Clock",
       "name": "ABU-11 CLOCK Winding Knob",
-      "description": "Current state of this button.",
+      "description": "Current position of this rotary encoder knob.",
       "exports": [
         {
-          "format": "%1d",
-          "isExportedEveryFrame": false,
+          "format": "%.3f",
           "id": "511"
         }
       ],
-      "buttons": [
-        {
+      "unit": "Numeric",
+      "argumentValue": 0.025,
+      "actions": {
+        "increment": {
           "deviceId": "35",
-          "pushId": "3002",
-          "pushValue": "1",
-          "releaseId": "3002",
-          "releaseValue": "0"
+          "actionId": "3002"
+        },
+        "decrement": {
+          "deviceId": "35",
+          "actionId": "3002"
         }
-      ]
+      }
     },
-
     {
       "heliosType": "DCS.Common.PushButton",
       "device": "Clock",
