@@ -1,7 +1,7 @@
 {
   "source": "Helios",
-  "version": "1.6.6070.2000",
-  "commit": "e53599e43fc28e9770bbbc54ac1245055b277221",
+  "version": "1.6.6091.0000",
+  "commit": "db3aed4ee25848b5b4617138273829c0c74eeab3",
   "type": "Existing",
   "name": "DCS AH-64D Apache",
   "module": "AH-64D_BLK_II",
@@ -3567,8 +3567,8 @@
       "positions": [
         {
           "argumentValue": "1.0",
-          "name": "OFS",
-          "actionID": "3031"
+          "name": "IAT",
+          "actionID": "3030"
         },
         {
           "argumentValue": "0.0",
@@ -3577,8 +3577,8 @@
         },
         {
           "argumentValue": "-1.0",
-          "name": "IAT",
-          "actionID": "3030"
+          "name": "OFS",
+          "actionID": "3031"
         }
       ]
     },
@@ -3691,8 +3691,8 @@
       "positions": [
         {
           "argumentValue": "1.0",
-          "name": "UPDATE",
-          "actionID": "3040"
+          "name": "STORE",
+          "actionID": "3039"
         },
         {
           "argumentValue": "0.0",
@@ -3701,8 +3701,30 @@
         },
         {
           "argumentValue": "-1.0",
-          "name": "STORE",
-          "actionID": "3039"
+          "name": "UPDATE",
+          "actionID": "3040"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Handgrip Left (CP/G)",
+      "name": "Linear Motion Compensation (LMC) Button",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "496"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "51",
+          "pushId": "3044",
+          "pushValue": "1.0",
+          "releaseId": "3044",
+          "releaseValue": "0.0"
         }
       ]
     },
@@ -3784,8 +3806,8 @@
       "positions": [
         {
           "argumentValue": "1.0",
-          "name": "CONTINUOUS",
-          "actionID": "3042"
+          "name": "SINGLE",
+          "actionID": "3041"
         },
         {
           "argumentValue": "0.0",
@@ -3794,8 +3816,8 @@
         },
         {
           "argumentValue": "-1.0",
-          "name": "SINGLE",
-          "actionID": "3041"
+          "name": "CONTINUOUS",
+          "actionID": "3042"
         }
       ]
     },
