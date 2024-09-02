@@ -1,7 +1,7 @@
 {
   "source": "Helios",
-  "version": "1.6.6100.0002",
-  "commit": "9e05d9319aa1a8d93d901f6010f8184cd775e5fc",
+  "version": "1.6.6100.0004",
+  "commit": "1246f1de74e8f51c6e68cc2dd065338f010c5b36",
   "type": "Existing",
   "name": "DCS A-10C",
   "module": "A-10C",
@@ -11534,23 +11534,6 @@
       ]
     },
     {
-      "heliosType": "DCS.Common.RotaryEncoder",
-      "device": "SAI",
-      "name": "Pitch Trim / Cage",
-      "exports": [],
-      "argumentValue": 0.1,
-      "actions": {
-        "increment": {
-          "deviceId": "48",
-          "actionId": "3003"
-        },
-        "decrement": {
-          "deviceId": "48",
-          "actionId": "3003"
-        }
-      }
-    },
-    {
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "SAI",
       "name": "Pitch",
@@ -11591,6 +11574,29 @@
           "id": "65"
         }
       ]
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "SAI",
+      "name": "Pitch Trim / Cage",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.3f",
+          "isExportedEveryFrame": false,
+          "id": "66"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.1,
+      "argumentMin": -1.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "48",
+          "actionId": "3003"
+        }
+      }
     },
     {
       "heliosType": "DCS.Common.NetworkValue",
