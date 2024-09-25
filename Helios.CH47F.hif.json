@@ -1,7 +1,7 @@
 {
   "source": "Helios",
-  "version": "1.6.6110.0001",
-  "commit": "273dac37f9ceb3c863bf4b9da60df0290220c7e8",
+  "version": "1.6.6110.0003",
+  "commit": "2bc1b2118e4de6d32d92e52d982fb305919f749d",
   "type": "Existing",
   "name": "DCS CH-47F Chinook",
   "module": "CH-47Fbl1",
@@ -55,6 +55,7 @@
         }
       ],
       "deviceId": "21",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -86,6 +87,7 @@
         }
       ],
       "deviceId": "21",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -117,6 +119,7 @@
         }
       ],
       "deviceId": "21",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -143,6 +146,7 @@
         }
       ],
       "deviceId": "21",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -184,6 +188,7 @@
         }
       ],
       "deviceId": "61",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -238,6 +243,7 @@
         }
       ],
       "deviceId": "68",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -264,6 +270,7 @@
         }
       ],
       "deviceId": "68",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -290,6 +297,7 @@
         }
       ],
       "deviceId": "68",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -316,6 +324,7 @@
         }
       ],
       "deviceId": "68",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -376,6 +385,7 @@
         }
       ],
       "deviceId": "19",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -402,6 +412,7 @@
         }
       ],
       "deviceId": "19",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -428,6 +439,7 @@
         }
       ],
       "deviceId": "19",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -454,6 +466,7 @@
         }
       ],
       "deviceId": "19",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -503,6 +516,7 @@
         }
       ],
       "deviceId": "49",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -538,6 +552,7 @@
         }
       ],
       "deviceId": "49",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -713,6 +728,7 @@
         }
       ],
       "deviceId": "49",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -928,6 +944,7 @@
         }
       ],
       "deviceId": "21",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -1195,16 +1212,17 @@
         }
       ],
       "deviceId": "21",
+      "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.0",
+          "argumentValue": "-1.0",
           "name": "In",
           "actionID": "3001",
           "stopActionID": "3001",
           "stopActionValue": "0.0"
         },
         {
-          "argumentValue": "-1.0",
+          "argumentValue": "1.0",
           "name": "Out",
           "actionID": "3001",
           "stopActionID": "3001",
@@ -1248,16 +1266,17 @@
         }
       ],
       "deviceId": "21",
+      "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.0",
+          "argumentValue": "-1.0",
           "name": "In",
           "actionID": "3005",
           "stopActionID": "3005",
           "stopActionValue": "0.0"
         },
         {
-          "argumentValue": "-1.0",
+          "argumentValue": "1.0",
           "name": "Out",
           "actionID": "3005",
           "stopActionID": "3005",
@@ -1346,6 +1365,7 @@
         }
       ],
       "deviceId": "19",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -1377,6 +1397,7 @@
         }
       ],
       "deviceId": "19",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -1418,6 +1439,7 @@
         }
       ],
       "deviceId": "19",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -1444,6 +1466,7 @@
         }
       ],
       "deviceId": "19",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -4928,6 +4951,7 @@
         }
       ],
       "deviceId": "20",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -4959,6 +4983,7 @@
         }
       ],
       "deviceId": "20",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -4985,6 +5010,7 @@
         }
       ],
       "deviceId": "20",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -5011,6 +5037,7 @@
         }
       ],
       "deviceId": "20",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.2",
@@ -5087,15 +5114,16 @@
         }
       ],
       "deviceId": "20",
+      "incrementalPulseValue": "",
       "positions": [
-        {
-          "argumentValue": "1.0",
-          "name": "Pulled",
-          "actionID": "3100"
-        },
         {
           "argumentValue": "0.0",
           "name": "Released",
+          "actionID": "3100"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "Pulled",
           "actionID": "3100"
         }
       ]
@@ -5113,6 +5141,7 @@
         }
       ],
       "deviceId": "19",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -5210,6 +5239,7 @@
         }
       ],
       "deviceId": "29",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -5263,6 +5293,7 @@
         }
       ],
       "deviceId": "29",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -5294,6 +5325,7 @@
         }
       ],
       "deviceId": "29",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -5325,6 +5357,7 @@
         }
       ],
       "deviceId": "29",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -5356,6 +5389,7 @@
         }
       ],
       "deviceId": "29",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -5409,6 +5443,7 @@
         }
       ],
       "deviceId": "29",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -5484,6 +5519,7 @@
         }
       ],
       "deviceId": "27",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -5532,6 +5568,7 @@
         }
       ],
       "deviceId": "19",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -5672,6 +5709,7 @@
         }
       ],
       "deviceId": "29",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -5703,6 +5741,7 @@
         }
       ],
       "deviceId": "29",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -5734,6 +5773,7 @@
         }
       ],
       "deviceId": "29",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -5765,6 +5805,7 @@
         }
       ],
       "deviceId": "29",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -5862,6 +5903,7 @@
         }
       ],
       "deviceId": "29",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -5893,6 +5935,7 @@
         }
       ],
       "deviceId": "29",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -5941,6 +5984,7 @@
         }
       ],
       "deviceId": "29",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -5972,6 +6016,7 @@
         }
       ],
       "deviceId": "29",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -6025,6 +6070,7 @@
         }
       ],
       "deviceId": "29",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -6078,6 +6124,7 @@
         }
       ],
       "deviceId": "29",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -6109,6 +6156,7 @@
         }
       ],
       "deviceId": "29",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -6140,6 +6188,7 @@
         }
       ],
       "deviceId": "29",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -6171,6 +6220,7 @@
         }
       ],
       "deviceId": "29",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -6202,6 +6252,7 @@
         }
       ],
       "deviceId": "29",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -6233,6 +6284,7 @@
         }
       ],
       "deviceId": "29",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -6309,6 +6361,7 @@
         }
       ],
       "deviceId": "19",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -6335,6 +6388,7 @@
         }
       ],
       "deviceId": "19",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -6361,6 +6415,7 @@
         }
       ],
       "deviceId": "19",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -6387,6 +6442,7 @@
         }
       ],
       "deviceId": "19",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -6413,6 +6469,7 @@
         }
       ],
       "deviceId": "19",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -6439,6 +6496,7 @@
         }
       ],
       "deviceId": "19",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -6470,6 +6528,7 @@
         }
       ],
       "deviceId": "19",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -6501,6 +6560,7 @@
         }
       ],
       "deviceId": "19",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -6532,6 +6592,7 @@
         }
       ],
       "deviceId": "19",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -6558,6 +6619,7 @@
         }
       ],
       "deviceId": "19",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -6589,6 +6651,7 @@
         }
       ],
       "deviceId": "19",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -6642,6 +6705,7 @@
         }
       ],
       "deviceId": "31",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.2",
@@ -6673,6 +6737,7 @@
         }
       ],
       "deviceId": "31",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -6699,6 +6764,7 @@
         }
       ],
       "deviceId": "31",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.2",
@@ -6730,6 +6796,7 @@
         }
       ],
       "deviceId": "31",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -6846,6 +6913,7 @@
         }
       ],
       "deviceId": "27",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -6877,6 +6945,7 @@
         }
       ],
       "deviceId": "27",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -6903,6 +6972,7 @@
         }
       ],
       "deviceId": "27",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -6929,6 +6999,7 @@
         }
       ],
       "deviceId": "27",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -6955,6 +7026,7 @@
         }
       ],
       "deviceId": "27",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -7047,6 +7119,7 @@
         }
       ],
       "deviceId": "27",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -7095,6 +7168,7 @@
         }
       ],
       "deviceId": "27",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -7126,6 +7200,7 @@
         }
       ],
       "deviceId": "19",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -7177,6 +7252,7 @@
         }
       ],
       "deviceId": "19",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -7241,6 +7317,7 @@
         }
       ],
       "deviceId": "19",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -7272,6 +7349,7 @@
         }
       ],
       "deviceId": "19",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -7321,6 +7399,7 @@
         }
       ],
       "deviceId": "19",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -7352,6 +7431,7 @@
         }
       ],
       "deviceId": "19",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -7378,6 +7458,7 @@
         }
       ],
       "deviceId": "19",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -7404,6 +7485,7 @@
         }
       ],
       "deviceId": "19",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -7430,6 +7512,7 @@
         }
       ],
       "deviceId": "19",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "-1",
@@ -7461,6 +7544,7 @@
         }
       ],
       "deviceId": "19",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "-1",
@@ -7492,6 +7576,7 @@
         }
       ],
       "deviceId": "19",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -7518,6 +7603,7 @@
         }
       ],
       "deviceId": "19",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -7549,6 +7635,7 @@
         }
       ],
       "deviceId": "19",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -7575,6 +7662,7 @@
         }
       ],
       "deviceId": "19",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "-1",
@@ -7629,6 +7717,7 @@
         }
       ],
       "deviceId": "19",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -7655,6 +7744,7 @@
         }
       ],
       "deviceId": "19",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -7681,6 +7771,7 @@
         }
       ],
       "deviceId": "19",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -7707,6 +7798,7 @@
         }
       ],
       "deviceId": "19",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -7733,6 +7825,7 @@
         }
       ],
       "deviceId": "19",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -7759,6 +7852,7 @@
         }
       ],
       "deviceId": "19",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -7785,6 +7879,7 @@
         }
       ],
       "deviceId": "19",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -7811,6 +7906,7 @@
         }
       ],
       "deviceId": "19",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -7837,6 +7933,7 @@
         }
       ],
       "deviceId": "19",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -7863,6 +7960,7 @@
         }
       ],
       "deviceId": "19",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -7912,6 +8010,7 @@
         }
       ],
       "deviceId": "19",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -7965,6 +8064,7 @@
         }
       ],
       "deviceId": "19",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -7991,6 +8091,7 @@
         }
       ],
       "deviceId": "19",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -8085,6 +8186,7 @@
         }
       ],
       "deviceId": "19",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -8116,6 +8218,7 @@
         }
       ],
       "deviceId": "19",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -8147,6 +8250,7 @@
         }
       ],
       "deviceId": "19",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -8173,6 +8277,7 @@
         }
       ],
       "deviceId": "19",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -8199,6 +8304,7 @@
         }
       ],
       "deviceId": "19",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -8225,6 +8331,7 @@
         }
       ],
       "deviceId": "19",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -8251,6 +8358,7 @@
         }
       ],
       "deviceId": "19",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -8282,6 +8390,7 @@
         }
       ],
       "deviceId": "19",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -8308,6 +8417,7 @@
         }
       ],
       "deviceId": "19",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -8339,6 +8449,7 @@
         }
       ],
       "deviceId": "19",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -8365,6 +8476,7 @@
         }
       ],
       "deviceId": "19",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -8391,6 +8503,7 @@
         }
       ],
       "deviceId": "19",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -8422,6 +8535,7 @@
         }
       ],
       "deviceId": "19",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -8487,10 +8601,10 @@
       }
     },
     {
-      "heliosType": "DCS.Common.Switch",
+      "heliosType": "DCS.Common.PushButton",
       "device": "Interphone ICS1",
       "name": "R1 FM1 Monitor/Mute Switch",
-      "description": "Current position of this switch.",
+      "description": "Current state of this button.",
       "exports": [
         {
           "format": "%1d",
@@ -8498,19 +8612,13 @@
           "id": "592"
         }
       ],
-      "deviceId": "53",
-      "positions": [
+      "buttons": [
         {
-          "argumentValue": "0.0",
-          "name": "Mute",
-          "actionID": "3001"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Monitor",
-          "actionID": "3001",
-          "stopActionID": "3001",
-          "stopActionValue": "0.0"
+          "deviceId": "53",
+          "pushId": "3001",
+          "pushValue": "1.0",
+          "releaseId": "3001",
+          "releaseValue": "0.0"
         }
       ]
     },
@@ -8538,10 +8646,10 @@
       }
     },
     {
-      "heliosType": "DCS.Common.Switch",
+      "heliosType": "DCS.Common.PushButton",
       "device": "Interphone ICS1",
       "name": "R2 UHF Monitor/Mute Switch",
-      "description": "Current position of this switch.",
+      "description": "Current state of this button.",
       "exports": [
         {
           "format": "%1d",
@@ -8549,19 +8657,13 @@
           "id": "594"
         }
       ],
-      "deviceId": "53",
-      "positions": [
+      "buttons": [
         {
-          "argumentValue": "0.0",
-          "name": "Mute",
-          "actionID": "3006"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Monitor",
-          "actionID": "3006",
-          "stopActionID": "3006",
-          "stopActionValue": "0.0"
+          "deviceId": "53",
+          "pushId": "3006",
+          "pushValue": "1.0",
+          "releaseId": "3006",
+          "releaseValue": "0.0"
         }
       ]
     },
@@ -8589,10 +8691,10 @@
       }
     },
     {
-      "heliosType": "DCS.Common.Switch",
+      "heliosType": "DCS.Common.PushButton",
       "device": "Interphone ICS1",
       "name": "R3 VHF Monitor/Mute Switch",
-      "description": "Current position of this switch.",
+      "description": "Current state of this button.",
       "exports": [
         {
           "format": "%1d",
@@ -8600,19 +8702,13 @@
           "id": "596"
         }
       ],
-      "deviceId": "53",
-      "positions": [
+      "buttons": [
         {
-          "argumentValue": "0.0",
-          "name": "Mute",
-          "actionID": "3011"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Monitor",
-          "actionID": "3011",
-          "stopActionID": "3011",
-          "stopActionValue": "0.0"
+          "deviceId": "53",
+          "pushId": "3011",
+          "pushValue": "1.0",
+          "releaseId": "3011",
+          "releaseValue": "0.0"
         }
       ]
     },
@@ -8640,10 +8736,10 @@
       }
     },
     {
-      "heliosType": "DCS.Common.Switch",
+      "heliosType": "DCS.Common.PushButton",
       "device": "Interphone ICS1",
       "name": "R4 HF Monitor/Mute Switch",
-      "description": "Current position of this switch.",
+      "description": "Current state of this button.",
       "exports": [
         {
           "format": "%1d",
@@ -8651,19 +8747,13 @@
           "id": "598"
         }
       ],
-      "deviceId": "53",
-      "positions": [
+      "buttons": [
         {
-          "argumentValue": "0.0",
-          "name": "Mute",
-          "actionID": "3016"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Monitor",
-          "actionID": "3016",
-          "stopActionID": "3016",
-          "stopActionValue": "0.0"
+          "deviceId": "53",
+          "pushId": "3016",
+          "pushValue": "1.0",
+          "releaseId": "3016",
+          "releaseValue": "0.0"
         }
       ]
     },
@@ -8691,10 +8781,10 @@
       }
     },
     {
-      "heliosType": "DCS.Common.Switch",
+      "heliosType": "DCS.Common.PushButton",
       "device": "Interphone ICS1",
       "name": "R5 FM2 Monitor/Mute Switch",
-      "description": "Current position of this switch.",
+      "description": "Current state of this button.",
       "exports": [
         {
           "format": "%1d",
@@ -8702,19 +8792,13 @@
           "id": "600"
         }
       ],
-      "deviceId": "53",
-      "positions": [
+      "buttons": [
         {
-          "argumentValue": "0.0",
-          "name": "Mute",
-          "actionID": "3021"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Monitor",
-          "actionID": "3021",
-          "stopActionID": "3021",
-          "stopActionValue": "0.0"
+          "deviceId": "53",
+          "pushId": "3021",
+          "pushValue": "1.0",
+          "releaseId": "3021",
+          "releaseValue": "0.0"
         }
       ]
     },
@@ -8742,10 +8826,10 @@
       }
     },
     {
-      "heliosType": "DCS.Common.Switch",
+      "heliosType": "DCS.Common.PushButton",
       "device": "Interphone ICS1",
       "name": "R6 Spare Monitor/Mute Switch",
-      "description": "Current position of this switch.",
+      "description": "Current state of this button.",
       "exports": [
         {
           "format": "%1d",
@@ -8753,19 +8837,13 @@
           "id": "602"
         }
       ],
-      "deviceId": "53",
-      "positions": [
+      "buttons": [
         {
-          "argumentValue": "0.0",
-          "name": "Mute",
-          "actionID": "3026"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Monitor",
-          "actionID": "3026",
-          "stopActionID": "3026",
-          "stopActionValue": "0.0"
+          "deviceId": "53",
+          "pushId": "3026",
+          "pushValue": "1.0",
+          "releaseId": "3026",
+          "releaseValue": "0.0"
         }
       ]
     },
@@ -8793,10 +8871,10 @@
       }
     },
     {
-      "heliosType": "DCS.Common.Switch",
+      "heliosType": "DCS.Common.PushButton",
       "device": "Interphone ICS1",
       "name": "R7 RWR Monitor/Mute Switch",
-      "description": "Current position of this switch.",
+      "description": "Current state of this button.",
       "exports": [
         {
           "format": "%1d",
@@ -8804,19 +8882,13 @@
           "id": "604"
         }
       ],
-      "deviceId": "53",
-      "positions": [
+      "buttons": [
         {
-          "argumentValue": "0.0",
-          "name": "Mute",
-          "actionID": "3031"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Monitor",
-          "actionID": "3031",
-          "stopActionID": "3031",
-          "stopActionValue": "0.0"
+          "deviceId": "53",
+          "pushId": "3031",
+          "pushValue": "1.0",
+          "releaseId": "3031",
+          "releaseValue": "0.0"
         }
       ]
     },
@@ -8844,10 +8916,10 @@
       }
     },
     {
-      "heliosType": "DCS.Common.Switch",
+      "heliosType": "DCS.Common.PushButton",
       "device": "Interphone ICS1",
       "name": "N1 VOR/ILS Monitor/Mute Switch",
-      "description": "Current position of this switch.",
+      "description": "Current state of this button.",
       "exports": [
         {
           "format": "%1d",
@@ -8855,19 +8927,13 @@
           "id": "606"
         }
       ],
-      "deviceId": "53",
-      "positions": [
+      "buttons": [
         {
-          "argumentValue": "0.0",
-          "name": "Mute",
-          "actionID": "3036"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Monitor",
-          "actionID": "3036",
-          "stopActionID": "3036",
-          "stopActionValue": "0.0"
+          "deviceId": "53",
+          "pushId": "3036",
+          "pushValue": "1.0",
+          "releaseId": "3036",
+          "releaseValue": "0.0"
         }
       ]
     },
@@ -8895,10 +8961,10 @@
       }
     },
     {
-      "heliosType": "DCS.Common.Switch",
+      "heliosType": "DCS.Common.PushButton",
       "device": "Interphone ICS1",
       "name": "N2 TACAN Monitor/Mute Switch",
-      "description": "Current position of this switch.",
+      "description": "Current state of this button.",
       "exports": [
         {
           "format": "%1d",
@@ -8906,19 +8972,13 @@
           "id": "608"
         }
       ],
-      "deviceId": "53",
-      "positions": [
+      "buttons": [
         {
-          "argumentValue": "0.0",
-          "name": "Mute",
-          "actionID": "3041"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Monitor",
-          "actionID": "3041",
-          "stopActionID": "3041",
-          "stopActionValue": "0.0"
+          "deviceId": "53",
+          "pushId": "3041",
+          "pushValue": "1.0",
+          "releaseId": "3041",
+          "releaseValue": "0.0"
         }
       ]
     },
@@ -8946,10 +9006,10 @@
       }
     },
     {
-      "heliosType": "DCS.Common.Switch",
+      "heliosType": "DCS.Common.PushButton",
       "device": "Interphone ICS1",
       "name": "N3 ADF Monitor/Mute Switch",
-      "description": "Current position of this switch.",
+      "description": "Current state of this button.",
       "exports": [
         {
           "format": "%1d",
@@ -8957,19 +9017,13 @@
           "id": "610"
         }
       ],
-      "deviceId": "53",
-      "positions": [
+      "buttons": [
         {
-          "argumentValue": "0.0",
-          "name": "Mute",
-          "actionID": "3046"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Monitor",
-          "actionID": "3046",
-          "stopActionID": "3046",
-          "stopActionValue": "0.0"
+          "deviceId": "53",
+          "pushId": "3046",
+          "pushValue": "1.0",
+          "releaseId": "3046",
+          "releaseValue": "0.0"
         }
       ]
     },
@@ -8997,10 +9051,10 @@
       }
     },
     {
-      "heliosType": "DCS.Common.Switch",
+      "heliosType": "DCS.Common.PushButton",
       "device": "Interphone ICS1",
       "name": "N4 MB/CWS Monitor/Mute Switch",
-      "description": "Current position of this switch.",
+      "description": "Current state of this button.",
       "exports": [
         {
           "format": "%1d",
@@ -9008,19 +9062,13 @@
           "id": "612"
         }
       ],
-      "deviceId": "53",
-      "positions": [
+      "buttons": [
         {
-          "argumentValue": "0.0",
-          "name": "Mute",
-          "actionID": "3051"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Monitor",
-          "actionID": "3051",
-          "stopActionID": "3051",
-          "stopActionValue": "0.0"
+          "deviceId": "53",
+          "pushId": "3051",
+          "pushValue": "1.0",
+          "releaseId": "3051",
+          "releaseValue": "0.0"
         }
       ]
     },
@@ -9037,6 +9085,7 @@
         }
       ],
       "deviceId": "53",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.00",
@@ -9096,23 +9145,23 @@
       ]
     },
     {
-      "heliosType": "DCS.Common.Axis",
+      "heliosType": "DCS.Common.RotaryEncoder",
       "device": "Interphone ICS1",
       "name": "Master Volume Knob",
-      "description": "Current value of this axis.",
       "exports": [
         {
-          "format": "%.3f",
+          "format": "%.2f",
           "isExportedEveryFrame": false,
           "id": "614"
         }
       ],
-      "loop": false,
       "argumentValue": 0.1,
-      "argumentMin": 0.0,
-      "argumentMax": 1.0,
       "actions": {
-        "set": {
+        "increment": {
+          "deviceId": "53",
+          "actionId": "3056"
+        },
+        "decrement": {
           "deviceId": "53",
           "actionId": "3056"
         }
@@ -9285,10 +9334,10 @@
       }
     },
     {
-      "heliosType": "DCS.Common.Switch",
+      "heliosType": "DCS.Common.PushButton",
       "device": "Interphone ICS2",
       "name": "R1 FM1 Monitor/Mute Switch",
-      "description": "Current position of this switch.",
+      "description": "Current state of this button.",
       "exports": [
         {
           "format": "%1d",
@@ -9296,19 +9345,13 @@
           "id": "625"
         }
       ],
-      "deviceId": "52",
-      "positions": [
+      "buttons": [
         {
-          "argumentValue": "0.0",
-          "name": "Mute",
-          "actionID": "3001"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Monitor",
-          "actionID": "3001",
-          "stopActionID": "3001",
-          "stopActionValue": "0.0"
+          "deviceId": "52",
+          "pushId": "3001",
+          "pushValue": "1.0",
+          "releaseId": "3001",
+          "releaseValue": "0.0"
         }
       ]
     },
@@ -9336,10 +9379,10 @@
       }
     },
     {
-      "heliosType": "DCS.Common.Switch",
+      "heliosType": "DCS.Common.PushButton",
       "device": "Interphone ICS2",
       "name": "R2 UHF Monitor/Mute Switch",
-      "description": "Current position of this switch.",
+      "description": "Current state of this button.",
       "exports": [
         {
           "format": "%1d",
@@ -9347,19 +9390,13 @@
           "id": "627"
         }
       ],
-      "deviceId": "52",
-      "positions": [
+      "buttons": [
         {
-          "argumentValue": "0.0",
-          "name": "Mute",
-          "actionID": "3006"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Monitor",
-          "actionID": "3006",
-          "stopActionID": "3006",
-          "stopActionValue": "0.0"
+          "deviceId": "52",
+          "pushId": "3006",
+          "pushValue": "1.0",
+          "releaseId": "3006",
+          "releaseValue": "0.0"
         }
       ]
     },
@@ -9387,10 +9424,10 @@
       }
     },
     {
-      "heliosType": "DCS.Common.Switch",
+      "heliosType": "DCS.Common.PushButton",
       "device": "Interphone ICS2",
       "name": "R3 VHF Monitor/Mute Switch",
-      "description": "Current position of this switch.",
+      "description": "Current state of this button.",
       "exports": [
         {
           "format": "%1d",
@@ -9398,19 +9435,13 @@
           "id": "629"
         }
       ],
-      "deviceId": "52",
-      "positions": [
+      "buttons": [
         {
-          "argumentValue": "0.0",
-          "name": "Mute",
-          "actionID": "3011"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Monitor",
-          "actionID": "3011",
-          "stopActionID": "3011",
-          "stopActionValue": "0.0"
+          "deviceId": "52",
+          "pushId": "3011",
+          "pushValue": "1.0",
+          "releaseId": "3011",
+          "releaseValue": "0.0"
         }
       ]
     },
@@ -9438,10 +9469,10 @@
       }
     },
     {
-      "heliosType": "DCS.Common.Switch",
+      "heliosType": "DCS.Common.PushButton",
       "device": "Interphone ICS2",
       "name": "R4 HF Monitor/Mute Switch",
-      "description": "Current position of this switch.",
+      "description": "Current state of this button.",
       "exports": [
         {
           "format": "%1d",
@@ -9449,19 +9480,13 @@
           "id": "631"
         }
       ],
-      "deviceId": "52",
-      "positions": [
+      "buttons": [
         {
-          "argumentValue": "0.0",
-          "name": "Mute",
-          "actionID": "3016"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Monitor",
-          "actionID": "3016",
-          "stopActionID": "3016",
-          "stopActionValue": "0.0"
+          "deviceId": "52",
+          "pushId": "3016",
+          "pushValue": "1.0",
+          "releaseId": "3016",
+          "releaseValue": "0.0"
         }
       ]
     },
@@ -9489,10 +9514,10 @@
       }
     },
     {
-      "heliosType": "DCS.Common.Switch",
+      "heliosType": "DCS.Common.PushButton",
       "device": "Interphone ICS2",
       "name": "R5 FM2 Monitor/Mute Switch",
-      "description": "Current position of this switch.",
+      "description": "Current state of this button.",
       "exports": [
         {
           "format": "%1d",
@@ -9500,19 +9525,13 @@
           "id": "633"
         }
       ],
-      "deviceId": "52",
-      "positions": [
+      "buttons": [
         {
-          "argumentValue": "0.0",
-          "name": "Mute",
-          "actionID": "3021"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Monitor",
-          "actionID": "3021",
-          "stopActionID": "3021",
-          "stopActionValue": "0.0"
+          "deviceId": "52",
+          "pushId": "3021",
+          "pushValue": "1.0",
+          "releaseId": "3021",
+          "releaseValue": "0.0"
         }
       ]
     },
@@ -9540,10 +9559,10 @@
       }
     },
     {
-      "heliosType": "DCS.Common.Switch",
+      "heliosType": "DCS.Common.PushButton",
       "device": "Interphone ICS2",
       "name": "R6 Spare Monitor/Mute Switch",
-      "description": "Current position of this switch.",
+      "description": "Current state of this button.",
       "exports": [
         {
           "format": "%1d",
@@ -9551,19 +9570,13 @@
           "id": "635"
         }
       ],
-      "deviceId": "52",
-      "positions": [
+      "buttons": [
         {
-          "argumentValue": "0.0",
-          "name": "Mute",
-          "actionID": "3026"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Monitor",
-          "actionID": "3026",
-          "stopActionID": "3026",
-          "stopActionValue": "0.0"
+          "deviceId": "52",
+          "pushId": "3026",
+          "pushValue": "1.0",
+          "releaseId": "3026",
+          "releaseValue": "0.0"
         }
       ]
     },
@@ -9591,10 +9604,10 @@
       }
     },
     {
-      "heliosType": "DCS.Common.Switch",
+      "heliosType": "DCS.Common.PushButton",
       "device": "Interphone ICS2",
       "name": "R7 RWR Monitor/Mute Switch",
-      "description": "Current position of this switch.",
+      "description": "Current state of this button.",
       "exports": [
         {
           "format": "%1d",
@@ -9602,19 +9615,13 @@
           "id": "637"
         }
       ],
-      "deviceId": "52",
-      "positions": [
+      "buttons": [
         {
-          "argumentValue": "0.0",
-          "name": "Mute",
-          "actionID": "3031"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Monitor",
-          "actionID": "3031",
-          "stopActionID": "3031",
-          "stopActionValue": "0.0"
+          "deviceId": "52",
+          "pushId": "3031",
+          "pushValue": "1.0",
+          "releaseId": "3031",
+          "releaseValue": "0.0"
         }
       ]
     },
@@ -9642,10 +9649,10 @@
       }
     },
     {
-      "heliosType": "DCS.Common.Switch",
+      "heliosType": "DCS.Common.PushButton",
       "device": "Interphone ICS2",
       "name": "N1 VOR/ILS Monitor/Mute Switch",
-      "description": "Current position of this switch.",
+      "description": "Current state of this button.",
       "exports": [
         {
           "format": "%1d",
@@ -9653,19 +9660,13 @@
           "id": "639"
         }
       ],
-      "deviceId": "52",
-      "positions": [
+      "buttons": [
         {
-          "argumentValue": "0.0",
-          "name": "Mute",
-          "actionID": "3036"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Monitor",
-          "actionID": "3036",
-          "stopActionID": "3036",
-          "stopActionValue": "0.0"
+          "deviceId": "52",
+          "pushId": "3036",
+          "pushValue": "1.0",
+          "releaseId": "3036",
+          "releaseValue": "0.0"
         }
       ]
     },
@@ -9693,10 +9694,10 @@
       }
     },
     {
-      "heliosType": "DCS.Common.Switch",
+      "heliosType": "DCS.Common.PushButton",
       "device": "Interphone ICS2",
       "name": "N2 TACAN Monitor/Mute Switch",
-      "description": "Current position of this switch.",
+      "description": "Current state of this button.",
       "exports": [
         {
           "format": "%1d",
@@ -9704,19 +9705,13 @@
           "id": "641"
         }
       ],
-      "deviceId": "52",
-      "positions": [
+      "buttons": [
         {
-          "argumentValue": "0.0",
-          "name": "Mute",
-          "actionID": "3041"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Monitor",
-          "actionID": "3041",
-          "stopActionID": "3041",
-          "stopActionValue": "0.0"
+          "deviceId": "52",
+          "pushId": "3041",
+          "pushValue": "1.0",
+          "releaseId": "3041",
+          "releaseValue": "0.0"
         }
       ]
     },
@@ -9744,10 +9739,10 @@
       }
     },
     {
-      "heliosType": "DCS.Common.Switch",
+      "heliosType": "DCS.Common.PushButton",
       "device": "Interphone ICS2",
       "name": "N3 ADF Monitor/Mute Switch",
-      "description": "Current position of this switch.",
+      "description": "Current state of this button.",
       "exports": [
         {
           "format": "%1d",
@@ -9755,19 +9750,13 @@
           "id": "643"
         }
       ],
-      "deviceId": "52",
-      "positions": [
+      "buttons": [
         {
-          "argumentValue": "0.0",
-          "name": "Mute",
-          "actionID": "3046"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Monitor",
-          "actionID": "3046",
-          "stopActionID": "3046",
-          "stopActionValue": "0.0"
+          "deviceId": "52",
+          "pushId": "3046",
+          "pushValue": "1.0",
+          "releaseId": "3046",
+          "releaseValue": "0.0"
         }
       ]
     },
@@ -9795,10 +9784,10 @@
       }
     },
     {
-      "heliosType": "DCS.Common.Switch",
+      "heliosType": "DCS.Common.PushButton",
       "device": "Interphone ICS2",
       "name": "N4 MB/CWS Monitor/Mute Switch",
-      "description": "Current position of this switch.",
+      "description": "Current state of this button.",
       "exports": [
         {
           "format": "%1d",
@@ -9806,19 +9795,13 @@
           "id": "645"
         }
       ],
-      "deviceId": "52",
-      "positions": [
+      "buttons": [
         {
-          "argumentValue": "0.0",
-          "name": "Mute",
-          "actionID": "3051"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Monitor",
-          "actionID": "3051",
-          "stopActionID": "3051",
-          "stopActionValue": "0.0"
+          "deviceId": "52",
+          "pushId": "3051",
+          "pushValue": "1.0",
+          "releaseId": "3051",
+          "releaseValue": "0.0"
         }
       ]
     },
@@ -9835,6 +9818,7 @@
         }
       ],
       "deviceId": "52",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.00",
@@ -9894,23 +9878,23 @@
       ]
     },
     {
-      "heliosType": "DCS.Common.Axis",
+      "heliosType": "DCS.Common.RotaryEncoder",
       "device": "Interphone ICS2",
       "name": "Master Volume Knob",
-      "description": "Current value of this axis.",
       "exports": [
         {
-          "format": "%.3f",
+          "format": "%.2f",
           "isExportedEveryFrame": false,
           "id": "647"
         }
       ],
-      "loop": false,
       "argumentValue": 0.1,
-      "argumentMin": 0.0,
-      "argumentMax": 1.0,
       "actions": {
-        "set": {
+        "increment": {
+          "deviceId": "52",
+          "actionId": "3056"
+        },
+        "decrement": {
           "deviceId": "52",
           "actionId": "3056"
         }
@@ -10083,10 +10067,10 @@
       }
     },
     {
-      "heliosType": "DCS.Common.Switch",
+      "heliosType": "DCS.Common.PushButton",
       "device": "Interphone ICS3",
       "name": "R1 FM1 Monitor/Mute Switch",
-      "description": "Current position of this switch.",
+      "description": "Current state of this button.",
       "exports": [
         {
           "format": "%1d",
@@ -10094,19 +10078,13 @@
           "id": "658"
         }
       ],
-      "deviceId": "54",
-      "positions": [
+      "buttons": [
         {
-          "argumentValue": "0.0",
-          "name": "Mute",
-          "actionID": "3001"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Monitor",
-          "actionID": "3001",
-          "stopActionID": "3001",
-          "stopActionValue": "0.0"
+          "deviceId": "54",
+          "pushId": "3001",
+          "pushValue": "1.0",
+          "releaseId": "3001",
+          "releaseValue": "0.0"
         }
       ]
     },
@@ -10134,10 +10112,10 @@
       }
     },
     {
-      "heliosType": "DCS.Common.Switch",
+      "heliosType": "DCS.Common.PushButton",
       "device": "Interphone ICS3",
       "name": "R2 UHF Monitor/Mute Switch",
-      "description": "Current position of this switch.",
+      "description": "Current state of this button.",
       "exports": [
         {
           "format": "%1d",
@@ -10145,19 +10123,13 @@
           "id": "660"
         }
       ],
-      "deviceId": "54",
-      "positions": [
+      "buttons": [
         {
-          "argumentValue": "0.0",
-          "name": "Mute",
-          "actionID": "3006"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Monitor",
-          "actionID": "3006",
-          "stopActionID": "3006",
-          "stopActionValue": "0.0"
+          "deviceId": "54",
+          "pushId": "3006",
+          "pushValue": "1.0",
+          "releaseId": "3006",
+          "releaseValue": "0.0"
         }
       ]
     },
@@ -10185,10 +10157,10 @@
       }
     },
     {
-      "heliosType": "DCS.Common.Switch",
+      "heliosType": "DCS.Common.PushButton",
       "device": "Interphone ICS3",
       "name": "R3 VHF Monitor/Mute Switch",
-      "description": "Current position of this switch.",
+      "description": "Current state of this button.",
       "exports": [
         {
           "format": "%1d",
@@ -10196,19 +10168,13 @@
           "id": "662"
         }
       ],
-      "deviceId": "54",
-      "positions": [
+      "buttons": [
         {
-          "argumentValue": "0.0",
-          "name": "Mute",
-          "actionID": "3011"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Monitor",
-          "actionID": "3011",
-          "stopActionID": "3011",
-          "stopActionValue": "0.0"
+          "deviceId": "54",
+          "pushId": "3011",
+          "pushValue": "1.0",
+          "releaseId": "3011",
+          "releaseValue": "0.0"
         }
       ]
     },
@@ -10236,10 +10202,10 @@
       }
     },
     {
-      "heliosType": "DCS.Common.Switch",
+      "heliosType": "DCS.Common.PushButton",
       "device": "Interphone ICS3",
       "name": "R4 HF Monitor/Mute Switch",
-      "description": "Current position of this switch.",
+      "description": "Current state of this button.",
       "exports": [
         {
           "format": "%1d",
@@ -10247,19 +10213,13 @@
           "id": "664"
         }
       ],
-      "deviceId": "54",
-      "positions": [
+      "buttons": [
         {
-          "argumentValue": "0.0",
-          "name": "Mute",
-          "actionID": "3016"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Monitor",
-          "actionID": "3016",
-          "stopActionID": "3016",
-          "stopActionValue": "0.0"
+          "deviceId": "54",
+          "pushId": "3016",
+          "pushValue": "1.0",
+          "releaseId": "3016",
+          "releaseValue": "0.0"
         }
       ]
     },
@@ -10287,10 +10247,10 @@
       }
     },
     {
-      "heliosType": "DCS.Common.Switch",
+      "heliosType": "DCS.Common.PushButton",
       "device": "Interphone ICS3",
       "name": "R5 FM2 Monitor/Mute Switch",
-      "description": "Current position of this switch.",
+      "description": "Current state of this button.",
       "exports": [
         {
           "format": "%1d",
@@ -10298,19 +10258,13 @@
           "id": "666"
         }
       ],
-      "deviceId": "54",
-      "positions": [
+      "buttons": [
         {
-          "argumentValue": "0.0",
-          "name": "Mute",
-          "actionID": "3021"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Monitor",
-          "actionID": "3021",
-          "stopActionID": "3021",
-          "stopActionValue": "0.0"
+          "deviceId": "54",
+          "pushId": "3021",
+          "pushValue": "1.0",
+          "releaseId": "3021",
+          "releaseValue": "0.0"
         }
       ]
     },
@@ -10338,10 +10292,10 @@
       }
     },
     {
-      "heliosType": "DCS.Common.Switch",
+      "heliosType": "DCS.Common.PushButton",
       "device": "Interphone ICS3",
       "name": "R6 Spare Monitor/Mute Switch",
-      "description": "Current position of this switch.",
+      "description": "Current state of this button.",
       "exports": [
         {
           "format": "%1d",
@@ -10349,19 +10303,13 @@
           "id": "668"
         }
       ],
-      "deviceId": "54",
-      "positions": [
+      "buttons": [
         {
-          "argumentValue": "0.0",
-          "name": "Mute",
-          "actionID": "3026"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Monitor",
-          "actionID": "3026",
-          "stopActionID": "3026",
-          "stopActionValue": "0.0"
+          "deviceId": "54",
+          "pushId": "3026",
+          "pushValue": "1.0",
+          "releaseId": "3026",
+          "releaseValue": "0.0"
         }
       ]
     },
@@ -10389,10 +10337,10 @@
       }
     },
     {
-      "heliosType": "DCS.Common.Switch",
+      "heliosType": "DCS.Common.PushButton",
       "device": "Interphone ICS3",
       "name": "R7 RWR Monitor/Mute Switch",
-      "description": "Current position of this switch.",
+      "description": "Current state of this button.",
       "exports": [
         {
           "format": "%1d",
@@ -10400,19 +10348,13 @@
           "id": "670"
         }
       ],
-      "deviceId": "54",
-      "positions": [
+      "buttons": [
         {
-          "argumentValue": "0.0",
-          "name": "Mute",
-          "actionID": "3031"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Monitor",
-          "actionID": "3031",
-          "stopActionID": "3031",
-          "stopActionValue": "0.0"
+          "deviceId": "54",
+          "pushId": "3031",
+          "pushValue": "1.0",
+          "releaseId": "3031",
+          "releaseValue": "0.0"
         }
       ]
     },
@@ -10440,10 +10382,10 @@
       }
     },
     {
-      "heliosType": "DCS.Common.Switch",
+      "heliosType": "DCS.Common.PushButton",
       "device": "Interphone ICS3",
       "name": "N1 VOR/ILS Monitor/Mute Switch",
-      "description": "Current position of this switch.",
+      "description": "Current state of this button.",
       "exports": [
         {
           "format": "%1d",
@@ -10451,19 +10393,13 @@
           "id": "672"
         }
       ],
-      "deviceId": "54",
-      "positions": [
+      "buttons": [
         {
-          "argumentValue": "0.0",
-          "name": "Mute",
-          "actionID": "3036"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Monitor",
-          "actionID": "3036",
-          "stopActionID": "3036",
-          "stopActionValue": "0.0"
+          "deviceId": "54",
+          "pushId": "3036",
+          "pushValue": "1.0",
+          "releaseId": "3036",
+          "releaseValue": "0.0"
         }
       ]
     },
@@ -10491,10 +10427,10 @@
       }
     },
     {
-      "heliosType": "DCS.Common.Switch",
+      "heliosType": "DCS.Common.PushButton",
       "device": "Interphone ICS3",
       "name": "N2 TACAN Monitor/Mute Switch",
-      "description": "Current position of this switch.",
+      "description": "Current state of this button.",
       "exports": [
         {
           "format": "%1d",
@@ -10502,19 +10438,13 @@
           "id": "674"
         }
       ],
-      "deviceId": "54",
-      "positions": [
+      "buttons": [
         {
-          "argumentValue": "0.0",
-          "name": "Mute",
-          "actionID": "3041"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Monitor",
-          "actionID": "3041",
-          "stopActionID": "3041",
-          "stopActionValue": "0.0"
+          "deviceId": "54",
+          "pushId": "3041",
+          "pushValue": "1.0",
+          "releaseId": "3041",
+          "releaseValue": "0.0"
         }
       ]
     },
@@ -10542,10 +10472,10 @@
       }
     },
     {
-      "heliosType": "DCS.Common.Switch",
+      "heliosType": "DCS.Common.PushButton",
       "device": "Interphone ICS3",
       "name": "N3 ADF Monitor/Mute Switch",
-      "description": "Current position of this switch.",
+      "description": "Current state of this button.",
       "exports": [
         {
           "format": "%1d",
@@ -10553,19 +10483,13 @@
           "id": "676"
         }
       ],
-      "deviceId": "54",
-      "positions": [
+      "buttons": [
         {
-          "argumentValue": "0.0",
-          "name": "Mute",
-          "actionID": "3046"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Monitor",
-          "actionID": "3046",
-          "stopActionID": "3046",
-          "stopActionValue": "0.0"
+          "deviceId": "54",
+          "pushId": "3046",
+          "pushValue": "1.0",
+          "releaseId": "3046",
+          "releaseValue": "0.0"
         }
       ]
     },
@@ -10593,10 +10517,10 @@
       }
     },
     {
-      "heliosType": "DCS.Common.Switch",
+      "heliosType": "DCS.Common.PushButton",
       "device": "Interphone ICS3",
       "name": "N4 MB/CWS Monitor/Mute Switch",
-      "description": "Current position of this switch.",
+      "description": "Current state of this button.",
       "exports": [
         {
           "format": "%1d",
@@ -10604,19 +10528,13 @@
           "id": "678"
         }
       ],
-      "deviceId": "54",
-      "positions": [
+      "buttons": [
         {
-          "argumentValue": "0.0",
-          "name": "Mute",
-          "actionID": "3051"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Monitor",
-          "actionID": "3051",
-          "stopActionID": "3051",
-          "stopActionValue": "0.0"
+          "deviceId": "54",
+          "pushId": "3051",
+          "pushValue": "1.0",
+          "releaseId": "3051",
+          "releaseValue": "0.0"
         }
       ]
     },
@@ -10633,6 +10551,7 @@
         }
       ],
       "deviceId": "54",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.00",
@@ -10692,23 +10611,23 @@
       ]
     },
     {
-      "heliosType": "DCS.Common.Axis",
+      "heliosType": "DCS.Common.RotaryEncoder",
       "device": "Interphone ICS3",
       "name": "Master Volume Knob",
-      "description": "Current value of this axis.",
       "exports": [
         {
-          "format": "%.3f",
+          "format": "%.2f",
           "isExportedEveryFrame": false,
           "id": "680"
         }
       ],
-      "loop": false,
       "argumentValue": 0.1,
-      "argumentMin": 0.0,
-      "argumentMax": 1.0,
       "actions": {
-        "set": {
+        "increment": {
+          "deviceId": "54",
+          "actionId": "3056"
+        },
+        "decrement": {
           "deviceId": "54",
           "actionId": "3056"
         }
@@ -10881,10 +10800,10 @@
       }
     },
     {
-      "heliosType": "DCS.Common.Switch",
+      "heliosType": "DCS.Common.PushButton",
       "device": "Interphone ICS4",
       "name": "R1 FM1 Monitor/Mute Switch",
-      "description": "Current position of this switch.",
+      "description": "Current state of this button.",
       "exports": [
         {
           "format": "%1d",
@@ -10892,19 +10811,13 @@
           "id": "1067"
         }
       ],
-      "deviceId": "55",
-      "positions": [
+      "buttons": [
         {
-          "argumentValue": "0.0",
-          "name": "Mute",
-          "actionID": "3001"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Monitor",
-          "actionID": "3001",
-          "stopActionID": "3001",
-          "stopActionValue": "0.0"
+          "deviceId": "55",
+          "pushId": "3001",
+          "pushValue": "1.0",
+          "releaseId": "3001",
+          "releaseValue": "0.0"
         }
       ]
     },
@@ -10932,10 +10845,10 @@
       }
     },
     {
-      "heliosType": "DCS.Common.Switch",
+      "heliosType": "DCS.Common.PushButton",
       "device": "Interphone ICS4",
       "name": "R2 UHF Monitor/Mute Switch",
-      "description": "Current position of this switch.",
+      "description": "Current state of this button.",
       "exports": [
         {
           "format": "%1d",
@@ -10943,19 +10856,13 @@
           "id": "1069"
         }
       ],
-      "deviceId": "55",
-      "positions": [
+      "buttons": [
         {
-          "argumentValue": "0.0",
-          "name": "Mute",
-          "actionID": "3006"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Monitor",
-          "actionID": "3006",
-          "stopActionID": "3006",
-          "stopActionValue": "0.0"
+          "deviceId": "55",
+          "pushId": "3006",
+          "pushValue": "1.0",
+          "releaseId": "3006",
+          "releaseValue": "0.0"
         }
       ]
     },
@@ -10983,10 +10890,10 @@
       }
     },
     {
-      "heliosType": "DCS.Common.Switch",
+      "heliosType": "DCS.Common.PushButton",
       "device": "Interphone ICS4",
       "name": "R3 VHF Monitor/Mute Switch",
-      "description": "Current position of this switch.",
+      "description": "Current state of this button.",
       "exports": [
         {
           "format": "%1d",
@@ -10994,19 +10901,13 @@
           "id": "1071"
         }
       ],
-      "deviceId": "55",
-      "positions": [
+      "buttons": [
         {
-          "argumentValue": "0.0",
-          "name": "Mute",
-          "actionID": "3011"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Monitor",
-          "actionID": "3011",
-          "stopActionID": "3011",
-          "stopActionValue": "0.0"
+          "deviceId": "55",
+          "pushId": "3011",
+          "pushValue": "1.0",
+          "releaseId": "3011",
+          "releaseValue": "0.0"
         }
       ]
     },
@@ -11034,10 +10935,10 @@
       }
     },
     {
-      "heliosType": "DCS.Common.Switch",
+      "heliosType": "DCS.Common.PushButton",
       "device": "Interphone ICS4",
       "name": "R4 HF Monitor/Mute Switch",
-      "description": "Current position of this switch.",
+      "description": "Current state of this button.",
       "exports": [
         {
           "format": "%1d",
@@ -11045,19 +10946,13 @@
           "id": "1073"
         }
       ],
-      "deviceId": "55",
-      "positions": [
+      "buttons": [
         {
-          "argumentValue": "0.0",
-          "name": "Mute",
-          "actionID": "3016"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Monitor",
-          "actionID": "3016",
-          "stopActionID": "3016",
-          "stopActionValue": "0.0"
+          "deviceId": "55",
+          "pushId": "3016",
+          "pushValue": "1.0",
+          "releaseId": "3016",
+          "releaseValue": "0.0"
         }
       ]
     },
@@ -11085,10 +10980,10 @@
       }
     },
     {
-      "heliosType": "DCS.Common.Switch",
+      "heliosType": "DCS.Common.PushButton",
       "device": "Interphone ICS4",
       "name": "R5 FM2 Monitor/Mute Switch",
-      "description": "Current position of this switch.",
+      "description": "Current state of this button.",
       "exports": [
         {
           "format": "%1d",
@@ -11096,19 +10991,13 @@
           "id": "1075"
         }
       ],
-      "deviceId": "55",
-      "positions": [
+      "buttons": [
         {
-          "argumentValue": "0.0",
-          "name": "Mute",
-          "actionID": "3021"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Monitor",
-          "actionID": "3021",
-          "stopActionID": "3021",
-          "stopActionValue": "0.0"
+          "deviceId": "55",
+          "pushId": "3021",
+          "pushValue": "1.0",
+          "releaseId": "3021",
+          "releaseValue": "0.0"
         }
       ]
     },
@@ -11136,10 +11025,10 @@
       }
     },
     {
-      "heliosType": "DCS.Common.Switch",
+      "heliosType": "DCS.Common.PushButton",
       "device": "Interphone ICS4",
       "name": "R6 Spare Monitor/Mute Switch",
-      "description": "Current position of this switch.",
+      "description": "Current state of this button.",
       "exports": [
         {
           "format": "%1d",
@@ -11147,19 +11036,13 @@
           "id": "1077"
         }
       ],
-      "deviceId": "55",
-      "positions": [
+      "buttons": [
         {
-          "argumentValue": "0.0",
-          "name": "Mute",
-          "actionID": "3026"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Monitor",
-          "actionID": "3026",
-          "stopActionID": "3026",
-          "stopActionValue": "0.0"
+          "deviceId": "55",
+          "pushId": "3026",
+          "pushValue": "1.0",
+          "releaseId": "3026",
+          "releaseValue": "0.0"
         }
       ]
     },
@@ -11187,10 +11070,10 @@
       }
     },
     {
-      "heliosType": "DCS.Common.Switch",
+      "heliosType": "DCS.Common.PushButton",
       "device": "Interphone ICS4",
       "name": "R7 RWR Monitor/Mute Switch",
-      "description": "Current position of this switch.",
+      "description": "Current state of this button.",
       "exports": [
         {
           "format": "%1d",
@@ -11198,19 +11081,13 @@
           "id": "1079"
         }
       ],
-      "deviceId": "55",
-      "positions": [
+      "buttons": [
         {
-          "argumentValue": "0.0",
-          "name": "Mute",
-          "actionID": "3031"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Monitor",
-          "actionID": "3031",
-          "stopActionID": "3031",
-          "stopActionValue": "0.0"
+          "deviceId": "55",
+          "pushId": "3031",
+          "pushValue": "1.0",
+          "releaseId": "3031",
+          "releaseValue": "0.0"
         }
       ]
     },
@@ -11238,10 +11115,10 @@
       }
     },
     {
-      "heliosType": "DCS.Common.Switch",
+      "heliosType": "DCS.Common.PushButton",
       "device": "Interphone ICS4",
       "name": "N1 VOR/ILS Monitor/Mute Switch",
-      "description": "Current position of this switch.",
+      "description": "Current state of this button.",
       "exports": [
         {
           "format": "%1d",
@@ -11249,19 +11126,13 @@
           "id": "1081"
         }
       ],
-      "deviceId": "55",
-      "positions": [
+      "buttons": [
         {
-          "argumentValue": "0.0",
-          "name": "Mute",
-          "actionID": "3036"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Monitor",
-          "actionID": "3036",
-          "stopActionID": "3036",
-          "stopActionValue": "0.0"
+          "deviceId": "55",
+          "pushId": "3036",
+          "pushValue": "1.0",
+          "releaseId": "3036",
+          "releaseValue": "0.0"
         }
       ]
     },
@@ -11289,10 +11160,10 @@
       }
     },
     {
-      "heliosType": "DCS.Common.Switch",
+      "heliosType": "DCS.Common.PushButton",
       "device": "Interphone ICS4",
       "name": "N2 TACAN Monitor/Mute Switch",
-      "description": "Current position of this switch.",
+      "description": "Current state of this button.",
       "exports": [
         {
           "format": "%1d",
@@ -11300,19 +11171,13 @@
           "id": "1083"
         }
       ],
-      "deviceId": "55",
-      "positions": [
+      "buttons": [
         {
-          "argumentValue": "0.0",
-          "name": "Mute",
-          "actionID": "3041"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Monitor",
-          "actionID": "3041",
-          "stopActionID": "3041",
-          "stopActionValue": "0.0"
+          "deviceId": "55",
+          "pushId": "3041",
+          "pushValue": "1.0",
+          "releaseId": "3041",
+          "releaseValue": "0.0"
         }
       ]
     },
@@ -11340,10 +11205,10 @@
       }
     },
     {
-      "heliosType": "DCS.Common.Switch",
+      "heliosType": "DCS.Common.PushButton",
       "device": "Interphone ICS4",
       "name": "N3 ADF Monitor/Mute Switch",
-      "description": "Current position of this switch.",
+      "description": "Current state of this button.",
       "exports": [
         {
           "format": "%1d",
@@ -11351,19 +11216,13 @@
           "id": "1085"
         }
       ],
-      "deviceId": "55",
-      "positions": [
+      "buttons": [
         {
-          "argumentValue": "0.0",
-          "name": "Mute",
-          "actionID": "3046"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Monitor",
-          "actionID": "3046",
-          "stopActionID": "3046",
-          "stopActionValue": "0.0"
+          "deviceId": "55",
+          "pushId": "3046",
+          "pushValue": "1.0",
+          "releaseId": "3046",
+          "releaseValue": "0.0"
         }
       ]
     },
@@ -11391,10 +11250,10 @@
       }
     },
     {
-      "heliosType": "DCS.Common.Switch",
+      "heliosType": "DCS.Common.PushButton",
       "device": "Interphone ICS4",
       "name": "N4 MB/CWS Monitor/Mute Switch",
-      "description": "Current position of this switch.",
+      "description": "Current state of this button.",
       "exports": [
         {
           "format": "%1d",
@@ -11402,19 +11261,13 @@
           "id": "1087"
         }
       ],
-      "deviceId": "55",
-      "positions": [
+      "buttons": [
         {
-          "argumentValue": "0.0",
-          "name": "Mute",
-          "actionID": "3051"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Monitor",
-          "actionID": "3051",
-          "stopActionID": "3051",
-          "stopActionValue": "0.0"
+          "deviceId": "55",
+          "pushId": "3051",
+          "pushValue": "1.0",
+          "releaseId": "3051",
+          "releaseValue": "0.0"
         }
       ]
     },
@@ -11431,6 +11284,7 @@
         }
       ],
       "deviceId": "55",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.00",
@@ -11490,23 +11344,23 @@
       ]
     },
     {
-      "heliosType": "DCS.Common.Axis",
+      "heliosType": "DCS.Common.RotaryEncoder",
       "device": "Interphone ICS4",
       "name": "Master Volume Knob",
-      "description": "Current value of this axis.",
       "exports": [
         {
-          "format": "%.3f",
+          "format": "%.2f",
           "isExportedEveryFrame": false,
           "id": "1089"
         }
       ],
-      "loop": false,
       "argumentValue": 0.1,
-      "argumentMin": 0.0,
-      "argumentMax": 1.0,
       "actions": {
-        "set": {
+        "increment": {
+          "deviceId": "55",
+          "actionId": "3056"
+        },
+        "decrement": {
           "deviceId": "55",
           "actionId": "3056"
         }
@@ -11679,10 +11533,10 @@
       }
     },
     {
-      "heliosType": "DCS.Common.Switch",
+      "heliosType": "DCS.Common.PushButton",
       "device": "Interphone ICS5",
       "name": "R1 FM1 Monitor/Mute Switch",
-      "description": "Current position of this switch.",
+      "description": "Current state of this button.",
       "exports": [
         {
           "format": "%1d",
@@ -11690,19 +11544,13 @@
           "id": "1100"
         }
       ],
-      "deviceId": "56",
-      "positions": [
+      "buttons": [
         {
-          "argumentValue": "0.0",
-          "name": "Mute",
-          "actionID": "3001"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Monitor",
-          "actionID": "3001",
-          "stopActionID": "3001",
-          "stopActionValue": "0.0"
+          "deviceId": "56",
+          "pushId": "3001",
+          "pushValue": "1.0",
+          "releaseId": "3001",
+          "releaseValue": "0.0"
         }
       ]
     },
@@ -11730,10 +11578,10 @@
       }
     },
     {
-      "heliosType": "DCS.Common.Switch",
+      "heliosType": "DCS.Common.PushButton",
       "device": "Interphone ICS5",
       "name": "R2 UHF Monitor/Mute Switch",
-      "description": "Current position of this switch.",
+      "description": "Current state of this button.",
       "exports": [
         {
           "format": "%1d",
@@ -11741,19 +11589,13 @@
           "id": "1102"
         }
       ],
-      "deviceId": "56",
-      "positions": [
+      "buttons": [
         {
-          "argumentValue": "0.0",
-          "name": "Mute",
-          "actionID": "3006"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Monitor",
-          "actionID": "3006",
-          "stopActionID": "3006",
-          "stopActionValue": "0.0"
+          "deviceId": "56",
+          "pushId": "3006",
+          "pushValue": "1.0",
+          "releaseId": "3006",
+          "releaseValue": "0.0"
         }
       ]
     },
@@ -11781,10 +11623,10 @@
       }
     },
     {
-      "heliosType": "DCS.Common.Switch",
+      "heliosType": "DCS.Common.PushButton",
       "device": "Interphone ICS5",
       "name": "R3 VHF Monitor/Mute Switch",
-      "description": "Current position of this switch.",
+      "description": "Current state of this button.",
       "exports": [
         {
           "format": "%1d",
@@ -11792,19 +11634,13 @@
           "id": "1104"
         }
       ],
-      "deviceId": "56",
-      "positions": [
+      "buttons": [
         {
-          "argumentValue": "0.0",
-          "name": "Mute",
-          "actionID": "3011"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Monitor",
-          "actionID": "3011",
-          "stopActionID": "3011",
-          "stopActionValue": "0.0"
+          "deviceId": "56",
+          "pushId": "3011",
+          "pushValue": "1.0",
+          "releaseId": "3011",
+          "releaseValue": "0.0"
         }
       ]
     },
@@ -11832,10 +11668,10 @@
       }
     },
     {
-      "heliosType": "DCS.Common.Switch",
+      "heliosType": "DCS.Common.PushButton",
       "device": "Interphone ICS5",
       "name": "R4 HF Monitor/Mute Switch",
-      "description": "Current position of this switch.",
+      "description": "Current state of this button.",
       "exports": [
         {
           "format": "%1d",
@@ -11843,19 +11679,13 @@
           "id": "1106"
         }
       ],
-      "deviceId": "56",
-      "positions": [
+      "buttons": [
         {
-          "argumentValue": "0.0",
-          "name": "Mute",
-          "actionID": "3016"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Monitor",
-          "actionID": "3016",
-          "stopActionID": "3016",
-          "stopActionValue": "0.0"
+          "deviceId": "56",
+          "pushId": "3016",
+          "pushValue": "1.0",
+          "releaseId": "3016",
+          "releaseValue": "0.0"
         }
       ]
     },
@@ -11883,10 +11713,10 @@
       }
     },
     {
-      "heliosType": "DCS.Common.Switch",
+      "heliosType": "DCS.Common.PushButton",
       "device": "Interphone ICS5",
       "name": "R5 FM2 Monitor/Mute Switch",
-      "description": "Current position of this switch.",
+      "description": "Current state of this button.",
       "exports": [
         {
           "format": "%1d",
@@ -11894,19 +11724,13 @@
           "id": "1108"
         }
       ],
-      "deviceId": "56",
-      "positions": [
+      "buttons": [
         {
-          "argumentValue": "0.0",
-          "name": "Mute",
-          "actionID": "3021"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Monitor",
-          "actionID": "3021",
-          "stopActionID": "3021",
-          "stopActionValue": "0.0"
+          "deviceId": "56",
+          "pushId": "3021",
+          "pushValue": "1.0",
+          "releaseId": "3021",
+          "releaseValue": "0.0"
         }
       ]
     },
@@ -11934,10 +11758,10 @@
       }
     },
     {
-      "heliosType": "DCS.Common.Switch",
+      "heliosType": "DCS.Common.PushButton",
       "device": "Interphone ICS5",
       "name": "R6 Spare Monitor/Mute Switch",
-      "description": "Current position of this switch.",
+      "description": "Current state of this button.",
       "exports": [
         {
           "format": "%1d",
@@ -11945,19 +11769,13 @@
           "id": "1110"
         }
       ],
-      "deviceId": "56",
-      "positions": [
+      "buttons": [
         {
-          "argumentValue": "0.0",
-          "name": "Mute",
-          "actionID": "3026"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Monitor",
-          "actionID": "3026",
-          "stopActionID": "3026",
-          "stopActionValue": "0.0"
+          "deviceId": "56",
+          "pushId": "3026",
+          "pushValue": "1.0",
+          "releaseId": "3026",
+          "releaseValue": "0.0"
         }
       ]
     },
@@ -11985,10 +11803,10 @@
       }
     },
     {
-      "heliosType": "DCS.Common.Switch",
+      "heliosType": "DCS.Common.PushButton",
       "device": "Interphone ICS5",
       "name": "R7 RWR Monitor/Mute Switch",
-      "description": "Current position of this switch.",
+      "description": "Current state of this button.",
       "exports": [
         {
           "format": "%1d",
@@ -11996,19 +11814,13 @@
           "id": "1112"
         }
       ],
-      "deviceId": "56",
-      "positions": [
+      "buttons": [
         {
-          "argumentValue": "0.0",
-          "name": "Mute",
-          "actionID": "3031"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Monitor",
-          "actionID": "3031",
-          "stopActionID": "3031",
-          "stopActionValue": "0.0"
+          "deviceId": "56",
+          "pushId": "3031",
+          "pushValue": "1.0",
+          "releaseId": "3031",
+          "releaseValue": "0.0"
         }
       ]
     },
@@ -12036,10 +11848,10 @@
       }
     },
     {
-      "heliosType": "DCS.Common.Switch",
+      "heliosType": "DCS.Common.PushButton",
       "device": "Interphone ICS5",
       "name": "N1 VOR/ILS Monitor/Mute Switch",
-      "description": "Current position of this switch.",
+      "description": "Current state of this button.",
       "exports": [
         {
           "format": "%1d",
@@ -12047,19 +11859,13 @@
           "id": "1114"
         }
       ],
-      "deviceId": "56",
-      "positions": [
+      "buttons": [
         {
-          "argumentValue": "0.0",
-          "name": "Mute",
-          "actionID": "3036"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Monitor",
-          "actionID": "3036",
-          "stopActionID": "3036",
-          "stopActionValue": "0.0"
+          "deviceId": "56",
+          "pushId": "3036",
+          "pushValue": "1.0",
+          "releaseId": "3036",
+          "releaseValue": "0.0"
         }
       ]
     },
@@ -12087,10 +11893,10 @@
       }
     },
     {
-      "heliosType": "DCS.Common.Switch",
+      "heliosType": "DCS.Common.PushButton",
       "device": "Interphone ICS5",
       "name": "N2 TACAN Monitor/Mute Switch",
-      "description": "Current position of this switch.",
+      "description": "Current state of this button.",
       "exports": [
         {
           "format": "%1d",
@@ -12098,19 +11904,13 @@
           "id": "1116"
         }
       ],
-      "deviceId": "56",
-      "positions": [
+      "buttons": [
         {
-          "argumentValue": "0.0",
-          "name": "Mute",
-          "actionID": "3041"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Monitor",
-          "actionID": "3041",
-          "stopActionID": "3041",
-          "stopActionValue": "0.0"
+          "deviceId": "56",
+          "pushId": "3041",
+          "pushValue": "1.0",
+          "releaseId": "3041",
+          "releaseValue": "0.0"
         }
       ]
     },
@@ -12138,10 +11938,10 @@
       }
     },
     {
-      "heliosType": "DCS.Common.Switch",
+      "heliosType": "DCS.Common.PushButton",
       "device": "Interphone ICS5",
       "name": "N3 ADF Monitor/Mute Switch",
-      "description": "Current position of this switch.",
+      "description": "Current state of this button.",
       "exports": [
         {
           "format": "%1d",
@@ -12149,19 +11949,13 @@
           "id": "1118"
         }
       ],
-      "deviceId": "56",
-      "positions": [
+      "buttons": [
         {
-          "argumentValue": "0.0",
-          "name": "Mute",
-          "actionID": "3046"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Monitor",
-          "actionID": "3046",
-          "stopActionID": "3046",
-          "stopActionValue": "0.0"
+          "deviceId": "56",
+          "pushId": "3046",
+          "pushValue": "1.0",
+          "releaseId": "3046",
+          "releaseValue": "0.0"
         }
       ]
     },
@@ -12189,10 +11983,10 @@
       }
     },
     {
-      "heliosType": "DCS.Common.Switch",
+      "heliosType": "DCS.Common.PushButton",
       "device": "Interphone ICS5",
       "name": "N4 MB/CWS Monitor/Mute Switch",
-      "description": "Current position of this switch.",
+      "description": "Current state of this button.",
       "exports": [
         {
           "format": "%1d",
@@ -12200,19 +11994,13 @@
           "id": "1120"
         }
       ],
-      "deviceId": "56",
-      "positions": [
+      "buttons": [
         {
-          "argumentValue": "0.0",
-          "name": "Mute",
-          "actionID": "3051"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Monitor",
-          "actionID": "3051",
-          "stopActionID": "3051",
-          "stopActionValue": "0.0"
+          "deviceId": "56",
+          "pushId": "3051",
+          "pushValue": "1.0",
+          "releaseId": "3051",
+          "releaseValue": "0.0"
         }
       ]
     },
@@ -12229,6 +12017,7 @@
         }
       ],
       "deviceId": "56",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.00",
@@ -12288,23 +12077,23 @@
       ]
     },
     {
-      "heliosType": "DCS.Common.Axis",
+      "heliosType": "DCS.Common.RotaryEncoder",
       "device": "Interphone ICS5",
       "name": "Master Volume Knob",
-      "description": "Current value of this axis.",
       "exports": [
         {
-          "format": "%.3f",
+          "format": "%.2f",
           "isExportedEveryFrame": false,
           "id": "1122"
         }
       ],
-      "loop": false,
       "argumentValue": 0.1,
-      "argumentMin": 0.0,
-      "argumentMax": 1.0,
       "actions": {
-        "set": {
+        "increment": {
+          "deviceId": "56",
+          "actionId": "3056"
+        },
+        "decrement": {
           "deviceId": "56",
           "actionId": "3056"
         }
@@ -12477,10 +12266,10 @@
       }
     },
     {
-      "heliosType": "DCS.Common.Switch",
+      "heliosType": "DCS.Common.PushButton",
       "device": "Interphone ICS6",
       "name": "R1 FM1 Monitor/Mute Switch",
-      "description": "Current position of this switch.",
+      "description": "Current state of this button.",
       "exports": [
         {
           "format": "%1d",
@@ -12488,19 +12277,13 @@
           "id": "691"
         }
       ],
-      "deviceId": "57",
-      "positions": [
+      "buttons": [
         {
-          "argumentValue": "0.0",
-          "name": "Mute",
-          "actionID": "3001"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Monitor",
-          "actionID": "3001",
-          "stopActionID": "3001",
-          "stopActionValue": "0.0"
+          "deviceId": "57",
+          "pushId": "3001",
+          "pushValue": "1.0",
+          "releaseId": "3001",
+          "releaseValue": "0.0"
         }
       ]
     },
@@ -12528,10 +12311,10 @@
       }
     },
     {
-      "heliosType": "DCS.Common.Switch",
+      "heliosType": "DCS.Common.PushButton",
       "device": "Interphone ICS6",
       "name": "R2 UHF Monitor/Mute Switch",
-      "description": "Current position of this switch.",
+      "description": "Current state of this button.",
       "exports": [
         {
           "format": "%1d",
@@ -12539,19 +12322,13 @@
           "id": "693"
         }
       ],
-      "deviceId": "57",
-      "positions": [
+      "buttons": [
         {
-          "argumentValue": "0.0",
-          "name": "Mute",
-          "actionID": "3006"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Monitor",
-          "actionID": "3006",
-          "stopActionID": "3006",
-          "stopActionValue": "0.0"
+          "deviceId": "57",
+          "pushId": "3006",
+          "pushValue": "1.0",
+          "releaseId": "3006",
+          "releaseValue": "0.0"
         }
       ]
     },
@@ -12579,10 +12356,10 @@
       }
     },
     {
-      "heliosType": "DCS.Common.Switch",
+      "heliosType": "DCS.Common.PushButton",
       "device": "Interphone ICS6",
       "name": "R3 VHF Monitor/Mute Switch",
-      "description": "Current position of this switch.",
+      "description": "Current state of this button.",
       "exports": [
         {
           "format": "%1d",
@@ -12590,19 +12367,13 @@
           "id": "695"
         }
       ],
-      "deviceId": "57",
-      "positions": [
+      "buttons": [
         {
-          "argumentValue": "0.0",
-          "name": "Mute",
-          "actionID": "3011"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Monitor",
-          "actionID": "3011",
-          "stopActionID": "3011",
-          "stopActionValue": "0.0"
+          "deviceId": "57",
+          "pushId": "3011",
+          "pushValue": "1.0",
+          "releaseId": "3011",
+          "releaseValue": "0.0"
         }
       ]
     },
@@ -12630,10 +12401,10 @@
       }
     },
     {
-      "heliosType": "DCS.Common.Switch",
+      "heliosType": "DCS.Common.PushButton",
       "device": "Interphone ICS6",
       "name": "R4 HF Monitor/Mute Switch",
-      "description": "Current position of this switch.",
+      "description": "Current state of this button.",
       "exports": [
         {
           "format": "%1d",
@@ -12641,19 +12412,13 @@
           "id": "697"
         }
       ],
-      "deviceId": "57",
-      "positions": [
+      "buttons": [
         {
-          "argumentValue": "0.0",
-          "name": "Mute",
-          "actionID": "3016"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Monitor",
-          "actionID": "3016",
-          "stopActionID": "3016",
-          "stopActionValue": "0.0"
+          "deviceId": "57",
+          "pushId": "3016",
+          "pushValue": "1.0",
+          "releaseId": "3016",
+          "releaseValue": "0.0"
         }
       ]
     },
@@ -12681,10 +12446,10 @@
       }
     },
     {
-      "heliosType": "DCS.Common.Switch",
+      "heliosType": "DCS.Common.PushButton",
       "device": "Interphone ICS6",
       "name": "R5 FM2 Monitor/Mute Switch",
-      "description": "Current position of this switch.",
+      "description": "Current state of this button.",
       "exports": [
         {
           "format": "%1d",
@@ -12692,19 +12457,13 @@
           "id": "699"
         }
       ],
-      "deviceId": "57",
-      "positions": [
+      "buttons": [
         {
-          "argumentValue": "0.0",
-          "name": "Mute",
-          "actionID": "3021"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Monitor",
-          "actionID": "3021",
-          "stopActionID": "3021",
-          "stopActionValue": "0.0"
+          "deviceId": "57",
+          "pushId": "3021",
+          "pushValue": "1.0",
+          "releaseId": "3021",
+          "releaseValue": "0.0"
         }
       ]
     },
@@ -12732,10 +12491,10 @@
       }
     },
     {
-      "heliosType": "DCS.Common.Switch",
+      "heliosType": "DCS.Common.PushButton",
       "device": "Interphone ICS6",
       "name": "R6 Spare Monitor/Mute Switch",
-      "description": "Current position of this switch.",
+      "description": "Current state of this button.",
       "exports": [
         {
           "format": "%1d",
@@ -12743,19 +12502,13 @@
           "id": "701"
         }
       ],
-      "deviceId": "57",
-      "positions": [
+      "buttons": [
         {
-          "argumentValue": "0.0",
-          "name": "Mute",
-          "actionID": "3026"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Monitor",
-          "actionID": "3026",
-          "stopActionID": "3026",
-          "stopActionValue": "0.0"
+          "deviceId": "57",
+          "pushId": "3026",
+          "pushValue": "1.0",
+          "releaseId": "3026",
+          "releaseValue": "0.0"
         }
       ]
     },
@@ -12783,10 +12536,10 @@
       }
     },
     {
-      "heliosType": "DCS.Common.Switch",
+      "heliosType": "DCS.Common.PushButton",
       "device": "Interphone ICS6",
       "name": "R7 RWR Monitor/Mute Switch",
-      "description": "Current position of this switch.",
+      "description": "Current state of this button.",
       "exports": [
         {
           "format": "%1d",
@@ -12794,19 +12547,13 @@
           "id": "703"
         }
       ],
-      "deviceId": "57",
-      "positions": [
+      "buttons": [
         {
-          "argumentValue": "0.0",
-          "name": "Mute",
-          "actionID": "3031"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Monitor",
-          "actionID": "3031",
-          "stopActionID": "3031",
-          "stopActionValue": "0.0"
+          "deviceId": "57",
+          "pushId": "3031",
+          "pushValue": "1.0",
+          "releaseId": "3031",
+          "releaseValue": "0.0"
         }
       ]
     },
@@ -12834,10 +12581,10 @@
       }
     },
     {
-      "heliosType": "DCS.Common.Switch",
+      "heliosType": "DCS.Common.PushButton",
       "device": "Interphone ICS6",
       "name": "N1 VOR/ILS Monitor/Mute Switch",
-      "description": "Current position of this switch.",
+      "description": "Current state of this button.",
       "exports": [
         {
           "format": "%1d",
@@ -12845,19 +12592,13 @@
           "id": "705"
         }
       ],
-      "deviceId": "57",
-      "positions": [
+      "buttons": [
         {
-          "argumentValue": "0.0",
-          "name": "Mute",
-          "actionID": "3036"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Monitor",
-          "actionID": "3036",
-          "stopActionID": "3036",
-          "stopActionValue": "0.0"
+          "deviceId": "57",
+          "pushId": "3036",
+          "pushValue": "1.0",
+          "releaseId": "3036",
+          "releaseValue": "0.0"
         }
       ]
     },
@@ -12885,10 +12626,10 @@
       }
     },
     {
-      "heliosType": "DCS.Common.Switch",
+      "heliosType": "DCS.Common.PushButton",
       "device": "Interphone ICS6",
       "name": "N2 TACAN Monitor/Mute Switch",
-      "description": "Current position of this switch.",
+      "description": "Current state of this button.",
       "exports": [
         {
           "format": "%1d",
@@ -12896,19 +12637,13 @@
           "id": "707"
         }
       ],
-      "deviceId": "57",
-      "positions": [
+      "buttons": [
         {
-          "argumentValue": "0.0",
-          "name": "Mute",
-          "actionID": "3041"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Monitor",
-          "actionID": "3041",
-          "stopActionID": "3041",
-          "stopActionValue": "0.0"
+          "deviceId": "57",
+          "pushId": "3041",
+          "pushValue": "1.0",
+          "releaseId": "3041",
+          "releaseValue": "0.0"
         }
       ]
     },
@@ -12936,10 +12671,10 @@
       }
     },
     {
-      "heliosType": "DCS.Common.Switch",
+      "heliosType": "DCS.Common.PushButton",
       "device": "Interphone ICS6",
       "name": "N3 ADF Monitor/Mute Switch",
-      "description": "Current position of this switch.",
+      "description": "Current state of this button.",
       "exports": [
         {
           "format": "%1d",
@@ -12947,19 +12682,13 @@
           "id": "709"
         }
       ],
-      "deviceId": "57",
-      "positions": [
+      "buttons": [
         {
-          "argumentValue": "0.0",
-          "name": "Mute",
-          "actionID": "3046"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Monitor",
-          "actionID": "3046",
-          "stopActionID": "3046",
-          "stopActionValue": "0.0"
+          "deviceId": "57",
+          "pushId": "3046",
+          "pushValue": "1.0",
+          "releaseId": "3046",
+          "releaseValue": "0.0"
         }
       ]
     },
@@ -12987,10 +12716,10 @@
       }
     },
     {
-      "heliosType": "DCS.Common.Switch",
+      "heliosType": "DCS.Common.PushButton",
       "device": "Interphone ICS6",
       "name": "N4 MB/CWS Monitor/Mute Switch",
-      "description": "Current position of this switch.",
+      "description": "Current state of this button.",
       "exports": [
         {
           "format": "%1d",
@@ -12998,19 +12727,13 @@
           "id": "711"
         }
       ],
-      "deviceId": "57",
-      "positions": [
+      "buttons": [
         {
-          "argumentValue": "0.0",
-          "name": "Mute",
-          "actionID": "3051"
-        },
-        {
-          "argumentValue": "1.0",
-          "name": "Monitor",
-          "actionID": "3051",
-          "stopActionID": "3051",
-          "stopActionValue": "0.0"
+          "deviceId": "57",
+          "pushId": "3051",
+          "pushValue": "1.0",
+          "releaseId": "3051",
+          "releaseValue": "0.0"
         }
       ]
     },
@@ -13027,6 +12750,7 @@
         }
       ],
       "deviceId": "57",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.00",
@@ -13086,23 +12810,23 @@
       ]
     },
     {
-      "heliosType": "DCS.Common.Axis",
+      "heliosType": "DCS.Common.RotaryEncoder",
       "device": "Interphone ICS6",
       "name": "Master Volume Knob",
-      "description": "Current value of this axis.",
       "exports": [
         {
-          "format": "%.3f",
+          "format": "%.2f",
           "isExportedEveryFrame": false,
           "id": "713"
         }
       ],
-      "loop": false,
       "argumentValue": 0.1,
-      "argumentMin": 0.0,
-      "argumentMax": 1.0,
       "actions": {
-        "set": {
+        "increment": {
+          "deviceId": "57",
+          "actionId": "3056"
+        },
+        "decrement": {
           "deviceId": "57",
           "actionId": "3056"
         }
@@ -13377,6 +13101,7 @@
         }
       ],
       "deviceId": "24",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -13403,6 +13128,7 @@
         }
       ],
       "deviceId": "24",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -13434,6 +13160,7 @@
         }
       ],
       "deviceId": "24",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -13487,6 +13214,7 @@
         }
       ],
       "deviceId": "24",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -13518,6 +13246,7 @@
         }
       ],
       "deviceId": "6",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -13549,6 +13278,7 @@
         }
       ],
       "deviceId": "6",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "exitValue": "0.0",
@@ -13585,6 +13315,7 @@
         }
       ],
       "deviceId": "6",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "exitValue": "0.0",
@@ -13621,6 +13352,7 @@
         }
       ],
       "deviceId": "6",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "exitValue": "0.0",
@@ -14361,6 +14093,7 @@
         }
       ],
       "deviceId": "4",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -14392,6 +14125,7 @@
         }
       ],
       "deviceId": "4",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "exitValue": "0.0",
@@ -14428,6 +14162,7 @@
         }
       ],
       "deviceId": "4",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "exitValue": "0.0",
@@ -14464,6 +14199,7 @@
         }
       ],
       "deviceId": "4",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "exitValue": "0.0",
@@ -15204,6 +14940,7 @@
         }
       ],
       "deviceId": "5",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -15235,6 +14972,7 @@
         }
       ],
       "deviceId": "5",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "exitValue": "0.0",
@@ -15271,6 +15009,7 @@
         }
       ],
       "deviceId": "5",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "exitValue": "0.0",
@@ -15307,6 +15046,7 @@
         }
       ],
       "deviceId": "5",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "exitValue": "0.0",
@@ -16047,6 +15787,7 @@
         }
       ],
       "deviceId": "7",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -16078,6 +15819,7 @@
         }
       ],
       "deviceId": "7",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "exitValue": "0.0",
@@ -16114,6 +15856,7 @@
         }
       ],
       "deviceId": "7",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "exitValue": "0.0",
@@ -16150,6 +15893,7 @@
         }
       ],
       "deviceId": "7",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "exitValue": "0.0",
@@ -16890,6 +16634,7 @@
         }
       ],
       "deviceId": "8",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -16921,6 +16666,7 @@
         }
       ],
       "deviceId": "8",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "exitValue": "0.0",
@@ -16957,6 +16703,7 @@
         }
       ],
       "deviceId": "8",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "exitValue": "0.0",
@@ -16993,6 +16740,7 @@
         }
       ],
       "deviceId": "8",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "exitValue": "0.0",
@@ -17733,6 +17481,7 @@
         }
       ],
       "deviceId": "29",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -17786,6 +17535,7 @@
         }
       ],
       "deviceId": "29",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -17817,6 +17567,7 @@
         }
       ],
       "deviceId": "29",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -17848,6 +17599,7 @@
         }
       ],
       "deviceId": "29",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -17879,6 +17631,7 @@
         }
       ],
       "deviceId": "29",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -17932,6 +17685,7 @@
         }
       ],
       "deviceId": "29",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -18007,6 +17761,7 @@
         }
       ],
       "deviceId": "27",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -18055,6 +17810,7 @@
         }
       ],
       "deviceId": "19",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -18081,6 +17837,7 @@
         }
       ],
       "deviceId": "19",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -18226,6 +17983,7 @@
         }
       ],
       "deviceId": "29",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -18257,6 +18015,7 @@
         }
       ],
       "deviceId": "29",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -18288,6 +18047,7 @@
         }
       ],
       "deviceId": "29",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -18319,6 +18079,7 @@
         }
       ],
       "deviceId": "29",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -18416,6 +18177,7 @@
         }
       ],
       "deviceId": "29",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -18447,6 +18209,7 @@
         }
       ],
       "deviceId": "29",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -18495,6 +18258,7 @@
         }
       ],
       "deviceId": "29",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -18526,6 +18290,7 @@
         }
       ],
       "deviceId": "29",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -18579,6 +18344,7 @@
         }
       ],
       "deviceId": "29",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -18632,6 +18398,7 @@
         }
       ],
       "deviceId": "29",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -18663,6 +18430,7 @@
         }
       ],
       "deviceId": "29",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -18694,6 +18462,7 @@
         }
       ],
       "deviceId": "29",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -18725,6 +18494,7 @@
         }
       ],
       "deviceId": "29",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -18756,6 +18526,7 @@
         }
       ],
       "deviceId": "29",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -18787,6 +18558,7 @@
         }
       ],
       "deviceId": "29",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -18863,6 +18635,7 @@
         }
       ],
       "deviceId": "19",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -24284,6 +24057,7 @@
         }
       ],
       "deviceId": "19",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -24310,6 +24084,7 @@
         }
       ],
       "deviceId": "19",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -24412,6 +24187,7 @@
         }
       ],
       "deviceId": "19",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -24443,6 +24219,7 @@
         }
       ],
       "deviceId": "19",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -24469,6 +24246,7 @@
         }
       ],
       "deviceId": "19",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
