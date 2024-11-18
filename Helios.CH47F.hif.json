@@ -1,7 +1,7 @@
 {
   "source": "Helios",
   "version": "1.6.6120.0000",
-  "commit": "20e455f0a53075ba4328ed870aa5a651d3340a5c",
+  "commit": "9f22afc622708e560ba0db34271c47e924f07654",
   "type": "Existing",
   "name": "DCS CH-47F Chinook",
   "module": "CH-47Fbl1",
@@ -7703,6 +7703,114 @@
           "actionId": "3196"
         }
       }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Flight Controls",
+      "name": "Cyclic Pitch",
+      "description": "-100 to 100",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "744"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": -1.0,
+            "mappedValue": -100.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 100.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Percentage of Travel",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Flight Controls",
+      "name": "Cyclic Roll",
+      "description": "-100 to 100",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "745"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": -1.0,
+            "mappedValue": -100.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 100.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Percentage of Travel",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Flight Controls",
+      "name": "Pedals",
+      "description": "-100 to 100",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "746"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": -1.0,
+            "mappedValue": -100.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 100.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Percentage of Travel",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Flight Controls",
+      "name": "Thrust Lever Position",
+      "description": "0 to 100",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "747"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": 0.0,
+            "mappedValue": 0.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 100.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Percentage of Travel",
+      "unit": "Numeric"
     },
     {
       "heliosType": "DCS.Common.Switch",
