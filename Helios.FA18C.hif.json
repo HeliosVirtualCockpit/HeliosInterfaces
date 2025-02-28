@@ -1,7 +1,7 @@
 {
   "source": "Helios",
-  "version": "1.6.6110.0000",
-  "commit": "ec170b1a3409d0f5a557de311278248cdf51495e",
+  "version": "1.6.6120.0000",
+  "commit": "70544cea7c7e1e6aaa6ec83c2f8074b134f271a2",
   "type": "Existing",
   "name": "DCS F/A-18C",
   "module": "FA-18C_hornet",
@@ -3594,7 +3594,7 @@
       "positions": [
         {
           "argumentValue": "1.0",
-          "name": "STOP",
+          "name": "ORIDE",
           "actionID": "3005"
         },
         {
@@ -3604,7 +3604,7 @@
         },
         {
           "argumentValue": "-1.0",
-          "name": "ORIDE",
+          "name": "STOP",
           "actionID": "3005"
         }
       ]
@@ -3626,7 +3626,7 @@
       "positions": [
         {
           "argumentValue": "1.0",
-          "name": "STOP",
+          "name": "ORIDE",
           "actionID": "3004"
         },
         {
@@ -3636,7 +3636,7 @@
         },
         {
           "argumentValue": "-1.0",
-          "name": "ORIDE",
+          "name": "STOP",
           "actionID": "3004"
         }
       ]
@@ -4396,7 +4396,7 @@
       ],
       "loop": false,
       "argumentValue": 0.1,
-      "argumentMin": 0.5,
+      "argumentMin": 0.0,
       "argumentMax": 1.0,
       "actions": {
         "set": {
