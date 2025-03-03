@@ -1,7 +1,7 @@
 {
   "source": "Helios",
-  "version": "1.6.6100.0004",
-  "commit": "1246f1de74e8f51c6e68cc2dd065338f010c5b36",
+  "version": "1.6.6130.0000",
+  "commit": "cd457d787049068c82d9dbc2de20931b8a26ec12",
   "type": "Existing",
   "name": "DCS A-10C",
   "module": "A-10C",
@@ -22,6 +22,7 @@
         }
       ],
       "deviceId": "22",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -83,6 +84,7 @@
         }
       ],
       "deviceId": "22",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -119,6 +121,7 @@
         }
       ],
       "deviceId": "22",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -145,6 +148,7 @@
         }
       ],
       "deviceId": "22",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -430,6 +434,7 @@
         }
       ],
       "deviceId": "7",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.2",
@@ -461,6 +466,7 @@
         }
       ],
       "deviceId": "7",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.2",
@@ -492,6 +498,7 @@
         }
       ],
       "deviceId": "7",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.2",
@@ -523,6 +530,7 @@
         }
       ],
       "deviceId": "7",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -549,6 +557,7 @@
         }
       ],
       "deviceId": "7",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.2",
@@ -580,6 +589,7 @@
         }
       ],
       "deviceId": "7",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -606,6 +616,7 @@
         }
       ],
       "deviceId": "7",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -632,6 +643,7 @@
         }
       ],
       "deviceId": "7",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -658,6 +670,7 @@
         }
       ],
       "deviceId": "7",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -684,6 +697,7 @@
         }
       ],
       "deviceId": "7",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.2",
@@ -732,6 +746,7 @@
         }
       ],
       "deviceId": "62",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -877,6 +892,7 @@
         }
       ],
       "deviceId": "38",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -929,6 +945,7 @@
         }
       ],
       "deviceId": "38",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -960,6 +977,7 @@
         }
       ],
       "deviceId": "38",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -986,6 +1004,7 @@
         }
       ],
       "deviceId": "38",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -1053,6 +1072,7 @@
         }
       ],
       "deviceId": "38",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "-1",
@@ -1108,6 +1128,7 @@
         }
       ],
       "deviceId": "38",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "-1",
@@ -1163,6 +1184,7 @@
         }
       ],
       "deviceId": "38",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -1189,6 +1211,7 @@
         }
       ],
       "deviceId": "38",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -1214,6 +1237,7 @@
         }
       ],
       "deviceId": "38",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -1243,6 +1267,7 @@
         }
       ],
       "deviceId": "38",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -1272,6 +1297,7 @@
         }
       ],
       "deviceId": "38",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -1301,6 +1327,7 @@
         }
       ],
       "deviceId": "38",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -1331,6 +1358,7 @@
         }
       ],
       "deviceId": "38",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "-1",
@@ -1419,6 +1447,7 @@
         }
       ],
       "deviceId": "38",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -1444,6 +1473,7 @@
         }
       ],
       "deviceId": "38",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -1474,6 +1504,7 @@
         }
       ],
       "deviceId": "38",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -2382,6 +2413,7 @@
         }
       ],
       "deviceId": "9",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "exitValue": "0.0",
@@ -4762,6 +4794,7 @@
         }
       ],
       "deviceId": "4",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -4811,6 +4844,7 @@
         }
       ],
       "deviceId": "4",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -4846,6 +4880,7 @@
         }
       ],
       "deviceId": "4",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -4881,6 +4916,7 @@
         }
       ],
       "deviceId": "4",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -4916,6 +4952,7 @@
         }
       ],
       "deviceId": "4",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -4951,6 +4988,7 @@
         }
       ],
       "deviceId": "4",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -5072,6 +5110,7 @@
         }
       ],
       "deviceId": "73",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -5103,6 +5142,7 @@
         }
       ],
       "deviceId": "73",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -5156,6 +5196,7 @@
         }
       ],
       "deviceId": "1",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -5182,21 +5223,31 @@
         }
       ],
       "deviceId": "1",
+      "incrementalPulseValue": "",
       "positions": [
         {
+          "exitValue": "0",
           "argumentValue": "1",
           "name": "STBY",
-          "actionID": "3002"
+          "actionID": "3002",
+          "stopActionID": "3002",
+          "stopActionValue": "0"
         },
         {
+          "exitValue": "0",
           "argumentValue": "0",
-          "name": "Off",
-          "actionID": "3002"
+          "name": "OFF",
+          "actionID": "3055",
+          "stopActionID": "3055",
+          "stopActionValue": "0"
         },
         {
-          "argumentValue": "-1.0",
-          "name": "Test",
-          "actionID": "3002"
+          "exitValue": "0",
+          "argumentValue": "-1",
+          "name": "TEST",
+          "actionID": "3055",
+          "stopActionID": "3055",
+          "stopActionValue": "0"
         }
       ]
     },
@@ -5213,6 +5264,7 @@
         }
       ],
       "deviceId": "49",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -5239,6 +5291,7 @@
         }
       ],
       "deviceId": "1",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -5265,6 +5318,7 @@
         }
       ],
       "deviceId": "1",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -5291,6 +5345,7 @@
         }
       ],
       "deviceId": "1",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -5317,6 +5372,7 @@
         }
       ],
       "deviceId": "37",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -5343,6 +5399,7 @@
         }
       ],
       "deviceId": "37",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -5369,6 +5426,7 @@
         }
       ],
       "deviceId": "37",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -5404,6 +5462,7 @@
         }
       ],
       "deviceId": "37",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -5439,6 +5498,7 @@
         }
       ],
       "deviceId": "37",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -5538,6 +5598,7 @@
         }
       ],
       "deviceId": "41",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -5587,6 +5648,7 @@
         }
       ],
       "deviceId": "41",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -5618,6 +5680,7 @@
         }
       ],
       "deviceId": "41",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -5644,6 +5707,7 @@
         }
       ],
       "deviceId": "41",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -5686,6 +5750,7 @@
         }
       ],
       "deviceId": "41",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -5717,6 +5782,7 @@
         }
       ],
       "deviceId": "41",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -5766,6 +5832,7 @@
         }
       ],
       "deviceId": "41",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.3",
@@ -5847,6 +5914,7 @@
         }
       ],
       "deviceId": "50",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0",
@@ -5873,6 +5941,7 @@
         }
       ],
       "deviceId": "50",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0",
@@ -5899,6 +5968,7 @@
         }
       ],
       "deviceId": "50",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0",
@@ -5925,6 +5995,7 @@
         }
       ],
       "deviceId": "50",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "-1",
@@ -6055,6 +6126,7 @@
         }
       ],
       "deviceId": "36",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -6081,6 +6153,7 @@
         }
       ],
       "deviceId": "36",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -6107,6 +6180,7 @@
         }
       ],
       "deviceId": "36",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -6133,6 +6207,7 @@
         }
       ],
       "deviceId": "36",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -6159,6 +6234,7 @@
         }
       ],
       "deviceId": "36",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -6185,6 +6261,7 @@
         }
       ],
       "deviceId": "36",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -6211,6 +6288,7 @@
         }
       ],
       "deviceId": "36",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -6237,6 +6315,7 @@
         }
       ],
       "deviceId": "36",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -6263,6 +6342,7 @@
         }
       ],
       "deviceId": "36",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -6311,6 +6391,7 @@
         }
       ],
       "deviceId": "36",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -6337,6 +6418,7 @@
         }
       ],
       "deviceId": "36",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -6363,6 +6445,7 @@
         }
       ],
       "deviceId": "36",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -6389,6 +6472,7 @@
         }
       ],
       "deviceId": "36",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -6415,6 +6499,7 @@
         }
       ],
       "deviceId": "36",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -6441,6 +6526,7 @@
         }
       ],
       "deviceId": "36",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -6563,6 +6649,7 @@
         }
       ],
       "deviceId": "44",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -6612,6 +6699,7 @@
         }
       ],
       "deviceId": "44",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -6643,6 +6731,7 @@
         }
       ],
       "deviceId": "44",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -7022,6 +7111,7 @@
         }
       ],
       "deviceId": "43",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -7063,6 +7153,7 @@
         }
       ],
       "deviceId": "43",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -7094,6 +7185,7 @@
         }
       ],
       "deviceId": "43",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -7125,6 +7217,7 @@
         }
       ],
       "deviceId": "43",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -7156,6 +7249,7 @@
         }
       ],
       "deviceId": "43",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -7187,6 +7281,7 @@
         }
       ],
       "deviceId": "43",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -7218,6 +7313,7 @@
         }
       ],
       "deviceId": "43",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -7249,6 +7345,7 @@
         }
       ],
       "deviceId": "43",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -7280,6 +7377,7 @@
         }
       ],
       "deviceId": "43",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -7556,6 +7654,7 @@
         }
       ],
       "deviceId": "53",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0",
@@ -7700,6 +7799,7 @@
         }
       ],
       "deviceId": "58",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -7749,6 +7849,7 @@
         }
       ],
       "deviceId": "58",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -7798,6 +7899,7 @@
         }
       ],
       "deviceId": "58",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -7847,6 +7949,7 @@
         }
       ],
       "deviceId": "58",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -7896,6 +7999,7 @@
         }
       ],
       "deviceId": "58",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -7945,6 +8049,7 @@
         }
       ],
       "deviceId": "58",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -7994,6 +8099,7 @@
         }
       ],
       "deviceId": "58",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -8043,6 +8149,7 @@
         }
       ],
       "deviceId": "58",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -8069,6 +8176,7 @@
         }
       ],
       "deviceId": "58",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -8118,6 +8226,7 @@
         }
       ],
       "deviceId": "58",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -8186,6 +8295,7 @@
         }
       ],
       "deviceId": "69",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -8225,6 +8335,7 @@
         }
       ],
       "deviceId": "69",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -8251,6 +8362,7 @@
         }
       ],
       "deviceId": "69",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -8282,6 +8394,7 @@
         }
       ],
       "deviceId": "69",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -8328,6 +8441,7 @@
         }
       ],
       "deviceId": "69",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -8359,6 +8473,7 @@
         }
       ],
       "deviceId": "69",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -9167,6 +9282,7 @@
         }
       ],
       "deviceId": "2",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.2",
@@ -9244,6 +9360,7 @@
         }
       ],
       "deviceId": "49",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.2",
@@ -9298,6 +9415,7 @@
         }
       ],
       "deviceId": "49",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -9351,6 +9469,7 @@
         }
       ],
       "deviceId": "49",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -9404,6 +9523,7 @@
         }
       ],
       "deviceId": "49",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -9476,6 +9596,7 @@
         }
       ],
       "deviceId": "49",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -9502,6 +9623,7 @@
         }
       ],
       "deviceId": "49",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -9574,6 +9696,7 @@
         }
       ],
       "deviceId": "49",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.2",
@@ -9663,6 +9786,7 @@
         }
       ],
       "deviceId": "39",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "exitValue": "0.5",
@@ -9699,6 +9823,7 @@
         }
       ],
       "deviceId": "39",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0",
@@ -9725,6 +9850,7 @@
         }
       ],
       "deviceId": "39",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -9773,6 +9899,7 @@
         }
       ],
       "deviceId": "39",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -9841,6 +9968,7 @@
         }
       ],
       "deviceId": "39",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -9895,6 +10023,7 @@
         }
       ],
       "deviceId": "39",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0",
@@ -9921,6 +10050,7 @@
         }
       ],
       "deviceId": "39",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0",
@@ -9947,6 +10077,7 @@
         }
       ],
       "deviceId": "39",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -10103,6 +10234,7 @@
         }
       ],
       "deviceId": "43",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -10134,6 +10266,7 @@
         }
       ],
       "deviceId": "54",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -10165,6 +10298,7 @@
         }
       ],
       "deviceId": "54",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -10191,6 +10325,7 @@
         }
       ],
       "deviceId": "12",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -10217,6 +10352,7 @@
         }
       ],
       "deviceId": "12",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -10505,6 +10641,7 @@
         }
       ],
       "deviceId": "46",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0",
@@ -10558,21 +10695,31 @@
         }
       ],
       "deviceId": "40",
+      "incrementalPulseValue": "",
       "positions": [
         {
+          "exitValue": "0",
           "argumentValue": "1",
           "name": "Emergency",
-          "actionID": "3003"
+          "actionID": "3003",
+          "stopActionID": "3003",
+          "stopActionValue": "0"
         },
         {
+          "exitValue": "0",
           "argumentValue": "0",
           "name": "Normal",
-          "actionID": "3003"
+          "actionID": "3004",
+          "stopActionID": "3004",
+          "stopActionValue": "0"
         },
         {
+          "exitValue": "0",
           "argumentValue": "-1",
           "name": "Test Mask",
-          "actionID": "3003"
+          "actionID": "3004",
+          "stopActionID": "3004",
+          "stopActionValue": "0"
         }
       ]
     },
@@ -10589,6 +10736,7 @@
         }
       ],
       "deviceId": "40",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -10615,6 +10763,7 @@
         }
       ],
       "deviceId": "40",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -10671,6 +10820,7 @@
         }
       ],
       "deviceId": "67",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -11515,6 +11665,7 @@
         }
       ],
       "deviceId": "3",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.2",
@@ -11952,6 +12103,7 @@
         }
       ],
       "deviceId": "74",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "-1",
@@ -12034,6 +12186,7 @@
         }
       ],
       "deviceId": "74",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -12075,6 +12228,7 @@
         }
       ],
       "deviceId": "57",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -12116,6 +12270,7 @@
         }
       ],
       "deviceId": "57",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -12429,6 +12584,7 @@
         }
       ],
       "deviceId": "57",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -12890,6 +13046,7 @@
         }
       ],
       "deviceId": "8",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "exitValue": "0.0",
@@ -12926,6 +13083,7 @@
         }
       ],
       "deviceId": "8",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "exitValue": "0.0",
@@ -12962,6 +13120,7 @@
         }
       ],
       "deviceId": "8",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "exitValue": "0.0",
@@ -12998,6 +13157,7 @@
         }
       ],
       "deviceId": "8",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "exitValue": "0.0",
@@ -13034,6 +13194,7 @@
         }
       ],
       "deviceId": "8",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "exitValue": "0.0",
@@ -13163,6 +13324,7 @@
         }
       ],
       "deviceId": "54",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -13302,6 +13464,7 @@
         }
       ],
       "deviceId": "54",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -13333,6 +13496,7 @@
         }
       ],
       "deviceId": "54",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -13369,6 +13533,7 @@
         }
       ],
       "deviceId": "54",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -13400,6 +13565,7 @@
         }
       ],
       "deviceId": "54",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0",
@@ -13506,6 +13672,7 @@
         }
       ],
       "deviceId": "54",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0",
@@ -13613,6 +13780,7 @@
         }
       ],
       "deviceId": "55",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "-1",
@@ -13646,6 +13814,7 @@
         }
       ],
       "deviceId": "55",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -13727,6 +13896,7 @@
         }
       ],
       "deviceId": "55",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -13873,6 +14043,7 @@
         }
       ],
       "deviceId": "56",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "-1",
@@ -13906,6 +14077,7 @@
         }
       ],
       "deviceId": "56",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -13987,6 +14159,7 @@
         }
       ],
       "deviceId": "56",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
