@@ -1,7 +1,7 @@
 {
   "source": "Helios",
-  "version": "1.6.6120.0000",
-  "commit": "70544cea7c7e1e6aaa6ec83c2f8074b134f271a2",
+  "version": "1.6.6130.0000",
+  "commit": "5ae1e7225b4954e933cf9bc4ee1cf158da7c8dbb",
   "type": "Existing",
   "name": "DCS F/A-18C",
   "module": "FA-18C_hornet",
@@ -3480,8 +3480,72 @@
             "mappedValue": 0.0
           },
           {
+            "value": 0.0445,
+            "mappedValue": 60.0
+          },
+          {
+            "value": 0.15,
+            "mappedValue": 100.0
+          },
+          {
+            "value": 0.348,
+            "mappedValue": 150.0
+          },
+          {
+            "value": 0.586,
+            "mappedValue": 200.0
+          },
+          {
+            "value": 0.636,
+            "mappedValue": 250.0
+          },
+          {
+            "value": 0.673,
+            "mappedValue": 300.0
+          },
+          {
+            "value": 0.715,
+            "mappedValue": 350.0
+          },
+          {
+            "value": 0.748,
+            "mappedValue": 400.0
+          },
+          {
+            "value": 0.782,
+            "mappedValue": 450.0
+          },
+          {
+            "value": 0.819,
+            "mappedValue": 500.0
+          },
+          {
+            "value": 0.849,
+            "mappedValue": 550.0
+          },
+          {
+            "value": 0.87,
+            "mappedValue": 600.0
+          },
+          {
+            "value": 0.898,
+            "mappedValue": 650.0
+          },
+          {
+            "value": 0.922,
+            "mappedValue": 700.0
+          },
+          {
+            "value": 0.95,
+            "mappedValue": 750.0
+          },
+          {
+            "value": 0.976,
+            "mappedValue": 800.0
+          },
+          {
             "value": 1.0,
-            "mappedValue": 360.0
+            "mappedValue": 850.0
           }
         ],
         "precision": 1
@@ -3506,8 +3570,48 @@
             "mappedValue": -6000.0
           },
           {
+            "value": -0.83,
+            "mappedValue": -4000.0
+          },
+          {
+            "value": -0.73,
+            "mappedValue": -3000.0
+          },
+          {
+            "value": -0.605,
+            "mappedValue": -2000.0
+          },
+          {
+            "value": -0.4,
+            "mappedValue": -1000.0
+          },
+          {
+            "value": -0.22,
+            "mappedValue": -500.0
+          },
+          {
             "value": 0.0,
             "mappedValue": 0.0
+          },
+          {
+            "value": 0.22,
+            "mappedValue": 500.0
+          },
+          {
+            "value": 0.4,
+            "mappedValue": 1000.0
+          },
+          {
+            "value": 0.605,
+            "mappedValue": 2000.0
+          },
+          {
+            "value": 0.73,
+            "mappedValue": 3000.0
+          },
+          {
+            "value": 0.83,
+            "mappedValue": 4000.0
           },
           {
             "value": 1.0,
@@ -6700,7 +6804,7 @@
       ]
     },
     {
-      "heliosType": "DCS.Common.NetworkValue",
+      "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Radar Altimeter ID2163A",
       "name": "RADAR Altitude",
       "description": "Altitude in feet measured by RADAR.",
@@ -6710,11 +6814,63 @@
           "id": "286"
         }
       ],
-      "valueDescription": "",
+      "calibration": {
+        "points": [
+          {
+            "value": 0.0,
+            "mappedValue": -10.0
+          },
+          {
+            "value": 0.048,
+            "mappedValue": 0.0
+          },
+          {
+            "value": 0.171,
+            "mappedValue": 100.0
+          },
+          {
+            "value": 0.296,
+            "mappedValue": 200.0
+          },
+          {
+            "value": 0.416,
+            "mappedValue": 300.0
+          },
+          {
+            "value": 0.53,
+            "mappedValue": 400.0
+          },
+          {
+            "value": 0.616,
+            "mappedValue": 600.0
+          },
+          {
+            "value": 0.706,
+            "mappedValue": 800.0
+          },
+          {
+            "value": 0.799,
+            "mappedValue": 1000.0
+          },
+          {
+            "value": 0.886,
+            "mappedValue": 3000.0
+          },
+          {
+            "value": 0.974,
+            "mappedValue": 5000.0
+          },
+          {
+            "value": 0.98,
+            "mappedValue": 5100.0
+          }
+        ],
+        "precision": 1
+      },
       "unit": "Feet"
     },
     {
-      "heliosType": "DCS.Common.NetworkValue",
+      "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Radar Altimeter ID2163A",
       "name": "Minimum Height Indicator",
       "description": "Minimum Altitude in Feet.",
@@ -6724,7 +6880,31 @@
           "id": "287"
         }
       ],
-      "valueDescription": "",
+      "calibration": {
+        "points": [
+          {
+            "value": -0.03,
+            "mappedValue": 0.0
+          },
+          {
+            "value": 0.0,
+            "mappedValue": 0.031
+          },
+          {
+            "value": 0.5,
+            "mappedValue": 0.525
+          },
+          {
+            "value": 0.8,
+            "mappedValue": 0.802
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 0.982
+          }
+        ],
+        "precision": 4
+      },
       "unit": "Feet"
     },
     {
