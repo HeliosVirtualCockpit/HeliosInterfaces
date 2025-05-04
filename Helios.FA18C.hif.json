@@ -2804,7 +2804,7 @@
       "deviceId": "11",
       "incrementalPulseValue": "",
       "positions": [
-        {
+		{
           "argumentValue": "0.0",
           "name": "OFF",
           "actionID": "3001"
@@ -2823,7 +2823,7 @@
           "argumentValue": "0.3",
           "name": "R OFF",
           "actionID": "3001"
-        }
+        }        
       ]
     },
     {
@@ -3959,6 +3959,13 @@
           "stopActionID": "3005"
         },
         {
+          "exitValue": "0.5",
+          "argumentValue": "0.5",
+          "name": "Emergency Brake",
+          "actionID": "3005",
+          "stopActionID": "3005"
+        },
+        {
           "exitValue": "1.0",
           "argumentValue": "1.0",
           "name": "Parking Brake On",
@@ -4007,7 +4014,7 @@
           "stopActionValue": "0.000"
         }
       ]
-    },
+    },	
     {
       "heliosType": "DCS.Common.Switch",
       "device": "Gear system",
@@ -4277,7 +4284,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.Axis",
       "device": "HMD",
       "name": "HMD OFF/BRT Knob",
@@ -4508,6 +4515,68 @@
           "actionId": "3007"
         }
       }
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "IFEI",
+      "name": "Video Record Selector Switch HMD/LDDI/RDDI",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "175"
+        }
+      ],
+      "deviceId": "0",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "HMD",
+          "actionID": "3104"
+        },
+        {
+          "argumentValue": "0.5",
+          "name": "LDDI",
+          "actionID": "3104"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "RDDI",
+          "actionID": "3104"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "IFEI",
+      "name": "Video Record Selector Switch, HUD/LDIR/RDDI",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "176"
+        }
+      ],
+      "deviceId": "0",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "HUD",
+          "actionID": "3105"
+        },
+        {
+          "argumentValue": "0.5",
+          "name": "LDIR",
+          "actionID": "3105"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "RDDI",
+          "actionID": "3105"
+        }
+      ]
     },
     {
       "heliosType": "DCS.Common.Text",
@@ -4818,6 +4887,37 @@
       ]
     },
     {
+      "heliosType": "DCS.Common.Switch",
+      "device": "IFEI",
+      "name": "Video Record Mode Selector Switch, MAN/OFF/AUTO",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "314"
+        }
+      ],
+      "deviceId": "0",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "MAN",
+          "actionID": "3106"
+        },
+        {
+          "argumentValue": "0.5",
+          "name": "OFF",
+          "actionID": "3106"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "AUTO",
+          "actionID": "3106"
+        }
+      ]
+    },
+    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "IFEI",
       "name": "RPM Flag",
@@ -5122,7 +5222,7 @@
           "name": "GND",
           "actionID": "3001"
         },
-        {
+		{
           "argumentValue": "0.3",
           "name": "NAV",
           "actionID": "3001"
