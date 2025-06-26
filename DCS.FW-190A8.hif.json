@@ -1,6 +1,6 @@
 {
   "source": "DCSFlightPanels",
-  "version": "0x3800",
+  "version": "1.6.6130.4",
   "commit": "f454e5b763ae91b812da3b9ca3be6d4598cd9952",
   "type": "DCS",
   "name": "DCS FW-190A8",
@@ -3645,54 +3645,54 @@
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Indicator",
       "name": "Horizon_Pitch",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Aircraft Pitch",
       "exports": [
         {
           "format": "%.5f",
           "id": "37"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
-      "unit": "Numeric",
+      "valueDescription": "degrees +/- 60",
+      "unit": "Degrees",
       "calibration": {
         "points": [
           {
-            "value": 0.33,
-            "mappedValue": 0.33
+            "value": -0.33,
+            "mappedValue": 60
           },
           {
-            "value": -0.33,
-            "mappedValue": -0.33
+            "value": 0.33,
+            "mappedValue": -60
           }
         ],
-        "precision": 5
+        "precision": 2
       }
     },
     {
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Indicator",
       "name": "Horizon_Bank",
-      "description": "TODO: assign units, set calibration points, and write description",
+      "description": "Aircraft Bank Angle",
       "exports": [
         {
           "format": "%.5f",
           "id": "38"
         }
       ],
-      "valueDescription": "TODO: describe range of output values after calibration",
-      "unit": "Numeric",
+      "valueDescription": "Degrees +/- 180",
+      "unit": "Degrees",
       "calibration": {
         "points": [
           {
-            "value": 1,
-            "mappedValue": 1
+            "value": -1,
+            "mappedValue": 180
           },
           {
-            "value": -1,
-            "mappedValue": -1
+            "value": 1,
+            "mappedValue": -180
           }
         ],
-        "precision": 5
+        "precision": 2
       }
     },
     {
