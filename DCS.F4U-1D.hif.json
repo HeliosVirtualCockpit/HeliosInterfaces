@@ -1,7 +1,7 @@
 {
   "source": "MadKreator37",
   "version": "1.6.6140.0",
-  "commit": "8527ab414f43feace485448393a1f4375973a672",
+  "commit": "b1e9a6095cf3ed6354c5bcc0b745d39f831b60a5",
   "type": "DCS",
   "name": "DCS F4U-1D",
   "module": "F4U-1D",
@@ -2179,7 +2179,7 @@
           "actionId": "3950"
         },
         {
-          "argumentValue": "04.0",
+          "argumentValue": "0.0",
           "name": "Close",
           "actionId": "3950"
         }
