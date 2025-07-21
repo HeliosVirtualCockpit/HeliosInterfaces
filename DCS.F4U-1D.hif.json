@@ -1,12 +1,13 @@
 {
   "source": "MadKreator37",
   "version": "1.6.6140.0",
-  "commit": "b1e9a6095cf3ed6354c5bcc0b745d39f831b60a5",
+  "commit": "c951ce0709fc99a012956fc7a06d1d1e2505d8d3",
   "type": "DCS",
   "name": "DCS F4U-1D",
-  "module": "F4U-1D",
+  "module": "DCS F4U-1D",
   "vehicles": [
-    "F4U-1D"
+    "F4U-1D",
+	"F4U-1D_CW"
   ],
   "functions": [
   {
@@ -71,12 +72,12 @@
       "positions": [
         {
           "argumentValue": "1.0",
-          "name": "",
+          "name": "Fore",
           "actionId": "3101"
         },
         {
           "argumentValue": "0.0",
-          "name": "",
+          "name": "Aft",
           "actionId": "3101"
         }
       ]
@@ -557,22 +558,24 @@
       ]
     },
 	{
-      "heliosType": "DCS.Common.Axis",
+      "heliosType": "DCS.Common.RotaryEncoder",
       "device": "Nav",
       "name": "Directional Gyro Course Set",
-      "description": "Current value of this potentiometer.",
+      "description": "Current position of this rotary encoder.",
       "exports": [
         {
           "format": "%.3f",
           "id": "13"
         }
       ],
-      "loop": false,
-      "argumentValue": 0.0075,
-      "argumentMin": -1,
-      "argumentMax": 1,
+      "unit": "Numeric",
+      "argumentValue": 0.025,
       "actions": {
-        "set": {
+        "increment": {
+          "deviceId": "5",
+          "actionId": "3362"
+        },
+        "decrement": {
           "deviceId": "5",
           "actionId": "3362"
         }
@@ -602,6 +605,28 @@
           "actionId": "3351"
         }
       ]
+    },
+	{
+      "heliosType": "DCS.Common.Axis",
+      "device": "Nav",
+      "name": "Horizon Pitch Set",
+      "description": "Current value of this potentiometer.",
+      "exports": [
+        {
+          "format": "%.3f",
+          "id": "17"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.025,
+      "argumentMin": -1,
+      "argumentMax": 1,
+      "actions": {
+        "set": {
+          "deviceId": "5",
+          "actionId": "3359"
+        }
+      }
     },
 	{
       "heliosType": "DCS.Common.RotaryEncoder",
@@ -1081,13 +1106,13 @@
       "deviceId": "9",
       "positions": [
         {
-          "argumentValue": "1.0",
-          "name": "On",
+          "argumentValue": "0.0",
+          "name": "Off",
           "actionId": "3605"
         },
         {
-          "argumentValue": "0.0",
-          "name": "Off",
+          "argumentValue": "1.0",
+          "name": "On",
           "actionId": "3605"
         }
       ]
@@ -1195,13 +1220,13 @@
       "deviceId": "9",
       "positions": [
         {
-          "argumentValue": "1.0",
-          "name": "On",
+          "argumentValue": "0.0",
+          "name": "Off",
           "actionId": "3613"
         },
         {
-          "argumentValue": "0.0",
-          "name": "Off",
+          "argumentValue": "1.0",
+          "name": "On",
           "actionId": "3613"
         }
       ]
@@ -1241,7 +1266,7 @@
       ],
       "loop": false,
       "argumentValue": 0.025,
-      "argumentMin": -1,
+      "argumentMin": 0,
       "argumentMax": 1,
       "actions": {
         "set": {
@@ -1556,11 +1581,11 @@
       "actions": {
         "increment": {
           "deviceId": "11",
-          "actionId": "3749"
+          "actionId": "3739"
         },
         "decrement": {
           "deviceId": "11",
-          "actionId": "3749"
+          "actionId": "3739"
         }
       }
     },
@@ -1580,11 +1605,11 @@
       "actions": {
         "increment": {
           "deviceId": "11",
-          "actionId": "3741"
+          "actionId": "3740"
         },
         "decrement": {
           "deviceId": "11",
-          "actionId": "3742"
+          "actionId": "3740"
         }
       }
     },
@@ -1604,11 +1629,11 @@
       "actions": {
         "increment": {
           "deviceId": "11",
-          "actionId": "3743"
+          "actionId": "3741"
         },
         "decrement": {
           "deviceId": "11",
-          "actionId": "3744"
+          "actionId": "3741"
         }
       }
     },
@@ -1628,11 +1653,11 @@
       "actions": {
         "increment": {
           "deviceId": "11",
-          "actionId": "3745"
+          "actionId": "3742"
         },
         "decrement": {
           "deviceId": "11",
-          "actionId": "3746"
+          "actionId": "3742"
         }
       }
     },
@@ -1652,11 +1677,11 @@
       "actions": {
         "increment": {
           "deviceId": "11",
-          "actionId": "3747"
+          "actionId": "3743"
         },
         "decrement": {
           "deviceId": "11",
-          "actionId": "3748"
+          "actionId": "3743"
         }
       }
     },
@@ -1797,7 +1822,7 @@
           "actionId": "3906"
         },
         {
-          "argumentValue": "-1.0",
+          "argumentValue": "0.0",
           "name": "Off",
           "actionId": "3906"
         }
@@ -1822,7 +1847,7 @@
           "actionId": "3907"
         },
         {
-          "argumentValue": "-1.0",
+          "argumentValue": "0.0",
           "name": "Off",
           "actionId": "3907"
         }
@@ -1847,7 +1872,7 @@
           "actionId": "3908"
         },
         {
-          "argumentValue": "-1.0",
+          "argumentValue": "0.0",
           "name": "Off",
           "actionId": "3908"
         }
@@ -1872,7 +1897,7 @@
           "actionId": "3909"
         },
         {
-          "argumentValue": "-1.0",
+          "argumentValue": "0.0",
           "name": "Off",
           "actionId": "3909"
         }
@@ -1909,22 +1934,24 @@
       ]
     },
 	{
-      "heliosType": "DCS.Common.Axis",
+      "heliosType": "DCS.Common.RotaryEncoder",
       "device": "Weapon",
       "name": "Gunsight Light Intensity",
-      "description": "Current value of this potentiometer.",
+      "description": "Current position of this rotary encoder.",
       "exports": [
         {
           "format": "%.3f",
           "id": "115"
         }
       ],
-      "loop": false,
+      "unit": "Numeric",
       "argumentValue": 0.025,
-      "argumentMin": 0,
-      "argumentMax": 1,
       "actions": {
-        "set": {
+        "increment": {
+          "deviceId": "13",
+          "actionId": "3926"
+        },
+        "decrement": {
           "deviceId": "13",
           "actionId": "3926"
         }
@@ -2149,12 +2176,12 @@
       "deviceId": "13",
       "positions": [
         {
-          "argumentValue": "0.0",
+          "argumentValue": "1.0",
           "name": "Off",
           "actionId": "3946"
         },
         {
-          "argumentValue": "1.0",
+          "argumentValue": "0.0",
           "name": "Release",
           "actionId": "3946"
         }
@@ -3281,8 +3308,8 @@
       "deviceId": "21",
       "positions": [
         {
-          "argumentValue": "1.0",
-          "name": "Run",
+          "argumentValue": "-1.0",
+          "name": "Off",
           "actionId": "3889"
         },
         {
@@ -3291,8 +3318,8 @@
           "actionId": "3889"
         },
         {
-          "argumentValue": "-1.0",
-          "name": "Off",
+          "argumentValue": "1.0",
+          "name": "Run",
           "actionId": "3889"
         }
       ]
@@ -3304,21 +3331,53 @@
       "description": "Current G Forces",
       "exports": [
         {
-          "format": "%.4f",
+          "format": "%.3f",
           "id": "206"
         }
       ],
-      "valueDescription": "0 to 1",
+      "valueDescription": "-5 to 12",
       "unit": "Numeric",
       "calibration": {
         "points": [
           {
+            "value": -0.930,
+            "mappedValue": -5
+          },
+		  {
+            "value": -0.746,
+            "mappedValue": -4
+          },
+		  {
+            "value": -0.388,
+            "mappedValue": -2
+          },
+		  {
             "value": 0,
             "mappedValue": 0
           },
+		  {
+            "value": 0.153,
+            "mappedValue": 2
+          },
+		  {
+            "value": 0.321,
+            "mappedValue": 4
+		  },	
+		  {
+            "value": 0.489,
+            "mappedValue": 6
+          },
+		  {
+            "value": 0.664,
+            "mappedValue": 8
+          },
+		  {
+            "value": 0.841,
+            "mappedValue": 10
+          },
           {
             "value": 1,
-            "mappedValue": 1
+            "mappedValue": 12
           }
         ],
         "precision": 5
@@ -3331,7 +3390,7 @@
       "description": "Maximum G Forces",
       "exports": [
         {
-          "format": "%.4f",
+          "format": "%.3f",
           "id": "207"
         }
       ],
@@ -3358,21 +3417,21 @@
       "description": "Minimum G Forces",
       "exports": [
         {
-          "format": "%.4f",
+          "format": "%.3f",
           "id": "208"
         }
       ],
-      "valueDescription": "0 to 1",
+      "valueDescription": "-1 to 0",
       "unit": "Numeric",
       "calibration": {
         "points": [
           {
-            "value": 0,
-            "mappedValue": 0
+            "value": -1,
+            "mappedValue": -1
           },
           {
-            "value": 1,
-            "mappedValue": 1
+            "value": 0,
+            "mappedValue": 0
           }
         ],
         "precision": 5
@@ -3478,9 +3537,61 @@
             "value": 0,
             "mappedValue": 0
           },
+		  {
+            "value": 0.079,
+            "mappedValue": 29.259
+          },
+		  {
+            "value": 0.133,
+            "mappedValue": 52.629
+          },
+		  {
+            "value": 0.197,
+            "mappedValue": 75.962
+          },
+		  {
+            "value": 0.269,
+            "mappedValue": 99.629
+          },
+		  {
+            "value": 0.338,
+            "mappedValue": 123.18
+          },
+		  {
+            "value": 0.411,
+            "mappedValue": 148.85
+          },
+		  {
+            "value": 0.479,
+            "mappedValue": 175.03
+          },
+		  {
+            "value": 0.512,
+            "mappedValue": 188.62
+          },
+		  {
+            "value": 0.540,
+            "mappedValue": 200
+          },
+		  {
+            "value": 0.650,
+            "mappedValue": 243.851
+          },
+		  {
+            "value": 0.761,
+            "mappedValue": 284
+          },
+		  {
+            "value": 0.864,
+            "mappedValue": 318.25
+          },
+		  {
+            "value": 0.954,
+            "mappedValue": 351      
+		  },
           {
             "value": 1,
-            "mappedValue": 420
+            "mappedValue": 369.735
           }
         ],
         "precision": 5
@@ -3497,7 +3608,7 @@
           "id": "21"
         }
       ],
-      "valueDescription": "0 to 1",
+      "valueDescription": "0 to 320",
       "unit": "Celsius",
       "calibration": {
         "points": [
@@ -3507,7 +3618,7 @@
           },
           {
             "value": 1,
-            "mappedValue": 1
+            "mappedValue": 320
           }
         ],
         "precision": 5
@@ -3535,7 +3646,7 @@
       "exports": [
         {
           "format": "%0.3f",
-          "id": "5"
+          "id": "905"
         }
       ],
       "valueDescription": "Numeric value between 0 and 1",
@@ -3545,11 +3656,81 @@
       "heliosType": "DCS.Common.NetworkValue",
       "device": "Instruments",
       "name": "Clock Currtime Seconds",
-      "description": "Time of Day Seconds",
+      "description": "Time of Day Minutes",
       "exports": [
         {
           "format": "%0.3f",
-          "id": "6"
+          "id": "246"
+        }
+      ],
+      "valueDescription": "Numeric value between 0 and 1",
+      "unit": "Numeric"
+    },
+	{
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Instruments",
+      "name": "Chronometer - Seconds",
+      "description": "Timer in Seconds",
+      "exports": [
+        {
+          "format": "%0.3f",
+          "id": "906"
+        }
+      ],
+      "valueDescription": "Numeric value between 0 and 1",
+      "unit": "Numeric"
+    },
+	{
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Instruments",
+      "name": "Chronometer - Minutes",
+      "description": "Timer in Seconds",
+      "exports": [
+        {
+          "format": "%0.3f",
+          "id": "345"
+        }
+      ],
+      "valueDescription": "Numeric value between 0 and 1",
+      "unit": "Numeric"
+    },
+	{
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Instruments",
+      "name": "Elapsed Time - Hour",
+      "description": "Timer in Seconds",
+      "exports": [
+        {
+          "format": "%0.3f",
+          "id": "244"
+        }
+      ],
+      "valueDescription": "Numeric value between 0 and 1",
+      "unit": "Numeric"
+    },
+	{
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Instruments",
+      "name": "Elapsed Time - Minutes",
+      "description": "Timer in Seconds",
+      "exports": [
+        {
+          "format": "%0.3f",
+          "id": "245"
+        }
+      ],
+      "valueDescription": "Numeric value between 0 and 1",
+      "unit": "Numeric"
+    },
+	{
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Instruments",
+      "name": "Date Needle",
+      "description": "Timer in Seconds",
+      "exports": [
+        {
+          "format": "%0.3f",
+          "id": "247"
         }
       ],
       "valueDescription": "Numeric value between 0 and 1",
@@ -3559,24 +3740,40 @@
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Instruments",
       "name": "Fuel Pressure",
-      "description": "Temperatire in Celcius",
+      "description": "Pressure in PSI",
       "exports": [
         {
-          "format": "%.4f",
+          "format": "%.3f",
           "id": "32"
         }
       ],
-      "valueDescription": "0 to 1",
-      "unit": "Numeric",
+      "valueDescription": "0 to 25",
+      "unit": "PoundsPerSquareInch",
       "calibration": {
         "points": [
           {
             "value": 0,
             "mappedValue": 0
           },
+		  {
+            "value": 0.211,
+            "mappedValue": 5.25
+          },
+		  {
+            "value": 0.410,
+            "mappedValue": 10.275
+          },
+		  {
+            "value": 0.593,
+            "mappedValue": 15.15
+          },
+		  {
+            "value": 0.778,
+            "mappedValue": 20.025
+          },
           {
-            "value": 1,
-            "mappedValue": 1
+            "value": 0.977,
+            "mappedValue": 25
           }
         ],
         "precision": 5
@@ -3589,11 +3786,11 @@
       "description": "Fuel Contents in Gallons",
       "exports": [
         {
-          "format": "%.4f",
+          "format": "%.3f",
           "id": "7"
         }
       ],
-      "valueDescription": "0 to 1",
+      "valueDescription": "0 to 230",
       "unit": "Numeric",
       "calibration": {
         "points": [
@@ -3601,9 +3798,41 @@
             "value": 0,
             "mappedValue": 0
           },
+		  {
+            "value": 0.110,
+            "mappedValue": 24.15
+          },
+		  {
+            "value": 0.214,
+            "mappedValue": 48.3
+          },
+		  {
+            "value": 0.284,
+            "mappedValue": 65.55
+          },
+		  {
+            "value": 0.358,
+            "mappedValue": 82.11
+          },
+		  {
+            "value": 0.480,
+            "mappedValue": 113.16
+          },
+		  {
+            "value": 0.618,
+            "mappedValue": 144.9
+          },
+		  {
+            "value": 0.761,
+            "mappedValue": 177.33
+          },
+		  {
+            "value": 0.912,
+            "mappedValue": 211.14
+          },
           {
             "value": 1,
-            "mappedValue": 1
+            "mappedValue": 230
           }
         ],
         "precision": 5
@@ -3667,7 +3896,7 @@
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Instruments",
       "name": "Gyro Horizon Cage",
-      "description": "Horizon Cage Fl;ag",
+      "description": "Horizon Cage Flag",
       "exports": [
         {
           "format": "%.3f",
@@ -3675,7 +3904,7 @@
         }
       ],
       "valueDescription": "0 to 1",
-      "unit": "Degrees",
+      "unit": "Numeric",
       "calibration": {
         "points": [
           {
@@ -3707,11 +3936,11 @@
         "points": [
           {
             "value": 0,
-            "mappedValue": 0
+            "mappedValue": 360
           },
           {
             "value": 1,
-            "mappedValue": 360
+            "mappedValue": 0
           }
         ],
         "precision": 5
@@ -3805,7 +4034,7 @@
       "description": "Presure in PSI",
       "exports": [
         {
-          "format": "%.4f",
+          "format": "%.3f",
           "id": "35"
         }
       ],
@@ -4006,7 +4235,7 @@
           "id": "31"
         }
       ],
-      "valueDescription": "0 to 200",
+      "valueDescription": "0 to 200",	
       "unit": "PoundsPerSquareInch",
       "calibration": {
         "points": [
@@ -4014,9 +4243,76 @@
             "value": 0,
             "mappedValue": 0
           },
+		  {
+            "value": 0.340,
+            "mappedValue": 67.2
+          },
+		  {
+            "value": 0.675,
+            "mappedValue": 133.8
+          },
           {
             "value": 1,
             "mappedValue": 200
+          }
+        ],
+        "precision": 5
+      }
+    },
+	{
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Instruments",
+      "name": "Oil Temperature",
+      "description": "Degrees Celcius",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "30"
+        }
+      ],
+      "valueDescription": "-70 to 150",	
+      "unit": "Celsius",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": -70
+          },
+		  {
+            "value": 0.083,
+            "mappedValue": -55.56
+          },
+		  {
+            "value": 0.193,
+            "mappedValue": -30.125
+          },
+		  {
+            "value": 0.297,
+            "mappedValue": -4.688
+          },
+		  {
+            "value": 0.425,
+            "mappedValue": 27.625
+          },
+		  {
+            "value": 0.569,
+            "mappedValue": 52.375
+          },
+		  {
+            "value": 0.667,
+            "mappedValue": 86.06
+          },
+		  {
+            "value": 0.768,
+            "mappedValue": 108.75
+          },
+		  {
+            "value": 0.856,
+            "mappedValue": 123.18
+          },
+          {
+            "value": 0.960,
+            "mappedValue": 150
           }
         ],
         "precision": 5
@@ -4114,7 +4410,7 @@
           "id": "22"
         }
       ],
-      "valueDescription": "0 to 10",
+      "valueDescription": "0 to 3",
       "unit": "Numeric",
       "calibration": {
         "points": [
@@ -4124,7 +4420,7 @@
           },
           {
             "value": 1,
-            "mappedValue": 10
+            "mappedValue": 3
           }
         ],
         "precision": 5
@@ -4168,7 +4464,7 @@
           "id": "27"
         }
       ],
-      "valueDescription": "-.33 to .33",
+      "valueDescription": "-1.0 to 1.0",
       "unit": "Numeric",
       "calibration": {
         "points": [
@@ -4191,7 +4487,7 @@
       "description": "Voltage - Amperage",
       "exports": [
         {
-          "format": "%.4f",
+          "format": "%.3f",
           "id": "8"
         }
       ],
@@ -4201,7 +4497,7 @@
         "points": [
           {
             "value": 0,
-            "mappedValue": 1
+            "mappedValue": 0
           },
           {
             "value": 1,
@@ -4230,6 +4526,58 @@
             "value": -1.0,
             "mappedValue": -6000.0
           },
+		  {
+            "value": -0.924,
+            "mappedValue": -5550.0
+          },
+		  {
+            "value": -0.827,
+            "mappedValue": -4934.0
+          },
+		  {
+            "value": -0.711,
+            "mappedValue": -4252.0
+          },
+		  {
+            "value": -0.565,
+            "mappedValue": -3390.0
+          },
+		  {
+            "value": -0.358,
+            "mappedValue": -2148.0
+          },
+		  {
+            "value": -0.212,
+            "mappedValue": -1296.0
+          },
+		  {
+            "value": 0,
+            "mappedValue": -30.0
+          },
+		  {
+            "value": 0.209,
+            "mappedValue": 1240.0
+          },
+		  {
+            "value": 0.352,
+            "mappedValue": 2136.0
+          },
+		  {
+            "value": 0.56,
+            "mappedValue": 3396.0
+          },
+		  {
+            "value": 0.707,
+            "mappedValue": 4266.0
+          },
+		  {
+            "value": 0.822,
+            "mappedValue": 4982.0
+          },
+		  {
+            "value": 0.918,
+            "mappedValue": 5540.0
+          },
           {
             "value": 1,
             "mappedValue": 6000
@@ -4249,7 +4597,7 @@
           "id": "301"
         }
       ],
-      "valueDescription": "0 to .5",
+      "valueDescription": "0 to 1",
       "unit": "Numeric",
       "calibration": {
         "points": [
@@ -4258,8 +4606,170 @@
             "mappedValue": 0
           },
           {
-            "value": 0.5,
-            "mappedValue": 0.5 
+            "value": 1,
+            "mappedValue": 1 
+          }
+        ],
+        "precision": 5
+      }
+    },
+	{
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Lamps",
+      "name": "Stall Warning Lamp",
+      "description": "State of Lamp",
+      "exports": [
+        {
+          "format": "%.1f",
+          "id": "302"
+        }
+      ],
+      "valueDescription": "0 to 1",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1 
+          }
+        ],
+        "precision": 5
+      }
+    },
+	{
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Lamps",
+      "name": "Water Injection Lamp",
+      "description": "State of Lamp",
+      "exports": [
+        {
+          "format": "%.1f",
+          "id": "300"
+        }
+      ],
+      "valueDescription": "0 to 1",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1 
+          }
+        ],
+        "precision": 5
+      }
+    },
+	{
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Lamps",
+      "name": "Rocket Box Lamp",
+      "description": "State of Lamp",
+      "exports": [
+        {
+          "format": "%.1f",
+          "id": "267"
+        }
+      ],
+      "valueDescription": "0 to 1",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1 
+          }
+        ],
+        "precision": 5
+      }
+    },
+	{
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Lamps",
+      "name": "BatBomb Target Alarm",
+      "description": "State of Lamp",
+      "exports": [
+        {
+          "format": "%.1f",
+          "id": "814"
+        }
+      ],
+      "valueDescription": "0 to 1",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1 
+          }
+        ],
+        "precision": 5
+      }
+    },
+	{
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Misc",
+      "name": "Dash Layout - Warnings",
+      "description": "State of Dash Decor",
+      "exports": [
+        {
+          "format": "%.1f",
+          "id": "303"
+        }
+      ],
+      "valueDescription": "0 to 1",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1 
+          }
+        ],
+        "precision": 5
+      }
+    },
+	{
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Misc",
+      "name": "Dash Layout - Radar",
+      "description": "State of Radar",
+      "exports": [
+        {
+          "format": "%.1f",
+          "id": "902"
+        }
+      ],
+      "valueDescription": "0 to 1",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1 
           }
         ],
         "precision": 5
