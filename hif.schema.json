@@ -2187,6 +2187,10 @@
                   "$ref": "#/properties/functions/items/oneOf/30/definitions/SerializedButton"
                 }
               },
+              "triggereveryrelease": {
+                "type": "boolean",
+                "default": false
+              },
               "unimplemented": {
                 "type": "boolean",
                 "default": false
@@ -2406,6 +2410,10 @@
               },
               "unit": {
                 "$ref": "#/properties/functions/items/oneOf/32/definitions/BindingValueUnit"
+              },
+              "exposeunscaledvalue": {
+                "type": "boolean",
+                "default": false
               },
               "unimplemented": {
                 "type": "boolean",
