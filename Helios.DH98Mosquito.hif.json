@@ -1,0 +1,8213 @@
+{
+  "source": "Helios",
+  "version": "1.6.6140.0801",
+  "commit": "3d43a2206249aece74a197470510efb736b10ca9",
+  "type": "Existing",
+  "name": "DCS DH98 Mosquito FB Mk VI",
+  "module": "MosquitoFBMkVI",
+  "vehicles": [
+    "MosquitoFBMkVI"
+  ],
+  "functions": [
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Clock",
+      "name": "Seconds",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "100"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": 0.0,
+            "mappedValue": 0.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 360.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Value between 0 and 360",
+      "unit": "Degrees",
+      "exposeunscaledvalue": true
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Clock",
+      "name": "Set (Pull)",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "101"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "19",
+          "pushId": "3003",
+          "pushValue": "1.0",
+          "releaseId": "3003",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Clock",
+      "name": "Set (Turn)",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.4f",
+          "isExportedEveryFrame": false,
+          "id": "102"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.01,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "19",
+          "actionId": "3001"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Clock",
+      "name": "Reference Hours Knob",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.4f",
+          "isExportedEveryFrame": false,
+          "id": "375"
+        }
+      ],
+      "loop": true,
+      "argumentValue": 0.01,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "19",
+          "actionId": "3005"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Clock",
+      "name": "Reference Minutes Knob",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.4f",
+          "isExportedEveryFrame": false,
+          "id": "376"
+        }
+      ],
+      "loop": true,
+      "argumentValue": 0.01,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "19",
+          "actionId": "3007"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Clock",
+      "name": "Hours",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "98"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": 0.0,
+            "mappedValue": 0.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 360.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Value between 0 and 360",
+      "unit": "Degrees",
+      "exposeunscaledvalue": true
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Clock",
+      "name": "Minutes",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "99"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": 0.0,
+            "mappedValue": 0.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 360.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Value between 0 and 360",
+      "unit": "Degrees",
+      "exposeunscaledvalue": true
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Cockpit",
+      "name": "Side Window Open/Close Left",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "251"
+        }
+      ],
+      "deviceId": "2",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "0",
+          "name": "Position 1",
+          "actionID": "3022"
+        },
+        {
+          "argumentValue": "1",
+          "name": "Position 2",
+          "actionID": "3022"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Cockpit",
+      "name": "Side Window Open/Close Right",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "253"
+        }
+      ],
+      "deviceId": "2",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "0",
+          "name": "Position 1",
+          "actionID": "3063"
+        },
+        {
+          "argumentValue": "1",
+          "name": "Position 2",
+          "actionID": "3063"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Cockpit",
+      "name": "Cockpit Hatch Position",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "255"
+        }
+      ],
+      "valueDescription": "Numeric Value between 0 and 1",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Cockpit",
+      "name": "Gauges Glow (Green)",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "297"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Cockpit",
+      "name": "Left Lamp (White)",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "299"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Cockpit",
+      "name": "Front Lamp (White)",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "300"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Cockpit",
+      "name": "Right Lamp (White)",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "301"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Cockpit",
+      "name": "Transmitter Type F (Yellow)",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "308"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Cockpit",
+      "name": "Armour Headrest Lock",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "312"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "2",
+          "pushId": "3071",
+          "pushValue": "1.0",
+          "releaseId": "3071",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Cockpit",
+      "name": "Left Red Lamp (Red)",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "379"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Engine Instruments",
+      "name": "Tacho (Port) 1000's",
+      "description": "Number",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "50"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": 0.0,
+            "mappedValue": 0.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 5000.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Value between 0 and 5000",
+      "unit": "Numeric",
+      "exposeunscaledvalue": true
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Engine Instruments",
+      "name": "Tacho (Port) 100's",
+      "description": "Number",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "51"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": 0.0,
+            "mappedValue": 0.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 1000.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Value between 0 and 1000",
+      "unit": "Numeric",
+      "exposeunscaledvalue": true
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Engine Instruments",
+      "name": "Tacho (Starboard) 1000's",
+      "description": "Number",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "52"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": 0.0,
+            "mappedValue": 0.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 5000.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Value between 0 and 5000",
+      "unit": "Numeric",
+      "exposeunscaledvalue": true
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Engine Instruments",
+      "name": "Tacho (Starboard) 100's",
+      "description": "Number",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "53"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": 0.0,
+            "mappedValue": 0.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 1000.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Value between 0 and 1000",
+      "unit": "Numeric",
+      "exposeunscaledvalue": true
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Engine Instruments",
+      "name": "Boost Gauge (Port)",
+      "description": "Number",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "54"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": 0.0,
+            "mappedValue": -7.0
+          },
+          {
+            "value": 0.035,
+            "mappedValue": -6.0
+          },
+          {
+            "value": 0.28,
+            "mappedValue": 0.0
+          },
+          {
+            "value": 0.503,
+            "mappedValue": 6.0
+          },
+          {
+            "value": 0.629,
+            "mappedValue": 10.0
+          },
+          {
+            "value": 0.723,
+            "mappedValue": 14.0
+          },
+          {
+            "value": 0.778,
+            "mappedValue": 16.0
+          },
+          {
+            "value": 0.834,
+            "mappedValue": 18.0
+          },
+          {
+            "value": 0.887,
+            "mappedValue": 20.0
+          },
+          {
+            "value": 0.929,
+            "mappedValue": 22.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 25.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Value between -7 and 25",
+      "unit": "Numeric",
+      "exposeunscaledvalue": true
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Engine Instruments",
+      "name": "Boost Gauge (Starboard)",
+      "description": "Number",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "55"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": 0.0,
+            "mappedValue": -7.0
+          },
+          {
+            "value": 0.035,
+            "mappedValue": -6.0
+          },
+          {
+            "value": 0.28,
+            "mappedValue": 0.0
+          },
+          {
+            "value": 0.503,
+            "mappedValue": 6.0
+          },
+          {
+            "value": 0.629,
+            "mappedValue": 10.0
+          },
+          {
+            "value": 0.723,
+            "mappedValue": 14.0
+          },
+          {
+            "value": 0.778,
+            "mappedValue": 16.0
+          },
+          {
+            "value": 0.834,
+            "mappedValue": 18.0
+          },
+          {
+            "value": 0.887,
+            "mappedValue": 20.0
+          },
+          {
+            "value": 0.929,
+            "mappedValue": 22.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 25.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Value between -7 and 25",
+      "unit": "Numeric",
+      "exposeunscaledvalue": true
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Engine Instruments",
+      "name": "Oil Temperature (Port)",
+      "description": "Number",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "56"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": -1.0,
+            "mappedValue": -1.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 120.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Value between -1 and 120",
+      "unit": "Numeric",
+      "exposeunscaledvalue": true
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Engine Instruments",
+      "name": "Oil Temperature (Starboard)",
+      "description": "Number",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "57"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": -1.0,
+            "mappedValue": -1.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 120.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Value between -1 and 120",
+      "unit": "Numeric",
+      "exposeunscaledvalue": true
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Engine Instruments",
+      "name": "Oil Pressure (Port)",
+      "description": "Number",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "58"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": 0.0,
+            "mappedValue": 0.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 150.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Value between 0 and 150",
+      "unit": "Numeric",
+      "exposeunscaledvalue": true
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Engine Instruments",
+      "name": "Oil Pressure (Starboard)",
+      "description": "Number",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "59"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": 0.0,
+            "mappedValue": 0.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 150.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Value between 0 and 150",
+      "unit": "Numeric",
+      "exposeunscaledvalue": true
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Engine Instruments",
+      "name": "Radiator Temperature (Port)",
+      "description": "Number",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "60"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": -1.0,
+            "mappedValue": 39.0
+          },
+          {
+            "value": 0.0,
+            "mappedValue": 40.0
+          },
+          {
+            "value": 0.08,
+            "mappedValue": 60.0
+          },
+          {
+            "value": 0.2,
+            "mappedValue": 80.0
+          },
+          {
+            "value": 0.29,
+            "mappedValue": 90.0
+          },
+          {
+            "value": 0.39,
+            "mappedValue": 100.0
+          },
+          {
+            "value": 0.5,
+            "mappedValue": 110.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 140.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Value between 39 and 140",
+      "unit": "Numeric",
+      "exposeunscaledvalue": true
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Engine Instruments",
+      "name": "Radiator Temperature (Starboard)",
+      "description": "Number",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "61"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": -1.0,
+            "mappedValue": 39.0
+          },
+          {
+            "value": 0.0,
+            "mappedValue": 40.0
+          },
+          {
+            "value": 0.08,
+            "mappedValue": 60.0
+          },
+          {
+            "value": 0.2,
+            "mappedValue": 80.0
+          },
+          {
+            "value": 0.29,
+            "mappedValue": 90.0
+          },
+          {
+            "value": 0.39,
+            "mappedValue": 100.0
+          },
+          {
+            "value": 0.5,
+            "mappedValue": 110.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 140.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Value between 39 and 140",
+      "unit": "Numeric",
+      "exposeunscaledvalue": true
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Flight Controls",
+      "name": "Stick Pitch",
+      "description": "Percentage of Travel",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "242"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": -1.0,
+            "mappedValue": -100.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 100.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Value between -100 and 100",
+      "unit": "Numeric",
+      "exposeunscaledvalue": true
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Flight Controls",
+      "name": "Stick Bank",
+      "description": "Percentage of Travel",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "243"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": -1.0,
+            "mappedValue": -100.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 100.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Value between -100 and 100",
+      "unit": "Numeric",
+      "exposeunscaledvalue": true
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Flight Controls",
+      "name": "Rudder Yaw",
+      "description": "Percentage of Travel",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "249"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": -1.0,
+            "mappedValue": -100.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 100.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Value between -100 and 100",
+      "unit": "Numeric",
+      "exposeunscaledvalue": true
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Flight Instruments",
+      "name": "Repeater Compass Heading",
+      "description": "Degrees",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "47"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": 0.0,
+            "mappedValue": 0.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 360.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Value between 0 and 360",
+      "unit": "Degrees",
+      "exposeunscaledvalue": true
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Flight Instruments",
+      "name": "Repeater Compass Course",
+      "description": "Degrees",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "48"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": 0.0,
+            "mappedValue": 0.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 360.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Value between 0 and 360",
+      "unit": "Degrees",
+      "exposeunscaledvalue": true
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Flight Instruments",
+      "name": "Airspeed",
+      "description": "Knots",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "64"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": 0.0,
+            "mappedValue": 0.0
+          },
+          {
+            "value": 0.5,
+            "mappedValue": 500.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Value between 0 and 500",
+      "unit": "Knots",
+      "exposeunscaledvalue": true
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Flight Instruments",
+      "name": "Artificial Horizon Bank",
+      "description": "Degrees",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "65"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": -1.0,
+            "mappedValue": -180.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 180.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Value between -180 and 180",
+      "unit": "Degrees",
+      "exposeunscaledvalue": true
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Flight Instruments",
+      "name": "Artificial Horizon Pitch",
+      "description": "Degrees",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "66"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": -1.0,
+            "mappedValue": -45.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 45.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Value between -45 and 45",
+      "unit": "Degrees",
+      "exposeunscaledvalue": true
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Flight Instruments",
+      "name": "Vertical Velocity",
+      "description": "Feet per Minute",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "67"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": -1.0,
+            "mappedValue": -4000.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 4000.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Value between -4000 and 4000",
+      "unit": "FeetPerMinute",
+      "exposeunscaledvalue": true
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Flight Instruments",
+      "name": "Altimeter 100's",
+      "description": "Number",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "68"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": 0.0,
+            "mappedValue": 0.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 10.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Value between 0 and 10",
+      "unit": "Numeric",
+      "exposeunscaledvalue": true
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Flight Instruments",
+      "name": "Altimeter 1000's",
+      "description": "Number",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "69"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": 0.0,
+            "mappedValue": 0.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 10.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Value between 0 and 10",
+      "unit": "Numeric",
+      "exposeunscaledvalue": true
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Flight Instruments",
+      "name": "Altimeter 10000's",
+      "description": "Number",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "70"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": 0.0,
+            "mappedValue": 0.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 10.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Value between 0 and 10",
+      "unit": "Numeric",
+      "exposeunscaledvalue": true
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Flight Instruments",
+      "name": "Air Pressure",
+      "description": "milliBar",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "71"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": 0.0,
+            "mappedValue": 800.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 1050.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Value between 800 and 1050",
+      "unit": "Millibar",
+      "exposeunscaledvalue": true
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Flight Instruments",
+      "name": "Direction Indicator",
+      "description": "Degrees",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "73"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": 0.0,
+            "mappedValue": 0.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 360.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Value between 0 and 360",
+      "unit": "Degrees",
+      "exposeunscaledvalue": true
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Flight Instruments",
+      "name": "Side Slip",
+      "description": "Degrees",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "75"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": -1.0,
+            "mappedValue": -20.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 20.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Value between -20 and 20",
+      "unit": "Degrees",
+      "exposeunscaledvalue": true
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Flight Instruments",
+      "name": "Turn",
+      "description": "Degrees",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "76"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": -1.0,
+            "mappedValue": -40.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 40.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Value between -40 and 40",
+      "unit": "Degrees",
+      "exposeunscaledvalue": true
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Floor",
+      "name": "Drift Recorder",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.3f",
+          "isExportedEveryFrame": false,
+          "id": "259"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.01,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "10",
+          "actionId": "3001"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Fuel Instruments",
+      "name": "Fuel Gauge (Inner Port)",
+      "description": "Number",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "92"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": -1.0,
+            "mappedValue": -1.0
+          },
+          {
+            "value": 0.0,
+            "mappedValue": 0.0
+          },
+          {
+            "value": 0.197,
+            "mappedValue": 20.0
+          },
+          {
+            "value": 0.485,
+            "mappedValue": 60.0
+          },
+          {
+            "value": 0.741,
+            "mappedValue": 100.0
+          },
+          {
+            "value": 0.867,
+            "mappedValue": 120.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 160.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Value between -1 and 160",
+      "unit": "Numeric",
+      "exposeunscaledvalue": true
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Fuel Instruments",
+      "name": "Fuel Gauge (Inner Starboard)",
+      "description": "Number",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "93"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": -1.0,
+            "mappedValue": -1.0
+          },
+          {
+            "value": 0.0,
+            "mappedValue": 0.0
+          },
+          {
+            "value": 0.197,
+            "mappedValue": 20.0
+          },
+          {
+            "value": 0.485,
+            "mappedValue": 60.0
+          },
+          {
+            "value": 0.741,
+            "mappedValue": 100.0
+          },
+          {
+            "value": 0.867,
+            "mappedValue": 120.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 160.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Value between -1 and 160",
+      "unit": "Numeric",
+      "exposeunscaledvalue": true
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Fuel Instruments",
+      "name": "Fuel Gauge (Center)",
+      "description": "Number",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "94"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": -1.0,
+            "mappedValue": -1.0
+          },
+          {
+            "value": 0.0,
+            "mappedValue": 0.0
+          },
+          {
+            "value": 0.123,
+            "mappedValue": 10.0
+          },
+          {
+            "value": 0.306,
+            "mappedValue": 20.0
+          },
+          {
+            "value": 0.505,
+            "mappedValue": 30.0
+          },
+          {
+            "value": 0.686,
+            "mappedValue": 40.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 60.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Value between -1 and 60",
+      "unit": "Numeric",
+      "exposeunscaledvalue": true
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Fuel Instruments",
+      "name": "Fuel Gauge (Long Range)",
+      "description": "Number",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "95"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": -1.0,
+            "mappedValue": -1.0
+          },
+          {
+            "value": 0.0,
+            "mappedValue": 0.0
+          },
+          {
+            "value": 0.08,
+            "mappedValue": 5.0
+          },
+          {
+            "value": 0.183,
+            "mappedValue": 10.0
+          },
+          {
+            "value": 0.37,
+            "mappedValue": 20.0
+          },
+          {
+            "value": 0.524,
+            "mappedValue": 30.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 70.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Value between -1 and 70",
+      "unit": "Numeric",
+      "exposeunscaledvalue": true
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Fuel Instruments",
+      "name": "Fuel Gauge (Outer Port)",
+      "description": "Number",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "96"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": -1.0,
+            "mappedValue": -1.0
+          },
+          {
+            "value": 0.0,
+            "mappedValue": 0.0
+          },
+          {
+            "value": 0.197,
+            "mappedValue": 10.0
+          },
+          {
+            "value": 0.485,
+            "mappedValue": 20.0
+          },
+          {
+            "value": 0.741,
+            "mappedValue": 30.0
+          },
+          {
+            "value": 0.867,
+            "mappedValue": 40.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 70.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Value between -1 and 70",
+      "unit": "Numeric",
+      "exposeunscaledvalue": true
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Fuel Instruments",
+      "name": "Fuel Gauge (Outer Starboard)",
+      "description": "Number",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "97"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": -1.0,
+            "mappedValue": -1.0
+          },
+          {
+            "value": 0.0,
+            "mappedValue": 0.0
+          },
+          {
+            "value": 0.197,
+            "mappedValue": 10.0
+          },
+          {
+            "value": 0.485,
+            "mappedValue": 20.0
+          },
+          {
+            "value": 0.741,
+            "mappedValue": 30.0
+          },
+          {
+            "value": 0.867,
+            "mappedValue": 40.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 70.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Value between -1 and 70",
+      "unit": "Numeric",
+      "exposeunscaledvalue": true
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "JBA",
+      "name": "Radiator Flap Switch Port",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "112"
+        }
+      ],
+      "deviceId": "4",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "0",
+          "name": "Position 1",
+          "actionID": "3062"
+        },
+        {
+          "argumentValue": "1",
+          "name": "Position 2",
+          "actionID": "3062"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "JBA",
+      "name": "Radiator Flap Switch Starboard",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "113"
+        }
+      ],
+      "deviceId": "4",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "0",
+          "name": "Position 1",
+          "actionID": "3064"
+        },
+        {
+          "argumentValue": "1",
+          "name": "Position 2",
+          "actionID": "3064"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "JBA",
+      "name": "Tropical Air Filter Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "114"
+        }
+      ],
+      "deviceId": "4",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "0",
+          "name": "Position 1",
+          "actionID": "3066"
+        },
+        {
+          "argumentValue": "1",
+          "name": "Position 2",
+          "actionID": "3066"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "JBA",
+      "name": "Master Switch Gate",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "124"
+        }
+      ],
+      "deviceId": "3",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "1",
+          "name": "Position 1",
+          "actionID": "3009"
+        },
+        {
+          "argumentValue": "0",
+          "name": "Position 2",
+          "actionID": "3009"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "JBA",
+      "name": "Magneto 1 Switch Port",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "125"
+        }
+      ],
+      "deviceId": "3",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "1",
+          "name": "Position 1",
+          "actionID": "3001"
+        },
+        {
+          "argumentValue": "0",
+          "name": "Position 2",
+          "actionID": "3001"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "JBA",
+      "name": "Magneto 2 Switch Port",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "126"
+        }
+      ],
+      "deviceId": "3",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "1",
+          "name": "Position 1",
+          "actionID": "3003"
+        },
+        {
+          "argumentValue": "0",
+          "name": "Position 2",
+          "actionID": "3003"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "JBA",
+      "name": "Magneto 1 Switch Starboard",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "127"
+        }
+      ],
+      "deviceId": "3",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "1",
+          "name": "Position 1",
+          "actionID": "3005"
+        },
+        {
+          "argumentValue": "0",
+          "name": "Position 2",
+          "actionID": "3005"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "JBA",
+      "name": "Magneto 2 Switch Starboard",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "128"
+        }
+      ],
+      "deviceId": "3",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "1",
+          "name": "Position 1",
+          "actionID": "3007"
+        },
+        {
+          "argumentValue": "0",
+          "name": "Position 2",
+          "actionID": "3007"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "JBA",
+      "name": "Starter Switch Cover Port",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "129"
+        }
+      ],
+      "deviceId": "3",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "1",
+          "name": "Position 1",
+          "actionID": "3052"
+        },
+        {
+          "argumentValue": "0",
+          "name": "Position 2",
+          "actionID": "3052"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "JBA",
+      "name": "Starter Switch Cover Starboard",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "130"
+        }
+      ],
+      "deviceId": "3",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "1",
+          "name": "Position 1",
+          "actionID": "3055"
+        },
+        {
+          "argumentValue": "0",
+          "name": "Position 2",
+          "actionID": "3055"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "JBA",
+      "name": "Starter Switch Port",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "131"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "3",
+          "pushId": "3054",
+          "pushValue": "1.0",
+          "releaseId": "3054",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "JBA",
+      "name": "Starter Switch Starboard",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "132"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "3",
+          "pushId": "3057",
+          "pushValue": "1.0",
+          "releaseId": "3057",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "JBA",
+      "name": "Booster Switch Cover Port",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "133"
+        }
+      ],
+      "deviceId": "3",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "1",
+          "name": "Position 1",
+          "actionID": "3058"
+        },
+        {
+          "argumentValue": "0",
+          "name": "Position 2",
+          "actionID": "3058"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "JBA",
+      "name": "Booster Switch Cover Starboard",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "134"
+        }
+      ],
+      "deviceId": "3",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "1",
+          "name": "Position 1",
+          "actionID": "3061"
+        },
+        {
+          "argumentValue": "0",
+          "name": "Position 2",
+          "actionID": "3061"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "JBA",
+      "name": "Booster Coil Port",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "135"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "3",
+          "pushId": "3060",
+          "pushValue": "1.0",
+          "releaseId": "3060",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "JBA",
+      "name": "Booster Coil Starboard",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "136"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "3",
+          "pushId": "3063",
+          "pushValue": "1.0",
+          "releaseId": "3063",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "JBA",
+      "name": "Flood Light Dimmer Right",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "14"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.1,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "4",
+          "actionId": "3053"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "JBA",
+      "name": "J.B.B. Flood Light Dimmer",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "15"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.1,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "4",
+          "actionId": "3056"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "JBA",
+      "name": "Fuel Pump Light (Yellow)",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "281"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "JBA",
+      "name": "Fuel Pump Light Cover",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "282"
+        }
+      ],
+      "deviceId": "2",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "1",
+          "name": "Position 1",
+          "actionID": "3065"
+        },
+        {
+          "argumentValue": "0",
+          "name": "Position 2",
+          "actionID": "3065"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "JBA",
+      "name": "Feathering Switch Port",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "354"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "3",
+          "pushId": "3081",
+          "pushValue": "1.0",
+          "releaseId": "3081",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "JBA",
+      "name": "Feathering Switch Starboard",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "355"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "3",
+          "pushId": "3082",
+          "pushValue": "1.0",
+          "releaseId": "3082",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Rocker",
+      "device": "Main Panel",
+      "name": "Rudder Trim",
+      "description": "Current state of this rocker.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "111"
+        }
+      ],
+      "triggereveryrelease": false,
+      "vertical": true,
+      "buttons": [
+        {
+          "deviceId": "2",
+          "pushId": "3053",
+          "pushValue": "1",
+          "releaseId": "3053",
+          "releaseValue": "0"
+        },
+        {
+          "deviceId": "2",
+          "pushId": "3053",
+          "pushValue": "-1",
+          "releaseId": "3053",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Rocker",
+      "device": "Main Panel",
+      "name": "Bomb Doors Lever",
+      "description": "Current state of this rocker.",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "115"
+        }
+      ],
+      "triggereveryrelease": true,
+      "vertical": true,
+      "buttons": [
+        {
+          "deviceId": "17",
+          "pushId": "3001",
+          "pushValue": "1",
+          "releaseId": "3001",
+          "releaseValue": "0"
+        },
+        {
+          "deviceId": "17",
+          "pushId": "3001",
+          "pushValue": "-1",
+          "releaseId": "3001",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Rocker",
+      "device": "Main Panel",
+      "name": "Gear (Chassis) Lever",
+      "description": "Current state of this rocker.",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "116"
+        }
+      ],
+      "triggereveryrelease": true,
+      "vertical": true,
+      "buttons": [
+        {
+          "deviceId": "17",
+          "pushId": "3002",
+          "pushValue": "1",
+          "releaseId": "3002",
+          "releaseValue": "0"
+        },
+        {
+          "deviceId": "17",
+          "pushId": "3002",
+          "pushValue": "-1",
+          "releaseId": "3002",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Main Panel",
+      "name": "Gear (Chassis) Lever Gate",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "117"
+        }
+      ],
+      "deviceId": "17",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "0",
+          "name": "Open",
+          "actionID": "3004"
+        },
+        {
+          "argumentValue": "1",
+          "name": "Closed",
+          "actionID": "3004"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Rocker",
+      "device": "Main Panel",
+      "name": "Flaps Lever",
+      "description": "Current state of this rocker.",
+      "exports": [
+        {
+          "format": "%1d",
+          "id": "118"
+        }
+      ],
+      "triggereveryrelease": true,
+      "vertical": true,
+      "buttons": [
+        {
+          "deviceId": "17",
+          "pushId": "3003",
+          "pushValue": "1",
+          "releaseId": "3003",
+          "releaseValue": "0"
+        },
+        {
+          "deviceId": "17",
+          "pushId": "3003",
+          "pushValue": "-1",
+          "releaseId": "3003",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Main Panel",
+      "name": "Flaps Lever Gate",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "119"
+        }
+      ],
+      "deviceId": "17",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "0",
+          "name": "Open",
+          "actionID": "3006"
+        },
+        {
+          "argumentValue": "1",
+          "name": "Closed",
+          "actionID": "3006"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Main Panel",
+      "name": "Gun Firing Master Switch Cover",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "120"
+        }
+      ],
+      "deviceId": "5",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "0",
+          "name": "Safe",
+          "actionID": "3001"
+        },
+        {
+          "argumentValue": "1",
+          "name": "Fire",
+          "actionID": "3001"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Main Panel",
+      "name": "Gun Firing Master Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "121"
+        }
+      ],
+      "deviceId": "5",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "0",
+          "name": "Position 1",
+          "actionID": "3003"
+        },
+        {
+          "argumentValue": "1",
+          "name": "Position 2",
+          "actionID": "3003"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Main Panel",
+      "name": "Cine Camera Changeover Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "143"
+        }
+      ],
+      "deviceId": "5",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "0",
+          "name": "Position 1",
+          "actionID": "3061"
+        },
+        {
+          "argumentValue": "1",
+          "name": "Position 2",
+          "actionID": "3061"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Main Panel",
+      "name": "Container Jettison Cover",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "144"
+        }
+      ],
+      "deviceId": "5",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "1",
+          "name": "Open",
+          "actionID": "3056"
+        },
+        {
+          "argumentValue": "0",
+          "name": "Closed",
+          "actionID": "3056"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Main Panel",
+      "name": "Container Jettison Button",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "145"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "5",
+          "pushId": "3058",
+          "pushValue": "1.0",
+          "releaseId": "3058",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Main Panel",
+      "name": "Wing Ordnance 1 Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "148"
+        }
+      ],
+      "deviceId": "5",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "0",
+          "name": "Position 1",
+          "actionID": "3063"
+        },
+        {
+          "argumentValue": "1",
+          "name": "Position 2",
+          "actionID": "3063"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Main Panel",
+      "name": "Wing Ordnance 2 Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "149"
+        }
+      ],
+      "deviceId": "5",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "0",
+          "name": "Position 1",
+          "actionID": "3065"
+        },
+        {
+          "argumentValue": "1",
+          "name": "Position 2",
+          "actionID": "3065"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Main Panel",
+      "name": "Fuselage Bombs 3 Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "150"
+        }
+      ],
+      "deviceId": "5",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "0",
+          "name": "Position 1",
+          "actionID": "3067"
+        },
+        {
+          "argumentValue": "1",
+          "name": "Position 2",
+          "actionID": "3067"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Main Panel",
+      "name": "Fuselage Bombs 4 Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "151"
+        }
+      ],
+      "deviceId": "5",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "0",
+          "name": "Position 1",
+          "actionID": "3069"
+        },
+        {
+          "argumentValue": "1",
+          "name": "Position 2",
+          "actionID": "3069"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Main Panel",
+      "name": "All Nose Bombs Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "152"
+        }
+      ],
+      "deviceId": "5",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "0",
+          "name": "Position 1",
+          "actionID": "3071"
+        },
+        {
+          "argumentValue": "1",
+          "name": "Position 2",
+          "actionID": "3071"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Main Panel",
+      "name": "All Tail Bombs Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "153"
+        }
+      ],
+      "deviceId": "5",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "0",
+          "name": "Position 1",
+          "actionID": "3073"
+        },
+        {
+          "argumentValue": "1",
+          "name": "Position 2",
+          "actionID": "3073"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Main Panel",
+      "name": "Bomb Panel Flood Dimmer",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "16"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.1,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "4",
+          "actionId": "3059"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Main Panel",
+      "name": "Left Lamp (White)",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "270"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Main Panel",
+      "name": "Center Lamp (White)",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "271"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Main Panel",
+      "name": "Fuel Pressure Warning Light Left (Red)",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "277"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Main Panel",
+      "name": "Fuel Pressure Warning Light Right (Red)",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "278"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Rocker",
+      "device": "Main Panel",
+      "name": "Aileron Trim",
+      "description": "Current state of this rocker.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "280"
+        }
+      ],
+      "triggereveryrelease": false,
+      "vertical": true,
+      "buttons": [
+        {
+          "deviceId": "2",
+          "pushId": "3051",
+          "pushValue": "-1",
+          "releaseId": "3051",
+          "releaseValue": "0"
+        },
+        {
+          "deviceId": "2",
+          "pushId": "3051",
+          "pushValue": "1",
+          "releaseId": "3051",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Main Panel",
+      "name": "Bomb Door Light (Yellow)",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "283"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Main Panel",
+      "name": "Bomb Door Light Cover",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "284"
+        }
+      ],
+      "deviceId": "2",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "1",
+          "name": "Open",
+          "actionID": "3067"
+        },
+        {
+          "argumentValue": "0",
+          "name": "Closed",
+          "actionID": "3067"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Main Panel",
+      "name": "Boost Cut-Off T-Handle",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "292"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "3",
+          "pushId": "3049",
+          "pushValue": "1.0",
+          "releaseId": "3049",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Main Panel",
+      "name": "Gear Indicator Blind Up/Down",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "304"
+        }
+      ],
+      "deviceId": "2",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "1",
+          "name": "Position 1",
+          "actionID": "3018"
+        },
+        {
+          "argumentValue": "0",
+          "name": "Position 2",
+          "actionID": "3018"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Main Panel",
+      "name": "Bomb Panel Cover",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "311"
+        }
+      ],
+      "deviceId": "5",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "0",
+          "name": "Position 1",
+          "actionID": "3059"
+        },
+        {
+          "argumentValue": "1",
+          "name": "Position 2",
+          "actionID": "3059"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Main Panel",
+      "name": "De-Ice Glycol Pump Handle",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "370"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "23",
+          "pushId": "3001",
+          "pushValue": "1.0",
+          "releaseId": "3001",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Main Panel",
+      "name": "Fuel Pressure Warning Light Cover Left",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "377"
+        }
+      ],
+      "deviceId": "3",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "1",
+          "name": "Open",
+          "actionID": "3001"
+        },
+        {
+          "argumentValue": "0",
+          "name": "Closed",
+          "actionID": "3001"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Main Panel",
+      "name": "Fuel Pressure Warning Light Cover Right",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "378"
+        }
+      ],
+      "deviceId": "3",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "1",
+          "name": "Open",
+          "actionID": "3002"
+        },
+        {
+          "argumentValue": "0",
+          "name": "Closed",
+          "actionID": "3002"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.RotaryEncoder",
+      "device": "Main Panel",
+      "name": "Repeater Compass Course Set",
+      "exports": [
+        {
+          "format": "%.4f",
+          "isExportedEveryFrame": false,
+          "id": "49"
+        }
+      ],
+      "argumentValue": 0.1,
+      "actions": {
+        "increment": {
+          "deviceId": "8",
+          "actionId": "3001"
+        },
+        "decrement": {
+          "deviceId": "8",
+          "actionId": "3001"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Main Panel",
+      "name": "Landing Light Switch Port",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "62"
+        }
+      ],
+      "deviceId": "4",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "0",
+          "name": "Position 1",
+          "actionID": "3018"
+        },
+        {
+          "argumentValue": "1",
+          "name": "Position 2",
+          "actionID": "3018"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Main Panel",
+      "name": "Landing Light Switch Starboard",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "63"
+        }
+      ],
+      "deviceId": "4",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "0",
+          "name": "Position 1",
+          "actionID": "3020"
+        },
+        {
+          "argumentValue": "1",
+          "name": "Position 2",
+          "actionID": "3020"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.RotaryEncoder",
+      "device": "Main Panel",
+      "name": "Altimeter Set",
+      "exports": [
+        {
+          "format": "%.4f",
+          "isExportedEveryFrame": false,
+          "id": "72"
+        }
+      ],
+      "argumentValue": 0.1,
+      "actions": {
+        "increment": {
+          "deviceId": "2",
+          "actionId": "3010"
+        },
+        "decrement": {
+          "deviceId": "2",
+          "actionId": "3010"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.RotaryEncoder",
+      "device": "Main Panel",
+      "name": "Directional Gyro Set",
+      "exports": [
+        {
+          "format": "%.4f",
+          "isExportedEveryFrame": false,
+          "id": "74"
+        }
+      ],
+      "argumentValue": 0.1,
+      "actions": {
+        "increment": {
+          "deviceId": "2",
+          "actionId": "3013"
+        },
+        "decrement": {
+          "deviceId": "2",
+          "actionId": "3013"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Main Panel",
+      "name": "Gear Left UP (Red)",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "77"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Main Panel",
+      "name": "Gear Left DOWN (Green)",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "78"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Main Panel",
+      "name": "Gear Right UP (Red)",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "79"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Main Panel",
+      "name": "Gear Right DOWN (Green)",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "80"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Main Panel",
+      "name": "Oxygen Regulator Port",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "84"
+        }
+      ],
+      "deviceId": "15",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "1",
+          "name": "Position 1",
+          "actionID": "3003"
+        },
+        {
+          "argumentValue": "0",
+          "name": "Position 2",
+          "actionID": "3003"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Main Panel",
+      "name": "Footage Indicator Scale",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.4f",
+          "isExportedEveryFrame": false,
+          "id": "90"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.01,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "18",
+          "actionId": "3003"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Main Panel",
+      "name": "Footage Indicator Exposure Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "91"
+        }
+      ],
+      "deviceId": "18",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "0",
+          "name": "Position 1",
+          "actionID": "3001"
+        },
+        {
+          "argumentValue": "1",
+          "name": "Position 2",
+          "actionID": "3001"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Port Wall",
+      "name": "R.I. Compass Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "1"
+        }
+      ],
+      "deviceId": "4",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "0",
+          "name": "Position 1",
+          "actionID": "3001"
+        },
+        {
+          "argumentValue": "1",
+          "name": "Position 2",
+          "actionID": "3001"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Port Wall",
+      "name": "Emergency Light Rheostat",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "10"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.1,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "4",
+          "actionId": "3006"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Port Wall",
+      "name": "Compass Flood Light Dimmer",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "11"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.1,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "4",
+          "actionId": "3012"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Port Wall",
+      "name": "Flood Light Dimmer Left",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "12"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.1,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "4",
+          "actionId": "3015"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Port Wall",
+      "name": "Engine Cut-Out Handle Starboard",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "191"
+        }
+      ],
+      "deviceId": "3",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "1",
+          "name": "Position 1",
+          "actionID": "3095"
+        },
+        {
+          "argumentValue": "0",
+          "name": "Position 2",
+          "actionID": "3095"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Port Wall",
+      "name": "Engine Cut-Out Handle Port",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "192"
+        }
+      ],
+      "deviceId": "3",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "1",
+          "name": "Position 1",
+          "actionID": "3071"
+        },
+        {
+          "argumentValue": "0",
+          "name": "Position 2",
+          "actionID": "3071"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Port Wall",
+      "name": "Fuel Cock Port",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "193"
+        }
+      ],
+      "deviceId": "3",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "1",
+          "name": "Position 1",
+          "actionID": "3073"
+        },
+        {
+          "argumentValue": "0",
+          "name": "Position 2",
+          "actionID": "3073"
+        },
+        {
+          "argumentValue": "-1",
+          "name": "Position 3",
+          "actionID": "3073"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Port Wall",
+      "name": "Fuel Cock Starboard",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "194"
+        }
+      ],
+      "deviceId": "3",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "1",
+          "name": "Position 1",
+          "actionID": "3076"
+        },
+        {
+          "argumentValue": "0",
+          "name": "Position 2",
+          "actionID": "3076"
+        },
+        {
+          "argumentValue": "-1",
+          "name": "Position 3",
+          "actionID": "3076"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Port Wall",
+      "name": "Transfer Fuel Cock",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "195"
+        }
+      ],
+      "deviceId": "3",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "1",
+          "name": "Position 1",
+          "actionID": "3079"
+        },
+        {
+          "argumentValue": "0",
+          "name": "Position 2",
+          "actionID": "3079"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Port Wall",
+      "name": "Tank Pressurizing Lever",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "196"
+        }
+      ],
+      "deviceId": "3",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "1",
+          "name": "Position 1",
+          "actionID": "3089"
+        },
+        {
+          "argumentValue": "0",
+          "name": "Position 2",
+          "actionID": "3089"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Port Wall",
+      "name": "Oil Dilution Switch Port",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "197"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "3",
+          "pushId": "3050",
+          "pushValue": "1.0",
+          "releaseId": "3050",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Port Wall",
+      "name": "Oil Dilution Switch Starboard",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "198"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "3",
+          "pushId": "3051",
+          "pushValue": "1.0",
+          "releaseId": "3051",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Port Wall",
+      "name": "Auxiliary Oil Supply Lever Starboard",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "199"
+        }
+      ],
+      "deviceId": "3",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "1",
+          "name": "Position 1",
+          "actionID": "3093"
+        },
+        {
+          "argumentValue": "0",
+          "name": "Position 2",
+          "actionID": "3093"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Port Wall",
+      "name": "R.I. Compass De-ground Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "2"
+        }
+      ],
+      "deviceId": "4",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "0",
+          "name": "Position 1",
+          "actionID": "3002"
+        },
+        {
+          "argumentValue": "1",
+          "name": "Position 2",
+          "actionID": "3002"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Port Wall",
+      "name": "Auxiliary Oil Supply Lever Port",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "200"
+        }
+      ],
+      "deviceId": "3",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "1",
+          "name": "Position 1",
+          "actionID": "3091"
+        },
+        {
+          "argumentValue": "0",
+          "name": "Position 2",
+          "actionID": "3091"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Port Wall",
+      "name": "Cabin Heater Control",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "203"
+        }
+      ],
+      "deviceId": "2",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "1",
+          "name": "Position 1",
+          "actionID": "3057"
+        },
+        {
+          "argumentValue": "0",
+          "name": "Position 2",
+          "actionID": "3057"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Port Wall",
+      "name": "Gun Heater Control",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "204"
+        }
+      ],
+      "deviceId": "2",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "1",
+          "name": "Position 1",
+          "actionID": "3059"
+        },
+        {
+          "argumentValue": "0",
+          "name": "Position 2",
+          "actionID": "3059"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Port Wall",
+      "name": "Arm Rest Port",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "256"
+        }
+      ],
+      "deviceId": "2",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "1",
+          "name": "Position 1",
+          "actionID": "3020"
+        },
+        {
+          "argumentValue": "0",
+          "name": "Position 2",
+          "actionID": "3020"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Port Wall",
+      "name": "Arm Rest Starboard",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "257"
+        }
+      ],
+      "deviceId": "2",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "1",
+          "name": "Position 1",
+          "actionID": "3061"
+        },
+        {
+          "argumentValue": "0",
+          "name": "Position 2",
+          "actionID": "3061"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Rocker",
+      "device": "Port Wall",
+      "name": "Elevator Trim",
+      "description": "Current state of this rocker.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "279"
+        }
+      ],
+      "triggereveryrelease": false,
+      "vertical": true,
+      "buttons": [
+        {
+          "deviceId": "2",
+          "pushId": "3016",
+          "pushValue": "1",
+          "releaseId": "3016",
+          "releaseValue": "0"
+        },
+        {
+          "deviceId": "2",
+          "pushId": "3016",
+          "pushValue": "-1",
+          "releaseId": "3016",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.RotaryEncoder",
+      "device": "Port Wall",
+      "name": "Magnetic Compass Ring",
+      "exports": [
+        {
+          "format": "%.4f",
+          "isExportedEveryFrame": false,
+          "id": "28"
+        }
+      ],
+      "argumentValue": 0.0333,
+      "actions": {
+        "increment": {
+          "deviceId": "2",
+          "actionId": "3007"
+        },
+        "decrement": {
+          "deviceId": "2",
+          "actionId": "3007"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Port Wall",
+      "name": "UV Exciter Button",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "294"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "4",
+          "pushId": "3024",
+          "pushValue": "1.0",
+          "releaseId": "3024",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Port Wall",
+      "name": "UV Lamp Cap Left",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "295"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.1,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "20",
+          "actionId": "3001"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Port Wall",
+      "name": "UV Lamp Cap Right",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "296"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.1,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "21",
+          "actionId": "3001"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Port Wall",
+      "name": "Beam Approach Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "3"
+        }
+      ],
+      "deviceId": "4",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "0",
+          "name": "Position 1",
+          "actionID": "3004"
+        },
+        {
+          "argumentValue": "1",
+          "name": "Position 2",
+          "actionID": "3004"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Port Wall",
+      "name": "Chart Table Flood Light Dimmer Type D",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "303"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.1,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "4",
+          "actionId": "3095"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Port Wall",
+      "name": "Harness Release Lever",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "323"
+        }
+      ],
+      "deviceId": "5",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "1",
+          "name": "Position 1",
+          "actionID": "3043"
+        },
+        {
+          "argumentValue": "0",
+          "name": "Position 2",
+          "actionID": "3043"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Port Wall",
+      "name": "UV Light Left (multi)",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "325"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Port Wall",
+      "name": "UV Light Right (multi)",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "326"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Port Wall",
+      "name": "Hydraulic Hand Pump Emergency Selector",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "333"
+        }
+      ],
+      "deviceId": "2",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "1",
+          "name": "Position 1",
+          "actionID": "3069"
+        },
+        {
+          "argumentValue": "0",
+          "name": "Position 2",
+          "actionID": "3069"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Port Wall",
+      "name": "SCR-522 PTT Button",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "4"
+        }
+      ],
+      "deviceId": "24",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "1",
+          "name": "Position 1",
+          "actionID": "3099"
+        },
+        {
+          "argumentValue": "0",
+          "name": "Position 2",
+          "actionID": "3099"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Port Wall",
+      "name": "Beam Approach Volume Rheostat",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "7"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.1,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "30",
+          "actionId": "3003"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Port Wall",
+      "name": "Wing Tank Jettison Cover",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "8"
+        }
+      ],
+      "deviceId": "5",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "1",
+          "name": "Position 1",
+          "actionID": "3008"
+        },
+        {
+          "argumentValue": "0",
+          "name": "Position 2",
+          "actionID": "3008"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Port Wall",
+      "name": "Wing Tank Jettison Button",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "9"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "5",
+          "pushId": "3010",
+          "pushValue": "1.0",
+          "releaseId": "3010",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Quarter",
+      "name": "Loop Antenna Flood Light Dimmer",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "17"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.1,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "4",
+          "actionId": "3092"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Quarter",
+      "name": "IFF Channel Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%.2f",
+          "isExportedEveryFrame": false,
+          "id": "188"
+        }
+      ],
+      "deviceId": "4",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "0.00",
+          "name": "Position  1",
+          "actionID": "3104"
+        },
+        {
+          "argumentValue": "0.20",
+          "name": "Position  2",
+          "actionID": "3104"
+        },
+        {
+          "argumentValue": "0.40",
+          "name": "Position  3",
+          "actionID": "3104"
+        },
+        {
+          "argumentValue": "0.60",
+          "name": "Position  4",
+          "actionID": "3104"
+        },
+        {
+          "argumentValue": "0.80",
+          "name": "Position  5",
+          "actionID": "3104"
+        },
+        {
+          "argumentValue": "1.00",
+          "name": "Position  6",
+          "actionID": "3104"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Quarter",
+      "name": "IFF Detonator Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "189"
+        }
+      ],
+      "deviceId": "4",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "0",
+          "name": "Position 1",
+          "actionID": "3109"
+        },
+        {
+          "argumentValue": "1",
+          "name": "Position 2",
+          "actionID": "3109"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Quarter",
+      "name": "IFF Power Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "190"
+        }
+      ],
+      "deviceId": "4",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "0",
+          "name": "Position 1",
+          "actionID": "3111"
+        },
+        {
+          "argumentValue": "1",
+          "name": "Position 2",
+          "actionID": "3111"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Quarter",
+      "name": "Aerial Selector Switch Type J",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%.2f",
+          "isExportedEveryFrame": false,
+          "id": "224"
+        }
+      ],
+      "deviceId": "25",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "-1.00",
+          "name": "Position  1",
+          "actionID": "3059"
+        },
+        {
+          "argumentValue": "-0.50",
+          "name": "Position  2",
+          "actionID": "3059"
+        },
+        {
+          "argumentValue": "0.00",
+          "name": "Position  3",
+          "actionID": "3059"
+        },
+        {
+          "argumentValue": "0.50",
+          "name": "Position  4",
+          "actionID": "3059"
+        },
+        {
+          "argumentValue": "1.00",
+          "name": "Position  5",
+          "actionID": "3059"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Quarter",
+      "name": "Loop Antenna Scale",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.4f",
+          "isExportedEveryFrame": false,
+          "id": "240"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.01,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "25",
+          "actionId": "3094"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Quarter",
+      "name": "Loop Antenna Lock",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "241"
+        }
+      ],
+      "deviceId": "25",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "1",
+          "name": "Position 1",
+          "actionID": "3107"
+        },
+        {
+          "argumentValue": "0",
+          "name": "Position 2",
+          "actionID": "3107"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Quarter",
+      "name": "Antenna Lamp (White)",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "275"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Quarter",
+      "name": "Dome Lamp (White)",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "276"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Quarter",
+      "name": "Roof Dome Light Dimmer",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "302"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.1,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "4",
+          "actionId": "3101"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Quarter",
+      "name": "IFF Detonator Switch Cover",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "363"
+        }
+      ],
+      "deviceId": "4",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "1",
+          "name": "Position 1",
+          "actionID": "3107"
+        },
+        {
+          "argumentValue": "0",
+          "name": "Position 2",
+          "actionID": "3107"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "R.1155",
+      "name": "Meter Balance Knob",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "225"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.1,
+      "argumentMin": -1.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "25",
+          "actionId": "3079"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "R.1155",
+      "name": "Filter Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "226"
+        }
+      ],
+      "deviceId": "25",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "0",
+          "name": "Position 1",
+          "actionID": "3082"
+        },
+        {
+          "argumentValue": "1",
+          "name": "Position 2",
+          "actionID": "3082"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "R.1155",
+      "name": "Meter Amplitude Knob",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "227"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.1,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "25",
+          "actionId": "3084"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "R.1155",
+      "name": "Tuning Anode",
+      "description": "Number",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "228"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": 0.0,
+            "mappedValue": 0.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 1.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Value between 0 and 1",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "R.1155",
+      "name": "Volume Knob",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "229"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.1,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "25",
+          "actionId": "3068"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "R.1155",
+      "name": "Heterodyne Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "230"
+        }
+      ],
+      "deviceId": "25",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "0",
+          "name": "Position 1",
+          "actionID": "3077"
+        },
+        {
+          "argumentValue": "1",
+          "name": "Position 2",
+          "actionID": "3077"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "R.1155",
+      "name": "Frequency Range Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%.2f",
+          "isExportedEveryFrame": false,
+          "id": "231"
+        }
+      ],
+      "deviceId": "25",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "0.00",
+          "name": "Position  1",
+          "actionID": "3065"
+        },
+        {
+          "argumentValue": "0.10",
+          "name": "Position  2",
+          "actionID": "3065"
+        },
+        {
+          "argumentValue": "0.20",
+          "name": "Position  3",
+          "actionID": "3065"
+        },
+        {
+          "argumentValue": "0.30",
+          "name": "Position  4",
+          "actionID": "3065"
+        },
+        {
+          "argumentValue": "0.40",
+          "name": "Position  5",
+          "actionID": "3065"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "R.1155",
+      "name": "Tuner",
+      "description": "Number",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "232"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": 0.0,
+            "mappedValue": 0.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 1.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Value between 0 and 1",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "R.1155",
+      "name": "Tuning (Fine)",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "233"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.1,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "25",
+          "actionId": "3071"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "R.1155",
+      "name": "Tuning (Coarse)",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "234"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.1,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "25",
+          "actionId": "3074"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "R.1155",
+      "name": "Meter Deflection Sensitivity Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "235"
+        }
+      ],
+      "deviceId": "25",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "0",
+          "name": "Position 1",
+          "actionID": "3087"
+        },
+        {
+          "argumentValue": "1",
+          "name": "Position 2",
+          "actionID": "3087"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Rocker",
+      "device": "R.1155",
+      "name": "Aural Sense Switch",
+      "description": "Current state of this rocker.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "236"
+        }
+      ],
+      "triggereveryrelease": false,
+      "vertical": false,
+      "buttons": [
+        {
+          "deviceId": "31",
+          "pushId": "3089",
+          "pushValue": "1",
+          "releaseId": "3089",
+          "releaseValue": "0"
+        },
+        {
+          "deviceId": "31",
+          "pushId": "3089",
+          "pushValue": "-1",
+          "releaseId": "3089",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "R.1155",
+      "name": "Meter Frequency Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "237"
+        }
+      ],
+      "deviceId": "25",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "0",
+          "name": "Position 1",
+          "actionID": "3090"
+        },
+        {
+          "argumentValue": "1",
+          "name": "Position 2",
+          "actionID": "3090"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "R.1155",
+      "name": "Master Selector Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%.2f",
+          "isExportedEveryFrame": false,
+          "id": "238"
+        }
+      ],
+      "deviceId": "25",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "0.00",
+          "name": "Position  1",
+          "actionID": "3062"
+        },
+        {
+          "argumentValue": "0.10",
+          "name": "Position  2",
+          "actionID": "3062"
+        },
+        {
+          "argumentValue": "0.20",
+          "name": "Position  3",
+          "actionID": "3062"
+        },
+        {
+          "argumentValue": "0.30",
+          "name": "Position  4",
+          "actionID": "3062"
+        },
+        {
+          "argumentValue": "0.40",
+          "name": "Position  5",
+          "actionID": "3062"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "R.1155",
+      "name": "Tuning Cathode",
+      "description": "Number",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "239"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": 0.0,
+            "mappedValue": 0.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 1.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Value between 0 and 1",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "R.1155",
+      "name": "Direction Finder (Left)",
+      "description": "Number",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "88"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": -1.0,
+            "mappedValue": -1.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 100.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Value between -1 and 100",
+      "unit": "Numeric",
+      "exposeunscaledvalue": true
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "R.1155",
+      "name": "Direction Finder (Right)",
+      "description": "Number",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "89"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": -1.0,
+            "mappedValue": -1.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 100.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Value between -1 and 100",
+      "unit": "Numeric",
+      "exposeunscaledvalue": true
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Radio Remote Channel Switcher",
+      "name": "OFF Button",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "32"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "24",
+          "pushId": "3001",
+          "pushValue": "1.0",
+          "releaseId": "3001",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Radio Remote Channel Switcher",
+      "name": "A Button",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "33"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "24",
+          "pushId": "3002",
+          "pushValue": "1.0",
+          "releaseId": "3002",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Radio Remote Channel Switcher",
+      "name": "B Button",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "34"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "24",
+          "pushId": "3003",
+          "pushValue": "1.0",
+          "releaseId": "3003",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Radio Remote Channel Switcher",
+      "name": "C Button",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "35"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "24",
+          "pushId": "3004",
+          "pushValue": "1.0",
+          "releaseId": "3004",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Radio Remote Channel Switcher",
+      "name": "D Button",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "36"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "24",
+          "pushId": "3005",
+          "pushValue": "1.0",
+          "releaseId": "3005",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Radio Remote Channel Switcher",
+      "name": "Volume Knob",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "364"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.1,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "24",
+          "actionId": "3015"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Radio Remote Channel Switcher",
+      "name": "A Light (White)",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "37"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Radio Remote Channel Switcher",
+      "name": "B Light (White)",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "38"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Radio Remote Channel Switcher",
+      "name": "C Light (White)",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "39"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Radio Remote Channel Switcher",
+      "name": "D Light (White)",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "40"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Radio Remote Channel Switcher",
+      "name": "TX Light (White)",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "41"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Radio Remote Channel Switcher",
+      "name": "Dimmer Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "42"
+        }
+      ],
+      "deviceId": "24",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "1",
+          "name": "Position 1",
+          "actionID": "3006"
+        },
+        {
+          "argumentValue": "0",
+          "name": "Position 2",
+          "actionID": "3006"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Radio Remote Channel Switcher",
+      "name": "Transmission Lock",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "43"
+        }
+      ],
+      "deviceId": "24",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "0",
+          "name": "Position 1",
+          "actionID": "3017"
+        },
+        {
+          "argumentValue": "1",
+          "name": "Position 2",
+          "actionID": "3017"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Radio Remote Channel Switcher",
+      "name": "Mode Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "44"
+        }
+      ],
+      "deviceId": "24",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "Position 1",
+          "actionID": "3008"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Position 2",
+          "actionID": "3008"
+        },
+        {
+          "argumentValue": "-1.0",
+          "name": "Position 3",
+          "actionID": "3007"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Reflector Sight",
+      "name": "Setter Rings Range",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.3f",
+          "isExportedEveryFrame": false,
+          "id": "107"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.1,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "5",
+          "actionId": "3045"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Reflector Sight",
+      "name": "Setter Rings Span",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.3f",
+          "isExportedEveryFrame": false,
+          "id": "108"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.1,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "5",
+          "actionId": "3048"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Reflector Sight",
+      "name": "Sight Dimmer",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.3f",
+          "isExportedEveryFrame": false,
+          "id": "13"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.1,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "4",
+          "actionId": "3009"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Rockets",
+      "name": "Rockets Manual Advancement (Port Wall)",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "384"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "32",
+          "pushId": "3005",
+          "pushValue": "1.0",
+          "releaseId": "3005",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Rockets",
+      "name": "Rockets Master Switch (Port Wall)",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "385"
+        }
+      ],
+      "deviceId": "32",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "0",
+          "name": "Off",
+          "actionID": "3001"
+        },
+        {
+          "argumentValue": "1",
+          "name": "On",
+          "actionID": "3001"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Rockets",
+      "name": "Rockets Firing Switch (Right Engine Throttle)",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "386"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "32",
+          "pushId": "3006",
+          "pushValue": "1.0",
+          "releaseId": "3006",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Rockets",
+      "name": "Rockets Salvo Selector Switch (Main Panel)",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "387"
+        }
+      ],
+      "deviceId": "32",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "0",
+          "name": "Off",
+          "actionID": "3003"
+        },
+        {
+          "argumentValue": "1",
+          "name": "On",
+          "actionID": "3003"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Simulator Telemetry",
+      "name": "pitch",
+      "description": "Current pitch of the aircraft.",
+      "exports": [
+        {
+          "id": "T1"
+        }
+      ],
+      "valueDescription": "(-180 to 180)",
+      "unit": "Degrees"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Simulator Telemetry",
+      "name": "vertical velocity",
+      "description": "Current vertical velocity of the aircraft.",
+      "exports": [
+        {
+          "id": "T13"
+        }
+      ],
+      "valueDescription": "",
+      "unit": "MetersPerSecond"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Simulator Telemetry",
+      "name": "indicated airspeed",
+      "description": "Current indicated air speed of the aircraft.",
+      "exports": [
+        {
+          "id": "T14"
+        }
+      ],
+      "valueDescription": "",
+      "unit": "MetersPerSecond"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Simulator Telemetry",
+      "name": "angle of attack",
+      "description": "Current angle of attack for the aircraft.",
+      "exports": [
+        {
+          "id": "T16"
+        }
+      ],
+      "valueDescription": "",
+      "unit": "Degrees"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Simulator Telemetry",
+      "name": "glide deviation",
+      "description": "ILS Glide Deviation",
+      "exports": [
+        {
+          "id": "T17"
+        }
+      ],
+      "valueDescription": "-1 to 1",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Simulator Telemetry",
+      "name": "side deviation",
+      "description": "ILS Side Deviation",
+      "exports": [
+        {
+          "id": "T18"
+        }
+      ],
+      "valueDescription": "-1 to 1",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Simulator Telemetry",
+      "name": "Mach",
+      "description": "Current Mach number",
+      "exports": [
+        {
+          "id": "T19"
+        }
+      ],
+      "valueDescription": "number in M",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Simulator Telemetry",
+      "name": "bank",
+      "description": "Current bank of the aircraft.",
+      "exports": [
+        {
+          "id": "T2"
+        }
+      ],
+      "valueDescription": "(-180 to 180)",
+      "unit": "Degrees"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Simulator Telemetry",
+      "name": "G",
+      "description": "Current G load",
+      "exports": [
+        {
+          "id": "T20"
+        }
+      ],
+      "valueDescription": "number in g",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Simulator Telemetry",
+      "name": "yaw",
+      "description": "Current yaw of the aircraft.",
+      "exports": [
+        {
+          "id": "T3"
+        }
+      ],
+      "valueDescription": "(-180 to 180)",
+      "unit": "Degrees"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Simulator Telemetry",
+      "name": "barometric altitude",
+      "description": "Current barometric altitude the aircraft.",
+      "exports": [
+        {
+          "id": "T4"
+        }
+      ],
+      "valueDescription": "",
+      "unit": "Meters"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Simulator Telemetry",
+      "name": "radar altitude",
+      "description": "Current radar altitude of the aircraft.",
+      "exports": [
+        {
+          "id": "T5"
+        }
+      ],
+      "valueDescription": "",
+      "unit": "Meters"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Simulator Telemetry",
+      "name": "magnetic yaw",
+      "description": "Current magnetic yaw of the aircraft.",
+      "exports": [
+        {
+          "id": "T6"
+        }
+      ],
+      "valueDescription": "(-180 to 180)",
+      "unit": "Degrees"
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Starboard Wall",
+      "name": "Morse Key",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "157"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "4",
+          "pushId": "3068",
+          "pushValue": "1.0",
+          "releaseId": "3068",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Starboard Wall",
+      "name": "Downward Lamp Mode Selector",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%.2f",
+          "isExportedEveryFrame": false,
+          "id": "158"
+        }
+      ],
+      "deviceId": "4",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "0.00",
+          "name": "Position  1",
+          "actionID": "3069"
+        },
+        {
+          "argumentValue": "0.50",
+          "name": "Position  2",
+          "actionID": "3069"
+        },
+        {
+          "argumentValue": "1.00",
+          "name": "Position  3",
+          "actionID": "3069"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Starboard Wall",
+      "name": "Upward Lamp Mode Selector",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%.2f",
+          "isExportedEveryFrame": false,
+          "id": "159"
+        }
+      ],
+      "deviceId": "4",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "0.00",
+          "name": "Position  1",
+          "actionID": "3072"
+        },
+        {
+          "argumentValue": "0.50",
+          "name": "Position  2",
+          "actionID": "3072"
+        },
+        {
+          "argumentValue": "1.00",
+          "name": "Position  3",
+          "actionID": "3072"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Starboard Wall",
+      "name": "Down Ident Lights Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%.2f",
+          "isExportedEveryFrame": false,
+          "id": "160"
+        }
+      ],
+      "deviceId": "4",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "0.00",
+          "name": "Position  1",
+          "actionID": "3075"
+        },
+        {
+          "argumentValue": "0.50",
+          "name": "Position  2",
+          "actionID": "3075"
+        },
+        {
+          "argumentValue": "1.00",
+          "name": "Position  3",
+          "actionID": "3075"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Starboard Wall",
+      "name": "Camera Gun Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "161"
+        }
+      ],
+      "deviceId": "4",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "0",
+          "name": "Position 1",
+          "actionID": "3078"
+        },
+        {
+          "argumentValue": "1",
+          "name": "Position 2",
+          "actionID": "3078"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Starboard Wall",
+      "name": "Nav Lights Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "162"
+        }
+      ],
+      "deviceId": "4",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "0",
+          "name": "Position 1",
+          "actionID": "3080"
+        },
+        {
+          "argumentValue": "1",
+          "name": "Position 2",
+          "actionID": "3080"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Starboard Wall",
+      "name": "UV Lighting Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "163"
+        }
+      ],
+      "deviceId": "4",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "0",
+          "name": "Position 1",
+          "actionID": "3082"
+        },
+        {
+          "argumentValue": "1",
+          "name": "Position 2",
+          "actionID": "3082"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Starboard Wall",
+      "name": "Pitot Head Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "164"
+        }
+      ],
+      "deviceId": "4",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "0",
+          "name": "Position 1",
+          "actionID": "3084"
+        },
+        {
+          "argumentValue": "1",
+          "name": "Position 2",
+          "actionID": "3084"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Starboard Wall",
+      "name": "Fuel Pump Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "165"
+        }
+      ],
+      "deviceId": "4",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "0",
+          "name": "Position 1",
+          "actionID": "3086"
+        },
+        {
+          "argumentValue": "1",
+          "name": "Position 2",
+          "actionID": "3086"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Starboard Wall",
+      "name": "Reflector Sight Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "166"
+        }
+      ],
+      "deviceId": "4",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "0",
+          "name": "Position 1",
+          "actionID": "3051"
+        },
+        {
+          "argumentValue": "1",
+          "name": "Position 2",
+          "actionID": "3051"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Starboard Wall",
+      "name": "Nav Head Lamp Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%.2f",
+          "isExportedEveryFrame": false,
+          "id": "167"
+        }
+      ],
+      "deviceId": "4",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "0.00",
+          "name": "Position  1",
+          "actionID": "3048"
+        },
+        {
+          "argumentValue": "0.50",
+          "name": "Position  2",
+          "actionID": "3048"
+        },
+        {
+          "argumentValue": "1.00",
+          "name": "Position  3",
+          "actionID": "3048"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Starboard Wall",
+      "name": "IFF Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "168"
+        }
+      ],
+      "deviceId": "4",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "0",
+          "name": "Position 1",
+          "actionID": "3088"
+        },
+        {
+          "argumentValue": "1",
+          "name": "Position 2",
+          "actionID": "3088"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Starboard Wall",
+      "name": "IFF Detonator Cover",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "169"
+        }
+      ],
+      "deviceId": "4",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "0",
+          "name": "Position 1",
+          "actionID": "3036"
+        },
+        {
+          "argumentValue": "1",
+          "name": "Position 2",
+          "actionID": "3036"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Starboard Wall",
+      "name": "IFF Detonator Left Switch",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "170"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "4",
+          "pushId": "3038",
+          "pushValue": "1.0",
+          "releaseId": "3038",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Starboard Wall",
+      "name": "IFF Detonator Right Switch",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "171"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "4",
+          "pushId": "3039",
+          "pushValue": "1.0",
+          "releaseId": "3039",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Starboard Wall",
+      "name": "Extinguisher Switch Cover Port",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "172"
+        }
+      ],
+      "deviceId": "4",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "1",
+          "name": "Position 1",
+          "actionID": "3040"
+        },
+        {
+          "argumentValue": "0",
+          "name": "Position 2",
+          "actionID": "3040"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Starboard Wall",
+      "name": "Extinguisher Switch Port",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "173"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "4",
+          "pushId": "3042",
+          "pushValue": "1.0",
+          "releaseId": "3042",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Starboard Wall",
+      "name": "Extinguisher Switch Cover Starboard",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "174"
+        }
+      ],
+      "deviceId": "4",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "1",
+          "name": "Position 1",
+          "actionID": "3043"
+        },
+        {
+          "argumentValue": "0",
+          "name": "Position 2",
+          "actionID": "3043"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Starboard Wall",
+      "name": "Extinguisher Switch Starboard",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "175"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "4",
+          "pushId": "3045",
+          "pushValue": "1.0",
+          "releaseId": "3045",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Starboard Wall",
+      "name": "Windscreen Wiper Rheostat",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "176"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.1,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "4",
+          "actionId": "3033"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Starboard Wall",
+      "name": "Generator Warning Light (Red)",
+      "description": "True when indicator is lit",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "177"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Starboard Wall",
+      "name": "Resin Lights Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "178"
+        }
+      ],
+      "deviceId": "4",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "0",
+          "name": "Position 1",
+          "actionID": "3046"
+        },
+        {
+          "argumentValue": "1",
+          "name": "Position 2",
+          "actionID": "3046"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Starboard Wall",
+      "name": "Oxygen Regulator Starboard",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "187"
+        }
+      ],
+      "deviceId": "16",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "1",
+          "name": "Position 1",
+          "actionID": "3003"
+        },
+        {
+          "argumentValue": "0",
+          "name": "Position 2",
+          "actionID": "3003"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Starboard Wall",
+      "name": "Aerial Winch  Brake Lever",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "202"
+        }
+      ],
+      "deviceId": "31",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "1",
+          "name": "Position 1",
+          "actionID": "3001"
+        },
+        {
+          "argumentValue": "0",
+          "name": "Position 2",
+          "actionID": "3001"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Starboard Wall",
+      "name": "Door Handle",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "254"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "2",
+          "pushId": "3072",
+          "pushValue": "1.0",
+          "releaseId": "3072",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Starboard Wall",
+      "name": "Oxygen High Pressure Valve",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "293"
+        }
+      ],
+      "deviceId": "2",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "1",
+          "name": "Position 1",
+          "actionID": "3055"
+        },
+        {
+          "argumentValue": "0",
+          "name": "Position 2",
+          "actionID": "3055"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Starboard Wall",
+      "name": "T.1154 R.1155 L.T. Power Unit Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "305"
+        }
+      ],
+      "deviceId": "28",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "0",
+          "name": "Position 1",
+          "actionID": "3001"
+        },
+        {
+          "argumentValue": "1",
+          "name": "Position 2",
+          "actionID": "3001"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Starboard Wall",
+      "name": "T.1154 R.1155 H.T. Power Unit Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "306"
+        }
+      ],
+      "deviceId": "28",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "0",
+          "name": "Position 1",
+          "actionID": "3003"
+        },
+        {
+          "argumentValue": "1",
+          "name": "Position 2",
+          "actionID": "3003"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Starboard Wall",
+      "name": "Transmitter Type F Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "307"
+        }
+      ],
+      "deviceId": "4",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "0",
+          "name": "Position 1",
+          "actionID": "3113"
+        },
+        {
+          "argumentValue": "1",
+          "name": "Position 2",
+          "actionID": "3113"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Starboard Wall",
+      "name": "Door Jettison Handle",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "324"
+        }
+      ],
+      "deviceId": "2",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "1",
+          "name": "Position 1",
+          "actionID": "3073"
+        },
+        {
+          "argumentValue": "0",
+          "name": "Position 2",
+          "actionID": "3073"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Rocker",
+      "device": "Starboard Wall",
+      "name": "Aerial Winch Rotary Handle",
+      "description": "Current state of this rocker.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "356"
+        }
+      ],
+      "triggereveryrelease": false,
+      "vertical": false,
+      "buttons": [
+        {
+          "deviceId": "31",
+          "pushId": "3004",
+          "pushValue": "-1",
+          "releaseId": "3004",
+          "releaseValue": "0"
+        },
+        {
+          "deviceId": "31",
+          "pushId": "3004",
+          "pushValue": "1",
+          "releaseId": "3004",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Starboard Wall",
+      "name": "Aerial Winch Reel Lock",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "357"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "31",
+          "pushId": "3005",
+          "pushValue": "1.0",
+          "releaseId": "3005",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Stick",
+      "name": "Button B2 - Secondary & Drop Ordnance Trigger",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "244"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "5",
+          "pushId": "3007",
+          "pushValue": "1.0",
+          "releaseId": "3007",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Stick",
+      "name": "Button A - Gun Trigger",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "245"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "5",
+          "pushId": "3005",
+          "pushValue": "1.0",
+          "releaseId": "3005",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Stick",
+      "name": "Button B1 - Cannon Trigger",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "246"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "5",
+          "pushId": "3006",
+          "pushValue": "1.0",
+          "releaseId": "3006",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Stick",
+      "name": "Wheel Brakes Lever",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "248"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.1,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "2",
+          "actionId": "3001"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Stick",
+      "name": "Wheel Brakes Lever Lock",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "291"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "2",
+          "pushId": "3004",
+          "pushValue": "1.0",
+          "releaseId": "3004",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Systematic Instruments",
+      "name": "Volt Meter",
+      "description": "Number",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "103"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": 0.0,
+            "mappedValue": 0.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 40.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Value between 0 and 40",
+      "unit": "Numeric",
+      "exposeunscaledvalue": true
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Systematic Instruments",
+      "name": "Oxygen Delivery (Starboard)",
+      "description": "Number",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "155"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": 0.0,
+            "mappedValue": 0.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 10000.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Value between 0 and 10000",
+      "unit": "Numeric",
+      "exposeunscaledvalue": true
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Systematic Instruments",
+      "name": "Oxygen Supply (Starboard)",
+      "description": "Number",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "156"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": 0.0,
+            "mappedValue": 0.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 1.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Value between 0 and 1",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Systematic Instruments",
+      "name": "Air Temperature",
+      "description": "Celsius",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "314"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": -1.0,
+            "mappedValue": -31.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 70.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Value between -31 and 70",
+      "unit": "Celsius",
+      "exposeunscaledvalue": true
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Systematic Instruments",
+      "name": "Flaps",
+      "description": "Degrees",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "81"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": 0.0,
+            "mappedValue": 0.0
+          },
+          {
+            "value": 0.7,
+            "mappedValue": 70.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Value between 0 and 70",
+      "unit": "Degrees",
+      "exposeunscaledvalue": true
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Systematic Instruments",
+      "name": "Oxygen Delivery (Port)",
+      "description": "Number",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "82"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": 0.0,
+            "mappedValue": 0.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 10000.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Value between 0 and 10000",
+      "unit": "Numeric",
+      "exposeunscaledvalue": true
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Systematic Instruments",
+      "name": "Oxygen Supply (Port)",
+      "description": "Number",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "83"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": 0.0,
+            "mappedValue": 0.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 1.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Value between 0 and 1",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Systematic Instruments",
+      "name": "Pneumatic Pressure",
+      "description": "Number",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "85"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": 0.0,
+            "mappedValue": 0.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 220.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Value between 0 and 220",
+      "unit": "Numeric",
+      "exposeunscaledvalue": true
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Systematic Instruments",
+      "name": "Wheel Brake Gauge (Left)",
+      "description": "Number",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "86"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": 0.0,
+            "mappedValue": 0.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 130.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Value between 0 and 130",
+      "unit": "Numeric",
+      "exposeunscaledvalue": true
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Systematic Instruments",
+      "name": "Wheel Brake Gauge (Right)",
+      "description": "Number",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "87"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": 0.0,
+            "mappedValue": 0.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 130.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Value between 0 and 130",
+      "unit": "Numeric",
+      "exposeunscaledvalue": true
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "T.1154",
+      "name": "M1",
+      "description": "Number",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "104"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": 0.0,
+            "mappedValue": 0.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 0.3
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Value between 0 and 0.3",
+      "unit": "Numeric",
+      "exposeunscaledvalue": true
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "T.1154",
+      "name": "M2",
+      "description": "Number",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "105"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": 0.0,
+            "mappedValue": 0.0
+          },
+          {
+            "value": 0.016,
+            "mappedValue": 0.05
+          },
+          {
+            "value": 0.074,
+            "mappedValue": 0.1
+          },
+          {
+            "value": 0.165,
+            "mappedValue": 0.15
+          },
+          {
+            "value": 0.314,
+            "mappedValue": 0.2
+          },
+          {
+            "value": 0.505,
+            "mappedValue": 0.25
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 0.35
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Value between 0 and 0.35",
+      "unit": "Numeric",
+      "exposeunscaledvalue": true
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "T.1154",
+      "name": "M3 HF Aerial Feed",
+      "description": "Number",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "106"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": 0.0,
+            "mappedValue": 0.0
+          },
+          {
+            "value": 0.032,
+            "mappedValue": 0.05
+          },
+          {
+            "value": 0.069,
+            "mappedValue": 0.1
+          },
+          {
+            "value": 0.149,
+            "mappedValue": 0.15
+          },
+          {
+            "value": 0.25,
+            "mappedValue": 0.2
+          },
+          {
+            "value": 0.388,
+            "mappedValue": 0.25
+          },
+          {
+            "value": 0.559,
+            "mappedValue": 0.3
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 0.4
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Value between 0 and 0.4",
+      "unit": "Numeric",
+      "exposeunscaledvalue": true
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "T.1154",
+      "name": "C17",
+      "description": "Number",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "205"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": 0.0,
+            "mappedValue": 180.0
+          },
+          {
+            "value": 0.137,
+            "mappedValue": 200.0
+          },
+          {
+            "value": 0.241,
+            "mappedValue": 220.0
+          },
+          {
+            "value": 0.361,
+            "mappedValue": 250.0
+          },
+          {
+            "value": 0.522,
+            "mappedValue": 300.0
+          },
+          {
+            "value": 0.643,
+            "mappedValue": 350.0
+          },
+          {
+            "value": 0.706,
+            "mappedValue": 380.0
+          },
+          {
+            "value": 0.769,
+            "mappedValue": 420.0
+          },
+          {
+            "value": 0.827,
+            "mappedValue": 460.0
+          },
+          {
+            "value": 0.912,
+            "mappedValue": 520.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Value between 180 and 520",
+      "unit": "Numeric",
+      "exposeunscaledvalue": true
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "T.1154",
+      "name": "C4",
+      "description": "Number",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "206"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": 0.0,
+            "mappedValue": 2.9
+          },
+          {
+            "value": 0.057,
+            "mappedValue": 3.0
+          },
+          {
+            "value": 0.232,
+            "mappedValue": 3.4
+          },
+          {
+            "value": 0.263,
+            "mappedValue": 3.5
+          },
+          {
+            "value": 0.299,
+            "mappedValue": 3.6
+          },
+          {
+            "value": 0.334,
+            "mappedValue": 3.7
+          },
+          {
+            "value": 0.365,
+            "mappedValue": 3.8
+          },
+          {
+            "value": 0.4,
+            "mappedValue": 3.9
+          },
+          {
+            "value": 0.434,
+            "mappedValue": 4.0
+          },
+          {
+            "value": 0.588,
+            "mappedValue": 4.5
+          },
+          {
+            "value": 0.736,
+            "mappedValue": 5.0
+          },
+          {
+            "value": 0.912,
+            "mappedValue": 5.7
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Value between 2.9 and 5.7",
+      "unit": "Numeric",
+      "exposeunscaledvalue": true
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "T.1154",
+      "name": "C2",
+      "description": "Number",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "207"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": 0.0,
+            "mappedValue": 5.2
+          },
+          {
+            "value": 0.039,
+            "mappedValue": 5.3
+          },
+          {
+            "value": 0.127,
+            "mappedValue": 5.6
+          },
+          {
+            "value": 0.218,
+            "mappedValue": 6.0
+          },
+          {
+            "value": 0.321,
+            "mappedValue": 6.5
+          },
+          {
+            "value": 0.416,
+            "mappedValue": 7.0
+          },
+          {
+            "value": 0.502,
+            "mappedValue": 7.5
+          },
+          {
+            "value": 0.578,
+            "mappedValue": 8.0
+          },
+          {
+            "value": 0.655,
+            "mappedValue": 8.5
+          },
+          {
+            "value": 0.734,
+            "mappedValue": 9.0
+          },
+          {
+            "value": 0.801,
+            "mappedValue": 9.5
+          },
+          {
+            "value": 0.937,
+            "mappedValue": 10.4
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Value between 5.2 and 10.4",
+      "unit": "Numeric",
+      "exposeunscaledvalue": true
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "T.1154",
+      "name": "C15",
+      "description": "Number",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "208"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": 0.0,
+            "mappedValue": 5.2
+          },
+          {
+            "value": 0.039,
+            "mappedValue": 5.3
+          },
+          {
+            "value": 0.127,
+            "mappedValue": 5.6
+          },
+          {
+            "value": 0.218,
+            "mappedValue": 6.0
+          },
+          {
+            "value": 0.321,
+            "mappedValue": 6.5
+          },
+          {
+            "value": 0.416,
+            "mappedValue": 7.0
+          },
+          {
+            "value": 0.502,
+            "mappedValue": 7.5
+          },
+          {
+            "value": 0.578,
+            "mappedValue": 8.0
+          },
+          {
+            "value": 0.655,
+            "mappedValue": 8.5
+          },
+          {
+            "value": 0.734,
+            "mappedValue": 9.0
+          },
+          {
+            "value": 0.801,
+            "mappedValue": 9.5
+          },
+          {
+            "value": 0.937,
+            "mappedValue": 10.4
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Value between 5.2 and 10.4",
+      "unit": "Numeric",
+      "exposeunscaledvalue": true
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "T.1154",
+      "name": "C16",
+      "description": "Number",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "209"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": 0.0,
+            "mappedValue": 2.9
+          },
+          {
+            "value": 0.057,
+            "mappedValue": 3.0
+          },
+          {
+            "value": 0.232,
+            "mappedValue": 3.4
+          },
+          {
+            "value": 0.263,
+            "mappedValue": 3.5
+          },
+          {
+            "value": 0.299,
+            "mappedValue": 3.6
+          },
+          {
+            "value": 0.334,
+            "mappedValue": 3.7
+          },
+          {
+            "value": 0.365,
+            "mappedValue": 3.8
+          },
+          {
+            "value": 0.4,
+            "mappedValue": 3.9
+          },
+          {
+            "value": 0.434,
+            "mappedValue": 4.0
+          },
+          {
+            "value": 0.588,
+            "mappedValue": 4.5
+          },
+          {
+            "value": 0.736,
+            "mappedValue": 5.0
+          },
+          {
+            "value": 0.912,
+            "mappedValue": 5.7
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Value between 2.9 and 5.7",
+      "unit": "Numeric",
+      "exposeunscaledvalue": true
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "T.1154",
+      "name": "Condenser C17 Presets Knob",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%.2f",
+          "isExportedEveryFrame": false,
+          "id": "210"
+        }
+      ],
+      "deviceId": "25",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "0.00",
+          "name": "Position  1",
+          "actionID": "3029"
+        },
+        {
+          "argumentValue": "0.10",
+          "name": "Position  2",
+          "actionID": "3029"
+        },
+        {
+          "argumentValue": "0.20",
+          "name": "Position  3",
+          "actionID": "3029"
+        },
+        {
+          "argumentValue": "0.30",
+          "name": "Position  4",
+          "actionID": "3029"
+        },
+        {
+          "argumentValue": "0.40",
+          "name": "Position  5",
+          "actionID": "3029"
+        },
+        {
+          "argumentValue": "0.50",
+          "name": "Position  6",
+          "actionID": "3029"
+        },
+        {
+          "argumentValue": "0.60",
+          "name": "Position  7",
+          "actionID": "3029"
+        },
+        {
+          "argumentValue": "0.70",
+          "name": "Position  8",
+          "actionID": "3029"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "T.1154",
+      "name": "Condenser C4 Presets Knob",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%.2f",
+          "isExportedEveryFrame": false,
+          "id": "211"
+        }
+      ],
+      "deviceId": "25",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "0.00",
+          "name": "Position  1",
+          "actionID": "3020"
+        },
+        {
+          "argumentValue": "0.10",
+          "name": "Position  2",
+          "actionID": "3020"
+        },
+        {
+          "argumentValue": "0.20",
+          "name": "Position  3",
+          "actionID": "3020"
+        },
+        {
+          "argumentValue": "0.30",
+          "name": "Position  4",
+          "actionID": "3020"
+        },
+        {
+          "argumentValue": "0.40",
+          "name": "Position  5",
+          "actionID": "3020"
+        },
+        {
+          "argumentValue": "0.50",
+          "name": "Position  6",
+          "actionID": "3020"
+        },
+        {
+          "argumentValue": "0.60",
+          "name": "Position  7",
+          "actionID": "3020"
+        },
+        {
+          "argumentValue": "0.70",
+          "name": "Position  8",
+          "actionID": "3020"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "T.1154",
+      "name": "Condenser C2 Presets Knob",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%.2f",
+          "isExportedEveryFrame": false,
+          "id": "212"
+        }
+      ],
+      "deviceId": "25",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "0.00",
+          "name": "Position  1",
+          "actionID": "3017"
+        },
+        {
+          "argumentValue": "0.10",
+          "name": "Position  2",
+          "actionID": "3017"
+        },
+        {
+          "argumentValue": "0.20",
+          "name": "Position  3",
+          "actionID": "3017"
+        },
+        {
+          "argumentValue": "0.30",
+          "name": "Position  4",
+          "actionID": "3017"
+        },
+        {
+          "argumentValue": "0.40",
+          "name": "Position  5",
+          "actionID": "3017"
+        },
+        {
+          "argumentValue": "0.50",
+          "name": "Position  6",
+          "actionID": "3017"
+        },
+        {
+          "argumentValue": "0.60",
+          "name": "Position  7",
+          "actionID": "3017"
+        },
+        {
+          "argumentValue": "0.70",
+          "name": "Position  8",
+          "actionID": "3017"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "T.1154",
+      "name": "Condenser C15 Presets Knob",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%.2f",
+          "isExportedEveryFrame": false,
+          "id": "213"
+        }
+      ],
+      "deviceId": "25",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "0.00",
+          "name": "Position  1",
+          "actionID": "3023"
+        },
+        {
+          "argumentValue": "0.10",
+          "name": "Position  2",
+          "actionID": "3023"
+        },
+        {
+          "argumentValue": "0.20",
+          "name": "Position  3",
+          "actionID": "3023"
+        },
+        {
+          "argumentValue": "0.30",
+          "name": "Position  4",
+          "actionID": "3023"
+        },
+        {
+          "argumentValue": "0.40",
+          "name": "Position  5",
+          "actionID": "3023"
+        },
+        {
+          "argumentValue": "0.50",
+          "name": "Position  6",
+          "actionID": "3023"
+        },
+        {
+          "argumentValue": "0.60",
+          "name": "Position  7",
+          "actionID": "3023"
+        },
+        {
+          "argumentValue": "0.70",
+          "name": "Position  8",
+          "actionID": "3023"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "T.1154",
+      "name": "Condenser C16 Presets Knob",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%.2f",
+          "isExportedEveryFrame": false,
+          "id": "214"
+        }
+      ],
+      "deviceId": "25",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "0.00",
+          "name": "Position  1",
+          "actionID": "3026"
+        },
+        {
+          "argumentValue": "0.10",
+          "name": "Position  2",
+          "actionID": "3026"
+        },
+        {
+          "argumentValue": "0.20",
+          "name": "Position  3",
+          "actionID": "3026"
+        },
+        {
+          "argumentValue": "0.30",
+          "name": "Position  4",
+          "actionID": "3026"
+        },
+        {
+          "argumentValue": "0.40",
+          "name": "Position  5",
+          "actionID": "3026"
+        },
+        {
+          "argumentValue": "0.50",
+          "name": "Position  6",
+          "actionID": "3026"
+        },
+        {
+          "argumentValue": "0.60",
+          "name": "Position  7",
+          "actionID": "3026"
+        },
+        {
+          "argumentValue": "0.70",
+          "name": "Position  8",
+          "actionID": "3026"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "T.1154",
+      "name": "Frequency Range Switch S1 S2",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%.2f",
+          "isExportedEveryFrame": false,
+          "id": "215"
+        }
+      ],
+      "deviceId": "25",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "0.00",
+          "name": "Position  1",
+          "actionID": "3038"
+        },
+        {
+          "argumentValue": "0.10",
+          "name": "Position  2",
+          "actionID": "3038"
+        },
+        {
+          "argumentValue": "0.20",
+          "name": "Position  3",
+          "actionID": "3038"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "T.1154",
+      "name": "Inductance Tapping Switch S3",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%.2f",
+          "isExportedEveryFrame": false,
+          "id": "216"
+        }
+      ],
+      "deviceId": "25",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "0.00",
+          "name": "Position  1",
+          "actionID": "3041"
+        },
+        {
+          "argumentValue": "0.10",
+          "name": "Position  2",
+          "actionID": "3041"
+        },
+        {
+          "argumentValue": "0.20",
+          "name": "Position  3",
+          "actionID": "3041"
+        },
+        {
+          "argumentValue": "0.30",
+          "name": "Position  4",
+          "actionID": "3041"
+        },
+        {
+          "argumentValue": "0.40",
+          "name": "Position  5",
+          "actionID": "3041"
+        },
+        {
+          "argumentValue": "0.50",
+          "name": "Position  6",
+          "actionID": "3041"
+        },
+        {
+          "argumentValue": "0.60",
+          "name": "Position  7",
+          "actionID": "3041"
+        },
+        {
+          "argumentValue": "0.70",
+          "name": "Position  8",
+          "actionID": "3041"
+        },
+        {
+          "argumentValue": "0.80",
+          "name": "Position  9",
+          "actionID": "3041"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "T.1154",
+      "name": "Inductance Tapping Switch S4",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%.2f",
+          "isExportedEveryFrame": false,
+          "id": "217"
+        }
+      ],
+      "deviceId": "25",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "0.00",
+          "name": "Position  1",
+          "actionID": "3044"
+        },
+        {
+          "argumentValue": "0.10",
+          "name": "Position  2",
+          "actionID": "3044"
+        },
+        {
+          "argumentValue": "0.20",
+          "name": "Position  3",
+          "actionID": "3044"
+        },
+        {
+          "argumentValue": "0.30",
+          "name": "Position  4",
+          "actionID": "3044"
+        },
+        {
+          "argumentValue": "0.40",
+          "name": "Position  5",
+          "actionID": "3044"
+        },
+        {
+          "argumentValue": "0.50",
+          "name": "Position  6",
+          "actionID": "3044"
+        },
+        {
+          "argumentValue": "0.60",
+          "name": "Position  7",
+          "actionID": "3044"
+        },
+        {
+          "argumentValue": "0.70",
+          "name": "Position  8",
+          "actionID": "3044"
+        },
+        {
+          "argumentValue": "0.80",
+          "name": "Position  9",
+          "actionID": "3044"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "T.1154",
+      "name": "Master Switch S5",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%.2f",
+          "isExportedEveryFrame": false,
+          "id": "218"
+        }
+      ],
+      "deviceId": "25",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "0.00",
+          "name": "Position  1",
+          "actionID": "3047"
+        },
+        {
+          "argumentValue": "0.10",
+          "name": "Position  2",
+          "actionID": "3047"
+        },
+        {
+          "argumentValue": "0.20",
+          "name": "Position  3",
+          "actionID": "3047"
+        },
+        {
+          "argumentValue": "0.30",
+          "name": "Position  4",
+          "actionID": "3047"
+        },
+        {
+          "argumentValue": "0.40",
+          "name": "Position  5",
+          "actionID": "3047"
+        },
+        {
+          "argumentValue": "0.50",
+          "name": "Position  6",
+          "actionID": "3047"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "T.1154",
+      "name": "Inductance Tapping Switch S6",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%.2f",
+          "isExportedEveryFrame": false,
+          "id": "219"
+        }
+      ],
+      "deviceId": "25",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "0.00",
+          "name": "Position  1",
+          "actionID": "3050"
+        },
+        {
+          "argumentValue": "0.05",
+          "name": "Position  2",
+          "actionID": "3050"
+        },
+        {
+          "argumentValue": "0.10",
+          "name": "Position  3",
+          "actionID": "3050"
+        },
+        {
+          "argumentValue": "0.15",
+          "name": "Position  4",
+          "actionID": "3050"
+        },
+        {
+          "argumentValue": "0.20",
+          "name": "Position  5",
+          "actionID": "3050"
+        },
+        {
+          "argumentValue": "0.25",
+          "name": "Position  6",
+          "actionID": "3050"
+        },
+        {
+          "argumentValue": "0.30",
+          "name": "Position  7",
+          "actionID": "3050"
+        },
+        {
+          "argumentValue": "0.35",
+          "name": "Position  8",
+          "actionID": "3050"
+        },
+        {
+          "argumentValue": "0.40",
+          "name": "Position  9",
+          "actionID": "3050"
+        },
+        {
+          "argumentValue": "0.45",
+          "name": "Position  10",
+          "actionID": "3050"
+        },
+        {
+          "argumentValue": "0.50",
+          "name": "Position  11",
+          "actionID": "3050"
+        },
+        {
+          "argumentValue": "0.55",
+          "name": "Position  12",
+          "actionID": "3050"
+        },
+        {
+          "argumentValue": "0.60",
+          "name": "Position  13",
+          "actionID": "3050"
+        },
+        {
+          "argumentValue": "0.65",
+          "name": "Position  14",
+          "actionID": "3050"
+        },
+        {
+          "argumentValue": "0.70",
+          "name": "Position  15",
+          "actionID": "3050"
+        },
+        {
+          "argumentValue": "0.75",
+          "name": "Position  16",
+          "actionID": "3050"
+        },
+        {
+          "argumentValue": "0.80",
+          "name": "Position  17",
+          "actionID": "3050"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "T.1154",
+      "name": "Inductance Tapping Switch S7",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%.2f",
+          "isExportedEveryFrame": false,
+          "id": "220"
+        }
+      ],
+      "deviceId": "25",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "0.00",
+          "name": "Position  1",
+          "actionID": "3053"
+        },
+        {
+          "argumentValue": "0.05",
+          "name": "Position  2",
+          "actionID": "3053"
+        },
+        {
+          "argumentValue": "0.10",
+          "name": "Position  3",
+          "actionID": "3053"
+        },
+        {
+          "argumentValue": "0.15",
+          "name": "Position  4",
+          "actionID": "3053"
+        },
+        {
+          "argumentValue": "0.20",
+          "name": "Position  5",
+          "actionID": "3053"
+        },
+        {
+          "argumentValue": "0.25",
+          "name": "Position  6",
+          "actionID": "3053"
+        },
+        {
+          "argumentValue": "0.30",
+          "name": "Position  7",
+          "actionID": "3053"
+        },
+        {
+          "argumentValue": "0.35",
+          "name": "Position  8",
+          "actionID": "3053"
+        },
+        {
+          "argumentValue": "0.40",
+          "name": "Position  9",
+          "actionID": "3053"
+        },
+        {
+          "argumentValue": "0.45",
+          "name": "Position  10",
+          "actionID": "3053"
+        },
+        {
+          "argumentValue": "0.50",
+          "name": "Position  11",
+          "actionID": "3053"
+        },
+        {
+          "argumentValue": "0.55",
+          "name": "Position  12",
+          "actionID": "3053"
+        },
+        {
+          "argumentValue": "0.60",
+          "name": "Position  13",
+          "actionID": "3053"
+        },
+        {
+          "argumentValue": "0.65",
+          "name": "Position  14",
+          "actionID": "3053"
+        },
+        {
+          "argumentValue": "0.70",
+          "name": "Position  15",
+          "actionID": "3053"
+        },
+        {
+          "argumentValue": "0.75",
+          "name": "Position  16",
+          "actionID": "3053"
+        },
+        {
+          "argumentValue": "0.80",
+          "name": "Position  17",
+          "actionID": "3053"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "T.1154",
+      "name": "Output Inductance Control L6",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "221"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.1,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "25",
+          "actionId": "3056"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "T.1154",
+      "name": "Master Oscillator C4 Vernier",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "222"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.1,
+      "argumentMin": -1.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "25",
+          "actionId": "3035"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "T.1154",
+      "name": "Master Oscillator C2 Vernier",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "223"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.1,
+      "argumentMin": -1.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "25",
+          "actionId": "3032"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "T.1154",
+      "name": "Master Oscillator Tuning Condenser C2",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.4f",
+          "isExportedEveryFrame": false,
+          "id": "358"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.01,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "25",
+          "actionId": "3002"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "T.1154",
+      "name": "Master Oscillator Tuning Condenser C4",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.4f",
+          "isExportedEveryFrame": false,
+          "id": "359"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.01,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "25",
+          "actionId": "3005"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "T.1154",
+      "name": "Output Tuning Condenser C15",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.4f",
+          "isExportedEveryFrame": false,
+          "id": "360"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.01,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "25",
+          "actionId": "3008"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "T.1154",
+      "name": "Output Tuning Condenser C16",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.4f",
+          "isExportedEveryFrame": false,
+          "id": "361"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.01,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "25",
+          "actionId": "3011"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "T.1154",
+      "name": "Master Oscillator Tuning Condenser C17",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.4f",
+          "isExportedEveryFrame": false,
+          "id": "362"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.01,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "25",
+          "actionId": "3014"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "T.1154",
+      "name": "Key",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "365"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "25",
+          "pushId": "3001",
+          "pushValue": "1.0",
+          "releaseId": "3001",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Throttle Quadrant",
+      "name": "Throttles Transit Left",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "18"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.1,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "3",
+          "actionId": "3016"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Throttle Quadrant",
+      "name": "Throttles Transit Right",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "19"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.1,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "3",
+          "actionId": "3017"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Throttle Quadrant",
+      "name": "Throttles Control Left Trigger",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "20"
+        }
+      ],
+      "deviceId": "3",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "1",
+          "name": "Position 1",
+          "actionID": "3014"
+        },
+        {
+          "argumentValue": "0",
+          "name": "Position 2",
+          "actionID": "3014"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Throttle Quadrant",
+      "name": "Throttles Control Right Trigger",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "21"
+        }
+      ],
+      "deviceId": "3",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "1",
+          "name": "Position 1",
+          "actionID": "3015"
+        },
+        {
+          "argumentValue": "0",
+          "name": "Position 2",
+          "actionID": "3015"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Throttle Quadrant",
+      "name": "Propeller Control Left",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "22"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.1,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "3",
+          "actionId": "3036"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Throttle Quadrant",
+      "name": "Propeller Control Right",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "23"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.1,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "3",
+          "actionId": "3039"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Throttle Quadrant",
+      "name": "Propeller Friction",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "24"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.1,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "3",
+          "actionId": "3033"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Throttle Quadrant",
+      "name": "Throttle Friction",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "25"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.1,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "3",
+          "actionId": "3030"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Throttle Quadrant",
+      "name": "Supercharger Gear Change Switch",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "26"
+        }
+      ],
+      "deviceId": "4",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "0",
+          "name": "Position 1",
+          "actionID": "3022"
+        },
+        {
+          "argumentValue": "1",
+          "name": "Position 2",
+          "actionID": "3022"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Throttle Quadrant",
+      "name": "Mixture Control",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "27"
+        }
+      ],
+      "deviceId": "3",
+      "incrementalPulseValue": "",
+      "positions": [
+        {
+          "argumentValue": "1",
+          "name": "Position 1",
+          "actionID": "3086"
+        },
+        {
+          "argumentValue": "0",
+          "name": "Position 2",
+          "actionID": "3086"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Throttle Quadrant",
+      "name": "Throttles Control Left",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "288"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.1,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "3",
+          "actionId": "3020"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Throttle Quadrant",
+      "name": "Throttles Control Right",
+      "description": "Current value of this axis.",
+      "exports": [
+        {
+          "format": "%.1f",
+          "isExportedEveryFrame": false,
+          "id": "289"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.1,
+      "argumentMin": 0.0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "3",
+          "actionId": "3023"
+        }
+      }
+    }
+  ]
+}
