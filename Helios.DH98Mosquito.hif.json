@@ -1,7 +1,7 @@
 {
   "source": "Helios",
-  "version": "1.6.6140.0801",
-  "commit": "3d43a2206249aece74a197470510efb736b10ca9",
+  "version": "1.6.6140.0804",
+  "commit": "95b52d01317d1474da0cb3dc485a3af339b40db3",
   "type": "Existing",
   "name": "DCS DH98 Mosquito FB Mk VI",
   "module": "MosquitoFBMkVI",
@@ -59,10 +59,9 @@
       ]
     },
     {
-      "heliosType": "DCS.Common.Axis",
+      "heliosType": "DCS.Common.RotaryEncoder",
       "device": "Clock",
       "name": "Set (Turn)",
-      "description": "Current value of this axis.",
       "exports": [
         {
           "format": "%.4f",
@@ -70,12 +69,13 @@
           "id": "102"
         }
       ],
-      "loop": false,
-      "argumentValue": 0.01,
-      "argumentMin": 0.0,
-      "argumentMax": 1.0,
+      "argumentValue": 0.05,
       "actions": {
-        "set": {
+        "increment": {
+          "deviceId": "19",
+          "actionId": "3001"
+        },
+        "decrement": {
           "deviceId": "19",
           "actionId": "3001"
         }
@@ -2101,37 +2101,6 @@
     {
       "heliosType": "DCS.Common.Rocker",
       "device": "Main Panel",
-      "name": "Rudder Trim",
-      "description": "Current state of this rocker.",
-      "exports": [
-        {
-          "format": "%1d",
-          "isExportedEveryFrame": false,
-          "id": "111"
-        }
-      ],
-      "triggereveryrelease": false,
-      "vertical": true,
-      "buttons": [
-        {
-          "deviceId": "2",
-          "pushId": "3053",
-          "pushValue": "1",
-          "releaseId": "3053",
-          "releaseValue": "0"
-        },
-        {
-          "deviceId": "2",
-          "pushId": "3053",
-          "pushValue": "-1",
-          "releaseId": "3053",
-          "releaseValue": "0"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.Rocker",
-      "device": "Main Panel",
       "name": "Bomb Doors Lever",
       "description": "Current state of this rocker.",
       "exports": [
@@ -2637,37 +2606,6 @@
       ]
     },
     {
-      "heliosType": "DCS.Common.Rocker",
-      "device": "Main Panel",
-      "name": "Aileron Trim",
-      "description": "Current state of this rocker.",
-      "exports": [
-        {
-          "format": "%1d",
-          "isExportedEveryFrame": false,
-          "id": "280"
-        }
-      ],
-      "triggereveryrelease": false,
-      "vertical": true,
-      "buttons": [
-        {
-          "deviceId": "2",
-          "pushId": "3051",
-          "pushValue": "-1",
-          "releaseId": "3051",
-          "releaseValue": "0"
-        },
-        {
-          "deviceId": "2",
-          "pushId": "3051",
-          "pushValue": "1",
-          "releaseId": "3051",
-          "releaseValue": "0"
-        }
-      ]
-    },
-    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Main Panel",
       "name": "Bomb Door Light (Yellow)",
@@ -2822,12 +2760,12 @@
         {
           "argumentValue": "1",
           "name": "Open",
-          "actionID": "3001"
+          "actionID": "3098"
         },
         {
           "argumentValue": "0",
           "name": "Closed",
-          "actionID": "3001"
+          "actionID": "3098"
         }
       ]
     },
@@ -2849,12 +2787,12 @@
         {
           "argumentValue": "1",
           "name": "Open",
-          "actionID": "3002"
+          "actionID": "3099"
         },
         {
           "argumentValue": "0",
           "name": "Closed",
-          "actionID": "3002"
+          "actionID": "3099"
         }
       ]
     },
@@ -3608,37 +3546,6 @@
       ]
     },
     {
-      "heliosType": "DCS.Common.Rocker",
-      "device": "Port Wall",
-      "name": "Elevator Trim",
-      "description": "Current state of this rocker.",
-      "exports": [
-        {
-          "format": "%1d",
-          "isExportedEveryFrame": false,
-          "id": "279"
-        }
-      ],
-      "triggereveryrelease": false,
-      "vertical": true,
-      "buttons": [
-        {
-          "deviceId": "2",
-          "pushId": "3016",
-          "pushValue": "1",
-          "releaseId": "3016",
-          "releaseValue": "0"
-        },
-        {
-          "deviceId": "2",
-          "pushId": "3016",
-          "pushValue": "-1",
-          "releaseId": "3016",
-          "releaseValue": "0"
-        }
-      ]
-    },
-    {
       "heliosType": "DCS.Common.RotaryEncoder",
       "device": "Port Wall",
       "name": "Magnetic Compass Ring",
@@ -4042,12 +3949,12 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "0",
+          "argumentValue": "1",
           "name": "Position 1",
           "actionID": "3109"
         },
         {
-          "argumentValue": "1",
+          "argumentValue": "0",
           "name": "Position 2",
           "actionID": "3109"
         }
@@ -4069,12 +3976,12 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "0",
+          "argumentValue": "1",
           "name": "Position 1",
           "actionID": "3111"
         },
         {
-          "argumentValue": "1",
+          "argumentValue": "0",
           "name": "Position 2",
           "actionID": "3111"
         }
@@ -4163,12 +4070,12 @@
         {
           "argumentValue": "1",
           "name": "Position 1",
-          "actionID": "3107"
+          "actionID": "3092"
         },
         {
           "argumentValue": "0",
           "name": "Position 2",
-          "actionID": "3107"
+          "actionID": "3092"
         }
       ]
     },
@@ -4353,7 +4260,7 @@
       "description": "Current value of this axis.",
       "exports": [
         {
-          "format": "%.1f",
+          "format": "%.4f",
           "isExportedEveryFrame": false,
           "id": "229"
         }
@@ -4445,7 +4352,7 @@
       "description": "Number",
       "exports": [
         {
-          "format": "%.4f",
+          "format": "%.6f",
           "id": "232"
         }
       ],
@@ -4466,46 +4373,46 @@
       "unit": "Numeric"
     },
     {
-      "heliosType": "DCS.Common.Axis",
+      "heliosType": "DCS.Common.RotaryEncoder",
       "device": "R.1155",
       "name": "Tuning (Fine)",
-      "description": "Current value of this axis.",
       "exports": [
         {
-          "format": "%.1f",
+          "format": "%.4f",
           "isExportedEveryFrame": false,
           "id": "233"
         }
       ],
-      "loop": false,
       "argumentValue": 0.1,
-      "argumentMin": 0.0,
-      "argumentMax": 1.0,
       "actions": {
-        "set": {
+        "increment": {
+          "deviceId": "25",
+          "actionId": "3071"
+        },
+        "decrement": {
           "deviceId": "25",
           "actionId": "3071"
         }
       }
     },
     {
-      "heliosType": "DCS.Common.Axis",
+      "heliosType": "DCS.Common.RotaryEncoder",
       "device": "R.1155",
       "name": "Tuning (Coarse)",
-      "description": "Current value of this axis.",
       "exports": [
         {
-          "format": "%.1f",
+          "format": "%.4f",
           "isExportedEveryFrame": false,
           "id": "234"
         }
       ],
-      "loop": false,
       "argumentValue": 0.1,
-      "argumentMin": 0.0,
-      "argumentMax": 1.0,
       "actions": {
-        "set": {
+        "increment": {
+          "deviceId": "25",
+          "actionId": "3074"
+        },
+        "decrement": {
           "deviceId": "25",
           "actionId": "3074"
         }
@@ -4554,14 +4461,14 @@
       "vertical": false,
       "buttons": [
         {
-          "deviceId": "31",
+          "deviceId": "25",
           "pushId": "3089",
           "pushValue": "1",
           "releaseId": "3089",
           "releaseValue": "0"
         },
         {
-          "deviceId": "31",
+          "deviceId": "25",
           "pushId": "3089",
           "pushValue": "-1",
           "releaseId": "3089",
@@ -5538,7 +5445,7 @@
     {
       "heliosType": "DCS.Common.Switch",
       "device": "Starboard Wall",
-      "name": "Pitot Head Switch",
+      "name": "Pitot Heat Switch",
       "description": "Current position of this switch.",
       "exports": [
         {
@@ -7781,10 +7688,9 @@
       }
     },
     {
-      "heliosType": "DCS.Common.Axis",
+      "heliosType": "DCS.Common.RotaryEncoder",
       "device": "T.1154",
       "name": "Master Oscillator Tuning Condenser C2",
-      "description": "Current value of this axis.",
       "exports": [
         {
           "format": "%.4f",
@@ -7792,22 +7698,22 @@
           "id": "358"
         }
       ],
-      "loop": false,
       "argumentValue": 0.01,
-      "argumentMin": 0.0,
-      "argumentMax": 1.0,
       "actions": {
-        "set": {
+        "increment": {
+          "deviceId": "25",
+          "actionId": "3002"
+        },
+        "decrement": {
           "deviceId": "25",
           "actionId": "3002"
         }
       }
     },
     {
-      "heliosType": "DCS.Common.Axis",
+      "heliosType": "DCS.Common.RotaryEncoder",
       "device": "T.1154",
       "name": "Master Oscillator Tuning Condenser C4",
-      "description": "Current value of this axis.",
       "exports": [
         {
           "format": "%.4f",
@@ -7815,22 +7721,22 @@
           "id": "359"
         }
       ],
-      "loop": false,
       "argumentValue": 0.01,
-      "argumentMin": 0.0,
-      "argumentMax": 1.0,
       "actions": {
-        "set": {
+        "increment": {
+          "deviceId": "25",
+          "actionId": "3005"
+        },
+        "decrement": {
           "deviceId": "25",
           "actionId": "3005"
         }
       }
     },
     {
-      "heliosType": "DCS.Common.Axis",
+      "heliosType": "DCS.Common.RotaryEncoder",
       "device": "T.1154",
       "name": "Output Tuning Condenser C15",
-      "description": "Current value of this axis.",
       "exports": [
         {
           "format": "%.4f",
@@ -7838,22 +7744,22 @@
           "id": "360"
         }
       ],
-      "loop": false,
       "argumentValue": 0.01,
-      "argumentMin": 0.0,
-      "argumentMax": 1.0,
       "actions": {
-        "set": {
+        "increment": {
+          "deviceId": "25",
+          "actionId": "3008"
+        },
+        "decrement": {
           "deviceId": "25",
           "actionId": "3008"
         }
       }
     },
     {
-      "heliosType": "DCS.Common.Axis",
+      "heliosType": "DCS.Common.RotaryEncoder",
       "device": "T.1154",
       "name": "Output Tuning Condenser C16",
-      "description": "Current value of this axis.",
       "exports": [
         {
           "format": "%.4f",
@@ -7861,22 +7767,22 @@
           "id": "361"
         }
       ],
-      "loop": false,
       "argumentValue": 0.01,
-      "argumentMin": 0.0,
-      "argumentMax": 1.0,
       "actions": {
-        "set": {
+        "increment": {
+          "deviceId": "25",
+          "actionId": "3011"
+        },
+        "decrement": {
           "deviceId": "25",
           "actionId": "3011"
         }
       }
     },
     {
-      "heliosType": "DCS.Common.Axis",
+      "heliosType": "DCS.Common.RotaryEncoder",
       "device": "T.1154",
       "name": "Master Oscillator Tuning Condenser C17",
-      "description": "Current value of this axis.",
       "exports": [
         {
           "format": "%.4f",
@@ -7884,12 +7790,13 @@
           "id": "362"
         }
       ],
-      "loop": false,
       "argumentValue": 0.01,
-      "argumentMin": 0.0,
-      "argumentMax": 1.0,
       "actions": {
-        "set": {
+        "increment": {
+          "deviceId": "25",
+          "actionId": "3014"
+        },
+        "decrement": {
           "deviceId": "25",
           "actionId": "3014"
         }
@@ -8208,6 +8115,183 @@
           "actionId": "3023"
         }
       }
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Trim Controls",
+      "name": "Rudder Trim Position",
+      "description": "Number",
+      "exports": [
+        {
+          "format": "%.3f",
+          "id": "110"
+        }
+      ],
+      "valueDescription": "number between -1 and 1",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.Rocker",
+      "device": "Trim Controls",
+      "name": "Rudder Trim",
+      "description": "Current state of this rocker.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "111"
+        }
+      ],
+      "triggereveryrelease": false,
+      "vertical": true,
+      "buttons": [
+        {
+          "deviceId": "2",
+          "pushId": "3053",
+          "pushValue": "1",
+          "releaseId": "3053",
+          "releaseValue": "0"
+        },
+        {
+          "deviceId": "2",
+          "pushId": "3053",
+          "pushValue": "-1",
+          "releaseId": "3053",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Trim Controls",
+      "name": "Aileron Trim Position",
+      "description": "Number",
+      "exports": [
+        {
+          "format": "%.3f",
+          "id": "122"
+        }
+      ],
+      "valueDescription": "number between -1 and 1",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Trim Controls",
+      "name": "Aileron Trim Knob Position",
+      "description": "Number",
+      "exports": [
+        {
+          "format": "%.3f",
+          "id": "123"
+        }
+      ],
+      "valueDescription": "number between 0 and 1",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Trim Controls",
+      "name": "Elevator Trim Knob Position",
+      "description": "Number",
+      "exports": [
+        {
+          "format": "%.3f",
+          "id": "258"
+        }
+      ],
+      "valueDescription": "number between 0 and 1",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.Rocker",
+      "device": "Trim Controls",
+      "name": "Elevator Trim",
+      "description": "Current state of this rocker.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "279"
+        }
+      ],
+      "triggereveryrelease": false,
+      "vertical": true,
+      "buttons": [
+        {
+          "deviceId": "2",
+          "pushId": "3016",
+          "pushValue": "1",
+          "releaseId": "3016",
+          "releaseValue": "0"
+        },
+        {
+          "deviceId": "2",
+          "pushId": "3016",
+          "pushValue": "-1",
+          "releaseId": "3016",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Rocker",
+      "device": "Trim Controls",
+      "name": "Aileron Trim",
+      "description": "Current state of this rocker.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "280"
+        }
+      ],
+      "triggereveryrelease": false,
+      "vertical": true,
+      "buttons": [
+        {
+          "deviceId": "2",
+          "pushId": "3051",
+          "pushValue": "-1",
+          "releaseId": "3051",
+          "releaseValue": "0"
+        },
+        {
+          "deviceId": "2",
+          "pushId": "3051",
+          "pushValue": "1",
+          "releaseId": "3051",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Trim Controls",
+      "name": "Rudder Trim Knob Position",
+      "description": "Number",
+      "exports": [
+        {
+          "format": "%.3f",
+          "id": "309"
+        }
+      ],
+      "valueDescription": "number between 0 and 1",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Trim Controls",
+      "name": "Elevator Trim Position",
+      "description": "Number",
+      "exports": [
+        {
+          "format": "%.3f",
+          "id": "6"
+        }
+      ],
+      "valueDescription": "number between -1 and 1",
+      "unit": "Numeric"
     }
   ]
 }
