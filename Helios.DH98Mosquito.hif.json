@@ -1,7 +1,7 @@
 {
   "source": "Helios",
-  "version": "1.6.6140.0804",
-  "commit": "95b52d01317d1474da0cb3dc485a3af339b40db3",
+  "version": "1.6.6140.0805",
+  "commit": "60531a13aa56f4cd44fe382b69e6016ef72e2f90",
   "type": "Existing",
   "name": "DCS DH98 Mosquito FB Mk VI",
   "module": "MosquitoFBMkVI",
@@ -3261,7 +3261,7 @@
     {
       "heliosType": "DCS.Common.Switch",
       "device": "Port Wall",
-      "name": "Transfer Fuel Cock",
+      "name": "Fuel Transfer Cock",
       "description": "Current position of this switch.",
       "exports": [
         {
@@ -3274,12 +3274,12 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1",
+          "argumentValue": "0",
           "name": "Position 1",
           "actionID": "3079"
         },
         {
-          "argumentValue": "0",
+          "argumentValue": "1",
           "name": "Position 2",
           "actionID": "3079"
         }
@@ -3372,12 +3372,12 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1",
+          "argumentValue": "0",
           "name": "Position 1",
           "actionID": "3093"
         },
         {
-          "argumentValue": "0",
+          "argumentValue": "1",
           "name": "Position 2",
           "actionID": "3093"
         }
@@ -3426,12 +3426,12 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1",
+          "argumentValue": "0",
           "name": "Position 1",
           "actionID": "3091"
         },
         {
-          "argumentValue": "0",
+          "argumentValue": "1",
           "name": "Position 2",
           "actionID": "3091"
         }
@@ -3453,12 +3453,12 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1",
+          "argumentValue": "0",
           "name": "Position 1",
           "actionID": "3057"
         },
         {
-          "argumentValue": "0",
+          "argumentValue": "1",
           "name": "Position 2",
           "actionID": "3057"
         }
@@ -4227,7 +4227,7 @@
       }
     },
     {
-      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "heliosType": "DCS.Common.NetworkValue",
       "device": "R.1155",
       "name": "Tuning Anode",
       "description": "Number",
@@ -4237,20 +4237,7 @@
           "id": "228"
         }
       ],
-      "calibration": {
-        "points": [
-          {
-            "value": 0.0,
-            "mappedValue": 0.0
-          },
-          {
-            "value": 1.0,
-            "mappedValue": 1.0
-          }
-        ],
-        "precision": 1
-      },
-      "valueDescription": "Value between 0 and 1",
+      "valueDescription": "Number between 0 and 1",
       "unit": "Numeric"
     },
     {
@@ -4346,30 +4333,17 @@
       ]
     },
     {
-      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "heliosType": "DCS.Common.NetworkValue",
       "device": "R.1155",
       "name": "Tuner",
       "description": "Number",
       "exports": [
         {
-          "format": "%.6f",
+          "format": "%.5f",
           "id": "232"
         }
       ],
-      "calibration": {
-        "points": [
-          {
-            "value": 0.0,
-            "mappedValue": 0.0
-          },
-          {
-            "value": 1.0,
-            "mappedValue": 1.0
-          }
-        ],
-        "precision": 1
-      },
-      "valueDescription": "Value between 0 and 1",
+      "valueDescription": "Number between 0 and 1",
       "unit": "Numeric"
     },
     {
@@ -4546,7 +4520,7 @@
       ]
     },
     {
-      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "heliosType": "DCS.Common.NetworkValue",
       "device": "R.1155",
       "name": "Tuning Cathode",
       "description": "Number",
@@ -4556,20 +4530,7 @@
           "id": "239"
         }
       ],
-      "calibration": {
-        "points": [
-          {
-            "value": 0.0,
-            "mappedValue": 0.0
-          },
-          {
-            "value": 1.0,
-            "mappedValue": 1.0
-          }
-        ],
-        "precision": 1
-      },
-      "valueDescription": "Value between 0 and 1",
+      "valueDescription": "Number between 0 and 1",
       "unit": "Numeric"
     },
     {
@@ -5598,12 +5559,12 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "0",
+          "argumentValue": "1",
           "name": "Position 1",
           "actionID": "3036"
         },
         {
-          "argumentValue": "1",
+          "argumentValue": "0",
           "name": "Position 2",
           "actionID": "3036"
         }
@@ -6245,7 +6206,7 @@
       "exposeunscaledvalue": true
     },
     {
-      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "heliosType": "DCS.Common.NetworkValue",
       "device": "Systematic Instruments",
       "name": "Oxygen Supply (Starboard)",
       "description": "Number",
@@ -6255,20 +6216,7 @@
           "id": "156"
         }
       ],
-      "calibration": {
-        "points": [
-          {
-            "value": 0.0,
-            "mappedValue": 0.0
-          },
-          {
-            "value": 1.0,
-            "mappedValue": 1.0
-          }
-        ],
-        "precision": 1
-      },
-      "valueDescription": "Value between 0 and 1",
+      "valueDescription": "Number between 0 and 1",
       "unit": "Numeric"
     },
     {
@@ -6356,7 +6304,7 @@
       "exposeunscaledvalue": true
     },
     {
-      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "heliosType": "DCS.Common.NetworkValue",
       "device": "Systematic Instruments",
       "name": "Oxygen Supply (Port)",
       "description": "Number",
@@ -6366,20 +6314,7 @@
           "id": "83"
         }
       ],
-      "calibration": {
-        "points": [
-          {
-            "value": 0.0,
-            "mappedValue": 0.0
-          },
-          {
-            "value": 1.0,
-            "mappedValue": 1.0
-          }
-        ],
-        "precision": 1
-      },
-      "valueDescription": "Value between 0 and 1",
+      "valueDescription": "Number between 0 and 1",
       "unit": "Numeric"
     },
     {
