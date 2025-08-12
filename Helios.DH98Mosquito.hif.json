@@ -1,7 +1,7 @@
 {
   "source": "Helios",
-  "version": "1.6.6140.0805",
-  "commit": "60531a13aa56f4cd44fe382b69e6016ef72e2f90",
+  "version": "1.6.6150.0812",
+  "commit": "aeb53b97d9334c70fca15237e614f2b43e2b5d04",
   "type": "Existing",
   "name": "DCS DH98 Mosquito FB Mk VI",
   "module": "MosquitoFBMkVI",
@@ -4852,17 +4852,17 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.0",
+          "argumentValue": "-1.0",
           "name": "Position 1",
           "actionID": "3008"
         },
         {
           "argumentValue": "0.0",
           "name": "Position 2",
-          "actionID": "3008"
+          "actionID": "3007"
         },
         {
-          "argumentValue": "-1.0",
+          "argumentValue": "1.0",
           "name": "Position 3",
           "actionID": "3007"
         }
