@@ -1,16 +1,16 @@
 {
   "source": "MadKreator37",
-  "version": "1.6.6140.0",
-  "commit": "4b7d629c06bf7191a72984f15aef703749b731fe",
+  "version": "1.6.6150.2",
+  "commit": "beba374282d151868588f574b2784c67ad78fc1a",
   "type": "DCS",
   "name": "DCS F4U-1D",
   "module": "DCS F4U-1D",
   "vehicles": [
     "F4U-1D",
-    "F4U-1D_CW"
+	"F4U-1D_CW"
   ],
   "functions": [
-    {
+  {
       "heliosType": "DCS.Common.Switch",
       "device": "Electro",
       "name": "Battery Switch",
@@ -57,7 +57,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Hydro",
       "name": "Hand Pump",
@@ -82,7 +82,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.Axis",
       "device": "Engine",
       "name": "Throttle",
@@ -104,7 +104,7 @@
         }
       }
     },
-    {
+	{
       "heliosType": "DCS.Common.Axis",
       "device": "Engine",
       "name": "Prop Governor Handle",
@@ -126,7 +126,7 @@
         }
       }
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Engine",
       "name": "Supercharger Lever",
@@ -156,7 +156,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Engine",
       "name": "Mixture Lever",
@@ -184,14 +184,14 @@
           "name": "Auto Lean",
           "actionId": "3203"
         },
-        {
+		{
           "argumentValue": "0.0",
           "name": "Cutoff",
           "actionId": "3203"
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Engine",
       "name": "Magneto Switch",
@@ -219,14 +219,14 @@
           "name": "Left",
           "actionId": "3206"
         },
-        {
+		{
           "argumentValue": "1.0",
           "name": "Both",
           "actionId": "3206"
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Engine",
       "name": "Fuel Tank Selector",
@@ -254,7 +254,7 @@
           "name": "Reserve",
           "actionId": "3201"
         },
-        {
+		{
           "argumentValue": "0.6",
           "name": "Right Wing",
           "actionId": "3201"
@@ -269,9 +269,9 @@
           "name": "Center Droppable",
           "actionId": "3201"
         }
-      ]
-    },
-    {
+	  ]
+	},
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Engine",
       "name": "Oil Cooler Lever",
@@ -301,7 +301,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Engine",
       "name": "Intercooler Lever",
@@ -331,7 +331,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Engine",
       "name": "Cowl Flaps Lever",
@@ -361,7 +361,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Engine",
       "name": "Fuel Pump",
@@ -386,7 +386,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Engine",
       "name": "Main Fuel Tank Air Pressure Valve",
@@ -411,7 +411,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Engine",
       "name": "Primer",
@@ -436,7 +436,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Engine",
       "name": "Starter",
@@ -461,7 +461,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Engine",
       "name": "Starter Cover",
@@ -486,7 +486,32 @@
         }
       ]
     },
-    {
+	{
+      "heliosType": "DCS.Common.Switch",
+      "device": "Engine",
+      "name": "Water Injection",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "42"
+        }
+      ],
+      "deviceId": "3",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "On",
+          "actionId": "3244"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Off",
+          "actionId": "3244"
+        }
+      ]
+    },
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Pitot",
       "name": "Pitot Heat",
@@ -511,7 +536,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.RotaryEncoder",
       "device": "Pitot",
       "name": "Altimeter Pressure Set",
@@ -535,7 +560,7 @@
         }
       }
     },
-    {
+	{
       "heliosType": "DCS.Common.PushButton",
       "device": "Nav",
       "name": "Directional Gyro Cage",
@@ -557,7 +582,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.RotaryEncoder",
       "device": "Nav",
       "name": "Directional Gyro Course Set",
@@ -581,7 +606,7 @@
         }
       }
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Nav",
       "name": "Gyro Horizon Cage",
@@ -606,7 +631,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.Axis",
       "device": "Nav",
       "name": "Horizon Pitch Set",
@@ -628,7 +653,7 @@
         }
       }
     },
-    {
+	{
       "heliosType": "DCS.Common.RotaryEncoder",
       "device": "Nav",
       "name": "Radio Course Set",
@@ -652,7 +677,7 @@
         }
       }
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Control",
       "name": "Landing Gear Handle",
@@ -682,7 +707,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Control",
       "name": "Flaps",
@@ -710,7 +735,7 @@
           "name": "20 Degrees",
           "actionId": "3508"
         },
-        {
+		{
           "argumentValue": "0.6",
           "name": "30 Degrees",
           "actionId": "3508"
@@ -727,7 +752,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.Axis",
       "device": "Control",
       "name": "Yaw Trim",
@@ -749,7 +774,7 @@
         }
       }
     },
-    {
+	{
       "heliosType": "DCS.Common.Axis",
       "device": "Control",
       "name": "Bank Trim",
@@ -771,7 +796,7 @@
         }
       }
     },
-    {
+	{
       "heliosType": "DCS.Common.Axis",
       "device": "Control",
       "name": "Pitch Trim",
@@ -793,7 +818,7 @@
         }
       }
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Control",
       "name": "Tail Wheel Lock",
@@ -818,7 +843,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Control",
       "name": "Wing Fold",
@@ -848,7 +873,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Control",
       "name": "Wing Lock",
@@ -873,7 +898,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Control",
       "name": "Arrestor Hook",
@@ -903,7 +928,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.Axis",
       "device": "Radio",
       "name": "C-38 Volume",
@@ -925,7 +950,7 @@
         }
       }
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Radio",
       "name": "C-38 Receiver A On/Off",
@@ -950,7 +975,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Radio",
       "name": "C-30 A Channel",
@@ -973,7 +998,7 @@
           "name": "CH 2",
           "actionId": "3609"
         },
-        {
+		{
           "argumentValue": "0.66",
           "name": "CH 3",
           "actionId": "3609"
@@ -985,7 +1010,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Radio",
       "name": "C-30A On/Off Switch",
@@ -1009,8 +1034,8 @@
           "actionId": "3610"
         }
       ]
-    },
-    {
+    }, 
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Radio",
       "name": "C-30 A Voice Switch",
@@ -1033,7 +1058,7 @@
           "name": "CH B",
           "actionId": "3612"
         },
-        {
+		{
           "argumentValue": "0.66",
           "name": "CH C",
           "actionId": "3612"
@@ -1045,7 +1070,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.Axis",
       "device": "RadioNav",
       "name": "C-38 Noise level",
@@ -1067,7 +1092,7 @@
         }
       }
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Radio",
       "name": "C-38 Receiver C On/Off Switch",
@@ -1091,8 +1116,8 @@
           "actionId": "3604"
         }
       ]
-    },
-    {
+    }, 
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Radio",
       "name": "C-38 CW/Voice Switch",
@@ -1116,8 +1141,8 @@
           "actionId": "3605"
         }
       ]
-    },
-    {
+    }, 
+	{
       "heliosType": "DCS.Common.RotaryEncoder",
       "device": "RadioNav",
       "name": "C-38 Pitch",
@@ -1141,7 +1166,7 @@
         }
       }
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "RadioNav",
       "name": "C-38 Channel",
@@ -1164,7 +1189,7 @@
           "name": "CH 2",
           "actionId": "3607"
         },
-        {
+		{
           "argumentValue": "0.332",
           "name": "CH 3",
           "actionId": "3607"
@@ -1174,7 +1199,7 @@
           "name": "CH 4",
           "actionId": "3607"
         },
-        {
+		{
           "argumentValue": "0.664",
           "name": "CH 5",
           "actionId": "3607"
@@ -1208,7 +1233,7 @@
         }
       }
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Radio",
       "name": "C-26 CW/Voice Switch",
@@ -1232,8 +1257,8 @@
           "actionId": "3613"
         }
       ]
-    },
-    {
+    }, 
+	{
       "heliosType": "DCS.Common.Axis",
       "device": "RadioNav",
       "name": "C-26 Frequency",
@@ -1255,7 +1280,7 @@
         }
       }
     },
-    {
+	{
       "heliosType": "DCS.Common.Axis",
       "device": "RadioNav",
       "name": "C-26 Sensitivity",
@@ -1277,7 +1302,7 @@
         }
       }
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Lights",
       "name": "Reccognition light - Red",
@@ -1307,7 +1332,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Lights",
       "name": "Reccognition light - Green",
@@ -1337,7 +1362,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Lights",
       "name": "Reccognition light - Amber",
@@ -1367,7 +1392,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Lights",
       "name": "Exterior Lights",
@@ -1397,7 +1422,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Lights",
       "name": "Wing Lights",
@@ -1427,7 +1452,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Lights",
       "name": "Tail Lights",
@@ -1457,7 +1482,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Lights",
       "name": "Formation Lights",
@@ -1487,7 +1512,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Lights",
       "name": "Section Lights",
@@ -1517,7 +1542,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Lights",
       "name": "Approach Lights",
@@ -1542,7 +1567,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Lights",
       "name": "Cockpit Lights Master",
@@ -1567,7 +1592,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.RotaryEncoder",
       "device": "Lights",
       "name": "Chartboard Lights",
@@ -1591,7 +1616,7 @@
         }
       }
     },
-    {
+	{
       "heliosType": "DCS.Common.RotaryEncoder",
       "device": "Lights",
       "name": "Left Panel Lights",
@@ -1615,7 +1640,7 @@
         }
       }
     },
-    {
+	{
       "heliosType": "DCS.Common.RotaryEncoder",
       "device": "Lights",
       "name": "Right Panel Lights",
@@ -1639,7 +1664,7 @@
         }
       }
     },
-    {
+	{
       "heliosType": "DCS.Common.RotaryEncoder",
       "device": "Lights",
       "name": "Left Instrument Board Lights",
@@ -1663,7 +1688,7 @@
         }
       }
     },
-    {
+	{
       "heliosType": "DCS.Common.RotaryEncoder",
       "device": "Lights",
       "name": "Right Instrument Board Lights",
@@ -1687,7 +1712,7 @@
         }
       }
     },
-    {
+	{
       "heliosType": "DCS.Common.Axis",
       "device": "Lights",
       "name": "Left Panel UV",
@@ -1709,7 +1734,7 @@
         }
       }
     },
-    {
+	{
       "heliosType": "DCS.Common.Axis",
       "device": "Lights",
       "name": "Right Panel UV",
@@ -1731,7 +1756,7 @@
         }
       }
     },
-    {
+	{
       "heliosType": "DCS.Common.Axis",
       "device": "Lights",
       "name": "Left Instrument Board UV",
@@ -1753,7 +1778,7 @@
         }
       }
     },
-    {
+	{
       "heliosType": "DCS.Common.Axis",
       "device": "Lights",
       "name": "Right Instrument Board UV",
@@ -1775,7 +1800,7 @@
         }
       }
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Weapon",
       "name": "Gun Camera",
@@ -1805,7 +1830,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Weapon",
       "name": "Master Arm",
@@ -1830,7 +1855,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Weapon",
       "name": "Guns - Outboard",
@@ -1855,7 +1880,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Weapon",
       "name": "Guns - Center",
@@ -1880,7 +1905,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Weapon",
       "name": "Guns - Inboard",
@@ -1905,7 +1930,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Weapon",
       "name": "Gunsight Light Switch",
@@ -1935,7 +1960,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.RotaryEncoder",
       "device": "Weapon",
       "name": "Gunsight Light Intensity",
@@ -1959,7 +1984,7 @@
         }
       }
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Weapon",
       "name": "Gun Left Charge - Safe",
@@ -1984,7 +2009,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Weapon",
       "name": "Gun Right Charge - Safe",
@@ -2009,7 +2034,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Weapon",
       "name": "Left Wing Release",
@@ -2034,7 +2059,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Weapon",
       "name": "Right Wing Release",
@@ -2059,7 +2084,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Weapon",
       "name": "Bomb Arming",
@@ -2089,7 +2114,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Weapon",
       "name": "Pylon Release",
@@ -2114,7 +2139,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Weapon",
       "name": "Left Wing Emergency Manual Release",
@@ -2139,7 +2164,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Weapon",
       "name": "Right Wing Emergency Manual Release",
@@ -2164,7 +2189,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Weapon",
       "name": "Pylon Emergency Manual Release",
@@ -2189,7 +2214,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Weapon",
       "name": "Rocket Box Switch Cover",
@@ -2214,7 +2239,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Weapon",
       "name": "Rocket Box Switch",
@@ -2239,7 +2264,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Weapon",
       "name": "Rocket Box Arm - Safe",
@@ -2264,7 +2289,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Weapon",
       "name": "Rocket Box Single - Auto",
@@ -2289,7 +2314,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Weapon",
       "name": "Rocket Selector Pull",
@@ -2309,12 +2334,12 @@
         },
         {
           "argumentValue": "1.0",
-          "name": "Pulled",
+          "name": "Pulled" ,
           "actionId": "3954"
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Weapon",
       "name": "Rocket Selector Turn",
@@ -2337,7 +2362,7 @@
           "name": "2",
           "actionId": "3955"
         },
-        {
+		{
           "argumentValue": "0.50",
           "name": "3",
           "actionId": "3955"
@@ -2349,7 +2374,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.Axis",
       "device": "Weapon",
       "name": "Rocket Box Dimming Light",
@@ -2371,7 +2396,7 @@
         }
       }
     },
-    {
+	{
       "heliosType": "DCS.Common.PushButton",
       "device": "Weapon",
       "name": "Fire Rocket",
@@ -2393,7 +2418,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Utility",
       "name": "Canopy Handle",
@@ -2418,7 +2443,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Utility",
       "name": "Canopy Jettison Handle",
@@ -2443,7 +2468,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Utility",
       "name": "Defrost",
@@ -2468,7 +2493,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.PushButton",
       "device": "Utility",
       "name": "Stall Warning Light Test",
@@ -2490,7 +2515,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Utility",
       "name": "Pilots Desk",
@@ -2515,7 +2540,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.PushButton",
       "device": "Utility",
       "name": "Accelerometer Reset",
@@ -2537,7 +2562,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.Axis",
       "device": "Clock",
       "name": "Clock Adjust Knob",
@@ -2559,7 +2584,7 @@
         }
       }
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Clock",
       "name": "clock Adjust Switch",
@@ -2589,7 +2614,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.PushButton",
       "device": "Clock",
       "name": "Chronometer Start - Stop - Reset",
@@ -2611,7 +2636,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.PushButton",
       "device": "Clock",
       "name": "Set Date",
@@ -2633,7 +2658,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Breakers",
       "name": "Fire Guns Right Outer",
@@ -2658,7 +2683,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Breakers",
       "name": "Fire Guns Right Center",
@@ -2683,7 +2708,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Breakers",
       "name": "Fire Guns Right Inner",
@@ -2708,7 +2733,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Breakers",
       "name": "Fire Guns Left Outer",
@@ -2733,7 +2758,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Breakers",
       "name": "Fire Guns Left Center",
@@ -2758,7 +2783,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Breakers",
       "name": "Fire Guns Left Inner",
@@ -2783,7 +2808,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Breakers",
       "name": "Switch Gun Heater",
@@ -2808,7 +2833,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Breakers",
       "name": "Gun Sight",
@@ -2833,7 +2858,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Breakers",
       "name": "Gun Camera Heater",
@@ -2858,7 +2883,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Breakers",
       "name": "Gun Camera Motor",
@@ -2883,7 +2908,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Breakers",
       "name": "Water Pump",
@@ -2908,7 +2933,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Breakers",
       "name": "Rockets Button",
@@ -2933,7 +2958,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Breakers",
       "name": "Rockets Panel",
@@ -2958,7 +2983,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Breakers",
       "name": "Left Bomb Release",
@@ -2983,7 +3008,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Breakers",
       "name": "Right Bomb Release",
@@ -3008,7 +3033,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Breakers",
       "name": "Bomb Arming",
@@ -3033,7 +3058,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Breakers",
       "name": "Center Pylon Release",
@@ -3058,7 +3083,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Breakers",
       "name": "IFF - Radio",
@@ -3083,7 +3108,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Breakers",
       "name": "External Lights",
@@ -3108,7 +3133,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Breakers",
       "name": "Recognition Lights",
@@ -3133,7 +3158,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Breakers",
       "name": "Starter",
@@ -3158,7 +3183,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Breakers",
       "name": "Inertia Switch",
@@ -3183,7 +3208,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "Breakers",
       "name": "Instrument Switch",
@@ -3208,7 +3233,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.PushButton",
       "device": "BatBomb",
       "name": "BAt Bomb Search Mode",
@@ -3230,7 +3255,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.PushButton",
       "device": "BatBomb",
       "name": "Bomb Lock Target",
@@ -3252,7 +3277,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.Axis",
       "device": "BatBomb",
       "name": "BatBomb Gain",
@@ -3274,7 +3299,7 @@
         }
       }
     },
-    {
+	{
       "heliosType": "DCS.Common.Axis",
       "device": "BatBomb",
       "name": "BatBomb Scope Brightness",
@@ -3296,7 +3321,7 @@
         }
       }
     },
-    {
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "BatBomb",
       "name": "BAtBomb On - Off",
@@ -3326,7 +3351,7 @@
         }
       ]
     },
-    {
+	{
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Instruments",
       "name": "Accelerometer Current",
@@ -3345,35 +3370,35 @@
             "value": -0.930,
             "mappedValue": -5
           },
-          {
+		  {
             "value": -0.746,
             "mappedValue": -4
           },
-          {
+		  {
             "value": -0.388,
             "mappedValue": -2
           },
-          {
+		  {
             "value": 0,
             "mappedValue": 0
           },
-          {
+		  {
             "value": 0.153,
             "mappedValue": 2
           },
-          {
+		  {
             "value": 0.321,
             "mappedValue": 4
-          },
-          {
+		  },	
+		  {
             "value": 0.489,
             "mappedValue": 6
           },
-          {
+		  {
             "value": 0.664,
             "mappedValue": 8
           },
-          {
+		  {
             "value": 0.841,
             "mappedValue": 10
           },
@@ -3385,7 +3410,7 @@
         "precision": 5
       }
     },
-    {
+	{
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Instruments",
       "name": "Accelerometer Max",
@@ -3412,7 +3437,7 @@
         "precision": 5
       }
     },
-    {
+	{
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Instruments",
       "name": "Accelerometer Min",
@@ -3439,7 +3464,7 @@
         "precision": 5
       }
     },
-    {
+	{
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Instruments",
       "name": "Altimeter 10000ft",
@@ -3466,7 +3491,7 @@
         "precision": 5
       }
     },
-    {
+	{
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Instruments",
       "name": "Altimeter 1000ft",
@@ -3493,7 +3518,7 @@
         "precision": 5
       }
     },
-    {
+	{
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Instruments",
       "name": "Altimeter 100ft",
@@ -3520,7 +3545,7 @@
         "precision": 5
       }
     },
-    {
+	{
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Instruments",
       "name": "Airspeed",
@@ -3539,58 +3564,58 @@
             "value": 0,
             "mappedValue": 0
           },
-          {
+		  {
             "value": 0.079,
             "mappedValue": 29.259
           },
-          {
+		  {
             "value": 0.133,
             "mappedValue": 52.629
           },
-          {
+		  {
             "value": 0.197,
             "mappedValue": 75.962
           },
-          {
+		  {
             "value": 0.269,
             "mappedValue": 99.629
           },
-          {
+		  {
             "value": 0.338,
             "mappedValue": 123.18
           },
-          {
+		  {
             "value": 0.411,
             "mappedValue": 148.85
           },
-          {
+		  {
             "value": 0.479,
             "mappedValue": 175.03
           },
-          {
+		  {
             "value": 0.512,
             "mappedValue": 188.62
           },
-          {
+		  {
             "value": 0.540,
             "mappedValue": 200
           },
-          {
+		  {
             "value": 0.650,
             "mappedValue": 243.851
           },
-          {
+		  {
             "value": 0.761,
             "mappedValue": 284
           },
-          {
+		  {
             "value": 0.864,
             "mappedValue": 318.25
           },
-          {
+		  {
             "value": 0.954,
-            "mappedValue": 351
-          },
+            "mappedValue": 351      
+		  },
           {
             "value": 1,
             "mappedValue": 369.735
@@ -3599,7 +3624,7 @@
         "precision": 5
       }
     },
-    {
+	{
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Instruments",
       "name": "Cylinder Head Temperature",
@@ -3626,7 +3651,7 @@
         "precision": 5
       }
     },
-    {
+	{
       "heliosType": "DCS.Common.NetworkValue",
       "device": "Instruments",
       "name": "Clock Currtime Hours",
@@ -3640,7 +3665,7 @@
       "valueDescription": "Numeric value between 0 and 1",
       "unit": "Numeric"
     },
-    {
+	{
       "heliosType": "DCS.Common.NetworkValue",
       "device": "Instruments",
       "name": "Clock Currtime Minutes",
@@ -3654,7 +3679,7 @@
       "valueDescription": "Numeric value between 0 and 1",
       "unit": "Numeric"
     },
-    {
+	{
       "heliosType": "DCS.Common.NetworkValue",
       "device": "Instruments",
       "name": "Clock Currtime Seconds",
@@ -3668,7 +3693,7 @@
       "valueDescription": "Numeric value between 0 and 1",
       "unit": "Numeric"
     },
-    {
+	{
       "heliosType": "DCS.Common.NetworkValue",
       "device": "Instruments",
       "name": "Chronometer - Seconds",
@@ -3682,7 +3707,7 @@
       "valueDescription": "Numeric value between 0 and 1",
       "unit": "Numeric"
     },
-    {
+	{
       "heliosType": "DCS.Common.NetworkValue",
       "device": "Instruments",
       "name": "Chronometer - Minutes",
@@ -3696,7 +3721,7 @@
       "valueDescription": "Numeric value between 0 and 1",
       "unit": "Numeric"
     },
-    {
+	{
       "heliosType": "DCS.Common.NetworkValue",
       "device": "Instruments",
       "name": "Elapsed Time - Hour",
@@ -3710,7 +3735,7 @@
       "valueDescription": "Numeric value between 0 and 1",
       "unit": "Numeric"
     },
-    {
+	{
       "heliosType": "DCS.Common.NetworkValue",
       "device": "Instruments",
       "name": "Elapsed Time - Minutes",
@@ -3724,7 +3749,7 @@
       "valueDescription": "Numeric value between 0 and 1",
       "unit": "Numeric"
     },
-    {
+	{
       "heliosType": "DCS.Common.NetworkValue",
       "device": "Instruments",
       "name": "Date Needle",
@@ -3738,7 +3763,7 @@
       "valueDescription": "Numeric value between 0 and 1",
       "unit": "Numeric"
     },
-    {
+	{
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Instruments",
       "name": "Fuel Pressure",
@@ -3757,19 +3782,19 @@
             "value": 0,
             "mappedValue": 0
           },
-          {
+		  {
             "value": 0.211,
             "mappedValue": 5.25
           },
-          {
+		  {
             "value": 0.410,
             "mappedValue": 10.275
           },
-          {
+		  {
             "value": 0.593,
             "mappedValue": 15.15
           },
-          {
+		  {
             "value": 0.778,
             "mappedValue": 20.025
           },
@@ -3781,7 +3806,7 @@
         "precision": 5
       }
     },
-    {
+	{
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Instruments",
       "name": "Fuel Tank Main",
@@ -3800,35 +3825,35 @@
             "value": 0,
             "mappedValue": 0
           },
-          {
+		  {
             "value": 0.110,
             "mappedValue": 24.15
           },
-          {
+		  {
             "value": 0.214,
             "mappedValue": 48.3
           },
-          {
+		  {
             "value": 0.284,
             "mappedValue": 65.55
           },
-          {
+		  {
             "value": 0.358,
             "mappedValue": 82.11
           },
-          {
+		  {
             "value": 0.480,
             "mappedValue": 113.16
           },
-          {
+		  {
             "value": 0.618,
             "mappedValue": 144.9
           },
-          {
+		  {
             "value": 0.761,
             "mappedValue": 177.33
           },
-          {
+		  {
             "value": 0.912,
             "mappedValue": 211.14
           },
@@ -3840,7 +3865,7 @@
         "precision": 5
       }
     },
-    {
+	{
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Instruments",
       "name": "Gyro Horizon Bank",
@@ -3867,7 +3892,7 @@
         "precision": 5
       }
     },
-    {
+	{
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Instruments",
       "name": "Gyro Horizon Pitch",
@@ -3894,7 +3919,7 @@
         "precision": 5
       }
     },
-    {
+	{
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Instruments",
       "name": "Gyro Horizon Cage",
@@ -3921,7 +3946,7 @@
         "precision": 5
       }
     },
-    {
+	{
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Instruments",
       "name": "Gyro Heading",
@@ -3948,7 +3973,7 @@
         "precision": 5
       }
     },
-    {
+	{
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Instruments",
       "name": "Gyro Heading Cage",
@@ -3975,7 +4000,7 @@
         "precision": 5
       }
     },
-    {
+	{
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Instruments",
       "name": "HSI Course",
@@ -4002,7 +4027,7 @@
         "precision": 5
       }
     },
-    {
+	{
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Instruments",
       "name": "Radio Course",
@@ -4029,7 +4054,7 @@
         "precision": 5
       }
     },
-    {
+	{
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Instruments",
       "name": "Hydraulic Pressure",
@@ -4056,7 +4081,7 @@
         "precision": 5
       }
     },
-    {
+	{
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Instruments",
       "name": "Intercooler Door Indicator",
@@ -4083,7 +4108,7 @@
         "precision": 5
       }
     },
-    {
+	{
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Instruments",
       "name": "Landing Gear Left",
@@ -4110,7 +4135,7 @@
         "precision": 5
       }
     },
-    {
+	{
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Instruments",
       "name": "Landing Gear Right",
@@ -4137,7 +4162,7 @@
         "precision": 5
       }
     },
-    {
+	{
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Instruments",
       "name": "Landing Gear Tail",
@@ -4164,7 +4189,7 @@
         "precision": 5
       }
     },
-    {
+	{
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Instruments",
       "name": "Manifold Pressure",
@@ -4183,11 +4208,11 @@
             "value": 0,
             "mappedValue": 0
           },
-          {
+		  {
             "value": 0.019,
             "mappedValue": 1.6
           },
-          {
+		  {
             "value": 0.977,
             "mappedValue": 78.16
           },
@@ -4199,7 +4224,7 @@
         "precision": 5
       }
     },
-    {
+	{
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Instruments",
       "name": "Oil Cooler Door Indicator",
@@ -4226,7 +4251,7 @@
         "precision": 5
       }
     },
-    {
+	{
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Instruments",
       "name": "Oil Pressure",
@@ -4237,7 +4262,7 @@
           "id": "31"
         }
       ],
-      "valueDescription": "0 to 200",
+      "valueDescription": "0 to 200",	
       "unit": "PoundsPerSquareInch",
       "calibration": {
         "points": [
@@ -4245,11 +4270,11 @@
             "value": 0,
             "mappedValue": 0
           },
-          {
+		  {
             "value": 0.340,
             "mappedValue": 67.2
           },
-          {
+		  {
             "value": 0.675,
             "mappedValue": 133.8
           },
@@ -4261,7 +4286,7 @@
         "precision": 5
       }
     },
-    {
+	{
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Instruments",
       "name": "Oil Temperature",
@@ -4272,7 +4297,7 @@
           "id": "30"
         }
       ],
-      "valueDescription": "-70 to 150",
+      "valueDescription": "-70 to 150",	
       "unit": "Celsius",
       "calibration": {
         "points": [
@@ -4280,35 +4305,35 @@
             "value": 0,
             "mappedValue": -70
           },
-          {
+		  {
             "value": 0.083,
             "mappedValue": -55.56
           },
-          {
+		  {
             "value": 0.193,
             "mappedValue": -30.125
           },
-          {
+		  {
             "value": 0.297,
             "mappedValue": -4.688
           },
-          {
+		  {
             "value": 0.425,
             "mappedValue": 27.625
           },
-          {
+		  {
             "value": 0.569,
             "mappedValue": 52.375
           },
-          {
+		  {
             "value": 0.667,
             "mappedValue": 86.06
           },
-          {
+		  {
             "value": 0.768,
             "mappedValue": 108.75
           },
-          {
+		  {
             "value": 0.856,
             "mappedValue": 123.18
           },
@@ -4320,7 +4345,7 @@
         "precision": 5
       }
     },
-    {
+	{
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Instruments",
       "name": "Oxygen Flow",
@@ -4347,7 +4372,7 @@
         "precision": 5
       }
     },
-    {
+	{
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Instruments",
       "name": "Oxygen Pressure",
@@ -4374,7 +4399,7 @@
         "precision": 5
       }
     },
-    {
+	{
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Instruments",
       "name": "RPM Needle",
@@ -4401,7 +4426,7 @@
         "precision": 5
       }
     },
-    {
+	{
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Instruments",
       "name": "RPM Dial",
@@ -4428,7 +4453,7 @@
         "precision": 5
       }
     },
-    {
+	{
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Instruments",
       "name": "Slip Ball",
@@ -4455,7 +4480,7 @@
         "precision": 5
       }
     },
-    {
+	{
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Instruments",
       "name": "Turn Needle",
@@ -4482,7 +4507,7 @@
         "precision": 5
       }
     },
-    {
+	{
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Instruments",
       "name": "VA Meter",
@@ -4509,7 +4534,7 @@
         "precision": 5
       }
     },
-    {
+	{
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Instruments",
       "name": "Variometer",
@@ -4528,55 +4553,55 @@
             "value": -1.0,
             "mappedValue": -6000.0
           },
-          {
+		  {
             "value": -0.924,
             "mappedValue": -5550.0
           },
-          {
+		  {
             "value": -0.827,
             "mappedValue": -4934.0
           },
-          {
+		  {
             "value": -0.711,
             "mappedValue": -4252.0
           },
-          {
+		  {
             "value": -0.565,
             "mappedValue": -3390.0
           },
-          {
+		  {
             "value": -0.358,
             "mappedValue": -2148.0
           },
-          {
+		  {
             "value": -0.212,
             "mappedValue": -1296.0
           },
-          {
+		  {
             "value": 0,
             "mappedValue": -30.0
           },
-          {
+		  {
             "value": 0.209,
             "mappedValue": 1240.0
           },
-          {
+		  {
             "value": 0.352,
             "mappedValue": 2136.0
           },
-          {
+		  {
             "value": 0.56,
             "mappedValue": 3396.0
           },
-          {
+		  {
             "value": 0.707,
             "mappedValue": 4266.0
           },
-          {
+		  {
             "value": 0.822,
             "mappedValue": 4982.0
           },
-          {
+		  {
             "value": 0.918,
             "mappedValue": 5540.0
           },
@@ -4588,7 +4613,34 @@
         "precision": 5
       }
     },
-    {
+	{
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Instruments",
+      "name": "Water Pressure",
+      "description": "WEP Pressure",
+      "exports": [
+        {
+          "format": "%.3f",
+          "id": "242"
+        }
+      ],
+      "valueDescription": "0 to 1",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 5
+      }
+    },
+	{
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Lamps",
       "name": "High Blower Light",
@@ -4609,13 +4661,13 @@
           },
           {
             "value": 1,
-            "mappedValue": 1
+            "mappedValue": 1 
           }
         ],
         "precision": 5
       }
     },
-    {
+	{
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Lamps",
       "name": "Stall Warning Lamp",
@@ -4636,13 +4688,13 @@
           },
           {
             "value": 1,
-            "mappedValue": 1
+            "mappedValue": 1 
           }
         ],
         "precision": 5
       }
     },
-    {
+	{
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Lamps",
       "name": "Water Injection Lamp",
@@ -4663,13 +4715,13 @@
           },
           {
             "value": 1,
-            "mappedValue": 1
+            "mappedValue": 1 
           }
         ],
         "precision": 5
       }
     },
-    {
+	{
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Lamps",
       "name": "Rocket Box Lamp",
@@ -4690,13 +4742,13 @@
           },
           {
             "value": 1,
-            "mappedValue": 1
+            "mappedValue": 1 
           }
         ],
         "precision": 5
       }
     },
-    {
+	{
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Lamps",
       "name": "BatBomb Target Alarm",
@@ -4717,13 +4769,13 @@
           },
           {
             "value": 1,
-            "mappedValue": 1
+            "mappedValue": 1 
           }
         ],
         "precision": 5
       }
     },
-    {
+	{
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Misc",
       "name": "Dash Layout - Warnings",
@@ -4744,13 +4796,13 @@
           },
           {
             "value": 1,
-            "mappedValue": 1
+            "mappedValue": 1 
           }
         ],
         "precision": 5
       }
     },
-    {
+	{
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Misc",
       "name": "Dash Layout - Radar",
@@ -4771,7 +4823,7 @@
           },
           {
             "value": 1,
-            "mappedValue": 1
+            "mappedValue": 1 
           }
         ],
         "precision": 5
