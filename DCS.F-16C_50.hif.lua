@@ -28,4 +28,13 @@ function driver.processLowImportance(mainPanelDevice) --luacheck: no unused args
     helios.send(2185, string.format("%1d", mainPanelDevice:get_argument_value(185)))
 	helios.send(3184, string.format("%1d", mainPanelDevice:get_argument_value(184)))
     helios.send(3185, string.format("%1d", mainPanelDevice:get_argument_value(185)))
+
+    -- Fuel Total
+        helios.send(
+        2180,
+        string.format(
+            "%d",
+            (math.floor(mainPanelDevice:get_argument_value(730)*10)*10000)+ (math.floor(mainPanelDevice:get_argument_value(731) * 10) * 1000) + (math.floor(mainPanelDevice:get_argument_value(732) * 1000))
+        )
+    )
 end

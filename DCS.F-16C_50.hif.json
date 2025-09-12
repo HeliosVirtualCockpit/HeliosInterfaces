@@ -2590,7 +2590,7 @@
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.Switch",
       "device": "ECM",
       "name": "ECM Power Switch",
@@ -2613,14 +2613,14 @@
           "name": "STBY",
           "actionId": "3001"
         },
-		{
+        {
           "argumentValue": "-1.0",
           "name": "OFF",
           "actionId": "3001"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.Switch",
       "device": "ECM",
       "name": "ECM XMIT Switch",
@@ -2643,14 +2643,14 @@
           "name": "XMIT 2",
           "actionId": "3002"
         },
-		{
+        {
           "argumentValue": "-1.0",
           "name": "XMIT 3",
           "actionId": "3002"
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.PushButton",
       "device": "ECM",
       "name": "ECM Button 1",
@@ -2672,7 +2672,7 @@
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.PushButton",
       "device": "ECM",
       "name": "ECM Button 2",
@@ -2694,7 +2694,7 @@
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.PushButton",
       "device": "ECM",
       "name": "ECM Button 3",
@@ -2716,7 +2716,7 @@
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.PushButton",
       "device": "ECM",
       "name": "ECM Button 4",
@@ -2738,7 +2738,7 @@
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.PushButton",
       "device": "ECM",
       "name": "ECM Button 5",
@@ -2760,7 +2760,7 @@
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.PushButton",
       "device": "ECM",
       "name": "ECM Button 6",
@@ -2782,7 +2782,7 @@
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.PushButton",
       "device": "ECM",
       "name": "ECM FRM Button",
@@ -2804,7 +2804,7 @@
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.PushButton",
       "device": "ECM",
       "name": "ECM SPL Button",
@@ -3249,8 +3249,8 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-			"format": "%0.1f",
-			"id": "447"
+          "format": "%0.1f",
+          "id": "447"
         }
       ],
       "deviceId": "6",
@@ -3265,12 +3265,12 @@
           "name": "OFF",
           "actionId": "3005"
         },
-		{
+        {
           "argumentValue": "-1.0",
           "name": "START 2",
           "actionId": "3006"
         }
-		]
+      ]
     },
     {
       "heliosType": "DCS.Common.Switch",
@@ -4258,6 +4258,20 @@
         ],
         "precision": 5
       }
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Fuel System",
+      "name": "Fuel Totalizer Counter",
+      "description": "Total Fuel Amount (Pounds)",
+      "exports": [
+        {
+          "format": null,
+          "id": "2180"
+        }
+      ],
+      "valueDescription": "Pounds of Fuel",
+      "unit": "Pounds"
     },
     {
       "heliosType": "DCS.Common.ScaledNetworkValue",
@@ -6271,7 +6285,7 @@
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.Switch",
       "device": "MFD Left",
       "name": "MFD Left GAIN Rocker Switch",
@@ -6306,7 +6320,7 @@
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.Switch",
       "device": "MFD Left",
       "name": "MFD Left SYM Rocker Switch",
@@ -6376,7 +6390,7 @@
         }
       ]
     },
-   {
+    {
       "heliosType": "DCS.Common.Switch",
       "device": "MFD Left",
       "name": "MFD Left BRT Rocker Switch",
@@ -6851,7 +6865,7 @@
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.Switch",
       "device": "MFD Right",
       "name": "MFD Right GAIN Rocker Switch",
@@ -6886,7 +6900,7 @@
         }
       ]
     },
-   {
+    {
       "heliosType": "DCS.Common.Switch",
       "device": "MFD Right",
       "name": "MFD Right SYM Rocker Switch",
@@ -6921,7 +6935,7 @@
         }
       ]
     },
-   {
+    {
       "heliosType": "DCS.Common.Switch",
       "device": "MFD Right",
       "name": "MFD Right CON Rocker Switch",
@@ -8406,7 +8420,7 @@
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.Switch",
       "device": "UFC",
       "name": "ICP DED Increment/Decrement Switch",
@@ -8441,7 +8455,7 @@
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.Switch",
       "device": "UFC",
       "name": "ICP Data Control Switch RET / SEQ [Horizontal Switch]",
@@ -8465,14 +8479,14 @@
           "name": "Center",
           "actionID": "3032"
         },
-		{
+        {
           "argumentValue": "1.0",
           "name": "SEQ",
           "actionID": "3033"
         }
       ]
     },
-{
+    {
       "heliosType": "DCS.Common.Switch",
       "device": "UFC",
       "name": "ICP Data Control Switch Up / Down [Vertical Switch]",
@@ -8496,14 +8510,14 @@
           "name": "Center",
           "actionID": "3035"
         },
-		{
+        {
           "argumentValue": "-1.0",
           "name": "Down",
           "actionID": "3035"
         }
       ]
-    },		
-	{
+    },
+    {
       "heliosType": "DCS.Common.PushButton",
       "device": "UFC",
       "name": "ICP Data Control Switch - RET [Button]",
@@ -8525,7 +8539,7 @@
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.PushButton",
       "device": "UFC",
       "name": "ICP Data Control Switch - SEQ [Button]",
@@ -8547,7 +8561,7 @@
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.PushButton",
       "device": "UFC",
       "name": "ICP Data Control Switch - UP [Button]",
@@ -8569,7 +8583,7 @@
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.PushButton",
       "device": "UFC",
       "name": "ICP Data Control Switch - DOWN [Button]",
@@ -8591,7 +8605,7 @@
         }
       ]
     },
-	{
+    {
       "heliosType": "DCS.Common.Switch",
       "device": "UFC",
       "name": "ICP_DRIFT_SW",
@@ -8615,7 +8629,7 @@
           "name": "NORM",
           "actionID": "3028"
         },
-		{
+        {
           "argumentValue": "-1.0",
           "name": "WARN RESET",
           "actionID": "3029"
