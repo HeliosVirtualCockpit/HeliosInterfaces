@@ -1,4 +1,4 @@
--- Helios functions for F-16C_50 1.6.609.2
+-- Helios functions for F-16C_50 1.6.616.0 Commit d5c36d2
 --[[
 function driver.processHighImportance(mainPanelDevice)
     -- called at configured update rate
