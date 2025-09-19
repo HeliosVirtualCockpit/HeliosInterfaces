@@ -1,7 +1,7 @@
 {
   "source": "Helios",
-  "version": "1.6.6060.0000",
-  "commit": "7852c504449dc4347ead9330d183ab1f107cea3d",
+  "version": "1.6.6160.0000",
+  "commit": "8f265e068540bb0faddd38ce52b2cabf48602595",
   "type": "Existing",
   "name": "DCS AV-8B",
   "module": "AV8BNA",
@@ -118,6 +118,7 @@
         }
       ],
       "deviceId": "8",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -144,6 +145,7 @@
         }
       ],
       "deviceId": "8",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -170,6 +172,7 @@
         }
       ],
       "deviceId": "8",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -196,6 +199,7 @@
         }
       ],
       "deviceId": "8",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -222,6 +226,7 @@
         }
       ],
       "deviceId": "8",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -248,6 +253,7 @@
         }
       ],
       "deviceId": "8",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -274,6 +280,7 @@
         }
       ],
       "deviceId": "8",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -300,6 +307,7 @@
         }
       ],
       "deviceId": "8",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -331,6 +339,7 @@
         }
       ],
       "deviceId": "8",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -357,6 +366,7 @@
         }
       ],
       "deviceId": "8",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -999,6 +1009,7 @@
         ],
         "precision": 1
       },
+      "valueDescription": "Value between 0 and 3600",
       "unit": "PoundsPerSquareInch"
     },
     {
@@ -1029,6 +1040,7 @@
         ],
         "precision": 1
       },
+      "valueDescription": "Value between -300 and 50000",
       "unit": "Numeric"
     },
     {
@@ -1044,6 +1056,7 @@
         }
       ],
       "deviceId": "28",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -1070,6 +1083,7 @@
         }
       ],
       "deviceId": "12",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -1096,6 +1110,7 @@
         }
       ],
       "deviceId": "28",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -1122,6 +1137,7 @@
         }
       ],
       "deviceId": "28",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -1148,6 +1164,7 @@
         }
       ],
       "deviceId": "28",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -1312,6 +1329,7 @@
         }
       ],
       "deviceId": "11",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -1368,6 +1386,7 @@
         }
       ],
       "deviceId": "14",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0",
@@ -1394,6 +1413,7 @@
         }
       ],
       "deviceId": "14",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0",
@@ -1420,6 +1440,7 @@
         }
       ],
       "deviceId": "16",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -1446,6 +1467,7 @@
         }
       ],
       "deviceId": "12",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -1477,6 +1499,7 @@
         }
       ],
       "deviceId": "19",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -1503,6 +1526,7 @@
         }
       ],
       "deviceId": "12",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -1534,6 +1558,7 @@
         }
       ],
       "deviceId": "14",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -1816,6 +1841,7 @@
         ],
         "precision": 1
       },
+      "valueDescription": "Value between 0 and 30",
       "unit": "Numeric"
     },
     {
@@ -1831,6 +1857,7 @@
         }
       ],
       "deviceId": "1",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -1862,6 +1889,7 @@
         }
       ],
       "deviceId": "1",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -1893,6 +1921,7 @@
         }
       ],
       "deviceId": "1",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -1919,6 +1948,7 @@
         }
       ],
       "deviceId": "1",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -1950,6 +1980,7 @@
         }
       ],
       "deviceId": "1",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -2004,6 +2035,7 @@
         }
       ],
       "deviceId": "36",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0",
@@ -2030,6 +2062,7 @@
         }
       ],
       "deviceId": "36",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -2061,6 +2094,7 @@
         }
       ],
       "deviceId": "36",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -2092,6 +2126,7 @@
         }
       ],
       "deviceId": "36",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -2123,6 +2158,7 @@
         }
       ],
       "deviceId": "33",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -2154,6 +2190,7 @@
         }
       ],
       "deviceId": "33",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -2208,6 +2245,7 @@
         }
       ],
       "deviceId": "33",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -2239,6 +2277,7 @@
         }
       ],
       "deviceId": "33",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -2265,6 +2304,7 @@
         }
       ],
       "deviceId": "33",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -2293,6 +2333,44 @@
           "deviceId": "10",
           "actionId": "3653"
         }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.DCSBallRotation",
+      "device": "Flight Instruments",
+      "name": "SAI Gauge Rotation",
+      "description": "Single value containing X, Y & Z movement of the ADI Gauge.",
+      "exports": [
+        {
+          "id": "2050"
+        }
+      ],
+      "calibration x": {
+        "points": [
+          {
+            "value": -1.0,
+            "mappedValue": -90.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 90.0
+          }
+        ],
+        "precision": 1
+      },
+      "calibration y": null,
+      "calibration z": {
+        "points": [
+          {
+            "value": -1.0,
+            "mappedValue": -180.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 180.0
+          }
+        ],
+        "precision": 1
       }
     },
     {
@@ -2336,6 +2414,7 @@
         ],
         "precision": 1
       },
+      "valueDescription": "Value between 0 and 1000",
       "unit": "Knots"
     },
     {
@@ -2465,6 +2544,7 @@
         ],
         "precision": 1
       },
+      "valueDescription": "Value between -5 and 20",
       "unit": "Degrees"
     },
     {
@@ -2495,6 +2575,7 @@
         ],
         "precision": 1
       },
+      "valueDescription": "Value between -6000 and 6000",
       "unit": "FeetPerMinute"
     },
     {
@@ -2550,6 +2631,7 @@
         }
       ],
       "deviceId": "9",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -2576,6 +2658,7 @@
         }
       ],
       "deviceId": "9",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -2607,6 +2690,7 @@
         }
       ],
       "deviceId": "9",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -2638,6 +2722,7 @@
         }
       ],
       "deviceId": "9",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -2669,6 +2754,7 @@
         }
       ],
       "deviceId": "9",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -2695,6 +2781,7 @@
         }
       ],
       "deviceId": "9",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -2781,6 +2868,7 @@
         }
       ],
       "deviceId": "21",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "-0.99",
@@ -2855,6 +2943,7 @@
         }
       ],
       "deviceId": "22",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -2909,6 +2998,7 @@
         }
       ],
       "deviceId": "22",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -2986,6 +3076,7 @@
         }
       ],
       "deviceId": "22",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0",
@@ -3058,6 +3149,7 @@
         }
       ],
       "deviceId": "4",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -3319,6 +3411,7 @@
         }
       ],
       "deviceId": "34",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -3454,6 +3547,7 @@
         }
       ],
       "deviceId": "28",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -3524,6 +3618,7 @@
         }
       ],
       "deviceId": "28",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -3646,6 +3741,7 @@
         }
       ],
       "deviceId": "28",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -3672,6 +3768,7 @@
         }
       ],
       "deviceId": "12",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -3698,6 +3795,7 @@
         }
       ],
       "deviceId": "9",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0",
@@ -3724,6 +3822,7 @@
         }
       ],
       "deviceId": "9",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -4213,6 +4312,7 @@
         }
       ],
       "deviceId": "26",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "exitValue": "0.0",
@@ -4249,6 +4349,7 @@
         }
       ],
       "deviceId": "26",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "exitValue": "0.0",
@@ -4285,6 +4386,7 @@
         }
       ],
       "deviceId": "26",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "exitValue": "0.0",
@@ -4321,6 +4423,7 @@
         }
       ],
       "deviceId": "26",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "exitValue": "0.0",
@@ -4369,6 +4472,7 @@
         }
       ],
       "deviceId": "9",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -4458,6 +4562,7 @@
         }
       ],
       "deviceId": "13",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -4489,6 +4594,7 @@
         }
       ],
       "deviceId": "13",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -4520,6 +4626,7 @@
         }
       ],
       "deviceId": "28",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -4675,6 +4782,7 @@
         }
       ],
       "deviceId": "11",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -4936,6 +5044,7 @@
         }
       ],
       "deviceId": "36",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -4962,6 +5071,7 @@
         }
       ],
       "deviceId": "9",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -4988,6 +5098,7 @@
         }
       ],
       "deviceId": "13",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -5014,6 +5125,7 @@
         }
       ],
       "deviceId": "9",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -5040,6 +5152,7 @@
         }
       ],
       "deviceId": "9",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -5565,6 +5678,7 @@
         }
       ],
       "deviceId": "27",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "exitValue": "0.0",
@@ -5601,6 +5715,7 @@
         }
       ],
       "deviceId": "27",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "exitValue": "0.0",
@@ -5637,6 +5752,7 @@
         }
       ],
       "deviceId": "27",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "exitValue": "0.0",
@@ -5673,6 +5789,7 @@
         }
       ],
       "deviceId": "27",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "exitValue": "0.0",
@@ -5732,6 +5849,7 @@
         }
       ],
       "deviceId": "30",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -5773,6 +5891,7 @@
         }
       ],
       "deviceId": "30",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -5814,6 +5933,7 @@
         }
       ],
       "deviceId": "28",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -5856,6 +5976,7 @@
         ],
         "precision": 1
       },
+      "valueDescription": "Value between -1 and 1",
       "unit": "Degrees"
     },
     {
@@ -5882,6 +6003,7 @@
         ],
         "precision": 1
       },
+      "valueDescription": "Value between -1 and 1",
       "unit": "Degrees"
     },
     {
@@ -5897,6 +6019,7 @@
         }
       ],
       "deviceId": "28",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -5923,6 +6046,7 @@
         }
       ],
       "deviceId": "28",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -5949,6 +6073,7 @@
         }
       ],
       "deviceId": "28",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -5980,6 +6105,7 @@
         }
       ],
       "deviceId": "28",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -6006,6 +6132,7 @@
         }
       ],
       "deviceId": "28",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -6032,6 +6159,7 @@
         }
       ],
       "deviceId": "28",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -6058,6 +6186,7 @@
         }
       ],
       "deviceId": "28",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -6404,6 +6533,7 @@
         }
       ],
       "deviceId": "29",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -6472,6 +6602,7 @@
         }
       ],
       "deviceId": "29",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -6508,6 +6639,7 @@
         }
       ],
       "deviceId": "29",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -6539,6 +6671,7 @@
         }
       ],
       "deviceId": "29",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -6570,6 +6703,7 @@
         }
       ],
       "deviceId": "29",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -6601,6 +6735,7 @@
         }
       ],
       "deviceId": "29",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -6632,6 +6767,7 @@
         }
       ],
       "deviceId": "29",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -6663,6 +6799,7 @@
         }
       ],
       "deviceId": "29",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -6694,6 +6831,7 @@
         }
       ],
       "deviceId": "29",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -6725,6 +6863,7 @@
         }
       ],
       "deviceId": "29",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -6756,6 +6895,7 @@
         }
       ],
       "deviceId": "29",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "-1.0",
@@ -7057,6 +7197,7 @@
         }
       ],
       "deviceId": "29",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -7131,6 +7272,7 @@
         }
       ],
       "deviceId": "9",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -7157,6 +7299,7 @@
         }
       ],
       "deviceId": "9",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -7183,6 +7326,7 @@
         }
       ],
       "deviceId": "9",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
@@ -8206,6 +8350,7 @@
         }
       ],
       "deviceId": "7",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "-0.2",
@@ -8301,6 +8446,7 @@
         }
       ],
       "deviceId": "7",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",

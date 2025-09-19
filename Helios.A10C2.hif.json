@@ -1,7 +1,7 @@
 {
   "source": "Helios",
-  "version": "1.6.6130.0000",
-  "commit": "cd457d787049068c82d9dbc2de20931b8a26ec12",
+  "version": "1.6.6160.0000",
+  "commit": "8f265e068540bb0faddd38ce52b2cabf48602595",
   "type": "Existing",
   "name": "DCS A-10C II",
   "module": "A-10C_2",
@@ -53,6 +53,7 @@
           "id": "474"
         }
       ],
+      "triggereveryrelease": false,
       "vertical": true,
       "buttons": [
         {
@@ -186,6 +187,7 @@
         ],
         "precision": 1
       },
+      "valueDescription": "Value between -5 and 10",
       "unit": "Numeric"
     },
     {
@@ -212,6 +214,7 @@
         ],
         "precision": 1
       },
+      "valueDescription": "Value between -5 and 10",
       "unit": "Numeric"
     },
     {
@@ -238,6 +241,7 @@
         ],
         "precision": 1
       },
+      "valueDescription": "Value between -5 and 10",
       "unit": "Numeric"
     },
     {
@@ -317,6 +321,44 @@
       ],
       "valueDescription": "(-1 to 1) -1 is full left and 1 is full right.",
       "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.DCSBallRotation",
+      "device": "ADI",
+      "name": "ADI Ball Rotation",
+      "description": "Single value containing X, Y & Z movement of the ADI Ball.",
+      "exports": [
+        {
+          "id": "2050"
+        }
+      ],
+      "calibration x": {
+        "points": [
+          {
+            "value": -1.0,
+            "mappedValue": -90.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 90.0
+          }
+        ],
+        "precision": 1
+      },
+      "calibration y": null,
+      "calibration z": {
+        "points": [
+          {
+            "value": -1.0,
+            "mappedValue": -180.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 180.0
+          }
+        ],
+        "precision": 1
+      }
     },
     {
       "heliosType": "DCS.Common.NetworkValue",
@@ -4027,6 +4069,7 @@
           "id": "463"
         }
       ],
+      "triggereveryrelease": false,
       "vertical": true,
       "buttons": [
         {
@@ -4167,6 +4210,7 @@
           "id": "469"
         }
       ],
+      "triggereveryrelease": false,
       "vertical": false,
       "buttons": [
         {
@@ -4241,6 +4285,7 @@
           "id": "472"
         }
       ],
+      "triggereveryrelease": false,
       "vertical": true,
       "buttons": [
         {
@@ -5483,6 +5528,7 @@
           "id": "356"
         }
       ],
+      "triggereveryrelease": false,
       "vertical": true,
       "buttons": [
         {
@@ -7773,6 +7819,7 @@
         ],
         "precision": 1
       },
+      "valueDescription": "Value between 0 and 550",
       "unit": "Knots"
     },
     {
@@ -7807,8 +7854,8 @@
         ],
         "precision": 1
       },
-      "unit": "Knots",
-      "valueDescription": "(0 to 550)"
+      "valueDescription": "(0 to 550)",
+      "unit": "Knots"
     },
     {
       "heliosType": "DCS.Common.DualRocker",
@@ -9292,6 +9339,7 @@
         ],
         "precision": 1
       },
+      "valueDescription": "Value between 0 and 1100",
       "unit": "Celsius"
     },
     {
@@ -9372,8 +9420,8 @@
         ],
         "precision": 1
       },
-      "unit": "RPMPercent",
-      "valueDescription": "0-100"
+      "valueDescription": "0-100",
+      "unit": "RPMPercent"
     },
     {
       "heliosType": "DCS.Common.ScaledNetworkValue",
@@ -9873,6 +9921,7 @@
           "id": "320"
         }
       ],
+      "triggereveryrelease": false,
       "vertical": true,
       "buttons": [
         {
@@ -9903,6 +9952,7 @@
           "id": "321"
         }
       ],
+      "triggereveryrelease": false,
       "vertical": true,
       "buttons": [
         {
@@ -9933,6 +9983,7 @@
           "id": "322"
         }
       ],
+      "triggereveryrelease": false,
       "vertical": true,
       "buttons": [
         {
@@ -9963,6 +10014,7 @@
           "id": "323"
         }
       ],
+      "triggereveryrelease": false,
       "vertical": true,
       "buttons": [
         {
@@ -9993,6 +10045,7 @@
           "id": "324"
         }
       ],
+      "triggereveryrelease": false,
       "vertical": false,
       "buttons": [
         {
@@ -10679,6 +10732,7 @@
           "id": "770"
         }
       ],
+      "triggereveryrelease": false,
       "vertical": true,
       "buttons": [
         {
@@ -11547,6 +11601,7 @@
         ],
         "precision": 1
       },
+      "valueDescription": "Value between 0 and 500",
       "unit": "PoundsPerSquareInch"
     },
     {
@@ -11675,6 +11730,7 @@
         ],
         "precision": 1
       },
+      "valueDescription": "Value between 0 and 1100",
       "unit": "Celsius"
     },
     {
@@ -11755,8 +11811,8 @@
         ],
         "precision": 1
       },
-      "unit": "RPMPercent",
-      "valueDescription": "0-100"
+      "valueDescription": "0-100",
+      "unit": "RPMPercent"
     },
     {
       "heliosType": "DCS.Common.ScaledNetworkValue",
@@ -12256,6 +12312,7 @@
           "id": "346"
         }
       ],
+      "triggereveryrelease": false,
       "vertical": true,
       "buttons": [
         {
@@ -12286,6 +12343,7 @@
           "id": "347"
         }
       ],
+      "triggereveryrelease": false,
       "vertical": true,
       "buttons": [
         {
@@ -12316,6 +12374,7 @@
           "id": "348"
         }
       ],
+      "triggereveryrelease": false,
       "vertical": true,
       "buttons": [
         {
@@ -12346,6 +12405,7 @@
           "id": "349"
         }
       ],
+      "triggereveryrelease": false,
       "vertical": true,
       "buttons": [
         {
@@ -12376,6 +12436,7 @@
           "id": "350"
         }
       ],
+      "triggereveryrelease": false,
       "vertical": false,
       "buttons": [
         {
@@ -15133,6 +15194,7 @@
         ],
         "precision": 1
       },
+      "valueDescription": "Value between -6000 and 6000",
       "unit": "FeetPerMinute"
     },
     {

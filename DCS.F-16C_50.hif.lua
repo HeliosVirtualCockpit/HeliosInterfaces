@@ -1,7 +1,12 @@
--- Helios functions for F-16C_50 1.6.616.0 Commit d5c36d2
---[[
+-- Helios functions for F-16C_50
+-- version: "1.6.6160.0000",
+-- commit: "8f265e068540bb0faddd38ce52b2cabf48602595"
 function driver.processHighImportance(mainPanelDevice)
     -- called at configured update rate
+
+    -- Send ADI Ball Values	
+	helios.send(2050, string.format("%0.4f;0.0;%0.4f", mainPanelDevice:get_argument_value(17), mainPanelDevice:get_argument_value(18)))
+--[[
 
     -- example for combining/processing arguments:
     helios.send(2001, string.format(
@@ -18,8 +23,9 @@ function driver.processHighImportance(mainPanelDevice)
         helios.send(2002, string.format("%s", helios.ensureString(li.someNamedField1)))
         helios.send(2003, string.format("%s", helios.ensureString(li.someNamedField2)))
     end
-end
 ]]
+end
+
 function driver.processLowImportance(mainPanelDevice) --luacheck: no unused args
     -- same things as processHighImportance can be done here, called a few times per second at most
 	

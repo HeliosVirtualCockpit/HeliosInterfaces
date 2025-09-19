@@ -118,6 +118,56 @@
       }
     },
     {
+      "heliosType": "DCS.Common.DCSBallRotation",
+      "device": "ADI",
+      "name": "ADI Ball Rotation",
+      "description": "Single value containing X, Y & Z movement of the ADI Ball.",
+      "exports": [
+        {
+          "id": "2050"
+        }
+      ],
+      "calibration x": {
+        "points": [
+          {
+            "value": -1.0,
+            "mappedValue": -90.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 90.0
+          }
+        ],
+        "precision": 1
+      },
+      "calibration y": {
+        "points": [
+          {
+            "value": 0.0,
+            "mappedValue": 0.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 1.0
+          }
+        ],
+        "precision": 1
+      },
+      "calibration z": {
+        "points": [
+          {
+            "value": -1.0,
+            "mappedValue": -180.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 180.0
+          }
+        ],
+        "precision": 1
+      }
+    },
+    {
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "ADI",
       "name": "ADI LOC Bar",

@@ -1,7 +1,7 @@
 {
   "source": "Helios",
-  "version": "1.6.6130.0000",
-  "commit": "5ae1e7225b4954e933cf9bc4ee1cf158da7c8dbb",
+  "version": "1.6.6160.0000",
+  "commit": "8f265e068540bb0faddd38ce52b2cabf48602595",
   "type": "Existing",
   "name": "DCS F/A-18C",
   "module": "FA-18C_hornet",
@@ -3550,6 +3550,7 @@
         ],
         "precision": 1
       },
+      "valueDescription": "Value between 0 and 850",
       "unit": "Knots"
     },
     {
@@ -3620,6 +3621,7 @@
         ],
         "precision": 1
       },
+      "valueDescription": "Value between -6000 and 6000",
       "unit": "FeetPerMinute"
     },
     {
@@ -6867,6 +6869,7 @@
         ],
         "precision": 1
       },
+      "valueDescription": "Value between -10 and 5100",
       "unit": "Feet"
     },
     {
@@ -6905,6 +6908,7 @@
         ],
         "precision": 4
       },
+      "valueDescription": "Value between 0 and 0.982",
       "unit": "Feet"
     },
     {
@@ -7856,6 +7860,44 @@
       "unit": "Degrees"
     },
     {
+      "heliosType": "DCS.Common.DCSBallRotation",
+      "device": "SAI",
+      "name": "ADI Ball Rotation",
+      "description": "Single value containing X, Y & Z movement of the ADI Ball.",
+      "exports": [
+        {
+          "id": "2050"
+        }
+      ],
+      "calibration x": {
+        "points": [
+          {
+            "value": -1.0,
+            "mappedValue": -90.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 90.0
+          }
+        ],
+        "precision": 1
+      },
+      "calibration y": null,
+      "calibration z": {
+        "points": [
+          {
+            "value": -1.0,
+            "mappedValue": -180.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 180.0
+          }
+        ],
+        "precision": 1
+      }
+    },
+    {
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "SAI",
       "name": "Bank",
@@ -8284,6 +8326,7 @@
         ],
         "precision": 1
       },
+      "valueDescription": "Value between -300 and 50000",
       "unit": "Numeric"
     },
     {
@@ -8310,6 +8353,7 @@
         ],
         "precision": 1
       },
+      "valueDescription": "Value between 0 and 5000",
       "unit": "PoundsPerSquareInch"
     },
     {
@@ -8336,6 +8380,7 @@
         ],
         "precision": 1
       },
+      "valueDescription": "Value between 0 and 5000",
       "unit": "PoundsPerSquareInch"
     },
     {
@@ -8362,6 +8407,7 @@
         ],
         "precision": 1
       },
+      "valueDescription": "Value between 15 and 30",
       "unit": "Numeric"
     },
     {
@@ -8388,6 +8434,7 @@
         ],
         "precision": 1
       },
+      "valueDescription": "Value between 15 and 30",
       "unit": "Numeric"
     },
     {

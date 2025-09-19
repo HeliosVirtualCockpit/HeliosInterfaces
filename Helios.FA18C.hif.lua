@@ -1,3 +1,6 @@
+-- Exports.Lua from Helios DCS F/A-18C Hornet
+-- version: "1.6.6160.0000",
+-- commit: "8f265e068540bb0faddd38ce52b2cabf48602595"
 function driver.processHighImportance(mainPanelDevice)
     -- Altimeter
     helios.send(
@@ -18,6 +21,8 @@ function driver.processHighImportance(mainPanelDevice)
             mainPanelDevice:get_argument_value(221)
         )
     )
+	-- Send ADI Ball Values	
+	helios.send(2050, string.format("%0.4f;0.0;%0.4f", mainPanelDevice:get_argument_value(205), mainPanelDevice:get_argument_value(206)))
 
     -- Calcuate HSI Value
     -- helios.send(2029, string.format("%0.2f;%0.2f;%0.4f", mainPanelDevice:get_argument_value(29), mainPanelDevice:get_argument_value(30), mainPanelDevice:get_argument_value(31)))

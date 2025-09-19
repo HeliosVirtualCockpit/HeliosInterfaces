@@ -1,7 +1,13 @@
+-- Exports.Lua from Helios DCS Mirage 2000C
+-- version: "1.6.6160.0000",
+-- commit: "8f265e068540bb0faddd38ce52b2cabf48602595"
+
 function driver.processHighImportance(mainPanelDevice)
 	-- Send Altimeter Values	
 	helios.send(2051, string.format("%0.4f;%0.4f;%0.4f", mainPanelDevice:get_argument_value(306), mainPanelDevice:get_argument_value(307), mainPanelDevice:get_argument_value(305)))
-	helios.send(2059, string.format("%0.2f;%0.2f;%0.2f;%0.3f", mainPanelDevice:get_argument_value(310), mainPanelDevice:get_argument_value(311), mainPanelDevice:get_argument_value(312), mainPanelDevice:get_argument_value(313)))		
+	helios.send(2059, string.format("%0.2f;%0.2f;%0.2f;%0.3f", mainPanelDevice:get_argument_value(310), mainPanelDevice:get_argument_value(311), mainPanelDevice:get_argument_value(312), mainPanelDevice:get_argument_value(313)))	
+	-- Send ADI Ball Values	
+	helios.send(2050, string.format("%0.4f;%0.4f;%0.4f", mainPanelDevice:get_argument_value(316), mainPanelDevice:get_argument_value(318), mainPanelDevice:get_argument_value(317)))
 end
 
 

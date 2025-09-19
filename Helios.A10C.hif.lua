@@ -1,8 +1,12 @@
 -- Exports.Lua from Helios A-10C Interface
+-- version: "1.6.6160.0000",
+-- commit: "8f265e068540bb0faddd38ce52b2cabf48602595"
 function driver.processHighImportance(mainPanelDevice)
 	-- Send Altimeter Values	
 	helios.send(2051, string.format("%0.4f;%0.4f;%0.5f", mainPanelDevice:get_argument_value(52), mainPanelDevice:get_argument_value(53), mainPanelDevice:get_argument_value(51)))
 	helios.send(2059, string.format("%0.2f;%0.2f;%0.2f;%0.3f", mainPanelDevice:get_argument_value(56), mainPanelDevice:get_argument_value(57), mainPanelDevice:get_argument_value(58), mainPanelDevice:get_argument_value(59)))		
+	-- Send ADI Ball Values	
+	helios.send(2050, string.format("%0.4f;0.0;%0.4f", mainPanelDevice:get_argument_value(17), mainPanelDevice:get_argument_value(18)))
 	-- Calcuate HSI Value
 	helios.send(2029, string.format("%0.2f;%0.2f;%0.4f", mainPanelDevice:get_argument_value(29), mainPanelDevice:get_argument_value(30), mainPanelDevice:get_argument_value(31)))
 	-- Calculate Total Fuel
