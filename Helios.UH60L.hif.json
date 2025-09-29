@@ -1,7 +1,7 @@
 {
   "source": "Helios",
-  "version": "1.6.6060.0000",
-  "commit": "7852c504449dc4347ead9330d183ab1f107cea3d",
+  "version": "1.6.6160.0000",
+  "commit": "f114afb9621c70d0211b82d84cb4664ab140dec4",
   "type": "Existing",
   "name": "DCS UH-60L Blackhawk",
   "module": "UH-60L",
@@ -22,6 +22,7 @@
         }
       ],
       "deviceId": "40",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0",
@@ -53,6 +54,7 @@
         }
       ],
       "deviceId": "40",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "-1.0",
@@ -108,6 +110,7 @@
         }
       ],
       "deviceId": "40",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -134,6 +137,7 @@
         }
       ],
       "deviceId": "40",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0",
@@ -165,6 +169,7 @@
         }
       ],
       "deviceId": "40",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0",
@@ -196,6 +201,7 @@
         }
       ],
       "deviceId": "40",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0",
@@ -262,6 +268,7 @@
         }
       ],
       "deviceId": "40",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0",
@@ -328,6 +335,7 @@
         }
       ],
       "deviceId": "40",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0",
@@ -394,6 +402,7 @@
         }
       ],
       "deviceId": "40",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0",
@@ -693,6 +702,7 @@
         }
       ],
       "deviceId": "47",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -724,6 +734,7 @@
         }
       ],
       "deviceId": "47",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -755,6 +766,7 @@
         }
       ],
       "deviceId": "47",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -781,6 +793,7 @@
         }
       ],
       "deviceId": "47",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -817,6 +830,7 @@
         }
       ],
       "deviceId": "24",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -1119,6 +1133,7 @@
         }
       ],
       "deviceId": "32",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -1145,6 +1160,7 @@
         }
       ],
       "deviceId": "32",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0",
@@ -1211,6 +1227,7 @@
         }
       ],
       "deviceId": "32",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0",
@@ -1344,6 +1361,7 @@
         }
       ],
       "deviceId": "32",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -1370,6 +1388,7 @@
         }
       ],
       "deviceId": "32",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -1423,6 +1442,7 @@
         }
       ],
       "deviceId": "46",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -1449,6 +1469,7 @@
         }
       ],
       "deviceId": "46",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -1475,6 +1496,7 @@
         }
       ],
       "deviceId": "46",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -1501,6 +1523,7 @@
         }
       ],
       "deviceId": "46",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -1527,6 +1550,7 @@
         }
       ],
       "deviceId": "46",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -1553,6 +1577,7 @@
         }
       ],
       "deviceId": "46",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -1631,6 +1656,7 @@
         }
       ],
       "deviceId": "23",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0",
@@ -1682,6 +1708,7 @@
         }
       ],
       "deviceId": "23",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0",
@@ -2168,6 +2195,7 @@
         }
       ],
       "deviceId": "27",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -2194,6 +2222,7 @@
         }
       ],
       "deviceId": "27",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "-1.0",
@@ -2226,6 +2255,7 @@
         }
       ],
       "deviceId": "27",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "-1.0",
@@ -2258,6 +2288,7 @@
         }
       ],
       "deviceId": "27",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "-1.0",
@@ -2290,6 +2321,7 @@
         }
       ],
       "deviceId": "27",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "-1.0",
@@ -2322,6 +2354,7 @@
         }
       ],
       "deviceId": "27",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "-1.0",
@@ -2354,6 +2387,7 @@
         }
       ],
       "deviceId": "27",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "-1.0",
@@ -2386,6 +2420,7 @@
         }
       ],
       "deviceId": "27",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -2412,6 +2447,7 @@
         }
       ],
       "deviceId": "27",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -2438,6 +2474,7 @@
         }
       ],
       "deviceId": "27",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -2464,6 +2501,7 @@
         }
       ],
       "deviceId": "27",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -2536,6 +2574,7 @@
         }
       ],
       "deviceId": "16",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -2568,6 +2607,7 @@
         }
       ],
       "deviceId": "16",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -2644,6 +2684,7 @@
         }
       ],
       "deviceId": "16",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "-1.0",
@@ -2670,6 +2711,7 @@
         }
       ],
       "deviceId": "16",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "-1.0",
@@ -3147,6 +3189,7 @@
         }
       ],
       "deviceId": "11",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -3193,6 +3236,7 @@
         }
       ],
       "deviceId": "1",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -3219,6 +3263,7 @@
         }
       ],
       "deviceId": "1",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -3245,6 +3290,7 @@
         }
       ],
       "deviceId": "1",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -3271,6 +3317,7 @@
         }
       ],
       "deviceId": "1",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -3297,6 +3344,7 @@
         }
       ],
       "deviceId": "1",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -3323,6 +3371,7 @@
         }
       ],
       "deviceId": "1",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -3349,6 +3398,7 @@
         }
       ],
       "deviceId": "1",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -3375,6 +3425,7 @@
         }
       ],
       "deviceId": "1",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -5041,6 +5092,7 @@
         }
       ],
       "deviceId": "25",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -5067,6 +5119,7 @@
         }
       ],
       "deviceId": "25",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -5093,6 +5146,7 @@
         }
       ],
       "deviceId": "25",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -5142,6 +5196,7 @@
         }
       ],
       "deviceId": "20",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "-1.0",
@@ -5173,6 +5228,7 @@
         }
       ],
       "deviceId": "20",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -5199,6 +5255,7 @@
         }
       ],
       "deviceId": "20",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "-1.0",
@@ -5230,6 +5287,7 @@
         }
       ],
       "deviceId": "20",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "-1.0",
@@ -5261,6 +5319,7 @@
         }
       ],
       "deviceId": "20",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -5287,6 +5346,7 @@
         }
       ],
       "deviceId": "20",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "-1.0",
@@ -5364,6 +5424,7 @@
         }
       ],
       "deviceId": "20",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -5548,6 +5609,7 @@
         }
       ],
       "deviceId": "20",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -5574,6 +5636,7 @@
         }
       ],
       "deviceId": "20",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "-1.0",
@@ -5671,6 +5734,7 @@
         }
       ],
       "deviceId": "46",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -6049,6 +6113,7 @@
         }
       ],
       "deviceId": "30",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "-1.0",
@@ -6080,6 +6145,7 @@
         }
       ],
       "deviceId": "30",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "-1.0",
@@ -6111,6 +6177,7 @@
         }
       ],
       "deviceId": "30",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "-1.0",
@@ -6142,6 +6209,7 @@
         }
       ],
       "deviceId": "30",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "-1.0",
@@ -6173,6 +6241,7 @@
         }
       ],
       "deviceId": "30",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "-1.0",
@@ -6204,6 +6273,7 @@
         }
       ],
       "deviceId": "30",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "-1.0",
@@ -6235,6 +6305,7 @@
         }
       ],
       "deviceId": "30",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "-1.0",
@@ -6266,6 +6337,7 @@
         }
       ],
       "deviceId": "30",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "-1.0",
@@ -6297,6 +6369,7 @@
         }
       ],
       "deviceId": "30",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "-1.0",
@@ -6328,6 +6401,7 @@
         }
       ],
       "deviceId": "30",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "-1.0",
@@ -6359,6 +6433,7 @@
         }
       ],
       "deviceId": "30",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "-1.0",
@@ -6390,6 +6465,7 @@
         }
       ],
       "deviceId": "30",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "-1.0",
@@ -6697,6 +6773,7 @@
         }
       ],
       "deviceId": "19",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -6745,6 +6822,7 @@
         }
       ],
       "deviceId": "19",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -6986,6 +7064,7 @@
         }
       ],
       "deviceId": "16",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -7211,6 +7290,7 @@
         }
       ],
       "deviceId": "2",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0",
@@ -7267,6 +7347,7 @@
         }
       ],
       "deviceId": "2",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0",
@@ -7328,6 +7409,7 @@
         }
       ],
       "deviceId": "2",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0",
@@ -7364,6 +7446,7 @@
         }
       ],
       "deviceId": "2",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0",
@@ -7766,6 +7849,7 @@
         }
       ],
       "deviceId": "9",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0",
@@ -7822,6 +7906,7 @@
         }
       ],
       "deviceId": "9",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0",
@@ -7883,6 +7968,7 @@
         }
       ],
       "deviceId": "9",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0",
@@ -7919,6 +8005,7 @@
         }
       ],
       "deviceId": "9",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0",
@@ -8308,6 +8395,7 @@
         }
       ],
       "deviceId": "3",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0",
@@ -8367,6 +8455,7 @@
         }
       ],
       "deviceId": "3",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0",
@@ -8403,6 +8492,7 @@
         }
       ],
       "deviceId": "3",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0",
@@ -8429,6 +8519,7 @@
         }
       ],
       "deviceId": "3",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0",
@@ -8495,6 +8586,7 @@
         }
       ],
       "deviceId": "3",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0",
@@ -8561,6 +8653,7 @@
         }
       ],
       "deviceId": "3",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0",
@@ -8627,6 +8720,7 @@
         }
       ],
       "deviceId": "3",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0",
@@ -8663,6 +8757,7 @@
         }
       ],
       "deviceId": "3",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0",
@@ -8824,6 +8919,7 @@
         }
       ],
       "deviceId": "7",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.000",
@@ -8905,6 +9001,7 @@
         }
       ],
       "deviceId": "7",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -8971,6 +9068,7 @@
         }
       ],
       "deviceId": "7",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -9037,6 +9135,7 @@
         }
       ],
       "deviceId": "7",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.00",
@@ -9073,6 +9172,7 @@
         }
       ],
       "deviceId": "7",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.00",
@@ -9131,6 +9231,7 @@
         }
       ],
       "deviceId": "7",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0",
@@ -9247,6 +9348,7 @@
         }
       ],
       "deviceId": "7",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0.0",
@@ -9278,6 +9380,7 @@
         }
       ],
       "deviceId": "41",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0",
@@ -9344,6 +9447,7 @@
         }
       ],
       "deviceId": "41",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "0",
@@ -9410,6 +9514,7 @@
         }
       ],
       "deviceId": "41",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -9436,6 +9541,7 @@
         }
       ],
       "deviceId": "41",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "-1.0",
@@ -9455,6 +9561,454 @@
       ]
     },
     {
+      "heliosType": "DCS.Common.DCSBallRotation",
+      "device": "VSI (Copilot)",
+      "name": "ball rotation",
+      "description": "Single value containing X, Y & Z movement of the VSI Ball.",
+      "exports": [
+        {
+          "id": "2050"
+        }
+      ],
+      "calibration x": {
+        "points": [
+          {
+            "value": -1.0,
+            "mappedValue": -90.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 90.0
+          }
+        ],
+        "precision": 1
+      },
+      "calibration y": null,
+      "calibration z": {
+        "points": [
+          {
+            "value": -1.0,
+            "mappedValue": -180.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 180.0
+          }
+        ],
+        "precision": 1
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "VSI (Copilot)",
+      "name": "pitch",
+      "description": "VSI pitch value in degrees",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "433"
+        }
+      ],
+      "baseValue": 0.0,
+      "scale": 90.0,
+      "valueDescription": "-90 to +90",
+      "unit": "Degrees"
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "VSI (Copilot)",
+      "name": "roll",
+      "description": "VSI Bank value in degrees",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "434"
+        }
+      ],
+      "baseValue": 0.0,
+      "scale": -180.0,
+      "valueDescription": "-180 to +180",
+      "unit": "Degrees"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "VSI (Copilot)",
+      "name": "side slip",
+      "description": "VSI Bank value in degrees",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "435"
+        }
+      ],
+      "valueDescription": "-1 to +1",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "VSI (Copilot)",
+      "name": "GS horizontal deviation",
+      "description": "VSI Glide Slope indicator as a numeric value",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "436"
+        }
+      ],
+      "valueDescription": "-1 to +1",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "VSI (Copilot)",
+      "name": "GS vertical deviation",
+      "description": "VSI Glide Slope indicator as a numeric value",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "437"
+        }
+      ],
+      "valueDescription": "-1 to +1",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "VSI (Copilot)",
+      "name": "Collective Indicator",
+      "description": "VSI Collective CMD indicator as a numeric value",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "438"
+        }
+      ],
+      "valueDescription": "-1 to +1",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "VSI (Copilot)",
+      "name": "turn rate",
+      "description": "VSI Turn Rate Indicator as a numeric",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "439"
+        }
+      ],
+      "valueDescription": "-1 to +1",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "VSI (Copilot)",
+      "name": "Track Error Indicator",
+      "description": "VSI Track Error Indicator as a numeric value",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "440"
+        }
+      ],
+      "valueDescription": "-1 to +1",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "VSI (Copilot)",
+      "name": "Glide Slope Indicator",
+      "description": "VSI Glide Slope Indicator as a numeric value",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "441"
+        }
+      ],
+      "valueDescription": "-1 to +1",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "VSI (Copilot)",
+      "name": "CMD flag",
+      "description": "VSI CMD flag as a numeric value",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "442"
+        }
+      ],
+      "valueDescription": "0 to +1",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "VSI (Copilot)",
+      "name": "ATT flag",
+      "description": "VSI ATT flag as a numeric value",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "443"
+        }
+      ],
+      "valueDescription": "0 to +1",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "VSI (Copilot)",
+      "name": "NAV flag",
+      "description": "VSI NAV flag as a numeric value",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "444"
+        }
+      ],
+      "valueDescription": "0 to +1",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "VSI (Copilot)",
+      "name": "GS flag",
+      "description": "VSI GS flag as a numeric value",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "445"
+        }
+      ],
+      "valueDescription": "0 to +1",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.DCSBallRotation",
+      "device": "VSI (Pilot)",
+      "name": "ball rotation",
+      "description": "Single value containing X, Y & Z movement of the VSI Ball.",
+      "exports": [
+        {
+          "id": "2049"
+        }
+      ],
+      "calibration x": {
+        "points": [
+          {
+            "value": -1.0,
+            "mappedValue": -90.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 90.0
+          }
+        ],
+        "precision": 1
+      },
+      "calibration y": null,
+      "calibration z": {
+        "points": [
+          {
+            "value": -1.0,
+            "mappedValue": -180.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 180.0
+          }
+        ],
+        "precision": 1
+      }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "VSI (Pilot)",
+      "name": "pitch",
+      "description": "VSI pitch value in degrees",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "420"
+        }
+      ],
+      "baseValue": 0.0,
+      "scale": 90.0,
+      "valueDescription": "-90 to +90",
+      "unit": "Degrees"
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "VSI (Pilot)",
+      "name": "roll",
+      "description": "VSI Bank value in degrees",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "421"
+        }
+      ],
+      "baseValue": 0.0,
+      "scale": -180.0,
+      "valueDescription": "-180 to +180",
+      "unit": "Degrees"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "VSI (Pilot)",
+      "name": "side slip",
+      "description": "VSI Bank value in degrees",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "422"
+        }
+      ],
+      "valueDescription": "-1 to +1",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "VSI (Pilot)",
+      "name": "GS horizontal deviation",
+      "description": "VSI Glide Slope indicator as a numeric value",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "423"
+        }
+      ],
+      "valueDescription": "-1 to +1",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "VSI (Pilot)",
+      "name": "GS vertical deviation",
+      "description": "VSI Glide Slope indicator as a numeric value",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "424"
+        }
+      ],
+      "valueDescription": "-1 to +1",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "VSI (Pilot)",
+      "name": "Collective Indicator",
+      "description": "VSI Collective CMD indicator as a numeric value",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "425"
+        }
+      ],
+      "valueDescription": "-1 to +1",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "VSI (Pilot)",
+      "name": "turn rate",
+      "description": "VSI Turn Rate Indicator as a numeric",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "426"
+        }
+      ],
+      "valueDescription": "-1 to +1",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "VSI (Pilot)",
+      "name": "Track Error Indicator",
+      "description": "VSI Track Error Indicator as a numeric value",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "427"
+        }
+      ],
+      "valueDescription": "-1 to +1",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "VSI (Pilot)",
+      "name": "Glide Slope Indicator",
+      "description": "VSI Glide Slope Indicator as a numeric value",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "428"
+        }
+      ],
+      "valueDescription": "-1 to +1",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "VSI (Pilot)",
+      "name": "CMD flag",
+      "description": "VSI CMD flag as a numeric value",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "429"
+        }
+      ],
+      "valueDescription": "0 to +1",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "VSI (Pilot)",
+      "name": "ATT flag",
+      "description": "VSI ATT flag as a numeric value",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "430"
+        }
+      ],
+      "valueDescription": "0 to +1",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "VSI (Pilot)",
+      "name": "NAV flag",
+      "description": "VSI NAV flag as a numeric value",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "431"
+        }
+      ],
+      "valueDescription": "0 to +1",
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "VSI (Pilot)",
+      "name": "GS flag",
+      "description": "VSI GS flag as a numeric value",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "432"
+        }
+      ],
+      "valueDescription": "0 to +1",
+      "unit": "Numeric"
+    },
+    {
       "heliosType": "DCS.Common.Switch",
       "device": "Wipers",
       "name": "Wipers PARK/OFF/LOW/HI",
@@ -9467,6 +10021,7 @@
         }
       ],
       "deviceId": "46",
+      "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "-0.50",
