@@ -1,7 +1,7 @@
 {
   "source": "Helios",
-  "version": "1.6.6010.0000",
-  "commit": "da47597353cb283a5aebca0313bb318a4ff8776d",
+  "Version": "1.6.6160.0000",
+  "Commit": "772298f0e4db5996d7d06a70cd22cfe3042b894a",
   "type": "DCS",
   "name": "DCS H-60 (UH-60L Blackhawk)",
   "module": "UH-60L",
@@ -7085,6 +7085,44 @@
       "unit": "Degrees"
     },
     {
+      "heliosType": "DCS.Common.DCSBallRotation",
+      "device": "COPILOT VSI",
+      "name": "COPILOT_ball rotation",
+      "description": "Single value containing X, Y & Z movement of the VSI Ball.",
+      "exports": [
+        {
+          "id": "2050"
+        }
+      ],
+      "calibration x": {
+        "points": [
+          {
+            "value": -1.0,
+            "mappedValue": -90.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 90.0
+          }
+        ],
+        "precision": 1
+      },
+      "calibration y": null,
+      "calibration z": {
+        "points": [
+          {
+            "value": -1.0,
+            "mappedValue": -180.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 180.0
+          }
+        ],
+        "precision": 1
+      }
+    },
+    {
       "heliosType": "DCS.Common.NetworkValue",
       "device": "COPILOT VSI",
       "name": "COPILOT_VSI_SLIP_IND",
@@ -10610,6 +10648,44 @@
       },
       "valueDescription": "Numeric value between -1 and 1",
       "unit": "Degrees"
+    },
+    {
+      "heliosType": "DCS.Common.DCSBallRotation",
+      "device": "PILOT VSI",
+      "name": "PILOT_ball rotation",
+      "description": "Single value containing X, Y & Z movement of the VSI Ball.",
+      "exports": [
+        {
+          "id": "2049"
+        }
+      ],
+      "calibration x": {
+        "points": [
+          {
+            "value": -1.0,
+            "mappedValue": -90.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 90.0
+          }
+        ],
+        "precision": 1
+      },
+      "calibration y": null,
+      "calibration z": {
+        "points": [
+          {
+            "value": -1.0,
+            "mappedValue": -180.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 180.0
+          }
+        ],
+        "precision": 1
+      }
     },
     {
       "heliosType": "DCS.Common.NetworkValue",
