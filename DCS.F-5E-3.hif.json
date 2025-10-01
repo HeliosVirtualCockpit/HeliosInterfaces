@@ -1,7 +1,7 @@
 {
   "source": "DCSFlightPanels",
-  "version": "1.6.6080.7",
-  "commit": "c89143fabd4d9f6e7a6d7059f882937e6a2efe14",
+  "Version": "1.6.6160.0000",
+  "Commit": "772298f0e4db5996d7d06a70cd22cfe3042b894a",
   "type": "DCS",
   "name": "DCS F-5E-3",
   "module": "F-5E-3",
@@ -209,22 +209,24 @@
       }
     },
     {
-      "heliosType": "DCS.Common.Axis",
+      "heliosType": "DCS.Common.RotaryEncoder",
       "device": "Attitude Indicator",
       "name": "Attitude Indicator Pitch Trim Knob",
-      "description": "Current value of this potentiometer.",
+      "description": "Current value of this rotary encoder.",
       "exports": [
-        {
+         {
           "format": "%.3f",
           "id": "150"
         }
       ],
-      "loop": false,
+      "unit": "Numeric",
       "argumentValue": 0.025,
-      "argumentMin": 0,
-      "argumentMax": 1,
       "actions": {
-        "set": {
+        "increment": {
+          "deviceId": "32",
+          "actionId": "3001"
+        },
+        "decrement": {
           "deviceId": "32",
           "actionId": "3001"
         }
@@ -2320,6 +2322,56 @@
       }
     },
     {
+      "heliosType": "DCS.Common.DCSBallRotation",
+      "device": "ADI Ball",
+      "name": "ADI Ball Rotation",
+      "description": "Single value containing X, Y & Z movement of the ADI Ball.",
+      "exports": [
+        {
+          "id": "2060"
+        }
+      ],
+      "calibration x": {
+        "points": [
+          {
+            "value": -1.0,
+            "mappedValue": 180.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": -180.0
+          }
+        ],
+        "precision": 1
+      },
+      "calibration y": {
+        "points": [
+          {
+            "value": 0.0,
+            "mappedValue": 0.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 1.0
+          }
+        ],
+        "precision": 1
+      },
+      "calibration z": {
+        "points": [
+          {
+            "value": -1.0,
+            "mappedValue": -180.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 180.0
+          }
+        ],
+        "precision": 1
+      }
+    },
+	{
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Gauges",
       "name": "Attitude Indicator Bank",
