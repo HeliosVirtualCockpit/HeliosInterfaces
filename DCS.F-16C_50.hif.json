@@ -1,7 +1,7 @@
 {
   "source": "DCSFlightPanels",
-  "version": "1.6.6160.0",
-  "commit": "d5c36d2",
+  "version": "1.6.6160.000A",
+  "commit": "f400a6ffa91de0b172e05bbc243368371e47eab7",
   "type": "DCS",
   "name": "DCS F-16C_50",
   "module": "F-16C_50",
@@ -4322,6 +4322,20 @@
       ],
       "valueDescription": "Pounds of Fuel",
       "unit": "Pounds"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Fuel System",
+      "name": "Fuel Flow Rate",
+      "description": "Total Fuel Amount (Pounds)",
+      "exports": [
+        {
+          "format": null,
+          "id": "2181"
+        }
+      ],
+      "valueDescription": "Pounds of Fuel per hour",
+      "unit": "PoundsPerHour"
     },
     {
       "heliosType": "DCS.Common.ScaledNetworkValue",

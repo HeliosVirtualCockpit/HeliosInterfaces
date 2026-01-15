@@ -1,6 +1,6 @@
 -- Helios functions for F-16C_50
--- version: "1.6.6160.0000",
--- commit: "8f265e068540bb0faddd38ce52b2cabf48602595"
+-- version: "1.6.6160.000A",
+-- commit: "f400a6ffa91de0b172e05bbc243368371e47eab7"
 function driver.processHighImportance(mainPanelDevice)
     -- called at configured update rate
 
@@ -41,6 +41,14 @@ function driver.processLowImportance(mainPanelDevice) --luacheck: no unused args
         string.format(
             "%d",
             (math.floor(mainPanelDevice:get_argument_value(730)*10)*10000)+ (math.floor(mainPanelDevice:get_argument_value(731) * 10) * 1000) + (math.floor(mainPanelDevice:get_argument_value(732) * 1000))
+        )
+    )
+    -- Fuel Flow
+        helios.send(
+        2181,
+        string.format(
+            "%d",
+            (math.floor(mainPanelDevice:get_argument_value(88)*10)*1000)+ (math.floor(mainPanelDevice:get_argument_value(89) * 10) * 100) + (math.floor(mainPanelDevice:get_argument_value(89) * 1000))
         )
     )
 end
