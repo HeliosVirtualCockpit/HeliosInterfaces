@@ -1,7 +1,7 @@
 {
   "source": "Helios",
   "version": "1.6.6170.0000",
-  "commit": "5981fda98b02614713b5ececa01b3c6834a969e3",
+  "commit": "b3644628e673ed06d8b79e602b89a1c0da10d123",
   "type": "Existing",
   "name": "DCS C-130J Hercules (ASC)",
   "module": "C-130J-30",
@@ -1588,12 +1588,12 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.00",
+          "argumentValue": "-2.00",
           "name": "Posn 1",
           "actionID": "3159"
         },
         {
-          "argumentValue": "-1.00",
+          "argumentValue": "2.00",
           "name": "Posn 2",
           "actionID": "3159"
         }
@@ -1725,22 +1725,22 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.00",
+          "argumentValue": "0.00",
           "name": "Posn 1",
           "actionID": "3164"
         },
         {
-          "argumentValue": "0.67",
+          "argumentValue": "0.33",
           "name": "Posn 2",
           "actionID": "3164"
         },
         {
-          "argumentValue": "0.33",
+          "argumentValue": "0.67",
           "name": "Posn 3",
           "actionID": "3164"
         },
         {
-          "argumentValue": "0.00",
+          "argumentValue": "1.00",
           "name": "Posn 4",
           "actionID": "3164"
         }
@@ -1762,52 +1762,52 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.00",
+          "argumentValue": "0.00",
           "name": "Posn 1",
           "actionID": "3163"
         },
         {
-          "argumentValue": "0.89",
+          "argumentValue": "0.11",
           "name": "Posn 2",
           "actionID": "3163"
         },
         {
-          "argumentValue": "0.78",
+          "argumentValue": "0.22",
           "name": "Posn 3",
           "actionID": "3163"
         },
         {
-          "argumentValue": "0.67",
+          "argumentValue": "0.33",
           "name": "Posn 4",
           "actionID": "3163"
         },
         {
-          "argumentValue": "0.56",
+          "argumentValue": "0.44",
           "name": "Posn 5",
           "actionID": "3163"
         },
         {
-          "argumentValue": "0.44",
+          "argumentValue": "0.56",
           "name": "Posn 6",
           "actionID": "3163"
         },
         {
-          "argumentValue": "0.33",
+          "argumentValue": "0.67",
           "name": "Posn 7",
           "actionID": "3163"
         },
         {
-          "argumentValue": "0.22",
+          "argumentValue": "0.78",
           "name": "Posn 8",
           "actionID": "3163"
         },
         {
-          "argumentValue": "0.11",
+          "argumentValue": "0.89",
           "name": "Posn 9",
           "actionID": "3163"
         },
         {
-          "argumentValue": "0.00",
+          "argumentValue": "1.00",
           "name": "Posn 10",
           "actionID": "3163"
         }
@@ -1829,52 +1829,52 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.00",
+          "argumentValue": "0.00",
           "name": "Posn 1",
           "actionID": "3162"
         },
         {
-          "argumentValue": "0.89",
+          "argumentValue": "0.11",
           "name": "Posn 2",
           "actionID": "3162"
         },
         {
-          "argumentValue": "0.78",
+          "argumentValue": "0.22",
           "name": "Posn 3",
           "actionID": "3162"
         },
         {
-          "argumentValue": "0.67",
+          "argumentValue": "0.33",
           "name": "Posn 4",
           "actionID": "3162"
         },
         {
-          "argumentValue": "0.56",
+          "argumentValue": "0.44",
           "name": "Posn 5",
           "actionID": "3162"
         },
         {
-          "argumentValue": "0.44",
+          "argumentValue": "0.56",
           "name": "Posn 6",
           "actionID": "3162"
         },
         {
-          "argumentValue": "0.33",
+          "argumentValue": "0.67",
           "name": "Posn 7",
           "actionID": "3162"
         },
         {
-          "argumentValue": "0.22",
+          "argumentValue": "0.78",
           "name": "Posn 8",
           "actionID": "3162"
         },
         {
-          "argumentValue": "0.11",
+          "argumentValue": "0.89",
           "name": "Posn 9",
           "actionID": "3162"
         },
         {
-          "argumentValue": "0.00",
+          "argumentValue": "1.00",
           "name": "Posn 10",
           "actionID": "3162"
         }
@@ -1896,52 +1896,52 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.00",
+          "argumentValue": "0.00",
           "name": "Posn 1",
           "actionID": "3161"
         },
         {
-          "argumentValue": "0.89",
+          "argumentValue": "0.11",
           "name": "Posn 2",
           "actionID": "3161"
         },
         {
-          "argumentValue": "0.78",
+          "argumentValue": "0.22",
           "name": "Posn 3",
           "actionID": "3161"
         },
         {
-          "argumentValue": "0.67",
+          "argumentValue": "0.33",
           "name": "Posn 4",
           "actionID": "3161"
         },
         {
-          "argumentValue": "0.56",
+          "argumentValue": "0.44",
           "name": "Posn 5",
           "actionID": "3161"
         },
         {
-          "argumentValue": "0.44",
+          "argumentValue": "0.56",
           "name": "Posn 6",
           "actionID": "3161"
         },
         {
-          "argumentValue": "0.33",
+          "argumentValue": "0.67",
           "name": "Posn 7",
           "actionID": "3161"
         },
         {
-          "argumentValue": "0.22",
+          "argumentValue": "0.78",
           "name": "Posn 8",
           "actionID": "3161"
         },
         {
-          "argumentValue": "0.11",
+          "argumentValue": "0.89",
           "name": "Posn 9",
           "actionID": "3161"
         },
         {
-          "argumentValue": "0.00",
+          "argumentValue": "1.00",
           "name": "Posn 10",
           "actionID": "3161"
         }
@@ -1963,22 +1963,22 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.00",
+          "argumentValue": "0.00",
           "name": "Posn 1",
           "actionID": "3160"
         },
         {
-          "argumentValue": "0.67",
+          "argumentValue": "0.33",
           "name": "Posn 2",
           "actionID": "3160"
         },
         {
-          "argumentValue": "0.33",
+          "argumentValue": "0.67",
           "name": "Posn 3",
           "actionID": "3160"
         },
         {
-          "argumentValue": "0.00",
+          "argumentValue": "1.00",
           "name": "Posn 4",
           "actionID": "3160"
         }
@@ -2000,17 +2000,17 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.00",
+          "argumentValue": "0.00",
           "name": "Posn 1",
           "actionID": "3165"
         },
         {
-          "argumentValue": "0.83",
+          "argumentValue": "0.17",
           "name": "Posn 2",
           "actionID": "3165"
         },
         {
-          "argumentValue": "0.67",
+          "argumentValue": "0.33",
           "name": "Posn 3",
           "actionID": "3165"
         },
@@ -2020,27 +2020,26 @@
           "actionID": "3165"
         },
         {
-          "argumentValue": "0.33",
+          "argumentValue": "0.67",
           "name": "Posn 5",
           "actionID": "3165"
         },
         {
-          "argumentValue": "0.17",
+          "argumentValue": "0.83",
           "name": "Posn 6",
           "actionID": "3165"
         },
         {
-          "argumentValue": "0.00",
+          "argumentValue": "1.00",
           "name": "Posn 7",
           "actionID": "3165"
         }
       ]
     },
     {
-      "heliosType": "DCS.Common.Axis",
+      "heliosType": "DCS.Common.RotaryEncoder",
       "device": "ARC-210",
       "name": "Channel Selector",
-      "description": "Current value of this axis.",
       "exports": [
         {
           "format": "%0.2f",
@@ -2048,12 +2047,13 @@
           "id": "544"
         }
       ],
-      "loop": false,
       "argumentValue": 0.1,
-      "argumentMin": -1.0,
-      "argumentMax": 1.0,
       "actions": {
-        "set": {
+        "increment": {
+          "deviceId": "69",
+          "actionId": "3166"
+        },
+        "decrement": {
           "deviceId": "69",
           "actionId": "3166"
         }
@@ -2075,17 +2075,17 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.00",
+          "argumentValue": "0.00",
           "name": "Posn 1",
           "actionID": "3167"
         },
         {
-          "argumentValue": "0.83",
+          "argumentValue": "0.17",
           "name": "Posn 2",
           "actionID": "3167"
         },
         {
-          "argumentValue": "0.67",
+          "argumentValue": "0.33",
           "name": "Posn 3",
           "actionID": "3167"
         },
@@ -2095,17 +2095,17 @@
           "actionID": "3167"
         },
         {
-          "argumentValue": "0.33",
+          "argumentValue": "0.67",
           "name": "Posn 5",
           "actionID": "3167"
         },
         {
-          "argumentValue": "0.17",
+          "argumentValue": "0.83",
           "name": "Posn 6",
           "actionID": "3167"
         },
         {
-          "argumentValue": "0.00",
+          "argumentValue": "1.00",
           "name": "Posn 7",
           "actionID": "3167"
         }
@@ -8486,7 +8486,7 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.00",
+          "argumentValue": "0.00",
           "name": "Posn 1",
           "actionID": "3008"
         },
@@ -8496,7 +8496,7 @@
           "actionID": "3008"
         },
         {
-          "argumentValue": "0.00",
+          "argumentValue": "1.00",
           "name": "Posn 3",
           "actionID": "3008"
         }
@@ -10191,12 +10191,12 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.00",
+          "argumentValue": "0.00",
           "name": "Posn 1",
           "actionID": "3065"
         },
         {
-          "argumentValue": "0.00",
+          "argumentValue": "1.00",
           "name": "Posn 2",
           "actionID": "3065"
         }
@@ -10218,12 +10218,12 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.00",
+          "argumentValue": "0.00",
           "name": "Posn 1",
           "actionID": "3066"
         },
         {
-          "argumentValue": "0.00",
+          "argumentValue": "1.00",
           "name": "Posn 2",
           "actionID": "3066"
         }
@@ -10245,12 +10245,12 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.00",
+          "argumentValue": "0.00",
           "name": "Posn 1",
           "actionID": "3067"
         },
         {
-          "argumentValue": "0.00",
+          "argumentValue": "1.00",
           "name": "Posn 2",
           "actionID": "3067"
         }
@@ -10272,12 +10272,12 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.00",
+          "argumentValue": "0.00",
           "name": "Posn 1",
           "actionID": "3068"
         },
         {
-          "argumentValue": "0.00",
+          "argumentValue": "1.00",
           "name": "Posn 2",
           "actionID": "3068"
         }
@@ -10299,12 +10299,12 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.00",
+          "argumentValue": "0.00",
           "name": "Posn 1",
           "actionID": "3064"
         },
         {
-          "argumentValue": "0.00",
+          "argumentValue": "1.00",
           "name": "Posn 2",
           "actionID": "3064"
         }
@@ -10358,7 +10358,7 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.00",
+          "argumentValue": "-1.00",
           "name": "Posn 1",
           "actionID": "3063"
         },
@@ -10368,7 +10368,7 @@
           "actionID": "3063"
         },
         {
-          "argumentValue": "-1.00",
+          "argumentValue": "1.00",
           "name": "Posn 3",
           "actionID": "3063"
         }
@@ -10390,7 +10390,7 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.00",
+          "argumentValue": "-1.00",
           "name": "Posn 1",
           "actionID": "3062"
         },
@@ -10400,7 +10400,7 @@
           "actionID": "3062"
         },
         {
-          "argumentValue": "-1.00",
+          "argumentValue": "1.00",
           "name": "Posn 3",
           "actionID": "3062"
         }
@@ -10422,7 +10422,7 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.00",
+          "argumentValue": "-1.00",
           "name": "Posn 1",
           "actionID": "3058"
         },
@@ -10432,7 +10432,7 @@
           "actionID": "3058"
         },
         {
-          "argumentValue": "-1.00",
+          "argumentValue": "1.00",
           "name": "Posn 3",
           "actionID": "3058"
         }
@@ -10454,7 +10454,7 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.00",
+          "argumentValue": "-1.00",
           "name": "Posn 1",
           "actionID": "3059"
         },
@@ -10464,7 +10464,7 @@
           "actionID": "3059"
         },
         {
-          "argumentValue": "-1.00",
+          "argumentValue": "1.00",
           "name": "Posn 3",
           "actionID": "3059"
         }
@@ -10486,7 +10486,7 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.00",
+          "argumentValue": "-1.00",
           "name": "Posn 1",
           "actionID": "3060"
         },
@@ -10496,7 +10496,7 @@
           "actionID": "3060"
         },
         {
-          "argumentValue": "-1.00",
+          "argumentValue": "1.00",
           "name": "Posn 3",
           "actionID": "3060"
         }
@@ -10518,7 +10518,7 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.00",
+          "argumentValue": "-1.00",
           "name": "Posn 1",
           "actionID": "3061"
         },
@@ -10528,7 +10528,7 @@
           "actionID": "3061"
         },
         {
-          "argumentValue": "-1.00",
+          "argumentValue": "1.00",
           "name": "Posn 3",
           "actionID": "3061"
         }
@@ -10550,7 +10550,7 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.00",
+          "argumentValue": "-1.00",
           "name": "Posn 1",
           "actionID": "3054"
         },
@@ -10560,7 +10560,7 @@
           "actionID": "3054"
         },
         {
-          "argumentValue": "-1.00",
+          "argumentValue": "1.00",
           "name": "Posn 3",
           "actionID": "3054"
         }
@@ -10582,7 +10582,7 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.00",
+          "argumentValue": "-1.00",
           "name": "Posn 1",
           "actionID": "3055"
         },
@@ -10592,7 +10592,7 @@
           "actionID": "3055"
         },
         {
-          "argumentValue": "-1.00",
+          "argumentValue": "1.00",
           "name": "Posn 3",
           "actionID": "3055"
         }
@@ -10614,7 +10614,7 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.00",
+          "argumentValue": "-1.00",
           "name": "Posn 1",
           "actionID": "3056"
         },
@@ -10624,7 +10624,7 @@
           "actionID": "3056"
         },
         {
-          "argumentValue": "-1.00",
+          "argumentValue": "1.00",
           "name": "Posn 3",
           "actionID": "3056"
         }
@@ -10646,7 +10646,7 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.00",
+          "argumentValue": "-1.00",
           "name": "Posn 1",
           "actionID": "3057"
         },
@@ -10656,7 +10656,7 @@
           "actionID": "3057"
         },
         {
-          "argumentValue": "-1.00",
+          "argumentValue": "1.00",
           "name": "Posn 3",
           "actionID": "3057"
         }
@@ -10678,7 +10678,7 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.00",
+          "argumentValue": "-1.00",
           "name": "Posn 1",
           "actionID": "3051"
         },
@@ -10688,7 +10688,7 @@
           "actionID": "3051"
         },
         {
-          "argumentValue": "-1.00",
+          "argumentValue": "1.00",
           "name": "Posn 3",
           "actionID": "3051"
         }
@@ -10710,7 +10710,7 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.00",
+          "argumentValue": "-1.00",
           "name": "Posn 1",
           "actionID": "3052"
         },
@@ -10720,7 +10720,7 @@
           "actionID": "3052"
         },
         {
-          "argumentValue": "-1.00",
+          "argumentValue": "1.00",
           "name": "Posn 3",
           "actionID": "3052"
         }
@@ -10742,7 +10742,7 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.00",
+          "argumentValue": "-1.00",
           "name": "Posn 1",
           "actionID": "3053"
         },
@@ -10752,7 +10752,7 @@
           "actionID": "3053"
         },
         {
-          "argumentValue": "-1.00",
+          "argumentValue": "1.00",
           "name": "Posn 3",
           "actionID": "3053"
         }
@@ -17888,7 +17888,7 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.00",
+          "argumentValue": "-1.00",
           "name": "Posn 1",
           "actionID": "3029"
         },
@@ -17898,7 +17898,7 @@
           "actionID": "3029"
         },
         {
-          "argumentValue": "-1.00",
+          "argumentValue": "1.00",
           "name": "Posn 3",
           "actionID": "3029"
         }
@@ -18427,7 +18427,7 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.00",
+          "argumentValue": "-1.00",
           "name": "Posn 1",
           "actionID": "3012"
         },
@@ -18437,7 +18437,7 @@
           "actionID": "3012"
         },
         {
-          "argumentValue": "-1.00",
+          "argumentValue": "1.00",
           "name": "Posn 3",
           "actionID": "3012"
         }
@@ -18459,7 +18459,7 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.00",
+          "argumentValue": "-1.00",
           "name": "Posn 1",
           "actionID": "3013"
         },
@@ -18469,7 +18469,7 @@
           "actionID": "3013"
         },
         {
-          "argumentValue": "-1.00",
+          "argumentValue": "1.00",
           "name": "Posn 3",
           "actionID": "3013"
         }
@@ -18545,7 +18545,7 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.00",
+          "argumentValue": "-1.00",
           "name": "Posn 1",
           "actionID": "3009"
         },
@@ -18555,7 +18555,7 @@
           "actionID": "3009"
         },
         {
-          "argumentValue": "-1.00",
+          "argumentValue": "1.00",
           "name": "Posn 3",
           "actionID": "3009"
         }
@@ -18749,7 +18749,7 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.00",
+          "argumentValue": "-1.00",
           "name": "Posn 1",
           "actionID": "3038"
         },
@@ -18759,7 +18759,7 @@
           "actionID": "3038"
         },
         {
-          "argumentValue": "-1.00",
+          "argumentValue": "1.00",
           "name": "Posn 3",
           "actionID": "3038"
         }
@@ -19106,7 +19106,7 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.00",
+          "argumentValue": "0.00",
           "name": "Posn 1",
           "actionID": "3025"
         },
@@ -19116,7 +19116,7 @@
           "actionID": "3025"
         },
         {
-          "argumentValue": "0.00",
+          "argumentValue": "1.00",
           "name": "Posn 3",
           "actionID": "3025"
         }
@@ -19296,7 +19296,7 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.00",
+          "argumentValue": "0.00",
           "name": "Posn 1",
           "actionID": "3003"
         },
@@ -19306,7 +19306,7 @@
           "actionID": "3003"
         },
         {
-          "argumentValue": "0.00",
+          "argumentValue": "1.00",
           "name": "Posn 3",
           "actionID": "3003"
         }
