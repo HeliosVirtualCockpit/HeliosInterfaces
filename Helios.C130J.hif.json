@@ -1,7 +1,7 @@
 {
   "source": "Helios",
   "version": "1.6.6170.0000",
-  "commit": "7ae4a4a163ead43c024d2761e877a84d72304d49",
+  "commit": "9c5d2339898b06e6ddc21e695a443df1fab3da95",
   "type": "Existing",
   "name": "DCS C-130J Hercules (ASC)",
   "module": "C-130J-30",
@@ -10191,12 +10191,12 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "0.00",
+          "argumentValue": "1.00",
           "name": "Posn 1",
           "actionID": "3065"
         },
         {
-          "argumentValue": "1.00",
+          "argumentValue": "0.00",
           "name": "Posn 2",
           "actionID": "3065"
         }
@@ -10218,12 +10218,12 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "0.00",
+          "argumentValue": "1.00",
           "name": "Posn 1",
           "actionID": "3066"
         },
         {
-          "argumentValue": "1.00",
+          "argumentValue": "0.00",
           "name": "Posn 2",
           "actionID": "3066"
         }
@@ -10245,12 +10245,12 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "0.00",
+          "argumentValue": "1.00",
           "name": "Posn 1",
           "actionID": "3067"
         },
         {
-          "argumentValue": "1.00",
+          "argumentValue": "0.00",
           "name": "Posn 2",
           "actionID": "3067"
         }
@@ -10272,12 +10272,12 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "0.00",
+          "argumentValue": "1.00",
           "name": "Posn 1",
           "actionID": "3068"
         },
         {
-          "argumentValue": "1.00",
+          "argumentValue": "0.00",
           "name": "Posn 2",
           "actionID": "3068"
         }
@@ -10299,12 +10299,12 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "0.00",
+          "argumentValue": "1.00",
           "name": "Posn 1",
           "actionID": "3064"
         },
         {
-          "argumentValue": "1.00",
+          "argumentValue": "0.00",
           "name": "Posn 2",
           "actionID": "3064"
         }
