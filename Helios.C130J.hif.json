@@ -1,7 +1,7 @@
 {
   "source": "Helios",
   "version": "1.6.6170.0000",
-  "commit": "9c5d2339898b06e6ddc21e695a443df1fab3da95",
+  "commit": "cf35168b19d4ffeab4b9e4050c6daf6a5eabfb77",
   "type": "Existing",
   "name": "DCS C-130J Hercules (ASC)",
   "module": "C-130J-30",
@@ -1579,7 +1579,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.2f",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "532"
         }
@@ -1588,12 +1588,12 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "-2.00",
+          "argumentValue": "-2.0",
           "name": "Posn 1",
           "actionID": "3159"
         },
         {
-          "argumentValue": "2.00",
+          "argumentValue": "2.0",
           "name": "Posn 2",
           "actionID": "3159"
         }
@@ -1716,7 +1716,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.2f",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "538"
         }
@@ -1725,22 +1725,22 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "0.00",
+          "argumentValue": "0.0",
           "name": "Posn 1",
           "actionID": "3164"
         },
         {
-          "argumentValue": "0.33",
+          "argumentValue": "0.3",
           "name": "Posn 2",
           "actionID": "3164"
         },
         {
-          "argumentValue": "0.67",
+          "argumentValue": "0.7",
           "name": "Posn 3",
           "actionID": "3164"
         },
         {
-          "argumentValue": "1.00",
+          "argumentValue": "1.0",
           "name": "Posn 4",
           "actionID": "3164"
         }
@@ -1753,7 +1753,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.2f",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "539"
         }
@@ -1762,52 +1762,52 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "0.00",
+          "argumentValue": "0.0",
           "name": "Posn 1",
           "actionID": "3163"
         },
         {
-          "argumentValue": "0.11",
+          "argumentValue": "0.1",
           "name": "Posn 2",
           "actionID": "3163"
         },
         {
-          "argumentValue": "0.22",
+          "argumentValue": "0.2",
           "name": "Posn 3",
           "actionID": "3163"
         },
         {
-          "argumentValue": "0.33",
+          "argumentValue": "0.3",
           "name": "Posn 4",
           "actionID": "3163"
         },
         {
-          "argumentValue": "0.44",
+          "argumentValue": "0.4",
           "name": "Posn 5",
           "actionID": "3163"
         },
         {
-          "argumentValue": "0.56",
+          "argumentValue": "0.6",
           "name": "Posn 6",
           "actionID": "3163"
         },
         {
-          "argumentValue": "0.67",
+          "argumentValue": "0.7",
           "name": "Posn 7",
           "actionID": "3163"
         },
         {
-          "argumentValue": "0.78",
+          "argumentValue": "0.8",
           "name": "Posn 8",
           "actionID": "3163"
         },
         {
-          "argumentValue": "0.89",
+          "argumentValue": "0.9",
           "name": "Posn 9",
           "actionID": "3163"
         },
         {
-          "argumentValue": "1.00",
+          "argumentValue": "1.0",
           "name": "Posn 10",
           "actionID": "3163"
         }
@@ -1820,7 +1820,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.2f",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "540"
         }
@@ -1829,52 +1829,52 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "0.00",
+          "argumentValue": "0.0",
           "name": "Posn 1",
           "actionID": "3162"
         },
         {
-          "argumentValue": "0.11",
+          "argumentValue": "0.1",
           "name": "Posn 2",
           "actionID": "3162"
         },
         {
-          "argumentValue": "0.22",
+          "argumentValue": "0.2",
           "name": "Posn 3",
           "actionID": "3162"
         },
         {
-          "argumentValue": "0.33",
+          "argumentValue": "0.3",
           "name": "Posn 4",
           "actionID": "3162"
         },
         {
-          "argumentValue": "0.44",
+          "argumentValue": "0.4",
           "name": "Posn 5",
           "actionID": "3162"
         },
         {
-          "argumentValue": "0.56",
+          "argumentValue": "0.6",
           "name": "Posn 6",
           "actionID": "3162"
         },
         {
-          "argumentValue": "0.67",
+          "argumentValue": "0.7",
           "name": "Posn 7",
           "actionID": "3162"
         },
         {
-          "argumentValue": "0.78",
+          "argumentValue": "0.8",
           "name": "Posn 8",
           "actionID": "3162"
         },
         {
-          "argumentValue": "0.89",
+          "argumentValue": "0.9",
           "name": "Posn 9",
           "actionID": "3162"
         },
         {
-          "argumentValue": "1.00",
+          "argumentValue": "1.0",
           "name": "Posn 10",
           "actionID": "3162"
         }
@@ -1887,7 +1887,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.2f",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "541"
         }
@@ -1896,52 +1896,52 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "0.00",
+          "argumentValue": "0.0",
           "name": "Posn 1",
           "actionID": "3161"
         },
         {
-          "argumentValue": "0.11",
+          "argumentValue": "0.1",
           "name": "Posn 2",
           "actionID": "3161"
         },
         {
-          "argumentValue": "0.22",
+          "argumentValue": "0.2",
           "name": "Posn 3",
           "actionID": "3161"
         },
         {
-          "argumentValue": "0.33",
+          "argumentValue": "0.3",
           "name": "Posn 4",
           "actionID": "3161"
         },
         {
-          "argumentValue": "0.44",
+          "argumentValue": "0.4",
           "name": "Posn 5",
           "actionID": "3161"
         },
         {
-          "argumentValue": "0.56",
+          "argumentValue": "0.6",
           "name": "Posn 6",
           "actionID": "3161"
         },
         {
-          "argumentValue": "0.67",
+          "argumentValue": "0.7",
           "name": "Posn 7",
           "actionID": "3161"
         },
         {
-          "argumentValue": "0.78",
+          "argumentValue": "0.8",
           "name": "Posn 8",
           "actionID": "3161"
         },
         {
-          "argumentValue": "0.89",
+          "argumentValue": "0.9",
           "name": "Posn 9",
           "actionID": "3161"
         },
         {
-          "argumentValue": "1.00",
+          "argumentValue": "1.0",
           "name": "Posn 10",
           "actionID": "3161"
         }
@@ -1954,7 +1954,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.2f",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "542"
         }
@@ -1963,22 +1963,22 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "0.00",
+          "argumentValue": "0.0",
           "name": "Posn 1",
           "actionID": "3160"
         },
         {
-          "argumentValue": "0.33",
+          "argumentValue": "0.3",
           "name": "Posn 2",
           "actionID": "3160"
         },
         {
-          "argumentValue": "0.67",
+          "argumentValue": "0.7",
           "name": "Posn 3",
           "actionID": "3160"
         },
         {
-          "argumentValue": "1.00",
+          "argumentValue": "1.0",
           "name": "Posn 4",
           "actionID": "3160"
         }
@@ -1991,7 +1991,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.2f",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "543"
         }
@@ -2000,37 +2000,37 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "0.00",
+          "argumentValue": "0.0",
           "name": "Posn 1",
           "actionID": "3165"
         },
         {
-          "argumentValue": "0.17",
+          "argumentValue": "0.2",
           "name": "Posn 2",
           "actionID": "3165"
         },
         {
-          "argumentValue": "0.33",
+          "argumentValue": "0.3",
           "name": "Posn 3",
           "actionID": "3165"
         },
         {
-          "argumentValue": "0.50",
+          "argumentValue": "0.5",
           "name": "Posn 4",
           "actionID": "3165"
         },
         {
-          "argumentValue": "0.67",
+          "argumentValue": "0.7",
           "name": "Posn 5",
           "actionID": "3165"
         },
         {
-          "argumentValue": "0.83",
+          "argumentValue": "0.8",
           "name": "Posn 6",
           "actionID": "3165"
         },
         {
-          "argumentValue": "1.00",
+          "argumentValue": "1.0",
           "name": "Posn 7",
           "actionID": "3165"
         }
@@ -2066,7 +2066,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.2f",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "545"
         }
@@ -2075,37 +2075,37 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "0.00",
+          "argumentValue": "0.0",
           "name": "Posn 1",
           "actionID": "3167"
         },
         {
-          "argumentValue": "0.17",
+          "argumentValue": "0.2",
           "name": "Posn 2",
           "actionID": "3167"
         },
         {
-          "argumentValue": "0.33",
+          "argumentValue": "0.3",
           "name": "Posn 3",
           "actionID": "3167"
         },
         {
-          "argumentValue": "0.50",
+          "argumentValue": "0.5",
           "name": "Posn 4",
           "actionID": "3167"
         },
         {
-          "argumentValue": "0.67",
+          "argumentValue": "0.7",
           "name": "Posn 5",
           "actionID": "3167"
         },
         {
-          "argumentValue": "0.83",
+          "argumentValue": "0.8",
           "name": "Posn 6",
           "actionID": "3167"
         },
         {
-          "argumentValue": "1.00",
+          "argumentValue": "1.0",
           "name": "Posn 7",
           "actionID": "3167"
         }
@@ -8477,7 +8477,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.2f",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "64"
         }
@@ -8486,17 +8486,17 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.00",
+          "argumentValue": "1.0",
           "name": "Posn 1",
           "actionID": "3008"
         },
         {
-          "argumentValue": "0.50",
+          "argumentValue": "0.5",
           "name": "Posn 2",
           "actionID": "3008"
         },
         {
-          "argumentValue": "0.00",
+          "argumentValue": "0.0",
           "name": "Posn 3",
           "actionID": "3008"
         }
@@ -8509,7 +8509,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.2f",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "74"
         }
@@ -8518,27 +8518,27 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "0.00",
+          "argumentValue": "0.0",
           "name": "Posn 1",
           "actionID": "3003"
         },
         {
-          "argumentValue": "0.25",
+          "argumentValue": "0.2",
           "name": "Posn 2",
           "actionID": "3003"
         },
         {
-          "argumentValue": "0.50",
+          "argumentValue": "0.5",
           "name": "Posn 3",
           "actionID": "3003"
         },
         {
-          "argumentValue": "0.75",
+          "argumentValue": "0.8",
           "name": "Posn 4",
           "actionID": "3003"
         },
         {
-          "argumentValue": "1.00",
+          "argumentValue": "1.0",
           "name": "Posn 5",
           "actionID": "3003"
         }
@@ -9637,7 +9637,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.2f",
+          "format": "%0.1f",
           "isExportedEveryFrame": false,
           "id": "323"
         }
@@ -9646,35 +9646,35 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "-0.20",
+          "argumentValue": "-0.2",
           "name": "Park",
           "actionID": "3016",
           "stopActionID": "3032",
-          "stopActionValue": "-1.00"
+          "stopActionValue": "-1.0"
         },
         {
-          "argumentValue": "0.00",
-          "name": "Posn 2",
+          "argumentValue": "0.0",
+          "name": "Stop",
           "actionID": "3016"
         },
         {
-          "argumentValue": "0.20",
-          "name": "Posn 3",
+          "argumentValue": "0.2",
+          "name": "1",
           "actionID": "3016"
         },
         {
-          "argumentValue": "0.40",
-          "name": "Posn 4",
+          "argumentValue": "0.4",
+          "name": "2",
           "actionID": "3016"
         },
         {
-          "argumentValue": "0.60",
-          "name": "Posn 5",
+          "argumentValue": "0.6",
+          "name": "3",
           "actionID": "3016"
         },
         {
-          "argumentValue": "0.80",
-          "name": "Posn 6",
+          "argumentValue": "0.8",
+          "name": "Fast",
           "actionID": "3016"
         }
       ]
@@ -10182,7 +10182,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.2f",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "378"
         }
@@ -10191,12 +10191,12 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.00",
+          "argumentValue": "1.0",
           "name": "Posn 1",
           "actionID": "3065"
         },
         {
-          "argumentValue": "0.00",
+          "argumentValue": "0.0",
           "name": "Posn 2",
           "actionID": "3065"
         }
@@ -10209,7 +10209,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.2f",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "379"
         }
@@ -10218,12 +10218,12 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.00",
+          "argumentValue": "1.0",
           "name": "Posn 1",
           "actionID": "3066"
         },
         {
-          "argumentValue": "0.00",
+          "argumentValue": "0.0",
           "name": "Posn 2",
           "actionID": "3066"
         }
@@ -10236,7 +10236,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.2f",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "380"
         }
@@ -10245,12 +10245,12 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.00",
+          "argumentValue": "1.0",
           "name": "Posn 1",
           "actionID": "3067"
         },
         {
-          "argumentValue": "0.00",
+          "argumentValue": "0.0",
           "name": "Posn 2",
           "actionID": "3067"
         }
@@ -10263,7 +10263,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.2f",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "381"
         }
@@ -10272,12 +10272,12 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.00",
+          "argumentValue": "1.0",
           "name": "Posn 1",
           "actionID": "3068"
         },
         {
-          "argumentValue": "0.00",
+          "argumentValue": "0.0",
           "name": "Posn 2",
           "actionID": "3068"
         }
@@ -10290,7 +10290,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.2f",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "382"
         }
@@ -10299,12 +10299,12 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.00",
+          "argumentValue": "1.0",
           "name": "Posn 1",
           "actionID": "3064"
         },
         {
-          "argumentValue": "0.00",
+          "argumentValue": "0.0",
           "name": "Posn 2",
           "actionID": "3064"
         }
@@ -10349,7 +10349,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.2f",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "384"
         }
@@ -10358,17 +10358,17 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.00",
+          "argumentValue": "1.0",
           "name": "Posn 1",
           "actionID": "3063"
         },
         {
-          "argumentValue": "0.00",
+          "argumentValue": "0.0",
           "name": "Posn 2",
           "actionID": "3063"
         },
         {
-          "argumentValue": "-1.00",
+          "argumentValue": "-1.0",
           "name": "Posn 3",
           "actionID": "3063"
         }
@@ -10381,7 +10381,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.2f",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "385"
         }
@@ -10390,17 +10390,17 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.00",
+          "argumentValue": "1.0",
           "name": "Posn 1",
           "actionID": "3062"
         },
         {
-          "argumentValue": "0.00",
+          "argumentValue": "0.0",
           "name": "Posn 2",
           "actionID": "3062"
         },
         {
-          "argumentValue": "-1.00",
+          "argumentValue": "-1.0",
           "name": "Posn 3",
           "actionID": "3062"
         }
@@ -10413,7 +10413,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.2f",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "386"
         }
@@ -10422,17 +10422,17 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.00",
+          "argumentValue": "1.0",
           "name": "Posn 1",
           "actionID": "3058"
         },
         {
-          "argumentValue": "0.00",
+          "argumentValue": "0.0",
           "name": "Posn 2",
           "actionID": "3058"
         },
         {
-          "argumentValue": "-1.00",
+          "argumentValue": "-1.0",
           "name": "Posn 3",
           "actionID": "3058"
         }
@@ -10445,7 +10445,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.2f",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "387"
         }
@@ -10454,17 +10454,17 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.00",
+          "argumentValue": "1.0",
           "name": "Posn 1",
           "actionID": "3059"
         },
         {
-          "argumentValue": "0.00",
+          "argumentValue": "0.0",
           "name": "Posn 2",
           "actionID": "3059"
         },
         {
-          "argumentValue": "-1.00",
+          "argumentValue": "-1.0",
           "name": "Posn 3",
           "actionID": "3059"
         }
@@ -10477,7 +10477,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.2f",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "388"
         }
@@ -10486,17 +10486,17 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.00",
+          "argumentValue": "1.0",
           "name": "Posn 1",
           "actionID": "3060"
         },
         {
-          "argumentValue": "0.00",
+          "argumentValue": "0.0",
           "name": "Posn 2",
           "actionID": "3060"
         },
         {
-          "argumentValue": "-1.00",
+          "argumentValue": "-1.0",
           "name": "Posn 3",
           "actionID": "3060"
         }
@@ -10509,7 +10509,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.2f",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "389"
         }
@@ -10518,17 +10518,17 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.00",
+          "argumentValue": "1.0",
           "name": "Posn 1",
           "actionID": "3061"
         },
         {
-          "argumentValue": "0.00",
+          "argumentValue": "0.0",
           "name": "Posn 2",
           "actionID": "3061"
         },
         {
-          "argumentValue": "-1.00",
+          "argumentValue": "-1.0",
           "name": "Posn 3",
           "actionID": "3061"
         }
@@ -10541,7 +10541,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.2f",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "390"
         }
@@ -10550,17 +10550,17 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.00",
+          "argumentValue": "1.0",
           "name": "Posn 1",
           "actionID": "3054"
         },
         {
-          "argumentValue": "0.00",
+          "argumentValue": "0.0",
           "name": "Posn 2",
           "actionID": "3054"
         },
         {
-          "argumentValue": "-1.00",
+          "argumentValue": "-1.0",
           "name": "Posn 3",
           "actionID": "3054"
         }
@@ -10573,7 +10573,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.2f",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "391"
         }
@@ -10582,17 +10582,17 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.00",
+          "argumentValue": "1.0",
           "name": "Posn 1",
           "actionID": "3055"
         },
         {
-          "argumentValue": "0.00",
+          "argumentValue": "0.0",
           "name": "Posn 2",
           "actionID": "3055"
         },
         {
-          "argumentValue": "-1.00",
+          "argumentValue": "-1.0",
           "name": "Posn 3",
           "actionID": "3055"
         }
@@ -10605,7 +10605,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.2f",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "392"
         }
@@ -10614,17 +10614,17 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.00",
+          "argumentValue": "1.0",
           "name": "Posn 1",
           "actionID": "3056"
         },
         {
-          "argumentValue": "0.00",
+          "argumentValue": "0.0",
           "name": "Posn 2",
           "actionID": "3056"
         },
         {
-          "argumentValue": "-1.00",
+          "argumentValue": "-1.0",
           "name": "Posn 3",
           "actionID": "3056"
         }
@@ -10637,7 +10637,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.2f",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "393"
         }
@@ -10646,17 +10646,17 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.00",
+          "argumentValue": "1.0",
           "name": "Posn 1",
           "actionID": "3057"
         },
         {
-          "argumentValue": "0.00",
+          "argumentValue": "0.0",
           "name": "Posn 2",
           "actionID": "3057"
         },
         {
-          "argumentValue": "-1.00",
+          "argumentValue": "-1.0",
           "name": "Posn 3",
           "actionID": "3057"
         }
@@ -10669,7 +10669,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.2f",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "394"
         }
@@ -10678,17 +10678,17 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.00",
+          "argumentValue": "1.0",
           "name": "Posn 1",
           "actionID": "3051"
         },
         {
-          "argumentValue": "0.00",
+          "argumentValue": "0.0",
           "name": "Posn 2",
           "actionID": "3051"
         },
         {
-          "argumentValue": "-1.00",
+          "argumentValue": "-1.0",
           "name": "Posn 3",
           "actionID": "3051"
         }
@@ -10701,7 +10701,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.2f",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "395"
         }
@@ -10710,17 +10710,17 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.00",
+          "argumentValue": "1.0",
           "name": "Posn 1",
           "actionID": "3052"
         },
         {
-          "argumentValue": "0.00",
+          "argumentValue": "0.0",
           "name": "Posn 2",
           "actionID": "3052"
         },
         {
-          "argumentValue": "-1.00",
+          "argumentValue": "-1.0",
           "name": "Posn 3",
           "actionID": "3052"
         }
@@ -10733,7 +10733,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.2f",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "396"
         }
@@ -10742,17 +10742,17 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.00",
+          "argumentValue": "1.0",
           "name": "Posn 1",
           "actionID": "3053"
         },
         {
-          "argumentValue": "0.00",
+          "argumentValue": "0.0",
           "name": "Posn 2",
           "actionID": "3053"
         },
         {
-          "argumentValue": "-1.00",
+          "argumentValue": "-1.0",
           "name": "Posn 3",
           "actionID": "3053"
         }
@@ -11115,7 +11115,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.2f",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "467"
         }
@@ -11124,17 +11124,17 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "-1.00",
+          "argumentValue": "-1.0",
           "name": "Posn 1",
           "actionID": "3006"
         },
         {
-          "argumentValue": "0.00",
+          "argumentValue": "0.0",
           "name": "Posn 2",
           "actionID": "3006"
         },
         {
-          "argumentValue": "1.00",
+          "argumentValue": "1.0",
           "name": "Posn 3",
           "actionID": "3006"
         }
@@ -11158,26 +11158,26 @@
         {
           "argumentValue": "0.00",
           "name": "Fixed",
-          "actionID": "3032"
+          "actionID": "3032",
+          "entryActionValue": "1.00"
         },
         {
           "argumentValue": "0.33",
           "name": "Auto",
-          "actionID": "3082"
+          "actionID": "3082",
+          "entryActionValue": "1.00"
         },
         {
           "argumentValue": "0.70",
           "name": "Open",
           "actionID": "3074",
-          "stopActionID": "3074",
-          "stopActionValue": "0.50"
+          "entryActionValue": "1.00"
         },
         {
           "argumentValue": "1.00",
           "name": "Close",
           "actionID": "3078",
-          "stopActionID": "3078",
-          "stopActionValue": "0.50"
+          "entryActionValue": "1.00"
         }
       ]
     },
@@ -11199,26 +11199,26 @@
         {
           "argumentValue": "0.00",
           "name": "Fixed",
-          "actionID": "3033"
+          "actionID": "3033",
+          "entryActionValue": "1.00"
         },
         {
           "argumentValue": "0.33",
           "name": "Auto",
-          "actionID": "3083"
+          "actionID": "3083",
+          "entryActionValue": "1.00"
         },
         {
           "argumentValue": "0.70",
           "name": "Open",
           "actionID": "3075",
-          "stopActionID": "3075",
-          "stopActionValue": "0.50"
+          "entryActionValue": "1.00"
         },
         {
           "argumentValue": "1.00",
           "name": "Close",
           "actionID": "3079",
-          "stopActionID": "3079",
-          "stopActionValue": "0.50"
+          "entryActionValue": "1.00"
         }
       ]
     },
@@ -11240,26 +11240,26 @@
         {
           "argumentValue": "0.00",
           "name": "Fixed",
-          "actionID": "3034"
+          "actionID": "3034",
+          "entryActionValue": "1.00"
         },
         {
           "argumentValue": "0.33",
           "name": "Auto",
-          "actionID": "3084"
+          "actionID": "3084",
+          "entryActionValue": "1.00"
         },
         {
           "argumentValue": "0.70",
           "name": "Open",
           "actionID": "3076",
-          "stopActionID": "3076",
-          "stopActionValue": "0.50"
+          "entryActionValue": "1.00"
         },
         {
           "argumentValue": "1.00",
           "name": "Close",
           "actionID": "3080",
-          "stopActionID": "3080",
-          "stopActionValue": "0.50"
+          "entryActionValue": "1.00"
         }
       ]
     },
@@ -11281,26 +11281,26 @@
         {
           "argumentValue": "0.00",
           "name": "Fixed",
-          "actionID": "3035"
+          "actionID": "3035",
+          "entryActionValue": "1.00"
         },
         {
           "argumentValue": "0.33",
           "name": "Auto",
-          "actionID": "3085"
+          "actionID": "3085",
+          "entryActionValue": "1.00"
         },
         {
           "argumentValue": "0.70",
           "name": "Open",
           "actionID": "3077",
-          "stopActionID": "3077",
-          "stopActionValue": "0.50"
+          "entryActionValue": "1.00"
         },
         {
           "argumentValue": "1.00",
           "name": "Close",
           "actionID": "3081",
-          "stopActionID": "3081",
-          "stopActionValue": "0.50"
+          "entryActionValue": "1.00"
         }
       ]
     },
@@ -11384,7 +11384,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.2f",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "191"
         }
@@ -11393,12 +11393,12 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.00",
+          "argumentValue": "1.0",
           "name": "Posn 1",
           "actionID": "3032"
         },
         {
-          "argumentValue": "-1.00",
+          "argumentValue": "-1.0",
           "name": "Posn 2",
           "actionID": "3032"
         }
@@ -11411,7 +11411,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.2f",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "192"
         }
@@ -11420,12 +11420,12 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.00",
+          "argumentValue": "1.0",
           "name": "Posn 1",
           "actionID": "3034"
         },
         {
-          "argumentValue": "-1.00",
+          "argumentValue": "-1.0",
           "name": "Posn 2",
           "actionID": "3034"
         }
@@ -11911,7 +11911,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.2f",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "468"
         }
@@ -11920,27 +11920,27 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "-0.50",
+          "argumentValue": "-0.5",
           "name": "Posn 1",
           "actionID": "3012"
         },
         {
-          "argumentValue": "-0.25",
+          "argumentValue": "-0.2",
           "name": "Posn 2",
           "actionID": "3012"
         },
         {
-          "argumentValue": "0.00",
+          "argumentValue": "0.0",
           "name": "Posn 3",
           "actionID": "3012"
         },
         {
-          "argumentValue": "0.25",
+          "argumentValue": "0.2",
           "name": "Posn 4",
           "actionID": "3012"
         },
         {
-          "argumentValue": "0.50",
+          "argumentValue": "0.5",
           "name": "Posn 5",
           "actionID": "3012"
         }
@@ -11953,7 +11953,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.2f",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "469"
         }
@@ -11962,17 +11962,17 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "-1.00",
+          "argumentValue": "-1.0",
           "name": "Posn 1",
           "actionID": "3009"
         },
         {
-          "argumentValue": "0.00",
+          "argumentValue": "0.0",
           "name": "Posn 2",
           "actionID": "3009"
         },
         {
-          "argumentValue": "1.00",
+          "argumentValue": "1.0",
           "name": "Posn 3",
           "actionID": "3009"
         }
@@ -12017,7 +12017,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.2f",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "508"
         }
@@ -12026,12 +12026,12 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.00",
+          "argumentValue": "1.0",
           "name": "Posn 1",
           "actionID": "3029"
         },
         {
-          "argumentValue": "-1.00",
+          "argumentValue": "-1.0",
           "name": "Posn 2",
           "actionID": "3029"
         }
@@ -12044,7 +12044,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.2f",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "509"
         }
@@ -12053,12 +12053,12 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.00",
+          "argumentValue": "1.0",
           "name": "Posn 1",
           "actionID": "3031"
         },
         {
-          "argumentValue": "-1.00",
+          "argumentValue": "-1.0",
           "name": "Posn 2",
           "actionID": "3031"
         }
@@ -12136,12 +12136,12 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.0",
+          "argumentValue": "0.0",
           "name": "Out",
           "actionID": "3022"
         },
         {
-          "argumentValue": "0.0",
+          "argumentValue": "1.0",
           "name": "In",
           "actionID": "3022"
         }
@@ -12160,8 +12160,8 @@
         }
       ],
       "loop": false,
-      "argumentValue": -0.5,
-      "argumentMin": 0.5,
+      "argumentValue": 0.5,
+      "argumentMin": -0.5,
       "argumentMax": 0.5,
       "actions": {
         "set": {
@@ -12186,12 +12186,12 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.0",
+          "argumentValue": "0.0",
           "name": "Out",
           "actionID": "3023"
         },
         {
-          "argumentValue": "0.0",
+          "argumentValue": "1.0",
           "name": "In",
           "actionID": "3023"
         }
@@ -12210,8 +12210,8 @@
         }
       ],
       "loop": false,
-      "argumentValue": -0.5,
-      "argumentMin": 0.5,
+      "argumentValue": 0.5,
+      "argumentMin": -0.5,
       "argumentMax": 0.5,
       "actions": {
         "set": {
@@ -12236,12 +12236,12 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.0",
+          "argumentValue": "0.0",
           "name": "Out",
           "actionID": "3024"
         },
         {
-          "argumentValue": "0.0",
+          "argumentValue": "1.0",
           "name": "In",
           "actionID": "3024"
         }
@@ -12260,8 +12260,8 @@
         }
       ],
       "loop": false,
-      "argumentValue": -0.5,
-      "argumentMin": 0.5,
+      "argumentValue": 0.5,
+      "argumentMin": -0.5,
       "argumentMax": 0.5,
       "actions": {
         "set": {
@@ -12286,12 +12286,12 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.0",
+          "argumentValue": "0.0",
           "name": "Out",
           "actionID": "3025"
         },
         {
-          "argumentValue": "0.0",
+          "argumentValue": "1.0",
           "name": "In",
           "actionID": "3025"
         }
@@ -12310,8 +12310,8 @@
         }
       ],
       "loop": false,
-      "argumentValue": -0.5,
-      "argumentMin": 0.5,
+      "argumentValue": 0.5,
+      "argumentMin": -0.5,
       "argumentMax": 0.5,
       "actions": {
         "set": {
@@ -12336,12 +12336,12 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.0",
+          "argumentValue": "0.0",
           "name": "Out",
           "actionID": "3026"
         },
         {
-          "argumentValue": "0.0",
+          "argumentValue": "1.0",
           "name": "In",
           "actionID": "3026"
         }
@@ -12360,8 +12360,8 @@
         }
       ],
       "loop": false,
-      "argumentValue": -0.5,
-      "argumentMin": 0.5,
+      "argumentValue": 0.5,
+      "argumentMin": -0.5,
       "argumentMax": 0.5,
       "actions": {
         "set": {
@@ -12795,7 +12795,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.2f",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "356"
         }
@@ -12804,17 +12804,17 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.00",
+          "argumentValue": "1.0",
           "name": "Posn 1",
           "actionID": "3007"
         },
         {
-          "argumentValue": "0.00",
+          "argumentValue": "0.0",
           "name": "Posn 2",
           "actionID": "3007"
         },
         {
-          "argumentValue": "-1.00",
+          "argumentValue": "-1.0",
           "name": "Posn 3",
           "actionID": "3007"
         }
@@ -12827,7 +12827,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.2f",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "357"
         }
@@ -12836,17 +12836,17 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.00",
+          "argumentValue": "1.0",
           "name": "Posn 1",
           "actionID": "3001"
         },
         {
-          "argumentValue": "0.00",
+          "argumentValue": "0.0",
           "name": "Posn 2",
           "actionID": "3001"
         },
         {
-          "argumentValue": "-1.00",
+          "argumentValue": "-1.0",
           "name": "Posn 3",
           "actionID": "3001"
         }
@@ -12859,7 +12859,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.2f",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "358"
         }
@@ -12868,17 +12868,17 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.00",
+          "argumentValue": "1.0",
           "name": "Posn 1",
           "actionID": "3002"
         },
         {
-          "argumentValue": "0.00",
+          "argumentValue": "0.0",
           "name": "Posn 2",
           "actionID": "3002"
         },
         {
-          "argumentValue": "-1.00",
+          "argumentValue": "-1.0",
           "name": "Posn 3",
           "actionID": "3002"
         }
@@ -12891,7 +12891,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.2f",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "359"
         }
@@ -12900,17 +12900,17 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.00",
+          "argumentValue": "1.0",
           "name": "Posn 1",
           "actionID": "3005"
         },
         {
-          "argumentValue": "0.00",
+          "argumentValue": "0.0",
           "name": "Posn 2",
           "actionID": "3005"
         },
         {
-          "argumentValue": "-1.00",
+          "argumentValue": "-1.0",
           "name": "Posn 3",
           "actionID": "3005"
         }
@@ -12950,7 +12950,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.2f",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "361"
         }
@@ -12959,17 +12959,17 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.00",
+          "argumentValue": "1.0",
           "name": "Posn 1",
           "actionID": "3006"
         },
         {
-          "argumentValue": "0.00",
+          "argumentValue": "0.0",
           "name": "Posn 2",
           "actionID": "3006"
         },
         {
-          "argumentValue": "-1.00",
+          "argumentValue": "-1.0",
           "name": "Posn 3",
           "actionID": "3006"
         }
@@ -13014,7 +13014,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.2f",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "363"
         }
@@ -13023,17 +13023,17 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.00",
+          "argumentValue": "1.0",
           "name": "Posn 1",
           "actionID": "3003"
         },
         {
-          "argumentValue": "0.00",
+          "argumentValue": "0.0",
           "name": "Posn 2",
           "actionID": "3003"
         },
         {
-          "argumentValue": "-1.00",
+          "argumentValue": "-1.0",
           "name": "Posn 3",
           "actionID": "3003"
         }
@@ -13046,7 +13046,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.2f",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "364"
         }
@@ -13055,17 +13055,17 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.00",
+          "argumentValue": "1.0",
           "name": "Posn 1",
           "actionID": "3004"
         },
         {
-          "argumentValue": "0.00",
+          "argumentValue": "0.0",
           "name": "Posn 2",
           "actionID": "3004"
         },
         {
-          "argumentValue": "-1.00",
+          "argumentValue": "-1.0",
           "name": "Posn 3",
           "actionID": "3004"
         }
@@ -13078,7 +13078,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.2f",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "365"
         }
@@ -13087,17 +13087,17 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.00",
+          "argumentValue": "1.0",
           "name": "Posn 1",
           "actionID": "3008"
         },
         {
-          "argumentValue": "0.00",
+          "argumentValue": "0.0",
           "name": "Posn 2",
           "actionID": "3008"
         },
         {
-          "argumentValue": "-1.00",
+          "argumentValue": "-1.0",
           "name": "Posn 3",
           "actionID": "3008"
         }
@@ -13218,7 +13218,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.2f",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "370"
         }
@@ -13227,47 +13227,47 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.00",
+          "argumentValue": "1.0",
           "name": "Posn 1",
           "actionID": "3015"
         },
         {
-          "argumentValue": "0.88",
+          "argumentValue": "0.9",
           "name": "Posn 2",
           "actionID": "3015"
         },
         {
-          "argumentValue": "0.75",
+          "argumentValue": "0.8",
           "name": "Posn 3",
           "actionID": "3015"
         },
         {
-          "argumentValue": "0.62",
+          "argumentValue": "0.6",
           "name": "Posn 4",
           "actionID": "3015"
         },
         {
-          "argumentValue": "0.50",
+          "argumentValue": "0.5",
           "name": "Posn 5",
           "actionID": "3015"
         },
         {
-          "argumentValue": "0.38",
+          "argumentValue": "0.4",
           "name": "Posn 6",
           "actionID": "3015"
         },
         {
-          "argumentValue": "0.25",
+          "argumentValue": "0.2",
           "name": "Posn 7",
           "actionID": "3015"
         },
         {
-          "argumentValue": "0.12",
+          "argumentValue": "0.1",
           "name": "Posn 8",
           "actionID": "3015"
         },
         {
-          "argumentValue": "0.00",
+          "argumentValue": "0.0",
           "name": "Posn 9",
           "actionID": "3015"
         }
@@ -15520,7 +15520,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.2f",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "297"
         }
@@ -15529,22 +15529,22 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "0.00",
+          "argumentValue": "0.0",
           "name": "Posn 1",
           "actionID": "3143"
         },
         {
-          "argumentValue": "0.33",
+          "argumentValue": "0.3",
           "name": "Posn 2",
           "actionID": "3143"
         },
         {
-          "argumentValue": "0.67",
+          "argumentValue": "0.7",
           "name": "Posn 3",
           "actionID": "3143"
         },
         {
-          "argumentValue": "1.00",
+          "argumentValue": "1.0",
           "name": "Posn 4",
           "actionID": "3143"
         }
@@ -15557,7 +15557,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.2f",
+          "format": "%.2f",
           "isExportedEveryFrame": false,
           "id": "298"
         }
@@ -16235,7 +16235,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.2f",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "295"
         }
@@ -16244,22 +16244,22 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "0.00",
+          "argumentValue": "0.0",
           "name": "Posn 1",
           "actionID": "3055"
         },
         {
-          "argumentValue": "0.33",
+          "argumentValue": "0.3",
           "name": "Posn 2",
           "actionID": "3055"
         },
         {
-          "argumentValue": "0.67",
+          "argumentValue": "0.7",
           "name": "Posn 3",
           "actionID": "3055"
         },
         {
-          "argumentValue": "1.00",
+          "argumentValue": "1.0",
           "name": "Posn 4",
           "actionID": "3055"
         }
@@ -16272,7 +16272,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.2f",
+          "format": "%.2f",
           "isExportedEveryFrame": false,
           "id": "296"
         }
@@ -16950,7 +16950,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.2f",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "293"
         }
@@ -16959,22 +16959,22 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "0.00",
+          "argumentValue": "0.0",
           "name": "Posn 1",
           "actionID": "3027"
         },
         {
-          "argumentValue": "0.33",
+          "argumentValue": "0.3",
           "name": "Posn 2",
           "actionID": "3027"
         },
         {
-          "argumentValue": "0.67",
+          "argumentValue": "0.7",
           "name": "Posn 3",
           "actionID": "3027"
         },
         {
-          "argumentValue": "1.00",
+          "argumentValue": "1.0",
           "name": "Posn 4",
           "actionID": "3027"
         }
@@ -16987,7 +16987,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.2f",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "294"
         }
@@ -16996,52 +16996,52 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "-0.22",
+          "argumentValue": "-0.2",
           "name": "Posn 1",
           "actionID": "3028"
         },
         {
-          "argumentValue": "-0.11",
+          "argumentValue": "-0.1",
           "name": "Posn 2",
           "actionID": "3028"
         },
         {
-          "argumentValue": "0.00",
+          "argumentValue": "0.0",
           "name": "Posn 3",
           "actionID": "3028"
         },
         {
-          "argumentValue": "0.11",
+          "argumentValue": "0.1",
           "name": "Posn 4",
           "actionID": "3028"
         },
         {
-          "argumentValue": "0.22",
+          "argumentValue": "0.2",
           "name": "Posn 5",
           "actionID": "3028"
         },
         {
-          "argumentValue": "0.33",
+          "argumentValue": "0.3",
           "name": "Posn 6",
           "actionID": "3028"
         },
         {
-          "argumentValue": "0.44",
+          "argumentValue": "0.4",
           "name": "Posn 7",
           "actionID": "3028"
         },
         {
-          "argumentValue": "0.56",
+          "argumentValue": "0.6",
           "name": "Posn 8",
           "actionID": "3028"
         },
         {
-          "argumentValue": "0.67",
+          "argumentValue": "0.7",
           "name": "Posn 9",
           "actionID": "3028"
         },
         {
-          "argumentValue": "0.78",
+          "argumentValue": "0.8",
           "name": "Posn 10",
           "actionID": "3028"
         }
@@ -17879,7 +17879,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.2f",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "1337"
         }
@@ -17888,17 +17888,17 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.00",
+          "argumentValue": "1.0",
           "name": "Posn 1",
           "actionID": "3029"
         },
         {
-          "argumentValue": "0.00",
+          "argumentValue": "0.0",
           "name": "Posn 2",
           "actionID": "3029"
         },
         {
-          "argumentValue": "-1.00",
+          "argumentValue": "-1.0",
           "name": "Posn 3",
           "actionID": "3029"
         }
@@ -18219,7 +18219,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.2f",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "30"
         }
@@ -18228,17 +18228,17 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.00",
+          "argumentValue": "1.0",
           "name": "Posn 1",
           "actionID": "3004"
         },
         {
-          "argumentValue": "0.00",
+          "argumentValue": "0.0",
           "name": "Posn 2",
           "actionID": "3004"
         },
         {
-          "argumentValue": "-1.00",
+          "argumentValue": "-1.0",
           "name": "Posn 3",
           "actionID": "3004"
         }
@@ -18251,7 +18251,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.2f",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "31"
         }
@@ -18260,17 +18260,17 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.00",
+          "argumentValue": "1.0",
           "name": "Posn 1",
           "actionID": "3003"
         },
         {
-          "argumentValue": "0.00",
+          "argumentValue": "0.0",
           "name": "Posn 2",
           "actionID": "3003"
         },
         {
-          "argumentValue": "-1.00",
+          "argumentValue": "-1.0",
           "name": "Posn 3",
           "actionID": "3003"
         }
@@ -18418,7 +18418,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.2f",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "418"
         }
@@ -18427,17 +18427,17 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.00",
+          "argumentValue": "1.0",
           "name": "Posn 1",
           "actionID": "3012"
         },
         {
-          "argumentValue": "0.00",
+          "argumentValue": "0.0",
           "name": "Posn 2",
           "actionID": "3012"
         },
         {
-          "argumentValue": "-1.00",
+          "argumentValue": "-1.0",
           "name": "Posn 3",
           "actionID": "3012"
         }
@@ -18450,7 +18450,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.2f",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "419"
         }
@@ -18459,17 +18459,17 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.00",
+          "argumentValue": "1.0",
           "name": "Posn 1",
           "actionID": "3013"
         },
         {
-          "argumentValue": "0.00",
+          "argumentValue": "0.0",
           "name": "Posn 2",
           "actionID": "3013"
         },
         {
-          "argumentValue": "-1.00",
+          "argumentValue": "-1.0",
           "name": "Posn 3",
           "actionID": "3013"
         }
@@ -18536,7 +18536,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.2f",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "422"
         }
@@ -18545,17 +18545,17 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.00",
+          "argumentValue": "1.0",
           "name": "Posn 1",
           "actionID": "3009"
         },
         {
-          "argumentValue": "0.00",
+          "argumentValue": "0.0",
           "name": "Posn 2",
           "actionID": "3009"
         },
         {
-          "argumentValue": "-1.00",
+          "argumentValue": "-1.0",
           "name": "Posn 3",
           "actionID": "3009"
         }
@@ -18740,7 +18740,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.2f",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "1334"
         }
@@ -18749,17 +18749,17 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.00",
+          "argumentValue": "1.0",
           "name": "Posn 1",
           "actionID": "3038"
         },
         {
-          "argumentValue": "0.00",
+          "argumentValue": "0.0",
           "name": "Posn 2",
           "actionID": "3038"
         },
         {
-          "argumentValue": "-1.00",
+          "argumentValue": "-1.0",
           "name": "Posn 3",
           "actionID": "3038"
         }
@@ -19097,7 +19097,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.2f",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "474"
         }
@@ -19106,17 +19106,17 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.00",
+          "argumentValue": "1.0",
           "name": "Posn 1",
           "actionID": "3025"
         },
         {
-          "argumentValue": "0.50",
+          "argumentValue": "0.5",
           "name": "Posn 2",
           "actionID": "3025"
         },
         {
-          "argumentValue": "0.00",
+          "argumentValue": "0.0",
           "name": "Posn 3",
           "actionID": "3025"
         }
@@ -19287,7 +19287,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.2f",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "65"
         }
@@ -19296,17 +19296,17 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.00",
+          "argumentValue": "1.0",
           "name": "Posn 1",
           "actionID": "3003"
         },
         {
-          "argumentValue": "0.50",
+          "argumentValue": "0.5",
           "name": "Posn 2",
           "actionID": "3003"
         },
         {
-          "argumentValue": "0.00",
+          "argumentValue": "0.0",
           "name": "Posn 3",
           "actionID": "3003"
         }
@@ -19491,7 +19491,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.2f",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "72"
         }
@@ -19500,37 +19500,37 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "-0.16",
+          "argumentValue": "-0.2",
           "name": "Posn 1",
           "actionID": "3030"
         },
         {
-          "argumentValue": "0.00",
+          "argumentValue": "0.0",
           "name": "Posn 2",
           "actionID": "3030"
         },
         {
-          "argumentValue": "0.17",
+          "argumentValue": "0.2",
           "name": "Posn 3",
           "actionID": "3030"
         },
         {
-          "argumentValue": "0.34",
+          "argumentValue": "0.3",
           "name": "Posn 4",
           "actionID": "3030"
         },
         {
-          "argumentValue": "0.50",
+          "argumentValue": "0.5",
           "name": "Posn 5",
           "actionID": "3030"
         },
         {
-          "argumentValue": "0.67",
+          "argumentValue": "0.7",
           "name": "Posn 6",
           "actionID": "3030"
         },
         {
-          "argumentValue": "0.84",
+          "argumentValue": "0.8",
           "name": "Posn 7",
           "actionID": "3030"
         }
@@ -21533,7 +21533,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.2f",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "485"
         }
@@ -21542,17 +21542,17 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "0.00",
+          "argumentValue": "0.0",
           "name": "Posn 1",
           "actionID": "3001"
         },
         {
-          "argumentValue": "0.50",
+          "argumentValue": "0.5",
           "name": "Posn 2",
           "actionID": "3001"
         },
         {
-          "argumentValue": "1.00",
+          "argumentValue": "1.0",
           "name": "Posn 3",
           "actionID": "3001"
         }
@@ -21565,7 +21565,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.2f",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "486"
         }
@@ -21574,22 +21574,22 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "0.00",
+          "argumentValue": "0.0",
           "name": "Posn 1",
           "actionID": "3002"
         },
         {
-          "argumentValue": "0.33",
+          "argumentValue": "0.3",
           "name": "Posn 2",
           "actionID": "3002"
         },
         {
-          "argumentValue": "0.67",
+          "argumentValue": "0.7",
           "name": "Posn 3",
           "actionID": "3002"
         },
         {
-          "argumentValue": "1.00",
+          "argumentValue": "1.0",
           "name": "Posn 4",
           "actionID": "3002"
         }
@@ -21671,7 +21671,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.2f",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "111"
         }
@@ -21680,32 +21680,32 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "-1.00",
+          "argumentValue": "-1.0",
           "name": "Posn 1",
           "actionID": "3001"
         },
         {
-          "argumentValue": "-0.60",
+          "argumentValue": "-0.6",
           "name": "Posn 2",
           "actionID": "3001"
         },
         {
-          "argumentValue": "-0.20",
+          "argumentValue": "-0.2",
           "name": "Posn 3",
           "actionID": "3001"
         },
         {
-          "argumentValue": "0.20",
+          "argumentValue": "0.2",
           "name": "Posn 4",
           "actionID": "3001"
         },
         {
-          "argumentValue": "0.60",
+          "argumentValue": "0.6",
           "name": "Posn 5",
           "actionID": "3001"
         },
         {
-          "argumentValue": "1.00",
+          "argumentValue": "1.0",
           "name": "Posn 6",
           "actionID": "3001"
         }
@@ -21909,7 +21909,7 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.2f",
+          "format": "%.1f",
           "isExportedEveryFrame": false,
           "id": "110"
         }
@@ -21918,27 +21918,27 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "-0.80",
+          "argumentValue": "-0.8",
           "name": "Posn 1",
           "actionID": "3001"
         },
         {
-          "argumentValue": "-0.40",
+          "argumentValue": "-0.4",
           "name": "Posn 2",
           "actionID": "3001"
         },
         {
-          "argumentValue": "0.00",
+          "argumentValue": "0.0",
           "name": "Posn 3",
           "actionID": "3001"
         },
         {
-          "argumentValue": "0.40",
+          "argumentValue": "0.4",
           "name": "Posn 4",
           "actionID": "3001"
         },
         {
-          "argumentValue": "0.80",
+          "argumentValue": "0.8",
           "name": "Posn 5",
           "actionID": "3001"
         }
