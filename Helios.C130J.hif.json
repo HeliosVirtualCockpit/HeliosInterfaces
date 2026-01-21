@@ -1,7 +1,7 @@
 {
   "source": "Helios",
   "version": "1.6.6170.0000",
-  "commit": "cf35168b19d4ffeab4b9e4050c6daf6a5eabfb77",
+  "commit": "65303da78adc3261ae64dae4a8cae4ae292a6596",
   "type": "Existing",
   "name": "DCS C-130J Hercules (ASC)",
   "module": "C-130J-30",
@@ -17103,16 +17103,18 @@
       "unit": "Degrees"
     },
     {
-      "heliosType": "DCS.Common.FlagValue",
+      "heliosType": "DCS.Common.NetworkValue",
       "device": "Instruments",
       "name": "ADI Off Flag",
-      "description": "Bool to indicate flag is visible",
+      "description": "0.0 to 1.0",
       "exports": [
         {
-          "format": "%1d",
+          "format": "%.1f",
           "id": "121"
         }
-      ]
+      ],
+      "valueDescription": "Number: 1 is the flag off",
+      "unit": "Numeric"
     },
     {
       "heliosType": "DCS.Common.ScaledNetworkValue",
