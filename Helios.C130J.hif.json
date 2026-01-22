@@ -1,7 +1,7 @@
 {
   "source": "Helios",
   "version": "1.6.6170.0000",
-  "commit": "65303da78adc3261ae64dae4a8cae4ae292a6596",
+  "commit": "a7330235053268a7553cb3964c50834778fbfb9e",
   "type": "Existing",
   "name": "DCS C-130J Hercules (ASC)",
   "module": "C-130J-30",
@@ -17197,6 +17197,33 @@
       "valueDescription": "Value between 0 and 360",
       "unit": "Degrees",
       "exposeunscaledvalue": true
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Instruments",
+      "name": "Slip Ball",
+      "description": "-1 to 1",
+      "exports": [
+        {
+          "format": "%.2f",
+          "id": "130"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": 0.0,
+            "mappedValue": -1.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 1.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "Value between -1 and 1",
+      "unit": "Numeric"
     },
     {
       "heliosType": "DCS.Common.ScaledNetworkValue",
