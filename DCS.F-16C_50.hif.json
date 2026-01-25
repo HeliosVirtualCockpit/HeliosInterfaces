@@ -4327,7 +4327,7 @@
       "heliosType": "DCS.Common.NetworkValue",
       "device": "Fuel System",
       "name": "Fuel Flow Rate",
-      "description": "Total Fuel Amount (Pounds)",
+      "description": "Fuel Flow Rate (Pounds per Hour)",
       "exports": [
         {
           "format": null,

@@ -1,39 +1,11 @@
 -- Helios functions for F-16C_50
--- version: "1.6.6160.000A",
--- commit: "f400a6ffa91de0b172e05bbc243368371e47eab7"
+-- version: "1.6.6170.1000",
+-- commit: "f771ff19c726dca0343b9865edeec7200755ee15"
 function driver.processHighImportance(mainPanelDevice)
     -- called at configured update rate
 
     -- Send ADI Ball Values	
 	helios.send(2050, string.format("%0.4f;0.0;%0.4f", mainPanelDevice:get_argument_value(17), mainPanelDevice:get_argument_value(18)))
---[[
-
-    -- example for combining/processing arguments:
-    helios.send(2001, string.format(
-            "%0.4f;%0.4f;%0.4f",
-            mainPanelDevice:get_argument_value(220),
-            mainPanelDevice:get_argument_value(219),
-            mainPanelDevice:get_argument_value(218)
-        )
-    )
-
-    -- example for structured indications data:
-    local li = helios.parseIndication(1)
-    if li then
-        helios.send(2002, string.format("%s", helios.ensureString(li.someNamedField1)))
-        helios.send(2003, string.format("%s", helios.ensureString(li.someNamedField2)))
-    end
-]]
-end
-
-function driver.processLowImportance(mainPanelDevice) --luacheck: no unused args
-    -- same things as processHighImportance can be done here, called a few times per second at most
-	
-	-- 184 and 185 are required for multiple interface items, so they are sent under alias id's
-	helios.send(2184, string.format("%1d", mainPanelDevice:get_argument_value(184)))
-    helios.send(2185, string.format("%1d", mainPanelDevice:get_argument_value(185)))
-	helios.send(3184, string.format("%1d", mainPanelDevice:get_argument_value(184)))
-    helios.send(3185, string.format("%1d", mainPanelDevice:get_argument_value(185)))
 
     -- Fuel Total
         helios.send(
@@ -48,7 +20,17 @@ function driver.processLowImportance(mainPanelDevice) --luacheck: no unused args
         2181,
         string.format(
             "%d",
-            (math.floor(mainPanelDevice:get_argument_value(88)*10)*1000)+ (math.floor(mainPanelDevice:get_argument_value(89) * 10) * 100) + (math.floor(mainPanelDevice:get_argument_value(89) * 1000))
+			math.floor(mainPanelDevice:get_argument_value(88)*10)*10000 + math.floor(mainPanelDevice:get_argument_value(89)*10)*1000 + math.floor(mainPanelDevice:get_argument_value(90)*100)*10
         )
-    )
+	)
+
+end
+
+function driver.processLowImportance(mainPanelDevice)
+
+	helios.send(2184, string.format("%1d", mainPanelDevice:get_argument_value(184)))
+    helios.send(2185, string.format("%1d", mainPanelDevice:get_argument_value(185)))
+	helios.send(3184, string.format("%1d", mainPanelDevice:get_argument_value(184)))
+    helios.send(3185, string.format("%1d", mainPanelDevice:get_argument_value(185)))
+
 end
