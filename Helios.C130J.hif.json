@@ -1,7 +1,7 @@
 {
   "source": "Helios",
   "version": "1.6.6170.1000",
-  "commit": "5ba48c1fd1cf8c172d3949de6faa3b8ce4942d3e",
+  "commit": "6c1654274c29940dcd48d8eef671ebd71678db1b",
   "type": "Existing",
   "name": "DCS C-130J Hercules (ASC)",
   "module": "C-130J-30",
@@ -3710,24 +3710,24 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "exitValue": "0.0",
+          "exitValue": "0.5",
           "argumentValue": "1.0",
           "name": "Position 1",
           "actionID": "3070",
           "stopActionID": "3070",
-          "stopActionValue": "0.0"
+          "stopActionValue": "0.5"
         },
         {
-          "argumentValue": "0.0",
+          "argumentValue": "0.5",
           "name": "Middle"
         },
         {
-          "exitValue": "0.0",
+          "exitValue": "0.5",
           "argumentValue": "0.0",
           "name": "Position 3",
           "actionID": "3071",
           "stopActionID": "3071",
-          "stopActionValue": "0.0"
+          "stopActionValue": "0.5"
         }
       ]
     },
@@ -5259,24 +5259,24 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "exitValue": "0.0",
+          "exitValue": "0.5",
           "argumentValue": "1.0",
           "name": "Position 1",
           "actionID": "3070",
           "stopActionID": "3070",
-          "stopActionValue": "0.0"
+          "stopActionValue": "0.5"
         },
         {
-          "argumentValue": "0.0",
+          "argumentValue": "0.5",
           "name": "Middle"
         },
         {
-          "exitValue": "0.0",
+          "exitValue": "0.5",
           "argumentValue": "0.0",
           "name": "Position 3",
           "actionID": "3071",
           "stopActionID": "3071",
-          "stopActionValue": "0.0"
+          "stopActionValue": "0.5"
         }
       ]
     },
@@ -7028,24 +7028,24 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "exitValue": "0.0",
+          "exitValue": "0.5",
           "argumentValue": "1.0",
           "name": "Position 1",
           "actionID": "3070",
           "stopActionID": "3070",
-          "stopActionValue": "0.0"
+          "stopActionValue": "0.5"
         },
         {
-          "argumentValue": "0.0",
+          "argumentValue": "0.5",
           "name": "Middle"
         },
         {
-          "exitValue": "0.0",
+          "exitValue": "0.5",
           "argumentValue": "0.0",
           "name": "Position 3",
           "actionID": "3071",
           "stopActionID": "3071",
-          "stopActionValue": "0.0"
+          "stopActionValue": "0.5"
         }
       ]
     },
