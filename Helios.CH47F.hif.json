@@ -1,7 +1,7 @@
 {
   "source": "Helios",
-  "version": "1.6.6140.0000",
-  "commit": "8527ab414f43feace485448393a1f4375973a672",
+  "version": "1.6.6170.2000",
+  "commit": "dfa2f24a326d90f5554f31b58c5e35e686a48f4c",
   "type": "Existing",
   "name": "DCS CH-47F Chinook",
   "module": "CH-47Fbl1",
@@ -1073,7 +1073,7 @@
       },
       "valueDescription": "-8 to +8 Degrees",
       "unit": "Degrees",
-      "exposeUnscaledValue": true
+      "exposeunscaledvalue": true
     },
     {
       "heliosType": "DCS.Common.Axis",
@@ -6374,6 +6374,96 @@
           "actionID": "3230"
         }
       ]
+    },
+    {
+      "heliosType": "DCS.Common.DrawingValue",
+      "device": "Doors",
+      "name": "Center Hook Door Position",
+      "description": "0.0 to 1.0",
+      "exports": [
+        {
+          "format": "%.2f",
+          "id": "D26"
+        }
+      ],
+      "valueDescription": "Number with 0 being closed",
+      "unit": "Numeric",
+      "aircraftDrawArgument": "26"
+    },
+    {
+      "heliosType": "DCS.Common.DrawingValue",
+      "device": "Doors",
+      "name": "Front Door Position",
+      "description": "0.0 to 1.0",
+      "exports": [
+        {
+          "format": "%.2f",
+          "id": "D349"
+        }
+      ],
+      "valueDescription": "Number with 0 being closed",
+      "unit": "Numeric",
+      "aircraftDrawArgument": "349"
+    },
+    {
+      "heliosType": "DCS.Common.DrawingValue",
+      "device": "Doors",
+      "name": "Front Door Step Position",
+      "description": "0.0 to 1.0",
+      "exports": [
+        {
+          "format": "%.2f",
+          "id": "D350"
+        }
+      ],
+      "valueDescription": "Number with 0 being closed",
+      "unit": "Numeric",
+      "aircraftDrawArgument": "350"
+    },
+    {
+      "heliosType": "DCS.Common.DrawingValue",
+      "device": "Doors",
+      "name": "Cargo Door Position",
+      "description": "0.0 to 1.0",
+      "exports": [
+        {
+          "format": "%.2f",
+          "id": "D38"
+        }
+      ],
+      "valueDescription": "Number with 0 being closed",
+      "unit": "Numeric",
+      "aircraftDrawArgument": "38"
+    },
+    {
+      "heliosType": "DCS.Common.DrawingValue",
+      "device": "Doors",
+      "name": "Ramp Lip Position",
+      "description": "0.0 to 1.0",
+      "exports": [
+        {
+          "format": "%.2f",
+          "id": "D85"
+        }
+      ],
+      "valueDescription": "Number with 0 being closed",
+      "unit": "Numeric",
+      "aircraftDrawArgument": "85"
+    },
+    {
+      "heliosType": "DCS.Common.DrawingValue",
+      "device": "Doors",
+      "name": "Ramp Position",
+      "description": "0.0 to 1.0",
+      "exports": [
+        {
+          "format": "%.2f",
+          "id": "D86"
+        }
+      ],
+      "valueDescription": "Number with 0 being closed",
+      "unit": "Numeric",
+      "aircraftDrawArgument": "86"
     },
     {
       "heliosType": "DCS.Common.Switch",
@@ -24258,6 +24348,7 @@
         ],
         "precision": 1
       },
+      "valueDescription": "Value between -70 and 50",
       "unit": "Celsius"
     },
     {

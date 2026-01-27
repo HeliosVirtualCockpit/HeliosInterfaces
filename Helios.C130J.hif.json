@@ -19712,7 +19712,8 @@
         }
       ],
       "valueDescription": "Number with 0 being closed",
-      "unit": "Numeric"
+      "unit": "Numeric",
+      "aircraftDrawArgument": "38"
     },
     {
       "heliosType": "DCS.Common.DrawingValue",
@@ -19726,7 +19727,8 @@
         }
       ],
       "valueDescription": "Number with 0 being closed",
-      "unit": "Numeric"
+      "unit": "Numeric",
+      "aircraftDrawArgument": "501"
     },
     {
       "heliosType": "DCS.Common.DrawingValue",
@@ -19740,7 +19742,8 @@
         }
       ],
       "valueDescription": "Number with 0 being closed",
-      "unit": "Numeric"
+      "unit": "Numeric",
+      "aircraftDrawArgument": "622"
     },
     {
       "heliosType": "DCS.Common.DrawingValue",
@@ -19754,7 +19757,8 @@
         }
       ],
       "valueDescription": "Number with 0 being closed",
-      "unit": "Numeric"
+      "unit": "Numeric",
+      "aircraftDrawArgument": "623"
     },
     {
       "heliosType": "DCS.Common.DrawingValue",
@@ -19768,7 +19772,8 @@
         }
       ],
       "valueDescription": "Number with 0 being closed",
-      "unit": "Numeric"
+      "unit": "Numeric",
+      "aircraftDrawArgument": "624"
     },
     {
       "heliosType": "DCS.Common.DrawingValue",
@@ -19782,7 +19787,8 @@
         }
       ],
       "valueDescription": "Number with 0 being closed",
-      "unit": "Numeric"
+      "unit": "Numeric",
+      "aircraftDrawArgument": "86"
     },
     {
       "heliosType": "DCS.Common.DrawingValue",
@@ -19796,7 +19802,8 @@
         }
       ],
       "valueDescription": "Number with 0 being closed",
-      "unit": "Numeric"
+      "unit": "Numeric",
+      "aircraftDrawArgument": "88"
     },
     {
       "heliosType": "DCS.Common.DrawingValue",
@@ -19810,7 +19817,8 @@
         }
       ],
       "valueDescription": "Number with 0 being closed",
-      "unit": "Numeric"
+      "unit": "Numeric",
+      "aircraftDrawArgument": "97"
     },
     {
       "heliosType": "DCS.Common.RotaryEncoder",
