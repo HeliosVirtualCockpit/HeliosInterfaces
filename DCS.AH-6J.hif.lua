@@ -124,11 +124,23 @@ function driver.processLowImportance(mainPanelDevice)
 	--TNL3100
     li = helios.parseIndication(11) 
     if li then
-	        helios.send(2101, string.format("%20s", helios.ensureString(li.TNL3100Text1):gsub(":", "!")))
-	        helios.send(2102, string.format("%20s", helios.ensureString(li.TNL3100Text2):gsub(":", "!")))
+        helios.send(2101, string.format("%-21s", helios.ensureString(li.TNL3100Text1):gsub(":", "!")))
+        helios.send(2102, string.format("%-21s", helios.ensureString(li.TNL3100Text2):gsub(":", "!")))
+
+		local text2, numPeriods = helios.ensureString(li.TNL3100Text2):gsub("%.","")
+		local text2Periods, _ = helios.ensureString(li.TNL3100Text2):gsub("[^%.]"," ")
+		local firstPeriod = text2Periods:find("%.")
+
+		if numPeriods > 1 then 
+			text2Periods = text2Periods:sub(1,firstPeriod)..text2Periods:sub(firstPeriod+2)
+		end
+        helios.send(2123, string.format("%-20s", text2:gsub("%.",""):gsub(":", "!")))
+        helios.send(2124, string.format("%-20s", text2Periods:gsub(":", "!")))
 	else
-	        helios.send(2101, string.format("%20s", ""))
-	        helios.send(2102, string.format("%20s", ""))
+        helios.send(2101, string.format("%21s", ""))
+        helios.send(2102, string.format("%21s", ""))
+		helios.send(2123, string.format("%20s", ""))
+        helios.send(2124, string.format("%20s", ""))
     end
 	-- Barometric Altimeter
 	helios.send(2122, string.format("%.0f", (math.floor(mainPanelDevice:get_argument_value(326)*10)*10000) + (math.floor(mainPanelDevice:get_argument_value(325)*10)*1000) + math.floor(mainPanelDevice:get_argument_value(324)*1000)))  -- Altitude
