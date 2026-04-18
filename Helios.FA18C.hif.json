@@ -1,7 +1,7 @@
 {
   "source": "Helios",
-  "version": "1.6.6160.0000",
-  "commit": "8f265e068540bb0faddd38ce52b2cabf48602595",
+  "version": "1.6.6181.0000",
+  "commit": "cb3f063e7d7d1ad8f936269a640cb2c6587dbdf7",
   "type": "Existing",
   "name": "DCS F/A-18C",
   "module": "FA-18C_hornet",
@@ -709,12 +709,12 @@
           "actionID": "3001"
         },
         {
-          "argumentValue": "0.5",
+          "argumentValue": "0.0",
           "name": "AUTO",
           "actionID": "3001"
         },
         {
-          "argumentValue": "0.0",
+          "argumentValue": "-1.0",
           "name": "LOWER",
           "actionID": "3001"
         }
@@ -741,12 +741,12 @@
           "actionID": "3002"
         },
         {
-          "argumentValue": "0.5",
+          "argumentValue": "0.0",
           "name": "BOTH",
           "actionID": "3002"
         },
         {
-          "argumentValue": "0.0",
+          "argumentValue": "-1.0",
           "name": "LOWER",
           "actionID": "3002"
         }
@@ -1576,8 +1576,8 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1",
-          "name": "1 Off",
+          "argumentValue": "-1",
+          "name": "2 Off",
           "actionID": "3026",
           "stopActionID": "3026",
           "stopActionValue": "0"
@@ -1585,13 +1585,15 @@
         {
           "argumentValue": "0",
           "name": "Norm",
-          "actionID": "3027"
+          "actionID": "3026",
+          "stopActionID": "3025",
+          "stopActionValue": "0"
         },
         {
-          "argumentValue": "-1",
-          "name": "2 Off",
-          "actionID": "3027",
-          "stopActionID": "3027",
+          "argumentValue": "1",
+          "name": "1 Off",
+          "actionID": "3025",
+          "stopActionID": "3025",
           "stopActionValue": "0"
         }
       ]
@@ -2220,6 +2222,28 @@
       ]
     },
     {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Cockpit Mechanics",
+      "name": "Ejection Seat Manual Override Handle",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "512"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "7",
+          "pushId": "3007",
+          "pushValue": "1",
+          "releaseId": "3007",
+          "releaseValue": "0"
+        }
+      ]
+    },
+    {
       "heliosType": "DCS.Common.Switch",
       "device": "Cockpit Mechanics",
       "name": "Ejection Seat SAFE/ARMED Handle",
@@ -2285,26 +2309,28 @@
           "id": "514"
         }
       ],
-      "deviceId": "12",
+      "deviceId": "7",
       "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1",
           "name": "Up",
-          "actionID": "3010",
-          "stopActionID": "3010",
+          "actionID": "3011",
+          "stopActionID": "3011",
           "stopActionValue": "0"
         },
         {
           "argumentValue": "0",
           "name": "Hold",
-          "actionID": "3011"
+          "actionID": "3010",
+          "stopActionID": "3011",
+          "stopActionValue": "0"
         },
         {
           "argumentValue": "-1",
           "name": "Down",
-          "actionID": "3011",
-          "stopActionID": "3011",
+          "actionID": "3010",
+          "stopActionID": "3010",
           "stopActionValue": "0"
         }
       ]
@@ -2690,18 +2716,13 @@
           "actionID": "3003"
         },
         {
-          "argumentValue": "0.7",
+          "argumentValue": "0.0",
           "name": "MAN",
           "actionID": "3003"
         },
         {
-          "argumentValue": "0.3",
-          "name": "OFF",
-          "actionID": "3003"
-        },
-        {
-          "argumentValue": "0.0",
-          "name": "RAM",
+          "argumentValue": "-1.0",
+          "name": "OFF/RAM",
           "actionID": "3003"
         }
       ]
@@ -2773,18 +2794,13 @@
           "actionID": "3004"
         },
         {
-          "argumentValue": "0.7",
-          "name": "DUMP",
-          "actionID": "3004"
-        },
-        {
-          "argumentValue": "0.3",
-          "name": "RAM",
-          "actionID": "3004"
-        },
-        {
           "argumentValue": "0.0",
           "name": "DUMP",
+          "actionID": "3004"
+        },
+        {
+          "argumentValue": "-1.0",
+          "name": "RAM/DUMP",
           "actionID": "3004"
         }
       ]
@@ -2822,6 +2838,11 @@
         {
           "argumentValue": "0.3",
           "name": "R OFF",
+          "actionID": "3001"
+        },
+        {
+          "argumentValue": "-0.1",
+          "name": "OFF",
           "actionID": "3001"
         }
       ]
@@ -2862,7 +2883,7 @@
       ],
       "loop": false,
       "argumentValue": 0.5,
-      "argumentMin": 0.0,
+      "argumentMin": -1.0,
       "argumentMax": 1.0,
       "actions": {
         "set": {
@@ -2892,12 +2913,12 @@
           "actionID": "3009"
         },
         {
-          "argumentValue": "0.5",
+          "argumentValue": "0.0",
           "name": "OFF",
           "actionID": "3009"
         },
         {
-          "argumentValue": "0.0",
+          "argumentValue": "-1.0",
           "name": "RAIN",
           "actionID": "3009"
         }
@@ -3111,20 +3132,20 @@
         {
           "argumentValue": "1",
           "name": "Reset",
-          "actionID": "3004",
-          "stopActionID": "3004",
+          "actionID": "3005",
+          "stopActionID": "3005",
           "stopActionValue": "0"
         },
         {
           "argumentValue": "0",
           "name": "Norm",
-          "actionID": "3005"
+          "actionID": "3004"
         },
         {
           "argumentValue": "-1",
           "name": "Off",
-          "actionID": "3005",
-          "stopActionID": "3005",
+          "actionID": "3004",
+          "stopActionID": "3004",
           "stopActionValue": "0"
         }
       ]
@@ -3419,6 +3440,58 @@
       ]
     },
     {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Fire Systems",
+      "name": "Right Engine/AMAD cover control",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "28"
+        }
+      ],
+      "deviceId": "12",
+      "positions": [
+        {
+          "argumentValue": "1",
+          "name": "ON",
+          "actionID": "3013"
+        },
+        {
+          "argumentValue": "0",
+          "name": "OFF",
+          "actionID": "3013"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Switch",
+      "device": "Fire Systems",
+      "name": "Left Engine/AMAD cover control",
+      "description": "Current state of this button.",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "12"
+        }
+      ],
+      "deviceId": "12",
+      "positions": [
+        {
+          "argumentValue": "1",
+          "name": "ON",
+          "actionID": "3012"
+        },
+        {
+          "argumentValue": "0",
+          "name": "OFF",
+          "actionID": "3012"
+        }
+      ]
+    },
+    {
       "heliosType": "DCS.Common.PushButton",
       "device": "Fire Systems",
       "name": "APU Fire Warning/Extinguisher Light",
@@ -3473,6 +3546,7 @@
           "id": "217"
         }
       ],
+      "exposeunscaledvalue": true,
       "calibration": {
         "points": [
           {
@@ -3548,7 +3622,7 @@
             "mappedValue": 850.0
           }
         ],
-        "precision": 1
+        "precision": 3
       },
       "valueDescription": "Value between 0 and 850",
       "unit": "Knots"
@@ -3619,7 +3693,7 @@
             "mappedValue": 6000.0
           }
         ],
-        "precision": 1
+        "precision": 2
       },
       "valueDescription": "Value between -6000 and 6000",
       "unit": "FeetPerMinute"
@@ -3700,7 +3774,7 @@
       "positions": [
         {
           "argumentValue": "1.0",
-          "name": "ORIDE",
+          "name": "STOP",
           "actionID": "3005"
         },
         {
@@ -3710,7 +3784,7 @@
         },
         {
           "argumentValue": "-1.0",
-          "name": "STOP",
+          "name": "ORIDE",
           "actionID": "3005"
         }
       ]
@@ -3732,7 +3806,7 @@
       "positions": [
         {
           "argumentValue": "1.0",
-          "name": "ORIDE",
+          "name": "STOP",
           "actionID": "3004"
         },
         {
@@ -3742,7 +3816,7 @@
         },
         {
           "argumentValue": "-1.0",
-          "name": "STOP",
+          "name": "ORIDE",
           "actionID": "3004"
         }
       ]
@@ -3957,6 +4031,12 @@
           "exitValue": "0.0",
           "argumentValue": "0.0",
           "name": "Brake Off",
+          "actionID": "3005",
+          "stopActionID": "3005"
+        },
+		{
+          "argumentValue": "0.5",
+          "name": "Emergency Brake On",
           "actionID": "3005",
           "stopActionID": "3005"
         },
@@ -4279,6 +4359,99 @@
         }
       ]
     },
+	{
+      "heliosType": "DCS.Common.Switch",
+      "device": "IFEI",
+      "name": "HMD/LDDI/RDDI selector",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "175"
+        }
+      ],
+      "deviceId": "0",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "HMD",
+          "actionID": "3104"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "LDDI",
+          "actionID": "3104"
+        },
+        {
+          "argumentValue": "-1.0",
+          "name": "RDDI",
+          "actionID": "3104"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.Switch",
+      "device": "IFEI",
+      "name": "HUD/LDIR/RDDI selector",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "176"
+        }
+      ],
+      "deviceId": "0",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "HUD",
+          "actionID": "3105"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "LDIR",
+          "actionID": "3105"
+        },
+        {
+          "argumentValue": "-1.0",
+          "name": "RDDI",
+          "actionID": "3105"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.Switch",
+      "device": "IFEI",
+      "name": "MAN/OFF/AUTO selector",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "314"
+        }
+      ],
+      "deviceId": "0",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "MAN",
+          "actionID": "3106"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "OFF",
+          "actionID": "3106"
+        },
+        {
+          "argumentValue": "-1.0",
+          "name": "AUTO",
+          "actionID": "3106"
+        }
+      ]
+    },
     {
       "heliosType": "DCS.Common.Axis",
       "device": "HMD",
@@ -4350,7 +4523,7 @@
           "actionID": "3001"
         },
         {
-          "argumentValue": "0.0",
+          "argumentValue": "-1.0",
           "name": "ORIDE",
           "actionID": "3001"
         }
@@ -5029,48 +5202,41 @@
       ]
     },
     {
-      "heliosType": "DCS.Common.Axis",
+      "heliosType": "DCS.Common.DrawingValue",
       "device": "IFEI",
       "name": "Left Nozzle Position",
-      "description": "Current value of this axis.",
+      "description": "0 to 1",
       "exports": [
         {
-          "isExportedEveryFrame": false,
-          "id": "4019"
+          "format": "%.3f",
+          "id": "D90"
         }
       ],
-      "loop": false,
-      "argumentValue": 1.0,
-      "argumentMin": 0.0,
-      "argumentMax": 400.0,
-      "actions": {
-        "set": {
-          "deviceId": "33",
-          "actionId": "4019"
-        }
-      }
+      "valueDescription": "Number",
+      "unit": "Numeric",
+      "aircraftDrawArgument": "90"
     },
     {
-      "heliosType": "DCS.Common.Axis",
+      "heliosType": "DCS.Common.DrawingValue",
       "device": "IFEI",
       "name": "Right Nozzle Position",
-      "description": "Current value of this axis.",
+      "description": "0 to 1",
       "exports": [
         {
-          "isExportedEveryFrame": false,
-          "id": "4020"
+          "format": "%.3f",
+          "id": "D89"
         }
       ],
-      "loop": false,
-      "argumentValue": 1.0,
-      "argumentMin": 0.0,
-      "argumentMax": 400.0,
-      "actions": {
-        "set": {
-          "deviceId": "33",
-          "actionId": "4020"
-        }
-      }
+      "valueDescription": "Number",
+      "unit": "Numeric",
+      "aircraftDrawArgument": "89"
+						   
+				  
+				
+						   
+							
+		 
+	   
     },
     {
       "heliosType": "DCS.Common.FlagValue",
@@ -5194,12 +5360,12 @@
           "actionID": "3010"
         },
         {
-          "argumentValue": "0.5",
+          "argumentValue": "0.0",
           "name": "OFF",
           "actionID": "3010"
         },
         {
-          "argumentValue": "0.0",
+          "argumentValue": "-1.0",
           "name": "PLAIN",
           "actionID": "3010"
         }
@@ -5226,12 +5392,12 @@
           "actionID": "3011"
         },
         {
-          "argumentValue": "0.5",
+          "argumentValue": "0.0",
           "name": "OFF",
           "actionID": "3011"
         },
         {
-          "argumentValue": "0.0",
+          "argumentValue": "-1.0",
           "name": "COMM 2",
           "actionID": "3011"
         }
@@ -5244,14 +5410,115 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.1f",
+          "format": "%0.2f",
           "isExportedEveryFrame": false,
           "id": "352"
         }
       ],
       "deviceId": "40",
       "incrementalPulseValue": "",
-      "positions": []
+      "positions": [
+        {
+          "argumentValue": "0.00",
+          "name": "1",
+          "actionID": "3017"
+        },	  
+		{
+          "argumentValue": "0.05",
+          "name": "2",
+          "actionID": "3017"
+        },
+		{
+          "argumentValue": "0.10",
+          "name": "3",
+          "actionID": "3017"
+        },	  
+		{
+          "argumentValue": "0.15",
+          "name": "4",
+          "actionID": "3017"
+        },
+		{
+          "argumentValue": "0.20",
+          "name": "5",
+          "actionID": "3017"
+        },	  
+        {
+          "argumentValue": "0.25",
+          "name": "6",
+          "actionID": "3017"
+        },	  
+		{
+          "argumentValue": "0.30",
+          "name": "7",
+          "actionID": "3017"
+        },
+		{
+          "argumentValue": "0.35",
+          "name": "8",
+          "actionID": "3017"
+        },	  
+		{
+          "argumentValue": "0.40",
+          "name": "9",
+          "actionID": "3017"
+        },
+		{
+          "argumentValue": "0.45",
+          "name": "10",
+          "actionID": "3017"
+        },
+        {
+          "argumentValue": "0.50",
+          "name": "11",
+          "actionID": "3017"
+        },	  
+		{
+          "argumentValue": "0.55",
+          "name": "12",
+          "actionID": "3017"
+        },
+		{
+          "argumentValue": "0.60",
+          "name": "13",
+          "actionID": "3017"
+        },	  
+		{
+          "argumentValue": "0.65",
+          "name": "14",
+          "actionID": "3017"
+        },
+		{
+          "argumentValue": "0.70",
+          "name": "15",
+          "actionID": "3017"
+        },	  
+        {
+          "argumentValue": "0.75",
+          "name": "16",
+          "actionID": "3017"
+        },	  
+		{
+          "argumentValue": "0.80",
+          "name": "17",
+          "actionID": "3017"
+        },
+		{
+          "argumentValue": "0.85",
+          "name": "18",
+          "actionID": "3017"
+        },	  
+		{
+          "argumentValue": "0.90",
+          "name": "19",
+          "actionID": "3017"
+        },
+		{
+          "argumentValue": "0.95",
+          "name": "20",
+          "actionID": "3017"
+        }		  
+	  ]
     },
     {
       "heliosType": "DCS.Common.Switch",
@@ -5298,20 +5565,22 @@
         {
           "argumentValue": "1",
           "name": "Hold",
-          "actionID": "3014",
-          "stopActionID": "3014",
+          "actionID": "3015",
+          "stopActionID": "3015",
           "stopActionValue": "0"
         },
         {
           "argumentValue": "0",
           "name": "Norm",
-          "actionID": "3015"
+          "actionID": "3015",
+		  "stopActionID": "3014",
+          "stopActionValue": "0"
         },
         {
           "argumentValue": "-1",
           "name": "Zero",
-          "actionID": "3015",
-          "stopActionID": "3015",
+          "actionID": "3014",
+          "stopActionID": "3014",
           "stopActionValue": "0"
         }
       ]
@@ -5333,21 +5602,16 @@
       "positions": [
         {
           "argumentValue": "1.0",
-          "name": "DIS",
-          "actionID": "3013"
-        },
-        {
-          "argumentValue": "0.7",
-          "name": "AUD",
-          "actionID": "3013"
-        },
-        {
-          "argumentValue": "0.3",
-          "name": "DIS",
+          "name": "DIS/AUD",
           "actionID": "3013"
         },
         {
           "argumentValue": "0.0",
+          "name": "DIS",
+          "actionID": "3013"
+        },
+        {
+          "argumentValue": "-1.0",
           "name": "OFF",
           "actionID": "3013"
         }
@@ -5580,22 +5844,22 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.0",
+          "argumentValue": "0.0",
           "name": "P",
           "actionID": "3001"
         },
         {
-          "argumentValue": "0.7",
+          "argumentValue": "0.1",
           "name": "C",
           "actionID": "3001"
         },
         {
-          "argumentValue": "0.3",
+          "argumentValue": "0.2",
           "name": "LD",
           "actionID": "3001"
         },
         {
-          "argumentValue": "0.0",
+          "argumentValue": "0.3",
           "name": "RV",
           "actionID": "3001"
         }
@@ -5640,43 +5904,33 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.0",
-          "name": "Z 1-5",
-          "actionID": "3002"
-        },
-        {
-          "argumentValue": "0.9",
+          "argumentValue": "0.0",
           "name": "1",
           "actionID": "3002"
         },
         {
-          "argumentValue": "0.7",
+          "argumentValue": "0.1",
           "name": "2",
           "actionID": "3002"
         },
         {
-          "argumentValue": "0.6",
+          "argumentValue": "0.2",
           "name": "3",
           "actionID": "3002"
         },
         {
-          "argumentValue": "0.4",
+          "argumentValue": "0.3",
           "name": "4",
           "actionID": "3002"
         },
         {
-          "argumentValue": "0.3",
+          "argumentValue": "0.4",
           "name": "5",
           "actionID": "3002"
         },
         {
-          "argumentValue": "0.1",
+          "argumentValue": "0.5",
           "name": "6",
-          "actionID": "3002"
-        },
-        {
-          "argumentValue": "0.0",
-          "name": "Z ALL",
           "actionID": "3002"
         }
       ]
@@ -5697,17 +5951,17 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "argumentValue": "1.0",
+          "argumentValue": "0.0",
           "name": "OFF",
           "actionID": "3004"
         },
         {
-          "argumentValue": "0.5",
+          "argumentValue": "0.1",
           "name": "ON",
           "actionID": "3004"
         },
         {
-          "argumentValue": "0.0",
+          "argumentValue": "0.2",
           "name": "TD",
           "actionID": "3004"
         }
@@ -6816,6 +7070,7 @@
           "id": "286"
         }
       ],
+      "exposeunscaledvalue": true,
       "calibration": {
         "points": [
           {
@@ -6867,7 +7122,7 @@
             "mappedValue": 5100.0
           }
         ],
-        "precision": 1
+        "precision": 3
       },
       "valueDescription": "Value between -10 and 5100",
       "unit": "Feet"
@@ -6883,6 +7138,7 @@
           "id": "287"
         }
       ],
+      "exposeunscaledvalue": true,
       "calibration": {
         "points": [
           {
@@ -7590,8 +7846,8 @@
       "argumentMax": 1.0,
       "actions": {
         "set": {
-          "deviceId": "53",
-          "actionId": "3009"
+          "deviceId": "0",
+          "actionId": "3130"
         }
       }
     },
@@ -8038,6 +8294,73 @@
         }
       ]
     },
+	{
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "STBY COMPASS",
+      "name": "Compass heading",
+      "description": "Compass heading",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "149"
+        }
+      ],
+      "valueDescription": "(0 to 1)",
+      "unit": "Numeric"
+    },
+	{
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "STBY COMPASS",
+      "name": "Compass pitch",
+      "description": "Compass pitch",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "150"
+        }
+      ],
+      "valueDescription": "(-1 to 1)",
+      "unit": "Numeric"
+    },
+	{
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "STBY COMPASS",
+      "name": "Compass bank",
+      "description": "Compass Bank",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "151"
+        }
+      ],
+      "valueDescription": "(-1 to 1)",
+      "unit": "Numeric"
+		   
+						  
+								
+			
+		   
+						 
+							   
+		   
+		  
+					  
+		
+							
+						
+				   
+		   
+						  
+								 
+			
+		   
+						 
+								
+		   
+		  
+					  
+	   
+    },
     {
       "heliosType": "DCS.Common.Switch",
       "device": "Sensor panel",
@@ -8069,9 +8392,14 @@
           "actionID": "3001"
         },
         {
-          "argumentValue": "0.3",
-          "name": "EMERG(PULL)",
+          "argumentValue": "0.25",
+          "name": "(PULL)",
           "actionID": "3002"
+        },
+        {
+          "argumentValue": "0.3",
+          "name": "EMERG",
+          "actionID": "3001"
         }
       ]
     },
@@ -8274,7 +8602,7 @@
         }
       ],
       "loop": true,
-      "argumentValue": 0.01,
+      "argumentValue": 0.1,
       "argumentMin": 0.0,
       "argumentMax": 1.0,
       "actions": {
@@ -8318,6 +8646,42 @@
           {
             "value": 0.0,
             "mappedValue": 0.0
+          },
+          {
+            "value": 0.117,
+            "mappedValue": 5000.0
+          },
+          {
+            "value": 0.2245,
+            "mappedValue": 10000.0
+          },
+          {
+            "value": 0.3225,
+            "mappedValue": 15000.0
+          },
+          {
+            "value": 0.411,
+            "mappedValue": 20000.0
+          },
+          {
+            "value": 0.506,
+            "mappedValue": 25000.0
+          },
+          {
+            "value": 0.609,
+            "mappedValue": 30000.0
+          },
+          {
+            "value": 0.717,
+            "mappedValue": 35000.0
+          },
+          {
+            "value": 0.823,
+            "mappedValue": 40000.0
+          },
+          {
+            "value": 0.914,
+            "mappedValue": 45000.0
           },
           {
             "value": 1.0,
