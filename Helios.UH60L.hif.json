@@ -1,7 +1,7 @@
 {
   "source": "Helios",
-  "version": "1.6.6160.0000",
-  "commit": "f114afb9621c70d0211b82d84cb4664ab140dec4",
+  "version": "1.6.6190.0000",
+  "commit": "3ab7cb14cd15532aefc5eb573f816a0a0e2fd63a",
   "type": "Existing",
   "name": "DCS UH-60L Blackhawk",
   "module": "UH-60L",
@@ -3175,6 +3175,33 @@
           "actionId": "3366"
         }
       }
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "IAS",
+      "name": "Air Speed Needle",
+      "description": "IAS needle position in degrees",
+      "exports": [
+        {
+          "format": "%0.5f",
+          "id": "100"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": 0.0,
+            "mappedValue": 0.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 333.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "0 to 333",
+      "unit": "Degrees"
     },
     {
       "heliosType": "DCS.Common.Switch",
@@ -9785,6 +9812,42 @@
       "unit": "Numeric"
     },
     {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "VSI (Copilot)",
+      "name": "GA Indicator",
+      "description": "VSI Indicator, value of 1 turns on",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "983"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "VSI (Copilot)",
+      "name": "DH Indicator",
+      "description": "VSI Indicator, value of 1 turns on",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "984"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "VSI (Copilot)",
+      "name": "MB Indicator",
+      "description": "VSI Indicator, value of 1 turns on",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "985"
+        }
+      ]
+    },
+    {
       "heliosType": "DCS.Common.DCSBallRotation",
       "device": "VSI (Pilot)",
       "name": "ball rotation",
@@ -10007,6 +10070,69 @@
       ],
       "valueDescription": "0 to +1",
       "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "VSI (Pilot)",
+      "name": "GA Indicator",
+      "description": "VSI Indicator, value of 1 turns on",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "980"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "VSI (Pilot)",
+      "name": "DH Indicator",
+      "description": "VSI Indicator, value of 1 turns on",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "981"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "VSI (Pilot)",
+      "name": "MB Indicator",
+      "description": "VSI Indicator, value of 1 turns on",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "982"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "VVI",
+      "name": "Vertical Velocity Needle",
+      "description": "VVI needle position in degrees",
+      "exports": [
+        {
+          "format": "%0.5f",
+          "id": "103"
+        }
+      ],
+      "calibration": {
+        "points": [
+          {
+            "value": -1.0,
+            "mappedValue": -180.0
+          },
+          {
+            "value": 1.0,
+            "mappedValue": 180.0
+          }
+        ],
+        "precision": 1
+      },
+      "valueDescription": "-170 to +170",
+      "unit": "Degrees"
     },
     {
       "heliosType": "DCS.Common.Switch",
