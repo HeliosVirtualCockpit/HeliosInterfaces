@@ -1,15 +1,124 @@
 {
   "source": "Helios",
-  "version": "1.6.6190.0000",
-  "commit": "3ab7cb14cd15532aefc5eb573f816a0a0e2fd63a",
+  "version": "1.6.6200.0000",
+  "commit": "61fe62e90e1688dbb36b02685b23b7c3013f86e2",
   "type": "Existing",
   "name": "DCS UH-60L Blackhawk",
   "module": "UH-60L",
   "vehicles": [
-    "UH-60L"
+    "UH-60L", 
+	"UH-60L 'DAP'"
   ],
   "functions": [
     {
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Flight Controls",
+      "name": "Pedals",
+      "description": "Pedal Movement",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "2"
+        }
+      ],
+      "valueDescription": "-1 to 1",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": -1,
+            "mappedValue": -1
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 5
+      }
+    },
+	{
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Flight Controls",
+      "name": "Cyclic Pitch",
+      "description": "Stick Pitch Movement",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "15"
+        }
+      ],
+      "valueDescription": "-1 to 1",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": -1,
+            "mappedValue": -1
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 5
+      }
+    },
+	{
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Flight Controls",
+      "name": "Cyclic Roll",
+      "description": "Stick Roll Movement",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "11"
+        }
+      ],
+      "valueDescription": "-1 to 1",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": -1,
+            "mappedValue": -1
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 5
+      }
+    },
+	{
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Flight Controls",
+      "name": "Collective",
+      "description": "Collective Movement",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "3"
+        }
+      ],
+      "valueDescription": "0 to 1",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 5
+      }
+    },
+	{
       "heliosType": "DCS.Common.Switch",
       "device": "ADF",
       "name": "Preset Selector",
@@ -473,7 +582,7 @@
       "name2": "Pressure",
       "description2": "Manually set barometric altitude."
     },
-    {
+	{
       "heliosType": "DCS.UH60L.Functions.Altimeter",
       "device": "Altimeter (Pilot)",
       "name": "Altitude",
@@ -1002,7 +1111,7 @@
       ],
       "buttons": [
         {
-          "deviceId": "35",
+          "deviceId": "37",
           "pushId": "3296",
           "pushValue": "1.0",
           "releaseId": "3296",
@@ -1024,7 +1133,7 @@
       ],
       "buttons": [
         {
-          "deviceId": "35",
+          "deviceId": "37",
           "pushId": "3297",
           "pushValue": "1.0",
           "releaseId": "3297",
@@ -1046,7 +1155,7 @@
       ],
       "buttons": [
         {
-          "deviceId": "35",
+          "deviceId": "37",
           "pushId": "3298",
           "pushValue": "1.0",
           "releaseId": "3298",
@@ -1068,10 +1177,10 @@
       ],
       "buttons": [
         {
-          "deviceId": "39",
-          "pushId": "3369",
+          "deviceId": "41",
+          "pushId": "3378",
           "pushValue": "1.0",
-          "releaseId": "3369",
+          "releaseId": "3378",
           "releaseValue": "0.0"
         }
       ]
@@ -1090,10 +1199,10 @@
       ],
       "buttons": [
         {
-          "deviceId": "39",
-          "pushId": "3370",
+          "deviceId": "41",
+          "pushId": "3379",
           "pushValue": "1.0",
-          "releaseId": "3370",
+          "releaseId": "3379",
           "releaseValue": "0.0"
         }
       ]
@@ -1113,9 +1222,9 @@
       "buttons": [
         {
           "deviceId": "39",
-          "pushId": "3371",
+          "pushId": "3380",
           "pushValue": "1.0",
-          "releaseId": "3371",
+          "releaseId": "3380",
           "releaseValue": "0.0"
         }
       ]
@@ -2194,18 +2303,18 @@
           "id": "17"
         }
       ],
-      "deviceId": "27",
+      "deviceId": "30",
       "incrementalPulseValue": "",
       "positions": [
         {
           "argumentValue": "1.0",
           "name": "On",
-          "actionID": "3013"
+          "actionID": "10001"
         },
         {
           "argumentValue": "0.0",
           "name": "Off",
-          "actionID": "3013"
+          "actionID": "10001"
         }
       ]
     },
@@ -3084,6 +3193,195 @@
         }
       ]
     },
+	{
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Gauges",
+      "name": "Baro Atimeter 100's",
+      "description": "Alt above sea level 100",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "60"
+        }
+      ],
+      "valueDescription": "0 to 1",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 5
+      }
+    },
+	{
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Gauges",
+      "name": "Baro Atimeter 1000's",
+      "description": "Alt above sea level 1000",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "61"
+        }
+      ],
+      "valueDescription": "0 to 1",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 5
+      }
+    },
+	{
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Gauges",
+      "name": "Baro Atimeter 10000's",
+      "description": "Alt above sea level 10000",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "62"
+        }
+      ],
+      "valueDescription": "0 to 1",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 5
+      }
+    },
+	{
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Gauges",
+      "name": "Airspeed Gauge",
+      "description": "Position of Needle",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "100"
+        }
+      ],
+      "valueDescription": "0 to 1",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 5
+      }
+    },
+	{
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Gauges",
+      "name": "VVI",
+      "description": "Climb Rate",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "103"
+        }
+      ],
+      "valueDescription": "-1 to 1",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": -1,
+            "mappedValue": -1
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 5
+      }
+    },
+	{
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Gauges",
+      "name": "HSI Compass",
+      "description": "Compass Card Rotation",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "132"
+        }
+      ],
+      "valueDescription": "0 to 1",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 5
+      }
+    },
+	{
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Gauges",
+      "name": "HSI Course",
+      "description": "Course Card Rotation Adjustment",
+      "exports": [
+        {
+          "format": "%.4f",
+          "id": "136"
+        }
+      ],
+      "valueDescription": "0 to 1",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
+          }
+        ],
+        "precision": 5
+      }
+    },
     {
       "heliosType": "DCS.Common.Axis",
       "device": "HSI (Copilot)",
@@ -3175,33 +3473,6 @@
           "actionId": "3366"
         }
       }
-    },
-    {
-      "heliosType": "DCS.Common.ScaledNetworkValue",
-      "device": "IAS",
-      "name": "Air Speed Needle",
-      "description": "IAS needle position in degrees",
-      "exports": [
-        {
-          "format": "%0.5f",
-          "id": "100"
-        }
-      ],
-      "calibration": {
-        "points": [
-          {
-            "value": 0.0,
-            "mappedValue": 0.0
-          },
-          {
-            "value": 1.0,
-            "mappedValue": 333.0
-          }
-        ],
-        "precision": 1
-      },
-      "valueDescription": "0 to 333",
-      "unit": "Degrees"
     },
     {
       "heliosType": "DCS.Common.Switch",
@@ -5965,10 +6236,10 @@
       ],
       "buttons": [
         {
-          "deviceId": "37",
-          "pushId": "3372",
+          "deviceId": "39",
+          "pushId": "3381",
           "pushValue": "1.0",
-          "releaseId": "3372",
+          "releaseId": "3381",
           "releaseValue": "0.0"
         }
       ]
@@ -5987,10 +6258,10 @@
       ],
       "buttons": [
         {
-          "deviceId": "37",
-          "pushId": "3373",
+          "deviceId": "39",
+          "pushId": "3382",
           "pushValue": "1.0",
-          "releaseId": "3373",
+          "releaseId": "3382",
           "releaseValue": "0.0"
         }
       ]
@@ -6009,10 +6280,10 @@
       ],
       "buttons": [
         {
-          "deviceId": "37",
-          "pushId": "3374",
+          "deviceId": "39",
+          "pushId": "3383",
           "pushValue": "1.0",
-          "releaseId": "3374",
+          "releaseId": "3383",
           "releaseValue": "0.0"
         }
       ]
@@ -6031,10 +6302,10 @@
       ],
       "buttons": [
         {
-          "deviceId": "37",
-          "pushId": "3375",
+          "deviceId": "39",
+          "pushId": "3384",
           "pushValue": "1.0",
-          "releaseId": "3375",
+          "releaseId": "3384",
           "releaseValue": "0.0"
         }
       ]
@@ -6053,10 +6324,10 @@
       ],
       "buttons": [
         {
-          "deviceId": "37",
-          "pushId": "3376",
+          "deviceId": "39",
+          "pushId": "3385",
           "pushValue": "1.0",
-          "releaseId": "3376",
+          "releaseId": "3385",
           "releaseValue": "0.0"
         }
       ]
@@ -6075,10 +6346,10 @@
       ],
       "buttons": [
         {
-          "deviceId": "37",
-          "pushId": "3377",
+          "deviceId": "39",
+          "pushId": "3386",
           "pushValue": "1.0",
-          "releaseId": "3377",
+          "releaseId": "3386",
           "releaseValue": "0.0"
         }
       ]
@@ -6097,10 +6368,10 @@
       ],
       "buttons": [
         {
-          "deviceId": "37",
-          "pushId": "3378",
+          "deviceId": "39",
+          "pushId": "3387",
           "pushValue": "1.0",
-          "releaseId": "3378",
+          "releaseId": "3387",
           "releaseValue": "0.0"
         }
       ]
@@ -6119,10 +6390,10 @@
       ],
       "buttons": [
         {
-          "deviceId": "37",
-          "pushId": "3379",
+          "deviceId": "39",
+          "pushId": "3388",
           "pushValue": "1.0",
-          "releaseId": "3379",
+          "releaseId": "3388",
           "releaseValue": "0.0"
         }
       ]
@@ -9812,42 +10083,6 @@
       "unit": "Numeric"
     },
     {
-      "heliosType": "DCS.Common.FlagValue",
-      "device": "VSI (Copilot)",
-      "name": "GA Indicator",
-      "description": "VSI Indicator, value of 1 turns on",
-      "exports": [
-        {
-          "format": "%0.1f",
-          "id": "983"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.FlagValue",
-      "device": "VSI (Copilot)",
-      "name": "DH Indicator",
-      "description": "VSI Indicator, value of 1 turns on",
-      "exports": [
-        {
-          "format": "%0.1f",
-          "id": "984"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.FlagValue",
-      "device": "VSI (Copilot)",
-      "name": "MB Indicator",
-      "description": "VSI Indicator, value of 1 turns on",
-      "exports": [
-        {
-          "format": "%0.1f",
-          "id": "985"
-        }
-      ]
-    },
-    {
       "heliosType": "DCS.Common.DCSBallRotation",
       "device": "VSI (Pilot)",
       "name": "ball rotation",
@@ -10070,69 +10305,6 @@
       ],
       "valueDescription": "0 to +1",
       "unit": "Numeric"
-    },
-    {
-      "heliosType": "DCS.Common.FlagValue",
-      "device": "VSI (Pilot)",
-      "name": "GA Indicator",
-      "description": "VSI Indicator, value of 1 turns on",
-      "exports": [
-        {
-          "format": "%0.1f",
-          "id": "980"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.FlagValue",
-      "device": "VSI (Pilot)",
-      "name": "DH Indicator",
-      "description": "VSI Indicator, value of 1 turns on",
-      "exports": [
-        {
-          "format": "%0.1f",
-          "id": "981"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.FlagValue",
-      "device": "VSI (Pilot)",
-      "name": "MB Indicator",
-      "description": "VSI Indicator, value of 1 turns on",
-      "exports": [
-        {
-          "format": "%0.1f",
-          "id": "982"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.ScaledNetworkValue",
-      "device": "VVI",
-      "name": "Vertical Velocity Needle",
-      "description": "VVI needle position in degrees",
-      "exports": [
-        {
-          "format": "%0.5f",
-          "id": "103"
-        }
-      ],
-      "calibration": {
-        "points": [
-          {
-            "value": -1.0,
-            "mappedValue": -180.0
-          },
-          {
-            "value": 1.0,
-            "mappedValue": 180.0
-          }
-        ],
-        "precision": 1
-      },
-      "valueDescription": "-170 to +170",
-      "unit": "Degrees"
     },
     {
       "heliosType": "DCS.Common.Switch",
