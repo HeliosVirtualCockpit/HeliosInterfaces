@@ -13592,7 +13592,6 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "exitValue": "0.0",
           "argumentValue": "1.0",
           "name": "Up",
           "actionId": "3040",
@@ -13604,7 +13603,6 @@
           "name": "Middle"
         },
         {
-          "exitValue": "0.0",
           "argumentValue": "-1.0",
           "name": "Down",
           "actionId": "3041",
@@ -13629,7 +13627,6 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "exitValue": "0.0",
           "argumentValue": "1.0",
           "name": "Up",
           "actionId": "3034",
@@ -13641,7 +13638,6 @@
           "name": "Middle"
         },
         {
-          "exitValue": "0.0",
           "argumentValue": "-1.0",
           "name": "Down",
           "actionId": "3035",
@@ -13666,7 +13662,6 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "exitValue": "0.0",
           "argumentValue": "1.0",
           "name": "Up",
           "actionId": "3037",
@@ -13678,7 +13673,6 @@
           "name": "Middle"
         },
         {
-          "exitValue": "0.0",
           "argumentValue": "-1.0",
           "name": "Down",
           "actionId": "3038",
@@ -14439,7 +14433,6 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "exitValue": "0.0",
           "argumentValue": "1.0",
           "name": "Up",
           "actionId": "3040",
@@ -14451,7 +14444,6 @@
           "name": "Middle"
         },
         {
-          "exitValue": "0.0",
           "argumentValue": "-1.0",
           "name": "Down",
           "actionId": "3041",
@@ -14476,7 +14468,6 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "exitValue": "0.0",
           "argumentValue": "1.0",
           "name": "Up",
           "actionId": "3034",
@@ -14488,7 +14479,6 @@
           "name": "Middle"
         },
         {
-          "exitValue": "0.0",
           "argumentValue": "-1.0",
           "name": "Down",
           "actionId": "3035",
@@ -14513,7 +14503,6 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "exitValue": "0.0",
           "argumentValue": "1.0",
           "name": "Up",
           "actionId": "3037",
@@ -14525,7 +14514,6 @@
           "name": "Middle"
         },
         {
-          "exitValue": "0.0",
           "argumentValue": "-1.0",
           "name": "Down",
           "actionId": "3038",
@@ -15286,7 +15274,6 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "exitValue": "0.0",
           "argumentValue": "1.0",
           "name": "Up",
           "actionId": "3040",
@@ -15298,7 +15285,6 @@
           "name": "Middle"
         },
         {
-          "exitValue": "0.0",
           "argumentValue": "-1.0",
           "name": "Down",
           "actionId": "3041",
@@ -15323,7 +15309,6 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "exitValue": "0.0",
           "argumentValue": "1.0",
           "name": "Up",
           "actionId": "3034",
@@ -15335,7 +15320,6 @@
           "name": "Middle"
         },
         {
-          "exitValue": "0.0",
           "argumentValue": "-1.0",
           "name": "Down",
           "actionId": "3035",
@@ -15360,7 +15344,6 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "exitValue": "0.0",
           "argumentValue": "1.0",
           "name": "Up",
           "actionId": "3037",
@@ -15372,7 +15355,6 @@
           "name": "Middle"
         },
         {
-          "exitValue": "0.0",
           "argumentValue": "-1.0",
           "name": "Down",
           "actionId": "3038",
@@ -16133,7 +16115,6 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "exitValue": "0.0",
           "argumentValue": "1.0",
           "name": "Up",
           "actionId": "3040",
@@ -16145,7 +16126,6 @@
           "name": "Middle"
         },
         {
-          "exitValue": "0.0",
           "argumentValue": "-1.0",
           "name": "Down",
           "actionId": "3041",
@@ -16170,7 +16150,6 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "exitValue": "0.0",
           "argumentValue": "1.0",
           "name": "Up",
           "actionId": "3034",
@@ -16182,7 +16161,6 @@
           "name": "Middle"
         },
         {
-          "exitValue": "0.0",
           "argumentValue": "-1.0",
           "name": "Down",
           "actionId": "3035",
@@ -16207,7 +16185,6 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "exitValue": "0.0",
           "argumentValue": "1.0",
           "name": "Up",
           "actionId": "3037",
@@ -16219,7 +16196,6 @@
           "name": "Middle"
         },
         {
-          "exitValue": "0.0",
           "argumentValue": "-1.0",
           "name": "Down",
           "actionId": "3038",
@@ -16980,7 +16956,6 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "exitValue": "0.0",
           "argumentValue": "1.0",
           "name": "Up",
           "actionId": "3040",
@@ -16992,7 +16967,6 @@
           "name": "Middle"
         },
         {
-          "exitValue": "0.0",
           "argumentValue": "-1.0",
           "name": "Down",
           "actionId": "3041",
@@ -17017,7 +16991,6 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "exitValue": "0.0",
           "argumentValue": "1.0",
           "name": "Up",
           "actionId": "3034",
@@ -17029,7 +17002,6 @@
           "name": "Middle"
         },
         {
-          "exitValue": "0.0",
           "argumentValue": "-1.0",
           "name": "Down",
           "actionId": "3035",
@@ -17054,7 +17026,6 @@
       "incrementalPulseValue": "",
       "positions": [
         {
-          "exitValue": "0.0",
           "argumentValue": "1.0",
           "name": "Up",
           "actionId": "3037",
@@ -17066,7 +17037,6 @@
           "name": "Middle"
         },
         {
-          "exitValue": "0.0",
           "argumentValue": "-1.0",
           "name": "Down",
           "actionId": "3038",
