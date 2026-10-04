@@ -1,7 +1,7 @@
 {
   "source": "IT_Mechanic",
-  "version": "1.6.6620.0000",
-  "commit": "61fe62e90e1688dbb36b02685b23b7c3013f86e2",
+  "version": "1.6.6200.0005",
+  "commit": "1d89e2275e81745e23ee939f599d6de3af50264c",
   "type": "DCS",
   "name": "DCS F-14B",
   "module": "F-14B",
@@ -43,7 +43,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "2110"
+          "id": "2110",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "22",
@@ -68,7 +69,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "2112"
+          "id": "2112",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "22",
@@ -93,7 +95,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "2111"
+          "id": "2111",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "22",
@@ -123,7 +126,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "2109"
+          "id": "2109",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "22",
@@ -197,7 +201,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "2106"
+          "id": "2106",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "22",
@@ -222,7 +227,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "2107"
+          "id": "2107",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "22",
@@ -247,7 +253,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "2108"
+          "id": "2108",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "22",
@@ -272,7 +279,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "904"
+          "id": "904",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -344,7 +352,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "909"
+          "id": "909",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -379,7 +388,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "905"
+          "id": "905",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "51",
@@ -409,7 +419,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "906"
+          "id": "906",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "51",
@@ -434,7 +445,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "2100"
+          "id": "2100",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "14",
@@ -459,7 +471,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "2101"
+          "id": "2101",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "14",
@@ -484,7 +497,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "915"
+          "id": "915",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "26",
@@ -509,7 +523,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "15006"
+          "id": "15006",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -532,7 +547,7 @@
         {
           "format": "%.1f",
           "isExportedEveryFrame": false,
-          "id": "29139"
+          "id": "29168"
         }
       ],
       "buttons": [
@@ -553,7 +568,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "2035"
+          "id": "2035",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "3",
@@ -578,7 +594,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "2027"
+          "id": "2027",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -600,7 +617,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "1031"
+          "id": "1031",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -622,7 +640,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "2030"
+          "id": "2030",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "3",
@@ -648,11 +667,12 @@
       "heliosType": "DCS.Common.Axis",
       "device": "ARC 159",
       "name": "Pilot UHF Freq Mode",
-      "description": "Current Position of This Switch",
+      "description": "Current Value of This Potentiometer",
       "exports": [
         {
           "format": "%.3f",
-          "id": "2033"
+          "id": "2033",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -674,7 +694,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "2029"
+          "id": "2029",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "3",
@@ -704,7 +725,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "2028"
+          "id": "2028",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "3",
@@ -734,7 +756,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "2026"
+          "id": "2026",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "3",
@@ -760,11 +783,12 @@
       "heliosType": "DCS.Common.Axis",
       "device": "ARC 159",
       "name": "Pilot UHF Func Knob",
-      "description": "Current Position of This Switch",
+      "description": "Current Value of This Potentiometer",
       "exports": [
         {
           "format": "%.3f",
-          "id": "2034"
+          "id": "2034",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -874,7 +898,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "406"
+          "id": "406",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -918,7 +943,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "383"
+          "id": "383",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -941,7 +967,7 @@
         {
           "format": "%.1f",
           "isExportedEveryFrame": false,
-          "id": "29138"
+          "id": "29167"
         }
       ],
       "buttons": [
@@ -962,7 +988,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "2032"
+          "id": "2032",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -984,7 +1011,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "2031"
+          "id": "2031",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -1007,7 +1035,7 @@
         {
           "format": "%.1f",
           "isExportedEveryFrame": false,
-          "id": "29137"
+          "id": "29166"
         }
       ],
       "buttons": [
@@ -1028,7 +1056,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "1030"
+          "id": "1030",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -1072,7 +1101,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "2038"
+          "id": "2038",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -1094,7 +1124,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "359"
+          "id": "359",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "4",
@@ -1119,7 +1150,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "358"
+          "id": "358",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -1141,7 +1173,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "351"
+          "id": "351",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "4",
@@ -1166,7 +1199,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "360"
+          "id": "360",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -1188,7 +1222,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "352"
+          "id": "352",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -1210,7 +1245,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "354"
+          "id": "354",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "4",
@@ -1240,7 +1276,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "353"
+          "id": "353",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -1262,7 +1299,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "355"
+          "id": "355",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "4",
@@ -1292,7 +1330,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "356"
+          "id": "356",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "4",
@@ -1322,7 +1361,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "357"
+          "id": "357",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "4",
@@ -1352,7 +1392,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "350"
+          "id": "350",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -1375,7 +1416,7 @@
         {
           "format": "%.1f",
           "isExportedEveryFrame": false,
-          "id": "29111"
+          "id": "29165"
         }
       ],
       "buttons": [
@@ -1389,6 +1430,28 @@
       ]
     },
     {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "AUTO",
+      "name": "Auto Start",
+      "description": "Current State of This Button",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "29758"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "65",
+          "pushId": "3682",
+          "pushValue": "1.0",
+          "releaseId": "3682",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
       "heliosType": "DCS.Common.Switch",
       "device": "Avionics Core",
       "name": "Rudder Trim Switch",
@@ -1396,7 +1459,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "8116"
+          "id": "8116",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "70",
@@ -1426,7 +1490,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "307"
+          "id": "307",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "29",
@@ -1534,7 +1599,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "306"
+          "id": "306",
+          "isExportedEveryFrame": false
         }
       ],
       "unit": "Numeric",
@@ -1649,7 +1715,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "20307"
+          "id": "20307",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "29",
@@ -1718,7 +1785,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "20306"
+          "id": "20306",
+          "isExportedEveryFrame": false
         }
       ],
       "unit": "Numeric",
@@ -1955,24 +2023,23 @@
       "unit": "Numeric"
     },
     {
-      "heliosType": "DCS.Common.RotaryEncoder",
+      "heliosType": "DCS.Common.Axis",
       "device": "Bit Panel",
       "name": "Master Test Knob",
       "description": "Current Value of This Potentiometer",
       "exports": [
         {
-          "format": "%.3f",
+          "format": "%0.4f",
+          "isExportedEveryFrame": false,
           "id": "934"
         }
       ],
-      "unit": "Numeric",
+      "loop": false,
       "argumentValue": "0.025",
+      "argumentMin": "0.0",
+      "argumentMax": "1.0",
       "actions": {
-        "increment": {
-          "deviceId": "11",
-          "actionId": "3076"
-        },
-        "decrement": {
+        "set": {
           "deviceId": "11",
           "actionId": "3076"
         }
@@ -1986,7 +2053,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "15098"
+          "id": "15098",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "11",
@@ -2012,7 +2080,7 @@
         {
           "format": "%.1f",
           "isExportedEveryFrame": false,
-          "id": "29157"
+          "id": "29787"
         }
       ],
       "buttons": [
@@ -2121,7 +2189,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "98"
+          "id": "98",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "24",
@@ -2936,7 +3005,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "806"
+          "id": "806",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -3091,7 +3161,7 @@
         {
           "format": "%.1f",
           "isExportedEveryFrame": false,
-          "id": "29112"
+          "id": "29804"
         }
       ],
       "buttons": [
@@ -3772,7 +3842,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "797"
+          "id": "797",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "81",
@@ -4238,7 +4309,7 @@
         {
           "format": "%.1f",
           "isExportedEveryFrame": false,
-          "id": "29158"
+          "id": "29790"
         }
       ],
       "buttons": [
@@ -4252,14 +4323,59 @@
       ]
     },
     {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "CHECKLIST TOOL",
+      "name": "PILOT CHECKLIST TOOL TOGGLE",
+      "description": "Current State of This Button",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "29177"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "79",
+          "pushId": "3115",
+          "pushValue": "1.0",
+          "releaseId": "3115",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "CHECKLIST TOOL",
+      "name": "RIO CHECKLIST TOOL TOGGLE",
+      "description": "Current State of This Button",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "29796"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "79",
+          "pushId": "3121",
+          "pushValue": "1.0",
+          "releaseId": "3121",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
       "heliosType": "DCS.Common.Axis",
-      "device": "Clock",
+      "device": "CLOCK",
       "name": "Pilot Clock Adjust Knob",
       "description": "Current Value of This Potentiometer",
       "exports": [
         {
           "format": "%.3f",
-          "id": "1051"
+          "id": "1051",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -4275,7 +4391,7 @@
     },
     {
       "heliosType": "DCS.Common.NetworkValue",
-      "device": "Clock",
+      "device": "CLOCK",
       "name": "Pilot Hours",
       "description": "Numeric Value Between 0 and 1",
       "exports": [
@@ -4288,7 +4404,7 @@
     },
     {
       "heliosType": "DCS.Common.NetworkValue",
-      "device": "Clock",
+      "device": "CLOCK",
       "name": "Pilot Minutes",
       "description": "Numeric Value Between 0 and 1",
       "exports": [
@@ -4301,7 +4417,7 @@
     },
     {
       "heliosType": "DCS.Common.NetworkValue",
-      "device": "Clock",
+      "device": "CLOCK",
       "name": "Pilot Timer Minutes",
       "description": "Numeric Value Between 0 and 1",
       "exports": [
@@ -4314,7 +4430,7 @@
     },
     {
       "heliosType": "DCS.Common.PushButton",
-      "device": "Clock",
+      "device": "CLOCK",
       "name": "Pilot Timer Reset",
       "description": "Current State of This Button",
       "exports": [
@@ -4336,7 +4452,7 @@
     },
     {
       "heliosType": "DCS.Common.NetworkValue",
-      "device": "Clock",
+      "device": "CLOCK",
       "name": "Pilot Timer Seconds",
       "description": "Numeric Value Between 0 and 1",
       "exports": [
@@ -4348,14 +4464,37 @@
       "unit": "Numeric"
     },
     {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "CLOCK",
+      "name": "RIO Clock Timer",
+      "description": "Current State of This Button",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "4153"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "27",
+          "pushId": "3711",
+          "pushValue": "1.0",
+          "releaseId": "3711",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
       "heliosType": "DCS.Common.Axis",
-      "device": "Clock",
+      "device": "CLOCK",
       "name": "Rio Clock Wind",
       "description": "Current Value of This Potentiometer",
       "exports": [
         {
           "format": "%.3f",
-          "id": "1052"
+          "id": "1052",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -4371,7 +4510,7 @@
     },
     {
       "heliosType": "DCS.Common.NetworkValue",
-      "device": "Clock",
+      "device": "CLOCK",
       "name": "Rio Hours",
       "description": "Numeric Value Between 0 and 1",
       "exports": [
@@ -4384,7 +4523,7 @@
     },
     {
       "heliosType": "DCS.Common.NetworkValue",
-      "device": "Clock",
+      "device": "CLOCK",
       "name": "Rio Minutes",
       "description": "Numeric Value Between 0 and 1",
       "exports": [
@@ -4397,42 +4536,7 @@
     },
     {
       "heliosType": "DCS.Common.NetworkValue",
-      "device": "Clock",
-      "name": "Rio Timer Minutes",
-      "description": "Numeric Value Between 0 and 1",
-      "exports": [
-        {
-          "format": "%.3f",
-          "id": "4153"
-        }
-      ],
-      "unit": "Numeric"
-    },
-    {
-      "heliosType": "DCS.Common.PushButton",
-      "device": "Clock",
-      "name": "Rio Timer Reset",
-      "description": "Current State of This Button",
-      "exports": [
-        {
-          "format": "%.1f",
-          "isExportedEveryFrame": false,
-          "id": "1053"
-        }
-      ],
-      "buttons": [
-        {
-          "deviceId": "27",
-          "pushId": "3711",
-          "pushValue": "1.0",
-          "releaseId": "3711",
-          "releaseValue": "0.0"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.NetworkValue",
-      "device": "Clock",
+      "device": "CLOCK",
       "name": "Rio Timer Seconds",
       "description": "Numeric Value Between 0 and 1",
       "exports": [
@@ -4535,7 +4639,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "15005"
+          "id": "15005",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -4662,6 +4767,18 @@
     {
       "heliosType": "DCS.Common.FlagValue",
       "device": "Cockpit Mechanics",
+      "name": "ALTI Radar BU on off",
+      "description": "Current State of This Indicator",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "767"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Cockpit Mechanics",
       "name": "AOA Indicator Off Flag",
       "description": "Current State of This Indicator",
       "exports": [
@@ -4679,7 +4796,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "939"
+          "id": "939",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "12",
@@ -4740,7 +4858,7 @@
         {
           "format": "%.1f",
           "isExportedEveryFrame": false,
-          "id": "29115"
+          "id": "29326"
         }
       ],
       "buttons": [
@@ -4762,7 +4880,7 @@
         {
           "format": "%.1f",
           "isExportedEveryFrame": false,
-          "id": "29113"
+          "id": "29359"
         }
       ],
       "buttons": [
@@ -4783,7 +4901,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "15008"
+          "id": "15008",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -4798,6 +4917,18 @@
       }
     },
     {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Cockpit Mechanics",
+      "name": "DECM LIGHT",
+      "description": "Current State of This Indicator",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "493"
+        }
+      ]
+    },
+    {
       "heliosType": "DCS.Common.Switch",
       "device": "Cockpit Mechanics",
       "name": "Ejection Command Lever",
@@ -4805,7 +4936,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "2049"
+          "id": "2049",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "12",
@@ -4909,7 +5041,7 @@
         {
           "format": "%.1f",
           "isExportedEveryFrame": false,
-          "id": "29117"
+          "id": "29921"
         }
       ],
       "buttons": [
@@ -4931,7 +5063,7 @@
         {
           "format": "%.1f",
           "isExportedEveryFrame": false,
-          "id": "29116"
+          "id": "29920"
         }
       ],
       "buttons": [
@@ -4964,7 +5096,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "15009"
+          "id": "15009",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -5022,7 +5155,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "15007"
+          "id": "15007",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -5084,7 +5218,7 @@
         {
           "format": "%.1f",
           "isExportedEveryFrame": false,
-          "id": "29147"
+          "id": "29391"
         }
       ],
       "buttons": [
@@ -5130,7 +5264,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "404"
+          "id": "404",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "12",
@@ -5203,7 +5338,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "8114"
+          "id": "8114",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "12",
@@ -5308,7 +5444,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "923"
+          "id": "923",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "12",
@@ -5333,7 +5470,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "919"
+          "id": "919",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "12",
@@ -5358,7 +5496,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "916"
+          "id": "916",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "12",
@@ -5388,7 +5527,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "913"
+          "id": "913",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "12",
@@ -5418,7 +5558,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "938"
+          "id": "938",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "12",
@@ -5443,7 +5584,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "924"
+          "id": "924",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -5513,7 +5655,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "192"
+          "id": "192",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -5535,7 +5678,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "498"
+          "id": "498",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "12",
@@ -5560,7 +5704,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "193"
+          "id": "193",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -5575,6 +5720,18 @@
       }
     },
     {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "Cockpit Mechanics",
+      "name": "RIO LAUNCH LIGHT",
+      "description": "Current State of This Indicator",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "492"
+        }
+      ]
+    },
+    {
       "heliosType": "DCS.Common.Axis",
       "device": "Cockpit Mechanics",
       "name": "Rio NVG Knob",
@@ -5582,7 +5739,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "194"
+          "id": "194",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -5604,7 +5762,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "119"
+          "id": "119",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "12",
@@ -5629,7 +5788,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "159"
+          "id": "159",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "12",
@@ -5867,7 +6027,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "918"
+          "id": "918",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "12",
@@ -5892,7 +6053,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "940"
+          "id": "940",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "12",
@@ -5917,7 +6079,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "950"
+          "id": "950",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -5939,7 +6102,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "921"
+          "id": "921",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "12",
@@ -5969,7 +6133,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "942"
+          "id": "942",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "12",
@@ -5992,6 +6157,18 @@
       ]
     },
     {
+      "heliosType": "DCS.Common.FlagValue",
+      "device": "COCKPITMECHANICS",
+      "name": "BU PLT lamp master arm",
+      "description": "Current State of This Indicator",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "961"
+        }
+      ]
+    },
+    {
       "heliosType": "DCS.Common.Axis",
       "device": "Counter Measures",
       "name": "ALE 47 Brightness",
@@ -5999,7 +6176,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "882"
+          "id": "882",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -6197,7 +6375,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "883"
+          "id": "883",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "5",
@@ -6222,7 +6401,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "884"
+          "id": "884",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "5",
@@ -6247,7 +6427,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "870"
+          "id": "870",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "5",
@@ -6272,7 +6453,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "871"
+          "id": "871",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "5",
@@ -6297,7 +6479,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "881"
+          "id": "881",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -6319,7 +6502,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "880"
+          "id": "880",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -6341,7 +6525,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "215"
+          "id": "215",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -6350,7 +6535,7 @@
       "argumentMax": "1.0",
       "actions": {
         "set": {
-          "deviceId": "12",
+          "deviceId": "5",
           "actionId": "3300"
         }
       }
@@ -6363,7 +6548,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "214"
+          "id": "214",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -6372,7 +6558,7 @@
       "argumentMax": "1.0",
       "actions": {
         "set": {
-          "deviceId": "12",
+          "deviceId": "5",
           "actionId": "3298"
         }
       }
@@ -6404,6 +6590,29 @@
       "unit": "Numeric"
     },
     {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Counter Measures",
+      "name": "Chaff Counter Control",
+      "description": "Current Value of This Potentiometer",
+      "exports": [
+        {
+          "format": "%.3f",
+          "id": "386",
+          "isExportedEveryFrame": false
+        }
+      ],
+      "loop": false,
+      "argumentValue": "0.025",
+      "argumentMin": "0.0",
+      "argumentMax": "1.0",
+      "actions": {
+        "set": {
+          "deviceId": "5",
+          "actionId": "3275"
+        }
+      }
+    },
+    {
       "heliosType": "DCS.Common.Switch",
       "device": "Counter Measures",
       "name": "Chaff Switch",
@@ -6411,7 +6620,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "389"
+          "id": "389",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "5",
@@ -6462,12 +6672,13 @@
     {
       "heliosType": "DCS.Common.Axis",
       "device": "Counter Measures",
-      "name": "Flare Intv Wheel",
+      "name": "Flare Counter Control",
       "description": "Current Value of This Potentiometer",
       "exports": [
         {
           "format": "%.3f",
-          "id": "210"
+          "id": "385",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -6476,7 +6687,30 @@
       "argumentMax": "1.0",
       "actions": {
         "set": {
-          "deviceId": "12",
+          "deviceId": "5",
+          "actionId": "3277"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Counter Measures",
+      "name": "Flare Intv Wheel",
+      "description": "Current Value of This Potentiometer",
+      "exports": [
+        {
+          "format": "%.3f",
+          "id": "210",
+          "isExportedEveryFrame": false
+        }
+      ],
+      "loop": false,
+      "argumentValue": "0.025",
+      "argumentMin": "0.0",
+      "argumentMax": "1.0",
+      "actions": {
+        "set": {
+          "deviceId": "5",
           "actionId": "3308"
         }
       }
@@ -6489,7 +6723,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "398"
+          "id": "398",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "5",
@@ -6519,7 +6754,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "205"
+          "id": "205",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -6528,7 +6764,7 @@
       "argumentMax": "1.0",
       "actions": {
         "set": {
-          "deviceId": "12",
+          "deviceId": "5",
           "actionId": "3306"
         }
       }
@@ -6541,7 +6777,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "388"
+          "id": "388",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "5",
@@ -6592,12 +6829,13 @@
     {
       "heliosType": "DCS.Common.Axis",
       "device": "Counter Measures",
-      "name": "Jammer Intv 100s",
+      "name": "Jammer Counter Control",
       "description": "Current Value of This Potentiometer",
       "exports": [
         {
           "format": "%.3f",
-          "id": "213"
+          "id": "399",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -6606,7 +6844,30 @@
       "argumentMax": "1.0",
       "actions": {
         "set": {
-          "deviceId": "12",
+          "deviceId": "5",
+          "actionId": "3279"
+        }
+      }
+    },
+    {
+      "heliosType": "DCS.Common.Axis",
+      "device": "Counter Measures",
+      "name": "Jammer Intv 100s",
+      "description": "Current Value of This Potentiometer",
+      "exports": [
+        {
+          "format": "%.3f",
+          "id": "213",
+          "isExportedEveryFrame": false
+        }
+      ],
+      "loop": false,
+      "argumentValue": "0.025",
+      "argumentMin": "0.0",
+      "argumentMax": "1.0",
+      "actions": {
+        "set": {
+          "deviceId": "5",
           "actionId": "3293"
         }
       }
@@ -6619,7 +6880,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "212"
+          "id": "212",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -6628,7 +6890,7 @@
       "argumentMax": "1.0",
       "actions": {
         "set": {
-          "deviceId": "12",
+          "deviceId": "5",
           "actionId": "3291"
         }
       }
@@ -6641,7 +6903,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "211"
+          "id": "211",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -6650,7 +6913,7 @@
       "argumentMax": "1.0",
       "actions": {
         "set": {
-          "deviceId": "12",
+          "deviceId": "5",
           "actionId": "3289"
         }
       }
@@ -6663,7 +6926,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "204"
+          "id": "204",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -6672,7 +6936,7 @@
       "argumentMax": "1.0",
       "actions": {
         "set": {
-          "deviceId": "12",
+          "deviceId": "5",
           "actionId": "3295"
         }
       }
@@ -6685,7 +6949,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "387"
+          "id": "387",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "5",
@@ -6715,7 +6980,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "206"
+          "id": "206",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -6724,7 +6990,7 @@
       "argumentMax": "1.0",
       "actions": {
         "set": {
-          "deviceId": "12",
+          "deviceId": "5",
           "actionId": "3281"
         }
       }
@@ -6737,7 +7003,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "207"
+          "id": "207",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -6746,7 +7013,7 @@
       "argumentMax": "1.0",
       "actions": {
         "set": {
-          "deviceId": "12",
+          "deviceId": "5",
           "actionId": "3283"
         }
       }
@@ -6759,10 +7026,11 @@
       "exports": [
         {
           "format": "%0.1f",
+          "isExportedEveryFrame": false,
           "id": "216"
         }
       ],
-      "deviceId": "12",
+      "deviceId": "5",
       "positions": [
         {
           "argumentValue": "1.0",
@@ -6784,7 +7052,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "390"
+          "id": "390",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "5",
@@ -6814,7 +7083,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "209"
+          "id": "209",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -6823,7 +7093,7 @@
       "argumentMax": "1.0",
       "actions": {
         "set": {
-          "deviceId": "12",
+          "deviceId": "5",
           "actionId": "3285"
         }
       }
@@ -6836,7 +7106,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "208"
+          "id": "208",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -6845,7 +7116,7 @@
       "argumentMax": "1.0",
       "actions": {
         "set": {
-          "deviceId": "12",
+          "deviceId": "5",
           "actionId": "3287"
         }
       }
@@ -6858,7 +7129,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "202"
+          "id": "202",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -6867,7 +7139,7 @@
       "argumentMax": "1.0",
       "actions": {
         "set": {
-          "deviceId": "12",
+          "deviceId": "5",
           "actionId": "3304"
         }
       }
@@ -6880,7 +7152,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "203"
+          "id": "203",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -6889,7 +7162,7 @@
       "argumentMax": "1.0",
       "actions": {
         "set": {
-          "deviceId": "12",
+          "deviceId": "5",
           "actionId": "3302"
         }
       }
@@ -6902,7 +7175,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "391"
+          "id": "391",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "5",
@@ -6949,7 +7223,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "96"
+          "id": "96",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "52",
@@ -6975,11 +7250,12 @@
       "heliosType": "DCS.Common.Axis",
       "device": "Datalink",
       "name": "Becon Mode Knob",
-      "description": "Current Position of This Switch",
+      "description": "Current Value of This Potentiometer",
       "exports": [
         {
           "format": "%.3f",
-          "id": "118"
+          "id": "118",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -7001,7 +7277,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "175"
+          "id": "175",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "52",
@@ -7026,7 +7303,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "191"
+          "id": "191",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "52",
@@ -7056,7 +7334,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "222"
+          "id": "222",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -7078,7 +7357,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "223"
+          "id": "223",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -7100,7 +7380,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "196"
+          "id": "196",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -7122,7 +7403,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "195"
+          "id": "195",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -7144,7 +7426,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "197"
+          "id": "197",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -7166,7 +7449,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "177"
+          "id": "177",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "52",
@@ -7191,7 +7475,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "413"
+          "id": "413",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "52",
@@ -7221,7 +7506,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "176"
+          "id": "176",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "52",
@@ -7246,7 +7532,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "151"
+          "id": "151",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -7268,7 +7555,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "869"
+          "id": "869",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "44",
@@ -7293,7 +7581,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "866"
+          "id": "866",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "44",
@@ -7323,7 +7612,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "868"
+          "id": "868",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "44",
@@ -7353,7 +7643,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "867"
+          "id": "867",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "44",
@@ -7383,7 +7674,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "926"
+          "id": "926",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "15",
@@ -7408,7 +7700,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "927"
+          "id": "927",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "15",
@@ -7433,7 +7726,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "937"
+          "id": "937",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "15",
@@ -7463,7 +7757,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "936"
+          "id": "936",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "15",
@@ -7493,7 +7788,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "908"
+          "id": "908",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "15",
@@ -7518,7 +7814,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "902"
+          "id": "902",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "15",
@@ -7543,7 +7840,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "907"
+          "id": "907",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "15",
@@ -7568,7 +7866,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "903"
+          "id": "903",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "15",
@@ -7593,7 +7892,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "2105"
+          "id": "2105",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "20",
@@ -7618,7 +7918,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "16005"
+          "id": "16005",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "20",
@@ -7643,7 +7944,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "16006"
+          "id": "16006",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "20",
@@ -7668,7 +7970,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "941"
+          "id": "941",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "20",
@@ -7698,7 +8001,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "2102"
+          "id": "2102",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "20",
@@ -7728,7 +8032,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "16007"
+          "id": "16007",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "20",
@@ -7753,7 +8058,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "16008"
+          "id": "16008",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "20",
@@ -7778,7 +8084,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "2104"
+          "id": "2104",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "20",
@@ -7808,7 +8115,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "2103"
+          "id": "2103",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "20",
@@ -7838,7 +8146,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "12300"
+          "id": "12300",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "20",
@@ -7863,7 +8172,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "12301"
+          "id": "12301",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "20",
@@ -7932,7 +8242,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "225"
+          "id": "225",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -7954,7 +8265,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "1074"
+          "id": "1074",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "21",
@@ -7979,7 +8291,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "1094"
+          "id": "1094",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "21",
@@ -8004,7 +8317,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "1095"
+          "id": "1095",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "21",
@@ -8078,7 +8392,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "1076"
+          "id": "1076",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "21",
@@ -8186,7 +8501,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "1050"
+          "id": "1050",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -8390,7 +8706,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "1073"
+          "id": "1073",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "21",
@@ -8472,7 +8789,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "1001"
+          "id": "1001",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "21",
@@ -8502,7 +8820,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "1072"
+          "id": "1072",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "18",
@@ -8532,7 +8851,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "633"
+          "id": "633",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "18",
@@ -8557,7 +8877,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "238"
+          "id": "238",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "18",
@@ -8582,7 +8903,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "326"
+          "id": "326",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "18",
@@ -8607,7 +8929,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "496"
+          "id": "496",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "18",
@@ -8632,7 +8955,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "497"
+          "id": "497",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "18",
@@ -8657,7 +8981,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "1075"
+          "id": "1075",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "18",
@@ -8710,7 +9035,7 @@
         {
           "format": "%.1f",
           "isExportedEveryFrame": false,
-          "id": "29110"
+          "id": "29415"
         }
       ],
       "buttons": [
@@ -8879,7 +9204,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "1043"
+          "id": "1043",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -8901,7 +9227,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "1040"
+          "id": "1040",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -8923,7 +9250,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "1017"
+          "id": "1017",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "41",
@@ -8948,7 +9276,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "1039"
+          "id": "1039",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -8970,7 +9299,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "1016"
+          "id": "1016",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "41",
@@ -9000,7 +9330,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "1008"
+          "id": "1008",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "41",
@@ -9091,7 +9422,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "761"
+          "id": "761",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -9135,7 +9467,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "1020"
+          "id": "1020",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "40",
@@ -9194,7 +9527,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "1021"
+          "id": "1021",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "40",
@@ -9219,7 +9553,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "1009"
+          "id": "1009",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "40",
@@ -9244,7 +9579,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "1034"
+          "id": "1034",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -9288,7 +9624,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "1007"
+          "id": "1007",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -9354,7 +9691,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "1037"
+          "id": "1037",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": true,
@@ -9402,7 +9740,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "615"
+          "id": "615",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "13",
@@ -9427,7 +9766,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "928"
+          "id": "928",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "13",
@@ -9470,7 +9810,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "631"
+          "id": "631",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "13",
@@ -9495,7 +9836,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "629"
+          "id": "629",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "13",
@@ -9520,7 +9862,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "630"
+          "id": "630",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "13",
@@ -9559,7 +9902,7 @@
         {
           "format": "%.1f",
           "isExportedEveryFrame": false,
-          "id": "29153"
+          "id": "29123"
         }
       ],
       "buttons": [
@@ -9581,7 +9924,7 @@
         {
           "format": "%.1f",
           "isExportedEveryFrame": false,
-          "id": "29154"
+          "id": "29124"
         }
       ],
       "buttons": [
@@ -9603,7 +9946,7 @@
         {
           "format": "%.1f",
           "isExportedEveryFrame": false,
-          "id": "29140"
+          "id": "29157"
         }
       ],
       "buttons": [
@@ -9625,7 +9968,7 @@
         {
           "format": "%.1f",
           "isExportedEveryFrame": false,
-          "id": "29144"
+          "id": "29905"
         }
       ],
       "buttons": [
@@ -9647,7 +9990,7 @@
         {
           "format": "%.1f",
           "isExportedEveryFrame": false,
-          "id": "29155"
+          "id": "29122"
         }
       ],
       "buttons": [
@@ -9668,7 +10011,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "116"
+          "id": "116",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "2",
@@ -9698,7 +10042,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "115"
+          "id": "115",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "2",
@@ -9750,7 +10095,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "150"
+          "id": "150",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "2",
@@ -9775,7 +10121,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "2040"
+          "id": "2040",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -9797,7 +10144,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "2045"
+          "id": "2045",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "2",
@@ -9827,7 +10175,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "2044"
+          "id": "2044",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "2",
@@ -9857,7 +10206,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "2048"
+          "id": "2048",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -9879,7 +10229,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "2039"
+          "id": "2039",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -9901,7 +10252,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "401"
+          "id": "401",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "2",
@@ -9931,7 +10283,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "402"
+          "id": "402",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "2",
@@ -9961,7 +10314,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "382"
+          "id": "382",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "2",
@@ -9991,7 +10345,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "2138"
+          "id": "2138",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -10013,7 +10368,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "380"
+          "id": "380",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "2",
@@ -10038,7 +10394,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "400"
+          "id": "400",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -10060,7 +10417,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "381"
+          "id": "381",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "2",
@@ -10083,6 +10441,54 @@
       ]
     },
     {
+      "heliosType": "DCS.Common.Switch",
+      "device": "IFF",
+      "name": "IFF M4",
+      "description": "Current Position of This Switch",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "181"
+        }
+      ],
+      "deviceId": "64",
+      "positions": [
+        {
+          "argumentValue": "0.0",
+          "name": "",
+          "actionId": "3633"
+        },
+        {
+          "argumentValue": "1.0",
+          "name": "",
+          "actionId": "3633"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "IFF",
+      "name": "Reply Button",
+      "description": "Current State of This Button",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "186"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "64",
+          "pushId": "3637",
+          "pushValue": "1.0",
+          "releaseId": "3637",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
       "heliosType": "DCS.Common.Axis",
       "device": "IFF",
       "name": "Rio AAI 1xxx",
@@ -10090,7 +10496,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "894"
+          "id": "894",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -10136,7 +10543,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "892"
+          "id": "892",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "64",
@@ -10161,7 +10569,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "893"
+          "id": "893",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -10183,7 +10592,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "891"
+          "id": "891",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "64",
@@ -10213,7 +10623,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "895"
+          "id": "895",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -10235,7 +10646,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "896"
+          "id": "896",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -10257,7 +10669,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "897"
+          "id": "897",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -10279,7 +10692,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "161"
+          "id": "161",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "71",
@@ -10309,7 +10723,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "183"
+          "id": "183",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -10331,7 +10746,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "167"
+          "id": "167",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "71",
@@ -10361,7 +10777,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "162"
+          "id": "162",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "71",
@@ -10391,7 +10808,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "163"
+          "id": "163",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "71",
@@ -10421,7 +10839,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "164"
+          "id": "164",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "71",
@@ -10444,31 +10863,6 @@
       ]
     },
     {
-      "heliosType": "DCS.Common.Switch",
-      "device": "IFF",
-      "name": "Rio M4 Switch",
-      "description": "Current Position of This Switch",
-      "exports": [
-        {
-          "format": "%0.1f",
-          "id": "181"
-        }
-      ],
-      "deviceId": "71",
-      "positions": [
-        {
-          "argumentValue": "1.0",
-          "name": "On",
-          "actionId": "3633"
-        },
-        {
-          "argumentValue": "0.0",
-          "name": "Off",
-          "actionId": "3633"
-        }
-      ]
-    },
-    {
       "heliosType": "DCS.Common.Axis",
       "device": "IFF",
       "name": "Rio Master Knob",
@@ -10476,7 +10870,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "184"
+          "id": "184",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -10498,7 +10893,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "165"
+          "id": "165",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "71",
@@ -10528,7 +10924,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "201"
+          "id": "201",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -10550,7 +10947,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "200"
+          "id": "200",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -10572,7 +10970,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "199"
+          "id": "199",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -10594,7 +10993,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "198"
+          "id": "198",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -10616,7 +11016,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "2261"
+          "id": "2261",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -10638,7 +11039,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "2262"
+          "id": "2262",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -10660,7 +11062,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "166"
+          "id": "166",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "71",
@@ -10683,28 +11086,6 @@
       ]
     },
     {
-      "heliosType": "DCS.Common.PushButton",
-      "device": "IFF",
-      "name": "Rio Reply Button",
-      "description": "Current State of This Button",
-      "exports": [
-        {
-          "format": "%.1f",
-          "isExportedEveryFrame": false,
-          "id": "186"
-        }
-      ],
-      "buttons": [
-        {
-          "deviceId": "71",
-          "pushId": "3637",
-          "pushValue": "1.0",
-          "releaseId": "3637",
-          "releaseValue": "0.0"
-        }
-      ]
-    },
-    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "IFF",
       "name": "Rio Reply Light",
@@ -10717,28 +11098,6 @@
       ]
     },
     {
-      "heliosType": "DCS.Common.PushButton",
-      "device": "IFF",
-      "name": "Rio Test Button",
-      "description": "Current State of This Button",
-      "exports": [
-        {
-          "format": "%.1f",
-          "isExportedEveryFrame": false,
-          "id": "185"
-        }
-      ],
-      "buttons": [
-        {
-          "deviceId": "71",
-          "pushId": "3636",
-          "pushValue": "1.0",
-          "releaseId": "3636",
-          "releaseValue": "0.0"
-        }
-      ]
-    },
-    {
       "heliosType": "DCS.Common.FlagValue",
       "device": "IFF",
       "name": "Rio Test Light",
@@ -10747,6 +11106,28 @@
         {
           "format": "%0.3f",
           "id": "8052"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "IFF",
+      "name": "Tes Button",
+      "description": "Current State of This Button",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "185"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "64",
+          "pushId": "3636",
+          "pushValue": "1.0",
+          "releaseId": "3636",
+          "releaseValue": "0.0"
         }
       ]
     },
@@ -10780,7 +11161,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "912"
+          "id": "912",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -10802,7 +11184,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "910"
+          "id": "910",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "48",
@@ -10827,7 +11210,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "50"
+          "id": "50",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -10849,7 +11233,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "769"
+          "id": "769",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "50",
@@ -10895,7 +11280,7 @@
         {
           "format": "%.1f",
           "isExportedEveryFrame": false,
-          "id": "29136"
+          "id": "29734"
         }
       ],
       "buttons": [
@@ -10917,7 +11302,7 @@
         {
           "format": "%.1f",
           "isExportedEveryFrame": false,
-          "id": "29126"
+          "id": "29748"
         }
       ],
       "buttons": [
@@ -10939,7 +11324,7 @@
         {
           "format": "%.1f",
           "isExportedEveryFrame": false,
-          "id": "29143"
+          "id": "29750"
         }
       ],
       "buttons": [
@@ -10961,7 +11346,7 @@
         {
           "format": "%.1f",
           "isExportedEveryFrame": false,
-          "id": "29172"
+          "id": "29751"
         }
       ],
       "buttons": [
@@ -10983,7 +11368,7 @@
         {
           "format": "%.1f",
           "isExportedEveryFrame": false,
-          "id": "29118"
+          "id": "29707"
         }
       ],
       "buttons": [
@@ -11005,7 +11390,7 @@
         {
           "format": "%.1f",
           "isExportedEveryFrame": false,
-          "id": "29119"
+          "id": "29708"
         }
       ],
       "buttons": [
@@ -11027,7 +11412,7 @@
         {
           "format": "%.1f",
           "isExportedEveryFrame": false,
-          "id": "29120"
+          "id": "29709"
         }
       ],
       "buttons": [
@@ -11049,7 +11434,7 @@
         {
           "format": "%.1f",
           "isExportedEveryFrame": false,
-          "id": "29121"
+          "id": "29710"
         }
       ],
       "buttons": [
@@ -11071,7 +11456,7 @@
         {
           "format": "%.1f",
           "isExportedEveryFrame": false,
-          "id": "29122"
+          "id": "29711"
         }
       ],
       "buttons": [
@@ -11093,7 +11478,7 @@
         {
           "format": "%.1f",
           "isExportedEveryFrame": false,
-          "id": "29123"
+          "id": "29712"
         }
       ],
       "buttons": [
@@ -11115,7 +11500,7 @@
         {
           "format": "%.1f",
           "isExportedEveryFrame": false,
-          "id": "29124"
+          "id": "29713"
         }
       ],
       "buttons": [
@@ -11137,7 +11522,7 @@
         {
           "format": "%.1f",
           "isExportedEveryFrame": false,
-          "id": "29125"
+          "id": "29714"
         }
       ],
       "buttons": [
@@ -11159,12 +11544,12 @@
         {
           "format": "%.1f",
           "isExportedEveryFrame": false,
-          "id": "29146"
+          "id": "29874"
         }
       ],
       "buttons": [
         {
-          "deviceId": "2",
+          "deviceId": "62",
           "pushId": "3698",
           "pushValue": "1.0",
           "releaseId": "3698",
@@ -11181,15 +11566,15 @@
         {
           "format": "%.1f",
           "isExportedEveryFrame": false,
-          "id": "29141"
+          "id": "29741"
         }
       ],
       "buttons": [
         {
           "deviceId": "62",
-          "pushId": "3749",
+          "pushId": "3584",
           "pushValue": "1.0",
-          "releaseId": "3749",
+          "releaseId": "3584",
           "releaseValue": "0.0"
         }
       ]
@@ -11203,7 +11588,7 @@
         {
           "format": "%.1f",
           "isExportedEveryFrame": false,
-          "id": "29168"
+          "id": "29742"
         }
       ],
       "buttons": [
@@ -11225,7 +11610,7 @@
         {
           "format": "%.1f",
           "isExportedEveryFrame": false,
-          "id": "29169"
+          "id": "29743"
         }
       ],
       "buttons": [
@@ -11247,7 +11632,7 @@
         {
           "format": "%.1f",
           "isExportedEveryFrame": false,
-          "id": "29127"
+          "id": "29749"
         }
       ],
       "buttons": [
@@ -11269,12 +11654,12 @@
         {
           "format": "%.1f",
           "isExportedEveryFrame": false,
-          "id": "29145"
+          "id": "29872"
         }
       ],
       "buttons": [
         {
-          "deviceId": "2",
+          "deviceId": "62",
           "pushId": "3671",
           "pushValue": "1.0",
           "releaseId": "3671",
@@ -11291,7 +11676,7 @@
         {
           "format": "%.1f",
           "isExportedEveryFrame": false,
-          "id": "29142"
+          "id": "29861"
         }
       ],
       "buttons": [
@@ -11313,7 +11698,7 @@
         {
           "format": "%.1f",
           "isExportedEveryFrame": false,
-          "id": "29165"
+          "id": "29738"
         }
       ],
       "buttons": [
@@ -11335,7 +11720,7 @@
         {
           "format": "%.1f",
           "isExportedEveryFrame": false,
-          "id": "29166"
+          "id": "29739"
         }
       ],
       "buttons": [
@@ -11357,7 +11742,7 @@
         {
           "format": "%.1f",
           "isExportedEveryFrame": false,
-          "id": "29163"
+          "id": "29736"
         }
       ],
       "buttons": [
@@ -11379,7 +11764,7 @@
         {
           "format": "%.1f",
           "isExportedEveryFrame": false,
-          "id": "29167"
+          "id": "29740"
         }
       ],
       "buttons": [
@@ -11401,7 +11786,7 @@
         {
           "format": "%.1f",
           "isExportedEveryFrame": false,
-          "id": "29164"
+          "id": "29737"
         }
       ],
       "buttons": [
@@ -11423,7 +11808,7 @@
         {
           "format": "%.1f",
           "isExportedEveryFrame": false,
-          "id": "29162"
+          "id": "29735"
         }
       ],
       "buttons": [
@@ -11445,7 +11830,7 @@
         {
           "format": "%.1f",
           "isExportedEveryFrame": false,
-          "id": "29171"
+          "id": "29747"
         }
       ],
       "buttons": [
@@ -11467,7 +11852,7 @@
         {
           "format": "%.1f",
           "isExportedEveryFrame": false,
-          "id": "29128"
+          "id": "29723"
         }
       ],
       "buttons": [
@@ -11489,7 +11874,7 @@
         {
           "format": "%.1f",
           "isExportedEveryFrame": false,
-          "id": "29129"
+          "id": "29724"
         }
       ],
       "buttons": [
@@ -11511,7 +11896,7 @@
         {
           "format": "%.1f",
           "isExportedEveryFrame": false,
-          "id": "29130"
+          "id": "29725"
         }
       ],
       "buttons": [
@@ -11533,7 +11918,7 @@
         {
           "format": "%.1f",
           "isExportedEveryFrame": false,
-          "id": "29131"
+          "id": "29726"
         }
       ],
       "buttons": [
@@ -11555,7 +11940,7 @@
         {
           "format": "%.1f",
           "isExportedEveryFrame": false,
-          "id": "29134"
+          "id": "29729"
         }
       ],
       "buttons": [
@@ -11577,7 +11962,7 @@
         {
           "format": "%.1f",
           "isExportedEveryFrame": false,
-          "id": "29132"
+          "id": "29727"
         }
       ],
       "buttons": [
@@ -11599,7 +11984,7 @@
         {
           "format": "%.1f",
           "isExportedEveryFrame": false,
-          "id": "29135"
+          "id": "29730"
         }
       ],
       "buttons": [
@@ -11621,7 +12006,7 @@
         {
           "format": "%.1f",
           "isExportedEveryFrame": false,
-          "id": "29133"
+          "id": "29728"
         }
       ],
       "buttons": [
@@ -11643,7 +12028,7 @@
         {
           "format": "%.1f",
           "isExportedEveryFrame": false,
-          "id": "29114"
+          "id": "29706"
         }
       ],
       "buttons": [
@@ -11665,7 +12050,7 @@
         {
           "format": "%.1f",
           "isExportedEveryFrame": false,
-          "id": "29170"
+          "id": "29746"
         }
       ],
       "buttons": [
@@ -11687,7 +12072,7 @@
         {
           "format": "%.1f",
           "isExportedEveryFrame": false,
-          "id": "29160"
+          "id": "29731"
         }
       ],
       "buttons": [
@@ -11709,7 +12094,7 @@
         {
           "format": "%.1f",
           "isExportedEveryFrame": false,
-          "id": "29161"
+          "id": "29732"
         }
       ],
       "buttons": [
@@ -11723,17 +12108,36 @@
       ]
     },
     {
-      "heliosType": "DCS.Common.NetworkValue",
+      "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Lantirn",
       "name": "FLIR TCS Light",
-      "description": "Numeric Value Between 0 and 1",
+      "description": "Mapped Output from lua min/max to desired range",
       "exports": [
         {
           "format": "%.3f",
           "id": "678"
         }
       ],
-      "unit": "Numeric"
+      "unit": "Numeric",
+      "valueDescription": "",
+      "exposeunscaledvalue": true,
+      "calibration": {
+        "points": [
+          {
+            "value": "0.0",
+            "mappedValue": "1.0"
+          },
+          {
+            "value": "0.4",
+            "mappedValue": "2"
+          },
+          {
+            "value": "0.6",
+            "mappedValue": "3"
+          }
+        ],
+        "precision": "5"
+      }
     },
     {
       "heliosType": "DCS.Common.PushButton",
@@ -11758,30 +12162,86 @@
       ]
     },
     {
-      "heliosType": "DCS.Common.NetworkValue",
+      "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Lantirn",
       "name": "IBIT Light",
-      "description": "Numeric Value Between 0 and 1",
+      "description": "Mapped Output from lua min/max to desired range",
       "exports": [
         {
           "format": "%.3f",
           "id": "679"
         }
       ],
-      "unit": "Numeric"
+      "unit": "Numeric",
+      "valueDescription": "",
+      "exposeunscaledvalue": true,
+      "calibration": {
+        "points": [
+          {
+            "value": "0.0",
+            "mappedValue": "1.0"
+          },
+          {
+            "value": "0.5",
+            "mappedValue": "2"
+          }
+        ],
+        "precision": "5"
+      }
     },
     {
-      "heliosType": "DCS.Common.NetworkValue",
+      "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Lantirn",
       "name": "IMU GPS Light",
-      "description": "Numeric Value Between 0 and 1",
+      "description": "Mapped Output from lua min/max to desired range",
       "exports": [
         {
           "format": "%.3f",
           "id": "674"
         }
       ],
-      "unit": "Numeric"
+      "unit": "Numeric",
+      "valueDescription": "",
+      "exposeunscaledvalue": true,
+      "calibration": {
+        "points": [
+          {
+            "value": "0.0",
+            "mappedValue": "1.0"
+          },
+          {
+            "value": "0.4",
+            "mappedValue": "2"
+          },
+          {
+            "value": "0.6",
+            "mappedValue": "3"
+          }
+        ],
+        "precision": "5"
+      }
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "LANTIRN",
+      "name": "LANTIRN Operate Mode",
+      "description": "Current State of This Button",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "669"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "7",
+          "pushId": "3704",
+          "pushValue": "1.0",
+          "releaseId": "3704",
+          "releaseValue": "0.0"
+        }
+      ]
     },
     {
       "heliosType": "DCS.Common.Switch",
@@ -11791,7 +12251,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "668"
+          "id": "668",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "24",
@@ -11805,103 +12266,164 @@
           "argumentValue": "0.0",
           "name": "Laser",
           "actionId": "3516"
-        },
-        {
-          "argumentValue": "-1.0",
-          "name": "Safe",
-          "actionId": "3516"
         }
       ]
     },
     {
-      "heliosType": "DCS.Common.NetworkValue",
+      "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Lantirn",
       "name": "Laser Armed",
-      "description": "Numeric Value Between 0 and 1",
+      "description": "Mapped Output from lua min/max to desired range",
       "exports": [
         {
           "format": "%.3f",
           "id": "680"
         }
       ],
-      "unit": "Numeric"
+      "unit": "Numeric",
+      "valueDescription": "",
+      "exposeunscaledvalue": true,
+      "calibration": {
+        "points": [
+          {
+            "value": "0.0",
+            "mappedValue": "1.0"
+          },
+          {
+            "value": "0.5",
+            "mappedValue": "2"
+          }
+        ],
+        "precision": "5"
+      }
     },
     {
-      "heliosType": "DCS.Common.NetworkValue",
+      "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Lantirn",
       "name": "Laser Servo Light",
-      "description": "Numeric Value Between 0 and 1",
+      "description": "Mapped Output from lua min/max to desired range",
       "exports": [
         {
           "format": "%.3f",
           "id": "677"
         }
       ],
-      "unit": "Numeric"
+      "unit": "Numeric",
+      "valueDescription": "",
+      "exposeunscaledvalue": true,
+      "calibration": {
+        "points": [
+          {
+            "value": "0.0",
+            "mappedValue": "1.0"
+          },
+          {
+            "value": "0.4",
+            "mappedValue": "2"
+          },
+          {
+            "value": "0.6",
+            "mappedValue": "3"
+          }
+        ],
+        "precision": "5"
+      }
     },
     {
-      "heliosType": "DCS.Common.NetworkValue",
+      "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Lantirn",
       "name": "LGP FLIR Light",
-      "description": "Numeric Value Between 0 and 1",
+      "description": "Mapped Output from lua min/max to desired range",
       "exports": [
         {
           "format": "%.3f",
           "id": "675"
         }
       ],
-      "unit": "Numeric"
+      "unit": "Numeric",
+      "valueDescription": "",
+      "exposeunscaledvalue": true,
+      "calibration": {
+        "points": [
+          {
+            "value": "0.0",
+            "mappedValue": "1.0"
+          },
+          {
+            "value": "0.4",
+            "mappedValue": "2"
+          },
+          {
+            "value": "0.6",
+            "mappedValue": "3"
+          }
+        ],
+        "precision": "5"
+      }
     },
     {
-      "heliosType": "DCS.Common.Switch",
-      "device": "Lantirn",
-      "name": "Mode Switch",
-      "description": "Current Position of This Switch",
-      "exports": [
-        {
-          "format": "%0.1f",
-          "id": "669"
-        }
-      ],
-      "deviceId": "24",
-      "positions": [
-        {
-          "argumentValue": "1.0",
-          "name": "Pod",
-          "actionId": "3704"
-        },
-        {
-          "argumentValue": "0.0",
-          "name": "Mode",
-          "actionId": "3704"
-        }
-      ]
-    },
-    {
-      "heliosType": "DCS.Common.NetworkValue",
+      "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Lantirn",
       "name": "MUX EGU Light",
-      "description": "Numeric Value Between 0 and 1",
+      "description": "Mapped Output from lua min/max to desired range",
       "exports": [
         {
           "format": "%.3f",
           "id": "676"
         }
       ],
-      "unit": "Numeric"
+      "unit": "Numeric",
+      "valueDescription": "",
+      "exposeunscaledvalue": true,
+      "calibration": {
+        "points": [
+          {
+            "value": "0.0",
+            "mappedValue": "1.0"
+          },
+          {
+            "value": "0.4",
+            "mappedValue": "2"
+          },
+          {
+            "value": "0.6",
+            "mappedValue": "3"
+          }
+        ],
+        "precision": "5"
+      }
     },
     {
-      "heliosType": "DCS.Common.NetworkValue",
+      "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Lantirn",
       "name": "Oper Standby Light",
-      "description": "Numeric Value Between 0 and 1",
+      "description": "Mapped Output from lua min/max to desired range",
       "exports": [
         {
           "format": "%.3f",
           "id": "673"
         }
       ],
-      "unit": "Numeric"
+      "unit": "Numeric",
+      "valueDescription": "",
+      "exposeunscaledvalue": true,
+      "calibration": {
+        "points": [
+          {
+            "value": "0.0",
+            "mappedValue": "1.0"
+          },
+          {
+            "value": "0.4",
+            "mappedValue": "2"
+          },
+          {
+            "value": "0.6",
+            "mappedValue": "3"
+          }
+        ],
+        "precision": "5"
+      }
     },
     {
       "heliosType": "DCS.Common.ScaledNetworkValue",
@@ -11936,34 +12458,27 @@
       }
     },
     {
-      "heliosType": "DCS.Common.Switch",
+      "heliosType": "DCS.Common.Axis",
       "device": "Lantirn",
       "name": "Power Switch",
-      "description": "Current Position of This Switch",
+      "description": "Current Value of This Potentiometer",
       "exports": [
         {
-          "format": "%0.1f",
-          "id": "667"
+          "format": "%.3f",
+          "id": "667",
+          "isExportedEveryFrame": false
         }
       ],
-      "deviceId": "24",
-      "positions": [
-        {
-          "argumentValue": "1.0",
-          "name": "Pod",
-          "actionId": "3689"
-        },
-        {
-          "argumentValue": "0.5",
-          "name": "IMU",
-          "actionId": "3689"
-        },
-        {
-          "argumentValue": "0.0",
-          "name": "Off",
+      "loop": false,
+      "argumentValue": "0.025",
+      "argumentMin": "0.0",
+      "argumentMax": "1.0",
+      "actions": {
+        "set": {
+          "deviceId": "24",
           "actionId": "3689"
         }
-      ]
+      }
     },
     {
       "heliosType": "DCS.Common.PushButton",
@@ -11995,7 +12510,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "310"
+          "id": "310",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -12113,7 +12629,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "255"
+          "id": "255",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -12181,6 +12698,72 @@
     },
     {
       "heliosType": "DCS.Common.PushButton",
+      "device": "MANUAL",
+      "name": "PILOT EXPLAIN BUTTON",
+      "description": "Current State of This Button",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "29776"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "76",
+          "pushId": "3086",
+          "pushValue": "1.0",
+          "releaseId": "3086",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "MANUAL",
+      "name": "Pilot Manual",
+      "description": "Current State of This Button",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "29775"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "76",
+          "pushId": "3085",
+          "pushValue": "1.0",
+          "releaseId": "3085",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "MANUAL",
+      "name": "RIO MANUAL TOGGLE",
+      "description": "Current State of This Button",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "29779"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "76",
+          "pushId": "3088",
+          "pushValue": "1.0",
+          "releaseId": "3088",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
       "device": "Nav Interface",
       "name": "AWL Steer Button",
       "description": "Current State of This Button",
@@ -12231,7 +12814,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "51"
+          "id": "51",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -12276,7 +12860,7 @@
         {
           "format": "%.1f",
           "isExportedEveryFrame": false,
-          "id": "29151"
+          "id": "29567"
         }
       ],
       "buttons": [
@@ -12298,7 +12882,7 @@
         {
           "format": "%.1f",
           "isExportedEveryFrame": false,
-          "id": "29152"
+          "id": "29568"
         }
       ],
       "buttons": [
@@ -12364,7 +12948,7 @@
         {
           "format": "%.1f",
           "isExportedEveryFrame": false,
-          "id": "29149"
+          "id": "29809"
         }
       ],
       "buttons": [
@@ -12386,7 +12970,7 @@
         {
           "format": "%.1f",
           "isExportedEveryFrame": false,
-          "id": "29148"
+          "id": "29808"
         }
       ],
       "buttons": [
@@ -12407,7 +12991,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "27"
+          "id": "27",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -12429,7 +13014,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "38"
+          "id": "38",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "39",
@@ -12478,7 +13064,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "34"
+          "id": "34",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "39",
@@ -12508,7 +13095,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "80"
+          "id": "80",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -12530,7 +13118,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "23"
+          "id": "23",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -12618,7 +13207,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "24"
+          "id": "24",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -12640,7 +13230,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "36"
+          "id": "36",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "39",
@@ -12736,7 +13327,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "79"
+          "id": "79",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -12758,7 +13350,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "25"
+          "id": "25",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -12860,7 +13453,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "2141"
+          "id": "2141",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "39",
@@ -12902,7 +13496,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "20"
+          "id": "20",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -12936,7 +13531,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "22"
+          "id": "22",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -12958,7 +13554,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "21"
+          "id": "21",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -12992,7 +13589,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "28"
+          "id": "28",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -13026,7 +13624,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "37"
+          "id": "37",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "39",
@@ -13068,7 +13667,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "3900"
+          "id": "3900",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "39",
@@ -13093,7 +13693,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "30"
+          "id": "30",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -13115,7 +13716,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "29"
+          "id": "29",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -13173,7 +13775,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "26"
+          "id": "26",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -13440,7 +14043,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "82"
+          "id": "82",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -13462,7 +14066,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "81"
+          "id": "81",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -13484,7 +14089,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "95"
+          "id": "95",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "39",
@@ -13514,7 +14120,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "83"
+          "id": "83",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "39",
@@ -13539,7 +14146,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "84"
+          "id": "84",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "39",
@@ -13645,7 +14253,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "35"
+          "id": "35",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "39",
@@ -13880,7 +14489,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "308"
+          "id": "308",
+          "isExportedEveryFrame": false
         }
       ],
       "unit": "Numeric",
@@ -13926,7 +14536,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "16011"
+          "id": "16011",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -13948,7 +14559,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "2139"
+          "id": "2139",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "54",
@@ -13973,7 +14585,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "2136"
+          "id": "2136",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -13995,7 +14608,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "2137"
+          "id": "2137",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "44",
@@ -14025,7 +14639,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "376"
+          "id": "376",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -14047,7 +14662,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "2140"
+          "id": "2140",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "54",
@@ -14077,7 +14693,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "9950"
+          "id": "9950",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -14177,7 +14794,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "1042"
+          "id": "1042",
+          "isExportedEveryFrame": false
         }
       ],
       "unit": "Numeric",
@@ -14319,7 +14937,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "6156"
+          "id": "6156",
+          "isExportedEveryFrame": false
         }
       ],
       "unit": "Numeric",
@@ -14404,7 +15023,8 @@
       "description": "Current Value of This Potentiometer",
       "exports": [
         {
-          "format": "%.3f",
+          "format": "%0.3f",
+          "isExportedEveryFrame": false,
           "id": "8889"
         }
       ],
@@ -14427,7 +15047,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "8888"
+          "id": "8888",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -14445,11 +15066,12 @@
       "heliosType": "DCS.Common.Axis",
       "device": "Tacan",
       "name": "Pilot Function Knob",
-      "description": "Current Position of This Switch",
+      "description": "Current Value of This Potentiometer",
       "exports": [
         {
           "format": "%.3f",
-          "id": "2041"
+          "id": "2041",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -14471,7 +15093,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "2042"
+          "id": "2042",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "47",
@@ -14566,7 +15189,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "2036"
+          "id": "2036",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -14588,7 +15212,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "2043"
+          "id": "2043",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "47",
@@ -14635,7 +15260,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "8890"
+          "id": "8890",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -14657,7 +15283,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "8891"
+          "id": "8891",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -14675,11 +15302,12 @@
       "heliosType": "DCS.Common.Axis",
       "device": "Tacan",
       "name": "RIO Function Knob",
-      "description": "Current Position of This Switch",
+      "description": "Current Value of This Potentiometer",
       "exports": [
         {
           "format": "%.3f",
-          "id": "374"
+          "id": "374",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -14701,7 +15329,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "373"
+          "id": "373",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "47",
@@ -14784,7 +15413,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "375"
+          "id": "375",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -14806,7 +15436,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "372"
+          "id": "372",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "47",
@@ -14822,6 +15453,123 @@
           "actionId": "3348"
         }
       ]
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "TACTICAL IMAGING SET",
+      "name": "BU RIO RECON alt roller 1",
+      "description": "Numeric Value Between 0 and 1",
+      "exports": [
+        {
+          "format": "%0.3f",
+          "id": "1140"
+        }
+      ],
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "TACTICAL IMAGING SET",
+      "name": "BU RIO RECON alt roller 10",
+      "description": "Numeric Value Between 0 and 1",
+      "exports": [
+        {
+          "format": "%0.3f",
+          "id": "1139"
+        }
+      ],
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "TACTICAL IMAGING SET",
+      "name": "BU RIO RECON alt roller 100",
+      "description": "Numeric Value Between 0 and 1",
+      "exports": [
+        {
+          "format": "%0.3f",
+          "id": "1138"
+        }
+      ],
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "TACTICAL IMAGING SET",
+      "name": "BU RIO RECON frame roller 1",
+      "description": "Numeric Value Between 0 and 1",
+      "exports": [
+        {
+          "format": "%0.3f",
+          "id": "1122"
+        }
+      ],
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "TACTICAL IMAGING SET",
+      "name": "BU RIO RECON frame roller 10",
+      "description": "Numeric Value Between 0 and 1",
+      "exports": [
+        {
+          "format": "%0.3f",
+          "id": "1121"
+        }
+      ],
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "TACTICAL IMAGING SET",
+      "name": "BU RIO RECON frame roller 100",
+      "description": "Numeric Value Between 0 and 1",
+      "exports": [
+        {
+          "format": "%0.3f",
+          "id": "1120"
+        }
+      ],
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "TACTICAL IMAGING SET",
+      "name": "BU RIO RECON pan roller 1",
+      "description": "Numeric Value Between 0 and 1",
+      "exports": [
+        {
+          "format": "%0.3f",
+          "id": "1130"
+        }
+      ],
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "TACTICAL IMAGING SET",
+      "name": "BU RIO RECON pan roller 10",
+      "description": "Numeric Value Between 0 and 1",
+      "exports": [
+        {
+          "format": "%0.3f",
+          "id": "1129"
+        }
+      ],
+      "unit": "Numeric"
+    },
+    {
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "TACTICAL IMAGING SET",
+      "name": "BU RIO RECON pan roller 100",
+      "description": "Numeric Value Between 0 and 1",
+      "exports": [
+        {
+          "format": "%0.3f",
+          "id": "1128"
+        }
+      ],
+      "unit": "Numeric"
     },
     {
       "heliosType": "DCS.Common.PushButton",
@@ -14963,7 +15711,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "90"
+          "id": "90",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "82",
@@ -14994,7 +15743,7 @@
         {
           "format": "%.1f",
           "isExportedEveryFrame": false,
-          "id": "29159"
+          "id": "29766"
         }
       ],
       "buttons": [
@@ -15015,7 +15764,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "85"
+          "id": "85",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -15037,7 +15787,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "86"
+          "id": "86",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -15059,7 +15810,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "6026"
+          "id": "6026",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "38",
@@ -15101,7 +15853,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "16016"
+          "id": "16016",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -15162,7 +15915,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "91"
+          "id": "91",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -15208,7 +15962,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "87"
+          "id": "87",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "38",
@@ -15238,7 +15993,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "88"
+          "id": "88",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "38",
@@ -15263,7 +16019,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "89"
+          "id": "89",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "38",
@@ -15459,7 +16216,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "770"
+          "id": "770",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -15481,7 +16239,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "772"
+          "id": "772",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -15793,7 +16552,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "48"
+          "id": "48",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -15815,7 +16575,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "49"
+          "id": "49",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -15837,7 +16598,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "2005"
+          "id": "2005",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -15915,7 +16677,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "2006"
+          "id": "2006",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -16243,7 +17006,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "771"
+          "id": "771",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -16265,7 +17029,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "773"
+          "id": "773",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -16355,7 +17120,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "1018"
+          "id": "1018",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "42",
@@ -16380,7 +17146,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "1019"
+          "id": "1019",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "42",
@@ -16405,7 +17172,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "1036"
+          "id": "1036",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -16427,7 +17195,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "1038"
+          "id": "1038",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -16449,7 +17218,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "1010"
+          "id": "1010",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "42",
@@ -16474,7 +17244,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "1035"
+          "id": "1035",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -16497,7 +17268,7 @@
         {
           "format": "%.1f",
           "isExportedEveryFrame": false,
-          "id": "29150"
+          "id": "29832"
         }
       ],
       "buttons": [
@@ -16519,7 +17290,7 @@
         {
           "format": "%.1f",
           "isExportedEveryFrame": false,
-          "id": "29156"
+          "id": "29767"
         }
       ],
       "buttons": [
@@ -16534,7 +17305,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "AOA Fast Indicator",
       "description": "Current State of This Indicator",
       "exports": [
@@ -16546,7 +17317,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "AOA Optimum Indicator",
       "description": "Current State of This Indicator",
       "exports": [
@@ -16558,7 +17329,7 @@
     },
     {
       "heliosType": "DCS.Common.NetworkValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "AOA Slider Indicator",
       "description": "Numeric Value Between 0 and 1",
       "exports": [
@@ -16571,7 +17342,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "AOA Slow Indicator",
       "description": "Current State of This Indicator",
       "exports": [
@@ -16582,30 +17353,8 @@
       ]
     },
     {
-      "heliosType": "DCS.Common.PushButton",
-      "device": "Warning Lights",
-      "name": "BU Pilot Master Caution",
-      "description": "Current State of This Button",
-      "exports": [
-        {
-          "format": "%.1f",
-          "isExportedEveryFrame": false,
-          "id": "760"
-        }
-      ],
-      "buttons": [
-        {
-          "deviceId": "40",
-          "pushId": "3056",
-          "pushValue": "1.0",
-          "releaseId": "3056",
-          "releaseValue": "0.0"
-        }
-      ]
-    },
-    {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Frame AAA",
       "description": "Current State of This Indicator",
       "exports": [
@@ -16617,7 +17366,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Frame ACLS/AP",
       "description": "Current State of This Indicator",
       "exports": [
@@ -16629,7 +17378,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Frame AI",
       "description": "Current State of This Indicator",
       "exports": [
@@ -16641,7 +17390,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Frame Auto Throttle",
       "description": "Current State of This Indicator",
       "exports": [
@@ -16653,7 +17402,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Frame Brakes Indicator",
       "description": "Current State of This Indicator",
       "exports": [
@@ -16665,7 +17414,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Frame L Stall Indicator",
       "description": "Current State of This Indicator",
       "exports": [
@@ -16677,7 +17426,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Frame NWS Engage",
       "description": "Current State of This Indicator",
       "exports": [
@@ -16689,7 +17438,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Frame R Stall Indicator",
       "description": "Current State of This Indicator",
       "exports": [
@@ -16701,7 +17450,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Frame SA TRK",
       "description": "Current State of This Indicator",
       "exports": [
@@ -16713,7 +17462,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Frame SAM",
       "description": "Current State of This Indicator",
       "exports": [
@@ -16725,7 +17474,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Frame Wheels Indicator",
       "description": "Current State of This Indicator",
       "exports": [
@@ -16737,7 +17486,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Landing Gear Light",
       "description": "Current State of This Indicator",
       "exports": [
@@ -16749,7 +17498,7 @@
     },
     {
       "heliosType": "DCS.Common.PushButton",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Master Caution Button",
       "description": "Current State of This Button",
       "exports": [
@@ -16770,8 +17519,30 @@
       ]
     },
     {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "WARNINGLIGHTS",
+      "name": "Master Caution Reset",
+      "description": "Current State of This Button",
+      "exports": [
+        {
+          "format": "%1d",
+          "isExportedEveryFrame": false,
+          "id": "760"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "35",
+          "pushId": "3056",
+          "pushValue": "1.0",
+          "releaseId": "3056",
+          "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Master Test Go Light",
       "description": "Current State of This Indicator",
       "exports": [
@@ -16783,7 +17554,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Master Test No-Go Light",
       "description": "Current State of This Indicator",
       "exports": [
@@ -16795,7 +17566,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Nav Comp Indicator",
       "description": "Current State of This Indicator",
       "exports": [
@@ -16807,7 +17578,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Pilot Collision",
       "description": "Current State of This Indicator",
       "exports": [
@@ -16819,7 +17590,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Pilot Gun Rate High",
       "description": "Current State of This Indicator",
       "exports": [
@@ -16831,7 +17602,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Pilot Gun Rate Low",
       "description": "Current State of This Indicator",
       "exports": [
@@ -16843,7 +17614,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Pilot Hot Trigger",
       "description": "Current State of This Indicator",
       "exports": [
@@ -16855,7 +17626,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Pilot L Fire Indicator",
       "description": "Current State of This Indicator",
       "exports": [
@@ -16867,7 +17638,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Pilot Master Caution Light",
       "description": "Current State of This Indicator",
       "exports": [
@@ -16879,7 +17650,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Pilot Missile Mode Boresight",
       "description": "Current State of This Indicator",
       "exports": [
@@ -16891,7 +17662,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Pilot Missile Mode Norm",
       "description": "Current State of This Indicator",
       "exports": [
@@ -16903,7 +17674,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Pilot Missile Prep Off",
       "description": "Current State of This Indicator",
       "exports": [
@@ -16915,7 +17686,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Pilot Missile Prep On",
       "description": "Current State of This Indicator",
       "exports": [
@@ -16927,7 +17698,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Pilot R Fire Indicator",
       "description": "Current State of This Indicator",
       "exports": [
@@ -16939,7 +17710,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Pilot Rad Alt Test Green Light",
       "description": "Current State of This Indicator",
       "exports": [
@@ -16951,7 +17722,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Pilot Rad Alt Warning Light",
       "description": "Current State of This Indicator",
       "exports": [
@@ -16963,7 +17734,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Pilot Right Panel ANRS",
       "description": "Current State of This Indicator",
       "exports": [
@@ -16975,7 +17746,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Pilot Right Panel Auto Pilot",
       "description": "Current State of This Indicator",
       "exports": [
@@ -16987,7 +17758,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Pilot Right Panel Aux Fire Ext",
       "description": "Current State of This Indicator",
       "exports": [
@@ -16999,7 +17770,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Pilot Right Panel Bingo",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17011,7 +17782,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Pilot Right Panel Bleed Dirty",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17023,7 +17794,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Pilot Right Panel CADC",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17035,7 +17806,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Pilot Right Panel Canopy",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17047,7 +17818,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Pilot Right Panel Emergency Jettison",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17059,7 +17830,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Pilot Right Panel Eng Fire Ext",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17071,7 +17842,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Pilot Right Panel Flap",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17083,7 +17854,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Pilot Right Panel Hydraulic Pressure",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17095,7 +17866,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Pilot Right Panel HZ Tail Authority",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17107,7 +17878,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Pilot Right Panel Inlet Ice",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17119,7 +17890,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Pilot Right Panel Inter Trim",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17131,7 +17902,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Pilot Right Panel L Engine Sec",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17143,7 +17914,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Pilot Right Panel L Fuel Low",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17155,7 +17926,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Pilot Right Panel L Fuel Press",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17167,7 +17938,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Pilot Right Panel L Gen",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17179,7 +17950,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Pilot Right Panel L Inlet",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17191,7 +17962,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Pilot Right Panel L Oil Hot",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17203,7 +17974,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Pilot Right Panel L Overspeed Valve",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17215,7 +17986,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Pilot Right Panel L Ramp",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17227,7 +17998,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Pilot Right Panel Ladder",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17239,7 +18010,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Pilot Right Panel Launch Bar",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17251,7 +18022,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Pilot Right Panel Mach Trim",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17263,7 +18034,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Pilot Right Panel Oil Pressure",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17275,7 +18046,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Pilot Right Panel Oxygen Low",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17287,7 +18058,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Pilot Right Panel Pitch Stab 1",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17299,7 +18070,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Pilot Right Panel Pitch Stab 2",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17311,7 +18082,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Pilot Right Panel R Engine Sec",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17323,7 +18094,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Pilot Right Panel R Fuel Low",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17335,7 +18106,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Pilot Right Panel R Fuel Press",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17347,7 +18118,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Pilot Right Panel R Gen",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17359,7 +18130,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Pilot Right Panel R Inlet",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17371,7 +18142,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Pilot Right Panel R Oil Hot",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17383,7 +18154,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Pilot Right Panel R Overspeed Valve",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17395,7 +18166,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Pilot Right Panel R Ramp",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17407,7 +18178,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Pilot Right Panel Rats",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17419,7 +18190,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Pilot Right Panel Reduce Speed",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17431,7 +18202,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Pilot Right Panel Roll Stab 1",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17443,7 +18214,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Pilot Right Panel Roll Stability 2",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17455,7 +18226,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Pilot Right Panel Rudder Authority",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17467,7 +18238,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Pilot Right Panel Spoilers",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17479,7 +18250,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Pilot Right Panel Start Valve",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17491,7 +18262,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Pilot Right Panel Trans Rect",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17503,7 +18274,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Pilot Right Panel Windshield Hot",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17515,7 +18286,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Pilot Right Panel Wing Sweep",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17527,7 +18298,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Pilot Right Panel Yaw Stab Op",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17539,7 +18310,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Pilot Right Panel Yaw Stab Out",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17551,7 +18322,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Pilot Seam Lock Light",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17563,7 +18334,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Pilot Side Winder Cool Off",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17575,7 +18346,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Pilot Side Winder Cool On",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17587,7 +18358,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Pilot VDI 10 Seconds",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17599,7 +18370,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Pilot VDI ACL Ready",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17611,7 +18382,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Pilot VDI ADJ AC",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17623,7 +18394,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Pilot VDI Alt Low",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17635,7 +18406,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Pilot VDI AP Ref",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17647,7 +18418,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Pilot VDI APCPLR",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17659,7 +18430,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Pilot VDI Auto Throttle",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17671,7 +18442,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Pilot VDI CMD Control",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17683,7 +18454,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Pilot VDI Landing Check",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17695,7 +18466,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Pilot VDI Reduce Speed",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17707,7 +18478,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Pilot VDI Tilt",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17719,7 +18490,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Pilot VDI Voice",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17731,7 +18502,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Pilot VDI Wave Off",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17743,7 +18514,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Pilot VDI Wing Sweep",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17755,7 +18526,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Refuel Probe Light",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17767,7 +18538,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Rio 10 Sec Indicator",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17779,7 +18550,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Rio AAA Indicator",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17791,7 +18562,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Rio Abort Indicator",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17803,7 +18574,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Rio ACL Beacon Indicator",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17815,7 +18586,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Rio ACL Ready Indicator",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17827,7 +18598,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Rio ADJAC Indicator",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17839,7 +18610,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Rio Aft Vector Indicator",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17851,7 +18622,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Rio AHRS Indicator",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17863,7 +18634,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Rio AI Indicator",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17875,7 +18646,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Rio Alt Change Indicator",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17887,7 +18658,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Rio APC PLR Indicator",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17899,7 +18670,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Rio Arm 1 Indicator",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17911,7 +18682,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Rio Arm 2 Indicator",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17923,7 +18694,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Rio Arm 3 Indicator",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17935,7 +18706,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Rio AWG9 Cond Indicator",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17947,7 +18718,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Rio Beacdub Indicator",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17959,7 +18730,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Rio Beacon Indicator",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17971,7 +18742,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Rio Beacooff Indicator",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17983,7 +18754,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Rio Cabin Press Indicator",
       "description": "Current State of This Indicator",
       "exports": [
@@ -17995,7 +18766,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Rio CANCRPY Indicator",
       "description": "Current State of This Indicator",
       "exports": [
@@ -18007,7 +18778,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Rio Canopy Indicator",
       "description": "Current State of This Indicator",
       "exports": [
@@ -18019,7 +18790,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "RIO CD Hot Indicator",
       "description": "Current State of This Indicator",
       "exports": [
@@ -18031,7 +18802,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Rio Challenge Indicator",
       "description": "Current State of This Indicator",
       "exports": [
@@ -18043,7 +18814,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Rio Change Channel Indicator",
       "description": "Current State of This Indicator",
       "exports": [
@@ -18055,7 +18826,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Rio CMD Change Indicator",
       "description": "Current State of This Indicator",
       "exports": [
@@ -18067,7 +18838,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Rio CMDCTRL Indicator",
       "description": "Current State of This Indicator",
       "exports": [
@@ -18079,7 +18850,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Rio Coivec Indicator",
       "description": "Current State of This Indicator",
       "exports": [
@@ -18091,7 +18862,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Rio Cooling Air Indicator",
       "description": "Current State of This Indicator",
       "exports": [
@@ -18103,7 +18874,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Rio CW Indicator",
       "description": "Current State of This Indicator",
       "exports": [
@@ -18115,7 +18886,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Rio Disengauge Indicator",
       "description": "Current State of This Indicator",
       "exports": [
@@ -18127,7 +18898,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Rio Drop Indicator",
       "description": "Current State of This Indicator",
       "exports": [
@@ -18139,7 +18910,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Rio Film Low Indicator",
       "description": "Current State of This Indicator",
       "exports": [
@@ -18151,7 +18922,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Rio Forward Vector Indicator",
       "description": "Current State of This Indicator",
       "exports": [
@@ -18163,7 +18934,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Rio Frelan Indicator",
       "description": "Current State of This Indicator",
       "exports": [
@@ -18175,7 +18946,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Rio Fuel Low Indicator",
       "description": "Current State of This Indicator",
       "exports": [
@@ -18187,7 +18958,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Rio Fuze HV Indicator",
       "description": "Current State of This Indicator",
       "exports": [
@@ -18199,7 +18970,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Rio Handover Indicator",
       "description": "Current State of This Indicator",
       "exports": [
@@ -18211,7 +18982,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Rio Heading Change Indicator",
       "description": "Current State of This Indicator",
       "exports": [
@@ -18223,7 +18994,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Rio IFF Indicator",
       "description": "Current State of This Indicator",
       "exports": [
@@ -18235,7 +19006,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Rio IMU Indicator",
       "description": "Current State of This Indicator",
       "exports": [
@@ -18247,7 +19018,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Rio Landing Check Indicator",
       "description": "Current State of This Indicator",
       "exports": [
@@ -18259,7 +19030,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Rio Manual Indicator",
       "description": "Current State of This Indicator",
       "exports": [
@@ -18271,7 +19042,7 @@
     },
     {
       "heliosType": "DCS.Common.PushButton",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Rio Master Caution",
       "description": "Current State of This Button",
       "exports": [
@@ -18293,7 +19064,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Rio Master Caution Indicator",
       "description": "Current State of This Indicator",
       "exports": [
@@ -18305,7 +19076,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Rio Mon Alt Indicator",
       "description": "Current State of This Indicator",
       "exports": [
@@ -18317,7 +19088,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Rio Mon Speed Indicator",
       "description": "Current State of This Indicator",
       "exports": [
@@ -18329,7 +19100,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Rio MSL Cond Indicator",
       "description": "Current State of This Indicator",
       "exports": [
@@ -18341,7 +19112,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Rio Nomsg Indicator",
       "description": "Current State of This Indicator",
       "exports": [
@@ -18353,7 +19124,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Rio Not CMD Indicator",
       "description": "Current State of This Indicator",
       "exports": [
@@ -18365,7 +19136,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Rio Orbit Indicator",
       "description": "Current State of This Indicator",
       "exports": [
@@ -18377,7 +19148,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Rio OXY Low",
       "description": "Current State of This Indicator",
       "exports": [
@@ -18389,7 +19160,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "RIO RCV Indicator",
       "description": "Current State of This Indicator",
       "exports": [
@@ -18401,7 +19172,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Rio RDR Enabled Indicator",
       "description": "Current State of This Indicator",
       "exports": [
@@ -18413,7 +19184,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Rio Return to Base Indicator",
       "description": "Current State of This Indicator",
       "exports": [
@@ -18425,7 +19196,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Rio Sam Indicator",
       "description": "Current State of This Indicator",
       "exports": [
@@ -18437,7 +19208,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Rio Spd Change Indicator",
       "description": "Current State of This Indicator",
       "exports": [
@@ -18449,7 +19220,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Rio Tilt Indicator",
       "description": "Current State of This Indicator",
       "exports": [
@@ -18461,7 +19232,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Rio To Waypt Indicator",
       "description": "Current State of This Indicator",
       "exports": [
@@ -18473,7 +19244,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Rio Voice Indicator",
       "description": "Current State of This Indicator",
       "exports": [
@@ -18485,7 +19256,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Rio Wave Off Indicator",
       "description": "Current State of This Indicator",
       "exports": [
@@ -18497,7 +19268,7 @@
     },
     {
       "heliosType": "DCS.Common.FlagValue",
-      "device": "Warning Lights",
+      "device": "WARNINGLIGHTS",
       "name": "Rio XMIT Indicator",
       "description": "Current State of This Indicator",
       "exports": [
@@ -18515,7 +19286,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "62"
+          "id": "62",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "55",
@@ -18562,7 +19334,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "1049"
+          "id": "1049",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "55",
@@ -18609,7 +19382,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "2022"
+          "id": "2022",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -18631,7 +19405,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "58"
+          "id": "58",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -18714,7 +19489,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "9960"
+          "id": "9960",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -18736,7 +19512,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "9961"
+          "id": "9961",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -18758,7 +19535,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "66"
+          "id": "66",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "55",
@@ -18795,7 +19573,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "19110"
+          "id": "19110",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -18817,7 +19596,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "1046"
+          "id": "1046",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "55",
@@ -18842,7 +19622,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "1047"
+          "id": "1047",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "55",
@@ -18872,7 +19653,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "63"
+          "id": "63",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "55",
@@ -18946,7 +19728,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "75"
+          "id": "75",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "55",
@@ -18976,7 +19759,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "72"
+          "id": "72",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "55",
@@ -19021,7 +19805,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "1022"
+          "id": "1022",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -19065,7 +19850,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "9963"
+          "id": "9963",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -19087,7 +19873,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "9962"
+          "id": "9962",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -19148,7 +19935,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "1069"
+          "id": "1069",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "55",
@@ -19173,7 +19961,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "78"
+          "id": "78",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "55",
@@ -19225,7 +20014,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "60"
+          "id": "60",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "55",
@@ -19506,7 +20296,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "68"
+          "id": "68",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "55",
@@ -19536,7 +20327,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "65"
+          "id": "65",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "55",
@@ -19561,7 +20353,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "69"
+          "id": "69",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "55",
@@ -19586,7 +20379,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "70"
+          "id": "70",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "55",
@@ -19611,7 +20405,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "64"
+          "id": "64",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "55",
@@ -19636,7 +20431,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "71"
+          "id": "71",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "55",
@@ -19666,7 +20462,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "61"
+          "id": "61",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "55",
@@ -19691,7 +20488,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "73"
+          "id": "73",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "55",
@@ -19716,7 +20514,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "67"
+          "id": "67",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "55",
@@ -19741,7 +20540,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "59"
+          "id": "59",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -19763,7 +20563,8 @@
       "exports": [
         {
           "format": "%.3f",
-          "id": "384"
+          "id": "384",
+          "isExportedEveryFrame": false
         }
       ],
       "loop": false,
@@ -19785,7 +20586,8 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "317"
+          "id": "317",
+          "isExportedEveryFrame": false
         }
       ],
       "deviceId": "17",
