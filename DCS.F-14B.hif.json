@@ -1,7 +1,7 @@
 {
   "source": "IT_Mechanic",
-  "version": "1.6.6200.0005",
-  "commit": "1d89e2275e81745e23ee939f599d6de3af50264c",
+  "version": "1.6.6200.0006",
+  "commit": "ae1d38c22427d7a57e6a44da9afad0724414bfcf",
   "type": "DCS",
   "name": "DCS F-14B",
   "module": "F-14B",
@@ -2023,51 +2023,95 @@
       "unit": "Numeric"
     },
     {
-      "heliosType": "DCS.Common.Axis",
-      "device": "Bit Panel",
-      "name": "Master Test Knob",
-      "description": "Current Value of This Potentiometer",
-      "exports": [
-        {
-          "format": "%0.4f",
-          "isExportedEveryFrame": false,
-          "id": "934"
-        }
-      ],
-      "loop": false,
-      "argumentValue": "0.025",
-      "argumentMin": "0.0",
-      "argumentMax": "1.0",
-      "actions": {
-        "set": {
-          "deviceId": "11",
-          "actionId": "3076"
-        }
-      }
-    },
-    {
       "heliosType": "DCS.Common.Switch",
       "device": "Bit Panel",
-      "name": "Master Test Knob Push",
+      "name": "Master Test Knob",
       "description": "Current Position of This Switch",
       "exports": [
         {
-          "format": "%0.1f",
-          "id": "15098",
-          "isExportedEveryFrame": false
+          "format": "%0.3f",
+          "isExportedEveryFrame": false,
+          "id": "934"
         }
       ],
       "deviceId": "11",
       "positions": [
         {
-          "argumentValue": "1.0",
-          "name": "Up",
-          "actionId": "3077"
+          "argumentValue": "0.0",
+          "name": "OFF",
+          "actionId": "3076"
         },
         {
-          "argumentValue": "0.0",
-          "name": "Down",
-          "actionId": "3077"
+          "argumentValue": "0.091",
+          "name": "LTS",
+          "actionId": "3076"
+        },
+        {
+          "argumentValue": "0.182",
+          "name": "FIRE",
+          "actionId": "3076"
+        },
+        {
+          "argumentValue": "0.273",
+          "name": "INST",
+          "actionId": "3076"
+        },
+        {
+          "argumentValue": "0.364",
+          "name": "OBC",
+          "actionId": "3076"
+        },
+        {
+          "argumentValue": "0.455",
+          "name": "EMERG GEN",
+          "actionId": "3076"
+        },
+        {
+          "argumentValue": "0.545",
+          "name": "WG SWP",
+          "actionId": "3076"
+        },
+        {
+          "argumentValue": "0.636",
+          "name": "FLTGR DW",
+          "actionId": "3076"
+        },
+        {
+          "argumentValue": "0.727",
+          "name": "FLTGR UP",
+          "actionId": "3076"
+        },
+        {
+          "argumentValue": "0.818",
+          "name": "DL RAD",
+          "actionId": "3076"
+        },
+        {
+          "argumentValue": "0.909",
+          "name": "STICK SW",
+          "actionId": "3076"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.PushButton",
+      "device": "Bit Panel",
+      "name": "Master Test Knob Push",
+      "description": "Current State of This Button",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "isExportedEveryFrame": false,
+          "id": "15098"
+        }
+      ],
+      "buttons": [
+        {
+          "deviceId": "11",
+          "pushId": "3077",
+          "pushValue": "1.0",
+          "releaseId": "3077",
+          "releaseValue": "0.0"
         }
       ]
     },
