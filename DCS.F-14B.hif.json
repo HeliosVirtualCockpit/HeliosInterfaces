@@ -68,20 +68,20 @@
       "description": "Current Position of This Switch",
       "exports": [
         {
-          "format": "%0.1f",
-          "id": "2112",
-          "isExportedEveryFrame": false
+          "format": "%0.3f",
+          "isExportedEveryFrame": false,
+          "id": "2112"
         }
       ],
       "deviceId": "22",
       "positions": [
         {
-          "argumentValue": "1.0",
+          "argumentValue": "2",
           "name": "Engage",
           "actionId": "3040"
         },
         {
-          "argumentValue": "0.0",
+          "argumentValue": "-2",
           "name": "Off",
           "actionId": "3040"
         }
@@ -3439,6 +3439,18 @@
       ]
     },
     {
+      "heliosType": "DCS.Common.Text",
+      "device": "CDNU",
+      "name": "Full Display",
+      "description": "Text Value",
+      "exports": [
+        {
+          "isExportedEveryFrame": true,
+          "id": "30012"
+        }
+      ]
+    },
+    {
       "heliosType": "DCS.Common.PushButton",
       "device": "CDNU",
       "name": "G",
@@ -3721,6 +3733,102 @@
           "pushValue": "1.0",
           "releaseId": "3063",
           "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Text",
+      "device": "CDNU",
+      "name": "Line 1",
+      "description": "Text Value",
+      "exports": [
+        {
+          "isExportedEveryFrame": true,
+          "id": "30004"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Text",
+      "device": "CDNU",
+      "name": "Line 2",
+      "description": "Text Value",
+      "exports": [
+        {
+          "isExportedEveryFrame": true,
+          "id": "30005"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Text",
+      "device": "CDNU",
+      "name": "Line 3",
+      "description": "Text Value",
+      "exports": [
+        {
+          "isExportedEveryFrame": true,
+          "id": "30006"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Text",
+      "device": "CDNU",
+      "name": "Line 4",
+      "description": "Text Value",
+      "exports": [
+        {
+          "isExportedEveryFrame": true,
+          "id": "30007"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Text",
+      "device": "CDNU",
+      "name": "Line 5",
+      "description": "Text Value",
+      "exports": [
+        {
+          "isExportedEveryFrame": true,
+          "id": "30008"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Text",
+      "device": "CDNU",
+      "name": "Line 6",
+      "description": "Text Value",
+      "exports": [
+        {
+          "isExportedEveryFrame": true,
+          "id": "30009"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Text",
+      "device": "CDNU",
+      "name": "Line 7",
+      "description": "Text Value",
+      "exports": [
+        {
+          "isExportedEveryFrame": true,
+          "id": "30010"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Text",
+      "device": "CDNU",
+      "name": "Line 8",
+      "description": "Text Value",
+      "exports": [
+        {
+          "isExportedEveryFrame": true,
+          "id": "30011"
         }
       ]
     },
@@ -4816,7 +4924,7 @@
       "exports": [
         {
           "format": "%0.1f",
-          "id": "767"
+          "id": "768"
         }
       ]
     },
@@ -7234,6 +7342,18 @@
           "argumentValue": "0.0",
           "name": "Off",
           "actionId": "3272"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Text",
+      "device": "Countermeasures",
+      "name": "CMDS Display",
+      "description": "Text Value",
+      "exports": [
+        {
+          "isExportedEveryFrame": true,
+          "id": "30003"
         }
       ]
     },
@@ -14569,6 +14689,30 @@
           "pushValue": "1.0",
           "releaseId": "3485",
           "releaseValue": "0.0"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Text",
+      "device": "Radio",
+      "name": "PILOT DFCS Text Display",
+      "description": "Text Value",
+      "exports": [
+        {
+          "isExportedEveryFrame": true,
+          "id": "30002"
+        }
+      ]
+    },
+    {
+      "heliosType": "DCS.Common.Text",
+      "device": "Radio",
+      "name": "Pilot UHF Text Display",
+      "description": "Text Value",
+      "exports": [
+        {
+          "isExportedEveryFrame": true,
+          "id": "30001"
         }
       ]
     },
