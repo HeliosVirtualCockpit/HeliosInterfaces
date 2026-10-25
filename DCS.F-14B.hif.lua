@@ -1,3 +1,5 @@
+-- Helios version 1.6.6210.000
+
 -- Helios functions for the DCS F-14B(U) (Heatblur, vehicle "F-14BU")
 --
 -- Custom export Lua for a Helios 1.6 DCS interface.  Helios loads this file together with the
