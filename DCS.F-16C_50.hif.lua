@@ -1,3 +1,5 @@
+-- 1.6.6210.0000
+
 -- Helios functions for F-16C_50
 -- Stock Helios DCS.F-16C_50.hif.lua with F-16C DED and CMDS text export added.
 --
